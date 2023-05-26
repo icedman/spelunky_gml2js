@@ -1,0 +1,9 @@
+{
+  "name": "gml_to_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.41.0"
+  }
+}
