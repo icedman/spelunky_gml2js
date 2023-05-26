@@ -85,7 +85,7 @@ if (global.levelType == 0)
             {
                 instance_create(x-8, y+8, oLockedChest);
                 global.LockedChest = true;
-                break;
+                // break;
             }
             else if (not collision_point(x+8, y, oSolid, 0, 0) and
                      not collision_point(x+8, y+15, oTreasure, 0, 0) and
@@ -94,13 +94,13 @@ if (global.levelType == 0)
             {
                 instance_create(x+16+8, y+8, oLockedChest);
                 global.LockedChest = true;
-                break;
+                // break;
             }
             else
             {
                 instance_create(x+8, y+8, oLockedChest);
                 global.LockedChest = true;
-                break;
+                // break;
             }
         }
     }
@@ -119,7 +119,9 @@ if (global.levelType == 0)
                     else instance_create(x, y, oKey);
                     global.Key = true;
                     instance_destroy();
-                    break;
+
+                    n = 9
+                    // break;
                 }
             }
             n += 1;
@@ -134,7 +136,7 @@ if (global.levelType == 0)
                     else instance_create(x, y, oKey);
                     global.Key = true;
                     instance_destroy();
-                    break;
+                    // break;
                 }
             }
         }
@@ -368,7 +370,7 @@ else if (global.levelType == 2)
             point_distance(x, y, oEntrance.x, oEntrance.y) > 64 and
             not isInShop(x, y))
         {
-            if (rand(1,10) == 1 and sprite_index = sDark and not collision_rectangle(x, y-64, x+15, y-1, oSolid, 0, 0) and distance_to_object(oExit) > 64) instance_create(x, y-16, oSpringTrap);
+            if (rand(1,10) == 1 and sprite_index == sDark and not collision_rectangle(x, y-64, x+15, y-1, oSolid, 0, 0) and distance_to_object(oExit) > 64) instance_create(x, y-16, oSpringTrap);
             else if (rand(1,20) == 1 and point_distance(x, y, oEntrance.x, oEntrance.y) > 64) instance_create(x, y-16, oYeti);
         }
         
@@ -508,7 +510,7 @@ else if (global.levelType == 3)
                 instance_create(x, y-16, oGoldDoor);
                 invincible = true;
                 global.madeGoldEntrance = true;
-                break;
+                // break;
             }
         }
     }

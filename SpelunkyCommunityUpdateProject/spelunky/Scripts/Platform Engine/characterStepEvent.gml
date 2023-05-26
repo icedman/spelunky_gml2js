@@ -167,7 +167,7 @@ if (state != CLIMBING and state != HANGING)
                 //if (not SS_IsSoundPlaying(global.sndPush)) playSound(global.sndPush);
             }
         }
-        else if (kRightPushedSteps > 2 or colSolidLeft) and (facing=RIGHT or approximatelyZero(xVel))
+        else if ((kRightPushedSteps > 2 or colSolidLeft) and (facing==RIGHT or approximatelyZero(xVel)))
         {
             xAcc += runAcc;
         }
@@ -269,7 +269,7 @@ if (colTop)
     else if (state == JUMPING) yVel = abs(yVel*0.3)
 }
 
-if (colLeft and facing == LEFT) or (colRight and facing == RIGHT)
+if ((colLeft and facing == LEFT) or (colRight and facing == RIGHT))
 {
     if (dead or stunned) xVel = -xVel * 0.5;
     else xVel = 0;
@@ -543,7 +543,7 @@ if (kDown and platformCharacterIs(ON_GROUND) and not whipping)
     {
         state = DUCKING;
     }
-    else if colPlatBot
+    else if (colPlatBot)
     {
         // climb down ladder if possible, else jump down
         fallTimer = 0;
@@ -943,7 +943,7 @@ if approximatelyZero(yAcc) yAcc=0
 // prepares the character to move up a hill
 // we need to use the "slopeYPrev" variable later to know the "true" y previous value
 // keep this condition the same
-if maxSlope>0 and platformCharacterIs(ON_GROUND) and xVel!=0
+if (maxSlope>0 and platformCharacterIs(ON_GROUND) and xVel!=0)
 {
   slopeYPrev=y
   for(y=y;y>=slopeYPrev-maxSlope;y-=1)
@@ -956,7 +956,7 @@ else
 
 // moves the character, and balances out the effects caused by other processes
 // keep this condition the same
-if maxSlope*abs(xVel)>0 and platformCharacterIs(ON_GROUND)
+if (maxSlope*abs(xVel)>0 and platformCharacterIs(ON_GROUND))
 {
   // we need to check if we should dampen out the speed as the character runs on upward slopes
   xPrev=x
@@ -987,12 +987,12 @@ else
 }
 // move the character downhill if possible
 // we need to multiply maxDownSlope by the absolute value of xVel since the character normally runs at an xVel larger than 1
-if not colBot and maxDownSlope>0 and xVelInteger!=0 and platformCharacterIs(ON_GROUND)
+if (not colBot and maxDownSlope>0 and xVelInteger!=0 and platformCharacterIs(ON_GROUND))
 {
   //the character is floating just above the slope, so move the character down
   upYPrev=y
   for(y=y;y<=upYPrev+maxDownSlope;y+=1)
-    if colBot             // we hit a solid below
+    if (colBot)             // we hit a solid below
     {
       upYPrev=y           // I know that this doesn't seem to make sense, because of the name of the variable, but it all works out correctly after we break out of this loop
       break

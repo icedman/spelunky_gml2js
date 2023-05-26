@@ -183,7 +183,7 @@ if (levelLoaded)
         {
             oPlayer1.x = x + 8;
             oPlayer1.y = y + 8;
-            break;
+            // break;
         }
     }
 

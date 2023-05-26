@@ -12,10 +12,10 @@ Event: oCharacter collides with oGoomba
 Action: if platformCharacterIs(ON_GROUND) instance_destroy()
 */
 
-if (argument0=ON_GROUND) and (state=RUNNING or state=STANDING or state=DUCKING or state=LOOKING_UP)
+if ((argument0==ON_GROUND) and (state==RUNNING or state==STANDING or state==DUCKING or state==LOOKING_UP))
   return 1
-if (argument0=IN_AIR) and (state=JUMPING or state=FALLING)
+if ((argument0==IN_AIR) and (state==JUMPING or state==FALLING))
   return 1
-if (argument0=ON_LADDER) and (state=CLIMBING)
+if ((argument0==ON_LADDER) and (state==CLIMBING))
   return 1
 return 0

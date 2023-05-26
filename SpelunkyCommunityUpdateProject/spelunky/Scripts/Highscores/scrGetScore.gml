@@ -36,8 +36,8 @@ if scoreFile
         if file_text_eof(scoreFile)
         {
             file_text_close(scoreFile)
-            if myScore == 8 return global.tunnel1Max+1
-            else if myScore == 9 return global.tunnel2Max+1
+            if (myScore == 8) return global.tunnel1Max+1
+            else if (myScore == 9) return global.tunnel2Max+1
             else return 0
         }
         i += 1
@@ -48,7 +48,7 @@ if scoreFile
 }
 else
 {
-    if myScore == 8 return global.tunnel1Max+1 // default 'new game' values
-    else if myScore == 9 return global.tunnel2Max+1
+    if (myScore == 8) return global.tunnel1Max+1 // default 'new game' values
+    else if (myScore == 9) return global.tunnel2Max+1
     else return 0
 }

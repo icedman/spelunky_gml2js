@@ -14,101 +14,93 @@ more precise calculations inside of the engine.
 0: x distance to move
 1: y distance to move
 */
-mtXPrev=x
-mtYPrev=y
+mtXPrev = x;
+mtYPrev = y;
 //change the decimal arguments to integer variables with relation to time
-xVelFrac=frac(abs(arguments[0]))
-yVelFrac=frac(abs(arguments[1]))
-xVelInteger=0
-yVelInteger=0
-if (xVelFrac!=0)
-if ( round(1/xVelFrac)!=0)
-         xVelInteger=(oGame.time % round(1/xVelFrac)=0)
-if (yVelFrac!=0)
-if ( round(1/yVelFrac)!=0)
-         yVelInteger=(oGame.time % round(1/yVelFrac)=0)
-xVelInteger+=floor(abs(arguments[0]))
-yVelInteger+=floor(abs(arguments[1]))
-if (arguments[0]<0)
-    xVelInteger*=-1
-if (arguments[1]<0)
-    yVelInteger*=-1
-xVelInteger=round(xVelInteger)
-yVelInteger=round(yVelInteger)
+xVelFrac = frac(abs(arguments[0]));
+yVelFrac = frac(abs(arguments[1]));
+xVelInteger = 0;
+yVelInteger = 0;
+if (xVelFrac != 0)
+  if (round(1 / xVelFrac) != 0)
+    xVelInteger = oGame.time % round(1 / xVelFrac) == 0;
+if (yVelFrac != 0)
+  if (round(1 / yVelFrac) != 0)
+    yVelInteger = oGame.time % round(1 / yVelFrac) == 0;
+xVelInteger += floor(abs(arguments[0]));
+yVelInteger += floor(abs(arguments[1]));
+if (arguments[0] < 0) xVelInteger *= -1;
+if (arguments[1] < 0) yVelInteger *= -1;
+xVelInteger = round(xVelInteger);
+yVelInteger = round(yVelInteger);
 //object is moving to the right
-if (xVelInteger>0)
-  for(x=x;x<mtXPrev+xVelInteger;x+=1)
-  {
-    solidId=getIdCollisionRight(1)
+if (xVelInteger > 0)
+  for (x = x; x < mtXPrev + xVelInteger; x += 1) {
+    solidId = getIdCollisionRight(1);
     //if there is a collision with a solid
-    if (solidId>0)
-    {
-      if (object_get_parent(solidId.object_index)=oMoveableSolid && ) canPushMoveableSolids()
-      {
+    if (solidId > 0) {
+      if (
+        object_get_parent(solidId.object_index) == oMoveableSolid &&
+        canPushMoveableSolids()
+      ) {
         //we must move the moveable solid, unless there is another solid (moveable || non-moveable) in it's way
-[instances_of(solidId)].forEach(($) => { with($)
-
-        {
-          if (place_meeting(x+1,y,oSolid)      //there will be a collision!)
-          {
-            break
+        [instances_of(solidId)].forEach(($) => {
+          with ($) {
+            if (place_meeting(x + 1, y, oSolid)) {
+              //there will be a collision!
+              x = mtxPrev + xVelInteger;
+              //break
+            } else {
+              x += 1; //we're free to move the moveable solid
+              if (!SS_IsSoundPlaying(global.sndPush)) playSound(global.sndPush);
+            }
           }
-          else
-          {
-            x += 1;             //we're free to move the moveable solid
-            if (!SS_IsSoundPlaying(global.sndPush)) playSound(global.sndPush);
-          }
-}})
-
-      }
-      else
-        break
-    }    
+        });
+      } else x = mtxPrev + xVelInteger;
+      //break
+    }
   }
 //object is moving to the left
-if (xVelInteger<0)
-  for(x=x;x>mtXPrev+xVelInteger;x-=1)
-  {
-    solidId=getIdCollisionLeft(1)
+if (xVelInteger < 0)
+  for (x = x; x > mtXPrev + xVelInteger; x -= 1) {
+    solidId = getIdCollisionLeft(1);
     //if there is a collision with a solid
-    if (solidId>0)
-    {
-      if (object_get_parent(solidId.object_index)=oMoveableSolid && ) canPushMoveableSolids()
-      {
+    if (solidId > 0) {
+      if (
+        object_get_parent(solidId.object_index) == oMoveableSolid &&
+        canPushMoveableSolids()
+      ) {
         //we must move the moveable solid, unless there is another solid (moveable || non-moveable) in it's way
-[instances_of(solidId)].forEach(($) => { with($)
-
-        {
-          if (place_meeting(x-1,y,oSolid)      //there will be a collision!)
-          {
-            break
+        [instances_of(solidId)].forEach(($) => {
+          with ($) {
+            if (place_meeting(x - 1, y, oSolid)) {
+              //there will be a collision!
+              x = mtXPrev + xVelInteger;
+              //break
+            } else {
+              x -= 1; //we're free to move the moveable solid
+              if (!SS_IsSoundPlaying(global.sndPush)) playSound(global.sndPush);
+            }
           }
-          else
-          {
-            x-=1             //we're free to move the moveable solid
-            if (!SS_IsSoundPlaying(global.sndPush)) playSound(global.sndPush);
-          }
-}})
-
-      }
-      else
-        break
-    } 
-  }  
+        });
+      } else x = mtXPrev + xVelInteger;
+      //break
+    }
+  }
 //object is moving down
-if (yVelInteger>0)
-  for(y=y;y<mtYPrev+yVelInteger;y+=1)
-  {
-if ( isCollisionBottom(1))
-      break
-if ( canLandOnPlatforms())
-      if (isCollisionPlatform()=0 && isCollisionPlatformBottom(1) && ) kDown=0
-        break
+if (yVelInteger > 0)
+  for (y = y; y < mtYPrev + yVelInteger; y += 1) {
+    if (isCollisionBottom(1)) break;
+    if (canLandOnPlatforms())
+      if (
+        isCollisionPlatform() == 0 &&
+        isCollisionPlatformBottom(1) &&
+        kDown == 0
+      )
+        break;
   }
 //object is moving up
-if (yVelInteger<0)
-  for(y=y;y>mtYPrev+yVelInteger;y-=1)
-  {
-if ( isCollisionTop(1))
-      break
+if (yVelInteger < 0)
+  for (y = y; y > mtYPrev + yVelInteger; y -= 1) {
+    if (isCollisionTop(1)) break;
   }

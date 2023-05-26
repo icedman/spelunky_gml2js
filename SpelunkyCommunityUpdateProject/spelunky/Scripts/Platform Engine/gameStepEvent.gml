@@ -44,10 +44,10 @@ with oMovingSolid
   yVelInteger=0
   if xVelFrac!=0
     if round(1/xVelFrac)!=0
-       xVelInteger=(oGame.time mod round(1/xVelFrac)=0)
+       xVelInteger=(oGame.time mod round(1/xVelFrac)==0)
   if yVelFrac!=0
     if round(1/yVelFrac)!=0
-      yVelInteger=(oGame.time mod round(1/yVelFrac)=0)
+      yVelInteger=(oGame.time mod round(1/yVelFrac)==0)
   xVelInteger+=floor(abs(xVel))
   yVelInteger+=floor(abs(yVel))
   if xVel<0
@@ -79,19 +79,24 @@ with oMovingSolid
       {
         for(i=0;i<oGame.players_length;i+=1)
         {
-          if(viscidTop and isCollisionCharacterTop(1,oGame.players[i]) and ((oGame.players[i]).viscidMovementOk=1 or (oGame.players[i]).viscidMovementOk=2))
+          if(viscidTop and isCollisionCharacterTop(1,oGame.players[i]) and ((oGame.players[i]).viscidMovementOk==1 or (oGame.players[i]).viscidMovementOk==2))
           {
+            // TODO - verify
             with oGame.players[i]
-              if isCollisionRight(1)=0
+            {
+              if (isCollisionRight(1)==0)
               {
                 x+=1
                 viscidMovementOk=2
               }
+            }
           }
-          else if isCollisionCharacterRight(1,oGame.players[i])
+          else if (isCollisionCharacterRight(1,oGame.players[i]))
           {
             with oGame.players[i]
+            {
               collision=isCollisionRight(1)
+            }
             if oGame.players[i].collision
             {
               breakNow = 1
@@ -112,19 +117,24 @@ with oMovingSolid
       {
         for(i=0;i<oGame.players_length;i+=1)
         {
-          if viscidTop and isCollisionCharacterTop(1,oGame.players[i]) and (oGame.players[i].viscidMovementOk=1 or oGame.players[i].viscidMovementOk=2)
+          if (viscidTop and isCollisionCharacterTop(1,oGame.players[i]) and (oGame.players[i].viscidMovementOk==1 or oGame.players[i].viscidMovementOk==2))
           {
+            // TODO
             with oGame.players[i]
-              if isCollisionLeft(1)=0
+            {
+              if (isCollisionLeft(1)==0)
               {
                 x-=1
                 viscidMovementOk=2
               }
+            }
           }
-          else if isCollisionCharacterLeft(1,oGame.players[i])
+          else if (isCollisionCharacterLeft(1,oGame.players[i]))
           {
             with oGame.players[i]
+            {
               collision=isCollisionLeft(1)
+            }
             if oGame.players[i].collision
             {
               breakNow = 1
@@ -145,20 +155,24 @@ with oMovingSolid
       {
         for(i=0;i<oGame.players_length;i+=1)
         {
-          if viscidTop and isCollisionCharacterTop(2,oGame.players[i])
+          if (viscidTop and isCollisionCharacterTop(2,oGame.players[i]))
           {
             //since we do not want to include the solid that is pulling the character down,
             //we must alter the position of the solid to get around this dilemma
             y+=5
             with oGame.players[i]
-              if isCollisionBottom(1)=0
+            {
+              if (isCollisionBottom(1)==0)
                 y+=1
+            }
             y-=5
           }
-          else if isCollisionCharacterBottom(1,oGame.players[i])
+          else if (isCollisionCharacterBottom(1,oGame.players[i]))
           {
             with oGame.players[i]
+            {
               collision=isCollisionBottom(1)
+            }
             if oGame.players[i].collision
             {
               breakNow = 1
@@ -269,4 +283,6 @@ with oMoveableSolid
             */
         }
     }
-}}
+}
+
+}

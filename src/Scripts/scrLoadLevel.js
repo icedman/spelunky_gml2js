@@ -23,188 +23,165 @@
 
 if (global.customLevel) levelName = global.nextCustomLevel;
 
-if (global.testLevel != "") file = file_text_open_read("levels/test.tmp");
-else file = file_text_open_read("levels/" + string_lower(levelName)+".lvl");
-if (file)
-{
-    window_set_cursor(cr_none);
-[instances_of(oMenu)].orEach(($) => { with($)
- { instance_destroy(); }
-})
-    instance_activate_object(oPageUp);
-[instances_of(oPageUp)].orEach(($) => { with($)
- { instance_destroy(); }
-})
-    instance_activate_object(oPageDown);
-[instances_of(oPageDown)].orEach(($) => { with($)
- { instance_destroy(); }
-})
-    global.customLevel = true;
-    levelLoaded = true;
-    status = 1;
+if (global.testLevel != '') file = file_text_open_read('levels/test.tmp');
+else file = file_text_open_read('levels/' + string_lower(levelName) + '.lvl');
+if (file) {
+  window_set_cursor(cr_none);
+  [instances_of(oMenu)].orEach(($) => {
+    with ($) {
+      instance_destroy();
+    }
+  });
+  instance_activate_object(oPageUp);
+  [instances_of(oPageUp)].orEach(($) => {
+    with ($) {
+      instance_destroy();
+    }
+  });
+  instance_activate_object(oPageDown);
+  [instances_of(oPageDown)].orEach(($) => {
+    with ($) {
+      instance_destroy();
+    }
+  });
+  global.customLevel = true;
+  levelLoaded = true;
+  status = 1;
 
-    for (j = 0; j < 32; j += 1)
-    {
-        str = file_text_read_string(file);
-        for (i = 0; i < 40; i += 1)
-        {
-            levelArray[i, j] = string_char_at(str, i+1);
-//scrCreateTileObj(levelArray[i, j], 16+i*16, 16+j*16);
-        }
-        file_text_readln(file);
+  for (j = 0; j < 32; j += 1) {
+    str = file_text_read_string(file);
+    for (i = 0; i < 40; i += 1) {
+      levelArray[(i, j)] = string_char_at(str, i + 1);
+      //scrCreateTileObj(levelArray[i, j], 16+i*16, 16+j*16);
     }
-    author = file_text_read_string(file);
     file_text_readln(file);
-    music = file_text_read_string(file);
+  }
+  author = file_text_read_string(file);
+  file_text_readln(file);
+  music = file_text_read_string(file);
+  file_text_readln(file);
+  lifeStart = file_text_read_string(file);
+  file_text_readln(file);
+  bombStart = file_text_read_string(file);
+  file_text_readln(file);
+  ropeStart = file_text_read_string(file);
+  file_text_readln(file);
+  nextLevel = file_text_read_string(file);
+  exitNamesNum = 0;
+  if (!file_text_eof(file)) {
     file_text_readln(file);
-    lifeStart = file_text_read_string(file);
+    exitNamesNum = real(file_text_read_string(file));
+  }
+  if (exitNamesNum > 0) {
     file_text_readln(file);
-    bombStart = file_text_read_string(file);
-    file_text_readln(file);
-    ropeStart = file_text_read_string(file);
-    file_text_readln(file);
-    nextLevel = file_text_read_string(file);
-    exitNamesNum = 0;
-    if (!file_text_eof(file))
-    {
-        file_text_readln(file);
-        exitNamesNum = real(file_text_read_string(file));
+    for (i = 0; i < exitNamesNum; i += 1) {
+      exitNames[i] = file_text_read_string(file);
+      if (i < exitNamesNum - 1) file_text_readln(file);
     }
-    if (exitNamesNum > 0)
-    {
-        file_text_readln(file);
-        for (i = 0; i < exitNamesNum; i += 1)
-        {
-            exitNames[i] = file_text_read_string(file);
-if (i < exitNamesNum-1) file_text_readln(file);
-        }
+  }
+  signNamesNum = 0;
+  if (!file_text_eof(file)) {
+    file_text_readln(file);
+    signNamesNum = real(file_text_read_string(file));
+  }
+  if (signNamesNum > 0) {
+    file_text_readln(file);
+    for (i = 0; i < signNamesNum; i += 1) {
+      signNames[i] = file_text_read_string(file);
+      if (i < signNamesNum - 1) file_text_readln(file);
     }
-    signNamesNum = 0;
-    if (!file_text_eof(file))
-    {
-        file_text_readln(file);
-        signNamesNum = real(file_text_read_string(file));
-    }
-    if (signNamesNum > 0)
-    {
-        file_text_readln(file);
-        for (i = 0; i < signNamesNum; i += 1)
-        {
-            signNames[i] = file_text_read_string(file);
-if (i < signNamesNum-1) file_text_readln(file);
-        }
-    }
-    file_text_close(file);
+  }
+  file_text_close(file);
 
-    // build level
-    exitNamesID = 0;
-    signNamesID = 0;
-    for (j = 0; j < 32; j += 1)
-    {
-        for (i = 0; i < 40; i += 1)
-        {
-            scrCreateTileObj(levelArray[i, j], 16+i*16, 16+j*16);
-            obj = 0;
-            if (levelArray[i, j] == "X")
-{
-                obj = instance_position(16+i*16, 16+j*16, oExit);
-                if (obj)
-                {
-                	global.exitX = obj.x;
-                	global.exitY = obj.y;
-                }
-            }
-            else if (levelArray[i, j] == "@")
-{
-                obj = instance_position(16+i*16, 16+j*16, oEntrance);
-            }
-            if (obj)
-            {
-                if (exitNamesNum > 0)
-                {
-                    obj.leadsTo = exitNames[exitNamesID];
-                    if (exitNamesID < exitNamesNum-1) exitNamesID += 1;
-                }
-            }
-            
-            obj = 0;
-            if (levelArray[i, j] == "I")
-{
-                obj = instance_position(16+i*16, 16+j*16, oMsgSign);
-            }
-            if (obj)
-            {
-                if (signNamesNum > 0)
-                {
-                    obj.message = signNames[signNamesID];
-                    if (signNamesID < signNamesNum-1) signNamesID += 1;
-                }
-            }
+  // build level
+  exitNamesID = 0;
+  signNamesID = 0;
+  for (j = 0; j < 32; j += 1) {
+    for (i = 0; i < 40; i += 1) {
+      scrCreateTileObj(levelArray[(i, j)], 16 + i * 16, 16 + j * 16);
+      obj = 0;
+      if (levelArray[(i, j)] == 'X') {
+        obj = instance_position(16 + i * 16, 16 + j * 16, oExit);
+        if (obj) {
+          global.exitX = obj.x;
+          global.exitY = obj.y;
         }
-    }
+      } else if (levelArray[(i, j)] == '@') {
+        obj = instance_position(16 + i * 16, 16 + j * 16, oEntrance);
+      }
+      if (obj) {
+        if (exitNamesNum > 0) {
+          obj.leadsTo = exitNames[exitNamesID];
+          if (exitNamesID < exitNamesNum - 1) exitNamesID += 1;
+        }
+      }
 
-    global.customLevelName = levelName;
-    global.customLevelAuthor = author;
-    global.nextCustomLevel = nextLevel;
-    if (arguments[0] != -1)
-    {
-        global.plife = floor(real(lifeStart));
-        if (global.plife < 1) global.plife = 1;
-        if (global.plife > 99) global.plife = 99;
-        global.bombs = floor(real(bombStart));
-        if (global.bombs < 0) global.bombs = 0;
-        if (global.bombs > 99) global.bombs = 99;
-        global.rope = floor(real(ropeStart));
-        if (global.rope < 0) global.rope = 0;
-        if (global.rope > 99) global.rope = 99;
+      obj = 0;
+      if (levelArray[(i, j)] == 'I') {
+        obj = instance_position(16 + i * 16, 16 + j * 16, oMsgSign);
+      }
+      if (obj) {
+        if (signNamesNum > 0) {
+          obj.message = signNames[signNamesID];
+          if (signNamesID < signNamesNum - 1) signNamesID += 1;
+        }
+      }
     }
-    if (global.customLevel) blackOut = false;
-}
-else
-{
-    if (global.customLevel && ! instance_exists(oLoadButton))
-    {
-        room_goto(rEndCustom);
-    }
-    msg = "NO SUCH LEVEL EXISTS!"
-    msgTimer = 60;
+  }
+
+  global.customLevelName = levelName;
+  global.customLevelAuthor = author;
+  global.nextCustomLevel = nextLevel;
+  if (arguments[0] != -1) {
+    global.plife = floor(real(lifeStart));
+    if (global.plife < 1) global.plife = 1;
+    if (global.plife > 99) global.plife = 99;
+    global.bombs = floor(real(bombStart));
+    if (global.bombs < 0) global.bombs = 0;
+    if (global.bombs > 99) global.bombs = 99;
+    global.rope = floor(real(ropeStart));
+    if (global.rope < 0) global.rope = 0;
+    if (global.rope > 99) global.rope = 99;
+  }
+  if (global.customLevel) blackOut = false;
+} else {
+  if (global.customLevel && !instance_exists(oLoadButton)) {
+    room_goto(rEndCustom);
+  }
+  msg = 'NO SUCH LEVEL EXISTS!';
+  msgTimer = 60;
 }
 
-if (levelLoaded)
-{
-    obj = instance_nearest(x, y, oEntrance);
+if (levelLoaded) {
+  obj = instance_nearest(x, y, oEntrance);
 
-    if (instance_exists(obj))
-    {
-        instance_create(obj.x+8, obj.y+8, oPlayer1);
+  if (instance_exists(obj)) {
+    instance_create(obj.x + 8, obj.y + 8, oPlayer1);
+  } else {
+    instance_create(24, 24, oPlayer1);
+  }
+
+  [instances_of(oEntrance)].forEach(($) => {
+    with ($) {
+      if (leadsTo == global.prevCustomLevel) {
+        oPlayer1.x = x + 8;
+        oPlayer1.y = y + 8;
+        // break;
+      }
     }
-    else
-    {
-        instance_create(24, 24, oPlayer1);
+  });
+
+  global.prevCustomLevel = levelName;
+  instance_create(x + 16, y, oLevel);
+  instance_create(x + 16, y, oGame);
+  oScreen.enabled = true;
+
+  if (gamepad.attackPressed) gamepad.attackPressed = false;
+  if (gamepad.startPressed) gamepad.startPressed = false;
+
+  [instances_of(oLoadButton)].orEach(($) => {
+    with ($) {
+      instance_destroy();
     }
-    
-[instances_of(oEntrance)].forEach(($) => { with($)
-
-    {
-        if (leadsTo == global.prevCustomLevel)
-        {
-            oPlayer1.x = x + 8;
-            oPlayer1.y = y + 8;
-            break;
-        }
-}})
-
-
-    global.prevCustomLevel = levelName;
-    instance_create(x+16, y, oLevel);
-    instance_create(x+16, y, oGame);
-    oScreen.enabled = true;
-
-    if (gamepad.attackPressed) gamepad.attackPressed = false;
-    if (gamepad.startPressed) gamepad.startPressed = false;
-
-[instances_of(oLoadButton)].orEach(($) => { with($)
- { instance_destroy(); }
-})
+  });
 }
-

@@ -20,36 +20,32 @@ argument0:
 10 = Mini games
 */
 
-if (arguments[0] < 1 || arguments[0] > 10 ) return 0
+if (arguments[0] < 1 || arguments[0] > 10) return 0;
 
 var myScore;
-myScore = arguments[0]
+myScore = arguments[0];
 
-scoreFile = file_text_open_read(global.dataFile)
-if (scoreFile)
-{
-    var i, scoreValue;
-    i = 1
-    while (i != myScore)
-    {
-        file_text_readln(scoreFile)
-        if (file_text_eof(scoreFile))
-        {
-            file_text_close(scoreFile)
-if ( myScore == 8 return global.tunnel1Max+1)
-            else if myScore == 9 return global.tunnel2Max+1
-            else return 0
-        }
-        i += 1
+scoreFile = file_text_open_read(global.dataFile);
+if (scoreFile) {
+  var i, scoreValue;
+  i = 1;
+  while (i != myScore) {
+    file_text_readln(scoreFile);
+    if (file_text_eof(scoreFile)) {
+      file_text_close(scoreFile);
+      if (myScore == 8) return global.tunnel1Max + 1;
+      else if (myScore == 9) return global.tunnel2Max + 1;
+      else return 0;
     }
-    scoreValue = real(scrXORScores(file_text_read_string(scoreFile),real(arguments[0])));
-    file_text_close(scoreFile)
-    return scoreValue;
+    i += 1;
+  }
+  scoreValue = real(
+    scrXORScores(file_text_read_string(scoreFile), real(arguments[0]))
+  );
+  file_text_close(scoreFile);
+  return scoreValue;
+} else {
+  if (myScore == 8) return global.tunnel1Max + 1; // default 'new game' values
+  else if (myScore == 9) return global.tunnel2Max + 1;
+  else return 0;
 }
-else
-{
-if ( myScore == 8 return global.tunnel1Max+1 // default 'new game' values)
-    else if myScore == 9 return global.tunnel2Max+1
-    else return 0
-}
-
