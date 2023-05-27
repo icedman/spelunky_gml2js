@@ -5,7 +5,7 @@ function oEmeraldBig_COLLISION_oGhost($) {
   }
 }
 
-function oEmeraldBig_ALARM($) {
+function oEmeraldBig_ALARM_0($) {
   with ($) {
     canCollect = true;
   }
@@ -13,7 +13,9 @@ function oEmeraldBig_ALARM($) {
 
 function oEmeraldBig_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Big Emerald';
     makeActive();
@@ -24,6 +26,4 @@ function oEmeraldBig_CREATE($) {
   }
 }
 
-class oEmeraldBig extends oTreasure {
-  // variables
-}
+class oEmeraldBig extends oTreasure {}

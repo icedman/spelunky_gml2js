@@ -40,13 +40,17 @@ function oLockedChest_COLLISION_oKey($) {
 
 function oLockedChest_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
   }
 }
 
 function oLockedChest_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Locked Chest';
     makeActive();
@@ -59,6 +63,4 @@ function oLockedChest_CREATE($) {
   }
 }
 
-class oLockedChest extends oItem {
-  // variables
-}
+class oLockedChest extends oItem {}

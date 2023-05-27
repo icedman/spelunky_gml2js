@@ -422,7 +422,9 @@ if ((x &gt; view_xview[0]-8 and x &lt; view_xview[0]+view_wview[0]+8 and
 
 function oEnemy_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     hp = 1;
     type = 'None';
@@ -474,5 +476,7 @@ function oEnemy_CREATE($) {
 }
 
 class oEnemy extends oDrawnSprite {
-  // variables
+  myGravWater;
+  shaking;
+  spikes;
 }

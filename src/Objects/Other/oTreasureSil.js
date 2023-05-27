@@ -23,6 +23,4 @@ function oTreasureSil_CREATE($) {
   }
 }
 
-class oTreasureSil extends oDrawnSprite {
-  // variables
-}
+class oTreasureSil extends oDrawnSprite {}

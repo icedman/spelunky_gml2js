@@ -1,10 +1,11 @@
-//
-// scrGetRoomY(y)
-//
-// Returns the vertical room number of a room given the y-coord.
-//
+function scrGetRoomY() {
+  //
+  // scrGetRoomY(y)
+  //
+  // Returns the vertical room number of a room given the y-coord.
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -21,12 +22,13 @@
     
 ***********************************************************************************/
 
-ty = arguments[0];
+  ty = arguments[0];
 
-if (ty < 128 + 16) return 0;
-else if (ty >= 128 + 16 && ty < 256 + 16) return 1;
-else if (ty >= 256 + 16 && ty < 384 + 16) return 2;
-else if (ty >= 384 + 16 && ty < 512 + 16) return 3;
-else if (ty >= 512 + 16) return 4;
+  if (ty < 128 + 16) return 0;
+  else if (ty >= 128 + 16 && ty < 256 + 16) return 1;
+  else if (ty >= 256 + 16 && ty < 384 + 16) return 2;
+  else if (ty >= 384 + 16 && ty < 512 + 16) return 3;
+  else if (ty >= 512 + 16) return 4;
 
-return -1;
+  return -1;
+}

@@ -1,6 +1,8 @@
 function oShopkeeper2_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oShopkeeper_STEP($);
+    } catch (err) {}
 
     if (status == DEAD) {
       if (deathTimer > 0) deathTimer -= 1;
@@ -14,7 +16,9 @@ function oShopkeeper2_STEP($) {
 
 function oShopkeeper2_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oShopkeeper_CREATE($);
+    } catch (err) {}
 
     status = ATTACK;
     hasGun = false;
@@ -22,6 +26,4 @@ function oShopkeeper2_CREATE($) {
   }
 }
 
-class oShopkeeper2 extends oShopkeeper {
-  // variables
-}
+class oShopkeeper2 extends oShopkeeper {}

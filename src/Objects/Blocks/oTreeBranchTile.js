@@ -15,12 +15,12 @@ if (not collision_point(x-16, y, oTreeTile, 0, 0) and not collision_point(x+16, 
 
 function oTreeBranchTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oPlatform_CREATE($);
+    } catch (err) {}
 
     type = 'Tree Branch';
   }
 }
 
-class oTreeBranchTile extends oPlatform {
-  // variables
-}
+class oTreeBranchTile extends oPlatform {}

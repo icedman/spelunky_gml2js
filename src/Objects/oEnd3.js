@@ -1,26 +1,43 @@
-function oEnd3_ALARM($) {
+function oEnd3_ALARM_11($) {
   with ($) {
     drawStatus = 4;
     playSound(global.sndThump);
     global.money += 50000;
     moneyCount += 50000;
     alarm[3] = 50;
+  }
+}
 
+function oEnd3_ALARM_3($) {
+  with ($) {
     drawStatus = 5;
     alarm[4] = 10;
+  }
+}
 
+function oEnd3_ALARM_1($) {
+  with ($) {
     drawStatus = 2;
     alarm[2] = 50;
+  }
+}
 
+function oEnd3_ALARM_5($) {
+  with ($) {
     drawStatus = 7;
+  }
+}
 
+function oEnd3_ALARM_4($) {
+  with ($) {
     drawStatus = 6;
     alarm[5] = 10;
+  }
+}
 
+function oEnd3_ALARM_2($) {
+  with ($) {
     drawStatus = 3;
-
-    instance_create(144, -32, oPDummy2);
-    playSound(global.sndPFall);
   }
 }
 
@@ -130,6 +147,13 @@ function oEnd3_STEP($) {
   }
 }
 
+function oEnd3_ALARM_0($) {
+  with ($) {
+    instance_create(144, -32, oPDummy2);
+    playSound(global.sndPFall);
+  }
+}
+
 function oEnd3_CREATE($) {
   with ($) {
     drawStatus = 0;
@@ -149,6 +173,4 @@ function oEnd3_CREATE($) {
   }
 }
 
-class oEnd3 extends oObject {
-  // variables
-}
+class oEnd3 extends oObject {}

@@ -24,7 +24,7 @@ function oArrowTrapRight_DESTROY($) {
   }
 }
 
-function oArrowTrapRight_ALARM($) {
+function oArrowTrapRight_ALARM_1($) {
   with ($) {
     if (!isRoom('rLevelEditor')) {
       // calculate how far to motion detect
@@ -43,9 +43,6 @@ function oArrowTrapRight_ALARM($) {
       obj.image_xscale = ceil((xAct - 16) / 16);
       obj.trapID = id;
     }
-
-    arrow = instance_create(x + 16, y + 4, oArrow);
-    arrow.xVel = 5;
   }
 }
 
@@ -97,9 +94,18 @@ function oArrowTrapRight_STEP($) {
   }
 }
 
+function oArrowTrapRight_ALARM_0($) {
+  with ($) {
+    arrow = instance_create(x + 16, y + 4, oArrow);
+    arrow.xVel = 5;
+  }
+}
+
 function oArrowTrapRight_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     type = 'Arrow Trap';
     facing = 1;
@@ -111,6 +117,4 @@ function oArrowTrapRight_CREATE($) {
   }
 }
 
-class oArrowTrapRight extends oSolid {
-  // variables
-}
+class oArrowTrapRight extends oSolid {}

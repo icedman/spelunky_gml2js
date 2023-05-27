@@ -1,6 +1,8 @@
 function oTeleporter_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Teleporter';
     makeActive();
@@ -10,6 +12,4 @@ function oTeleporter_CREATE($) {
   }
 }
 
-class oTeleporter extends oItem {
-  // variables
-}
+class oTeleporter extends oItem {}

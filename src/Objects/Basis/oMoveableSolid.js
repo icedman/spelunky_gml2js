@@ -1,6 +1,8 @@
 function oMoveableSolid_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     xVel = 0;
     yVel = 0;
@@ -8,6 +10,4 @@ function oMoveableSolid_CREATE($) {
   }
 }
 
-class oMoveableSolid extends oSolid {
-  // variables
-}
+class oMoveableSolid extends oSolid {}

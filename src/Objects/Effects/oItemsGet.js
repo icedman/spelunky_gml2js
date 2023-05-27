@@ -6,7 +6,7 @@ function oItemsGet_STEP($) {
   }
 }
 
-function oItemsGet_ALARM($) {
+function oItemsGet_ALARM_0($) {
   with ($) {
     instance_destroy();
   }
@@ -14,7 +14,9 @@ function oItemsGet_ALARM($) {
 
 function oItemsGet_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = 0.1;
     yAcc = 0.1;
@@ -23,6 +25,4 @@ function oItemsGet_CREATE($) {
   }
 }
 
-class oItemsGet extends oDrawnSprite {
-  // variables
-}
+class oItemsGet extends oDrawnSprite {}

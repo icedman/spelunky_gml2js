@@ -1,8 +1,9 @@
-//
-// scrGetJoy(key)
-//
+function scrGetJoy() {
+  //
+  // scrGetJoy(key)
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -19,45 +20,46 @@
     
 ***********************************************************************************/
 
-switch (arguments[0]) {
-  case 1: {
-    return 'B1';
-    break;
-  }
-  case 2: {
-    return 'B2';
-    break;
-  }
-  case 3: {
-    return 'B3';
-    break;
-  }
-  case 4: {
-    return 'B4';
-    break;
-  }
-  case 5: {
-    return 'B5';
-    break;
-  }
-  case 6: {
-    return 'B6';
-    break;
-  }
-  case 7: {
-    return 'B7';
-    break;
-  }
-  case 8: {
-    return 'B8';
-    break;
-  }
-  case 9: {
-    return 'B9';
-    break;
-  }
-  default: {
-    return 'B' + string(arguments[0]);
-    break;
+  switch (arguments[0]) {
+    case 1: {
+      return 'B1';
+      break;
+    }
+    case 2: {
+      return 'B2';
+      break;
+    }
+    case 3: {
+      return 'B3';
+      break;
+    }
+    case 4: {
+      return 'B4';
+      break;
+    }
+    case 5: {
+      return 'B5';
+      break;
+    }
+    case 6: {
+      return 'B6';
+      break;
+    }
+    case 7: {
+      return 'B7';
+      break;
+    }
+    case 8: {
+      return 'B8';
+      break;
+    }
+    case 9: {
+      return 'B9';
+      break;
+    }
+    default: {
+      return 'B' + string(arguments[0]);
+      break;
+    }
   }
 }

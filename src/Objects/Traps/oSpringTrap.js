@@ -108,5 +108,5 @@ function oSpringTrap_CREATE($) {
 }
 
 class oSpringTrap extends oObject {
-  // variables
+  SPRUNG;
 }

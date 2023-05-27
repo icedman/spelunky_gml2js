@@ -1,6 +1,8 @@
 function oRock_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Rock';
     makeActive();
@@ -8,6 +10,4 @@ function oRock_CREATE($) {
   }
 }
 
-class oRock extends oItem {
-  // variables
-}
+class oRock extends oItem {}

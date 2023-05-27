@@ -1,4 +1,4 @@
-function oRuby_ALARM($) {
+function oRuby_ALARM_0($) {
   with ($) {
     canCollect = true;
   }
@@ -6,7 +6,9 @@ function oRuby_ALARM($) {
 
 function oRuby_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Ruby';
     makeActive();
@@ -17,6 +19,4 @@ function oRuby_CREATE($) {
   }
 }
 
-class oRuby extends oTreasure {
-  // variables
-}
+class oRuby extends oTreasure {}

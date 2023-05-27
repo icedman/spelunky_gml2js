@@ -1,3 +1,1 @@
-class oFrill extends oDrawnSprite {
-  // variables
-}
+class oFrill extends oDrawnSprite {}

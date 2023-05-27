@@ -31,7 +31,9 @@ function oThwompTrap_STEP($) {
 
 function oThwompTrap_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(0, 0, 16, 16);
@@ -52,6 +54,4 @@ function oThwompTrap_CREATE($) {
   }
 }
 
-class oThwompTrap extends oMovingSolid {
-  // variables
-}
+class oThwompTrap extends oMovingSolid {}

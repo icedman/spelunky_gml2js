@@ -1,3 +1,1 @@
-class oSpectaclesTile extends oDrawnSprite {
-  // variables
-}
+class oSpectaclesTile extends oDrawnSprite {}

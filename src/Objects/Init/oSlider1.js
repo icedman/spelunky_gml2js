@@ -31,6 +31,4 @@ function oSlider1_CREATE($) {
   }
 }
 
-class oSlider1 extends oObject {
-  // variables
-}
+class oSlider1 extends oObject {}

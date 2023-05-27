@@ -1,6 +1,8 @@
 function oGoldBars_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Gold Bars';
     makeActive();
@@ -11,6 +13,4 @@ function oGoldBars_CREATE($) {
   }
 }
 
-class oGoldBars extends oTreasure {
-  // variables
-}
+class oGoldBars extends oTreasure {}

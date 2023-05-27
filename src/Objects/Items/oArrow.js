@@ -1,4 +1,4 @@
-function oArrow_ALARM($) {
+function oArrow_ALARM_1($) {
   with ($) {
     instance_create(x, y, oExplosion);
     if (global.graphicsHigh) {
@@ -9,7 +9,11 @@ function oArrow_ALARM($) {
       if (oCharacter) oCharacter.holdItem = 0;
     }
     instance_destroy();
+  }
+}
 
+function oArrow_ALARM_2($) {
+  with ($) {
     safe = false;
   }
 }
@@ -32,7 +36,9 @@ function oArrow_DRAW($) {
 
 function oArrow_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (xVel > 0 && yVel < 0) {
       direction = radtodeg(arctan(-yVel / xVel));
@@ -70,7 +76,9 @@ function oArrow_STEP($) {
 
 function oArrow_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Arrow';
     makeActive();
@@ -79,6 +87,4 @@ function oArrow_CREATE($) {
   }
 }
 
-class oArrow extends oItem {
-  // variables
-}
+class oArrow extends oItem {}

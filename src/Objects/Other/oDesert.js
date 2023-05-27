@@ -1,11 +1,11 @@
 function oDesert_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     if (room_get_name(room) == 'rIntro') sprite_index = sDesertNight;
   }
 }
 
-class oDesert extends oSolid {
-  // variables
-}
+class oDesert extends oSolid {}

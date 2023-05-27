@@ -1,6 +1,8 @@
 function oPaste_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Paste';
     makeActive();
@@ -12,6 +14,4 @@ function oPaste_CREATE($) {
   }
 }
 
-class oPaste extends oItem {
-  // variables
-}
+class oPaste extends oItem {}

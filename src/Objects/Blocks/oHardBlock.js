@@ -1,11 +1,11 @@
 function oHardBlock_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     invincible = true;
   }
 }
 
-class oHardBlock extends oSolid {
-  // variables
-}
+class oHardBlock extends oSolid {}

@@ -1,3 +1,1 @@
-class oRoom extends oObject {
-  // variables
-}
+class oRoom extends oObject {}

@@ -24,6 +24,4 @@ function oPDummy6_CREATE($) {
   }
 }
 
-class oPDummy6 extends oDrawnSprite {
-  // variables
-}
+class oPDummy6 extends oDrawnSprite {}

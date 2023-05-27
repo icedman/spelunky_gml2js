@@ -190,5 +190,13 @@ function oLoadLevel_CREATE($) {
 }
 
 class oLoadLevel extends oObject {
-  // variables
+  blackOut;
+  levelList = [];
+  levelLoaded;
+  msg;
+  msgTimer;
+  numLevels;
+  numPages;
+  page;
+  tempFile;
 }

@@ -1,6 +1,8 @@
 function oBrickSmooth_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_DESTROY($);
+    } catch (err) {}
 
     if (!cleanDeath && !global.cleanSolids) {
       rubble = instance_create(
@@ -25,6 +27,4 @@ function oBrickSmooth_DESTROY($) {
   }
 }
 
-class oBrickSmooth extends oSolid {
-  // variables
-}
+class oBrickSmooth extends oSolid {}

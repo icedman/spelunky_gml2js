@@ -12,6 +12,4 @@ function oOKButton_MOUSE($) {
   }
 }
 
-class oOKButton extends oObject {
-  // variables
-}
+class oOKButton extends oObject {}

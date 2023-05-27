@@ -1,15 +1,8 @@
-function oPDummy3_ALARM($) {
+function oPDummy3_ALARM_2($) {
   with ($) {
     if (climbSndToggle) playSound(global.sndClimb1);
     else playSound(global.sndClimb2);
     climbSndToggle = !climbSndToggle;
-
-    rope = instance_create(x + 16, y, oRopeThrow);
-    rope.alling = true;
-    rope.armed = true;
-    alarm[1] = 50;
-    status = 3;
-    playSound(global.sndThrow);
   }
 }
 
@@ -61,9 +54,22 @@ function oPDummy3_STEP($) {
   }
 }
 
+function oPDummy3_ALARM_0($) {
+  with ($) {
+    rope = instance_create(x + 16, y, oRopeThrow);
+    rope.alling = true;
+    rope.armed = true;
+    alarm[1] = 50;
+    status = 3;
+    playSound(global.sndThrow);
+  }
+}
+
 function oPDummy3_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     // dummy actor for intro
 
@@ -83,5 +89,5 @@ function oPDummy3_CREATE($) {
 }
 
 class oPDummy3 extends oDrawnSprite {
-  // variables
+  ROPEDROP;
 }

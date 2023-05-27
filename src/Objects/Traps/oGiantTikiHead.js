@@ -1,4 +1,4 @@
-function oGiantTikiHead_ALARM($) {
+function oGiantTikiHead_ALARM_0($) {
   with ($) {
     sprite_index = sGTHHole;
     instance_create(x, y, oBoulder);
@@ -6,6 +6,4 @@ function oGiantTikiHead_ALARM($) {
   }
 }
 
-class oGiantTikiHead extends oDrawnSprite {
-  // variables
-}
+class oGiantTikiHead extends oDrawnSprite {}

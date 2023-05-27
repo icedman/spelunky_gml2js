@@ -1,6 +1,8 @@
 function oBrick_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_DESTROY($);
+    } catch (err) {}
 
     if (!cleanDeath && !global.cleanSolids) {
       instance_create(
@@ -54,7 +56,9 @@ function oBrick_DESTROY($) {
 
 function oBrick_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     n = rand(1, 10);
 
@@ -78,6 +82,4 @@ function oBrick_CREATE($) {
   }
 }
 
-class oBrick extends oSolid {
-  // variables
-}
+class oBrick extends oSolid {}

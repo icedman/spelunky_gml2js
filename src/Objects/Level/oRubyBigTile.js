@@ -1,3 +1,1 @@
-class oRubyBigTile extends oDrawnSprite {
-  // variables
-}
+class oRubyBigTile extends oDrawnSprite {}

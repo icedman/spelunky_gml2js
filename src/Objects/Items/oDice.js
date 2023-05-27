@@ -236,7 +236,9 @@ function oDice_STEP($) {
 
 function oDice_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Dice';
     makeActive();
@@ -249,5 +251,5 @@ function oDice_CREATE($) {
 }
 
 class oDice extends oItem {
-  // variables
+  rolling;
 }

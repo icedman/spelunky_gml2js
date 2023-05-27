@@ -28,6 +28,4 @@ function oCaravan_CREATE($) {
   }
 }
 
-class oCaravan extends oObject {
-  // variables
-}
+class oCaravan extends oObject {}

@@ -16,6 +16,4 @@ function oBGEnd3_CREATE($) {
   }
 }
 
-class oBGEnd3 extends oObject {
-  // variables
-}
+class oBGEnd3 extends oObject {}

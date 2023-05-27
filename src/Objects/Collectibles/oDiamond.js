@@ -1,4 +1,4 @@
-function oDiamond_ALARM($) {
+function oDiamond_ALARM_0($) {
   with ($) {
     canCollect = true;
   }
@@ -6,7 +6,9 @@ function oDiamond_ALARM($) {
 
 function oDiamond_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Diamond';
     makeActive();
@@ -17,6 +19,4 @@ function oDiamond_CREATE($) {
   }
 }
 
-class oDiamond extends oTreasure {
-  // variables
-}
+class oDiamond extends oTreasure {}

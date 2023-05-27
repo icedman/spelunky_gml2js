@@ -7,6 +7,4 @@ function oTempleFake_STEP($) {
   }
 }
 
-class oTempleFake extends oObject {
-  // variables
-}
+class oTempleFake extends oObject {}

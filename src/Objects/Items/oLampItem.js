@@ -1,6 +1,8 @@
 function oLampItem_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Lamp';
     makeActive();
@@ -11,6 +13,4 @@ function oLampItem_CREATE($) {
   }
 }
 
-class oLampItem extends oItem {
-  // variables
-}
+class oLampItem extends oItem {}

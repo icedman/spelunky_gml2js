@@ -4,6 +4,4 @@ function oBackdrop_CREATE($) {
   }
 }
 
-class oBackdrop extends oObject {
-  // variables
-}
+class oBackdrop extends oObject {}

@@ -140,5 +140,6 @@ function oMsgSign_CREATE($) {
 }
 
 class oMsgSign extends oDrawnSprite {
-  // variables
+  message;
+  message2;
 }

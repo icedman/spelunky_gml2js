@@ -187,7 +187,9 @@ function oJaws_STEP($) {
 
 function oJaws_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     type = 'MegaMouth';
     image_speed = 0.5;
@@ -224,5 +226,5 @@ function oJaws_CREATE($) {
 }
 
 class oJaws extends oEnemy {
-  // variables
+  turn;
 }

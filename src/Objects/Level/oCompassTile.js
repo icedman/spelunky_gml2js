@@ -1,3 +1,1 @@
-class oCompassTile extends oDrawnSprite {
-  // variables
-}
+class oCompassTile extends oDrawnSprite {}

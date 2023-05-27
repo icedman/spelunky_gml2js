@@ -21,6 +21,4 @@ function oHintHand_CREATE($) {
   }
 }
 
-class oHintHand extends oObject {
-  // variables
-}
+class oHintHand extends oObject {}

@@ -22,13 +22,13 @@ function oRopeBurn_STEP($) {
 
 function oRopeBurn_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = -1;
     image_speed = 0.8;
   }
 }
 
-class oRopeBurn extends oDrawnSprite {
-  // variables
-}
+class oRopeBurn extends oDrawnSprite {}

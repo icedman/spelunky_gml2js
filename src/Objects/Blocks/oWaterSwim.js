@@ -6,6 +6,4 @@ function oWaterSwim_DESTROY($) {
   }
 }
 
-class oWaterSwim extends oWater {
-  // variables
-}
+class oWaterSwim extends oWater {}

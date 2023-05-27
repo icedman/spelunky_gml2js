@@ -1,10 +1,11 @@
-//
-// scrGetRoomX(x)
-//
-// Returns the horizontal room number of a room given the x-coord.
-//
+function scrGetRoomX() {
+  //
+  // scrGetRoomX(x)
+  //
+  // Returns the horizontal room number of a room given the x-coord.
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -21,11 +22,12 @@
     
 ***********************************************************************************/
 
-tx = arguments[0];
+  tx = arguments[0];
 
-if (tx < 160 + 16) return 0;
-else if (tx >= 160 + 16 && tx < 320 + 16) return 1;
-else if (tx >= 320 + 16 && tx < 480 + 16) return 2;
-else if (tx >= 480 + 16) return 3;
+  if (tx < 160 + 16) return 0;
+  else if (tx >= 160 + 16 && tx < 320 + 16) return 1;
+  else if (tx >= 320 + 16 && tx < 480 + 16) return 2;
+  else if (tx >= 480 + 16) return 3;
 
-return -1;
+  return -1;
+}

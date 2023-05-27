@@ -1,6 +1,8 @@
 function oJar_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_DESTROY($);
+    } catch (err) {}
 
     if (breakPieces) {
       playSound(global.sndBreak);
@@ -235,7 +237,9 @@ function oJar_STEP($) {
 
 function oJar_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Jar';
     makeActive();
@@ -249,6 +253,4 @@ function oJar_CREATE($) {
   }
 }
 
-class oJar extends oItem {
-  // variables
-}
+class oJar extends oItem {}

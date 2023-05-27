@@ -1,6 +1,8 @@
 function oGoldChunk_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Gold Chunk';
     makeActive();
@@ -11,6 +13,4 @@ function oGoldChunk_CREATE($) {
   }
 }
 
-class oGoldChunk extends oTreasure {
-  // variables
-}
+class oGoldChunk extends oTreasure {}

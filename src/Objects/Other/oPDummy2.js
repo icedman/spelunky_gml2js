@@ -1,9 +1,13 @@
-function oPDummy2_ALARM($) {
+function oPDummy2_ALARM_1($) {
   with ($) {
     if (global.isDamsel) sprite_index = sDamselLeft;
     else if (global.isTunnelMan) sprite_index = sTunnelLeft;
     else sprite_index = sStandLeft;
+  }
+}
 
+function oPDummy2_ALARM_2($) {
+  with ($) {
     [instances_of(oEnd3)].forEach(($) => {
       with ($) {
         drawStatus = 1;
@@ -11,9 +15,6 @@ function oPDummy2_ALARM($) {
         playMusic(global.musVictory, false);
       }
     });
-
-    instance_create(160, -32, oBigTreasure);
-    playSound(global.sndTFall);
   }
 }
 
@@ -186,9 +187,18 @@ function oPDummy2_STEP($) {
   }
 }
 
+function oPDummy2_ALARM_0($) {
+  with ($) {
+    instance_create(160, -32, oBigTreasure);
+    playSound(global.sndTFall);
+  }
+}
+
 function oPDummy2_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     // dummy actor for ending (falling from volcano)
 
@@ -212,5 +222,5 @@ function oPDummy2_CREATE($) {
 }
 
 class oPDummy2 extends oDrawnSprite {
-  // variables
+  GETUP;
 }

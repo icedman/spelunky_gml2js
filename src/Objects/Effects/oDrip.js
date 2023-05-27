@@ -1,11 +1,11 @@
 function oDrip_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oRubblePiece_CREATE($);
+    } catch (err) {}
 
     type = 'Drip';
   }
 }
 
-class oDrip extends oRubblePiece {
-  // variables
-}
+class oDrip extends oRubblePiece {}

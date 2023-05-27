@@ -1,6 +1,8 @@
 function oShotgun_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (held) {
       if (oPlayer1.acing == 18) sprite_index = sShotgunLeft;
@@ -11,7 +13,9 @@ function oShotgun_STEP($) {
 
 function oShotgun_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Shotgun';
     makeActive();
@@ -21,6 +25,4 @@ function oShotgun_CREATE($) {
   }
 }
 
-class oShotgun extends oItem {
-  // variables
-}
+class oShotgun extends oItem {}

@@ -144,7 +144,7 @@ if (status != DEAD and hp &lt; 1)
   }
 }
 
-function oMagmaMan_ALARM($) {
+function oMagmaMan_ALARM_0($) {
   with ($) {
     whipped = false;
   }
@@ -173,7 +173,9 @@ function oMagmaMan_COLLISION_oEnemy($) {
 
 function oMagmaMan_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, sprite_width - 2, sprite_height);
@@ -209,6 +211,4 @@ function oMagmaMan_CREATE($) {
   }
 }
 
-class oMagmaMan extends oEnemy {
-  // variables
-}
+class oMagmaMan extends oEnemy {}

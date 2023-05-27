@@ -1,4 +1,4 @@
-function oStarsRoom_ALARM($) {
+function oStarsRoom_ALARM_11($) {
   with ($) {
     if (!oPlayer1.dead && rand(1, 100) < kills) {
       n = rand(0, 3);
@@ -6,30 +6,26 @@ function oStarsRoom_ALARM($) {
     }
 
     if (!oPlayer1.dead) alarm[11] = 20;
+  }
+}
 
+function oStarsRoom_ALARM_3($) {
+  with ($) {
     drawStatus = 3;
+  }
+}
 
+function oStarsRoom_ALARM_1($) {
+  with ($) {
     drawStatus = 1;
     alarm[2] = 30;
+  }
+}
 
+function oStarsRoom_ALARM_2($) {
+  with ($) {
     drawStatus = 2;
     alarm[3] = 10;
-
-    if (!oPlayer1.dead) {
-      n = rand(0, 3);
-      instance_create(32 + n * 80, 0, oShopkeeper2);
-      if (kills >= 40) {
-        alarm[0] = 100;
-      } else if (kills >= 30) {
-        alarm[0] = 125;
-      } else if (kills >= 20) {
-        alarm[0] = 150;
-      } else if (kills >= 10) {
-        alarm[0] = 175;
-      } else alarm[0] = 200;
-    }
-
-    if (global.music) startMusic();
   }
 }
 
@@ -58,6 +54,24 @@ function oStarsRoom_DRAW($) {
   }
 }
 
+function oStarsRoom_ALARM_0($) {
+  with ($) {
+    if (!oPlayer1.dead) {
+      n = rand(0, 3);
+      instance_create(32 + n * 80, 0, oShopkeeper2);
+      if (kills >= 40) {
+        alarm[0] = 100;
+      } else if (kills >= 30) {
+        alarm[0] = 125;
+      } else if (kills >= 20) {
+        alarm[0] = 150;
+      } else if (kills >= 10) {
+        alarm[0] = 175;
+      } else alarm[0] = 200;
+    }
+  }
+}
+
 function oStarsRoom_CREATE($) {
   with ($) {
     global.plife = 8;
@@ -80,6 +94,12 @@ function oStarsRoom_CREATE($) {
   }
 }
 
+function oStarsRoom_ALARM_10($) {
+  with ($) {
+    if (global.music) startMusic();
+  }
+}
+
 class oStarsRoom extends oObject {
-  // variables
+  kills;
 }

@@ -1,3 +1,1 @@
-class oXMoon extends oXStart {
-  // variables
-}
+class oXMoon extends oXStart {}

@@ -76,6 +76,4 @@ function oWeb_COLLISION_oTreasure($) {
   }
 }
 
-class oWeb extends oObject {
-  // variables
-}
+class oWeb extends oObject {}

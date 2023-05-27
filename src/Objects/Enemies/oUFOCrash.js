@@ -14,7 +14,7 @@ function oUFOCrash_STEP($) {
   }
 }
 
-function oUFOCrash_ALARM($) {
+function oUFOCrash_ALARM_0($) {
   with ($) {
     if (rand(1, 2) == 1)
       instance_create(x + rand(0, 16), y + rand(0, 16), oFlameTrail);
@@ -39,6 +39,4 @@ function oUFOCrash_CREATE($) {
   }
 }
 
-class oUFOCrash extends oObject {
-  // variables
-}
+class oUFOCrash extends oObject {}

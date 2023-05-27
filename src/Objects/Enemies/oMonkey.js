@@ -54,7 +54,9 @@ function oMonkey_COLLISION_oItem($) {
 
 function oMonkey_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -312,7 +314,9 @@ function oMonkey_STEP($) {
 
 function oMonkey_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     type = 'Monkey';
     makeActive();
@@ -363,5 +367,10 @@ function oMonkey_CREATE($) {
 }
 
 class oMonkey extends oEnemy {
-  // variables
+  CLIMB;
+  GRAB;
+  grabX;
+  grabY;
+  int;
+  throwCounter;
 }

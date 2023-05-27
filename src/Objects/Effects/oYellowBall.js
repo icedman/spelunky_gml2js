@@ -1,9 +1,7 @@
-function oYellowBall_ALARM($) {
+function oYellowBall_ALARM_1($) {
   with ($) {
     if (instance_number(oYellowTrail) < 12) instance_create(x, y, oYellowTrail);
     alarm[1] = 4;
-
-    invincible = false;
   }
 }
 
@@ -83,9 +81,17 @@ function oYellowBall_STEP($) {
   }
 }
 
+function oYellowBall_ALARM_0($) {
+  with ($) {
+    invincible = false;
+  }
+}
+
 function oYellowBall_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = -1 * (random(3) + 4);
     xVel = rand(2, 5);
@@ -96,6 +102,4 @@ function oYellowBall_CREATE($) {
   }
 }
 
-class oYellowBall extends oDrawnSprite {
-  // variables
-}
+class oYellowBall extends oDrawnSprite {}

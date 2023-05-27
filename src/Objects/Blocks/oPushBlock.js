@@ -50,7 +50,9 @@ function oPushBlock_OTHER($) {
 
 function oPushBlock_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oMoveableSolid_STEP($);
+    } catch (err) {}
 
     if (
       collision_point(x + 8, y + 14, oLava, 0, 0) &&
@@ -66,7 +68,9 @@ function oPushBlock_STEP($) {
 
 function oPushBlock_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oMoveableSolid_CREATE($);
+    } catch (err) {}
 
     invincible = false;
     setCollisionBounds(0, 0, 16, 16);
@@ -75,6 +79,4 @@ function oPushBlock_CREATE($) {
   }
 }
 
-class oPushBlock extends oMoveableSolid {
-  // variables
-}
+class oPushBlock extends oMoveableSolid {}

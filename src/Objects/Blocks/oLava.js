@@ -40,5 +40,7 @@ function oLava_CREATE($) {
 }
 
 class oLava extends oWater {
-  // variables
+  spurt;
+  spurtCounter;
+  spurtTime;
 }

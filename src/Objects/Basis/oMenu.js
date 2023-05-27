@@ -1,3 +1,1 @@
-class oMenu extends oObject {
-  // variables
-}
+class oMenu extends oObject {}

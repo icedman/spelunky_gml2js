@@ -1,3 +1,1 @@
-class oXChange extends oXStart {
-  // variables
-}
+class oXChange extends oXStart {}

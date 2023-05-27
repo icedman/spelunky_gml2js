@@ -36,7 +36,9 @@ function oBoulder_COLLISION_oSolid($) {
 
 function oBoulder_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_STEP($);
+    } catch (err) {}
 
     if (true) {
       colLeft = false;
@@ -129,7 +131,9 @@ function oBoulder_STEP($) {
 
 function oBoulder_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(-14, -16, 14, 16);
@@ -143,6 +147,4 @@ function oBoulder_CREATE($) {
   }
 }
 
-class oBoulder extends oMovingSolid {
-  // variables
-}
+class oBoulder extends oMovingSolid {}

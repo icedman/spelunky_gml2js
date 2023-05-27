@@ -6,12 +6,12 @@ function oMoaiInside_COLLISION_oCharacter($) {
 
 function oMoaiInside_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     invincible = true;
   }
 }
 
-class oMoaiInside extends oSolid {
-  // variables
-}
+class oMoaiInside extends oSolid {}

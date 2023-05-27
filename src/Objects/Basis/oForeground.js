@@ -4,6 +4,4 @@ function oForeground_CREATE($) {
   }
 }
 
-class oForeground extends oObject {
-  // variables
-}
+class oForeground extends oObject {}

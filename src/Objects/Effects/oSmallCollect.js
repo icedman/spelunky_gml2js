@@ -6,7 +6,7 @@ function oSmallCollect_STEP($) {
   }
 }
 
-function oSmallCollect_ALARM($) {
+function oSmallCollect_ALARM_0($) {
   with ($) {
     action_kill_object();
   }
@@ -14,13 +14,13 @@ function oSmallCollect_ALARM($) {
 
 function oSmallCollect_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     alarm[0] = 30;
     image_speed = 0.4;
   }
 }
 
-class oSmallCollect extends oDrawnSprite {
-  // variables
-}
+class oSmallCollect extends oDrawnSprite {}

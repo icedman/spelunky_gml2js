@@ -1,6 +1,8 @@
 function oAlienShip_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_DESTROY($);
+    } catch (err) {}
 
     instance_create(
       x + 8 + rand(0, 8) - rand(0 - 8),
@@ -22,10 +24,10 @@ function oAlienShip_DESTROY($) {
 
 function oAlienShip_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
   }
 }
 
-class oAlienShip extends oSolid {
-  // variables
-}
+class oAlienShip extends oSolid {}

@@ -1,3 +1,1 @@
-class oXEnd extends oXStart {
-  // variables
-}
+class oXEnd extends oXStart {}

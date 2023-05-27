@@ -6,7 +6,7 @@ function oBomb_DESTROY($) {
   }
 }
 
-function oBomb_ALARM($) {
+function oBomb_ALARM_1($) {
   with ($) {
     instance_create(x, y, oExplosion);
     if (global.graphicsHigh) {
@@ -17,15 +17,14 @@ function oBomb_ALARM($) {
       if (oCharacter) oCharacter.holdItem = 0;
     }
     instance_destroy();
-
-    image_speed = 1;
-    alarm[1] = 40;
   }
 }
 
 function oBomb_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (!instance_exists(enemyID)) {
       enemyID = 0;
@@ -36,7 +35,9 @@ function oBomb_STEP($) {
       y = enemyID.y - stickyYDiff;
     }
 
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if ((sprite_index = sBombArmed)) depth = 49;
     if (sticky) depth = 1;
@@ -57,9 +58,18 @@ function oBomb_STEP($) {
   }
 }
 
+function oBomb_ALARM_0($) {
+  with ($) {
+    image_speed = 1;
+    alarm[1] = 40;
+  }
+}
+
 function oBomb_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Bomb';
     makeActive();
@@ -67,6 +77,4 @@ function oBomb_CREATE($) {
   }
 }
 
-class oBomb extends oItem {
-  // variables
-}
+class oBomb extends oItem {}

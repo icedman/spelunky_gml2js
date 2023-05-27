@@ -1,11 +1,11 @@
 function oMegaMouthTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'Mega Mouth';
   }
 }
 
-class oMegaMouthTile extends oDrawnSprite {
-  // variables
-}
+class oMegaMouthTile extends oDrawnSprite {}

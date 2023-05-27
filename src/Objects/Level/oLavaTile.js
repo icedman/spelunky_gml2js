@@ -1,3 +1,1 @@
-class oLavaTile extends oDrawnSprite {
-  // variables
-}
+class oLavaTile extends oDrawnSprite {}

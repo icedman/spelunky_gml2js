@@ -1,3 +1,1 @@
-class oXShortcut5 extends oXStart {
-  // variables
-}
+class oXShortcut5 extends oXStart {}

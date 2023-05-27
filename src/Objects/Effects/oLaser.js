@@ -54,7 +54,7 @@ function oLaser_STEP($) {
   }
 }
 
-function oLaser_ALARM($) {
+function oLaser_ALARM_0($) {
   with ($) {
     instance_create(x, y, oLaserTrail);
     alarm[0] = 1;
@@ -77,7 +77,9 @@ function oLaser_COLLISION_oEnemy($) {
 
 function oLaser_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = 0;
     yAcc = 0.6;
@@ -100,6 +102,4 @@ function oLaser_COLLISION_oDamsel($) {
   }
 }
 
-class oLaser extends oDrawnSprite {
-  // variables
-}
+class oLaser extends oDrawnSprite {}

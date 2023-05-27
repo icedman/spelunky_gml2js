@@ -1,3 +1,1 @@
-class oGoldBarsTile extends oDrawnSprite {
-  // variables
-}
+class oGoldBarsTile extends oDrawnSprite {}

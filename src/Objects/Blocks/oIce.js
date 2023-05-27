@@ -19,13 +19,13 @@ function oIce_DESTROY($) {
 
 function oIce_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     if (rand(1, 80) == 1) instance_create(x, y, oFrozenCaveman);
     // else if (rand(1,800) == 1) scrGenerateItem(x+8, y+8, 2);
   }
 }
 
-class oIce extends oSolid {
-  // variables
-}
+class oIce extends oSolid {}

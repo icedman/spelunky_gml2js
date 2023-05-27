@@ -13,7 +13,7 @@ function oVolcanoFlame_STEP($) {
   }
 }
 
-function oVolcanoFlame_ALARM($) {
+function oVolcanoFlame_ALARM_0($) {
   with ($) {
     //instance_create(x, y, oFlameTrail);
     //alarm[0] = 2;
@@ -33,6 +33,4 @@ function oVolcanoFlame_CREATE($) {
   }
 }
 
-class oVolcanoFlame extends oObject {
-  // variables
-}
+class oVolcanoFlame extends oObject {}

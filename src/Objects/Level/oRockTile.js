@@ -1,3 +1,1 @@
-class oRockTile extends oDrawnSprite {
-  // variables
-}
+class oRockTile extends oDrawnSprite {}

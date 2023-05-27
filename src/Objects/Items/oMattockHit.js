@@ -78,7 +78,9 @@ function oMattockHit_STEP($) {
 
 function oMattockHit_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oWhip_CREATE($);
+    } catch (err) {}
 
     type = 'Mattock';
     image_speed = 0.5;
@@ -87,6 +89,4 @@ function oMattockHit_CREATE($) {
   }
 }
 
-class oMattockHit extends oWhip {
-  // variables
-}
+class oMattockHit extends oWhip {}

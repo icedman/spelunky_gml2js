@@ -92,7 +92,9 @@ function oAlienEject_STEP($) {
 
 function oAlienEject_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(-4, -4, 4, 4);
@@ -118,5 +120,7 @@ function oAlienEject_CREATE($) {
 }
 
 class oAlienEject extends oDrawnSprite {
-  // variables
+  DEPLOY;
+  EJECT;
+  FLOAT;
 }

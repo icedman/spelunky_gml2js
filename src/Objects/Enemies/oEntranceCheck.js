@@ -18,6 +18,4 @@ function oEntranceCheck_STEP($) {
   }
 }
 
-class oEntranceCheck extends oObject {
-  // variables
-}
+class oEntranceCheck extends oObject {}

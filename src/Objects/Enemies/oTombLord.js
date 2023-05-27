@@ -81,7 +81,9 @@ function oTombLord_OTHER($) {
 
 function oTombLord_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 36 &&
@@ -199,7 +201,9 @@ function oTombLord_STEP($) {
 
 function oTombLord_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(6, 0, 26, 32);
@@ -237,6 +241,4 @@ function oTombLord_CREATE($) {
   }
 }
 
-class oTombLord extends oEnemy {
-  // variables
-}
+class oTombLord extends oEnemy {}

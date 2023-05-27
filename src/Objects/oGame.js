@@ -1,16 +1,17 @@
-function oGame_ALARM($) {
+function oGame_ALARM_1($) {
   with ($) {
     if (drawStatus < 3) drawStatus = 3;
+  }
+}
 
+function oGame_ALARM_2($) {
+  with ($) {
     global.udjatBlink = !global.udjatBlink;
 
     if (global.hasUdjatEye) {
       if (global.udjatBlink) playSound(global.sndBlink1);
       else playSound(global.sndBlink2);
     }
-
-    if (drawStatus < 3) drawStatus = 2;
-    alarm[1] = 50;
   }
 }
 
@@ -377,6 +378,13 @@ function oGame_KEYPRESS($) {
   }
 }
 
+function oGame_ALARM_0($) {
+  with ($) {
+    if (drawStatus < 3) drawStatus = 2;
+    alarm[1] = 50;
+  }
+}
+
 function oGame_CREATE($) {
   with ($) {
     drawStatus = 0;
@@ -408,5 +416,17 @@ function oGame_CREATE($) {
 }
 
 class oGame extends oObject {
-  // variables
+  altar;
+  damsel;
+  debug;
+  dm;
+  genBombShop;
+  genClothingShop;
+  genRareShop;
+  genSupplyShop;
+  genWeaponShop;
+  idol;
+  moveableSolidGrav;
+  room_speed;
+  time;
 }

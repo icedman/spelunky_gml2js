@@ -1,6 +1,8 @@
 function oSceptre_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (held) {
       if (oPlayer1.acing == 18) sprite_index = sSceptreLeft;
@@ -11,7 +13,9 @@ function oSceptre_STEP($) {
 
 function oSceptre_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Sceptre';
     makeActive();
@@ -21,6 +25,4 @@ function oSceptre_CREATE($) {
   }
 }
 
-class oSceptre extends oItem {
-  // variables
-}
+class oSceptre extends oItem {}

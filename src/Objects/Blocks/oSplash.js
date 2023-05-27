@@ -6,12 +6,12 @@ function oSplash_OTHER($) {
 
 function oSplash_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.6;
   }
 }
 
-class oSplash extends oDrawnSprite {
-  // variables
-}
+class oSplash extends oDrawnSprite {}

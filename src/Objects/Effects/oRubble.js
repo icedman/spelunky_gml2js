@@ -1,3 +1,1 @@
-class oRubble extends oRubblePiece {
-  // variables
-}
+class oRubble extends oRubblePiece {}

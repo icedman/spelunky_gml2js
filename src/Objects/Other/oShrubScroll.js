@@ -13,6 +13,4 @@ function oShrubScroll_CREATE($) {
   }
 }
 
-class oShrubScroll extends oDrawnSprite {
-  // variables
-}
+class oShrubScroll extends oDrawnSprite {}

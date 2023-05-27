@@ -1,3 +1,1 @@
-class oSpringTrapTile extends oDrawnSprite {
-  // variables
-}
+class oSpringTrapTile extends oDrawnSprite {}

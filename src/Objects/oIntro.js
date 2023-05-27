@@ -1,23 +1,17 @@
-function oIntro_ALARM($) {
+function oIntro_ALARM_11($) {
   with ($) {
     if (!fadeIn) {
       if (drawStatus >= 0) drawStatus = 1;
       alarm[10] = 80;
     }
+  }
+}
 
+function oIntro_ALARM_8($) {
+  with ($) {
     if (!fadeIn) {
       drawStatus = -1;
       fadeIn = true;
-    }
-
-    if (!fadeIn) {
-      if (drawStatus >= 0) drawStatus = 3;
-      alarm[8] = 80;
-    }
-
-    if (!fadeIn) {
-      if (drawStatus >= 0) drawStatus = 2;
-      alarm[9] = 80;
     }
   }
 }
@@ -90,6 +84,15 @@ function oIntro_STEP($) {
         global.gameStart = false;
         room_goto(rTitle);
       }
+    }
+  }
+}
+
+function oIntro_ALARM_9($) {
+  with ($) {
+    if (!fadeIn) {
+      if (drawStatus >= 0) drawStatus = 3;
+      alarm[8] = 80;
     }
   }
 }
@@ -213,6 +216,16 @@ function oIntro_CREATE($) {
   }
 }
 
+function oIntro_ALARM_10($) {
+  with ($) {
+    if (!fadeIn) {
+      if (drawStatus >= 0) drawStatus = 2;
+      alarm[9] = 80;
+    }
+  }
+}
+
 class oIntro extends oObject {
-  // variables
+  str1;
+  str3;
 }

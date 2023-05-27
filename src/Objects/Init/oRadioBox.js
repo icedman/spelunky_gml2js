@@ -39,6 +39,4 @@ function oRadioBox_CREATE($) {
   }
 }
 
-class oRadioBox extends oObject {
-  // variables
-}
+class oRadioBox extends oObject {}

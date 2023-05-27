@@ -37,7 +37,9 @@ function oDoor_STEP($) {
 
 function oDoor_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(1, 0, 15, 32);
@@ -58,6 +60,4 @@ function oDoor_CREATE($) {
   }
 }
 
-class oDoor extends oMovingSolid {
-  // variables
-}
+class oDoor extends oMovingSolid {}

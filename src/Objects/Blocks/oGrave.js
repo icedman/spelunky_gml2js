@@ -36,7 +36,9 @@ function oGrave_STEP($) {
 
 function oGrave_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     n = rand(1, 5);
     switch (n) {
@@ -64,6 +66,4 @@ function oGrave_CREATE($) {
   }
 }
 
-class oGrave extends oSolid {
-  // variables
-}
+class oGrave extends oSolid {}

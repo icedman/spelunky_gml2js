@@ -1,6 +1,8 @@
 function oFlare_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (instance_exists(oPlayer1)) distToPlayer = distance_to_object(oPlayer1);
 
@@ -22,7 +24,7 @@ function oFlare_STEP($) {
   }
 }
 
-function oFlare_ALARM($) {
+function oFlare_ALARM_0($) {
   with ($) {
     instance_create(
       x + rand(0, 3) - rand(0, 3),
@@ -35,7 +37,9 @@ function oFlare_ALARM($) {
 
 function oFlare_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.3;
 
@@ -54,5 +58,5 @@ function oFlare_CREATE($) {
 }
 
 class oFlare extends oItem {
-  // variables
+  distToPlayer;
 }

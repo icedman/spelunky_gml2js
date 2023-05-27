@@ -329,5 +329,12 @@ function oKeyConfig_CREATE($) {
 }
 
 class oKeyConfig extends oObject {
-  // variables
+  vk_alt;
+  vk_control;
+  vk_down;
+  vk_left;
+  vk_right;
+  vk_shift;
+  vk_space;
+  vk_up;
 }

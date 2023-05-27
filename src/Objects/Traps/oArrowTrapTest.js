@@ -167,5 +167,5 @@ function oArrowTrapTest_COLLISION_oTreasure($) {
 }
 
 class oArrowTrapTest extends oObject {
-  // variables
+  trapID;
 }

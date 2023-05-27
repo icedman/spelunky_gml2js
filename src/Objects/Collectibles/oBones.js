@@ -13,13 +13,13 @@ function oBones_STEP($) {
 
 function oBones_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = 0;
     yAcc = 0.2;
   }
 }
 
-class oBones extends oDrawnSprite {
-  // variables
-}
+class oBones extends oDrawnSprite {}

@@ -15,6 +15,4 @@ function oFrozenCaveman_STEP($) {
   }
 }
 
-class oFrozenCaveman extends oDrawnSprite {
-  // variables
-}
+class oFrozenCaveman extends oDrawnSprite {}

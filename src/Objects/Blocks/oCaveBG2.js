@@ -1,3 +1,1 @@
-class oCaveBG2 extends oObject {
-  // variables
-}
+class oCaveBG2 extends oObject {}

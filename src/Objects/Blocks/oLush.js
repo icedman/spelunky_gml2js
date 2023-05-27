@@ -1,6 +1,8 @@
 function oLush_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_DESTROY($);
+    } catch (err) {}
 
     if (!cleanDeath && !global.cleanSolids) {
       rubble = instance_create(
@@ -58,7 +60,9 @@ function oLush_DESTROY($) {
 
 function oLush_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     cleanDeath = false;
 
@@ -81,6 +85,4 @@ function oLush_CREATE($) {
   }
 }
 
-class oLush extends oSolid {
-  // variables
-}
+class oLush extends oSolid {}

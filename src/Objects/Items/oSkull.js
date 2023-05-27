@@ -1,6 +1,8 @@
 function oSkull_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_DESTROY($);
+    } catch (err) {}
 
     if (breakPieces) {
       playSound(global.sndBreak);
@@ -214,7 +216,9 @@ function oSkull_STEP($) {
 
 function oSkull_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Skull';
     makeActive();
@@ -227,6 +231,4 @@ function oSkull_CREATE($) {
   }
 }
 
-class oSkull extends oItem {
-  // variables
-}
+class oSkull extends oItem {}

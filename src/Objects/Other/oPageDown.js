@@ -30,6 +30,4 @@ function oPageDown_KEYPRESS($) {
   }
 }
 
-class oPageDown extends oObject {
-  // variables
-}
+class oPageDown extends oObject {}

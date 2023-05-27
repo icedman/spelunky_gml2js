@@ -16,6 +16,4 @@ function oEntrance_CREATE($) {
   }
 }
 
-class oEntrance extends oDrawnSprite {
-  // variables
-}
+class oEntrance extends oDrawnSprite {}

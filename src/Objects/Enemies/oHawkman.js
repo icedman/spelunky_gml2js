@@ -131,7 +131,9 @@ function oHawkman_OTHER($) {
 
 function oHawkman_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -323,7 +325,7 @@ function oHawkman_STEP($) {
   }
 }
 
-function oHawkman_ALARM($) {
+function oHawkman_ALARM_0($) {
   with ($) {
     whipped = false;
   }
@@ -331,7 +333,9 @@ function oHawkman_ALARM($) {
 
 function oHawkman_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, sprite_width - 2, sprite_height);
@@ -370,6 +374,4 @@ function oHawkman_CREATE($) {
   }
 }
 
-class oHawkman extends oEnemy {
-  // variables
-}
+class oHawkman extends oEnemy {}

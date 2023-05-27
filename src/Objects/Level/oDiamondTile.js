@@ -1,3 +1,1 @@
-class oDiamondTile extends oDrawnSprite {
-  // variables
-}
+class oDiamondTile extends oDrawnSprite {}

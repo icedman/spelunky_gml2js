@@ -1,6 +1,8 @@
 function oMitt_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Mitt';
     makeActive();
@@ -12,6 +14,4 @@ function oMitt_CREATE($) {
   }
 }
 
-class oMitt extends oItem {
-  // variables
-}
+class oMitt extends oItem {}

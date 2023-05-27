@@ -17,12 +17,12 @@ function oThinIce_STEP($) {
 
 function oThinIce_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     thickness = 60;
   }
 }
 
-class oThinIce extends oSolid {
-  // variables
-}
+class oThinIce extends oSolid {}

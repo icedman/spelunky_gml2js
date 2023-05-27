@@ -1,16 +1,15 @@
-function oEnd2_ALARM($) {
+function oEnd2_ALARM_1($) {
   with ($) {
     player = instance_create(240, 132, oTreasureSil);
     //player.xVel = -6;
     //player.yVel = -8;
+  }
+}
 
+function oEnd2_ALARM_2($) {
+  with ($) {
     instance_create(224 + rand(0, 48), 144 + rand(0, 8), oVolcanoFlame);
     alarm[2] = rand(10, 20);
-
-    player = instance_create(240, 132, oPlayerSil);
-    //player.xVel = -6;
-    //player.yVel = -8;
-    alarm[1] = 30;
   }
 }
 
@@ -30,6 +29,15 @@ function oEnd2_STEP($) {
   }
 }
 
+function oEnd2_ALARM_0($) {
+  with ($) {
+    player = instance_create(240, 132, oPlayerSil);
+    //player.xVel = -6;
+    //player.yVel = -8;
+    alarm[1] = 30;
+  }
+}
+
 function oEnd2_CREATE($) {
   with ($) {
     alarm[0] = 50;
@@ -37,6 +45,4 @@ function oEnd2_CREATE($) {
   }
 }
 
-class oEnd2 extends oObject {
-  // variables
-}
+class oEnd2 extends oObject {}

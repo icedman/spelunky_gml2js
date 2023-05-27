@@ -44,13 +44,13 @@ function oBlock_DESTROY($) {
 
 function oBlock_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     cleanDeath = false;
     if (global.cityOfGold) sprite_index = sGoldBlock;
   }
 }
 
-class oBlock extends oSolid {
-  // variables
-}
+class oBlock extends oSolid {}

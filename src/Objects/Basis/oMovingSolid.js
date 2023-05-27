@@ -1,11 +1,11 @@
 function oMovingSolid_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     invincible = false;
   }
 }
 
-class oMovingSolid extends oSolid {
-  // variables
-}
+class oMovingSolid extends oSolid {}

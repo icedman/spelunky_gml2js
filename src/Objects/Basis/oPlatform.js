@@ -1,3 +1,1 @@
-class oPlatform extends oDrawnSprite {
-  // variables
-}
+class oPlatform extends oDrawnSprite {}

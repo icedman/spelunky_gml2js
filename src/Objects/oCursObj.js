@@ -23,6 +23,4 @@ function oCursObj_CREATE($) {
   }
 }
 
-class oCursObj extends oObject {
-  // variables
-}
+class oCursObj extends oObject {}

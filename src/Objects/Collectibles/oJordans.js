@@ -1,6 +1,8 @@
 function oJordans_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Jordans';
     buyMessage = 'JORDANS FOR $50000!';
@@ -11,6 +13,4 @@ function oJordans_CREATE($) {
   }
 }
 
-class oJordans extends oItem {
-  // variables
-}
+class oJordans extends oItem {}

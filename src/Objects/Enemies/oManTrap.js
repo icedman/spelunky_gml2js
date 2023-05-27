@@ -147,7 +147,9 @@ function oManTrap_OTHER($) {
 
 function oManTrap_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -382,7 +384,9 @@ function oManTrap_COLLISION_oHawkman($) {
 
 function oManTrap_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, sprite_width - 2, sprite_height);
@@ -478,5 +482,8 @@ function oManTrap_COLLISION_oYeti($) {
 }
 
 class oManTrap extends oEnemy {
-  // variables
+  EATING;
+  SLEEPY;
+  ateShopkeeper;
+  bone;
 }

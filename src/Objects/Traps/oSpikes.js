@@ -1,11 +1,11 @@
 function oSpikes_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     invincible = false;
   }
 }
 
-class oSpikes extends oDrawnSprite {
-  // variables
-}
+class oSpikes extends oDrawnSprite {}

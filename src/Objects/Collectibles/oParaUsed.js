@@ -13,13 +13,13 @@ function oParaUsed_STEP($) {
 
 function oParaUsed_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = 0;
     yAcc = 0.2;
   }
 }
 
-class oParaUsed extends oDrawnSprite {
-  // variables
-}
+class oParaUsed extends oDrawnSprite {}

@@ -1,6 +1,8 @@
 function oParaPickup_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Parachute';
     makeActive();
@@ -11,6 +13,4 @@ function oParaPickup_CREATE($) {
   }
 }
 
-class oParaPickup extends oItem {
-  // variables
-}
+class oParaPickup extends oItem {}

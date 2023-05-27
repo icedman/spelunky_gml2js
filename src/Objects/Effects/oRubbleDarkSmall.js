@@ -4,6 +4,4 @@ function oRubbleDarkSmall_OTHER($) {
   }
 }
 
-class oRubbleDarkSmall extends oRubblePiece {
-  // variables
-}
+class oRubbleDarkSmall extends oRubblePiece {}

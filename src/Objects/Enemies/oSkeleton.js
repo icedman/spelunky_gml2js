@@ -1,6 +1,8 @@
 function oSkeleton_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -90,7 +92,9 @@ function oSkeleton_STEP($) {
 
 function oSkeleton_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, 14, 16);
@@ -126,6 +130,4 @@ function oSkeleton_CREATE($) {
   }
 }
 
-class oSkeleton extends oEnemy {
-  // variables
-}
+class oSkeleton extends oEnemy {}

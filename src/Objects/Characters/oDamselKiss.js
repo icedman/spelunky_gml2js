@@ -12,7 +12,9 @@ function oDamselKiss_OTHER($) {
 
 function oDamselKiss_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_STEP($);
+    } catch (err) {}
 
     if (
       (sprite_index == sDamselKissL || sprite_index == sPKissL) &&
@@ -26,7 +28,9 @@ function oDamselKiss_STEP($) {
 
 function oDamselKiss_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.5;
 
@@ -44,5 +48,5 @@ function oDamselKiss_CREATE($) {
 }
 
 class oDamselKiss extends oDrawnSprite {
-  // variables
+  kissed;
 }

@@ -1,4 +1,4 @@
-function oFireFrogBomb_ALARM($) {
+function oFireFrogBomb_ALARM_1($) {
   with ($) {
     instance_create(x, y, oExplosion);
     scrCreateBlood(x, y, 3);
@@ -15,7 +15,9 @@ function oFireFrogBomb_ALARM($) {
 
 function oFireFrogBomb_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (armed && instance_exists(oShopkeeper)) {
       if (
@@ -45,7 +47,9 @@ function oFireFrogBomb_STEP($) {
 
 function oFireFrogBomb_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Fire Frog Bomb';
     makeActive();
@@ -57,6 +61,4 @@ function oFireFrogBomb_CREATE($) {
   }
 }
 
-class oFireFrogBomb extends oItem {
-  // variables
-}
+class oFireFrogBomb extends oItem {}

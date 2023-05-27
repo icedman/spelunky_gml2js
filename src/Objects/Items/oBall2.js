@@ -1,6 +1,8 @@
 function oBall2_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (instance_exists(oPDummy)) {
       if (distance_to_object(oPDummy) >= 24) {
@@ -12,7 +14,9 @@ function oBall2_STEP($) {
 
 function oBall2_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Ball';
     makeActive();
@@ -22,6 +26,4 @@ function oBall2_CREATE($) {
   }
 }
 
-class oBall2 extends oItem {
-  // variables
-}
+class oBall2 extends oItem {}

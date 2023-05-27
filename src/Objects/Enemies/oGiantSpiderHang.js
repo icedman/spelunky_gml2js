@@ -57,7 +57,9 @@ function oGiantSpiderHang_STEP($) {
 
 function oGiantSpiderHang_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(0, 0, 32, 16);
@@ -87,6 +89,4 @@ function oGiantSpiderHang_CREATE($) {
   }
 }
 
-class oGiantSpiderHang extends oEnemy {
-  // variables
-}
+class oGiantSpiderHang extends oEnemy {}

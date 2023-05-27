@@ -21,6 +21,4 @@ function oPlayerSil_CREATE($) {
   }
 }
 
-class oPlayerSil extends oDrawnSprite {
-  // variables
-}
+class oPlayerSil extends oDrawnSprite {}

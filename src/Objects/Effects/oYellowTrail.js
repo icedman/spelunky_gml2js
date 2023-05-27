@@ -6,12 +6,12 @@ function oYellowTrail_OTHER($) {
 
 function oYellowTrail_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 1;
   }
 }
 
-class oYellowTrail extends oDrawnSprite {
-  // variables
-}
+class oYellowTrail extends oDrawnSprite {}

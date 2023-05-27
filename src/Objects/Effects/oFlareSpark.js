@@ -16,7 +16,9 @@ function oFlareSpark_STEP($) {
 
 function oFlareSpark_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = -0.1;
     yAcc = 0.1;
@@ -24,6 +26,4 @@ function oFlareSpark_CREATE($) {
   }
 }
 
-class oFlareSpark extends oDrawnSprite {
-  // variables
-}
+class oFlareSpark extends oDrawnSprite {}

@@ -57,7 +57,9 @@ function oSolid_DESTROY($) {
 
 function oSolid_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     invincible = false;
     shopWall = false;
@@ -67,6 +69,4 @@ function oSolid_CREATE($) {
   }
 }
 
-class oSolid extends oDrawnSprite {
-  // variables
-}
+class oSolid extends oDrawnSprite {}

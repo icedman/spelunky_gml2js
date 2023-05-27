@@ -13,7 +13,9 @@ function oPoof_STEP($) {
 
 function oPoof_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     xVel = 0;
     yVel = 0;
@@ -21,6 +23,4 @@ function oPoof_CREATE($) {
   }
 }
 
-class oPoof extends oDrawnSprite {
-  // variables
-}
+class oPoof extends oDrawnSprite {}

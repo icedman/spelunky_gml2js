@@ -30,12 +30,12 @@ function oTreeBranch_STEP($) {
 
 function oTreeBranch_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oPlatform_CREATE($);
+    } catch (err) {}
 
     if (global.cemetary) sprite_index = sTreeBranchDeadR;
   }
 }
 
-class oTreeBranch extends oPlatform {
-  // variables
-}
+class oTreeBranch extends oPlatform {}

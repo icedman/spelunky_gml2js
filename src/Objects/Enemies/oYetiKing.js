@@ -87,7 +87,9 @@ function oYetiKing_OTHER($) {
 
 function oYetiKing_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 36 &&
@@ -235,7 +237,9 @@ function oYetiKing_STEP($) {
 
 function oYetiKing_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(6, 0, 26, 32);
@@ -272,6 +276,4 @@ function oYetiKing_CREATE($) {
   }
 }
 
-class oYetiKing extends oEnemy {
-  // variables
-}
+class oYetiKing extends oEnemy {}

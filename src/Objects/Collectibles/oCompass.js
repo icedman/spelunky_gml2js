@@ -1,6 +1,8 @@
 function oCompass_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Compass';
     makeActive();
@@ -11,6 +13,4 @@ function oCompass_CREATE($) {
   }
 }
 
-class oCompass extends oItem {
-  // variables
-}
+class oCompass extends oItem {}

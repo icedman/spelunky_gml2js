@@ -23,7 +23,7 @@ function oArrowRepeaterL_DESTROY($) {
   }
 }
 
-function oArrowRepeaterL_ALARM($) {
+function oArrowRepeaterL_ALARM_1($) {
   with ($) {
     xAct = x - 1;
     while (!collision_point(xAct, y + 8, oSolid, 0, 0)) {
@@ -31,9 +31,6 @@ function oArrowRepeaterL_ALARM($) {
       xAct -= 1;
     }
     xAct = x + 8 - xAct;
-
-    arrow = instance_create(x + 16, y + 4, oArrow);
-    arrow.xVel = 5;
   }
 }
 
@@ -50,9 +47,18 @@ function oArrowRepeaterL_STEP($) {
   }
 }
 
+function oArrowRepeaterL_ALARM_0($) {
+  with ($) {
+    arrow = instance_create(x + 16, y + 4, oArrow);
+    arrow.xVel = 5;
+  }
+}
+
 function oArrowRepeaterL_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     type = 'Arrow Trap';
     fired = 100 + rand(100);
@@ -63,6 +69,4 @@ function oArrowRepeaterL_CREATE($) {
   }
 }
 
-class oArrowRepeaterL extends oSolid {
-  // variables
-}
+class oArrowRepeaterL extends oSolid {}

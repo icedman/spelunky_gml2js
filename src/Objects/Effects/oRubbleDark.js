@@ -20,13 +20,13 @@ function oRubbleDark_STEP($) {
 
 function oRubbleDark_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = 0;
     yAcc = 0.6;
   }
 }
 
-class oRubbleDark extends oDrawnSprite {
-  // variables
-}
+class oRubbleDark extends oDrawnSprite {}

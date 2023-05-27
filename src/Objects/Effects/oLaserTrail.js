@@ -6,12 +6,12 @@ function oLaserTrail_OTHER($) {
 
 function oLaserTrail_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.8;
   }
 }
 
-class oLaserTrail extends oDrawnSprite {
-  // variables
-}
+class oLaserTrail extends oDrawnSprite {}

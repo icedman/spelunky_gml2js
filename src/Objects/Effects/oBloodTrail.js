@@ -6,12 +6,12 @@ function oBloodTrail_OTHER($) {
 
 function oBloodTrail_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.8;
   }
 }
 
-class oBloodTrail extends oDrawnSprite {
-  // variables
-}
+class oBloodTrail extends oDrawnSprite {}

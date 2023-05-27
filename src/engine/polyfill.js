@@ -1,0 +1,11 @@
+cos = (n) => Math.cos(n);
+sin = (n) => Math.sin(n);
+tan = (n) => Math.tan(n);
+arctan = (n) => Math.arctan(n);
+floor = (n) => Math.floor(n);
+abs = (n) => Math.abs(n);
+round = (n) => Math.round(n);
+frac = (n) => n - Math.floor(n);
+random = (r) => Math.random() * r;
+degtorad = (d) => d * 0.017453;
+radtodeg = (r) => r * 57.29578;

@@ -1,6 +1,8 @@
 function oRopePile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Rope Pile';
     makeActive();
@@ -11,6 +13,4 @@ function oRopePile_CREATE($) {
   }
 }
 
-class oRopePile extends oItem {
-  // variables
-}
+class oRopePile extends oItem {}

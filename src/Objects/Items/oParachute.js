@@ -22,6 +22,4 @@ function oParachute_STEP($) {
   }
 }
 
-class oParachute extends oObject {
-  // variables
-}
+class oParachute extends oObject {}

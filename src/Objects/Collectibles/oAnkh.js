@@ -1,6 +1,8 @@
 function oAnkh_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Ankh';
     makeActive();
@@ -11,6 +13,4 @@ function oAnkh_CREATE($) {
   }
 }
 
-class oAnkh extends oItem {
-  // variables
-}
+class oAnkh extends oItem {}

@@ -1,3 +1,1 @@
-class oBlackBG extends oMenu {
-  // variables
-}
+class oBlackBG extends oMenu {}

@@ -1,3 +1,1 @@
-class oMenuLeft extends oMenu {
-  // variables
-}
+class oMenuLeft extends oMenu {}

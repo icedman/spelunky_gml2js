@@ -1,11 +1,11 @@
 function oSprite_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0;
   }
 }
 
-class oSprite extends oDrawnSprite {
-  // variables
-}
+class oSprite extends oDrawnSprite {}

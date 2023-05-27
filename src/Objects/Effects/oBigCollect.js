@@ -4,7 +4,7 @@ function oBigCollect_STEP($) {
   }
 }
 
-function oBigCollect_ALARM($) {
+function oBigCollect_ALARM_0($) {
   with ($) {
     action_kill_object();
   }
@@ -12,12 +12,12 @@ function oBigCollect_ALARM($) {
 
 function oBigCollect_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     alarm[0] = 30;
   }
 }
 
-class oBigCollect extends oDrawnSprite {
-  // variables
-}
+class oBigCollect extends oDrawnSprite {}

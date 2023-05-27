@@ -127,7 +127,9 @@ function oUFO_STEP($) {
 
 function oUFO_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     type = 'UFO';
     image_speed = 0.5;
@@ -161,5 +163,10 @@ function oUFO_CREATE($) {
 }
 
 class oUFO extends oEnemy {
-  // variables
+  BLAST;
+  DESTROY;
+  SEARCH;
+  alerted;
+  shift;
+  shiftToggle;
 }

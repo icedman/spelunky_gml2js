@@ -1,6 +1,8 @@
 function oPistol_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (held) {
       if (oPlayer1.acing == 18) sprite_index = sPistolLeft;
@@ -11,7 +13,9 @@ function oPistol_STEP($) {
 
 function oPistol_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Pistol';
     makeActive();
@@ -21,6 +25,4 @@ function oPistol_CREATE($) {
   }
 }
 
-class oPistol extends oItem {
-  // variables
-}
+class oPistol extends oItem {}

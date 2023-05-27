@@ -77,7 +77,9 @@ function oTreasure_STEP($) {
 
 function oTreasure_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'None';
     held = false;
@@ -98,5 +100,6 @@ function oTreasure_CREATE($) {
 }
 
 class oTreasure extends oDrawnSprite {
-  // variables
+  ACTIVE;
+  STATIC;
 }

@@ -1,2 +1,4 @@
-if (gamepad.attackPressed) return gamepad.attackPressed;
-else return keyboard_check_pressed(global.keyAttackVal);
+function checkAttackPressed() {
+  if (gamepad.attackPressed) return gamepad.attackPressed;
+  else return keyboard_check_pressed(global.keyAttackVal);
+}

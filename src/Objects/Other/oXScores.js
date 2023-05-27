@@ -1,3 +1,1 @@
-class oXScores extends oXStart {
-  // variables
-}
+class oXScores extends oXStart {}

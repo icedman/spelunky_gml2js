@@ -1,6 +1,8 @@
 function oBasketball_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (colLeft || colRight) wallBounce = true;
     else if (colBot) wallBounce = false;
@@ -59,7 +61,9 @@ function oBasketball_STEP($) {
 
 function oBasketball_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Basketball';
     makeActive();
@@ -73,5 +77,7 @@ function oBasketball_CREATE($) {
 }
 
 class oBasketball extends oItem {
-  // variables
+  bounces;
+  goingIn;
+  wallBounce;
 }

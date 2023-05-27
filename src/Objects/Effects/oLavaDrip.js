@@ -6,12 +6,12 @@ function oLavaDrip_OTHER($) {
 
 function oLavaDrip_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oRubblePiece_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.4;
   }
 }
 
-class oLavaDrip extends oRubblePiece {
-  // variables
-}
+class oLavaDrip extends oRubblePiece {}

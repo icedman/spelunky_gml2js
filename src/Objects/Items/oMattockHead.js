@@ -1,6 +1,8 @@
 function oMattockHead_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Mattock Head';
     makeActive();
@@ -8,6 +10,4 @@ function oMattockHead_CREATE($) {
   }
 }
 
-class oMattockHead extends oItem {
-  // variables
-}
+class oMattockHead extends oItem {}

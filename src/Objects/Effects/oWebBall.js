@@ -1,9 +1,7 @@
-function oWebBall_ALARM($) {
+function oWebBall_ALARM_1($) {
   with ($) {
     if (instance_number(oYellowTrail) < 12) instance_create(x, y, oYellowTrail);
     alarm[1] = 4;
-
-    invincible = false;
   }
 }
 
@@ -65,6 +63,12 @@ function oWebBall_STEP($) {
   }
 }
 
+function oWebBall_ALARM_0($) {
+  with ($) {
+    invincible = false;
+  }
+}
+
 function oWebBall_COLLISION_oEnemy($) {
   with ($) {
     if (other.type != 'Giant Spider') {
@@ -77,7 +81,9 @@ function oWebBall_COLLISION_oEnemy($) {
 
 function oWebBall_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = -1 * (random(3) + 1);
     xVel = rand(1, 3);
@@ -97,6 +103,4 @@ function oWebBall_COLLISION_oWater($) {
   }
 }
 
-class oWebBall extends oDrawnSprite {
-  // variables
-}
+class oWebBall extends oDrawnSprite {}

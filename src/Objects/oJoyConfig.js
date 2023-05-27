@@ -227,5 +227,8 @@ function oJoyConfig_CREATE($) {
 }
 
 class oJoyConfig extends oObject {
-  // variables
+  joy;
+  joyKey;
+  joyPressed;
+  joyReleased;
 }

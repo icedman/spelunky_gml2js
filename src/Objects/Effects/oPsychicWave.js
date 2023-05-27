@@ -27,7 +27,9 @@ function oPsychicWave_COLLISION_oEnemy($) {
 
 function oPsychicWave_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = 0;
     yAcc = 0.6;
@@ -53,6 +55,4 @@ function oPsychicWave_COLLISION_oDamsel($) {
   }
 }
 
-class oPsychicWave extends oDrawnSprite {
-  // variables
-}
+class oPsychicWave extends oDrawnSprite {}

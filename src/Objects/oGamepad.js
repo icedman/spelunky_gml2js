@@ -457,5 +457,38 @@ function oGamepad_CREATE($) {
 }
 
 class oGamepad extends oObject {
-  // variables
+  attack;
+  attackPressed;
+  attackReleased;
+  bomb;
+  bombPressed;
+  bombReleased;
+  down;
+  downPressed;
+  downReleased;
+  flarePressed;
+  flareReleased;
+  itemPressed;
+  itemReleased;
+  jump;
+  jumpPressed;
+  jumpReleased;
+  left;
+  leftPressed;
+  leftReleased;
+  pay;
+  payPressed;
+  payReleased;
+  right;
+  rightPressed;
+  rightReleased;
+  ropePressed;
+  ropeReleased;
+  run;
+  start;
+  startPressed;
+  startReleased;
+  up;
+  upPressed;
+  upReleased;
 }

@@ -93,7 +93,9 @@ function oScarab_STEP($) {
 
 function oScarab_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.5;
     setCollisionBounds(4, 4, 12, 12);
@@ -124,6 +126,4 @@ function oScarab_CREATE($) {
   }
 }
 
-class oScarab extends oEnemy {
-  // variables
-}
+class oScarab extends oEnemy {}

@@ -58,5 +58,5 @@ function oButtonHighscore_CREATE($) {
 }
 
 class oButtonHighscore extends oObject {
-  // variables
+  pushed;
 }

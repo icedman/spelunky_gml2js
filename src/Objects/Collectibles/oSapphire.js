@@ -1,4 +1,4 @@
-function oSapphire_ALARM($) {
+function oSapphire_ALARM_0($) {
   with ($) {
     canCollect = true;
   }
@@ -6,7 +6,9 @@ function oSapphire_ALARM($) {
 
 function oSapphire_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Sapphire';
     makeActive();
@@ -17,6 +19,4 @@ function oSapphire_CREATE($) {
   }
 }
 
-class oSapphire extends oTreasure {
-  // variables
-}
+class oSapphire extends oTreasure {}

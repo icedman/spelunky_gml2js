@@ -1,3 +1,1 @@
-class oLevel9Sign extends oObject {
-  // variables
-}
+class oLevel9Sign extends oObject {}

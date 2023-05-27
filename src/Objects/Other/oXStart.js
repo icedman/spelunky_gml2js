@@ -1,3 +1,1 @@
-class oXStart extends oDrawnSprite {
-  // variables
-}
+class oXStart extends oDrawnSprite {}

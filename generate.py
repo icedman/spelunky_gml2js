@@ -2,11 +2,17 @@
 
 import sys
 import re
+import json
 
 from os import listdir, mkdir, makedirs
-from os.path import isdir, isfile, join
-from shutil import copyfile
+from os.path import isdir, isfile, join, exists
+from shutil import copyfile, copytree, rmtree
 from pprint import pprint
+
+def copy_and_overwrite(from_path, to_path):
+    if exists(to_path):
+        rmtree(to_path)
+    copytree(from_path, to_path)
 
 if len(sys.argv) < 2:
     print("globals.py ./src")
@@ -18,9 +24,13 @@ events = {}
 sprites = {}
 parseStatus = { 'withinComment': False }
 
-parseWhat = "xml"
+parseWhat = "both"
 if len(sys.argv) > 2:
     parseWhat = sys.argv[2]
+
+variables = json.loads(open('./variables.json').read())
+
+copy_and_overwrite('./engine', './src/engine')
 
 def cleanUpCode(l):
     ls = l.strip()
@@ -156,6 +166,13 @@ def cleanUpCode(l):
         l = l.replace("x=o", "x==o")
         l = l.replace("x)=o", "x)==o")
 
+    # 2-d array
+    if "roomPath[(" in ls:
+        l = l.replace("roomPath[(", "roomPath[_arrayIndex(")
+
+    if "levelArray[(" in ls:
+        l = l.replace("levelArray[(", "levelArray[_arrayIndex(")
+
     ls = l.strip()
     match = re.search("int r1\s{0,1}=", ls)
     if match != None:
@@ -175,6 +192,7 @@ def parseXMLFileEvent(path):
 
     objectName = match.group(1)
 
+    alarmId = '?'
     kind = '?'
     category = '?'
     collisionWith = '?'
@@ -221,11 +239,16 @@ def parseXMLFileEvent(path):
                 code = code.strip() + " = " + expression.strip()
             if actionType == 'FUNCTION':
                 code = functionName + "()"
+                if functionName == 'action_inherited':
+                    code = 'try { __parent___' + category + '($) } catch(err) {}'
             if actionType == 'NONE':
                 code = ''
 
             if collisionWith != '?':
                 category += "_" + collisionWith
+
+            if alarmId != '?':
+                category += "_" + alarmId
 
             action = {
                 'category': category,
@@ -238,6 +261,7 @@ def parseXMLFileEvent(path):
 
             actions.append(action)
             #reset
+            alarmId = '?'
             code = ''
             collisionWith = '?'
             actionType = '?'
@@ -250,6 +274,9 @@ def parseXMLFileEvent(path):
         match = re.search('with="([a-zA-Z0-9]*)"', l)
         if match != None:
             collisionWith = match.group(1)
+        match = re.search('ALARM\" id="([0-9]*)"', l)
+        if match != None:
+            alarmId = match.group(1)
 
         match = re.search('<[a-zA-Z0-9]*>(.*)</', l)
         if match != None:
@@ -313,12 +340,12 @@ def parseGMLFile(path):
 
     scriptName = match.group(1)
 
-    code = ""
+    code = "function " + scriptName + "() {\n\n"
     for l in open(path):
         l = cleanUpCode(l)
         code += l
-
     code = cleanUpCode2(code)
+    code += "\n\n}\n"
 
     f = open('src/Scripts/' + scriptName + '.js', 'w')
     f.write(code)
@@ -331,10 +358,10 @@ def parseFiles(path):
     for f in files:
         fullpath = join(path, f)
 
-        if parseWhat == "xml" and ".xml" in f:
+        if (parseWhat == "both" or parseWhat == "xml") and ".xml" in f:
             parseXMLFile(fullpath)
 
-        if parseWhat == "gml" and ".gml" in f:
+        if (parseWhat == "both" or parseWhat == "gml") and ".gml" in f:
             parseGMLFile(fullpath)
 
         if isdir(fullpath):
@@ -389,6 +416,13 @@ def cleanUpCode2(code):
 
 def generateClassCode(k, obj):
     path = obj['path']
+
+    extends = "oObject"
+    if 'parent' in obj:
+        extends = obj['parent']
+    else:
+        obj['parent'] = extends
+
     match = re.search('spelunky\/([a-zA-Z0-9]*)\/([a-zA-Z0-9]*)', path)
     dst = 'src/' + match.group(1) + '/'
     if k != match.group(2):
@@ -405,30 +439,73 @@ def generateClassCode(k, obj):
                 continue
             if e['category'] not in eventCodes:
                 eventCodes[e['category']] = ''
+            # if e['category'] == 'ALARM':
+            #     if eventCodes[e['category']] != '':
+            #         print('multiple alarms ' + path)
             eventCodes[e['category']] += cleanUpCode2(e['code']) + '\n\n'
 
     code = ""
 
     # always disable use strict!
     # code += '"use strict"\n\n'
+    functions = []
 
     if k in events:
         objectEvents = events[k]
         for e in eventCodes:
-            code += 'function ' + k + "_" + e + '($) { with($) {\n\n'
-            code += eventCodes[e]
+            functionName = k + "_" + e
+            functions.append(functionName)
+            code += 'function ' + functionName + '($) { with($) {\n\n'
+            code += eventCodes[e].replace('__parent__', extends)
             code += '\n\n}}\n\n'
 
-    extends = "oObject"
-    if 'parent' in obj:
-        extends = obj['parent']
     code += "class " + k + " extends " + extends + " {\n"
-    code += "// variables\n\n"
+
+    # variables
+    if k in variables:
+        for v in variables[k]:
+            var = variables[k][v]
+            if var['type'] == 'function':
+                continue
+            code += v
+            if var['type'] == 'array':
+                code += '=[]'
+            code += ';\n'
+
+    # functions
+    # code += 'funcs=[\n'
+    # for f in functions:
+    #     code += '\'' + f + '\',\n'
+    # code += ']\n'
+
     code += "}\n"
 
     f = open(dstFile, 'w')
     f.write(code)
     f.close()
+
+    obj['js'] = dstFile.replace('//', '/').strip()
+
+includes = []
+def generateObjectTree():
+    for k in objects:
+        obj = objects[k]
+
+        obj['level'] = 0
+        obj['name'] = k
+        includes.append(obj)
+
+    while True:
+        didUpdate = False
+        for obj in includes:
+            p = obj['parent']
+            if not p in objects:
+                continue
+            if obj['level'] <= objects[p]['level']:
+                obj['level'] = objects[p]['level'] + 1
+                didUpdate = True
+        if not didUpdate:
+            break
 
 def generateCode():
     for k in objects:
@@ -438,8 +515,18 @@ def generateCode():
 parseFiles(path)
 generateCode()
 
+generateObjectTree()
+
+def sortKey(obj):
+    return obj['level']
+includes.sort(key = sortKey)
+
+l = open('list.txt', 'w')
+for f in includes:
+    l.write(f['js'] + '\n')
+l.close()
+
 # pprint(objects)
 # pprint(events)
-
 
 

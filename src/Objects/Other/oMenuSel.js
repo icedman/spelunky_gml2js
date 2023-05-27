@@ -15,6 +15,4 @@ function oMenuSel_MOUSE($) {
   }
 }
 
-class oMenuSel extends oMenu {
-  // variables
-}
+class oMenuSel extends oMenu {}

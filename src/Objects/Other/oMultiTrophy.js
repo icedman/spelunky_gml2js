@@ -1,3 +1,1 @@
-class oMultiTrophy extends oObject {
-  // variables
-}
+class oMultiTrophy extends oObject {}

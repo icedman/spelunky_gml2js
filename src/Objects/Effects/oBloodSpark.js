@@ -12,7 +12,9 @@ function oBloodSpark_STEP($) {
 
 function oBloodSpark_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = -rand(1, 3) * 0.2;
     yAcc = 0.1;
@@ -20,6 +22,4 @@ function oBloodSpark_CREATE($) {
   }
 }
 
-class oBloodSpark extends oDrawnSprite {
-  // variables
-}
+class oBloodSpark extends oDrawnSprite {}

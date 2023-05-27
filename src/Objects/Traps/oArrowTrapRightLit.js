@@ -1,3 +1,1 @@
-class oArrowTrapRightLit extends oArrowTrapRight {
-  // variables
-}
+class oArrowTrapRightLit extends oArrowTrapRight {}

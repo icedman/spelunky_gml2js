@@ -20,6 +20,4 @@ function oGoldBig_DESTROY($) {
   }
 }
 
-class oGoldBig extends oDrawnSprite {
-  // variables
-}
+class oGoldBig extends oDrawnSprite {}

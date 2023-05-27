@@ -1,3 +1,1 @@
-class oShrubDark extends oObject {
-  // variables
-}
+class oShrubDark extends oObject {}

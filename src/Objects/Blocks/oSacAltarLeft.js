@@ -98,7 +98,9 @@ function oSacAltarLeft_STEP($) {
 
 function oSacAltarLeft_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     defile = true;
     type = 'Altar';
@@ -106,5 +108,6 @@ function oSacAltarLeft_CREATE($) {
 }
 
 class oSacAltarLeft extends oSolid {
-  // variables
+  defile;
+  float;
 }

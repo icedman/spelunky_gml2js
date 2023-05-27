@@ -1001,5 +1001,22 @@ function oScreen_CREATE($) {
 }
 
 class oScreen extends oObject {
-  // variables
+  bm_dest_color;
+  bm_normal;
+  bm_one;
+  bm_src_color;
+  bm_zero;
+  darkSurf;
+  displayheight;
+  displaywidth;
+  distToLamp;
+  enabled;
+  noone;
+  pSurf;
+  paused;
+  screen_h;
+  screen_scale;
+  screen_w;
+  screen_x;
+  screen_y;
 }

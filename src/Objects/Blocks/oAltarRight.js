@@ -23,6 +23,4 @@ function oAltarRight_DESTROY($) {
   }
 }
 
-class oAltarRight extends oSolid {
-  // variables
-}
+class oAltarRight extends oSolid {}

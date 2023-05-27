@@ -64,13 +64,13 @@ function oXocBlock_DESTROY($) {
 
 function oXocBlock_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     cleanDeath = false;
     treasure = '';
   }
 }
 
-class oXocBlock extends oSolid {
-  // variables
-}
+class oXocBlock extends oSolid {}

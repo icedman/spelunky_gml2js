@@ -17,6 +17,4 @@ function oChain2_CREATE($) {
   }
 }
 
-class oChain2 extends oDrawnSprite {
-  // variables
-}
+class oChain2 extends oDrawnSprite {}

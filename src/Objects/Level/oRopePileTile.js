@@ -1,3 +1,1 @@
-class oRopePileTile extends oDrawnSprite {
-  // variables
-}
+class oRopePileTile extends oDrawnSprite {}

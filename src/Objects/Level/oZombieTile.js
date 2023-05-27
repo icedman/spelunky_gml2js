@@ -1,11 +1,11 @@
 function oZombieTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0;
   }
 }
 
-class oZombieTile extends oDrawnSprite {
-  // variables
-}
+class oZombieTile extends oDrawnSprite {}

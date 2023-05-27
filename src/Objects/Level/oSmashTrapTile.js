@@ -1,3 +1,1 @@
-class oSmashTrapTile extends oDrawnSprite {
-  // variables
-}
+class oSmashTrapTile extends oDrawnSprite {}

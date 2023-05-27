@@ -1,10 +1,11 @@
-//
-// scrCheckCollisions()
-//
-// Generic collision adjustments made by enemies.
-//
+function scrCheckCollisions() {
+  //
+  // scrCheckCollisions()
+  //
+  // Generic collision adjustments made by enemies.
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -21,26 +22,27 @@
     
 ***********************************************************************************/
 
-setCollisionBounds(2, 6, 14, 16);
+  setCollisionBounds(2, 6, 14, 16);
 
-if (colLeft && !colRight) {
-  x += 1;
-} else if (colRight) {
-  x -= 1;
-}
+  if (colLeft && !colRight) {
+    x += 1;
+  } else if (colRight) {
+    x -= 1;
+  }
 
-if (colLeft || colRight) {
-  xVel = -xVel * 0.5;
-}
+  if (colLeft || colRight) {
+    xVel = -xVel * 0.5;
+  }
 
-if (colTop && !colBot) {
-  y += 1;
-} else if (colBot) {
-  // bounce
-  if (yVel > 1) yVel = -yVel * 0.5;
-  else if (abs(yVel) < 1) yVel = 0;
+  if (colTop && !colBot) {
+    y += 1;
+  } else if (colBot) {
+    // bounce
+    if (yVel > 1) yVel = -yVel * 0.5;
+    else if (abs(yVel) < 1) yVel = 0;
 
-  // friction
-  if (abs(xVel) < 0.1) xVel = 0;
-  else if (abs(xVel) != 0) xVel *= 0.3;
+    // friction
+    if (abs(xVel) < 0.1) xVel = 0;
+    else if (abs(xVel) != 0) xVel *= 0.3;
+  }
 }

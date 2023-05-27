@@ -16,7 +16,9 @@ function oBurn_STEP($) {
 
 function oBurn_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = -0.1;
     yAcc = 0.1;
@@ -24,6 +26,4 @@ function oBurn_CREATE($) {
   }
 }
 
-class oBurn extends oDrawnSprite {
-  // variables
-}
+class oBurn extends oDrawnSprite {}

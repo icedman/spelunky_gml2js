@@ -31,6 +31,4 @@ function oNewButton_STEP($) {
   }
 }
 
-class oNewButton extends oObject {
-  // variables
-}
+class oNewButton extends oObject {}

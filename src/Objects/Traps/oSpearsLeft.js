@@ -24,6 +24,4 @@ function oSpearsLeft_STEP($) {
   }
 }
 
-class oSpearsLeft extends oDrawnSprite {
-  // variables
-}
+class oSpearsLeft extends oDrawnSprite {}

@@ -1,26 +1,40 @@
-function oPDummy_ALARM($) {
+function oPDummy_ALARM_3($) {
   with ($) {
     instance_create(oEndPlat.x, oEndPlat.y + 30, oLavaSpray);
     global.shake = 9999;
     alarm[4] = 10;
+  }
+}
 
+function oPDummy_ALARM_1($) {
+  with ($) {
     oBigChest.sprite_index = sBigChestOpen;
     treasure = instance_create(oBigChest.x, oBigChest.y, oBigTreasure);
     treasure.yVel = -4;
     treasure.xVel = -3;
     playSound(global.sndClick);
     alarm[2] = 20;
+  }
+}
 
+function oPDummy_ALARM_5($) {
+  with ($) {
     status = TRANSITION;
     if (global.isDamsel) sprite_index = sDamselRunL;
     else if (global.isTunnelMan) sprite_index = sTunnelRunL;
     else sprite_index = sRunLeft;
+  }
+}
 
+function oPDummy_ALARM_4($) {
+  with ($) {
     if (oLavaSpray) oLavaSpray.yAcc = -0.1;
+  }
+}
 
+function oPDummy_ALARM_2($) {
+  with ($) {
     status = LAVA;
-
-    alarm[1] = 100;
   }
 }
 
@@ -224,9 +238,17 @@ function oPDummy_STEP($) {
   }
 }
 
+function oPDummy_ALARM_0($) {
+  with ($) {
+    alarm[1] = 100;
+  }
+}
+
 function oPDummy_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     // dummy actor for transitions && ending
 
@@ -250,5 +272,8 @@ function oPDummy_CREATE($) {
 }
 
 class oPDummy extends oDrawnSprite {
-  // variables
+  END;
+  LAVA;
+  START;
+  STOPPED;
 }

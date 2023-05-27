@@ -1,6 +1,8 @@
 function oBall_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (distance_to_object(oPlayer1) >= 24) {
       if (abs(oPlayer1.x - x) >= 24 || !colBot) {
@@ -34,7 +36,9 @@ function oBall_STEP($) {
 
 function oBall_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Ball';
     makeActive();
@@ -44,6 +48,4 @@ function oBall_CREATE($) {
   }
 }
 
-class oBall extends oItem {
-  // variables
-}
+class oBall extends oItem {}

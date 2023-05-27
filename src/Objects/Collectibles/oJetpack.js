@@ -1,6 +1,8 @@
 function oJetpack_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (instance_exists(oPlayer1)) if (!oPlayer1.visible) instance_destroy();
   }
@@ -8,7 +10,9 @@ function oJetpack_STEP($) {
 
 function oJetpack_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Jetpack';
     makeActive();
@@ -20,6 +24,4 @@ function oJetpack_CREATE($) {
   }
 }
 
-class oJetpack extends oItem {
-  // variables
-}
+class oJetpack extends oItem {}

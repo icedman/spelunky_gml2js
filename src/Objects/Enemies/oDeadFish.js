@@ -81,7 +81,9 @@ function oDeadFish_STEP($) {
 
 function oDeadFish_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.5;
     setCollisionBounds(0, 0, 8, 8);
@@ -115,6 +117,4 @@ function oDeadFish_CREATE($) {
   }
 }
 
-class oDeadFish extends oEnemy {
-  // variables
-}
+class oDeadFish extends oEnemy {}

@@ -1,6 +1,8 @@
 function oTemple_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_DESTROY($);
+    } catch (err) {}
 
     if (!cleanDeath && !global.cleanSolids) {
       rubble = instance_create(
@@ -60,7 +62,9 @@ function oTemple_DESTROY($) {
 
 function oTemple_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     cleanDeath = false;
 
@@ -84,6 +88,4 @@ function oTemple_CREATE($) {
   }
 }
 
-class oTemple extends oSolid {
-  // variables
-}
+class oTemple extends oSolid {}

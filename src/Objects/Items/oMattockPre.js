@@ -12,7 +12,7 @@ function oMattockPre_STEP($) {
   }
 }
 
-function oMattockPre_ALARM($) {
+function oMattockPre_ALARM_0($) {
   with ($) {
     instance_destroy();
   }
@@ -20,13 +20,13 @@ function oMattockPre_ALARM($) {
 
 function oMattockPre_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oWhipPre_CREATE($);
+    } catch (err) {}
 
     type = 'Mattock';
     damage = 2;
   }
 }
 
-class oMattockPre extends oWhipPre {
-  // variables
-}
+class oMattockPre extends oWhipPre {}

@@ -1,3 +1,1 @@
-class oXGold extends oExit {
-  // variables
-}
+class oXGold extends oExit {}

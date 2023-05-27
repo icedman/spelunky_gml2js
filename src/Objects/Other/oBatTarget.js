@@ -91,5 +91,6 @@ function oBatTarget_CREATE($) {
 }
 
 class oBatTarget extends oObject {
-  // variables
+  difficulty;
+  xMid;
 }

@@ -1,4 +1,4 @@
-function oOlmec_ALARM($) {
+function oOlmec_ALARM_3($) {
   with ($) {
     sprite_index = sOlmec;
     for (i = 0; i < 12; i += 1) {
@@ -12,7 +12,11 @@ function oOlmec_ALARM($) {
     }
     playSound(global.sndThump);
     alarm[4] = 50;
+  }
+}
 
+function oOlmec_ALARM_1($) {
+  with ($) {
     sprite_index = sOlmecStart2;
     for (i = 0; i < 6; i += 1) {
       debris = instance_create(
@@ -50,7 +54,11 @@ function oOlmec_ALARM($) {
       });
 
     alarm[2] = 50;
+  }
+}
 
+function oOlmec_ALARM_5($) {
+  with ($) {
     view_hborder[0] = 128;
     view_vborder[0] = 64;
     view_xview[0] = 0;
@@ -60,13 +68,21 @@ function oOlmec_ALARM($) {
     counter = 100;
     playMusic(global.musBoss, true);
     //playSound(global.sndBoss);
+  }
+}
 
+function oOlmec_ALARM_4($) {
+  with ($) {
     toggle = true;
     status = BOUNCE;
     playSound(global.sndBigJump);
     playSound(global.sndAlert);
     alarm[6] = 20;
+  }
+}
 
+function oOlmec_ALARM_2($) {
+  with ($) {
     sprite_index = sOlmecStart3;
     alarm[3] = 50;
     for (i = 0; i < 6; i += 1) {
@@ -75,21 +91,14 @@ function oOlmec_ALARM($) {
       debris.yVel = -rand(1, 3);
     }
     playSound(global.sndThump);
-
-    [instances_of(oCavemanWorship)].forEach(($) => {
-      with ($) {
-        obj = instance_create(x, y, oCaveman);
-        obj.acing = 1;
-        obj.status = 2;
-        instance_destroy();
-      }
-    });
   }
 }
 
 function oOlmec_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_STEP($);
+    } catch (err) {}
 
     if (
       carryPlayer ||
@@ -293,6 +302,30 @@ function oOlmec_CREATE($) {
   }
 }
 
+function oOlmec_ALARM_6($) {
+  with ($) {
+    [instances_of(oCavemanWorship)].forEach(($) => {
+      with ($) {
+        obj = instance_create(x, y, oCaveman);
+        obj.acing = 1;
+        obj.status = 2;
+        instance_destroy();
+      }
+    });
+  }
+}
+
 class oOlmec extends oMovingSolid {
-  // variables
+  CREATE;
+  DROWNING;
+  PREPARE;
+  SLAM;
+  START1;
+  START2;
+  carryPlayer;
+  debris;
+  slammed;
+  toggle;
+  view_hborder = [];
+  view_object = [];
 }

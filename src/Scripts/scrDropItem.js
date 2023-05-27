@@ -1,10 +1,11 @@
-//
-// scrDropItem(xVel, yVel)
-//
-// Drop currently held item.  Must be called by oPlayer1.
-//
+function scrDropItem() {
+  //
+  // scrDropItem(xVel, yVel)
+  //
+  // Drop currently held item.  Must be called by oPlayer1.
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -21,20 +22,21 @@
     
 ***********************************************************************************/
 
-if (!holdItem) return 0;
+  if (!holdItem) return 0;
 
-holdItem.held = false;
+  holdItem.held = false;
 
-holdItem.xVel = arguments[0];
-holdItem.yVel = arguments[1];
+  holdItem.xVel = arguments[0];
+  holdItem.yVel = arguments[1];
 
-if (bowArmed) {
-  scrFireBow();
-}
+  if (bowArmed) {
+    scrFireBow();
+  }
 
-if (pickupItemType != holdItem.type) {
-  scrHoldItem(pickupItemType);
-} else {
-  holdItem = 0;
-  pickupItemType = '';
+  if (pickupItemType != holdItem.type) {
+    scrHoldItem(pickupItemType);
+  } else {
+    holdItem = 0;
+    pickupItemType = '';
+  }
 }

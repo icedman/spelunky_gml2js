@@ -1,6 +1,8 @@
 function oKey_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (held) {
       if (oPlayer1.acing == 18) sprite_index = sKeyLeft;
@@ -11,7 +13,9 @@ function oKey_STEP($) {
 
 function oKey_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Key';
     makeActive();
@@ -20,6 +24,4 @@ function oKey_CREATE($) {
   }
 }
 
-class oKey extends oItem {
-  // variables
-}
+class oKey extends oItem {}

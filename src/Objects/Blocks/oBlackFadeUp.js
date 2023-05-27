@@ -1,3 +1,1 @@
-class oBlackFadeUp extends oMenu {
-  // variables
-}
+class oBlackFadeUp extends oMenu {}

@@ -1,3 +1,1 @@
-class oXTutorial extends oXStart {
-  // variables
-}
+class oXTutorial extends oXStart {}

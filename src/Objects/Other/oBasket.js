@@ -4,6 +4,4 @@ function oBasket_OTHER($) {
   }
 }
 
-class oBasket extends oObject {
-  // variables
-}
+class oBasket extends oObject {}

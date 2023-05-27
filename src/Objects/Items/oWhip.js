@@ -14,7 +14,9 @@ function oWhip_STEP($) {
 
 function oWhip_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'Whip';
     damage = 1;
@@ -22,6 +24,4 @@ function oWhip_CREATE($) {
   }
 }
 
-class oWhip extends oDrawnSprite {
-  // variables
-}
+class oWhip extends oDrawnSprite {}

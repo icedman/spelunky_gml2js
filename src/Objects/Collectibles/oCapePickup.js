@@ -1,6 +1,8 @@
 function oCapePickup_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Cape';
     makeActive();
@@ -11,6 +13,4 @@ function oCapePickup_CREATE($) {
   }
 }
 
-class oCapePickup extends oItem {
-  // variables
-}
+class oCapePickup extends oItem {}

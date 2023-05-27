@@ -79,7 +79,9 @@ function oGhost_STEP($) {
 
 function oGhost_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.5;
     setCollisionBounds(4, 0, 12, 16);
@@ -111,6 +113,4 @@ function oGhost_CREATE($) {
   }
 }
 
-class oGhost extends oDrawnSprite {
-  // variables
-}
+class oGhost extends oDrawnSprite {}

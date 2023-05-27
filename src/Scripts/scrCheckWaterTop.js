@@ -1,11 +1,12 @@
-//
-// scrCheckWaterTop()
-//
-// recursive function called in scrInitLevel() that checks for the surface of a
-// pool of water || lava && sets the sprite accordingly
-//
+function scrCheckWaterTop() {
+  //
+  // scrCheckWaterTop()
+  //
+  // recursive function called in scrInitLevel() that checks for the surface of a
+  // pool of water || lava && sets the sprite accordingly
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -22,27 +23,28 @@
     
 ***********************************************************************************/
 
-obj = instance_place(x - 16, y, oWater);
-if (instance_exists(obj)) {
-  if (obj.sprite_index != sWaterTop && obj.sprite_index != sLavaTop) {
-    [instances_of(obj)].forEach(($) => {
-      with ($) {
-        if (type == 'Lava') sprite_index = sLavaTop;
-        else sprite_index = sWaterTop;
-        scrCheckWaterTop();
-      }
-    });
+  obj = instance_place(x - 16, y, oWater);
+  if (instance_exists(obj)) {
+    if (obj.sprite_index != sWaterTop && obj.sprite_index != sLavaTop) {
+      [instances_of(obj)].forEach(($) => {
+        with ($) {
+          if (type == 'Lava') sprite_index = sLavaTop;
+          else sprite_index = sWaterTop;
+          scrCheckWaterTop();
+        }
+      });
+    }
   }
-}
-obj = instance_place(x + 16, y, oWater);
-if (instance_exists(obj)) {
-  if (obj.sprite_index != sWaterTop && obj.sprite_index != sLavaTop) {
-    [instances_of(obj)].forEach(($) => {
-      with ($) {
-        if (type == 'Lava') sprite_index = sLavaTop;
-        else sprite_index = sWaterTop;
-        scrCheckWaterTop();
-      }
-    });
+  obj = instance_place(x + 16, y, oWater);
+  if (instance_exists(obj)) {
+    if (obj.sprite_index != sWaterTop && obj.sprite_index != sLavaTop) {
+      [instances_of(obj)].forEach(($) => {
+        with ($) {
+          if (type == 'Lava') sprite_index = sLavaTop;
+          else sprite_index = sWaterTop;
+          scrCheckWaterTop();
+        }
+      });
+    }
   }
 }

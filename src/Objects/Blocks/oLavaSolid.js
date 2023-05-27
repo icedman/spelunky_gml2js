@@ -1,11 +1,11 @@
 function oLavaSolid_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     invincible = true;
   }
 }
 
-class oLavaSolid extends oSolid {
-  // variables
-}
+class oLavaSolid extends oSolid {}

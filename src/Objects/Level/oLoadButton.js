@@ -35,6 +35,4 @@ function oLoadButton_CREATE($) {
   }
 }
 
-class oLoadButton extends oObject {
-  // variables
-}
+class oLoadButton extends oObject {}

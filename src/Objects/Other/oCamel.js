@@ -25,6 +25,4 @@ function oCamel_CREATE($) {
   }
 }
 
-class oCamel extends oObject {
-  // variables
-}
+class oCamel extends oObject {}

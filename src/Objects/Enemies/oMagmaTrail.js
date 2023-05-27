@@ -6,12 +6,12 @@ function oMagmaTrail_OTHER($) {
 
 function oMagmaTrail_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.4;
   }
 }
 
-class oMagmaTrail extends oDrawnSprite {
-  // variables
-}
+class oMagmaTrail extends oDrawnSprite {}

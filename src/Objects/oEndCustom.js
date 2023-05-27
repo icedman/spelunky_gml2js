@@ -1,32 +1,43 @@
-function oEndCustom_ALARM($) {
+function oEndCustom_ALARM_11($) {
   with ($) {
     drawStatus = 4;
     playSound(global.sndThump);
     global.money += 50000;
     moneyCount += 50000;
     alarm[3] = 50;
+  }
+}
 
+function oEndCustom_ALARM_3($) {
+  with ($) {
     drawStatus = 5;
     alarm[4] = 10;
+  }
+}
 
+function oEndCustom_ALARM_1($) {
+  with ($) {
     drawStatus = 2;
     alarm[2] = 50;
+  }
+}
 
+function oEndCustom_ALARM_5($) {
+  with ($) {
     drawStatus = 7;
+  }
+}
 
+function oEndCustom_ALARM_4($) {
+  with ($) {
     drawStatus = 6;
     alarm[5] = 10;
+  }
+}
 
+function oEndCustom_ALARM_2($) {
+  with ($) {
     drawStatus = 3;
-
-    drawStatus = 1;
-    alarm[1] = 50;
-    playMusic(global.musVictory, false);
-    [instances_of(oMenu)].forEach(($) => {
-      with ($) {
-        visible = true;
-      }
-    });
   }
 }
 
@@ -137,6 +148,19 @@ function oEndCustom_STEP($) {
   }
 }
 
+function oEndCustom_ALARM_0($) {
+  with ($) {
+    drawStatus = 1;
+    alarm[1] = 50;
+    playMusic(global.musVictory, false);
+    [instances_of(oMenu)].forEach(($) => {
+      with ($) {
+        visible = true;
+      }
+    });
+  }
+}
+
 function oEndCustom_CREATE($) {
   with ($) {
     drawStatus = 0;
@@ -156,6 +180,4 @@ function oEndCustom_CREATE($) {
   }
 }
 
-class oEndCustom extends oObject {
-  // variables
-}
+class oEndCustom extends oObject {}

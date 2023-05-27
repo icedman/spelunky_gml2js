@@ -177,7 +177,9 @@ function oExplosion_COLLISION_oEnemy($) {
 
 function oExplosion_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.8;
 
@@ -199,6 +201,4 @@ function oExplosion_COLLISION_oDamsel($) {
   }
 }
 
-class oExplosion extends oDrawnSprite {
-  // variables
-}
+class oExplosion extends oDrawnSprite {}

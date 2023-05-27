@@ -79,5 +79,5 @@ function oLeaves_CREATE($) {
 }
 
 class oLeaves extends oPlatform {
-  // variables
+  spriteSet;
 }

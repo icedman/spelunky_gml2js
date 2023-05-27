@@ -1,2 +1,4 @@
-if (gamepad.downPressed) return gamepad.downPressed;
-else return keyboard_check_pressed(global.keyDownVal);
+function checkDownPressed() {
+  if (gamepad.downPressed) return gamepad.downPressed;
+  else return keyboard_check_pressed(global.keyDownVal);
+}

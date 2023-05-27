@@ -1,6 +1,8 @@
 function oZombie_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -100,7 +102,9 @@ function oZombie_STEP($) {
 
 function oZombie_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(0, 2, 16, 16);
@@ -138,6 +142,4 @@ function oZombie_CREATE($) {
   }
 }
 
-class oZombie extends oEnemy {
-  // variables
-}
+class oZombie extends oEnemy {}

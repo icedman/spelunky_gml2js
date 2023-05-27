@@ -1,3 +1,1 @@
-class oLadder extends oDrawnSprite {
-  // variables
-}
+class oLadder extends oDrawnSprite {}

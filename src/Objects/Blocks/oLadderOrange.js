@@ -1,3 +1,1 @@
-class oLadderOrange extends oLadder {
-  // variables
-}
+class oLadderOrange extends oLadder {}

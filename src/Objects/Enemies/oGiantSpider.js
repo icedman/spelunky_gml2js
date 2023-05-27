@@ -9,23 +9,9 @@ function oGiantSpider_COLLISION_oWhip($) {
   }
 }
 
-function oGiantSpider_ALARM($) {
+function oGiantSpider_ALARM_1($) {
   with ($) {
     //sprite_index = sSpiderDrown;
-
-    if (sprite_index != sGiantSpiderSquirt) {
-      status = BOUNCE;
-      sprite_index = sGiantSpiderJump;
-      if (isCollisionBottom(1)) {
-        sprite_index = sGiantSpider;
-        yVel = -1 * rand(2, 5);
-        if (oCharacter.x < x + 16) {
-          xVel = -2.5;
-        } else {
-          xVel = 2.5;
-        }
-      }
-    }
   }
 }
 
@@ -203,9 +189,29 @@ if (isCollisionLeft(1) or isCollisionRight(1))
   }
 }
 
+function oGiantSpider_ALARM_0($) {
+  with ($) {
+    if (sprite_index != sGiantSpiderSquirt) {
+      status = BOUNCE;
+      sprite_index = sGiantSpiderJump;
+      if (isCollisionBottom(1)) {
+        sprite_index = sGiantSpider;
+        yVel = -1 * rand(2, 5);
+        if (oCharacter.x < x + 16) {
+          xVel = -2.5;
+        } else {
+          xVel = 2.5;
+        }
+      }
+    }
+  }
+}
+
 function oGiantSpider_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     type = 'Giant Spider';
     makeActive();
@@ -242,5 +248,7 @@ function oGiantSpider_CREATE($) {
 }
 
 class oGiantSpider extends oEnemy {
-  // variables
+  CRAWL;
+  SQUIRT;
+  squirtTimer;
 }

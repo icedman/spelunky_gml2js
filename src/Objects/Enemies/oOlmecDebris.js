@@ -1,6 +1,8 @@
 function oOlmecDebris_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_STEP($);
+    } catch (err) {}
 
     x += xVel;
     y += yVel;
@@ -28,7 +30,9 @@ function oOlmecDebris_STEP($) {
 
 function oOlmecDebris_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.3;
 
@@ -47,6 +51,4 @@ function oOlmecDebris_CREATE($) {
   }
 }
 
-class oOlmecDebris extends oDrawnSprite {
-  // variables
-}
+class oOlmecDebris extends oDrawnSprite {}

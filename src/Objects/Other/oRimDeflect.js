@@ -1,3 +1,1 @@
-class oRimDeflect extends oObject {
-  // variables
-}
+class oRimDeflect extends oObject {}

@@ -897,5 +897,34 @@ function oLevelEditor_CREATE($) {
 }
 
 class oLevelEditor extends oObject {
-  // variables
+  BLOCKS;
+  EDIT;
+  EDIT_DOOR;
+  EDIT_MSG;
+  ENEMIES;
+  INFO_AUTHOR;
+  INFO_BOMBS;
+  INFO_LIFE;
+  INFO_MUSIC;
+  INFO_NAME;
+  INFO_NEXT;
+  INFO_ROPE;
+  ITEMS;
+  NEW;
+  TRAPS;
+  blockArray = [];
+  dropMax;
+  dropSelect;
+  dropVal;
+  enemyArray = [];
+  exitNames = [];
+  exitNamesID;
+  exitNamesNum;
+  lootArray = [];
+  mb_right;
+  signNames = [];
+  signNamesID;
+  signNamesNum;
+  textEdit;
+  trapArray = [];
 }

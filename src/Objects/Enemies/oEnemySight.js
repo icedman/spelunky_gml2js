@@ -34,5 +34,5 @@ function oEnemySight_CREATE($) {
 }
 
 class oEnemySight extends oObject {
-  // variables
+  owner;
 }

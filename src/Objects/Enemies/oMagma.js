@@ -33,7 +33,9 @@ function oMagma_OTHER($) {
 
 function oMagma_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oDetritus_STEP($);
+    } catch (err) {}
 
     if (isCollisionBottom(1)) {
       sprite_index = sMagmaManCreate;
@@ -44,7 +46,7 @@ function oMagma_STEP($) {
   }
 }
 
-function oMagma_ALARM($) {
+function oMagma_ALARM_0($) {
   with ($) {
     instance_create(x, y, oMagmaTrail);
     alarm[0] = 2;
@@ -72,7 +74,9 @@ function oMagma_COLLISION_oEnemy($) {
 
 function oMagma_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDetritus_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.3;
 
@@ -95,6 +99,4 @@ function oMagma_COLLISION_oWater($) {
   }
 }
 
-class oMagma extends oDetritus {
-  // variables
-}
+class oMagma extends oDetritus {}

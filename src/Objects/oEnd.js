@@ -62,6 +62,4 @@ function oEnd_CREATE($) {
   }
 }
 
-class oEnd extends oObject {
-  // variables
-}
+class oEnd extends oObject {}

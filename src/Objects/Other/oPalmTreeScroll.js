@@ -13,6 +13,4 @@ function oPalmTreeScroll_CREATE($) {
   }
 }
 
-class oPalmTreeScroll extends oDrawnSprite {
-  // variables
-}
+class oPalmTreeScroll extends oDrawnSprite {}

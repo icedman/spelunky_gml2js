@@ -1,4 +1,4 @@
-function oPDummy4_ALARM($) {
+function oPDummy4_ALARM_2($) {
   with ($) {
     if (climbSndToggle) playSound(global.sndClimb1);
     else playSound(global.sndClimb2);
@@ -38,7 +38,9 @@ function oPDummy4_STEP($) {
 
 function oPDummy4_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     // dummy actor for title screen
 
@@ -51,6 +53,4 @@ function oPDummy4_CREATE($) {
   }
 }
 
-class oPDummy4 extends oDrawnSprite {
-  // variables
-}
+class oPDummy4 extends oDrawnSprite {}

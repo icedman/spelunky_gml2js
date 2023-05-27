@@ -1,3 +1,1 @@
-class oShrub extends oObject {
-  // variables
-}
+class oShrub extends oObject {}

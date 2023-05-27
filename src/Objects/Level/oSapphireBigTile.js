@@ -1,3 +1,1 @@
-class oSapphireBigTile extends oDrawnSprite {
-  // variables
-}
+class oSapphireBigTile extends oDrawnSprite {}

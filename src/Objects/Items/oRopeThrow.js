@@ -1,6 +1,8 @@
 function oRopeThrow_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (armed && yVel >= 0) {
       move_snap(16, 1);
@@ -34,7 +36,9 @@ function oRopeThrow_STEP($) {
 
 function oRopeThrow_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Rope';
     makeActive();
@@ -50,5 +54,6 @@ function oRopeThrow_CREATE($) {
 }
 
 class oRopeThrow extends oItem {
-  // variables
+  fallCount;
+  px;
 }

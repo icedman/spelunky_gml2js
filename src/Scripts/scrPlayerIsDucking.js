@@ -1,10 +1,11 @@
-//
-// scrPlayerIsDucking()
-//
-// Is the player ducking || what?!
-//
+function scrPlayerIsDucking() {
+  //
+  // scrPlayerIsDucking()
+  //
+  // Is the player ducking || what?!
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -21,13 +22,14 @@
     
 ***********************************************************************************/
 
-if (
-  sprite_index == sDuckLeft ||
-  sprite_index == sCrawlLeft ||
-  sprite_index == sDamselDuckL ||
-  sprite_index == sDamselCrawlL ||
-  sprite_index == sTunnelDuckL ||
-  sprite_index == sTunnelCrawlL
-) {
-  return true;
-} else return false;
+  if (
+    sprite_index == sDuckLeft ||
+    sprite_index == sCrawlLeft ||
+    sprite_index == sDamselDuckL ||
+    sprite_index == sDamselCrawlL ||
+    sprite_index == sTunnelDuckL ||
+    sprite_index == sTunnelCrawlL
+  ) {
+    return true;
+  } else return false;
+}

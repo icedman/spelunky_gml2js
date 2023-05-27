@@ -12,7 +12,7 @@ function oMachetePre_STEP($) {
   }
 }
 
-function oMachetePre_ALARM($) {
+function oMachetePre_ALARM_0($) {
   with ($) {
     instance_destroy();
   }
@@ -20,13 +20,13 @@ function oMachetePre_ALARM($) {
 
 function oMachetePre_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oWhipPre_CREATE($);
+    } catch (err) {}
 
     type = 'Machete';
     damage = 2;
   }
 }
 
-class oMachetePre extends oWhipPre {
-  // variables
-}
+class oMachetePre extends oWhipPre {}

@@ -56,6 +56,4 @@ function oBarrier_COLLISION_oItem($) {
   }
 }
 
-class oBarrier extends oObject {
-  // variables
-}
+class oBarrier extends oObject {}

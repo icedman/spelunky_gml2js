@@ -1,3 +1,1 @@
-class oRim extends oObject {
-  // variables
-}
+class oRim extends oObject {}

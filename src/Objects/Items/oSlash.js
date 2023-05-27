@@ -21,7 +21,9 @@ function oSlash_STEP($) {
 
 function oSlash_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oWhip_CREATE($);
+    } catch (err) {}
 
     type = 'Machete';
     damage = 2;
@@ -30,6 +32,4 @@ function oSlash_CREATE($) {
   }
 }
 
-class oSlash extends oWhip {
-  // variables
-}
+class oSlash extends oWhip {}

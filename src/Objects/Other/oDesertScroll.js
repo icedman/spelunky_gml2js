@@ -8,7 +8,9 @@ function oDesertScroll_STEP($) {
 
 function oDesertScroll_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     scroll = false;
 
@@ -16,6 +18,4 @@ function oDesertScroll_CREATE($) {
   }
 }
 
-class oDesertScroll extends oDrawnSprite {
-  // variables
-}
+class oDesertScroll extends oDrawnSprite {}

@@ -1,10 +1,11 @@
-//
-// scrCreateFlame(x, y, num)
-//
-// Create flame.
-//
+function scrCreateFlame() {
+  //
+  // scrCreateFlame(x, y, num)
+  //
+  // Create flame.
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -21,9 +22,10 @@
     
 ***********************************************************************************/
 
-repeat(arguments[2]);
-{
-  if (instance_number(oDetritus) < 16) {
-    instance_create(arguments[0], arguments[1], oFlame);
+  repeat(arguments[2]);
+  {
+    if (instance_number(oDetritus) < 16) {
+      instance_create(arguments[0], arguments[1], oFlame);
+    }
   }
 }

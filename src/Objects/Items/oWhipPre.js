@@ -12,7 +12,7 @@ function oWhipPre_STEP($) {
   }
 }
 
-function oWhipPre_ALARM($) {
+function oWhipPre_ALARM_0($) {
   with ($) {
     instance_destroy();
   }
@@ -20,7 +20,9 @@ function oWhipPre_ALARM($) {
 
 function oWhipPre_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'Whip';
     damage = 1;
@@ -28,6 +30,4 @@ function oWhipPre_CREATE($) {
   }
 }
 
-class oWhipPre extends oDrawnSprite {
-  // variables
-}
+class oWhipPre extends oDrawnSprite {}

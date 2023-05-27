@@ -1,3 +1,1 @@
-class oSpearTrapLit extends oSpearTrapTop {
-  // variables
-}
+class oSpearTrapLit extends oSpearTrapTop {}

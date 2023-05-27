@@ -1,12 +1,16 @@
 function oChest_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
   }
 }
 
 function oChest_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Chest';
     makeActive();
@@ -19,6 +23,4 @@ function oChest_CREATE($) {
   }
 }
 
-class oChest extends oItem {
-  // variables
-}
+class oChest extends oItem {}

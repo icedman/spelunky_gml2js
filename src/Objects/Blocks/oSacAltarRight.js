@@ -1,3 +1,1 @@
-class oSacAltarRight extends oSacAltarLeft {
-  // variables
-}
+class oSacAltarRight extends oSacAltarLeft {}

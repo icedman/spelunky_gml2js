@@ -1,6 +1,8 @@
 function oFrog_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -82,7 +84,9 @@ function oFrog_STEP($) {
 
 function oFrog_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(1, 2, 14, 16);
@@ -121,6 +125,4 @@ function oFrog_CREATE($) {
   }
 }
 
-class oFrog extends oEnemy {
-  // variables
-}
+class oFrog extends oEnemy {}

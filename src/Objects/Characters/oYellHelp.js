@@ -4,7 +4,7 @@ function oYellHelp_STEP($) {
   }
 }
 
-function oYellHelp_ALARM($) {
+function oYellHelp_ALARM_0($) {
   with ($) {
     action_kill_object();
   }
@@ -12,7 +12,9 @@ function oYellHelp_ALARM($) {
 
 function oYellHelp_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = 0.1;
     yAcc = 0.1;
@@ -20,6 +22,4 @@ function oYellHelp_CREATE($) {
   }
 }
 
-class oYellHelp extends oDrawnSprite {
-  // variables
-}
+class oYellHelp extends oDrawnSprite {}

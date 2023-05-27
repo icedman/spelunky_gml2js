@@ -22,6 +22,4 @@ function oCheckBox3_CREATE($) {
   }
 }
 
-class oCheckBox3 extends oObject {
-  // variables
-}
+class oCheckBox3 extends oObject {}

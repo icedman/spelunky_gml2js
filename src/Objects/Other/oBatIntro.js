@@ -26,6 +26,4 @@ function oBatIntro_CREATE($) {
   }
 }
 
-class oBatIntro extends oObject {
-  // variables
-}
+class oBatIntro extends oObject {}

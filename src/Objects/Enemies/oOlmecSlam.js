@@ -11,7 +11,7 @@ function oOlmecSlam_COLLISION_oSolid($) {
   }
 }
 
-function oOlmecSlam_ALARM($) {
+function oOlmecSlam_ALARM_0($) {
   with ($) {
     action_kill_object();
   }
@@ -24,6 +24,4 @@ function oOlmecSlam_CREATE($) {
   }
 }
 
-class oOlmecSlam extends oObject {
-  // variables
-}
+class oOlmecSlam extends oObject {}

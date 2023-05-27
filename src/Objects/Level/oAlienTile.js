@@ -1,11 +1,11 @@
 function oAlienTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0;
   }
 }
 
-class oAlienTile extends oDrawnSprite {
-  // variables
-}
+class oAlienTile extends oDrawnSprite {}

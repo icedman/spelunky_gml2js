@@ -13,6 +13,4 @@ function oDesertTopScroll_CREATE($) {
   }
 }
 
-class oDesertTopScroll extends oObject {
-  // variables
-}
+class oDesertTopScroll extends oObject {}

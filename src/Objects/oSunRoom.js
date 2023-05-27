@@ -1,18 +1,73 @@
-function oSunRoom_ALARM($) {
+function oSunRoom_ALARM_11($) {
   with ($) {
     if (!oPlayer1.dead) {
       if (points < 99) points += 1;
       alarm[11] = 30;
     }
+  }
+}
 
+function oSunRoom_ALARM_3($) {
+  with ($) {
     drawStatus = 3;
+  }
+}
 
+function oSunRoom_ALARM_1($) {
+  with ($) {
     drawStatus = 1;
     alarm[2] = 30;
+  }
+}
 
+function oSunRoom_ALARM_2($) {
+  with ($) {
     drawStatus = 2;
     alarm[3] = 10;
+  }
+}
 
+function oSunRoom_DRAW($) {
+  with ($) {
+    life = global.plife;
+    if (life < 0) life = 0;
+    draw_set_font(global.myFont);
+    draw_set_color(c_white);
+    draw_sprite(sHeart, -1, view_xview[0] + 8, view_yview[0] + 8);
+    draw_text(view_xview[0] + 24, view_yview[0] + 8, life);
+    draw_sprite(sDamselIcon, -1, view_xview[0] + 64, view_yview[0] + 8);
+    draw_text(view_xview[0] + 64 + 16, view_yview[0] + 8, points);
+    if (drawStatus < 3) {
+      draw_set_font(global.myFontSmall);
+      draw_set_color(c_yellow);
+      strLen = string_length('DAMSEL CHALLENGE BEGINS IN 3...') * 8;
+      n = 320 - strLen;
+      n = ceil(n / 2);
+      draw_text(
+        n,
+        216,
+        'DAMSEL CHALLENGE BEGINS IN ' + string(3 - drawStatus) + '...'
+      );
+    }
+  }
+}
+
+function oSunRoom_STEP($) {
+  with ($) {
+    if (oGame.drawStatus == 0) {
+      if (instance_exists(oDamsel)) {
+        if (oDamsel.hp < 1) {
+          global.plife = 0;
+        }
+      } else {
+        global.plife = 0;
+      }
+    }
+  }
+}
+
+function oSunRoom_ALARM_0($) {
+  with ($) {
     if (!oPlayer1.dead) {
       i = oPlayer1.x;
       j = 32;
@@ -61,47 +116,6 @@ function oSunRoom_ALARM($) {
         alarm[0] = rand(100, 200);
       } else alarm[0] = 1;
     }
-
-    if (global.music) startMusic();
-  }
-}
-
-function oSunRoom_DRAW($) {
-  with ($) {
-    life = global.plife;
-    if (life < 0) life = 0;
-    draw_set_font(global.myFont);
-    draw_set_color(c_white);
-    draw_sprite(sHeart, -1, view_xview[0] + 8, view_yview[0] + 8);
-    draw_text(view_xview[0] + 24, view_yview[0] + 8, life);
-    draw_sprite(sDamselIcon, -1, view_xview[0] + 64, view_yview[0] + 8);
-    draw_text(view_xview[0] + 64 + 16, view_yview[0] + 8, points);
-    if (drawStatus < 3) {
-      draw_set_font(global.myFontSmall);
-      draw_set_color(c_yellow);
-      strLen = string_length('DAMSEL CHALLENGE BEGINS IN 3...') * 8;
-      n = 320 - strLen;
-      n = ceil(n / 2);
-      draw_text(
-        n,
-        216,
-        'DAMSEL CHALLENGE BEGINS IN ' + string(3 - drawStatus) + '...'
-      );
-    }
-  }
-}
-
-function oSunRoom_STEP($) {
-  with ($) {
-    if (oGame.drawStatus == 0) {
-      if (instance_exists(oDamsel)) {
-        if (oDamsel.hp < 1) {
-          global.plife = 0;
-        }
-      } else {
-        global.plife = 0;
-      }
-    }
   }
 }
 
@@ -127,6 +141,12 @@ function oSunRoom_CREATE($) {
   }
 }
 
+function oSunRoom_ALARM_10($) {
+  with ($) {
+    if (global.music) startMusic();
+  }
+}
+
 class oSunRoom extends oObject {
-  // variables
+  points;
 }

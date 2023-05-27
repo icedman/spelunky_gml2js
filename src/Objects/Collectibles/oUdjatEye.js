@@ -1,6 +1,8 @@
 function oUdjatEye_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Udjat Eye';
     makeActive();
@@ -11,6 +13,4 @@ function oUdjatEye_CREATE($) {
   }
 }
 
-class oUdjatEye extends oItem {
-  // variables
-}
+class oUdjatEye extends oItem {}

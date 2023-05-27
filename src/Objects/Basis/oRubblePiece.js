@@ -33,7 +33,9 @@ function oRubblePiece_STEP($) {
 
 function oRubblePiece_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'None';
     xVel = 0;
@@ -42,6 +44,4 @@ function oRubblePiece_CREATE($) {
   }
 }
 
-class oRubblePiece extends oDrawnSprite {
-  // variables
-}
+class oRubblePiece extends oDrawnSprite {}

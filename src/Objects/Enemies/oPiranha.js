@@ -144,7 +144,7 @@ function oPiranha_STEP($) {
   }
 }
 
-function oPiranha_ALARM($) {
+function oPiranha_ALARM_0($) {
   with ($) {
     canBite = true;
   }
@@ -152,7 +152,9 @@ function oPiranha_ALARM($) {
 
 function oPiranha_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     type = 'Piranha';
     image_speed = 0.5;
@@ -190,5 +192,6 @@ function oPiranha_CREATE($) {
 }
 
 class oPiranha extends oEnemy {
-  // variables
+  ATTACK_ENEMY;
+  canBite;
 }

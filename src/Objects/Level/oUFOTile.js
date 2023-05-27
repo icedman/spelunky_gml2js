@@ -1,11 +1,11 @@
 function oUFOTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0;
   }
 }
 
-class oUFOTile extends oDrawnSprite {
-  // variables
-}
+class oUFOTile extends oDrawnSprite {}

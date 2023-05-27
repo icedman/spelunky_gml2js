@@ -1,4 +1,4 @@
-function oGoldNugget_ALARM($) {
+function oGoldNugget_ALARM_0($) {
   with ($) {
     canCollect = true;
   }
@@ -6,7 +6,9 @@ function oGoldNugget_ALARM($) {
 
 function oGoldNugget_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Gold Nugget';
     makeActive();
@@ -16,6 +18,4 @@ function oGoldNugget_CREATE($) {
   }
 }
 
-class oGoldNugget extends oTreasure {
-  // variables
-}
+class oGoldNugget extends oTreasure {}

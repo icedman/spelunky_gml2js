@@ -1,4 +1,4 @@
-function oTitle_ALARM($) {
+function oTitle_ALARM_3($) {
   with ($) {
     instance_create(320 + 280, -32, oPDummy4);
     [instances_of(oScreen)].orEach(($) => {
@@ -7,17 +7,13 @@ function oTitle_ALARM($) {
       }
     });
     playMusic(global.musTitle, true);
+  }
+}
 
+function oTitle_ALARM_1($) {
+  with ($) {
     state = 2;
     alarm[2] = 70;
-
-    state = 3;
-    instance_create(320 + 280, -8, oFlare);
-    playSound(global.sndIgnite);
-    alarm[3] = 50;
-
-    state = 1;
-    alarm[1] = 100;
   }
 }
 
@@ -35,6 +31,15 @@ function oTitle_KEYPRESS($) {
     stopAllMusic();
     global.testLevel = '';
     room_goto(rLevelEditor);
+  }
+}
+
+function oTitle_ALARM_2($) {
+  with ($) {
+    state = 3;
+    instance_create(320 + 280, -8, oFlare);
+    playSound(global.sndIgnite);
+    alarm[3] = 50;
   }
 }
 
@@ -108,6 +113,13 @@ function oTitle_STEP($) {
         room_goto(rCredits1);
       }
     }
+  }
+}
+
+function oTitle_ALARM_0($) {
+  with ($) {
+    state = 1;
+    alarm[1] = 100;
   }
 }
 
@@ -231,5 +243,5 @@ function oTitle_CREATE($) {
 }
 
 class oTitle extends oObject {
-  // variables
+  needDark;
 }

@@ -4,6 +4,4 @@ function oCavemanWorship_CREATE($) {
   }
 }
 
-class oCavemanWorship extends oObject {
-  // variables
-}
+class oCavemanWorship extends oObject {}

@@ -1,10 +1,11 @@
-//
-// scrCreateBlood(x, y, num)
-//
-// Create blood.
-//
+function scrCreateBlood() {
+  //
+  // scrCreateBlood(x, y, num)
+  //
+  // Create blood.
+  //
 
-/**********************************************************************************
+  /**********************************************************************************
     Copyright (c) 2008, 2009 Derek Yu and Mossmouth, LLC
     
     This file is part of Spelunky.
@@ -21,11 +22,12 @@
     
 ***********************************************************************************/
 
-if (bloodless) return 0;
+  if (bloodless) return 0;
 
-repeat(arguments[2]);
-{
-  if (instance_number(oDetritus) < 16) {
-    instance_create(arguments[0], arguments[1], oBlood);
+  repeat(arguments[2]);
+  {
+    if (instance_number(oDetritus) < 16) {
+      instance_create(arguments[0], arguments[1], oBlood);
+    }
   }
 }

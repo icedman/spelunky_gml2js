@@ -1,3 +1,1 @@
-class oCaveBGEntrance extends oObject {
-  // variables
-}
+class oCaveBGEntrance extends oObject {}

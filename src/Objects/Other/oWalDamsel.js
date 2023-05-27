@@ -13,6 +13,4 @@ function oWalDamsel_CREATE($) {
   }
 }
 
-class oWalDamsel extends oObject {
-  // variables
-}
+class oWalDamsel extends oObject {}

@@ -28,6 +28,4 @@ function oPageUp_KEYPRESS($) {
   }
 }
 
-class oPageUp extends oObject {
-  // variables
-}
+class oPageUp extends oObject {}

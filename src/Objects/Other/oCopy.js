@@ -1,3 +1,1 @@
-class oCopy extends oObject {
-  // variables
-}
+class oCopy extends oObject {}

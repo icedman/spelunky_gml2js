@@ -1,3 +1,1 @@
-class oSpringShoesTile extends oDrawnSprite {
-  // variables
-}
+class oSpringShoesTile extends oDrawnSprite {}

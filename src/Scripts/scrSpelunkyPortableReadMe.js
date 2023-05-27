@@ -1,4 +1,5 @@
-/*
+function scrSpelunkyPortableReadMe() {
+  /*
 =================
 Spelunky Portable
 by Moloch
@@ -93,3 +94,4 @@ registry. Depending on what kind of mod you are making you may not need to do th
 
                          
 */
+}

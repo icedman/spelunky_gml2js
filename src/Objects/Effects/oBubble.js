@@ -16,7 +16,9 @@ function oBubble_STEP($) {
 
 function oBubble_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = -rand(1, 3) * 0.1;
     yAcc = 0.1;
@@ -24,6 +26,4 @@ function oBubble_CREATE($) {
   }
 }
 
-class oBubble extends oDrawnSprite {
-  // variables
-}
+class oBubble extends oDrawnSprite {}

@@ -1,3 +1,1 @@
-class oTeleporterTile extends oDrawnSprite {
-  // variables
-}
+class oTeleporterTile extends oDrawnSprite {}

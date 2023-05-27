@@ -23,6 +23,4 @@ function oSign_DESTROY($) {
   }
 }
 
-class oSign extends oSolid {
-  // variables
-}
+class oSign extends oSolid {}

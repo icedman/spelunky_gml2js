@@ -12,7 +12,9 @@ function oPDummy5_STEP($) {
 
 function oPDummy5_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     // dummy actor for title
 
@@ -27,6 +29,4 @@ function oPDummy5_CREATE($) {
   }
 }
 
-class oPDummy5 extends oDrawnSprite {
-  // variables
-}
+class oPDummy5 extends oDrawnSprite {}

@@ -29,6 +29,4 @@ function oGoldDoor_COLLISION_oSceptre($) {
   }
 }
 
-class oGoldDoor extends oDrawnSprite {
-  // variables
-}
+class oGoldDoor extends oDrawnSprite {}

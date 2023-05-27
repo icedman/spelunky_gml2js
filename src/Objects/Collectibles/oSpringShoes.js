@@ -1,6 +1,8 @@
 function oSpringShoes_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Spring Shoes';
     makeActive();
@@ -11,6 +13,4 @@ function oSpringShoes_CREATE($) {
   }
 }
 
-class oSpringShoes extends oItem {
-  // variables
-}
+class oSpringShoes extends oItem {}

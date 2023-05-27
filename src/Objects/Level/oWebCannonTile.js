@@ -1,3 +1,1 @@
-class oWebCannonTile extends oDrawnSprite {
-  // variables
-}
+class oWebCannonTile extends oDrawnSprite {}

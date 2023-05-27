@@ -65,7 +65,7 @@ function oTemp_STEP($) {
   }
 }
 
-function oTemp_ALARM($) {
+function oTemp_ALARM_0($) {
   with ($) {
     arrow = instance_create(x - 16, y + 4, oArrow);
     arrow.xVel = -5;
@@ -74,7 +74,9 @@ function oTemp_ALARM($) {
 
 function oTemp_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     type = 'Arrow Trap';
     fired = 0;
@@ -84,5 +86,5 @@ function oTemp_CREATE($) {
 }
 
 class oTemp extends oSolid {
-  // variables
+  sndArrowTrap;
 }

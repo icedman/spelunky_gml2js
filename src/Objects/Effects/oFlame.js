@@ -6,7 +6,9 @@ function oFlame_DESTROY($) {
 
 function oFlame_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oDetritus_STEP($);
+    } catch (err) {}
 
     if (yVel > 6) instance_destroy();
 
@@ -16,7 +18,7 @@ function oFlame_STEP($) {
   }
 }
 
-function oFlame_ALARM($) {
+function oFlame_ALARM_0($) {
   with ($) {
     if (instance_number(oFlameTrail) < 12) instance_create(x, y, oFlameTrail);
     alarm[0] = 2;
@@ -25,7 +27,9 @@ function oFlame_ALARM($) {
 
 function oFlame_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDetritus_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.3;
 
@@ -45,6 +49,4 @@ function oFlame_COLLISION_oWater($) {
   }
 }
 
-class oFlame extends oDetritus {
-  // variables
-}
+class oFlame extends oDetritus {}

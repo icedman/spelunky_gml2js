@@ -1,3 +1,1 @@
-class oTitleBG extends oDrawnSprite {
-  // variables
-}
+class oTitleBG extends oDrawnSprite {}

@@ -259,5 +259,12 @@ tSaves = 8;
 }
 
 class oHighscores extends oObject {
-  // variables
+  block;
+  moonGold;
+  starsGold;
+  sunGold;
+  tMini1;
+  tMini2;
+  tMini3;
+  trophy;
 }

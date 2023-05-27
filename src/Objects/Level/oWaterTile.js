@@ -1,3 +1,1 @@
-class oWaterTile extends oDrawnSprite {
-  // variables
-}
+class oWaterTile extends oDrawnSprite {}

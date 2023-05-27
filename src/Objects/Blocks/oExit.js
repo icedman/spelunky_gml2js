@@ -16,6 +16,4 @@ function oExit_CREATE($) {
   }
 }
 
-class oExit extends oDrawnSprite {
-  // variables
-}
+class oExit extends oDrawnSprite {}

@@ -1,3 +1,1 @@
-class oSpearTrapTileTop extends oDrawnSprite {
-  // variables
-}
+class oSpearTrapTileTop extends oDrawnSprite {}

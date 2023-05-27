@@ -1,6 +1,8 @@
 function oSnake_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -94,7 +96,9 @@ if (status != STUNNED and facing == RIGHT)
 
 function oSnake_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, 14, 16);
@@ -126,6 +130,4 @@ function oSnake_CREATE($) {
   }
 }
 
-class oSnake extends oEnemy {
-  // variables
-}
+class oSnake extends oEnemy {}

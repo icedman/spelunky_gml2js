@@ -86,7 +86,9 @@ function oCaveman_COLLISION_oCharacter($) {
 
 function oCaveman_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (active) {
       moveTo(xVel, yVel);
@@ -270,7 +272,9 @@ function oCaveman_STEP($) {
 
 function oCaveman_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, sprite_width - 2, sprite_height);
@@ -305,6 +309,4 @@ function oCaveman_CREATE($) {
   }
 }
 
-class oCaveman extends oEnemy {
-  // variables
-}
+class oCaveman extends oEnemy {}

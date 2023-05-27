@@ -51,7 +51,9 @@ function oCeilingTrap_STEP($) {
 
 function oCeilingTrap_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(0, 0, 16, 16);
@@ -73,6 +75,4 @@ function oCeilingTrap_CREATE($) {
   }
 }
 
-class oCeilingTrap extends oMovingSolid {
-  // variables
-}
+class oCeilingTrap extends oMovingSolid {}

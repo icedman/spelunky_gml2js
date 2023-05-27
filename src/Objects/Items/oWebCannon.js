@@ -1,6 +1,8 @@
 function oWebCannon_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (held) {
       if (oPlayer1.acing == 18) sprite_index = sWebCannonL;
@@ -11,7 +13,9 @@ function oWebCannon_STEP($) {
 
 function oWebCannon_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Web Cannon';
     makeActive();
@@ -21,6 +25,4 @@ function oWebCannon_CREATE($) {
   }
 }
 
-class oWebCannon extends oItem {
-  // variables
-}
+class oWebCannon extends oItem {}

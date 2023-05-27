@@ -1,3 +1,1 @@
-class oEmeraldBigTile extends oDrawnSprite {
-  // variables
-}
+class oEmeraldBigTile extends oDrawnSprite {}

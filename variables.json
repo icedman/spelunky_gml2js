@@ -1,0 +1,3018 @@
+{
+    "oAlien": {},
+    "oAlienBoss": {
+        "blood": {
+            "type": ""
+        },
+        "psychicRecover": {
+            "type": ""
+        }
+    },
+    "oAlienBossTile": {},
+    "oAlienEject": {
+        "DEPLOY": {
+            "type": ""
+        },
+        "EJECT": {
+            "type": ""
+        },
+        "FLOAT": {
+            "type": ""
+        }
+    },
+    "oAlienShip": {},
+    "oAlienShipFloor": {},
+    "oAlienTile": {},
+    "oAltarLeft": {},
+    "oAltarRight": {},
+    "oAnkh": {},
+    "oArrow": {},
+    "oArrowRepeaterL": {},
+    "oArrowRepeaterR": {},
+    "oArrowTrapLeft": {},
+    "oArrowTrapLeftLit": {},
+    "oArrowTrapRight": {},
+    "oArrowTrapRightLit": {},
+    "oArrowTrapTest": {
+        "trapID": {
+            "type": ""
+        }
+    },
+    "oBGEnd3": {},
+    "oBackdrop": {},
+    "oBall": {},
+    "oBall2": {},
+    "oBarrier": {},
+    "oBarrierEmitter": {},
+    "oBasket": {},
+    "oBasketball": {
+        "bounces": {
+            "type": ""
+        },
+        "goingIn": {
+            "type": ""
+        },
+        "wallBounce": {
+            "type": ""
+        }
+    },
+    "oBat": {},
+    "oBatIntro": {},
+    "oBatTarget": {
+        "difficulty": {
+            "type": ""
+        },
+        "xMid": {
+            "type": ""
+        }
+    },
+    "oBatTile": {},
+    "oBigChest": {},
+    "oBigCollect": {},
+    "oBigTreasure": {},
+    "oBlack": {},
+    "oBlackBG": {},
+    "oBlackFadeUp": {},
+    "oBlock": {},
+    "oBlood": {
+        "collectible": {
+            "type": ""
+        }
+    },
+    "oBloodSpark": {},
+    "oBloodTrail": {},
+    "oBomb": {},
+    "oBombBag": {},
+    "oBombBagTile": {},
+    "oBombBox": {},
+    "oBombBoxTile": {},
+    "oBombPasteTile": {},
+    "oBone": {},
+    "oBones": {},
+    "oBonesTile": {},
+    "oBoulder": {},
+    "oBow": {},
+    "oBowTile": {},
+    "oBrick": {},
+    "oBrickSmooth": {},
+    "oBricks": {
+        "scrSetupWalls": {
+            "type": "function"
+        }
+    },
+    "oBubble": {},
+    "oBullet": {},
+    "oBurn": {},
+    "oButtonHighscore": {
+        "pushed": {
+            "type": ""
+        }
+    },
+    "oCamel": {},
+    "oCape": {},
+    "oCapePickup": {},
+    "oCapeTile": {},
+    "oCaravan": {},
+    "oCaveBG": {},
+    "oCaveBG2": {},
+    "oCaveBGEntrance": {},
+    "oCaveUp": {},
+    "oCaveman": {},
+    "oCavemanTile": {},
+    "oCavemanWorship": {},
+    "oCeilingTrap": {},
+    "oChain": {},
+    "oChain2": {},
+    "oCharacter": {},
+    "oCheckBox": {},
+    "oCheckBox2": {},
+    "oCheckBox3": {},
+    "oCheckBox4": {},
+    "oChest": {},
+    "oChestTile": {},
+    "oCompass": {},
+    "oCompassTile": {},
+    "oCopy": {},
+    "oCrate": {},
+    "oCrateTile": {},
+    "oCredits1": {},
+    "oCredits2": {},
+    "oCrown": {},
+    "oCrystalSkull": {},
+    "oCrystalSkullTile": {},
+    "oCursObj": {},
+    "oDamsel": {
+        "KISS": {
+            "type": ""
+        },
+        "SLAVE": {
+            "type": ""
+        },
+        "SS_SetSoundPan": {
+            "type": "function"
+        },
+        "startled": {
+            "type": ""
+        },
+        "stunMax": {
+            "type": ""
+        }
+    },
+    "oDamselKiss": {
+        "kissed": {
+            "type": ""
+        }
+    },
+    "oDamselTile": {},
+    "oDark": {},
+    "oDarkFall": {
+        "isCollisionCharacterTop": {
+            "type": "function"
+        },
+        "timeFall": {
+            "type": ""
+        },
+        "timeFallMax": {
+            "type": ""
+        }
+    },
+    "oDeadFish": {},
+    "oDesert": {},
+    "oDesert2": {},
+    "oDesertScroll": {},
+    "oDesertScroll2": {},
+    "oDesertTop": {},
+    "oDesertTopScroll": {},
+    "oDetritus": {},
+    "oDiamond": {},
+    "oDiamondTile": {},
+    "oDice": {
+        "rolling": {
+            "type": ""
+        }
+    },
+    "oDoor": {},
+    "oDrawnSprite": {},
+    "oDrip": {},
+    "oEditButton": {},
+    "oEmerald": {},
+    "oEmeraldBig": {},
+    "oEmeraldBigTile": {},
+    "oEnd": {},
+    "oEnd2": {},
+    "oEnd2BG": {},
+    "oEnd3": {},
+    "oEndCustom": {},
+    "oEndPlat": {},
+    "oEndWall": {},
+    "oEnemy": {
+        "myGravWater": {
+            "type": ""
+        },
+        "shaking": {
+            "type": ""
+        },
+        "spikes": {
+            "type": ""
+        }
+    },
+    "oEnemySight": {
+        "owner": {
+            "type": ""
+        }
+    },
+    "oEntrance": {},
+    "oEntranceCheck": {},
+    "oExit": {},
+    "oExplosion": {},
+    "oFakeBones": {},
+    "oFinalBoss": {
+        "brick": {
+            "type": ""
+        },
+        "doorOpen": {
+            "type": ""
+        },
+        "olmecDead": {
+            "type": ""
+        }
+    },
+    "oFireFrog": {},
+    "oFireFrogArmed": {},
+    "oFireFrogBomb": {},
+    "oFireFrogTile": {},
+    "oFishBone": {},
+    "oFlame": {},
+    "oFlameTrail": {},
+    "oFlare": {
+        "distToPlayer": {
+            "type": ""
+        }
+    },
+    "oFlareCrate": {},
+    "oFlareSpark": {},
+    "oFly": {},
+    "oForeground": {},
+    "oFrill": {},
+    "oFrog": {},
+    "oFrogTile": {},
+    "oFrozenCaveman": {},
+    "oGame": {
+        "action_color": {
+            "type": "function"
+        },
+        "altar": {
+            "type": ""
+        },
+        "damsel": {
+            "type": ""
+        },
+        "debug": {
+            "type": ""
+        },
+        "dm": {
+            "type": ""
+        },
+        "genBombShop": {
+            "type": ""
+        },
+        "genClothingShop": {
+            "type": ""
+        },
+        "genRareShop": {
+            "type": ""
+        },
+        "genSupplyShop": {
+            "type": ""
+        },
+        "genWeaponShop": {
+            "type": ""
+        },
+        "idol": {
+            "type": ""
+        },
+        "moveableSolidGrav": {
+            "type": ""
+        },
+        "room_speed": {
+            "type": ""
+        },
+        "scrInitLevel": {
+            "type": "function"
+        },
+        "time": {
+            "type": ""
+        }
+    },
+    "oGamepad": {
+        "attack": {
+            "type": ""
+        },
+        "attackPressed": {
+            "type": ""
+        },
+        "attackReleased": {
+            "type": ""
+        },
+        "bomb": {
+            "type": ""
+        },
+        "bombPressed": {
+            "type": ""
+        },
+        "bombReleased": {
+            "type": ""
+        },
+        "down": {
+            "type": ""
+        },
+        "downPressed": {
+            "type": ""
+        },
+        "downReleased": {
+            "type": ""
+        },
+        "flarePressed": {
+            "type": ""
+        },
+        "flareReleased": {
+            "type": ""
+        },
+        "itemPressed": {
+            "type": ""
+        },
+        "itemReleased": {
+            "type": ""
+        },
+        "joystick_check_button": {
+            "type": "function"
+        },
+        "joystick_direction": {
+            "type": "function"
+        },
+        "joystick_has_pov": {
+            "type": "function"
+        },
+        "joystick_pov": {
+            "type": "function"
+        },
+        "joystick_zpos": {
+            "type": "function"
+        },
+        "jump": {
+            "type": ""
+        },
+        "jumpPressed": {
+            "type": ""
+        },
+        "jumpReleased": {
+            "type": ""
+        },
+        "left": {
+            "type": ""
+        },
+        "leftPressed": {
+            "type": ""
+        },
+        "leftReleased": {
+            "type": ""
+        },
+        "pay": {
+            "type": ""
+        },
+        "payPressed": {
+            "type": ""
+        },
+        "payReleased": {
+            "type": ""
+        },
+        "right": {
+            "type": ""
+        },
+        "rightPressed": {
+            "type": ""
+        },
+        "rightReleased": {
+            "type": ""
+        },
+        "ropePressed": {
+            "type": ""
+        },
+        "ropeReleased": {
+            "type": ""
+        },
+        "run": {
+            "type": ""
+        },
+        "start": {
+            "type": ""
+        },
+        "startPressed": {
+            "type": ""
+        },
+        "startReleased": {
+            "type": ""
+        },
+        "up": {
+            "type": ""
+        },
+        "upPressed": {
+            "type": ""
+        },
+        "upReleased": {
+            "type": ""
+        }
+    },
+    "oGhost": {},
+    "oGiantSpider": {
+        "CRAWL": {
+            "type": ""
+        },
+        "SQUIRT": {
+            "type": ""
+        },
+        "squirtTimer": {
+            "type": ""
+        }
+    },
+    "oGiantSpiderHang": {},
+    "oGiantSpiderTile": {},
+    "oGiantTikiHead": {},
+    "oGlobals": {
+        "highscore_value": {
+            "type": "function"
+        },
+        "scrImportHighscores": {
+            "type": "function"
+        }
+    },
+    "oGloves": {},
+    "oGlovesTile": {},
+    "oGold": {},
+    "oGoldBar": {},
+    "oGoldBarTile": {},
+    "oGoldBars": {},
+    "oGoldBarsTile": {},
+    "oGoldBig": {},
+    "oGoldChunk": {},
+    "oGoldDoor": {},
+    "oGoldIdol": {},
+    "oGoldIdolTile": {},
+    "oGoldNugget": {},
+    "oGrave": {},
+    "oHardBlock": {},
+    "oHawkman": {},
+    "oHawkmanTile": {},
+    "oHawkmanWorship": {},
+    "oHeart": {},
+    "oHighscores": {
+        "block": {
+            "type": ""
+        },
+        "moonGold": {
+            "type": ""
+        },
+        "starsGold": {
+            "type": ""
+        },
+        "sunGold": {
+            "type": ""
+        },
+        "tMini1": {
+            "type": ""
+        },
+        "tMini2": {
+            "type": ""
+        },
+        "tMini3": {
+            "type": ""
+        },
+        "trophy": {
+            "type": ""
+        }
+    },
+    "oHintHand": {},
+    "oIce": {},
+    "oIceBlock": {},
+    "oIceBottom": {},
+    "oIceTile": {},
+    "oIntro": {
+        "str1": {
+            "type": ""
+        },
+        "str3": {
+            "type": ""
+        }
+    },
+    "oIntroBG": {},
+    "oItem": {
+        "collision_rectangle_obj": {
+            "type": "function"
+        },
+        "stolen": {
+            "type": ""
+        }
+    },
+    "oItemsGet": {},
+    "oJar": {},
+    "oJarTile": {},
+    "oJaws": {
+        "turn": {
+            "type": ""
+        }
+    },
+    "oJetpack": {},
+    "oJetpackTile": {},
+    "oJordans": {},
+    "oJoyConfig": {
+        "checkJoyButton": {
+            "type": "function"
+        },
+        "joy": {
+            "type": ""
+        },
+        "joyKey": {
+            "type": ""
+        },
+        "joyPressed": {
+            "type": ""
+        },
+        "joyReleased": {
+            "type": ""
+        }
+    },
+    "oJoyConfigButton": {},
+    "oKaliHead": {},
+    "oKapala": {},
+    "oKey": {},
+    "oKeyConfig": {
+        "vk_alt": {
+            "type": ""
+        },
+        "vk_control": {
+            "type": ""
+        },
+        "vk_down": {
+            "type": ""
+        },
+        "vk_left": {
+            "type": ""
+        },
+        "vk_right": {
+            "type": ""
+        },
+        "vk_shift": {
+            "type": ""
+        },
+        "vk_space": {
+            "type": ""
+        },
+        "vk_up": {
+            "type": ""
+        }
+    },
+    "oKeyConfigButton": {},
+    "oLadder": {},
+    "oLadderOrange": {},
+    "oLadderTop": {},
+    "oLamp": {},
+    "oLampItem": {},
+    "oLampRed": {},
+    "oLampRedItem": {},
+    "oLaser": {},
+    "oLaserExplode": {},
+    "oLaserTrail": {},
+    "oLava": {
+        "spurt": {
+            "type": ""
+        },
+        "spurtCounter": {
+            "type": ""
+        },
+        "spurtTime": {
+            "type": ""
+        }
+    },
+    "oLavaDrip": {},
+    "oLavaSolid": {},
+    "oLavaSpray": {},
+    "oLavaTile": {},
+    "oLeaf": {},
+    "oLeaves": {
+        "spriteSet": {
+            "type": ""
+        }
+    },
+    "oLeavesTile": {},
+    "oLevel": {
+        "checked": {
+            "type": ""
+        },
+        "instance_deactivate_region": {
+            "type": "function"
+        },
+        "musicFade": {
+            "type": ""
+        },
+        "musicFadeTimer": {
+            "type": ""
+        },
+        "offset": {
+            "type": ""
+        },
+        "scrMusicFade": {
+            "type": "function"
+        },
+        "shakeSwitch": {
+            "type": ""
+        }
+    },
+    "oLevel13Sign": {},
+    "oLevel5Sign": {},
+    "oLevel9Sign": {},
+    "oLevelEditor": {
+        "BLOCKS": {
+            "type": ""
+        },
+        "EDIT": {
+            "type": ""
+        },
+        "EDIT_DOOR": {
+            "type": ""
+        },
+        "EDIT_MSG": {
+            "type": ""
+        },
+        "ENEMIES": {
+            "type": ""
+        },
+        "INFO_AUTHOR": {
+            "type": ""
+        },
+        "INFO_BOMBS": {
+            "type": ""
+        },
+        "INFO_LIFE": {
+            "type": ""
+        },
+        "INFO_MUSIC": {
+            "type": ""
+        },
+        "INFO_NAME": {
+            "type": ""
+        },
+        "INFO_NEXT": {
+            "type": ""
+        },
+        "INFO_ROPE": {
+            "type": ""
+        },
+        "ITEMS": {
+            "type": ""
+        },
+        "NEW": {
+            "type": ""
+        },
+        "TRAPS": {
+            "type": ""
+        },
+        "blockArray": {
+            "type": "array"
+        },
+        "dropMax": {
+            "type": ""
+        },
+        "dropSelect": {
+            "type": ""
+        },
+        "dropVal": {
+            "type": ""
+        },
+        "enemyArray": {
+            "type": "array"
+        },
+        "exitNames": {
+            "type": "array"
+        },
+        "exitNamesID": {
+            "type": ""
+        },
+        "exitNamesNum": {
+            "type": ""
+        },
+        "file_delete": {
+            "type": "function"
+        },
+        "file_text_eof": {
+            "type": "function"
+        },
+        "lootArray": {
+            "type": "array"
+        },
+        "mb_right": {
+            "type": ""
+        },
+        "scrCreateTile": {
+            "type": "function"
+        },
+        "scrSetCursorTile": {
+            "type": "function"
+        },
+        "signNames": {
+            "type": "array"
+        },
+        "signNamesID": {
+            "type": ""
+        },
+        "signNamesNum": {
+            "type": ""
+        },
+        "string_lower": {
+            "type": "function"
+        },
+        "textEdit": {
+            "type": ""
+        },
+        "trapArray": {
+            "type": "array"
+        }
+    },
+    "oLoadButton": {},
+    "oLoadLevel": {
+        "blackOut": {
+            "type": ""
+        },
+        "file_find_first": {
+            "type": "function"
+        },
+        "file_find_next": {
+            "type": "function"
+        },
+        "levelList": {
+            "type": "array"
+        },
+        "levelLoaded": {
+            "type": ""
+        },
+        "msg": {
+            "type": ""
+        },
+        "msgTimer": {
+            "type": ""
+        },
+        "numLevels": {
+            "type": ""
+        },
+        "numPages": {
+            "type": ""
+        },
+        "page": {
+            "type": ""
+        },
+        "tempFile": {
+            "type": ""
+        }
+    },
+    "oLockedChest": {},
+    "oLush": {},
+    "oMachete": {},
+    "oMachetePre": {},
+    "oMacheteTile": {},
+    "oMagma": {},
+    "oMagmaMan": {},
+    "oMagmaTrail": {},
+    "oManTrap": {
+        "EATING": {
+            "type": ""
+        },
+        "SLEEPY": {
+            "type": ""
+        },
+        "ateShopkeeper": {
+            "type": ""
+        },
+        "bone": {
+            "type": ""
+        }
+    },
+    "oManTrapTile": {},
+    "oMattock": {},
+    "oMattockHead": {},
+    "oMattockHit": {},
+    "oMattockPre": {},
+    "oMattockTile": {},
+    "oMegaMouthTile": {},
+    "oMenu": {},
+    "oMenuBottom": {},
+    "oMenuLL": {},
+    "oMenuLR": {},
+    "oMenuLeft": {},
+    "oMenuRight": {},
+    "oMenuSel": {},
+    "oMenuTop": {},
+    "oMenuUL": {},
+    "oMenuUR": {},
+    "oMitt": {},
+    "oMittTile": {},
+    "oMoai": {},
+    "oMoai2": {},
+    "oMoai3": {},
+    "oMoaiInside": {},
+    "oMonkey": {
+        "CLIMB": {
+            "type": ""
+        },
+        "GRAB": {
+            "type": ""
+        },
+        "grabX": {
+            "type": ""
+        },
+        "grabY": {
+            "type": ""
+        },
+        "int": {
+            "type": ""
+        },
+        "throwCounter": {
+            "type": ""
+        }
+    },
+    "oMonkeyTile": {},
+    "oMoon": {},
+    "oMoonRoom": {
+        "baskets": {
+            "type": ""
+        }
+    },
+    "oMoveableSolid": {},
+    "oMovingSolid": {},
+    "oMsgSign": {
+        "message": {
+            "type": ""
+        },
+        "message2": {
+            "type": ""
+        }
+    },
+    "oMultiTrophy": {},
+    "oMusic": {
+        "SS_LoadSound": {
+            "type": "function"
+        }
+    },
+    "oNew": {},
+    "oNewButton": {},
+    "oOKButton": {},
+    "oObject": {
+        "ATTACK": {
+            "type": ""
+        },
+        "BOUNCE": {
+            "type": ""
+        },
+        "DEAD": {
+            "type": ""
+        },
+        "DOWN": {
+            "type": ""
+        },
+        "DROP": {
+            "type": ""
+        },
+        "DROWNED": {
+            "type": ""
+        },
+        "DUCKING": {
+            "type": ""
+        },
+        "EXIT": {
+            "type": ""
+        },
+        "GET_FILE_NAME": {
+            "type": ""
+        },
+        "HANG": {
+            "type": ""
+        },
+        "IDLE": {
+            "type": ""
+        },
+        "JUMPING": {
+            "type": ""
+        },
+        "LEFT": {
+            "type": ""
+        },
+        "ObjType": {
+            "type": ""
+        },
+        "PAUSE": {
+            "type": ""
+        },
+        "RECOVER": {
+            "type": ""
+        },
+        "RETURN": {
+            "type": ""
+        },
+        "RIGHT": {
+            "type": ""
+        },
+        "RUN": {
+            "type": ""
+        },
+        "SS_IsSoundPlaying": {
+            "type": "function"
+        },
+        "SS_SetSoundVol": {
+            "type": "function"
+        },
+        "STUNNED": {
+            "type": ""
+        },
+        "THROW": {
+            "type": ""
+        },
+        "THROWN": {
+            "type": ""
+        },
+        "TRANSITION": {
+            "type": ""
+        },
+        "TURN": {
+            "type": ""
+        },
+        "UP": {
+            "type": ""
+        },
+        "WAIT": {
+            "type": ""
+        },
+        "WALK": {
+            "type": ""
+        },
+        "YELL": {
+            "type": ""
+        },
+        "abs": {
+            "type": "function"
+        },
+        "action_execute_script": {
+            "type": "function"
+        },
+        "action_if": {
+            "type": "function"
+        },
+        "action_inherited": {
+            "type": "function"
+        },
+        "action_kill_object": {
+            "type": "function"
+        },
+        "active": {
+            "type": ""
+        },
+        "alarm": {
+            "type": "array"
+        },
+        "arctan": {
+            "type": "function"
+        },
+        "armed": {
+            "type": ""
+        },
+        "arrow": {
+            "type": ""
+        },
+        "attackTimer": {
+            "type": ""
+        },
+        "author": {
+            "type": ""
+        },
+        "blinkToggle": {
+            "type": ""
+        },
+        "bloodLeft": {
+            "type": ""
+        },
+        "bloodless": {
+            "type": ""
+        },
+        "bombID": {
+            "type": ""
+        },
+        "bombStart": {
+            "type": ""
+        },
+        "bounce": {
+            "type": ""
+        },
+        "bounceCounter": {
+            "type": ""
+        },
+        "bounceFactor": {
+            "type": ""
+        },
+        "bounced": {
+            "type": ""
+        },
+        "breakPieces": {
+            "type": ""
+        },
+        "bubbleTimer": {
+            "type": ""
+        },
+        "bubbleTimerMax": {
+            "type": ""
+        },
+        "burnTimer": {
+            "type": ""
+        },
+        "burning": {
+            "type": ""
+        },
+        "buyMessage": {
+            "type": ""
+        },
+        "c": {
+            "type": ""
+        },
+        "c_black": {
+            "type": ""
+        },
+        "c_red": {
+            "type": ""
+        },
+        "c_white": {
+            "type": ""
+        },
+        "c_yellow": {
+            "type": ""
+        },
+        "canCollect": {
+            "type": ""
+        },
+        "canPause": {
+            "type": ""
+        },
+        "canPickUp": {
+            "type": ""
+        },
+        "ceil": {
+            "type": "function"
+        },
+        "checkAttack": {
+            "type": "function"
+        },
+        "checkAttackPressed": {
+            "type": "function"
+        },
+        "checkBombPressed": {
+            "type": "function"
+        },
+        "checkDown": {
+            "type": "function"
+        },
+        "checkRopePressed": {
+            "type": "function"
+        },
+        "checkStartPressed": {
+            "type": "function"
+        },
+        "checkUp": {
+            "type": "function"
+        },
+        "cimg": {
+            "type": ""
+        },
+        "cleanDeath": {
+            "type": ""
+        },
+        "climbSndToggle": {
+            "type": ""
+        },
+        "colBot": {
+            "type": ""
+        },
+        "colLeft": {
+            "type": ""
+        },
+        "colRight": {
+            "type": ""
+        },
+        "colTop": {
+            "type": ""
+        },
+        "collision_point": {
+            "type": "function"
+        },
+        "collision_rectangle": {
+            "type": "function"
+        },
+        "cos": {
+            "type": "function"
+        },
+        "cost": {
+            "type": ""
+        },
+        "counter": {
+            "type": ""
+        },
+        "countsAsKill": {
+            "type": ""
+        },
+        "cr_default": {
+            "type": ""
+        },
+        "cr_none": {
+            "type": ""
+        },
+        "currVal": {
+            "type": ""
+        },
+        "damage": {
+            "type": ""
+        },
+        "darkness": {
+            "type": ""
+        },
+        "dead": {
+            "type": ""
+        },
+        "deathTimer": {
+            "type": ""
+        },
+        "degtorad": {
+            "type": "function"
+        },
+        "depth": {
+            "type": ""
+        },
+        "destroy": {
+            "type": ""
+        },
+        "dir": {
+            "type": ""
+        },
+        "direction": {
+            "type": ""
+        },
+        "dist": {
+            "type": ""
+        },
+        "distance_to_object": {
+            "type": "function"
+        },
+        "door": {
+            "type": ""
+        },
+        "downHeld": {
+            "type": ""
+        },
+        "drawStatus": {
+            "type": ""
+        },
+        "draw_rectangle": {
+            "type": "function"
+        },
+        "draw_set_alpha": {
+            "type": "function"
+        },
+        "draw_set_color": {
+            "type": "function"
+        },
+        "draw_set_font": {
+            "type": "function"
+        },
+        "draw_sprite": {
+            "type": "function"
+        },
+        "draw_sprite_ext": {
+            "type": "function"
+        },
+        "draw_text": {
+            "type": "function"
+        },
+        "dying": {
+            "type": ""
+        },
+        "enemy": {
+            "type": ""
+        },
+        "enemyID": {
+            "type": ""
+        },
+        "facing": {
+            "type": ""
+        },
+        "fadeIn": {
+            "type": ""
+        },
+        "fadeLevel": {
+            "type": ""
+        },
+        "fadeOut": {
+            "type": ""
+        },
+        "falling": {
+            "type": ""
+        },
+        "favor": {
+            "type": ""
+        },
+        "file": {
+            "type": ""
+        },
+        "file_exists": {
+            "type": "function"
+        },
+        "file_text_close": {
+            "type": "function"
+        },
+        "file_text_open_read": {
+            "type": "function"
+        },
+        "file_text_open_write": {
+            "type": "function"
+        },
+        "file_text_read_string": {
+            "type": "function"
+        },
+        "file_text_readln": {
+            "type": "function"
+        },
+        "file_text_write_string": {
+            "type": "function"
+        },
+        "file_text_writeln": {
+            "type": "function"
+        },
+        "fired": {
+            "type": ""
+        },
+        "firedMax": {
+            "type": ""
+        },
+        "firing": {
+            "type": ""
+        },
+        "firingMax": {
+            "type": ""
+        },
+        "flame": {
+            "type": ""
+        },
+        "flare": {
+            "type": ""
+        },
+        "floor": {
+            "type": "function"
+        },
+        "flying": {
+            "type": ""
+        },
+        "forSale": {
+            "type": ""
+        },
+        "frictionFactor": {
+            "type": ""
+        },
+        "game_end": {
+            "type": "function"
+        },
+        "gamepad": {
+            "type": ""
+        },
+        "gem": {
+            "type": ""
+        },
+        "getKissValue": {
+            "type": "function"
+        },
+        "global": {
+            "type": ""
+        },
+        "gold": {
+            "type": ""
+        },
+        "grabCounter": {
+            "type": ""
+        },
+        "grav": {
+            "type": ""
+        },
+        "hasGun": {
+            "type": ""
+        },
+        "heavy": {
+            "type": ""
+        },
+        "held": {
+            "type": ""
+        },
+        "highscore": {
+            "type": ""
+        },
+        "hit": {
+            "type": ""
+        },
+        "holdItem": {
+            "type": ""
+        },
+        "hp": {
+            "type": ""
+        },
+        "i": {
+            "type": ""
+        },
+        "id": {
+            "type": ""
+        },
+        "image_alpha": {
+            "type": ""
+        },
+        "image_angle": {
+            "type": ""
+        },
+        "image_blend": {
+            "type": ""
+        },
+        "image_index": {
+            "type": ""
+        },
+        "image_speed": {
+            "type": ""
+        },
+        "image_xscale": {
+            "type": ""
+        },
+        "image_yscale": {
+            "type": ""
+        },
+        "inDiceHouse": {
+            "type": ""
+        },
+        "inWeb": {
+            "type": ""
+        },
+        "instance_activate_object": {
+            "type": "function"
+        },
+        "instance_activate_region": {
+            "type": "function"
+        },
+        "instance_create": {
+            "type": "function"
+        },
+        "instance_deactivate_object": {
+            "type": "function"
+        },
+        "instance_destroy": {
+            "type": "function"
+        },
+        "instance_exists": {
+            "type": "function"
+        },
+        "instance_nearest": {
+            "type": "function"
+        },
+        "instance_number": {
+            "type": "function"
+        },
+        "instance_place": {
+            "type": "function"
+        },
+        "instance_position": {
+            "type": "function"
+        },
+        "instances_of": {
+            "type": "function"
+        },
+        "invincible": {
+            "type": ""
+        },
+        "isCollisionBottom": {
+            "type": "function"
+        },
+        "isCollisionLadder": {
+            "type": "function"
+        },
+        "isCollisionLeft": {
+            "type": "function"
+        },
+        "isCollisionRight": {
+            "type": "function"
+        },
+        "isCollisionSolid": {
+            "type": "function"
+        },
+        "isCollisionTop": {
+            "type": "function"
+        },
+        "isInShop": {
+            "type": "function"
+        },
+        "isLevel": {
+            "type": "function"
+        },
+        "isRealLevel": {
+            "type": "function"
+        },
+        "isRoom": {
+            "type": "function"
+        },
+        "item": {
+            "type": ""
+        },
+        "j": {
+            "type": ""
+        },
+        "joyid": {
+            "type": ""
+        },
+        "joystick_exists": {
+            "type": "function"
+        },
+        "keyboard_check_pressed": {
+            "type": "function"
+        },
+        "keyboard_key": {
+            "type": ""
+        },
+        "leadsTo": {
+            "type": ""
+        },
+        "levelArray": {
+            "type": "array"
+        },
+        "levelName": {
+            "type": ""
+        },
+        "life": {
+            "type": ""
+        },
+        "lifeStart": {
+            "type": ""
+        },
+        "linkVal": {
+            "type": ""
+        },
+        "m": {
+            "type": ""
+        },
+        "m2": {
+            "type": ""
+        },
+        "magma": {
+            "type": ""
+        },
+        "makeActive": {
+            "type": "function"
+        },
+        "mb_left": {
+            "type": ""
+        },
+        "moneyCount": {
+            "type": ""
+        },
+        "moneyDiff": {
+            "type": ""
+        },
+        "mouse_check_button": {
+            "type": "function"
+        },
+        "mouse_x": {
+            "type": ""
+        },
+        "mouse_y": {
+            "type": ""
+        },
+        "move_snap": {
+            "type": "function"
+        },
+        "music": {
+            "type": ""
+        },
+        "myGrav": {
+            "type": ""
+        },
+        "myGravNorm": {
+            "type": ""
+        },
+        "n": {
+            "type": ""
+        },
+        "nextLevel": {
+            "type": ""
+        },
+        "obj": {
+            "type": ""
+        },
+        "objChecked": {
+            "type": ""
+        },
+        "on": {
+            "type": ""
+        },
+        "ord": {
+            "type": "function"
+        },
+        "origX": {
+            "type": ""
+        },
+        "origY": {
+            "type": ""
+        },
+        "other": {
+            "type": ""
+        },
+        "path": "",
+        "person": {
+            "type": ""
+        },
+        "pickupItemType": {
+            "type": ""
+        },
+        "piece": {
+            "type": ""
+        },
+        "playMusic": {
+            "type": "function"
+        },
+        "playSound": {
+            "type": "function"
+        },
+        "player": {
+            "type": ""
+        },
+        "point_direction": {
+            "type": "function"
+        },
+        "point_distance": {
+            "type": "function"
+        },
+        "poof": {
+            "type": ""
+        },
+        "poop": {
+            "type": ""
+        },
+        "prox": {
+            "type": ""
+        },
+        "puncture": {
+            "type": ""
+        },
+        "py": {
+            "type": ""
+        },
+        "r": {
+            "type": ""
+        },
+        "r1": {
+            "type": ""
+        },
+        "radtodeg": {
+            "type": "function"
+        },
+        "rand": {
+            "type": "function"
+        },
+        "random": {
+            "type": "function"
+        },
+        "range": {
+            "type": ""
+        },
+        "real": {
+            "type": "function"
+        },
+        "repeat": {
+            "type": "function"
+        },
+        "rolled": {
+            "type": ""
+        },
+        "room": {
+            "type": ""
+        },
+        "room_get_name": {
+            "type": "function"
+        },
+        "room_goto": {
+            "type": "function"
+        },
+        "room_goto_next": {
+            "type": "function"
+        },
+        "room_height": {
+            "type": ""
+        },
+        "room_restart": {
+            "type": "function"
+        },
+        "room_width": {
+            "type": ""
+        },
+        "rope": {
+            "type": ""
+        },
+        "ropeStart": {
+            "type": ""
+        },
+        "rubble": {
+            "type": ""
+        },
+        "s": {
+            "type": ""
+        },
+        "s2": {
+            "type": ""
+        },
+        "sacCount": {
+            "type": ""
+        },
+        "safe": {
+            "type": ""
+        },
+        "scrCheckCollisions": {
+            "type": "function"
+        },
+        "scrClearGlobals": {
+            "type": "function"
+        },
+        "scrCreateBlood": {
+            "type": "function"
+        },
+        "scrCreateFlame": {
+            "type": "function"
+        },
+        "scrDropItem": {
+            "type": "function"
+        },
+        "scrGenerateItem": {
+            "type": "function"
+        },
+        "scrGetChar": {
+            "type": "function"
+        },
+        "scrGetFavorMsg": {
+            "type": "function"
+        },
+        "scrGetJoy": {
+            "type": "function"
+        },
+        "scrGetKey": {
+            "type": "function"
+        },
+        "scrGetRoomX": {
+            "type": "function"
+        },
+        "scrGetRoomY": {
+            "type": "function"
+        },
+        "scrGetScore": {
+            "type": "function"
+        },
+        "scrHoldItem": {
+            "type": "function"
+        },
+        "scrLoadLevel": {
+            "type": "function"
+        },
+        "scrResetHighscores": {
+            "type": "function"
+        },
+        "scrShake": {
+            "type": "function"
+        },
+        "scrShopkeeperAnger": {
+            "type": "function"
+        },
+        "scrTestLevel": {
+            "type": "function"
+        },
+        "scrUpdateHighscores": {
+            "type": "function"
+        },
+        "scrollStart": {
+            "type": ""
+        },
+        "scrolling": {
+            "type": ""
+        },
+        "setCollisionBounds": {
+            "type": "function"
+        },
+        "shakeCounter": {
+            "type": ""
+        },
+        "shakeToggle": {
+            "type": ""
+        },
+        "shopDesc": {
+            "type": ""
+        },
+        "shopWall": {
+            "type": ""
+        },
+        "sight": {
+            "type": ""
+        },
+        "sightCounter": {
+            "type": ""
+        },
+        "sin": {
+            "type": "function"
+        },
+        "skull": {
+            "type": ""
+        },
+        "spears": {
+            "type": ""
+        },
+        "spider": {
+            "type": ""
+        },
+        "sprite_height": {
+            "type": ""
+        },
+        "sprite_index": {
+            "type": ""
+        },
+        "sprite_width": {
+            "type": ""
+        },
+        "startMusic": {
+            "type": "function"
+        },
+        "state": {
+            "type": ""
+        },
+        "sticky": {
+            "type": ""
+        },
+        "stickyXDiff": {
+            "type": ""
+        },
+        "stickyYDiff": {
+            "type": ""
+        },
+        "stopAllMusic": {
+            "type": "function"
+        },
+        "str": {
+            "type": ""
+        },
+        "str2": {
+            "type": ""
+        },
+        "strLen": {
+            "type": ""
+        },
+        "string": {
+            "type": "function"
+        },
+        "string_char_at": {
+            "type": "function"
+        },
+        "string_delete": {
+            "type": "function"
+        },
+        "string_length": {
+            "type": "function"
+        },
+        "string_upper": {
+            "type": "function"
+        },
+        "stuck": {
+            "type": ""
+        },
+        "stunTime": {
+            "type": ""
+        },
+        "stunTimer": {
+            "type": ""
+        },
+        "stunned": {
+            "type": ""
+        },
+        "swimming": {
+            "type": ""
+        },
+        "tKills": {
+            "type": ""
+        },
+        "tMoney": {
+            "type": ""
+        },
+        "tSaves": {
+            "type": ""
+        },
+        "tTime": {
+            "type": ""
+        },
+        "talk": {
+            "type": ""
+        },
+        "thickness": {
+            "type": ""
+        },
+        "tile": {
+            "type": ""
+        },
+        "tile_delete": {
+            "type": "function"
+        },
+        "tile_layer_find": {
+            "type": "function"
+        },
+        "timer": {
+            "type": ""
+        },
+        "trap": {
+            "type": ""
+        },
+        "treasure": {
+            "type": ""
+        },
+        "trigger": {
+            "type": ""
+        },
+        "type": {
+            "type": ""
+        },
+        "upHeld": {
+            "type": ""
+        },
+        "value": {
+            "type": ""
+        },
+        "view_enabled": {
+            "type": ""
+        },
+        "view_hview": {
+            "type": "array"
+        },
+        "view_vborder": {
+            "type": "array"
+        },
+        "view_wview": {
+            "type": "array"
+        },
+        "view_xview": {
+            "type": "array"
+        },
+        "view_yview": {
+            "type": "array"
+        },
+        "vineCounter": {
+            "type": ""
+        },
+        "viscidTop": {
+            "type": ""
+        },
+        "visible": {
+            "type": ""
+        },
+        "vk_backspace": {
+            "type": ""
+        },
+        "vk_delete": {
+            "type": ""
+        },
+        "vk_enter": {
+            "type": ""
+        },
+        "vk_escape": {
+            "type": ""
+        },
+        "whipped": {
+            "type": ""
+        },
+        "window_set_cursor": {
+            "type": "function"
+        },
+        "x": {
+            "type": ""
+        },
+        "xAcc": {
+            "type": ""
+        },
+        "xAct": {
+            "type": ""
+        },
+        "xDiff": {
+            "type": ""
+        },
+        "xOff": {
+            "type": ""
+        },
+        "xVel": {
+            "type": ""
+        },
+        "xa": {
+            "type": ""
+        },
+        "xv": {
+            "type": ""
+        },
+        "y": {
+            "type": ""
+        },
+        "yAcc": {
+            "type": ""
+        },
+        "yDelta": {
+            "type": ""
+        },
+        "yOff": {
+            "type": ""
+        },
+        "yVel": {
+            "type": ""
+        },
+        "yVelLimit": {
+            "type": ""
+        },
+        "ya": {
+            "type": ""
+        },
+        "yv": {
+            "type": ""
+        }
+    },
+    "oOlmec": {
+        "CREATE": {
+            "type": ""
+        },
+        "DROWNING": {
+            "type": ""
+        },
+        "PREPARE": {
+            "type": ""
+        },
+        "SLAM": {
+            "type": ""
+        },
+        "START1": {
+            "type": ""
+        },
+        "START2": {
+            "type": ""
+        },
+        "carryPlayer": {
+            "type": ""
+        },
+        "debris": {
+            "type": ""
+        },
+        "slammed": {
+            "type": ""
+        },
+        "toggle": {
+            "type": ""
+        },
+        "view_hborder": {
+            "type": "array"
+        },
+        "view_object": {
+            "type": "array"
+        }
+    },
+    "oOlmecDebris": {},
+    "oOlmecSlam": {},
+    "oPDummy": {
+        "END": {
+            "type": ""
+        },
+        "LAVA": {
+            "type": ""
+        },
+        "START": {
+            "type": ""
+        },
+        "STOPPED": {
+            "type": ""
+        }
+    },
+    "oPDummy2": {
+        "GETUP": {
+            "type": ""
+        }
+    },
+    "oPDummy3": {
+        "ROPEDROP": {
+            "type": ""
+        }
+    },
+    "oPDummy4": {},
+    "oPDummy5": {},
+    "oPDummy6": {},
+    "oPageDown": {},
+    "oPageUp": {},
+    "oPalmTree": {},
+    "oPalmTreeDark": {},
+    "oPalmTreeScroll": {},
+    "oParaPickup": {},
+    "oParaUsed": {},
+    "oParachute": {},
+    "oParachuteTile": {},
+    "oPaste": {},
+    "oPiranha": {
+        "ATTACK_ENEMY": {
+            "type": ""
+        },
+        "canBite": {
+            "type": ""
+        }
+    },
+    "oPiranhaTile": {},
+    "oPistol": {},
+    "oPistolTile": {},
+    "oPlatform": {},
+    "oPlayer1": {
+        "ARROW_BOMB": {
+            "type": ""
+        },
+        "ARROW_NORM": {
+            "type": ""
+        },
+        "CLIMBING": {
+            "type": ""
+        },
+        "DUCKTOHANG": {
+            "type": ""
+        },
+        "FALLING": {
+            "type": ""
+        },
+        "HANGING": {
+            "type": ""
+        },
+        "IN_AIR": {
+            "type": ""
+        },
+        "LOOKING_UP": {
+            "type": ""
+        },
+        "ON_GROUND": {
+            "type": ""
+        },
+        "RUNNING": {
+            "type": ""
+        },
+        "SS_StopSound": {
+            "type": "function"
+        },
+        "STANDING": {
+            "type": ""
+        },
+        "approximatelyZero": {
+            "type": "function"
+        },
+        "bet": {
+            "type": ""
+        },
+        "blink": {
+            "type": ""
+        },
+        "bombArrowCounter": {
+            "type": ""
+        },
+        "bowArmed": {
+            "type": ""
+        },
+        "bowStrength": {
+            "type": ""
+        },
+        "canRun": {
+            "type": ""
+        },
+        "cantJump": {
+            "type": ""
+        },
+        "characterSprite": {
+            "type": "function"
+        },
+        "characterStepEvent": {
+            "type": "function"
+        },
+        "checkAttackReleased": {
+            "type": "function"
+        },
+        "checkItemPressed": {
+            "type": "function"
+        },
+        "checkJump": {
+            "type": "function"
+        },
+        "checkJumpPressed": {
+            "type": "function"
+        },
+        "checkJumpReleased": {
+            "type": "function"
+        },
+        "checkLeft": {
+            "type": "function"
+        },
+        "checkLeftPressed": {
+            "type": "function"
+        },
+        "checkLeftReleased": {
+            "type": "function"
+        },
+        "checkPayPressed": {
+            "type": "function"
+        },
+        "checkRight": {
+            "type": "function"
+        },
+        "checkRightPressed": {
+            "type": "function"
+        },
+        "checkRightReleased": {
+            "type": "function"
+        },
+        "checkRun": {
+            "type": "function"
+        },
+        "chest": {
+            "type": ""
+        },
+        "climbAcc": {
+            "type": ""
+        },
+        "climbAnimSpeed": {
+            "type": ""
+        },
+        "coin": {
+            "type": ""
+        },
+        "colIceBot": {
+            "type": ""
+        },
+        "colLadder": {
+            "type": ""
+        },
+        "colPlat": {
+            "type": ""
+        },
+        "colPlatBot": {
+            "type": ""
+        },
+        "colPointLadder": {
+            "type": ""
+        },
+        "colSolidLeft": {
+            "type": ""
+        },
+        "colSolidRight": {
+            "type": ""
+        },
+        "colSpikes": {
+            "type": ""
+        },
+        "colWaterTop": {
+            "type": ""
+        },
+        "collect": {
+            "type": ""
+        },
+        "collision_line": {
+            "type": "function"
+        },
+        "deadCounter": {
+            "type": ""
+        },
+        "departLadderXVel": {
+            "type": ""
+        },
+        "departLadderYVel": {
+            "type": ""
+        },
+        "disp": {
+            "type": ""
+        },
+        "distToNearestLightSource": {
+            "type": ""
+        },
+        "excess": {
+            "type": ""
+        },
+        "explosion": {
+            "type": ""
+        },
+        "fallTimer": {
+            "type": ""
+        },
+        "firingPistolMax": {
+            "type": ""
+        },
+        "firingShotgunMax": {
+            "type": ""
+        },
+        "firstLevelSkip": {
+            "type": ""
+        },
+        "frictionClimbingX": {
+            "type": ""
+        },
+        "frictionClimbingY": {
+            "type": ""
+        },
+        "frictionRunningFastX": {
+            "type": ""
+        },
+        "frictionRunningX": {
+            "type": ""
+        },
+        "gravNorm": {
+            "type": ""
+        },
+        "gravityIntensity": {
+            "type": ""
+        },
+        "hangCount": {
+            "type": ""
+        },
+        "hangCountMax": {
+            "type": ""
+        },
+        "hawkThrow": {
+            "type": ""
+        },
+        "holdArrow": {
+            "type": ""
+        },
+        "holdArrowToggle": {
+            "type": ""
+        },
+        "holdItemType": {
+            "type": ""
+        },
+        "inGame": {
+            "type": ""
+        },
+        "initialJumpAcc": {
+            "type": ""
+        },
+        "isCollisionMoveableSolidLeft": {
+            "type": "function"
+        },
+        "isCollisionMoveableSolidRight": {
+            "type": "function"
+        },
+        "isCollisionPlatform": {
+            "type": "function"
+        },
+        "isCollisionPlatformBottom": {
+            "type": "function"
+        },
+        "isCollisionWaterTop": {
+            "type": "function"
+        },
+        "jetpackFuel": {
+            "type": ""
+        },
+        "jumpButtonReleased": {
+            "type": ""
+        },
+        "jumpTime": {
+            "type": ""
+        },
+        "jumpTimeTotal": {
+            "type": ""
+        },
+        "jumps": {
+            "type": ""
+        },
+        "kAttack": {
+            "type": ""
+        },
+        "kAttackPressed": {
+            "type": ""
+        },
+        "kAttackReleased": {
+            "type": ""
+        },
+        "kBomb": {
+            "type": ""
+        },
+        "kBombPressed": {
+            "type": ""
+        },
+        "kDown": {
+            "type": ""
+        },
+        "kItem": {
+            "type": ""
+        },
+        "kItemPressed": {
+            "type": ""
+        },
+        "kItemReleased": {
+            "type": ""
+        },
+        "kJump": {
+            "type": ""
+        },
+        "kJumpPressed": {
+            "type": ""
+        },
+        "kJumpReleased": {
+            "type": ""
+        },
+        "kJumped": {
+            "type": ""
+        },
+        "kLeft": {
+            "type": ""
+        },
+        "kLeftPressed": {
+            "type": ""
+        },
+        "kLeftPushedSteps": {
+            "type": ""
+        },
+        "kLeftReleased": {
+            "type": ""
+        },
+        "kPay": {
+            "type": ""
+        },
+        "kPayPressed": {
+            "type": ""
+        },
+        "kRight": {
+            "type": ""
+        },
+        "kRightPressed": {
+            "type": ""
+        },
+        "kRightPushedSteps": {
+            "type": ""
+        },
+        "kRightReleased": {
+            "type": ""
+        },
+        "kRope": {
+            "type": ""
+        },
+        "kRopePressed": {
+            "type": ""
+        },
+        "kRun": {
+            "type": ""
+        },
+        "kUp": {
+            "type": ""
+        },
+        "ladder": {
+            "type": ""
+        },
+        "ladderTimer": {
+            "type": ""
+        },
+        "levelSkip": {
+            "type": ""
+        },
+        "lookOff": {
+            "type": ""
+        },
+        "looking": {
+            "type": ""
+        },
+        "maxDownSlope": {
+            "type": ""
+        },
+        "maxSlope": {
+            "type": ""
+        },
+        "money": {
+            "type": ""
+        },
+        "moveToggle": {
+            "type": ""
+        },
+        "pExit": {
+            "type": ""
+        },
+        "platformCharacterIs": {
+            "type": "function"
+        },
+        "point": {
+            "type": ""
+        },
+        "pushTimer": {
+            "type": ""
+        },
+        "ratio": {
+            "type": ""
+        },
+        "redColor": {
+            "type": ""
+        },
+        "redToggle": {
+            "type": ""
+        },
+        "round": {
+            "type": "function"
+        },
+        "rr": {
+            "type": ""
+        },
+        "runAcc": {
+            "type": ""
+        },
+        "runAnimSpeed": {
+            "type": ""
+        },
+        "runHeld": {
+            "type": ""
+        },
+        "runKey": {
+            "type": ""
+        },
+        "scrFireBow": {
+            "type": "function"
+        },
+        "scrStealItem": {
+            "type": "function"
+        },
+        "scrUseItem": {
+            "type": "function"
+        },
+        "shopThrow": {
+            "type": ""
+        },
+        "slopeChangeInY": {
+            "type": ""
+        },
+        "slopeYPrev": {
+            "type": ""
+        },
+        "source": {
+            "type": ""
+        },
+        "sqr": {
+            "type": "function"
+        },
+        "sqrt": {
+            "type": "function"
+        },
+        "statePrev": {
+            "type": ""
+        },
+        "statePrevPrev": {
+            "type": ""
+        },
+        "t": {
+            "type": ""
+        },
+        "upYPrev": {
+            "type": ""
+        },
+        "viewCount": {
+            "type": ""
+        },
+        "walkSndToggle": {
+            "type": ""
+        },
+        "wallHurt": {
+            "type": ""
+        },
+        "whipping": {
+            "type": ""
+        },
+        "whoaTimer": {
+            "type": ""
+        },
+        "whoaTimerMax": {
+            "type": ""
+        },
+        "xAccLimit": {
+            "type": ""
+        },
+        "xCHANGE": {
+            "type": ""
+        },
+        "xCHANGE2": {
+            "type": ""
+        },
+        "xEND": {
+            "type": ""
+        },
+        "xFric": {
+            "type": ""
+        },
+        "xMOON": {
+            "type": ""
+        },
+        "xPrev": {
+            "type": ""
+        },
+        "xSCORES": {
+            "type": ""
+        },
+        "xSHORTCUT13": {
+            "type": ""
+        },
+        "xSHORTCUT5": {
+            "type": ""
+        },
+        "xSHORTCUT9": {
+            "type": ""
+        },
+        "xSTARS": {
+            "type": ""
+        },
+        "xSTART": {
+            "type": ""
+        },
+        "xSUN": {
+            "type": ""
+        },
+        "xTITLE": {
+            "type": ""
+        },
+        "xTUTORIAL": {
+            "type": ""
+        },
+        "xVelInteger": {
+            "type": ""
+        },
+        "xVelLimit": {
+            "type": ""
+        },
+        "yAccLimit": {
+            "type": ""
+        },
+        "yFric": {
+            "type": ""
+        },
+        "yPrev": {
+            "type": ""
+        },
+        "yPrevHigh": {
+            "type": ""
+        },
+        "yVelInteger": {
+            "type": ""
+        },
+        "yetiThrow": {
+            "type": ""
+        }
+    },
+    "oPlayerSil": {},
+    "oPoof": {},
+    "oPsychicCreate": {},
+    "oPsychicCreate2": {},
+    "oPsychicCreateP": {},
+    "oPsychicWave": {},
+    "oPsychicWaveP": {},
+    "oPushBlock": {
+        "scrMoveableSolidRecurseDrop": {
+            "type": "function"
+        }
+    },
+    "oQuitSign": {},
+    "oRadioBox": {},
+    "oResetSign": {},
+    "oRim": {},
+    "oRimDeflect": {},
+    "oRock": {},
+    "oRockTile": {},
+    "oRoom": {},
+    "oRope": {},
+    "oRopeBag": {},
+    "oRopeBurn": {},
+    "oRopePile": {},
+    "oRopePileTile": {},
+    "oRopeThrow": {
+        "fallCount": {
+            "type": ""
+        },
+        "px": {
+            "type": ""
+        }
+    },
+    "oRopeTop": {},
+    "oRubble": {},
+    "oRubbleDark": {},
+    "oRubbleDarkSmall": {},
+    "oRubblePiece": {},
+    "oRubbleSmall": {},
+    "oRuby": {},
+    "oRubyBig": {},
+    "oRubyBigTile": {},
+    "oSacAltarLeft": {
+        "defile": {
+            "type": ""
+        },
+        "float": {
+            "type": ""
+        }
+    },
+    "oSacAltarRight": {},
+    "oSapphire": {},
+    "oSapphireBig": {},
+    "oSapphireBigTile": {},
+    "oScarab": {},
+    "oSceptre": {},
+    "oScoresSign": {},
+    "oScreen": {
+        "SS_Unload": {
+            "type": "function"
+        },
+        "action_fullscreen": {
+            "type": "function"
+        },
+        "bm_dest_color": {
+            "type": ""
+        },
+        "bm_normal": {
+            "type": ""
+        },
+        "bm_one": {
+            "type": ""
+        },
+        "bm_src_color": {
+            "type": ""
+        },
+        "bm_zero": {
+            "type": ""
+        },
+        "darkSurf": {
+            "type": ""
+        },
+        "display_get_height": {
+            "type": "function"
+        },
+        "display_get_width": {
+            "type": "function"
+        },
+        "displayheight": {
+            "type": ""
+        },
+        "displaywidth": {
+            "type": ""
+        },
+        "distToLamp": {
+            "type": ""
+        },
+        "draw_circle": {
+            "type": "function"
+        },
+        "draw_clear": {
+            "type": "function"
+        },
+        "draw_set_blend_mode": {
+            "type": "function"
+        },
+        "draw_set_blend_mode_ext": {
+            "type": "function"
+        },
+        "draw_surface": {
+            "type": "function"
+        },
+        "draw_surface_stretched": {
+            "type": "function"
+        },
+        "enabled": {
+            "type": ""
+        },
+        "instance_activate_all": {
+            "type": "function"
+        },
+        "instance_deactivate_all": {
+            "type": "function"
+        },
+        "make_color_rgb": {
+            "type": "function"
+        },
+        "noone": {
+            "type": ""
+        },
+        "pSurf": {
+            "type": ""
+        },
+        "paused": {
+            "type": ""
+        },
+        "room_set_view": {
+            "type": "function"
+        },
+        "scrDrawHUD": {
+            "type": "function"
+        },
+        "scrInit": {
+            "type": "function"
+        },
+        "scrReadStats": {
+            "type": "function"
+        },
+        "scrWriteStats": {
+            "type": "function"
+        },
+        "screen_h": {
+            "type": ""
+        },
+        "screen_redraw": {
+            "type": "function"
+        },
+        "screen_refresh": {
+            "type": "function"
+        },
+        "screen_scale": {
+            "type": ""
+        },
+        "screen_w": {
+            "type": ""
+        },
+        "screen_x": {
+            "type": ""
+        },
+        "screen_y": {
+            "type": ""
+        },
+        "surface_create": {
+            "type": "function"
+        },
+        "surface_exists": {
+            "type": "function"
+        },
+        "surface_free": {
+            "type": "function"
+        },
+        "surface_reset_target": {
+            "type": "function"
+        },
+        "surface_set_target": {
+            "type": "function"
+        },
+        "window_set_position": {
+            "type": "function"
+        },
+        "window_set_showborder": {
+            "type": "function"
+        },
+        "window_set_size": {
+            "type": "function"
+        }
+    },
+    "oShopkeeper": {
+        "FOLLOW": {
+            "type": ""
+        },
+        "PATROL": {
+            "type": ""
+        },
+        "angered": {
+            "type": ""
+        },
+        "betValue": {
+            "type": ""
+        },
+        "scrGetName": {
+            "type": "function"
+        },
+        "style": {
+            "type": ""
+        },
+        "throwCount": {
+            "type": ""
+        },
+        "turnTimer": {
+            "type": ""
+        },
+        "welcomed": {
+            "type": ""
+        }
+    },
+    "oShopkeeper2": {},
+    "oShopkeeperTile": {},
+    "oShotgun": {},
+    "oShotgunBlastLeft": {},
+    "oShotgunBlastRight": {},
+    "oShotgunTile": {},
+    "oShrub": {},
+    "oShrubDark": {},
+    "oShrubScroll": {},
+    "oSign": {},
+    "oSkeleton": {},
+    "oSkeletonTile": {},
+    "oSkull": {},
+    "oSlash": {},
+    "oSlider1": {},
+    "oSlider2": {},
+    "oSliderBG": {},
+    "oSmallCollect": {},
+    "oSmashTrap": {},
+    "oSmashTrapLit": {},
+    "oSmashTrapTile": {},
+    "oSmokePuff": {},
+    "oSnake": {},
+    "oSnakeTile": {},
+    "oSolid": {},
+    "oSpearTrapBottom": {},
+    "oSpearTrapLit": {},
+    "oSpearTrapTileBot": {},
+    "oSpearTrapTileTop": {},
+    "oSpearTrapTop": {},
+    "oSpearsLeft": {},
+    "oSpectacles": {},
+    "oSpectaclesTile": {},
+    "oSpider": {},
+    "oSpiderHang": {},
+    "oSpiderTile": {},
+    "oSpikeShoes": {},
+    "oSpikeShoesTile": {},
+    "oSpikes": {},
+    "oSplash": {},
+    "oSpringShoes": {},
+    "oSpringShoesTile": {},
+    "oSpringTrap": {
+        "SPRUNG": {
+            "type": ""
+        }
+    },
+    "oSpringTrapTile": {},
+    "oSprite": {},
+    "oStarsRoom": {
+        "kills": {
+            "type": ""
+        }
+    },
+    "oStartSign": {},
+    "oSunRoom": {
+        "points": {
+            "type": ""
+        }
+    },
+    "oTarget": {
+        "hard": {
+            "type": ""
+        },
+        "moveOff": {
+            "type": ""
+        }
+    },
+    "oTeleporter": {},
+    "oTeleporterTile": {},
+    "oTemp": {
+        "sndArrowTrap": {
+            "type": ""
+        },
+        "sound_play": {
+            "type": "function"
+        }
+    },
+    "oTemple": {},
+    "oTempleFake": {},
+    "oTestButton": {},
+    "oThinIce": {},
+    "oThwompTrap": {},
+    "oTikiTorch": {},
+    "oTitle": {
+        "needDark": {
+            "type": ""
+        }
+    },
+    "oTitleBG": {},
+    "oTitleLogo": {},
+    "oTombLord": {},
+    "oTombLordTile": {},
+    "oTransition": {
+        "checkDownPressed": {
+            "type": "function"
+        },
+        "checkUpPressed": {
+            "type": "function"
+        },
+        "debugCounter": {
+            "type": ""
+        },
+        "drawLoot": {
+            "type": ""
+        },
+        "drawPosX": {
+            "type": ""
+        },
+        "drawPosY": {
+            "type": ""
+        },
+        "hurryup": {
+            "type": ""
+        },
+        "isKills": {
+            "type": ""
+        },
+        "isLoot": {
+            "type": ""
+        },
+        "sprite": {
+            "type": ""
+        }
+    },
+    "oTrapBlock": {},
+    "oTreasure": {
+        "ACTIVE": {
+            "type": ""
+        },
+        "STATIC": {
+            "type": ""
+        }
+    },
+    "oTreasureSil": {},
+    "oTree": {},
+    "oTreeBranch": {},
+    "oTreeBranchTile": {},
+    "oTreeTile": {},
+    "oTrophy": {},
+    "oTunnelMan": {
+        "donate": {
+            "type": ""
+        },
+        "downCounter": {
+            "type": ""
+        },
+        "upCounter": {
+            "type": ""
+        }
+    },
+    "oTutorialSign": {},
+    "oUFO": {
+        "BLAST": {
+            "type": ""
+        },
+        "DESTROY": {
+            "type": ""
+        },
+        "SEARCH": {
+            "type": ""
+        },
+        "alerted": {
+            "type": ""
+        },
+        "shift": {
+            "type": ""
+        },
+        "shiftToggle": {
+            "type": ""
+        }
+    },
+    "oUFOCrash": {},
+    "oUFOTile": {},
+    "oUdjatEye": {},
+    "oVampire": {
+        "FLY": {
+            "type": ""
+        },
+        "distance_to_point": {
+            "type": "function"
+        }
+    },
+    "oVampireTile": {},
+    "oVine": {},
+    "oVineTop": {},
+    "oVolcanoFlame": {},
+    "oWalDamsel": {},
+    "oWater": {},
+    "oWaterSwim": {},
+    "oWaterTile": {},
+    "oWeb": {},
+    "oWebBall": {},
+    "oWebCannon": {},
+    "oWebCannonTile": {},
+    "oWebTile": {},
+    "oWhip": {},
+    "oWhipPre": {},
+    "oXChange": {},
+    "oXChange2": {},
+    "oXEnd": {},
+    "oXGold": {},
+    "oXMarket": {},
+    "oXMoon": {},
+    "oXScores": {},
+    "oXShortcut13": {},
+    "oXShortcut5": {},
+    "oXShortcut9": {},
+    "oXStars": {},
+    "oXStart": {},
+    "oXSun": {},
+    "oXTitle": {},
+    "oXTutorial": {},
+    "oXocBlock": {},
+    "oYellHelp": {},
+    "oYellowBall": {},
+    "oYellowTrail": {},
+    "oYeti": {},
+    "oYetiKing": {},
+    "oYetiKingTile": {},
+    "oYetiTile": {},
+    "oZombie": {},
+    "oZombieTile": {}
+}

@@ -1,3 +1,1 @@
-class oPalmTreeDark extends oObject {
-  // variables
-}
+class oPalmTreeDark extends oObject {}

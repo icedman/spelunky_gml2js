@@ -1,6 +1,8 @@
 function oGloves_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Gloves';
     makeActive();
@@ -12,6 +14,4 @@ function oGloves_CREATE($) {
   }
 }
 
-class oGloves extends oItem {
-  // variables
-}
+class oGloves extends oItem {}

@@ -1,6 +1,8 @@
 function oSpikeShoes_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Spike Shoes';
     makeActive();
@@ -11,6 +13,4 @@ function oSpikeShoes_CREATE($) {
   }
 }
 
-class oSpikeShoes extends oItem {
-  // variables
-}
+class oSpikeShoes extends oItem {}

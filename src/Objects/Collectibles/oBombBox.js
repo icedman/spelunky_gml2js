@@ -1,6 +1,8 @@
 function oBombBox_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Bomb Box';
     makeActive();
@@ -12,6 +14,4 @@ function oBombBox_CREATE($) {
   }
 }
 
-class oBombBox extends oItem {
-  // variables
-}
+class oBombBox extends oItem {}

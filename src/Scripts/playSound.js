@@ -1,1 +1,3 @@
-SS_PlaySound(arguments[0]);
+function playSound() {
+  SS_PlaySound(arguments[0]);
+}

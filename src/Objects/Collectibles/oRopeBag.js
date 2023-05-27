@@ -1,6 +1,8 @@
 function oRopeBag_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Bomb Bag';
     makeActive();
@@ -8,6 +10,4 @@ function oRopeBag_CREATE($) {
   }
 }
 
-class oRopeBag extends oItem {
-  // variables
-}
+class oRopeBag extends oItem {}

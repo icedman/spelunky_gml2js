@@ -6,7 +6,7 @@ function oItem_DESTROY($) {
   }
 }
 
-function oItem_ALARM($) {
+function oItem_ALARM_2($) {
   with ($) {
     safe = false;
   }
@@ -407,7 +407,9 @@ function oItem_STEP($) {
 
 function oItem_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     active = true;
     type = 'None';
@@ -451,5 +453,5 @@ function oItem_CREATE($) {
 }
 
 class oItem extends oDrawnSprite {
-  // variables
+  stolen;
 }

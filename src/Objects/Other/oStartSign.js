@@ -1,3 +1,1 @@
-class oStartSign extends oObject {
-  // variables
-}
+class oStartSign extends oObject {}

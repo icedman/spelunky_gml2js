@@ -1,11 +1,11 @@
 function oYetiKingTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'Yeti King';
   }
 }
 
-class oYetiKingTile extends oDrawnSprite {
-  // variables
-}
+class oYetiKingTile extends oDrawnSprite {}

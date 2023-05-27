@@ -38,5 +38,7 @@ function oFinalBoss_CREATE($) {
 }
 
 class oFinalBoss extends oObject {
-  // variables
+  brick;
+  doorOpen;
+  olmecDead;
 }

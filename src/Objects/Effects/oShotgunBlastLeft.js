@@ -10,6 +10,4 @@ function oShotgunBlastLeft_CREATE($) {
   }
 }
 
-class oShotgunBlastLeft extends oObject {
-  // variables
-}
+class oShotgunBlastLeft extends oObject {}

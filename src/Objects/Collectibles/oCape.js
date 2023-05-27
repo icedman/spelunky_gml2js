@@ -57,12 +57,12 @@ function oCape_STEP($) {
 
 function oCape_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     open = false;
   }
 }
 
-class oCape extends oDrawnSprite {
-  // variables
-}
+class oCape extends oDrawnSprite {}

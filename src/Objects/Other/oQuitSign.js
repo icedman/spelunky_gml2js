@@ -1,3 +1,1 @@
-class oQuitSign extends oSolid {
-  // variables
-}
+class oQuitSign extends oSolid {}

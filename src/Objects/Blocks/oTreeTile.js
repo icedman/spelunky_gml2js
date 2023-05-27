@@ -1,12 +1,12 @@
 function oTreeTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     type = 'Tree';
     burning = false;
   }
 }
 
-class oTreeTile extends oSolid {
-  // variables
-}
+class oTreeTile extends oSolid {}

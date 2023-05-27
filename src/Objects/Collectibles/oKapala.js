@@ -1,6 +1,8 @@
 function oKapala_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Kapala';
     makeActive();
@@ -11,6 +13,4 @@ function oKapala_CREATE($) {
   }
 }
 
-class oKapala extends oItem {
-  // variables
-}
+class oKapala extends oItem {}

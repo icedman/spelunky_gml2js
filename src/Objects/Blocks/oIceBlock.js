@@ -10,7 +10,9 @@ function oIceBlock_DESTROY($) {
 
 function oIceBlock_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oMoveableSolid_STEP($);
+    } catch (err) {}
 
     if (
       collision_point(x + 8, y + 16, oLava, 0, 0) &&
@@ -26,7 +28,9 @@ function oIceBlock_STEP($) {
 
 function oIceBlock_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oMoveableSolid_CREATE($);
+    } catch (err) {}
 
     invincible = false;
     setCollisionBounds(0, 0, 16, 16);
@@ -35,6 +39,4 @@ function oIceBlock_CREATE($) {
   }
 }
 
-class oIceBlock extends oMoveableSolid {
-  // variables
-}
+class oIceBlock extends oMoveableSolid {}

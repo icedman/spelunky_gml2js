@@ -6,7 +6,9 @@ function oLaserExplode_OTHER($) {
 
 function oLaserExplode_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.8;
 
@@ -14,6 +16,4 @@ function oLaserExplode_CREATE($) {
   }
 }
 
-class oLaserExplode extends oDrawnSprite {
-  // variables
-}
+class oLaserExplode extends oDrawnSprite {}

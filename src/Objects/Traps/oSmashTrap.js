@@ -154,7 +154,9 @@ function oSmashTrap_STEP($) {
 
 function oSmashTrap_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(1, 1, 15, 15);
@@ -186,6 +188,4 @@ function oSmashTrap_CREATE($) {
   }
 }
 
-class oSmashTrap extends oMovingSolid {
-  // variables
-}
+class oSmashTrap extends oMovingSolid {}

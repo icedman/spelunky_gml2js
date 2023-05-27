@@ -1,3 +1,1 @@
-class oCharacter extends oDrawnSprite {
-  // variables
-}
+class oCharacter extends oDrawnSprite {}

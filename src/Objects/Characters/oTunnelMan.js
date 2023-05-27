@@ -87,5 +87,7 @@ function oTunnelMan_CREATE($) {
 }
 
 class oTunnelMan extends oObject {
-  // variables
+  donate;
+  downCounter;
+  upCounter;
 }

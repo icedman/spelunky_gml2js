@@ -31,6 +31,4 @@ function oEditButton_STEP($) {
   }
 }
 
-class oEditButton extends oObject {
-  // variables
-}
+class oEditButton extends oObject {}

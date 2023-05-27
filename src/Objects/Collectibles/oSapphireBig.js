@@ -5,7 +5,7 @@ function oSapphireBig_COLLISION_oGhost($) {
   }
 }
 
-function oSapphireBig_ALARM($) {
+function oSapphireBig_ALARM_0($) {
   with ($) {
     canCollect = true;
   }
@@ -13,7 +13,9 @@ function oSapphireBig_ALARM($) {
 
 function oSapphireBig_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Big Sapphire';
     makeActive();
@@ -24,6 +26,4 @@ function oSapphireBig_CREATE($) {
   }
 }
 
-class oSapphireBig extends oTreasure {
-  // variables
-}
+class oSapphireBig extends oTreasure {}

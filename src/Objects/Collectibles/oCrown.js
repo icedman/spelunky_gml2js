@@ -1,6 +1,8 @@
 function oCrown_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Crown';
     makeActive();
@@ -11,6 +13,4 @@ function oCrown_CREATE($) {
   }
 }
 
-class oCrown extends oItem {
-  // variables
-}
+class oCrown extends oItem {}

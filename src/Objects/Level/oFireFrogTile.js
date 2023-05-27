@@ -1,11 +1,11 @@
 function oFireFrogTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     image_speed = 0;
   }
 }
 
-class oFireFrogTile extends oDrawnSprite {
-  // variables
-}
+class oFireFrogTile extends oDrawnSprite {}

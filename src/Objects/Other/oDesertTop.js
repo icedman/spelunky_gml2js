@@ -4,6 +4,4 @@ function oDesertTop_CREATE($) {
   }
 }
 
-class oDesertTop extends oObject {
-  // variables
-}
+class oDesertTop extends oObject {}

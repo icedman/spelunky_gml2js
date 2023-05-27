@@ -22,6 +22,4 @@ function oLeavesTile_CREATE($) {
   }
 }
 
-class oLeavesTile extends oPlatform {
-  // variables
-}
+class oLeavesTile extends oPlatform {}

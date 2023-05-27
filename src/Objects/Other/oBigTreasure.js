@@ -64,6 +64,4 @@ function oBigTreasure_CREATE($) {
   }
 }
 
-class oBigTreasure extends oObject {
-  // variables
-}
+class oBigTreasure extends oObject {}

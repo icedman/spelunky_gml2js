@@ -15,6 +15,4 @@ function oCaveBG_CREATE($) {
   }
 }
 
-class oCaveBG extends oObject {
-  // variables
-}
+class oCaveBG extends oObject {}

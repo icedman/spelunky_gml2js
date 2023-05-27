@@ -1,6 +1,8 @@
 function oTree_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_DESTROY($);
+    } catch (err) {}
 
     if (!cleanDeath && !global.cleanSolids) {
       instance_create(
@@ -39,13 +41,13 @@ function oTree_STEP($) {
 
 function oTree_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     type = 'Tree';
     burning = false;
   }
 }
 
-class oTree extends oSolid {
-  // variables
-}
+class oTree extends oSolid {}

@@ -76,6 +76,4 @@ function oMusic_CREATE($) {
   }
 }
 
-class oMusic extends oObject {
-  // variables
-}
+class oMusic extends oObject {}

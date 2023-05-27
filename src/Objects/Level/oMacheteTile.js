@@ -1,3 +1,1 @@
-class oMacheteTile extends oDrawnSprite {
-  // variables
-}
+class oMacheteTile extends oDrawnSprite {}

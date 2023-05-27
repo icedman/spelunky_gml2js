@@ -1,3 +1,1 @@
-class oHawkmanTile extends oDrawnSprite {
-  // variables
-}
+class oHawkmanTile extends oDrawnSprite {}

@@ -85,6 +85,4 @@ function oGlobals_CREATE($) {
   }
 }
 
-class oGlobals extends oObject {
-  // variables
-}
+class oGlobals extends oObject {}

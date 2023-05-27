@@ -1,11 +1,11 @@
 function oXMarket_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oExit_CREATE($);
+    } catch (err) {}
 
     type = 'Market Exit';
   }
 }
 
-class oXMarket extends oExit {
-  // variables
-}
+class oXMarket extends oExit {}

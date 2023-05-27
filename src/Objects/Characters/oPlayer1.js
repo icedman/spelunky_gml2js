@@ -1,4 +1,4 @@
-function oPlayer1_ALARM($) {
+function oPlayer1_ALARM_0($) {
   with ($) {
     /*
 This script should be placed in the step event for the platform character.
@@ -5282,7 +5282,9 @@ else if (sprite_index == sSlideLeft)
 
 function oPlayer1_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oCharacter_CREATE($);
+    } catch (err) {}
 
     action_execute_script();
 
@@ -5392,5 +5394,151 @@ gamepad.start = false;
 }
 
 class oPlayer1 extends oCharacter {
-  // variables
+  ARROW_BOMB;
+  ARROW_NORM;
+  CLIMBING;
+  DUCKTOHANG;
+  FALLING;
+  HANGING;
+  IN_AIR;
+  LOOKING_UP;
+  ON_GROUND;
+  RUNNING;
+  STANDING;
+  bet;
+  blink;
+  bombArrowCounter;
+  bowArmed;
+  bowStrength;
+  canRun;
+  cantJump;
+  chest;
+  climbAcc;
+  climbAnimSpeed;
+  coin;
+  colIceBot;
+  colLadder;
+  colPlat;
+  colPlatBot;
+  colPointLadder;
+  colSolidLeft;
+  colSolidRight;
+  colSpikes;
+  colWaterTop;
+  collect;
+  deadCounter;
+  departLadderXVel;
+  departLadderYVel;
+  disp;
+  distToNearestLightSource;
+  excess;
+  explosion;
+  fallTimer;
+  firingPistolMax;
+  firingShotgunMax;
+  firstLevelSkip;
+  frictionClimbingX;
+  frictionClimbingY;
+  frictionRunningFastX;
+  frictionRunningX;
+  gravNorm;
+  gravityIntensity;
+  hangCount;
+  hangCountMax;
+  hawkThrow;
+  holdArrow;
+  holdArrowToggle;
+  holdItemType;
+  inGame;
+  initialJumpAcc;
+  jetpackFuel;
+  jumpButtonReleased;
+  jumpTime;
+  jumpTimeTotal;
+  jumps;
+  kAttack;
+  kAttackPressed;
+  kAttackReleased;
+  kBomb;
+  kBombPressed;
+  kDown;
+  kItem;
+  kItemPressed;
+  kItemReleased;
+  kJump;
+  kJumpPressed;
+  kJumpReleased;
+  kJumped;
+  kLeft;
+  kLeftPressed;
+  kLeftPushedSteps;
+  kLeftReleased;
+  kPay;
+  kPayPressed;
+  kRight;
+  kRightPressed;
+  kRightPushedSteps;
+  kRightReleased;
+  kRope;
+  kRopePressed;
+  kRun;
+  kUp;
+  ladder;
+  ladderTimer;
+  levelSkip;
+  lookOff;
+  looking;
+  maxDownSlope;
+  maxSlope;
+  money;
+  moveToggle;
+  pExit;
+  point;
+  pushTimer;
+  ratio;
+  redColor;
+  redToggle;
+  rr;
+  runAcc;
+  runAnimSpeed;
+  runHeld;
+  runKey;
+  shopThrow;
+  slopeChangeInY;
+  slopeYPrev;
+  source;
+  statePrev;
+  statePrevPrev;
+  t;
+  upYPrev;
+  viewCount;
+  walkSndToggle;
+  wallHurt;
+  whipping;
+  whoaTimer;
+  whoaTimerMax;
+  xAccLimit;
+  xCHANGE;
+  xCHANGE2;
+  xEND;
+  xFric;
+  xMOON;
+  xPrev;
+  xSCORES;
+  xSHORTCUT13;
+  xSHORTCUT5;
+  xSHORTCUT9;
+  xSTARS;
+  xSTART;
+  xSUN;
+  xTITLE;
+  xTUTORIAL;
+  xVelInteger;
+  xVelLimit;
+  yAccLimit;
+  yFric;
+  yPrev;
+  yPrevHigh;
+  yVelInteger;
+  yetiThrow;
 }

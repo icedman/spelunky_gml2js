@@ -10,6 +10,4 @@ function oEndPlat_CREATE($) {
   }
 }
 
-class oEndPlat extends oSolid {
-  // variables
-}
+class oEndPlat extends oSolid {}

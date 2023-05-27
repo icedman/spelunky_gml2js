@@ -1,6 +1,8 @@
 function oMattock_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (held) {
       if (oPlayer1.acing == 18) sprite_index = sMattockLeft;
@@ -11,7 +13,9 @@ function oMattock_STEP($) {
 
 function oMattock_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Mattock';
     makeActive();
@@ -21,6 +25,4 @@ function oMattock_CREATE($) {
   }
 }
 
-class oMattock extends oItem {
-  // variables
-}
+class oMattock extends oItem {}

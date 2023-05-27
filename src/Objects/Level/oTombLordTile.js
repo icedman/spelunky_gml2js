@@ -1,12 +1,12 @@
 function oTombLordTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'Tomb Lord';
     image_speed = 0;
   }
 }
 
-class oTombLordTile extends oDrawnSprite {
-  // variables
-}
+class oTombLordTile extends oDrawnSprite {}

@@ -1,3 +1,1 @@
-class oResetSign extends oSolid {
-  // variables
-}
+class oResetSign extends oSolid {}

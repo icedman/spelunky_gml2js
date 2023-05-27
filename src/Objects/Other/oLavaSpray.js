@@ -21,7 +21,7 @@ function oLavaSpray_STEP($) {
   }
 }
 
-function oLavaSpray_ALARM($) {
+function oLavaSpray_ALARM_0($) {
   with ($) {
     room_goto(rEnd2);
   }
@@ -35,6 +35,4 @@ function oLavaSpray_CREATE($) {
   }
 }
 
-class oLavaSpray extends oObject {
-  // variables
-}
+class oLavaSpray extends oObject {}

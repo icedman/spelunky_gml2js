@@ -1,4 +1,4 @@
-function oFishBone_ALARM($) {
+function oFishBone_ALARM_2($) {
   with ($) {
     safe = false;
   }
@@ -6,7 +6,9 @@ function oFishBone_ALARM($) {
 
 function oFishBone_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (xVel > 0 && yVel < 0) {
       direction = radtodeg(arctan(-yVel / xVel));
@@ -26,7 +28,9 @@ function oFishBone_STEP($) {
 
 function oFishBone_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Fish Bone';
     makeActive();
@@ -36,6 +40,4 @@ function oFishBone_CREATE($) {
   }
 }
 
-class oFishBone extends oItem {
-  // variables
-}
+class oFishBone extends oItem {}

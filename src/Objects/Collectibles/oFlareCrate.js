@@ -1,6 +1,8 @@
 function oFlareCrate_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (collision_point(x, y, oWater, -1, -1)) {
       instance_create(x, y, oSplash);
@@ -21,7 +23,7 @@ function oFlareCrate_STEP($) {
   }
 }
 
-function oFlareCrate_ALARM($) {
+function oFlareCrate_ALARM_0($) {
   with ($) {
     instance_create(
       x + rand(0, 3) - rand(0, 3),
@@ -34,7 +36,9 @@ function oFlareCrate_ALARM($) {
 
 function oFlareCrate_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Flare Crate';
     makeActive();
@@ -49,6 +53,4 @@ function oFlareCrate_CREATE($) {
   }
 }
 
-class oFlareCrate extends oItem {
-  // variables
-}
+class oFlareCrate extends oItem {}

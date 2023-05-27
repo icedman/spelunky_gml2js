@@ -18,7 +18,9 @@ function oRope_STEP($) {
 
 function oRope_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oLadder_CREATE($);
+    } catch (err) {}
 
     type = 'Rope';
     makeActive();
@@ -27,6 +29,4 @@ function oRope_CREATE($) {
   }
 }
 
-class oRope extends oLadder {
-  // variables
-}
+class oRope extends oLadder {}

@@ -1,3 +1,1 @@
-class oSliderBG extends oObject {
-  // variables
-}
+class oSliderBG extends oObject {}

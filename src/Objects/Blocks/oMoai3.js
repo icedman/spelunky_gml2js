@@ -1,11 +1,11 @@
 function oMoai3_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     invincible = true;
   }
 }
 
-class oMoai3 extends oSolid {
-  // variables
-}
+class oMoai3 extends oSolid {}

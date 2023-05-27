@@ -5,6 +5,4 @@ function oDrawnSprite_CREATE($) {
   }
 }
 
-class oDrawnSprite extends oObject {
-  // variables
-}
+class oDrawnSprite extends oObject {}

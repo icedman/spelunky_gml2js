@@ -1,6 +1,8 @@
 function oMachete_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (held) {
       if (oPlayer1.acing == 18) sprite_index = sMacheteLeft;
@@ -11,7 +13,9 @@ function oMachete_STEP($) {
 
 function oMachete_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Machete';
     makeActive();
@@ -21,6 +25,4 @@ function oMachete_CREATE($) {
   }
 }
 
-class oMachete extends oItem {
-  // variables
-}
+class oMachete extends oItem {}

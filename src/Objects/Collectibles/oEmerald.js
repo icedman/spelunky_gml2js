@@ -1,4 +1,4 @@
-function oEmerald_ALARM($) {
+function oEmerald_ALARM_0($) {
   with ($) {
     canCollect = true;
   }
@@ -6,7 +6,9 @@ function oEmerald_ALARM($) {
 
 function oEmerald_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Emerald';
     makeActive();
@@ -17,6 +19,4 @@ function oEmerald_CREATE($) {
   }
 }
 
-class oEmerald extends oTreasure {
-  // variables
-}
+class oEmerald extends oTreasure {}

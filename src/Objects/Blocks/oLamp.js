@@ -4,6 +4,4 @@ function oLamp_CREATE($) {
   }
 }
 
-class oLamp extends oObject {
-  // variables
-}
+class oLamp extends oObject {}

@@ -1,6 +1,8 @@
 function oLeaf_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oRubblePiece_CREATE($);
+    } catch (err) {}
 
     type = 'Leaf';
     yVel = 0.4;
@@ -9,6 +11,4 @@ function oLeaf_CREATE($) {
   }
 }
 
-class oLeaf extends oRubblePiece {
-  // variables
-}
+class oLeaf extends oRubblePiece {}

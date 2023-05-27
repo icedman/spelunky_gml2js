@@ -23,7 +23,7 @@ function oSlider2_STEP($) {
   }
 }
 
-function oSlider2_ALARM($) {
+function oSlider2_ALARM_0($) {
   with ($) {
     if (focus) {
       playSound(global.sndJump);
@@ -39,6 +39,4 @@ function oSlider2_CREATE($) {
   }
 }
 
-class oSlider2 extends oObject {
-  // variables
-}
+class oSlider2 extends oObject {}

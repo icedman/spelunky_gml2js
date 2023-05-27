@@ -255,5 +255,9 @@ function oLevel_CREATE($) {
 }
 
 class oLevel extends oObject {
-  // variables
+  checked;
+  musicFade;
+  musicFadeTimer;
+  offset;
+  shakeSwitch;
 }

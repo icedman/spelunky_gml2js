@@ -1,6 +1,8 @@
 function oGoldIdol_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 8 &&
@@ -41,7 +43,9 @@ function oGoldIdol_STEP($) {
 
 function oGoldIdol_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Gold Idol';
     makeActive();
@@ -52,6 +56,4 @@ function oGoldIdol_CREATE($) {
   }
 }
 
-class oGoldIdol extends oItem {
-  // variables
-}
+class oGoldIdol extends oItem {}

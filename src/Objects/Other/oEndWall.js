@@ -1,3 +1,1 @@
-class oEndWall extends oObject {
-  // variables
-}
+class oEndWall extends oObject {}

@@ -1,12 +1,16 @@
 function oCrate_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
   }
 }
 
 function oCrate_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Crate';
     makeActive();
@@ -19,6 +23,4 @@ function oCrate_CREATE($) {
   }
 }
 
-class oCrate extends oItem {
-  // variables
-}
+class oCrate extends oItem {}

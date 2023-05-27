@@ -1,16 +1,6 @@
-function oSpider_ALARM($) {
+function oSpider_ALARM_1($) {
   with ($) {
     instance_destroy();
-
-    status = BOUNCE;
-    if (isCollisionBottom(1)) {
-      yVel = -1 * rand(2, 5);
-      if (oCharacter.x < x) {
-        xVel = -2.5;
-      } else {
-        xVel = 2.5;
-      }
-    }
   }
 }
 
@@ -22,7 +12,9 @@ function oSpider_OTHER($) {
 
 function oSpider_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -108,9 +100,25 @@ if (isCollisionLeft(1) or isCollisionRight(1))
   }
 }
 
+function oSpider_ALARM_0($) {
+  with ($) {
+    status = BOUNCE;
+    if (isCollisionBottom(1)) {
+      yVel = -1 * rand(2, 5);
+      if (oCharacter.x < x) {
+        xVel = -2.5;
+      } else {
+        xVel = 2.5;
+      }
+    }
+  }
+}
+
 function oSpider_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     type = 'Spider';
     makeActive();
@@ -141,6 +149,4 @@ function oSpider_CREATE($) {
   }
 }
 
-class oSpider extends oEnemy {
-  // variables
-}
+class oSpider extends oEnemy {}

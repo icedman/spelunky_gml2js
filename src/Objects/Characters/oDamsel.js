@@ -1,6 +1,8 @@
 function oDamsel_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_DESTROY($);
+    } catch (err) {}
 
     if (bombID) {
       bombID.enemyID = 0;
@@ -116,7 +118,9 @@ function oDamsel_OTHER($) {
 
 function oDamsel_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (
       active &&
@@ -406,7 +410,9 @@ function oDamsel_STEP($) {
 
 function oDamsel_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Damsel';
     makeActive();
@@ -451,5 +457,8 @@ function oDamsel_CREATE($) {
 }
 
 class oDamsel extends oItem {
-  // variables
+  KISS;
+  SLAVE;
+  startled;
+  stunMax;
 }

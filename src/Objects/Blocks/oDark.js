@@ -1,6 +1,8 @@
 function oDark_DESTROY($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_DESTROY($);
+    } catch (err) {}
 
     if (!cleanDeath && !global.cleanSolids) {
       instance_create(
@@ -55,7 +57,9 @@ function oDark_DESTROY($) {
 
 function oDark_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     n = rand(1, 100);
 
@@ -78,6 +82,4 @@ function oDark_CREATE($) {
   }
 }
 
-class oDark extends oSolid {
-  // variables
-}
+class oDark extends oSolid {}

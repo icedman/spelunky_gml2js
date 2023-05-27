@@ -1,11 +1,11 @@
 function oAlienBossTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'Alien Boss';
   }
 }
 
-class oAlienBossTile extends oDrawnSprite {
-  // variables
-}
+class oAlienBossTile extends oDrawnSprite {}

@@ -1,11 +1,19 @@
-function oCredits2_ALARM($) {
+function oCredits2_ALARM_11($) {
   with ($) {
     drawStatus = 0;
+  }
+}
 
+function oCredits2_ALARM_3($) {
+  with ($) {
     drawStatus = 2;
     alarm[11] = 140;
     alarm[4] = 180;
+  }
+}
 
+function oCredits2_ALARM_1($) {
+  with ($) {
     if (scrolling) {
       if (rand(1, 8) == 1) instance_create(-16, 176, oShrubScroll);
       else if (rand(1, 12) == 1)
@@ -43,19 +51,35 @@ function oCredits2_ALARM($) {
         });
       alarm[1] = 16;
     }
+  }
+}
 
+function oCredits2_ALARM_5($) {
+  with ($) {
     drawStatus = 4;
     alarm[11] = 140;
     alarm[6] = 180;
+  }
+}
 
+function oCredits2_ALARM_4($) {
+  with ($) {
     drawStatus = 3;
     alarm[11] = 140;
     alarm[5] = 180;
+  }
+}
 
+function oCredits2_ALARM_2($) {
+  with ($) {
     drawStatus = 1;
     alarm[11] = 140;
     alarm[3] = 180;
+  }
+}
 
+function oCredits2_ALARM_8($) {
+  with ($) {
     scrolling = false;
     [instances_of(oDesertScroll)]
       .orEach(($) => {
@@ -85,17 +109,14 @@ function oCredits2_ALARM($) {
       });
     oCamel.status = 2;
     oCaravan.status = 2;
+  }
+}
 
+function oCredits2_ALARM_7($) {
+  with ($) {
     drawStatus = 6;
     alarm[11] = 240;
     alarm[8] = 280;
-
-    instance_create(320, 144, oCamel);
-    instance_create(320 + 64, 144 - 16, oCaravan);
-
-    drawStatus = 5;
-    alarm[11] = 240;
-    alarm[7] = 280;
   }
 }
 
@@ -231,6 +252,13 @@ function oCredits2_STEP($) {
   }
 }
 
+function oCredits2_ALARM_0($) {
+  with ($) {
+    instance_create(320, 144, oCamel);
+    instance_create(320 + 64, 144 - 16, oCaravan);
+  }
+}
+
 function oCredits2_CREATE($) {
   with ($) {
     fadeIn = true;
@@ -246,6 +274,12 @@ function oCredits2_CREATE($) {
   }
 }
 
-class oCredits2 extends oObject {
-  // variables
+function oCredits2_ALARM_6($) {
+  with ($) {
+    drawStatus = 5;
+    alarm[11] = 240;
+    alarm[7] = 280;
+  }
 }
+
+class oCredits2 extends oObject {}

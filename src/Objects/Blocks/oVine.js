@@ -1,3 +1,1 @@
-class oVine extends oLadder {
-  // variables
-}
+class oVine extends oLadder {}

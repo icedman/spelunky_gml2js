@@ -78,5 +78,6 @@ function oTarget_CREATE($) {
 }
 
 class oTarget extends oObject {
-  // variables
+  hard;
+  moveOff;
 }

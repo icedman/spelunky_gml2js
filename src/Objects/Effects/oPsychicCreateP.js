@@ -20,7 +20,9 @@ function oPsychicCreateP_STEP($) {
 
 function oPsychicCreateP_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     xVel = 0;
     yVel = 0;
@@ -28,6 +30,4 @@ function oPsychicCreateP_CREATE($) {
   }
 }
 
-class oPsychicCreateP extends oDrawnSprite {
-  // variables
-}
+class oPsychicCreateP extends oDrawnSprite {}

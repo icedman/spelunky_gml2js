@@ -14,7 +14,9 @@ function oDarkFall_COLLISION_oSolid($) {
 
 function oDarkFall_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_STEP($);
+    } catch (err) {}
 
     if (isCollisionCharacterTop(1)) {
       timeFall -= 1;
@@ -27,7 +29,9 @@ function oDarkFall_STEP($) {
 
 function oDarkFall_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oMovingSolid_CREATE($);
+    } catch (err) {}
 
     viscidTop = 1;
     makeActive();
@@ -41,5 +45,6 @@ function oDarkFall_CREATE($) {
 }
 
 class oDarkFall extends oMovingSolid {
-  // variables
+  timeFall;
+  timeFallMax;
 }

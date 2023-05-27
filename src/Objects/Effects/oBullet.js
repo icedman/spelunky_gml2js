@@ -42,7 +42,7 @@ function oBullet_STEP($) {
   }
 }
 
-function oBullet_ALARM($) {
+function oBullet_ALARM_0($) {
   with ($) {
     safe = false;
   }
@@ -126,6 +126,4 @@ function oBullet_COLLISION_oDamsel($) {
   }
 }
 
-class oBullet extends oObject {
-  // variables
-}
+class oBullet extends oObject {}

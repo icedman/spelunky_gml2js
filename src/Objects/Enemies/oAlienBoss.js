@@ -149,7 +149,9 @@ function oAlienBoss_STEP($) {
 
 function oAlienBoss_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(0, 0, 32, 32);
@@ -182,5 +184,6 @@ function oAlienBoss_CREATE($) {
 }
 
 class oAlienBoss extends oEnemy {
-  // variables
+  blood;
+  psychicRecover;
 }

@@ -1,20 +1,21 @@
-function oBlood_ALARM($) {
+function oBlood_ALARM_1($) {
   with ($) {
     invincible = false;
     bounce = true;
+  }
+}
 
+function oBlood_ALARM_2($) {
+  with ($) {
     collectible = true;
-
-    if (global.graphicsHigh) {
-      if (instance_number(oBloodTrail) < 12) instance_create(x, y, oBloodTrail);
-      alarm[0] = 4;
-    }
   }
 }
 
 function oBlood_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oDetritus_STEP($);
+    } catch (err) {}
 
     if (yVel > 6) instance_destroy();
 
@@ -24,9 +25,20 @@ function oBlood_STEP($) {
   }
 }
 
+function oBlood_ALARM_0($) {
+  with ($) {
+    if (global.graphicsHigh) {
+      if (instance_number(oBloodTrail) < 12) instance_create(x, y, oBloodTrail);
+      alarm[0] = 4;
+    }
+  }
+}
+
 function oBlood_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDetritus_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.3;
 
@@ -44,5 +56,5 @@ function oBlood_CREATE($) {
 }
 
 class oBlood extends oDetritus {
-  // variables
+  collectible;
 }

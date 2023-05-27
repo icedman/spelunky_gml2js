@@ -1,3 +1,1 @@
-class oNew extends oObject {
-  // variables
-}
+class oNew extends oObject {}

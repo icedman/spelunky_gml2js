@@ -80,7 +80,9 @@ function oVampire_COLLISION_oCharacter($) {
 
 function oVampire_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -407,7 +409,7 @@ function oVampire_STEP($) {
   }
 }
 
-function oVampire_ALARM($) {
+function oVampire_ALARM_0($) {
   with ($) {
     whipped = false;
   }
@@ -415,7 +417,9 @@ function oVampire_ALARM($) {
 
 function oVampire_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, sprite_width - 2, sprite_height);
@@ -470,5 +474,5 @@ function oVampire_COLLISION_oBlood($) {
 }
 
 class oVampire extends oEnemy {
-  // variables
+  FLY;
 }

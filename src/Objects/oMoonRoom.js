@@ -1,4 +1,4 @@
-function oMoonRoom_ALARM($) {
+function oMoonRoom_ALARM_11($) {
   with ($) {
     timer -= 1;
     if (timer == 0) {
@@ -30,7 +30,11 @@ function oMoonRoom_ALARM($) {
 
       alarm[10] = 30;
     } else alarm[11] = 30;
+  }
+}
 
+function oMoonRoom_ALARM_3($) {
+  with ($) {
     drawStatus = 3;
     /*
 obj = instance_create(160, 0, oPoof);
@@ -43,42 +47,20 @@ obj.yVel = 1;
     instance_create(160, -16, oBatTarget);
     instance_create(208, -64, oBatTarget);
     instance_create(256, -128, oBatTarget);
+  }
+}
 
+function oMoonRoom_ALARM_1($) {
+  with ($) {
     drawStatus = 1;
     alarm[2] = 30;
+  }
+}
 
+function oMoonRoom_ALARM_2($) {
+  with ($) {
     drawStatus = 2;
     alarm[3] = 10;
-
-    if (global.music) startMusic();
-
-    /*
-instance_create(n, 128, oBasket);
-instance_create(n, 128, oRim);
-instance_create(n, 128, oRimDeflect);
-obj = instance_create(n+8, 128+8, oPoof);
-obj.xVel = -0.5;
-obj.yVel = -0.5;
-obj = instance_create(n+8, 128+8, oPoof);
-obj.xVel = 0.5;
-obj.yVel = -0.5;
-obj = instance_create(n+8, 128+8, oPoof);
-obj.xVel = 0.5;
-obj.yVel = 0.5;
-obj = instance_create(n+8, 128+8, oPoof);
-obj.xVel = -0.5;
-obj.yVel = 0.5;
-*/
-
-    if (timer == 60) alarm[11] = 1;
-
-    if (timer < 0) {
-      if (oGame.drawStatus < 3) {
-        oGame.drawStatus = 3;
-      }
-
-      stopAllMusic();
-    }
   }
 }
 
@@ -109,6 +91,36 @@ function oMoonRoom_DRAW($) {
   }
 }
 
+function oMoonRoom_ALARM_9($) {
+  with ($) {
+    if (global.music) startMusic();
+  }
+}
+
+function oMoonRoom_ALARM_0($) {
+  with ($) {
+    /*
+instance_create(n, 128, oBasket);
+instance_create(n, 128, oRim);
+instance_create(n, 128, oRimDeflect);
+obj = instance_create(n+8, 128+8, oPoof);
+obj.xVel = -0.5;
+obj.yVel = -0.5;
+obj = instance_create(n+8, 128+8, oPoof);
+obj.xVel = 0.5;
+obj.yVel = -0.5;
+obj = instance_create(n+8, 128+8, oPoof);
+obj.xVel = 0.5;
+obj.yVel = 0.5;
+obj = instance_create(n+8, 128+8, oPoof);
+obj.xVel = -0.5;
+obj.yVel = 0.5;
+*/
+
+    if (timer == 60) alarm[11] = 1;
+  }
+}
+
 function oMoonRoom_CREATE($) {
   with ($) {
     global.plife = 8;
@@ -132,6 +144,18 @@ function oMoonRoom_CREATE($) {
   }
 }
 
+function oMoonRoom_ALARM_10($) {
+  with ($) {
+    if (timer < 0) {
+      if (oGame.drawStatus < 3) {
+        oGame.drawStatus = 3;
+      }
+
+      stopAllMusic();
+    }
+  }
+}
+
 class oMoonRoom extends oObject {
-  // variables
+  baskets;
 }

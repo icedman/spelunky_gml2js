@@ -195,7 +195,9 @@ function oShopkeeper_OTHER($) {
 
 function oShopkeeper_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -728,7 +730,7 @@ function oShopkeeper_STEP($) {
   }
 }
 
-function oShopkeeper_ALARM($) {
+function oShopkeeper_ALARM_0($) {
   with ($) {
     whipped = false;
   }
@@ -736,7 +738,9 @@ function oShopkeeper_ALARM($) {
 
 function oShopkeeper_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, sprite_width - 2, sprite_height);
@@ -789,5 +793,12 @@ function oShopkeeper_CREATE($) {
 }
 
 class oShopkeeper extends oEnemy {
-  // variables
+  FOLLOW;
+  PATROL;
+  angered;
+  betValue;
+  style;
+  throwCount;
+  turnTimer;
+  welcomed;
 }

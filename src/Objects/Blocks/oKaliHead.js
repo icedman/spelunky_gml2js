@@ -1,4 +1,4 @@
-function oKaliHead_ALARM($) {
+function oKaliHead_ALARM_0($) {
   with ($) {
     sprite_index = sGTHHole;
     for (r = 0; r < c; r++) {
@@ -29,6 +29,4 @@ function oKaliHead_CREATE($) {
   }
 }
 
-class oKaliHead extends oDrawnSprite {
-  // variables
-}
+class oKaliHead extends oDrawnSprite {}

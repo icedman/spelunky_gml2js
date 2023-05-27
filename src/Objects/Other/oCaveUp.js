@@ -1,3 +1,1 @@
-class oCaveUp extends oDrawnSprite {
-  // variables
-}
+class oCaveUp extends oDrawnSprite {}

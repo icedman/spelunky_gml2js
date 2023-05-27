@@ -148,7 +148,7 @@ function oSpearTrapTop_STEP($) {
   }
 }
 
-function oSpearTrapTop_ALARM($) {
+function oSpearTrapTop_ALARM_0($) {
   with ($) {
     arrow = instance_create(x - 16, y + 4, oArrow);
     arrow.xVel = -5;
@@ -157,7 +157,9 @@ function oSpearTrapTop_ALARM($) {
 
 function oSpearTrapTop_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     fired = 0;
     firedMax = 50;
@@ -168,6 +170,4 @@ function oSpearTrapTop_CREATE($) {
   }
 }
 
-class oSpearTrapTop extends oSolid {
-  // variables
-}
+class oSpearTrapTop extends oSolid {}

@@ -1,3 +1,1 @@
-class oTutorialSign extends oSolid {
-  // variables
-}
+class oTutorialSign extends oSolid {}

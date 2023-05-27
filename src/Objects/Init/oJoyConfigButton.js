@@ -9,6 +9,4 @@ function oJoyConfigButton_MOUSE($) {
   }
 }
 
-class oJoyConfigButton extends oObject {
-  // variables
-}
+class oJoyConfigButton extends oObject {}

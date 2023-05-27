@@ -104,7 +104,9 @@ function oBat_STEP($) {
 
 function oBat_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.5;
     setCollisionBounds(0, 2, 16, 14);
@@ -132,6 +134,4 @@ function oBat_CREATE($) {
   }
 }
 
-class oBat extends oEnemy {
-  // variables
-}
+class oBat extends oEnemy {}

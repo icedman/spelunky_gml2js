@@ -1,3 +1,1 @@
-class oCapeTile extends oDrawnSprite {
-  // variables
-}
+class oCapeTile extends oDrawnSprite {}

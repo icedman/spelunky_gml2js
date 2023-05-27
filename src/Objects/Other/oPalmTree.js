@@ -1,3 +1,1 @@
-class oPalmTree extends oObject {
-  // variables
-}
+class oPalmTree extends oObject {}

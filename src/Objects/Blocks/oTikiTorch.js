@@ -4,6 +4,4 @@ function oTikiTorch_CREATE($) {
   }
 }
 
-class oTikiTorch extends oObject {
-  // variables
-}
+class oTikiTorch extends oObject {}

@@ -29,7 +29,9 @@ function oTrapBlock_DESTROY($) {
 
 function oTrapBlock_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_STEP($);
+    } catch (err) {}
 
     if (dying) {
       if (deathTimer > 0) deathTimer -= 1;
@@ -40,13 +42,13 @@ function oTrapBlock_STEP($) {
 
 function oTrapBlock_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oSolid_CREATE($);
+    } catch (err) {}
 
     dying = false;
     deathTimer = 0;
   }
 }
 
-class oTrapBlock extends oSolid {
-  // variables
-}
+class oTrapBlock extends oSolid {}

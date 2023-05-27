@@ -5,6 +5,4 @@ function oBricks_CREATE($) {
   }
 }
 
-class oBricks extends oObject {
-  // variables
-}
+class oBricks extends oObject {}

@@ -1,2 +1,4 @@
-if (gamepad.larePressed) return gamepad.larePressed;
-else return keyboard_check_pressed(global.keyFlareVal);
+function checkFlarePressed() {
+  if (gamepad.larePressed) return gamepad.larePressed;
+  else return keyboard_check_pressed(global.keyFlareVal);
+}

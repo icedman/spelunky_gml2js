@@ -1,3 +1,1 @@
-class oBombPasteTile extends oDrawnSprite {
-  // variables
-}
+class oBombPasteTile extends oDrawnSprite {}

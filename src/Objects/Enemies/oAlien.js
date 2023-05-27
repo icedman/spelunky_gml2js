@@ -1,6 +1,8 @@
 function oAlien_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (
       x > view_xview[0] - 20 &&
@@ -80,7 +82,9 @@ function oAlien_STEP($) {
 
 function oAlien_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 6, 14, 16);
@@ -112,6 +116,4 @@ function oAlien_CREATE($) {
   }
 }
 
-class oAlien extends oEnemy {
-  // variables
-}
+class oAlien extends oEnemy {}

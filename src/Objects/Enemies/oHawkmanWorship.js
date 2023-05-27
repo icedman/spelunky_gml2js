@@ -1,3 +1,1 @@
-class oHawkmanWorship extends oObject {
-  // variables
-}
+class oHawkmanWorship extends oObject {}

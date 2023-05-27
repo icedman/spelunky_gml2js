@@ -1,12 +1,12 @@
 function oWater_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'Water';
     objChecked = false;
   }
 }
 
-class oWater extends oDrawnSprite {
-  // variables
-}
+class oWater extends oDrawnSprite {}

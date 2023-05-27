@@ -15,6 +15,4 @@ function oIntroBG_CREATE($) {
   }
 }
 
-class oIntroBG extends oObject {
-  // variables
-}
+class oIntroBG extends oObject {}

@@ -1,3 +1,1 @@
-class oShopkeeperTile extends oDrawnSprite {
-  // variables
-}
+class oShopkeeperTile extends oDrawnSprite {}

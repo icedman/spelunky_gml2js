@@ -5,7 +5,7 @@ function oRubyBig_COLLISION_oGhost($) {
   }
 }
 
-function oRubyBig_ALARM($) {
+function oRubyBig_ALARM_0($) {
   with ($) {
     canCollect = true;
   }
@@ -13,7 +13,9 @@ function oRubyBig_ALARM($) {
 
 function oRubyBig_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oTreasure_CREATE($);
+    } catch (err) {}
 
     type = 'Big Ruby';
     makeActive();
@@ -24,6 +26,4 @@ function oRubyBig_CREATE($) {
   }
 }
 
-class oRubyBig extends oTreasure {
-  // variables
-}
+class oRubyBig extends oTreasure {}

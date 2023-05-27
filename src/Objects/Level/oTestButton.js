@@ -25,6 +25,4 @@ function oTestButton_STEP($) {
   }
 }
 
-class oTestButton extends oObject {
-  // variables
-}
+class oTestButton extends oObject {}

@@ -15,6 +15,4 @@ function oMoon_CREATE($) {
   }
 }
 
-class oMoon extends oObject {
-  // variables
-}
+class oMoon extends oObject {}

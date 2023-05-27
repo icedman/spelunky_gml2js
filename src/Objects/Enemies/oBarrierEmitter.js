@@ -54,6 +54,4 @@ function oBarrierEmitter_CREATE($) {
   }
 }
 
-class oBarrierEmitter extends oObject {
-  // variables
-}
+class oBarrierEmitter extends oObject {}

@@ -1,6 +1,8 @@
 function oSpectacles_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Spectacles';
     makeActive();
@@ -11,6 +13,4 @@ function oSpectacles_CREATE($) {
   }
 }
 
-class oSpectacles extends oItem {
-  // variables
-}
+class oSpectacles extends oItem {}

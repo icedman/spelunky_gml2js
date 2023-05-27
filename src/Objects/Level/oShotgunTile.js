@@ -1,3 +1,1 @@
-class oShotgunTile extends oDrawnSprite {
-  // variables
-}
+class oShotgunTile extends oDrawnSprite {}

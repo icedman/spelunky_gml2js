@@ -1,3 +1,1 @@
-class oLadderTop extends oPlatform {
-  // variables
-}
+class oLadderTop extends oPlatform {}

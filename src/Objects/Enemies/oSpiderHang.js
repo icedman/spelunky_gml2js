@@ -30,7 +30,9 @@ function oSpiderHang_STEP($) {
 
 function oSpiderHang_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(4, 0, 12, 12);
@@ -57,6 +59,4 @@ function oSpiderHang_CREATE($) {
   }
 }
 
-class oSpiderHang extends oEnemy {
-  // variables
-}
+class oSpiderHang extends oEnemy {}

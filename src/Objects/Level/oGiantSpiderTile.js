@@ -1,11 +1,11 @@
 function oGiantSpiderTile_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     type = 'Giant Spider';
   }
 }
 
-class oGiantSpiderTile extends oDrawnSprite {
-  // variables
-}
+class oGiantSpiderTile extends oDrawnSprite {}

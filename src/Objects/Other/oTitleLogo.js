@@ -1,3 +1,1 @@
-class oTitleLogo extends oSolid {
-  // variables
-}
+class oTitleLogo extends oSolid {}

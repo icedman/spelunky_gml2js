@@ -117,6 +117,4 @@ function oFly_COLLISION_oDamsel($) {
   }
 }
 
-class oFly extends oObject {
-  // variables
-}
+class oFly extends oObject {}

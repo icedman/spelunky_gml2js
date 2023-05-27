@@ -1,12 +1,16 @@
 function oFireFrogArmed_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
   }
 }
 
 function oFireFrogArmed_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Fire Frog';
     makeActive();
@@ -19,6 +23,4 @@ function oFireFrogArmed_CREATE($) {
   }
 }
 
-class oFireFrogArmed extends oItem {
-  // variables
-}
+class oFireFrogArmed extends oItem {}

@@ -19,7 +19,9 @@ if (collision_point(x, y, oSolid, 0, 0))
 
 function oSmokePuff_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDrawnSprite_CREATE($);
+    } catch (err) {}
 
     yVel = 0.1;
     yAcc = 0.1;
@@ -27,6 +29,4 @@ function oSmokePuff_CREATE($) {
   }
 }
 
-class oSmokePuff extends oDrawnSprite {
-  // variables
-}
+class oSmokePuff extends oDrawnSprite {}

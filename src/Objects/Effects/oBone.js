@@ -6,7 +6,9 @@ function oBone_OTHER($) {
 
 function oBone_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oDetritus_STEP($);
+    } catch (err) {}
 
     if (isCollisionBottom(1)) {
       sprite_index = sSmokePuff;
@@ -17,7 +19,9 @@ function oBone_STEP($) {
 
 function oBone_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oDetritus_CREATE($);
+    } catch (err) {}
 
     image_speed = 0.3;
 
@@ -29,6 +33,4 @@ function oBone_CREATE($) {
   }
 }
 
-class oBone extends oDetritus {
-  // variables
-}
+class oBone extends oDetritus {}

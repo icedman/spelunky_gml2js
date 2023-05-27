@@ -1,6 +1,8 @@
 function oBow_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_STEP($);
+    } catch (err) {}
 
     if (held) {
       if (oPlayer1.acing == 18) sprite_index = sBowLeft;
@@ -21,7 +23,9 @@ function oBow_STEP($) {
 
 function oBow_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oItem_CREATE($);
+    } catch (err) {}
 
     type = 'Bow';
     makeActive();
@@ -33,6 +37,4 @@ function oBow_CREATE($) {
   }
 }
 
-class oBow extends oItem {
-  // variables
-}
+class oBow extends oItem {}

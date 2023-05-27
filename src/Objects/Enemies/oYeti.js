@@ -152,7 +152,9 @@ function oYeti_OTHER($) {
 
 function oYeti_STEP($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_STEP($);
+    } catch (err) {}
 
     if (active) {
       moveTo(xVel, yVel);
@@ -338,7 +340,7 @@ function oYeti_STEP($) {
   }
 }
 
-function oYeti_ALARM($) {
+function oYeti_ALARM_0($) {
   with ($) {
     whipped = false;
   }
@@ -346,7 +348,9 @@ function oYeti_ALARM($) {
 
 function oYeti_CREATE($) {
   with ($) {
-    action_inherited();
+    try {
+      oEnemy_CREATE($);
+    } catch (err) {}
 
     makeActive();
     setCollisionBounds(2, 0, sprite_width - 2, sprite_height);
@@ -383,6 +387,4 @@ function oYeti_CREATE($) {
   }
 }
 
-class oYeti extends oEnemy {
-  // variables
-}
+class oYeti extends oEnemy {}
