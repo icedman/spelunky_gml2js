@@ -24,4 +24,8 @@ function oKey_CREATE($) {
   }
 }
 
-class oKey extends oItem {}
+class oKey extends oItem {
+  sKeyLeft;
+  sKeyRight;
+}
+ObjType.oKey = oKey;

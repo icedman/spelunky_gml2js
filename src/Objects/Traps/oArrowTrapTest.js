@@ -3,7 +3,7 @@ function oArrowTrapTest_COLLISION_oBoulder($) {
     if (trapID == 0) {
       instance_destroy();
     } else if (abs(other.xVel) > 0 || abs(other.yVel) > 0) {
-      [instances_of(trapID)].forEach(($) => {
+      instances_of(trapID).forEach(($) => {
         with ($) {
           if (fired == 0) {
             if (facing == 0) {
@@ -35,7 +35,7 @@ function oArrowTrapTest_COLLISION_oCharacter($) {
       (oPlayer1.sprite_index = sDamselDtHL && oPlayer1.image_index > 6) ||
       (oPlayer1.sprite_index = sTunnelDtHL && oPlayer1.image_index > 6)
     ) {
-      [instances_of(trapID)].forEach(($) => {
+      instances_of(trapID).forEach(($) => {
         with ($) {
           if (fired == 0) {
             if (facing == 0) {
@@ -61,7 +61,7 @@ function oArrowTrapTest_COLLISION_oMoveableSolid($) {
     if (trapID == 0) {
       instance_destroy();
     } else if (abs(other.xVel) > 0 || abs(other.yVel) > 0) {
-      [instances_of(trapID)].forEach(($) => {
+      instances_of(trapID).forEach(($) => {
         with ($) {
           if (fired == 0) {
             if (facing == 0) {
@@ -87,7 +87,7 @@ function oArrowTrapTest_COLLISION_oItem($) {
     if (trapID == 0) {
       instance_destroy();
     } else if (abs(other.xVel) > 0 || abs(other.yVel) > 0) {
-      [instances_of(trapID)].forEach(($) => {
+      instances_of(trapID).forEach(($) => {
         with ($) {
           if (fired == 0) {
             if (facing == 0) {
@@ -113,7 +113,7 @@ function oArrowTrapTest_COLLISION_oEnemy($) {
     if (trapID == 0) {
       instance_destroy();
     } else if (abs(other.xVel) > 0 || abs(other.yVel) > 0) {
-      [instances_of(trapID)].forEach(($) => {
+      instances_of(trapID).forEach(($) => {
         with ($) {
           if (fired == 0) {
             if (facing == 0) {
@@ -145,7 +145,7 @@ function oArrowTrapTest_COLLISION_oTreasure($) {
     if (trapID == 0) {
       instance_destroy();
     } else if (abs(other.xVel) > 0 || abs(other.yVel) > 0) {
-      [instances_of(trapID)].forEach(($) => {
+      instances_of(trapID).forEach(($) => {
         with ($) {
           if (fired == 0) {
             if (facing == 0) {
@@ -166,6 +166,5 @@ function oArrowTrapTest_COLLISION_oTreasure($) {
   }
 }
 
-class oArrowTrapTest extends oObject {
-  trapID;
-}
+class oArrowTrapTest extends oObject {}
+ObjType.oArrowTrapTest = oArrowTrapTest;

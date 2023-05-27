@@ -13,4 +13,7 @@ function oWalDamsel_CREATE($) {
   }
 }
 
-class oWalDamsel extends oObject {}
+class oWalDamsel extends oObject {
+  oEndCustom;
+}
+ObjType.oWalDamsel = oWalDamsel;

@@ -14,3 +14,4 @@ function oSpectacles_CREATE($) {
 }
 
 class oSpectacles extends oItem {}
+ObjType.oSpectacles = oSpectacles;

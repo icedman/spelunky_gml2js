@@ -19,3 +19,4 @@ function oGoldNugget_CREATE($) {
 }
 
 class oGoldNugget extends oTreasure {}
+ObjType.oGoldNugget = oGoldNugget;

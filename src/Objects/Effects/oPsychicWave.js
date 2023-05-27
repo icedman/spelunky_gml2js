@@ -56,3 +56,4 @@ function oPsychicWave_COLLISION_oDamsel($) {
 }
 
 class oPsychicWave extends oDrawnSprite {}
+ObjType.oPsychicWave = oPsychicWave;

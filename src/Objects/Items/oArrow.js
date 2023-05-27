@@ -87,4 +87,8 @@ function oArrow_CREATE($) {
   }
 }
 
-class oArrow extends oItem {}
+class oArrow extends oItem {
+  oTarget;
+  stuck;
+}
+ObjType.oArrow = oArrow;

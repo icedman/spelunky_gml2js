@@ -23,3 +23,4 @@ function oCheckBox3_CREATE($) {
 }
 
 class oCheckBox3 extends oObject {}
+ObjType.oCheckBox3 = oCheckBox3;

@@ -149,7 +149,7 @@ function oJar_STEP($) {
         enemy = instance_nearest(x, y, oEnemy);
         if (!enemy.invincible) {
           enemy.xVel = xVel;
-          [instances_of(enemy)].forEach(($) => {
+          instances_of(enemy).forEach(($) => {
             with ($) {
               if (
                 type == 'Caveman' ||
@@ -204,10 +204,10 @@ function oJar_STEP($) {
             instance_create(x, y, oBlood);
           }
         }
-        [instances_of(enemy)].forEach(($) => {
+        instances_of(enemy).forEach(($) => {
           with ($) {
             if (held) held = false;
-            [instances_of(oPlayer1)].orEach(($) => {
+            instances_of(oPlayer1).forEach(($) => {
               with ($) {
                 holdItem = 0;
               }
@@ -253,4 +253,16 @@ function oJar_CREATE($) {
   }
 }
 
-class oJar extends oItem {}
+class oJar extends oItem {
+  DUCKING;
+  breakPieces;
+  destroy;
+  enemy;
+  oDamsel;
+  oFlame;
+  oSnake;
+  pickupItem;
+  piece;
+  sndExplosion;
+}
+ObjType.oJar = oJar;

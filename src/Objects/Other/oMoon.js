@@ -16,3 +16,4 @@ function oMoon_CREATE($) {
 }
 
 class oMoon extends oObject {}
+ObjType.oMoon = oMoon;

@@ -28,30 +28,29 @@ function oOlmec_ALARM_1($) {
       debris.yVel = -rand(1, 3);
     }
     playSound(global.sndThump);
-    [instances_of(oHawkmanWorship)]
-      .forEach(($) => {
-        with ($) {
-          obj = instance_create(x, y, oHawkman);
-          [instances_of(obj)].forEach(($) => {
-            with ($) {
-              status = 98;
-              hp = 1;
-              xVel = -3;
-              yVel = -5;
-              counter = 300;
-            }
-          });
+    instances_of(oHawkmanWorship).forEach(($) => {
+      with ($) {
+        obj = instance_create(x, y, oHawkman);
+        instances_of(obj).forEach(($) => {
+          with ($) {
+            status = 98;
+            hp = 1;
+            xVel = -3;
+            yVel = -5;
+            counter = 300;
+          }
+        });
 
-          instance_destroy();
-        }
-      })
+        instance_destroy();
+      }
+    });
 
-      [instances_of(oCavemanWorship)].forEach(($) => {
-        with ($) {
-          image_index = 0;
-          image_speed = 0;
-        }
-      });
+    instances_of(oCavemanWorship).forEach(($) => {
+      with ($) {
+        image_index = 0;
+        image_speed = 0;
+      }
+    });
 
     alarm[2] = 50;
   }
@@ -304,7 +303,7 @@ function oOlmec_CREATE($) {
 
 function oOlmec_ALARM_6($) {
   with ($) {
-    [instances_of(oCavemanWorship)].forEach(($) => {
+    instances_of(oCavemanWorship).forEach(($) => {
       with ($) {
         obj = instance_create(x, y, oCaveman);
         obj.acing = 1;
@@ -316,16 +315,79 @@ function oOlmec_ALARM_6($) {
 }
 
 class oOlmec extends oMovingSolid {
+  $;
+  BOUNCE;
   CREATE;
+  DEAD;
   DROWNING;
+  IDLE;
+  LEFT;
   PREPARE;
+  RECOVER;
+  RIGHT;
   SLAM;
   START1;
   START2;
+  WALK;
+  acing;
+  active;
+  alarm;
+  bounceCounter;
+  c;
   carryPlayer;
+  counter;
   debris;
+  dist;
+  enemyKills;
+  err;
+  facing;
+  global;
+  hp;
+  i;
+  image_index;
+  image_speed;
+  invincible;
+  kills;
+  musBoss;
+  myGrav;
+  oCaveman;
+  oCavemanWorship;
+  oFinalBoss;
+  oHawkman;
+  oHawkmanWorship;
+  oLava;
+  oOlmec;
+  oOlmecDebris;
+  oOlmecSlam;
+  oPlayer1;
+  oPsychicCreate2;
+  oYellowBall;
+  obj;
+  olmecDead;
+  r;
+  sOlmec;
+  sOlmecStart2;
+  sOlmecStart3;
+  shopWall;
   slammed;
+  sndAlert;
+  sndBigJump;
+  sndFlame;
+  sndPsychic;
+  sndThump;
+  sprite_index;
+  status;
   toggle;
-  view_hborder = [];
-  view_object = [];
+  view_hborder;
+  view_object;
+  view_vborder;
+  view_xview;
+  view_yview;
+  viscidTop;
+  x;
+  xVel;
+  y;
+  yDelta;
+  yVel;
 }
+ObjType.oOlmec = oOlmec;

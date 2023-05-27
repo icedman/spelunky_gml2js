@@ -458,7 +458,6 @@ function oGamepad_CREATE($) {
 
 class oGamepad extends oObject {
   attack;
-  attackPressed;
   attackReleased;
   bomb;
   bombPressed;
@@ -466,10 +465,16 @@ class oGamepad extends oObject {
   down;
   downPressed;
   downReleased;
+  flare;
   flarePressed;
   flareReleased;
   itemPressed;
   itemReleased;
+  joyBombVal;
+  joyFlareVal;
+  joyRopeVal;
+  joyStartVal;
+  joyid;
   jump;
   jumpPressed;
   jumpReleased;
@@ -486,9 +491,9 @@ class oGamepad extends oObject {
   ropeReleased;
   run;
   start;
-  startPressed;
   startReleased;
   up;
   upPressed;
   upReleased;
 }
+ObjType.oGamepad = oGamepad;

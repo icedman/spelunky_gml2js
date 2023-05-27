@@ -6,3 +6,4 @@ function oBricks_CREATE($) {
 }
 
 class oBricks extends oObject {}
+ObjType.oBricks = oBricks;

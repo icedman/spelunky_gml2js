@@ -26,3 +26,4 @@ function oIceBottom_CREATE($) {
 }
 
 class oIceBottom extends oDrawnSprite {}
+ObjType.oIceBottom = oIceBottom;

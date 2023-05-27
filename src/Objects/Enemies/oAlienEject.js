@@ -123,4 +123,8 @@ class oAlienEject extends oDrawnSprite {
   DEPLOY;
   EJECT;
   FLOAT;
+  oAlien;
+  sAlienDeploy;
+  sAlienParachute;
 }
+ObjType.oAlienEject = oAlienEject;

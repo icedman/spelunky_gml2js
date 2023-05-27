@@ -25,4 +25,8 @@ function oPistol_CREATE($) {
   }
 }
 
-class oPistol extends oItem {}
+class oPistol extends oItem {
+  sPistolLeft;
+  sPistolRight;
+}
+ObjType.oPistol = oPistol;

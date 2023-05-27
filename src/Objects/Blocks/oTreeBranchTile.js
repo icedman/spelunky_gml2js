@@ -24,3 +24,4 @@ function oTreeBranchTile_CREATE($) {
 }
 
 class oTreeBranchTile extends oPlatform {}
+ObjType.oTreeBranchTile = oTreeBranchTile;

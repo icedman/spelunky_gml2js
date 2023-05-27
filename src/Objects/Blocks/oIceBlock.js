@@ -39,4 +39,7 @@ function oIceBlock_CREATE($) {
   }
 }
 
-class oIceBlock extends oMoveableSolid {}
+class oIceBlock extends oMoveableSolid {
+  oDrip;
+}
+ObjType.oIceBlock = oIceBlock;

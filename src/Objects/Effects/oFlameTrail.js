@@ -15,3 +15,4 @@ function oFlameTrail_CREATE($) {
 }
 
 class oFlameTrail extends oDrawnSprite {}
+ObjType.oFlameTrail = oFlameTrail;

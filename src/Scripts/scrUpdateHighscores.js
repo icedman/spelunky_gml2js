@@ -85,7 +85,7 @@ function scrUpdateHighscores() {
 
     if (global.mini1 > tMini1) {
       tMini1 = global.mini1;
-      [instances_of(oSunRoom)].orEach(($) => {
+      instances_of(oSunRoom).forEach(($) => {
         with ($) {
           highscore = true;
         }
@@ -93,7 +93,7 @@ function scrUpdateHighscores() {
     }
     if (global.mini2 > tMini2) {
       tMini2 = global.mini2;
-      [instances_of(oMoonRoom)].orEach(($) => {
+      instances_of(oMoonRoom).forEach(($) => {
         with ($) {
           highscore = true;
         }
@@ -101,7 +101,7 @@ function scrUpdateHighscores() {
     }
     if (global.mini3 > tMini3) {
       tMini3 = global.mini3;
-      [instances_of(oStarsRoom)].orEach(($) => {
+      instances_of(oStarsRoom).forEach(($) => {
         with ($) {
           highscore = true;
         }

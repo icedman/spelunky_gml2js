@@ -16,3 +16,4 @@ function oFrozenCaveman_STEP($) {
 }
 
 class oFrozenCaveman extends oDrawnSprite {}
+ObjType.oFrozenCaveman = oFrozenCaveman;

@@ -9,3 +9,4 @@ function oHardBlock_CREATE($) {
 }
 
 class oHardBlock extends oSolid {}
+ObjType.oHardBlock = oHardBlock;

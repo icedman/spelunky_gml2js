@@ -329,6 +329,13 @@ function oKeyConfig_CREATE($) {
 }
 
 class oKeyConfig extends oObject {
+  keyBombVal;
+  keyDownVal;
+  keyFlareVal;
+  keyLeftVal;
+  keyRightVal;
+  keyRopeVal;
+  keyUpVal;
   vk_alt;
   vk_control;
   vk_down;
@@ -338,3 +345,4 @@ class oKeyConfig extends oObject {
   vk_space;
   vk_up;
 }
+ObjType.oKeyConfig = oKeyConfig;

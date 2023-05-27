@@ -24,3 +24,4 @@ function oPoof_CREATE($) {
 }
 
 class oPoof extends oDrawnSprite {}
+ObjType.oPoof = oPoof;

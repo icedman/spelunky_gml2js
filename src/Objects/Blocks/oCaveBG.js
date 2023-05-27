@@ -15,4 +15,8 @@ function oCaveBG_CREATE($) {
   }
 }
 
-class oCaveBG extends oObject {}
+class oCaveBG extends oObject {
+  sCaveBG1;
+  sCaveBG2;
+}
+ObjType.oCaveBG = oCaveBG;

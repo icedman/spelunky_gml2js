@@ -12,7 +12,7 @@ function oFly_COLLISION_oCharacter($) {
       other.xVel = xVel;
       other.yVel = -4;
 
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_create(x, y, oBlood);
           stunned = true;
@@ -57,7 +57,7 @@ function oFly_COLLISION_oEnemy($) {
       other.xVel = xVel;
       other.yVel = -4;
 
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           hp -= 2;
           if (bloodLeft > 0) {
@@ -86,18 +86,18 @@ function oFly_COLLISION_oDamsel($) {
   with ($) {
     if (!other.invincible) {
       if (other.bloodLeft > 0) {
-        [instances_of(other)].forEach(($) => {
+        instances_of(other).forEach(($) => {
           with ($) {
             scrCreateBlood(x + sprite_width / 2, y + sprite_height / 2, 1);
             if (hp < 0) bloodLeft -= 1;
           }
         });
       }
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           if (held) {
             held = false;
-            [instances_of(oPlayer1)].orEach(($) => {
+            instances_of(oPlayer1).forEach(($) => {
               with ($) {
                 holdItem = 0;
               }
@@ -117,4 +117,8 @@ function oFly_COLLISION_oDamsel($) {
   }
 }
 
-class oFly extends oObject {}
+class oFly extends oObject {
+  sFlyLeft;
+  sFlyRight;
+}
+ObjType.oFly = oFly;

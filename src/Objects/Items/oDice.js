@@ -119,7 +119,7 @@ function oDice_STEP($) {
           obj = instance_nearest(x, y, oEnemy);
           if (!obj.invincible && obj.type != 'Magma Man') {
             obj.xVel = xVel;
-            [instances_of(obj)].forEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 if (
                   type == 'Caveman' ||
@@ -188,11 +188,11 @@ function oDice_STEP($) {
           obj = instance_nearest(x, y, oDamsel);
           if (!obj.invincible && obj.status != 2 && obj.status != 99) {
             instance_create(x, y, oBlood);
-            [instances_of(obj)].forEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 if (held) {
                   held = false;
-                  [instances_of(oPlayer1)].orEach(($) => {
+                  instances_of(oPlayer1).forEach(($) => {
                     with ($) {
                       holdItem = 0;
                       pickupItemType = '';
@@ -251,5 +251,20 @@ function oDice_CREATE($) {
 }
 
 class oDice extends oItem {
+  bet;
+  bounceFactor;
+  c_white;
+  frictionFactor;
+  hasSpectacles;
+  rolled;
   rolling;
+  sDice1;
+  sDice2;
+  sDice3;
+  sDice4;
+  sDice5;
+  sDice6;
+  sDiceRoll;
+  sRedArrowDown;
 }
+ObjType.oDice = oDice;

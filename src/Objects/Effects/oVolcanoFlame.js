@@ -34,3 +34,4 @@ function oVolcanoFlame_CREATE($) {
 }
 
 class oVolcanoFlame extends oObject {}
+ObjType.oVolcanoFlame = oVolcanoFlame;

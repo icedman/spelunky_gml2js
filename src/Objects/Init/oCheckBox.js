@@ -22,4 +22,7 @@ function oCheckBox_CREATE($) {
   }
 }
 
-class oCheckBox extends oObject {}
+class oCheckBox extends oObject {
+  ullscreen;
+}
+ObjType.oCheckBox = oCheckBox;

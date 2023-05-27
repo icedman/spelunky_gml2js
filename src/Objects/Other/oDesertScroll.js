@@ -19,3 +19,4 @@ function oDesertScroll_CREATE($) {
 }
 
 class oDesertScroll extends oDrawnSprite {}
+ObjType.oDesertScroll = oDesertScroll;

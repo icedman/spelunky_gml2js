@@ -10,35 +10,34 @@ function oMattockHit_OTHER($) {
     }
 
     if (hit && !isRoom('rTitle') && !isRoom('rHighscores')) {
-      [instances_of(obj)]
-        .forEach(($) => {
-          with ($) {
-            tile = tile_layer_find(3, x, y - 16);
-            if (tile) tile_delete(tile);
-            tile = tile_layer_find(3, x, y + 16);
-            if (tile) tile_delete(tile);
+      instances_of(obj).forEach(($) => {
+        with ($) {
+          tile = tile_layer_find(3, x, y - 16);
+          if (tile) tile_delete(tile);
+          tile = tile_layer_find(3, x, y + 16);
+          if (tile) tile_delete(tile);
 
-            if (!invincible) instance_destroy();
-          }
-        })
+          if (!invincible) instance_destroy();
+        }
+      });
 
-        [instances_of(oTreasure)].forEach(($) => {
-          with ($) {
-            state = 1;
-          }
-        })
+      instances_of(oTreasure).forEach(($) => {
+        with ($) {
+          state = 1;
+        }
+      });
 
-        [instances_of(oSpikes)].forEach(($) => {
-          with ($) {
-            if (!collision_point(x, y + 16, oSolid, 0, 0)) {
-              instance_destroy();
-            }
+      instances_of(oSpikes).forEach(($) => {
+        with ($) {
+          if (!collision_point(x, y + 16, oSolid, 0, 0)) {
+            instance_destroy();
           }
-        });
+        }
+      });
 
       // break mattock
       if (rand(1, 20) == 1 && !global.isTunnelMan) {
-        [instances_of(oPlayer1)].forEach(($) => {
+        instances_of(oPlayer1).forEach(($) => {
           with ($) {
             holdItem = 0;
             pickupItemType = '';
@@ -49,7 +48,7 @@ function oMattockHit_OTHER($) {
         obj = instance_create(x, y, oMattockHead);
         obj.yVel = -2;
         playSound(global.sndMattockBreak);
-        [instances_of(oMattock)].forEach(($) => {
+        instances_of(oMattock).forEach(($) => {
           with ($) {
             if (!visible) instance_destroy();
           }
@@ -89,4 +88,12 @@ function oMattockHit_CREATE($) {
   }
 }
 
-class oMattockHit extends oWhip {}
+class oMattockHit extends oWhip {
+  oMattock;
+  oMattockHead;
+  oTreasure;
+  sMattockHitL;
+  sMattockHitR;
+  sndMattockBreak;
+}
+ObjType.oMattockHit = oMattockHit;

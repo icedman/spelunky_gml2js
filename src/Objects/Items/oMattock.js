@@ -25,4 +25,8 @@ function oMattock_CREATE($) {
   }
 }
 
-class oMattock extends oItem {}
+class oMattock extends oItem {
+  sMattockLeft;
+  sMattockRight;
+}
+ObjType.oMattock = oMattock;

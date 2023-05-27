@@ -1,6 +1,6 @@
 function oOlmecSlam_COLLISION_oSolid($) {
   with ($) {
-    [instances_of(other)].forEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         cleanDeath = false;
         tile = tile_layer_find(3, x, y - 16);
@@ -24,4 +24,7 @@ function oOlmecSlam_CREATE($) {
   }
 }
 
-class oOlmecSlam extends oObject {}
+class oOlmecSlam extends oObject {
+  sndSlam;
+}
+ObjType.oOlmecSlam = oOlmecSlam;

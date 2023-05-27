@@ -14,3 +14,4 @@ function oKapala_CREATE($) {
 }
 
 class oKapala extends oItem {}
+ObjType.oKapala = oKapala;

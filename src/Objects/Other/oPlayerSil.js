@@ -22,3 +22,4 @@ function oPlayerSil_CREATE($) {
 }
 
 class oPlayerSil extends oDrawnSprite {}
+ObjType.oPlayerSil = oPlayerSil;

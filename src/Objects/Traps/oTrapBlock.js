@@ -52,3 +52,4 @@ function oTrapBlock_CREATE($) {
 }
 
 class oTrapBlock extends oSolid {}
+ObjType.oTrapBlock = oTrapBlock;

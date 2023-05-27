@@ -37,4 +37,9 @@ function oBow_CREATE($) {
   }
 }
 
-class oBow extends oItem {}
+class oBow extends oItem {
+  bowStrength;
+  sBowLeft;
+  sBowRight;
+}
+ObjType.oBow = oBow;

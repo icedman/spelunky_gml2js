@@ -19,7 +19,7 @@ function oTarget_COLLISION_oArrow($) {
     }
 
     if (life <= 2) {
-      [instances_of(other)].orEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -81,3 +81,4 @@ class oTarget extends oObject {
   hard;
   moveOff;
 }
+ObjType.oTarget = oTarget;

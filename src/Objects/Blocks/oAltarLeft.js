@@ -24,3 +24,4 @@ function oAltarLeft_DESTROY($) {
 }
 
 class oAltarLeft extends oSolid {}
+ObjType.oAltarLeft = oAltarLeft;

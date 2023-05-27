@@ -13,3 +13,4 @@ function oTeleporter_CREATE($) {
 }
 
 class oTeleporter extends oItem {}
+ObjType.oTeleporter = oTeleporter;

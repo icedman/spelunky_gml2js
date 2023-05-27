@@ -9,4 +9,9 @@ function oKeyConfigButton_MOUSE($) {
   }
 }
 
-class oKeyConfigButton extends oObject {}
+class oKeyConfigButton extends oObject {
+  rKeyConfig;
+  sKeyConfigButton;
+  sKeyConfigButtonPressed;
+}
+ObjType.oKeyConfigButton = oKeyConfigButton;

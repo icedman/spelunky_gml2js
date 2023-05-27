@@ -73,4 +73,7 @@ function oXocBlock_CREATE($) {
   }
 }
 
-class oXocBlock extends oSolid {}
+class oXocBlock extends oSolid {
+  treasure;
+}
+ObjType.oXocBlock = oXocBlock;

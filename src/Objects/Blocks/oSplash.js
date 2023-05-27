@@ -15,3 +15,4 @@ function oSplash_CREATE($) {
 }
 
 class oSplash extends oDrawnSprite {}
+ObjType.oSplash = oSplash;

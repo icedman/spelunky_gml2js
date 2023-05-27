@@ -28,4 +28,9 @@ function oCaravan_CREATE($) {
   }
 }
 
-class oCaravan extends oObject {}
+class oCaravan extends oObject {
+  oCredits2;
+  sCaravan2;
+  sCaravan3;
+}
+ObjType.oCaravan = oCaravan;

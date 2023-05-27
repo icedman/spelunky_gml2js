@@ -1,0 +1,10 @@
+sFallLeft = {
+  name: 'sFallLeft',
+  frames: [
+    {
+      ox: 8,
+      oy: 8,
+      path: './src/Sprites/character/sFallLeft.png',
+    },
+  ],
+};

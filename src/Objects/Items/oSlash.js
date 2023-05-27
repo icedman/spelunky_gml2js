@@ -32,4 +32,8 @@ function oSlash_CREATE($) {
   }
 }
 
-class oSlash extends oWhip {}
+class oSlash extends oWhip {
+  sSlashLeft;
+  sSlashRight;
+}
+ObjType.oSlash = oSlash;

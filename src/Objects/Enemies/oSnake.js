@@ -130,4 +130,8 @@ function oSnake_CREATE($) {
   }
 }
 
-class oSnake extends oEnemy {}
+class oSnake extends oEnemy {
+  sSnakeWalkL;
+  snakes;
+}
+ObjType.oSnake = oSnake;

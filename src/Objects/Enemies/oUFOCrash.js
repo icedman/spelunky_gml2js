@@ -40,3 +40,4 @@ function oUFOCrash_CREATE($) {
 }
 
 class oUFOCrash extends oObject {}
+ObjType.oUFOCrash = oUFOCrash;

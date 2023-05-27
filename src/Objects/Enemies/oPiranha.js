@@ -194,4 +194,10 @@ function oPiranha_CREATE($) {
 class oPiranha extends oEnemy {
   ATTACK_ENEMY;
   canBite;
+  oBubble;
+  oYeti;
+  piranhas;
+  sPiranhaLeft;
+  sPiranhaRight;
 }
+ObjType.oPiranha = oPiranha;

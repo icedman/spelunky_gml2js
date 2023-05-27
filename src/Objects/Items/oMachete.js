@@ -25,4 +25,8 @@ function oMachete_CREATE($) {
   }
 }
 
-class oMachete extends oItem {}
+class oMachete extends oItem {
+  sMacheteLeft;
+  sMacheteRight;
+}
+ObjType.oMachete = oMachete;

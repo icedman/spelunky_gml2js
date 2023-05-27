@@ -10,7 +10,7 @@ function oBarrierEmitter_DESTROY($) {
     }
     scrShake(10);
     playSound(global.sndSmallExplode);
-    [instances_of(oBarrier)].forEach(($) => {
+    instances_of(oBarrier).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -54,4 +54,7 @@ function oBarrierEmitter_CREATE($) {
   }
 }
 
-class oBarrierEmitter extends oObject {}
+class oBarrierEmitter extends oObject {
+  oBarrier;
+}
+ObjType.oBarrierEmitter = oBarrierEmitter;

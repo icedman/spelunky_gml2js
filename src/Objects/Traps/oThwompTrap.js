@@ -54,4 +54,9 @@ function oThwompTrap_CREATE($) {
   }
 }
 
-class oThwompTrap extends oMovingSolid {}
+class oThwompTrap extends oMovingSolid {
+  DROP;
+  RETURN;
+  WAIT;
+}
+ObjType.oThwompTrap = oThwompTrap;

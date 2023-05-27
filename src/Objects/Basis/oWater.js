@@ -9,4 +9,7 @@ function oWater_CREATE($) {
   }
 }
 
-class oWater extends oDrawnSprite {}
+class oWater extends oDrawnSprite {
+  objChecked;
+}
+ObjType.oWater = oWater;

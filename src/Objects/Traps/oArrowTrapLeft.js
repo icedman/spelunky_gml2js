@@ -114,3 +114,4 @@ function oArrowTrapLeft_CREATE($) {
 }
 
 class oArrowTrapLeft extends oSolid {}
+ObjType.oArrowTrapLeft = oArrowTrapLeft;

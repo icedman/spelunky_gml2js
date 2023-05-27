@@ -15,3 +15,4 @@ function oMoaiInside_CREATE($) {
 }
 
 class oMoaiInside extends oSolid {}
+ObjType.oMoaiInside = oMoaiInside;

@@ -11,3 +11,4 @@ function oRopeTop_CREATE($) {
 }
 
 class oRopeTop extends oDrawnSprite {}
+ObjType.oRopeTop = oRopeTop;

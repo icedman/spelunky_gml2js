@@ -9,3 +9,4 @@ function oManTrapTile_CREATE($) {
 }
 
 class oManTrapTile extends oDrawnSprite {}
+ObjType.oManTrapTile = oManTrapTile;

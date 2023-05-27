@@ -29,4 +29,9 @@ function oKaliHead_CREATE($) {
   }
 }
 
-class oKaliHead extends oDrawnSprite {}
+class oKaliHead extends oDrawnSprite {
+  sKaliHead1;
+  sKaliHead2;
+  sKaliHead3;
+}
+ObjType.oKaliHead = oKaliHead;

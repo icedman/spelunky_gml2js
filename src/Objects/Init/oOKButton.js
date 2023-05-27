@@ -12,4 +12,10 @@ function oOKButton_MOUSE($) {
   }
 }
 
-class oOKButton extends oObject {}
+class oOKButton extends oObject {
+  oInit;
+  sOKButton;
+  sOKButtonPressed;
+  startGame;
+}
+ObjType.oOKButton = oOKButton;

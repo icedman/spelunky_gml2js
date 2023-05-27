@@ -59,4 +59,9 @@ function oSpiderHang_CREATE($) {
   }
 }
 
-class oSpiderHang extends oEnemy {}
+class oSpiderHang extends oEnemy {
+  oSpider;
+  spider;
+  spiders;
+}
+ObjType.oSpiderHang = oSpiderHang;

@@ -32,7 +32,7 @@ function scrEntityGen() {
     global.giantSpider = false;
     global.genGiantSpider = false;
     if (rand(1, 6) == 1) global.genGiantSpider = true;
-    [instances_of(oSolid)].forEach(($) => {
+    instances_of(oSolid).forEach(($) => {
       with ($) {
         if (!isInShop(x, y) && y > 16) {
           if (type != 'Altar') {
@@ -81,7 +81,7 @@ function scrEntityGen() {
 
     // force generate chest
     if (global.genUdjatEye && !global.LockedChest) {
-      [instances_of(oExit)].forEach(($) => {
+      instances_of(oExit).forEach(($) => {
         with ($) {
           if (
             !collision_point(x - 8, y, oSolid, 0, 0) &&
@@ -114,7 +114,7 @@ function scrEntityGen() {
     if (instance_exists(oLockedChest)) {
       n = 1;
       while (n < 8 && global.Key == false) {
-        [instances_of(oTreasure)].forEach(($) => {
+        instances_of(oTreasure).forEach(($) => {
           with ($) {
             if (
               rand(1, 8) <= 1 &&
@@ -135,7 +135,7 @@ function scrEntityGen() {
         n += 1;
       }
       if (!global.Key) {
-        [instances_of(oTreasure)].forEach(($) => {
+        instances_of(oTreasure).forEach(($) => {
           with ($) {
             if (!collision_point(x, y, oSolid, 0, 0)) {
               if (type == 'Gold Bars') instance_create(x, y + 4, oKey);
@@ -151,7 +151,7 @@ function scrEntityGen() {
 
     if (global.Key) global.madeUdjatEye = true;
 
-    [instances_of(oBlock)].forEach(($) => {
+    instances_of(oBlock).forEach(($) => {
       with ($) {
         if (!isInShop(x, y)) {
           n = point_distance(x, y, oEntrance.x, oEntrance.y);
@@ -185,7 +185,7 @@ function scrEntityGen() {
   } else if (global.levelType == 1) {
     global.ashGrave = false;
     if (global.cemetary) {
-      [instances_of(oLush)].forEach(($) => {
+      instances_of(oLush).forEach(($) => {
         with ($) {
           // generate graves
           if (
@@ -220,7 +220,7 @@ function scrEntityGen() {
       });
     }
 
-    [instances_of(oSolid)].forEach(($) => {
+    instances_of(oSolid).forEach(($) => {
       with ($) {
         // bg
         if (rand(1, 100) == 1 && !collision_point(x, y - 16, oSolid, 0, 0))
@@ -282,7 +282,7 @@ function scrEntityGen() {
             ) {
               if (collision_point(x, y - 16, oSolid, 0, 0)) {
                 sol = instance_nearest(x, y - 16, oSolid);
-                [instances_of(sol)].orEach(($) => {
+                instances_of(sol).forEach(($) => {
                   with ($) {
                     cleanDeath = true;
                     instance_destroy();
@@ -355,7 +355,7 @@ function scrEntityGen() {
 
     // force market entrance
     if (global.genMarketEntrance && !global.madeMarketEntrance) {
-      [instances_of(oSolid)].forEach(($) => {
+      instances_of(oSolid).forEach(($) => {
         with ($) {
           if (y > 32 && collision_point(x, y - 16, oSolid, 0, 0)) {
             obj = instance_place(x, y - 16, oSolid);
@@ -369,25 +369,24 @@ function scrEntityGen() {
       });
     }
 
-    [instances_of(oVine)]
-      .forEach(($) => {
-        with ($) {
-          if (rand(1, 15) == 1) instance_create(x, y, oMonkey);
-        }
-      })
+    instances_of(oVine).forEach(($) => {
+      with ($) {
+        if (rand(1, 15) == 1) instance_create(x, y, oMonkey);
+      }
+    });
 
-      [instances_of(oWater)].forEach(($) => {
-        with ($) {
-          if (!collision_point(x, y, oSolid, 0, 0)) {
-            if (rand(1, 30) == 1) {
-              if (global.cemetary) instance_create(x + 4, y + 4, oDeadFish);
-              else instance_create(x + 4, y + 4, oPiranha);
-            }
+    instances_of(oWater).forEach(($) => {
+      with ($) {
+        if (!collision_point(x, y, oSolid, 0, 0)) {
+          if (rand(1, 30) == 1) {
+            if (global.cemetary) instance_create(x + 4, y + 4, oDeadFish);
+            else instance_create(x + 4, y + 4, oPiranha);
           }
         }
-      });
+      }
+    });
   } else if (global.levelType == 2) {
-    [instances_of(oSolid)].forEach(($) => {
+    instances_of(oSolid).forEach(($) => {
       with ($) {
         if (!isInShop(x, y)) {
           // enemies
@@ -456,7 +455,7 @@ function scrEntityGen() {
     if (global.currLevel == 14) global.genGoldEntrance = true;
     global.madeGoldEntrance = false;
 
-    [instances_of(oSolid)].forEach(($) => {
+    instances_of(oSolid).forEach(($) => {
       with ($) {
         // bg
         if (rand(1, 100) == 1 && !collision_point(x, y - 16, oSolid, 0, 0))
@@ -508,7 +507,7 @@ function scrEntityGen() {
               } else {
                 if (collision_point(x, y - 16, oSolid, 0, 0)) {
                   sol = instance_nearest(x, y - 16, oSolid);
-                  [instances_of(sol)].orEach(($) => {
+                  instances_of(sol).forEach(($) => {
                     with ($) {
                       cleanDeath = true;
                       instance_destroy();
@@ -568,7 +567,7 @@ function scrEntityGen() {
 
     // force generate TombLord
     if (global.currLevel == 13 && global.genTombLord && !global.TombLord) {
-      [instances_of(oExit)].forEach(($) => {
+      instances_of(oExit).forEach(($) => {
         with ($) {
           if (!collision_rectangle(x, y - 32, x + 32, y - 1, oSolid, 0, 0)) {
             instance_create(x, y - 32, oTombLord);
@@ -582,7 +581,7 @@ function scrEntityGen() {
 
     // force generate gold door
     if (global.genGoldEntrance && !global.madeGoldEntrance) {
-      [instances_of(oSolid)].forEach(($) => {
+      instances_of(oSolid).forEach(($) => {
         with ($) {
           if (y > 32 && !collision_point(x, y - 16, oSolid, 0, 0)) {
             instance_create(x, y - 16, oGoldDoor);
@@ -594,7 +593,7 @@ function scrEntityGen() {
       });
     }
 
-    [instances_of(oBlock)].forEach(($) => {
+    instances_of(oBlock).forEach(($) => {
       with ($) {
         if (!isInShop(x, y)) {
           n = point_distance(x, y, oEntrance.x, oEntrance.y);
@@ -629,7 +628,7 @@ function scrEntityGen() {
 
   // add box of flares to dark level
   if (global.darkLevel) {
-    [instances_of(oEntrance)].forEach(($) => {
+    instances_of(oEntrance).forEach(($) => {
       with ($) {
         if (!collision_point(x - 16, y, oSolid, 0, 0)) {
           instance_create(x - 16 + 8, y + 8, oFlareCrate);

@@ -12,3 +12,4 @@ function oLeaf_CREATE($) {
 }
 
 class oLeaf extends oRubblePiece {}
+ObjType.oLeaf = oLeaf;

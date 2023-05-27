@@ -22,4 +22,8 @@ function oParachute_STEP($) {
   }
 }
 
-class oParachute extends oObject {}
+class oParachute extends oObject {
+  sParaOpen;
+  sParachute;
+}
+ObjType.oParachute = oParachute;

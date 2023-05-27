@@ -102,4 +102,6 @@ function oTreasure_CREATE($) {
 class oTreasure extends oDrawnSprite {
   ACTIVE;
   STATIC;
+  hasUdjatEye;
 }
+ObjType.oTreasure = oTreasure;

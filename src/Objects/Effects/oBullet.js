@@ -13,7 +13,7 @@ function oBullet_COLLISION_oCharacter($) {
       other.xVel = xVel;
       other.yVel = -4;
 
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_create(x, y, oBlood);
           stunned = true;
@@ -59,7 +59,7 @@ function oBullet_COLLISION_oEnemy($) {
         other.yVel = -4;
       }
 
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           hp -= 4;
           if (
@@ -98,7 +98,7 @@ function oBullet_CREATE($) {
 function oBullet_COLLISION_oDamsel($) {
   with ($) {
     if (!other.invincible) {
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           if (bloodLeft > 0) {
             scrCreateBlood(x + sprite_width / 2, y + sprite_height / 2, 1);
@@ -106,7 +106,7 @@ function oBullet_COLLISION_oDamsel($) {
           }
           if (held) {
             held = false;
-            [instances_of(oPlayer1)].orEach(($) => {
+            instances_of(oPlayer1).forEach(($) => {
               with ($) {
                 holdItem = 0;
               }
@@ -127,3 +127,4 @@ function oBullet_COLLISION_oDamsel($) {
 }
 
 class oBullet extends oObject {}
+ObjType.oBullet = oBullet;

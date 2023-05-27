@@ -9,3 +9,4 @@ function oUFOTile_CREATE($) {
 }
 
 class oUFOTile extends oDrawnSprite {}
+ObjType.oUFOTile = oUFOTile;

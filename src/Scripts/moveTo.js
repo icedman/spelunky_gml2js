@@ -45,7 +45,7 @@ more precise calculations inside of the engine.
           canPushMoveableSolids()
         ) {
           //we must move the moveable solid, unless there is another solid (moveable || non-moveable) in it's way
-          [instances_of(solidId)].forEach(($) => {
+          instances_of(solidId).forEach(($) => {
             with ($) {
               if (place_meeting(x + 1, y, oSolid)) {
                 //there will be a collision!
@@ -73,7 +73,7 @@ more precise calculations inside of the engine.
           canPushMoveableSolids()
         ) {
           //we must move the moveable solid, unless there is another solid (moveable || non-moveable) in it's way
-          [instances_of(solidId)].forEach(($) => {
+          instances_of(solidId).forEach(($) => {
             with ($) {
               if (place_meeting(x - 1, y, oSolid)) {
                 //there will be a collision!

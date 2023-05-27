@@ -90,4 +90,12 @@ function oPDummy3_CREATE($) {
 
 class oPDummy3 extends oDrawnSprite {
   ROPEDROP;
+  TRANSITION;
+  adeOut;
+  oIntro;
+  sClimbUp3;
+  sDuckLeft;
+  sndClimb1;
+  sndClimb2;
 }
+ObjType.oPDummy3 = oPDummy3;

@@ -25,3 +25,4 @@ function oPDummy6_CREATE($) {
 }
 
 class oPDummy6 extends oDrawnSprite {}
+ObjType.oPDummy6 = oPDummy6;

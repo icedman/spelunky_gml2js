@@ -106,7 +106,7 @@ function oHawkman_COLLISION_oCharacter($) {
             other.shopThrow = false;
           }
 
-          [instances_of(other)].forEach(($) => {
+          instances_of(other).forEach(($) => {
             with ($) {
               if (holdItem) {
                 if (holdItem.type == 'Gold Idol') holdItem.y -= 8;
@@ -276,7 +276,7 @@ function oHawkman_STEP($) {
             status = IDLE;
             if (held) {
               held = false;
-              [instances_of(oPlayer1)].orEach(($) => {
+              instances_of(oPlayer1).forEach(($) => {
                 with ($) {
                   holdItem = 0;
                   pickupItemType = '';
@@ -374,4 +374,18 @@ function oHawkman_CREATE($) {
   }
 }
 
-class oHawkman extends oEnemy {}
+class oHawkman extends oEnemy {
+  hawkmen;
+  sHawkBounceL;
+  sHawkDHeldL;
+  sHawkDeadL;
+  sHawkDieLL;
+  sHawkDieLR;
+  sHawkFallL;
+  sHawkHeldL;
+  sHawkLeft;
+  sHawkRunLeft;
+  sHawkStunL;
+  sHawkThrowL;
+}
+ObjType.oHawkman = oHawkman;

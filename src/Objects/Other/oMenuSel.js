@@ -5,7 +5,7 @@ function oMenuSel_MOUSE($) {
       oLoadLevel.levelName = string_upper(
         oLoadLevel.levelList[(oLoadLevel.page - 1) * 10 + n]
       );
-      [instances_of(oMenuSel)].orEach(($) => {
+      instances_of(oMenuSel).forEach(($) => {
         with ($) {
           sprite_index = sMenuSelOff;
         }
@@ -15,4 +15,14 @@ function oMenuSel_MOUSE($) {
   }
 }
 
-class oMenuSel extends oMenu {}
+class oMenuSel extends oMenu {
+  levelList;
+  levelName;
+  numLevels;
+  oLoadLevel;
+  oMenuSel;
+  page;
+  sMenuSelOff;
+  sMenuSelOn;
+}
+ObjType.oMenuSel = oMenuSel;

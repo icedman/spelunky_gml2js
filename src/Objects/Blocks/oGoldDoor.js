@@ -3,19 +3,18 @@ function oGoldDoor_COLLISION_oSceptre($) {
     if (other.held) {
       if (global.hasCrown) {
         other.held = false;
-        [instances_of(oPlayer1)]
-          .forEach(($) => {
-            with ($) {
-              holdItem = 0;
-              pickupItemType = '';
-            }
-          })
+        instances_of(oPlayer1).forEach(($) => {
+          with ($) {
+            holdItem = 0;
+            pickupItemType = '';
+          }
+        });
 
-          [instances_of(other)].orEach(($) => {
-            with ($) {
-              instance_destroy();
-            }
-          });
+        instances_of(other).forEach(($) => {
+          with ($) {
+            instance_destroy();
+          }
+        });
 
         playSound(global.sndChestOpen);
         instance_create(x, y, oXGold);
@@ -29,4 +28,7 @@ function oGoldDoor_COLLISION_oSceptre($) {
   }
 }
 
-class oGoldDoor extends oDrawnSprite {}
+class oGoldDoor extends oDrawnSprite {
+  hasCrown;
+}
+ObjType.oGoldDoor = oGoldDoor;

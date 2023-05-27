@@ -83,7 +83,7 @@ function oSunRoom_ALARM_0($) {
         } else if (points >= 50) {
           obj = instance_create(152, 32, oVampire);
           obj.status = 7;
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               obj = instance_create(x + 8, y + 8, oPoof);
               obj.xVel = -1;
@@ -97,7 +97,7 @@ function oSunRoom_ALARM_0($) {
           obj = instance_create(i, j, oBomb);
           obj.sprite_index = sBombArmed;
           obj.armed = true;
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               alarm[0] = 80;
               image_speed = 0.2;
@@ -131,7 +131,7 @@ function oSunRoom_CREATE($) {
     alarm[11] = 100;
 
     // To prevent the Tunnel Man from tearing up the whole level.
-    [instances_of(oBrick)].forEach(($) => {
+    instances_of(oBrick).forEach(($) => {
       with ($) {
         if (x <= 16 || x >= 288 || y <= 16 || y >= 208) {
           invincible = true;
@@ -148,5 +148,7 @@ function oSunRoom_ALARM_10($) {
 }
 
 class oSunRoom extends oObject {
-  points;
+  oVampire;
+  sDamselIcon;
 }
+ObjType.oSunRoom = oSunRoom;

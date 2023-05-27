@@ -60,7 +60,7 @@ function oMagma_COLLISION_oEnemy($) {
       if (x < other.x) other.xVel = -3;
       else other.xVel = 3;
       if (other.status != 98) playSound(global.sndFlame);
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           burning = 100;
           hp -= 2;
@@ -99,4 +99,10 @@ function oMagma_COLLISION_oWater($) {
   }
 }
 
-class oMagma extends oDetritus {}
+class oMagma extends oDetritus {
+  dying;
+  oMagmaMan;
+  oMagmaTrail;
+  sMagmaManCreate;
+}
+ObjType.oMagma = oMagma;

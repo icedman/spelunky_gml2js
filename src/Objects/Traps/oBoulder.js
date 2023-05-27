@@ -8,13 +8,13 @@ function oBoulder_COLLISION_oSolid($) {
           y -= 1;
           // nothing
         } else {
-          [instances_of(other)].forEach(($) => {
+          instances_of(other).forEach(($) => {
             with ($) {
               tile = tile_layer_find(3, x, y - 16);
               if (tile) tile_delete(tile);
               tile = instance_position(x + 8, y - 1, oSpikes);
               if (tile) {
-                [instances_of(tile)].orEach(($) => {
+                instances_of(tile).forEach(($) => {
                   with ($) {
                     instance_destroy();
                   }
@@ -147,4 +147,14 @@ function oBoulder_CREATE($) {
   }
 }
 
-class oBoulder extends oMovingSolid {}
+class oBoulder extends oMovingSolid {
+  bounced;
+  oSpikes;
+  other;
+  sBoulder;
+  sBoulderRotateL;
+  sBoulderRotateR;
+  sndCrunch;
+  tile;
+}
+ObjType.oBoulder = oBoulder;

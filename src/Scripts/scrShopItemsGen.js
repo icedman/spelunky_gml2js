@@ -217,7 +217,7 @@ function scrShopItemsGen() {
   if (obj) {
     obj.orSale = true;
     if (global.currLevel > 2) {
-      [instances_of(obj)].forEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           cost += (cost / 100) * 10 * (global.currLevel - 2);
           if (shopDesc == '')

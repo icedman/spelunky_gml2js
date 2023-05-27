@@ -25,4 +25,8 @@ function oSceptre_CREATE($) {
   }
 }
 
-class oSceptre extends oItem {}
+class oSceptre extends oItem {
+  sSceptreLeft;
+  sSceptreRight;
+}
+ObjType.oSceptre = oSceptre;

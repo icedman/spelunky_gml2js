@@ -55,5 +55,11 @@ function oRopeThrow_CREATE($) {
 
 class oRopeThrow extends oItem {
   fallCount;
+  falling;
+  oRope;
+  oRopeTop;
   px;
+  py;
+  safe;
 }
+ObjType.oRopeThrow = oRopeThrow;

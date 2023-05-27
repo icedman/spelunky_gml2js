@@ -167,6 +167,18 @@ class oUFO extends oEnemy {
   DESTROY;
   SEARCH;
   alerted;
+  flying;
+  oLaser;
+  oUFOCrash;
+  origX;
+  origY;
+  sUFO;
+  sUFOBlast;
   shift;
   shiftToggle;
+  sndAlien;
+  sndLaser;
+  sndLaserCharge;
+  ufos;
 }
+ObjType.oUFO = oUFO;

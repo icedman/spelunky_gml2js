@@ -48,7 +48,7 @@ function oBomb_STEP($) {
           global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] == 5) &&
         distance_to_object(oShopkeeper) < 96
       ) {
-        [instances_of(oShopkeeper)].forEach(($) => {
+        instances_of(oShopkeeper).forEach(($) => {
           with ($) {
             scrShopkeeperAnger(2);
           }
@@ -77,4 +77,14 @@ function oBomb_CREATE($) {
   }
 }
 
-class oBomb extends oItem {}
+class oBomb extends oItem {
+  bombID;
+  enemyID;
+  graphicsHigh;
+  oExplosion;
+  roomPath;
+  sticky;
+  stickyXDiff;
+  stickyYDiff;
+}
+ObjType.oBomb = oBomb;

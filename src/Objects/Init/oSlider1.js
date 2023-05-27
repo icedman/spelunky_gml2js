@@ -31,4 +31,11 @@ function oSlider1_CREATE($) {
   }
 }
 
-class oSlider1 extends oObject {}
+class oSlider1 extends oObject {
+  focus;
+  mb_left;
+  mouse_x;
+  musCave;
+  musicVol;
+}
+ObjType.oSlider1 = oSlider1;

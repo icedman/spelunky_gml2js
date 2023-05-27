@@ -41,7 +41,7 @@ function scrCreateTileObj() {
     obj.sprite_index = sDark;
   } else if (arguments[0] == 'i') {
     obj = instance_create(arguments[1], arguments[2], oIce);
-    [instances_of(oFrozenCaveman)].orEach(($) => {
+    instances_of(oFrozenCaveman).forEach(($) => {
       with ($) {
         instance_destroy();
       }

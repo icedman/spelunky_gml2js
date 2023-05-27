@@ -9,3 +9,4 @@ function oYetiKingTile_CREATE($) {
 }
 
 class oYetiKingTile extends oDrawnSprite {}
+ObjType.oYetiKingTile = oYetiKingTile;

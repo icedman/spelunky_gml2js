@@ -5,3 +5,4 @@ function oLampRed_CREATE($) {
 }
 
 class oLampRed extends oLamp {}
+ObjType.oLampRed = oLampRed;

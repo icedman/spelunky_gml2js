@@ -14,3 +14,4 @@ function oCapePickup_CREATE($) {
 }
 
 class oCapePickup extends oItem {}
+ObjType.oCapePickup = oCapePickup;

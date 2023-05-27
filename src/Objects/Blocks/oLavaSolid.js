@@ -9,3 +9,4 @@ function oLavaSolid_CREATE($) {
 }
 
 class oLavaSolid extends oSolid {}
+ObjType.oLavaSolid = oLavaSolid;

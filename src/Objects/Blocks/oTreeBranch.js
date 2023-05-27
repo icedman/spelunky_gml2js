@@ -38,4 +38,8 @@ function oTreeBranch_CREATE($) {
   }
 }
 
-class oTreeBranch extends oPlatform {}
+class oTreeBranch extends oPlatform {
+  sTreeBranchDeadL;
+  sTreeBranchDeadR;
+}
+ObjType.oTreeBranch = oTreeBranch;

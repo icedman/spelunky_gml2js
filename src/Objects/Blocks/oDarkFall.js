@@ -45,6 +45,11 @@ function oDarkFall_CREATE($) {
 }
 
 class oDarkFall extends oMovingSolid {
+  grav;
+  oRubbleDark;
+  oSmokePuff;
+  sndBreak;
   timeFall;
   timeFallMax;
 }
+ObjType.oDarkFall = oDarkFall;

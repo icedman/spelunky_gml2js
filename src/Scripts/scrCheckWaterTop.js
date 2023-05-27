@@ -26,7 +26,7 @@ function scrCheckWaterTop() {
   obj = instance_place(x - 16, y, oWater);
   if (instance_exists(obj)) {
     if (obj.sprite_index != sWaterTop && obj.sprite_index != sLavaTop) {
-      [instances_of(obj)].forEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           if (type == 'Lava') sprite_index = sLavaTop;
           else sprite_index = sWaterTop;
@@ -38,7 +38,7 @@ function scrCheckWaterTop() {
   obj = instance_place(x + 16, y, oWater);
   if (instance_exists(obj)) {
     if (obj.sprite_index != sWaterTop && obj.sprite_index != sLavaTop) {
-      [instances_of(obj)].forEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           if (type == 'Lava') sprite_index = sLavaTop;
           else sprite_index = sWaterTop;

@@ -51,4 +51,9 @@ function oOlmecDebris_CREATE($) {
   }
 }
 
-class oOlmecDebris extends oDrawnSprite {}
+class oOlmecDebris extends oDrawnSprite {
+  oTemple;
+  sOlmecDebris2;
+  sOlmecDebris3;
+}
+ObjType.oOlmecDebris = oOlmecDebris;

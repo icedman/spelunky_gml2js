@@ -153,7 +153,7 @@ function oEndCustom_ALARM_0($) {
     drawStatus = 1;
     alarm[1] = 50;
     playMusic(global.musVictory, false);
-    [instances_of(oMenu)].forEach(($) => {
+    instances_of(oMenu).forEach(($) => {
       with ($) {
         visible = true;
       }
@@ -172,7 +172,7 @@ function oEndCustom_CREATE($) {
 
     alarm[0] = 50;
 
-    [instances_of(oMenu)].forEach(($) => {
+    instances_of(oMenu).forEach(($) => {
       with ($) {
         visible = false;
       }
@@ -180,4 +180,12 @@ function oEndCustom_CREATE($) {
   }
 }
 
-class oEndCustom extends oObject {}
+class oEndCustom extends oObject {
+  cr_none;
+  m;
+  moneyDiff;
+  poop;
+  s;
+  time;
+}
+ObjType.oEndCustom = oEndCustom;

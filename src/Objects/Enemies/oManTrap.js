@@ -50,7 +50,7 @@ function oManTrap_COLLISION_oShopkeeper($) {
       sprite_index = sManTrapEatShopkeeperL;
       if (other.hp > 0) ateShopkeeper = true;
 
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           if (hasGun) {
             obj = instance_create(x + 8, y + 8, oShotgun);
@@ -293,7 +293,7 @@ function oManTrap_STEP($) {
                 else if (collision_point(x, y + 8, oSolid, 0, 0))
                   x = oPlayer1.x - 4;
                 y = oPlayer1.y - 8;
-                [instances_of(oPlayer1)].orEach(($) => {
+                instances_of(oPlayer1).forEach(($) => {
                   with ($) {
                     holdItem = 0;
                     pickupItemType = '';
@@ -324,14 +324,14 @@ function oManTrap_STEP($) {
       if (status == SLEEPY && image_index == 6 && rand(1, 8) == 1) {
         if (facing == LEFT) {
           bone = instance_create(x + 2, y + 4, oBone);
-          [instances_of(bone)].orEach(($) => {
+          instances_of(bone).forEach(($) => {
             with ($) {
               xVel = -2;
             }
           });
         } else {
           bone = instance_create(x + 14, y + 4, oBone);
-          [instances_of(bone)].orEach(($) => {
+          instances_of(bone).forEach(($) => {
             with ($) {
               xVel = 2;
             }
@@ -355,7 +355,7 @@ function oManTrap_COLLISION_oVampire($) {
       else facing = LEFT;
       sprite_index = sManTrapEatVampire;
 
-      [instances_of(other)].orEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -373,7 +373,7 @@ function oManTrap_COLLISION_oHawkman($) {
       else facing = LEFT;
       sprite_index = sManTrapEatHawkman;
 
-      [instances_of(other)].orEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -432,7 +432,7 @@ function oManTrap_COLLISION_oCaveman($) {
       else facing = LEFT;
       sprite_index = sManTrapEatCavemanL;
 
-      [instances_of(other)].orEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -450,7 +450,7 @@ function oManTrap_COLLISION_oDamsel($) {
       else facing = LEFT;
       sprite_index = sManTrapEatDamselL;
 
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           if (held) {
             oPlayer1.holdItem = 0;
@@ -472,7 +472,7 @@ function oManTrap_COLLISION_oYeti($) {
       else facing = LEFT;
       sprite_index = sManTrapEatYeti;
 
-      [instances_of(other)].orEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -484,6 +484,50 @@ function oManTrap_COLLISION_oYeti($) {
 class oManTrap extends oEnemy {
   EATING;
   SLEEPY;
+  STUNNED;
+  allTimer;
   ateShopkeeper;
+  bloodless;
   bone;
+  cost;
+  damage;
+  dead;
+  enemyDeaths;
+  favor;
+  hasSpikeShoes;
+  held;
+  holdItem;
+  inWeb;
+  isDamsel;
+  isTunnelMan;
+  mantraps;
+  oBlood;
+  oBone;
+  oLeaf;
+  oShopkeeper;
+  oShotgun;
+  orSale;
+  pickupItemType;
+  plife;
+  sManTrapEatCavemanL;
+  sManTrapEatDamselL;
+  sManTrapEatHawkman;
+  sManTrapEatL;
+  sManTrapEatShopkeeperL;
+  sManTrapEatTunnelL;
+  sManTrapEatVampire;
+  sManTrapEatYeti;
+  sManTrapLeft;
+  sManTrapSleepL;
+  sManTrapStunL;
+  sndDie;
+  sndHit;
+  sndSmallExplode;
+  sprite_height;
+  sprite_width;
+  state;
+  stunTime;
+  stunned;
+  visible;
 }
+ObjType.oManTrap = oManTrap;

@@ -84,7 +84,7 @@ function oStarsRoom_CREATE($) {
     alarm[11] = 110;
 
     // To prevent the Tunnel Man from tearing up the whole level.
-    [instances_of(oBrick)].forEach(($) => {
+    instances_of(oBrick).forEach(($) => {
       with ($) {
         if (x <= 16 || x >= 288 || y <= 16 || y >= 208) {
           invincible = true;
@@ -101,5 +101,8 @@ function oStarsRoom_ALARM_10($) {
 }
 
 class oStarsRoom extends oObject {
-  kills;
+  oShopkeeper2;
+  sHeart;
+  sShopkeeperIcon;
 }
+ObjType.oStarsRoom = oStarsRoom;

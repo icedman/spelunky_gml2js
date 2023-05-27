@@ -7,26 +7,25 @@ function oMoonRoom_ALARM_11($) {
       scrUpdateHighscores(2);
       timer -= 1;
       oGame.drawStatus = 1;
-      [instances_of(oBatTarget)]
-        .forEach(($) => {
-          with ($) {
-            obj = instance_create(x + 8, y, oPoof);
-            obj.xVel = 0;
-            obj.yVel = -1;
-            obj = instance_create(x + 8, y, oPoof);
-            obj.xVel = 0;
-            obj.yVel = 1;
+      instances_of(oBatTarget).forEach(($) => {
+        with ($) {
+          obj = instance_create(x + 8, y, oPoof);
+          obj.xVel = 0;
+          obj.yVel = -1;
+          obj = instance_create(x + 8, y, oPoof);
+          obj.xVel = 0;
+          obj.yVel = 1;
 
-            instance_destroy();
-          }
-        })
+          instance_destroy();
+        }
+      });
 
-        [instances_of(oEntrance)].forEach(($) => {
-          with ($) {
-            instance_create(x, y, oXScores);
-            instance_destroy();
-          }
-        });
+      instances_of(oEntrance).forEach(($) => {
+        with ($) {
+          instance_create(x, y, oXScores);
+          instance_destroy();
+        }
+      });
 
       alarm[10] = 30;
     } else alarm[11] = 30;
@@ -134,7 +133,7 @@ function oMoonRoom_CREATE($) {
     global.arrows = 100;
 
     // To prevent the Tunnel Man from tearing up the whole level.
-    [instances_of(oBrick)].forEach(($) => {
+    instances_of(oBrick).forEach(($) => {
       with ($) {
         if (x <= 16 || x >= 288 || y <= 16 || y >= 208) {
           invincible = true;
@@ -157,5 +156,11 @@ function oMoonRoom_ALARM_10($) {
 }
 
 class oMoonRoom extends oObject {
-  baskets;
+  c_yellow;
+  highscore;
+  music;
+  myFont;
+  sHoopsIcon;
+  sTimerIcon;
 }
+ObjType.oMoonRoom = oMoonRoom;

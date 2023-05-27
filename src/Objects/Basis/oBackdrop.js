@@ -5,3 +5,4 @@ function oBackdrop_CREATE($) {
 }
 
 class oBackdrop extends oObject {}
+ObjType.oBackdrop = oBackdrop;

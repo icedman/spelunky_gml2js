@@ -173,3 +173,4 @@ function oSpearTrapBottom_CREATE($) {
 }
 
 class oSpearTrapBottom extends oSolid {}
+ObjType.oSpearTrapBottom = oSpearTrapBottom;

@@ -24,4 +24,8 @@ function oSpearsLeft_STEP($) {
   }
 }
 
-class oSpearsLeft extends oDrawnSprite {}
+class oSpearsLeft extends oDrawnSprite {
+  oSpearTrapBottom;
+  oSpearTrapTop;
+}
+ObjType.oSpearsLeft = oSpearsLeft;

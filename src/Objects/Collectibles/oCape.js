@@ -65,4 +65,15 @@ function oCape_CREATE($) {
   }
 }
 
-class oCape extends oDrawnSprite {}
+class oCape extends oDrawnSprite {
+  oTransition;
+  sCapeBack;
+  sCapeDL;
+  sCapeDR;
+  sCapeLeft;
+  sCapeRight;
+  sCapeUL;
+  sCapeUR;
+  sTunnelRunL;
+}
+ObjType.oCape = oCape;

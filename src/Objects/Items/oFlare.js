@@ -10,7 +10,7 @@ function oFlare_STEP($) {
       instance_create(x, y, oSplash);
       playSound(global.sndSplash);
       if (held) {
-        [instances_of(oPlayer1)].forEach(($) => {
+        instances_of(oPlayer1).forEach(($) => {
           with ($) {
             holdItem = 0;
             pickupItemType = '';
@@ -58,5 +58,7 @@ function oFlare_CREATE($) {
 }
 
 class oFlare extends oItem {
+  bounce;
   distToPlayer;
 }
+ObjType.oFlare = oFlare;

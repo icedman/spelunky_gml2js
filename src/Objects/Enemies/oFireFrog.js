@@ -125,4 +125,19 @@ function oFireFrog_CREATE($) {
   }
 }
 
-class oFireFrog extends oEnemy {}
+class oFireFrog extends oEnemy {
+  DROWNED;
+  countsAsKill;
+  irefrogs;
+  myGravNorm;
+  oFireFrogBomb;
+  oWater;
+  sFireFrogJumpL;
+  sFireFrogLeft;
+  shakeCounter;
+  shakeToggle;
+  sndFrog;
+  swimming;
+  yVelLimit;
+}
+ObjType.oFireFrog = oFireFrog;

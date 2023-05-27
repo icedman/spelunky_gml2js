@@ -82,4 +82,9 @@ function oDark_CREATE($) {
   }
 }
 
-class oDark extends oSolid {}
+class oDark extends oSolid {
+  room;
+  sDarkGold;
+  sDarkGoldBig;
+}
+ObjType.oDark = oDark;

@@ -5,3 +5,4 @@ function oLamp_CREATE($) {
 }
 
 class oLamp extends oObject {}
+ObjType.oLamp = oLamp;

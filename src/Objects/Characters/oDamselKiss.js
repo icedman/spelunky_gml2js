@@ -50,3 +50,4 @@ function oDamselKiss_CREATE($) {
 class oDamselKiss extends oDrawnSprite {
   kissed;
 }
+ObjType.oDamselKiss = oDamselKiss;

@@ -20,3 +20,4 @@ function oRuby_CREATE($) {
 }
 
 class oRuby extends oTreasure {}
+ObjType.oRuby = oRuby;

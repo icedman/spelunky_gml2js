@@ -34,7 +34,7 @@ function oMagmaMan_COLLISION_oCharacter($) {
 function oMagmaMan_COLLISION_oBomb($) {
   with ($) {
     if (other.sprite_index != sBombArmed) {
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           sprite_index = sBombArmed;
           image_speed = 1;
@@ -157,7 +157,7 @@ function oMagmaMan_COLLISION_oEnemy($) {
       if (x < other.x) other.xVel = -3;
       else other.xVel = 3;
       if (other.status != 98) playSound(global.sndFlame);
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           burning = 100;
           hp -= 2;
@@ -211,4 +211,17 @@ function oMagmaMan_CREATE($) {
   }
 }
 
-class oMagmaMan extends oEnemy {}
+class oMagmaMan extends oEnemy {
+  THROW;
+  burning;
+  magma;
+  oBurn;
+  oMagma;
+  sBombArmed;
+  sMagmaManDie;
+  sMagmaManLeft;
+  sMagmaManWalkL;
+  sightCounter;
+  stunTimer;
+}
+ObjType.oMagmaMan = oMagmaMan;

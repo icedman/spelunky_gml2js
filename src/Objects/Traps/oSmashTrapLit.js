@@ -188,4 +188,32 @@ function oSmashTrapLit_CREATE($) {
   }
 }
 
-class oSmashTrapLit extends oMovingSolid {}
+class oSmashTrapLit extends oMovingSolid {
+  ATTACK;
+  DOWN;
+  UP;
+  cleanDeath;
+  cleanSolids;
+  colBot;
+  colLeft;
+  colRight;
+  colTop;
+  dir;
+  hit;
+  oCharacter;
+  oRubble;
+  oRubbleSmall;
+  oTombLord;
+  rubble;
+  sRubbleTan;
+  sRubbleTanSmall;
+  view_hview;
+  view_wview;
+  xAcc;
+  xa;
+  xv;
+  yAcc;
+  ya;
+  yv;
+}
+ObjType.oSmashTrapLit = oSmashTrapLit;

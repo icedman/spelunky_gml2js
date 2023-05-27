@@ -13,4 +13,7 @@ function oBombBag_CREATE($) {
   }
 }
 
-class oBombBag extends oItem {}
+class oBombBag extends oItem {
+  shopDesc;
+}
+ObjType.oBombBag = oBombBag;

@@ -11,7 +11,7 @@ function oRopeBurn_STEP($) {
 
     if (collision_point(x, y, oRope, 0, 0)) {
       rope = instance_nearest(x, y, oRope);
-      [instances_of(rope)].forEach(($) => {
+      instances_of(rope).forEach(($) => {
         with ($) {
           burnTimer = 1;
         }
@@ -32,3 +32,4 @@ function oRopeBurn_CREATE($) {
 }
 
 class oRopeBurn extends oDrawnSprite {}
+ObjType.oRopeBurn = oRopeBurn;

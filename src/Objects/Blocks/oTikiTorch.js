@@ -5,3 +5,4 @@ function oTikiTorch_CREATE($) {
 }
 
 class oTikiTorch extends oObject {}
+ObjType.oTikiTorch = oTikiTorch;

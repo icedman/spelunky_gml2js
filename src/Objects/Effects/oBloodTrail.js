@@ -15,3 +15,4 @@ function oBloodTrail_CREATE($) {
 }
 
 class oBloodTrail extends oDrawnSprite {}
+ObjType.oBloodTrail = oBloodTrail;

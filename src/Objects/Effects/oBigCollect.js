@@ -21,3 +21,4 @@ function oBigCollect_CREATE($) {
 }
 
 class oBigCollect extends oDrawnSprite {}
+ObjType.oBigCollect = oBigCollect;

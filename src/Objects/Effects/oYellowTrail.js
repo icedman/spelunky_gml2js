@@ -15,3 +15,4 @@ function oYellowTrail_CREATE($) {
 }
 
 class oYellowTrail extends oDrawnSprite {}
+ObjType.oYellowTrail = oYellowTrail;

@@ -57,4 +57,6 @@ function oBlood_CREATE($) {
 
 class oBlood extends oDetritus {
   collectible;
+  oBloodTrail;
 }
+ObjType.oBlood = oBlood;

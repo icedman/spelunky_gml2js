@@ -29,4 +29,8 @@ function oRubbleDark_CREATE($) {
   }
 }
 
-class oRubbleDark extends oDrawnSprite {}
+class oRubbleDark extends oDrawnSprite {
+  oBlock;
+  oBrick;
+}
+ObjType.oRubbleDark = oRubbleDark;

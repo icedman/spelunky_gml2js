@@ -14,3 +14,4 @@ function oSpringShoes_CREATE($) {
 }
 
 class oSpringShoes extends oItem {}
+ObjType.oSpringShoes = oSpringShoes;

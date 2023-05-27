@@ -4,4 +4,7 @@ function oDesertTop_CREATE($) {
   }
 }
 
-class oDesertTop extends oObject {}
+class oDesertTop extends oObject {
+  sDesertTopNight;
+}
+ObjType.oDesertTop = oDesertTop;

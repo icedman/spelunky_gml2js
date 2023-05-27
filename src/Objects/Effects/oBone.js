@@ -33,4 +33,7 @@ function oBone_CREATE($) {
   }
 }
 
-class oBone extends oDetritus {}
+class oBone extends oDetritus {
+  sSmokePuff;
+}
+ObjType.oBone = oBone;

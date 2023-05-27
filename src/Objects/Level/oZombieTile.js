@@ -9,3 +9,4 @@ function oZombieTile_CREATE($) {
 }
 
 class oZombieTile extends oDrawnSprite {}
+ObjType.oZombieTile = oZombieTile;

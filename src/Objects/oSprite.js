@@ -9,3 +9,4 @@ function oSprite_CREATE($) {
 }
 
 class oSprite extends oDrawnSprite {}
+ObjType.oSprite = oSprite;

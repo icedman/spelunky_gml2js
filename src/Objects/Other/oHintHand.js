@@ -21,4 +21,7 @@ function oHintHand_CREATE($) {
   }
 }
 
-class oHintHand extends oObject {}
+class oHintHand extends oObject {
+  strLen;
+}
+ObjType.oHintHand = oHintHand;

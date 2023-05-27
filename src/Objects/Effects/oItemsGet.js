@@ -26,3 +26,4 @@ function oItemsGet_CREATE($) {
 }
 
 class oItemsGet extends oDrawnSprite {}
+ObjType.oItemsGet = oItemsGet;

@@ -17,3 +17,4 @@ function oEntrance_CREATE($) {
 }
 
 class oEntrance extends oDrawnSprite {}
+ObjType.oEntrance = oEntrance;

@@ -134,4 +134,10 @@ function oBat_CREATE($) {
   }
 }
 
-class oBat extends oEnemy {}
+class oBat extends oEnemy {
+  bats;
+  sBatHang;
+  sBatLeft;
+  sBatRight;
+}
+ObjType.oBat = oBat;

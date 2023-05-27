@@ -5,3 +5,4 @@ function oRubbleDarkSmall_OTHER($) {
 }
 
 class oRubbleDarkSmall extends oRubblePiece {}
+ObjType.oRubbleDarkSmall = oRubbleDarkSmall;

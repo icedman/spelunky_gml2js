@@ -86,5 +86,8 @@ function oTemp_CREATE($) {
 }
 
 class oTemp extends oSolid {
-  sndArrowTrap;
+  oEnemy;
+  oItem;
+  oMoveableSolid;
 }
+ObjType.oTemp = oTemp;

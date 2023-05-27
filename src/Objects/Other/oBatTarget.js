@@ -4,7 +4,7 @@ function oBatTarget_COLLISION_oArrow($) {
     playSound(global.sndCoin);
     oMoonRoom.baskets += difficulty;
 
-    [instances_of(other)].orEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -92,5 +92,8 @@ function oBatTarget_CREATE($) {
 
 class oBatTarget extends oObject {
   difficulty;
+  oBatTarget;
+  xDiff;
   xMid;
 }
+ObjType.oBatTarget = oBatTarget;

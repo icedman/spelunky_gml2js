@@ -126,4 +126,11 @@ function oScarab_CREATE($) {
   }
 }
 
-class oScarab extends oEnemy {}
+class oScarab extends oEnemy {
+  collect;
+  collectCounter;
+  oFlareSpark;
+  scarabs;
+  sndCoin;
+}
+ObjType.oScarab = oScarab;

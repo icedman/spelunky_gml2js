@@ -23,3 +23,4 @@ function oYellHelp_CREATE($) {
 }
 
 class oYellHelp extends oDrawnSprite {}
+ObjType.oYellHelp = oYellHelp;

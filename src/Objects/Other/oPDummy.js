@@ -170,7 +170,7 @@ function oPDummy_STEP($) {
         else if (global.isTunnelMan) sprite_index = sTunnelLeft;
         else sprite_index = sStandLeft;
 
-        [instances_of(person)].forEach(($) => {
+        instances_of(person).forEach(($) => {
           with ($) {
             if (global.isDamsel) sprite_index = sPKissL;
             else sprite_index = sDamselKissL;
@@ -195,7 +195,7 @@ function oPDummy_STEP($) {
         else if (global.isTunnelMan) sprite_index = sTunnelLeft;
         else sprite_index = sStandLeft;
 
-        [instances_of(person)].forEach(($) => {
+        instances_of(person).forEach(($) => {
           with ($) {
             talk = 1;
           }
@@ -276,4 +276,25 @@ class oPDummy extends oDrawnSprite {
   LAVA;
   START;
   STOPPED;
+  oBigChest;
+  oBigTreasure;
+  oDamselKiss;
+  oEndPlat;
+  oLavaSpray;
+  oTunnelMan;
+  person;
+  sArrowRight;
+  sBigChestOpen;
+  sFishBone;
+  sFlare;
+  sJar;
+  sJetpackBack;
+  sJetpackRight;
+  sMattockHead;
+  sRock;
+  sSkull;
+  sTeleporter;
+  sndClick;
+  talk;
 }
+ObjType.oPDummy = oPDummy;

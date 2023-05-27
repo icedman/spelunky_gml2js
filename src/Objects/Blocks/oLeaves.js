@@ -79,5 +79,12 @@ function oLeaves_CREATE($) {
 }
 
 class oLeaves extends oPlatform {
+  oLeaves;
+  sLeaves;
+  sLeavesDead;
+  sLeavesDeadR;
+  sLeavesRight;
+  sLeavesTop;
   spriteSet;
 }
+ObjType.oLeaves = oLeaves;

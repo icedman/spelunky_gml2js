@@ -651,7 +651,7 @@ The string representing a room or obstacle must be laid out unbroken:
         else instance_create(xpos, ypos, oTemple);
       } else if (tile == 'R' && !collision_point(xpos, ypos, oSolid, 0, 0)) {
         block = instance_create(xpos, ypos, oTemple);
-        [instances_of(block)].orEach(($) => {
+        instances_of(block).forEach(($) => {
           with ($) {
             treasure = 'Big Ruby';
           }

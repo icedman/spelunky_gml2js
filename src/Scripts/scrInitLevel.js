@@ -125,7 +125,7 @@ if (global.currLevel == 5) global.levelType = 4;
   if (global.levelType == 1 && rand(1, global.probCemetary) == 1)
     global.cemetary = true;
 
-  [instances_of(oRoom)].forEach(($) => {
+  instances_of(oRoom).forEach(($) => {
     with ($) {
       if (global.levelType == 0) scrRoomGen();
       else if (global.levelType == 1) {
@@ -197,7 +197,7 @@ if (global.currLevel == 5) global.levelType = 4;
     global.cityOfGold
   ) {
     if (!isRoom('rLoadLevel')) {
-      [instances_of(oPlayer1)].orEach(($) => {
+      instances_of(oPlayer1).forEach(($) => {
         with ($) {
           alarm[0] = 10;
         }
@@ -264,7 +264,7 @@ if (global.currLevel == 5) global.levelType = 4;
 
   // generate angry shopkeeper at exit if murderer || thief
   if ((global.murderer || global.thiefLevel > 0) && isRealLevel()) {
-    [instances_of(oExit)].forEach(($) => {
+    instances_of(oExit).forEach(($) => {
       with ($) {
         if (type == 'Exit') {
           obj = instance_create(x, y, oShopkeeper);
@@ -276,22 +276,21 @@ if (global.currLevel == 5) global.levelType = 4;
     // global.thiefLevel -= 1;
   }
 
-  [instances_of(oTreasure)]
-    .forEach(($) => {
-      with ($) {
-        if (collision_point(x, y, oSolid, 0, 0)) {
-          obj = instance_place(x, y, oSolid);
-          if (obj.invincible) instance_destroy();
-        }
+  instances_of(oTreasure).forEach(($) => {
+    with ($) {
+      if (collision_point(x, y, oSolid, 0, 0)) {
+        obj = instance_place(x, y, oSolid);
+        if (obj.invincible) instance_destroy();
       }
-    })
+    }
+  });
 
-    [instances_of(oWater)].forEach(($) => {
-      with ($) {
-        if (sprite_index == sWaterTop || sprite_index == sLavaTop) {
-          scrCheckWaterTop();
-        }
-        /*
+  instances_of(oWater).forEach(($) => {
+    with ($) {
+      if (sprite_index == sWaterTop || sprite_index == sLavaTop) {
+        scrCheckWaterTop();
+      }
+      /*
         obj = instance_place(x-16, y, oWater);
         if (instance_exists(obj))
         {
@@ -311,8 +310,8 @@ if (global.currLevel == 5) global.levelType = 4;
             }
         }
     */
-      }
-    });
+    }
+  });
 
   global.temp3 = global.gameStart;
 }

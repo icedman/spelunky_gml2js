@@ -32,7 +32,7 @@ function oBasketball_STEP($) {
 
     if (collision_point(x, y, oRim, 0, 0)) {
       if (!goingIn && (yVel > 0 || (held && oPlayer1.state == 16))) {
-        [instances_of(oMoonRoom)].orEach(($) => {
+        instances_of(oMoonRoom).forEach(($) => {
           with ($) {
             alarm[0] = 20;
           }
@@ -77,7 +77,16 @@ function oBasketball_CREATE($) {
 }
 
 class oBasketball extends oItem {
+  baskets;
   bounces;
   goingIn;
+  oBasket;
+  oMoonRoom;
+  oRim;
+  oRimDeflect;
+  sBasketSwoosh;
+  sBasketball;
+  sDribble;
   wallBounce;
 }
+ObjType.oBasketball = oBasketball;

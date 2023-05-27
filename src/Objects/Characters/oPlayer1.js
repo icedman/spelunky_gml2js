@@ -764,7 +764,7 @@ if (colLadder and state == CLIMBING and kJumpPressed and not whipping)
           scrDropItem(-1, -4);
         }
 
-        [instances_of(oMonkey)].forEach(($) => {
+        instances_of(oMonkey).forEach(($) => {
           with ($) {
             // knock off monkeys that grabbed you
             if (status == 7) {
@@ -792,7 +792,7 @@ if (colLadder and state == CLIMBING and kJumpPressed and not whipping)
           scrDropItem(1, -4);
         }
 
-        [instances_of(oMonkey)].forEach(($) => {
+        instances_of(oMonkey).forEach(($) => {
           with ($) {
             // knock off monkeys that grabbed you
             if (status == 7) {
@@ -1230,13 +1230,13 @@ function oPlayer1_STEP($) {
         yVel = -3;
         fallTimer = 0;
         obj = instance_create(x - 4, y + 6, oPoof);
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             xVel = -0.4;
           }
         });
         obj = instance_create(x + 4, y + 6, oPoof);
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             xVel = 0.4;
           }
@@ -1247,7 +1247,7 @@ function oPlayer1_STEP($) {
         fallTimer = 0;
         if (instance_exists(oParachute)) {
           instance_create(x - 8, y - 16 - 8, oParaUsed);
-          [instances_of(oParachute)].orEach(($) => {
+          instances_of(oParachute).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -1523,17 +1523,16 @@ function oPlayer1_STEP($) {
     }
 
     if (!whipping) {
-      [instances_of(oWhip)]
-        .orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        })
-        [instances_of(oWhipPre)].orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        });
+      instances_of(oWhip).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
+      instances_of(oWhipPre).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
     }
 
     if (holdItem > 0) {
@@ -1562,7 +1561,7 @@ function oPlayer1_STEP($) {
           obj = instance_create(chest.x, chest.y, oBomb);
           obj.xVel = rand(0, 3) - rand(0, 3);
           obj.yVel = -2;
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               sprite_index = sBombArmed;
               alarm[1] = 40;
@@ -1667,7 +1666,7 @@ function oPlayer1_STEP($) {
         holdItem = 0;
         pickupItemType = '';
       }
-      [instances_of(chest)].orEach(($) => {
+      instances_of(chest).forEach(($) => {
         with ($) {
           instance_create(x, y, oPoof);
           instance_destroy();
@@ -1691,7 +1690,7 @@ function oPlayer1_STEP($) {
         holdItem = 0;
         pickupItemType = '';
       }
-      [instances_of(chest)].orEach(($) => {
+      instances_of(chest).forEach(($) => {
         with ($) {
           instance_create(x, y, oPoof);
           instance_destroy();
@@ -1726,7 +1725,7 @@ function oPlayer1_STEP($) {
             holdItem.held = false;
           } else {
             global.bombs += 1;
-            [instances_of(holdItem)].orEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -1736,7 +1735,7 @@ function oPlayer1_STEP($) {
           global.pickupItem = pickupItemType;
         } else if (holdItem.type == 'Rope') {
           global.rope += 1;
-          [instances_of(holdItem)].orEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -1745,7 +1744,7 @@ function oPlayer1_STEP($) {
           global.pickupItem = pickupItemType;
         } else {
           global.pickupItem = holdItem.type;
-          [instances_of(holdItem)].forEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               breakPieces = false;
               instance_destroy();
@@ -1810,7 +1809,7 @@ function oPlayer1_STEP($) {
           else global.idols += 1;
           playSound(global.sndCoin);
           instance_create(x, y - 8, oBigCollect);
-          [instances_of(holdItem)].orEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -1825,7 +1824,7 @@ function oPlayer1_STEP($) {
             door = instance_place(x, y, oExit);
             holdItem.x = door.x + 8;
             holdItem.y = door.y + 8;
-            [instances_of(holdItem)].forEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 if (global.isDamsel) sprite_index = sPExit;
                 else sprite_index = sDamselExit;
@@ -1855,7 +1854,7 @@ function oPlayer1_STEP($) {
             holdItem.held = false;
           } else {
             global.bombs += 1;
-            [instances_of(holdItem)].orEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -1865,7 +1864,7 @@ function oPlayer1_STEP($) {
           global.pickupItem = pickupItemType;
         } else if (holdItem.type == 'Rope') {
           global.rope += 1;
-          [instances_of(holdItem)].orEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -1874,7 +1873,7 @@ function oPlayer1_STEP($) {
           global.pickupItem = pickupItemType;
         } else {
           global.pickupItem = holdItem.type;
-          [instances_of(holdItem)].forEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               breakPieces = false;
               instance_destroy();
@@ -1917,7 +1916,7 @@ function oPlayer1_STEP($) {
         }
       }
 
-      [instances_of(oMonkey)].forEach(($) => {
+      instances_of(oMonkey).forEach(($) => {
         with ($) {
           // knock off monkeys that grabbed you
           if (status == 7) {
@@ -1975,7 +1974,7 @@ function oPlayer1_STEP($) {
         if (holdItem.sprite_index == sBombArmed) {
           // do nothing
         } else if (holdItem.sprite_index == sBomb) {
-          [instances_of(holdItem)].forEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               global.bombs += 1;
               instance_destroy();
@@ -1991,7 +1990,7 @@ function oPlayer1_STEP($) {
             scrHoldItem(pickupItemType);
           }
         } else if (holdItem.sprite_index == sRopeEnd) {
-          [instances_of(holdItem)].forEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               global.rope += 1;
               instance_destroy();
@@ -2005,7 +2004,7 @@ function oPlayer1_STEP($) {
             if (holdItem.type == 'Bow' && bowArmed) {
               scrFireBow();
             }
-            [instances_of(holdItem)].forEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 breakPieces = false;
                 instance_destroy();
@@ -2051,7 +2050,7 @@ function oPlayer1_STEP($) {
             obj = instance_create(x + 16, y, oRopeThrow);
           }
 
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               t = true;
               move_snap(16, 1);
@@ -2132,7 +2131,7 @@ function oPlayer1_STEP($) {
       if (global.hasStickyBombs) obj.sticky = true;
       obj.sprite_index = sBombArmed;
       obj.armed = true;
-      [instances_of(obj)].forEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           alarm[0] = 80;
           image_speed = 0.2;
@@ -2208,7 +2207,7 @@ function oPlayer1_STEP($) {
               global.idolsGrabbed += 1;
               if (global.levelType == 0) {
                 trap = instance_nearest(x, y - 64, oGiantTikiHead);
-                [instances_of(trap)].orEach(($) => {
+                instances_of(trap).forEach(($) => {
                   with ($) {
                     alarm[0] = 100;
                   }
@@ -2231,7 +2230,7 @@ function oPlayer1_STEP($) {
                     );
                   global.ghostExists = true;
                 }
-                [instances_of(oTrapBlock)].forEach(($) => {
+                instances_of(oTrapBlock).forEach(($) => {
                   with ($) {
                     dist = distance_to_object(oCharacter);
                     if (dist < 90) {
@@ -2242,7 +2241,7 @@ function oPlayer1_STEP($) {
                 });
               } else if (global.levelType == 3) {
                 if (instance_exists(oCeilingTrap)) {
-                  [instances_of(oCeilingTrap)].forEach(($) => {
+                  instances_of(oCeilingTrap).forEach(($) => {
                     with ($) {
                       status = 1;
                       yVel = 0.5;
@@ -2261,7 +2260,7 @@ function oPlayer1_STEP($) {
                     trap.yVel = 1;
                   }
                 } else {
-                  [instances_of(oTrapBlock)].forEach(($) => {
+                  instances_of(oTrapBlock).forEach(($) => {
                     with ($) {
                       dist = distance_to_object(oCharacter);
                       if (dist < 90) {
@@ -2350,7 +2349,7 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
             global.message = "YOU HAVEN'T GOT ENOUGH MONEY!";
             global.message2 = '';
             global.messageTimer = 80;
-            [instances_of(holdItem)].orEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 held = false;
               }
@@ -2498,7 +2497,7 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
 
           scrCreateBlood(x, y, 3);
 
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -2547,7 +2546,7 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
 
           scrCreateBlood(x, y, 3);
 
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               instance_create(x, y, oLaserExplode);
               instance_destroy();
@@ -2668,7 +2667,7 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
 
         obj = instance_place(x, y, oSpikes);
         if (obj) {
-          [instances_of(obj)].orEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               sprite_index = sSpikesBlood;
             }
@@ -2707,7 +2706,7 @@ if ((dead or stunned) and holdItem != 0)
     if (dead || stunned) {
       if (instance_exists(oParachute)) {
         instance_create(x - 8, y - 16 - 8, oParaUsed);
-        [instances_of(oParachute)].orEach(($) => {
+        instances_of(oParachute).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -2716,7 +2715,7 @@ if ((dead or stunned) and holdItem != 0)
 
       if (whipping) {
         whipping = false;
-        [instances_of(oWhip)].forEach(($) => {
+        instances_of(oWhip).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -2813,7 +2812,7 @@ if ((dead or stunned) and holdItem != 0)
           if (global.moaiX != 0) {
             x = global.moaiX + 8;
             y = global.moaiY + 8;
-            [instances_of(oMoaiInside)].orEach(($) => {
+            instances_of(oMoaiInside).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -2826,20 +2825,19 @@ if ((dead or stunned) and holdItem != 0)
             x = oEntrance.x + 8;
             y = oEntrance.y + 8;
           }
-          [instances_of(oBall)]
-            .forEach(($) => {
-              with ($) {
-                x = oPlayer1.x;
-                y = oPlayer1.y;
-              }
-            })
+          instances_of(oBall).forEach(($) => {
+            with ($) {
+              x = oPlayer1.x;
+              y = oPlayer1.y;
+            }
+          });
 
-            [instances_of(oChain)].forEach(($) => {
-              with ($) {
-                x = oPlayer1.x;
-                y = oPlayer1.y;
-              }
-            });
+          instances_of(oChain).forEach(($) => {
+            with ($) {
+              x = oPlayer1.x;
+              y = oPlayer1.y;
+            }
+          });
 
           xVel = 0;
           yVel = 0;
@@ -2932,7 +2930,7 @@ else if (sprite_index == sSlideLeft)
           if (abs(obj.xVel) < 1 && abs(obj.yVel) < 1 && !obj.stuck) {
             global.arrows += 1;
             playSound(global.sndPickup);
-            [instances_of(obj)].orEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -2982,7 +2980,7 @@ else if (sprite_index == sSlideLeft)
         if (coin) playSound(global.sndCoin);
         else playSound(global.sndGem);
 
-        [instances_of(gem)].orEach(($) => {
+        instances_of(gem).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -3004,7 +3002,7 @@ else if (sprite_index == sSlideLeft)
         global.bombs += 3;
         disp = instance_create(obj.x, obj.y - 14, oItemsGet);
         disp.sprite_index = sBombsGet;
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -3030,7 +3028,7 @@ else if (sprite_index == sSlideLeft)
         global.bombs += 12;
         disp = instance_create(obj.x, obj.y - 14, oItemsGet);
         disp.sprite_index = sBombsGet;
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -3056,7 +3054,7 @@ else if (sprite_index == sSlideLeft)
         global.rope += 3;
         disp = instance_create(obj.x, obj.y - 15, oItemsGet);
         disp.sprite_index = sRopeGet;
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -3080,7 +3078,7 @@ else if (sprite_index == sSlideLeft)
           else global.idols += 1;
           playSound(global.sndCoin);
           instance_create(x, y - 8, oBigCollect);
-          [instances_of(holdItem)].orEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -3094,7 +3092,7 @@ else if (sprite_index == sSlideLeft)
             door = instance_place(x, y, oExit);
             holdItem.x = door.x + 8;
             holdItem.y = door.y + 8;
-            [instances_of(holdItem)].forEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 if (global.isDamsel) sprite_index = sPExit;
                 else sprite_index = sDamselExit2;
@@ -3391,13 +3389,13 @@ else if (sprite_index == sSlideLeft)
         yVel = -3;
         fallTimer = 0;
         obj = instance_create(x - 4, y + 6, oPoof);
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             xVel = -0.4;
           }
         });
         obj = instance_create(x + 4, y + 6, oPoof);
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             xVel = 0.4;
           }
@@ -3408,7 +3406,7 @@ else if (sprite_index == sSlideLeft)
         fallTimer = 0;
         if (instance_exists(oParachute)) {
           instance_create(x - 8, y - 16 - 8, oParaUsed);
-          [instances_of(oParachute)].orEach(($) => {
+          instances_of(oParachute).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -3685,17 +3683,16 @@ else if (sprite_index == sSlideLeft)
     }
 
     if (!whipping) {
-      [instances_of(oWhip)]
-        .orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        })
-        [instances_of(oWhipPre)].orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        });
+      instances_of(oWhip).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
+      instances_of(oWhipPre).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
     }
 
     if (holdItem > 0) {
@@ -3724,7 +3721,7 @@ else if (sprite_index == sSlideLeft)
           obj = instance_create(chest.x, chest.y, oBomb);
           obj.xVel = rand(0, 3) - rand(0, 3);
           obj.yVel = -2;
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               sprite_index = sBombArmed;
               alarm[1] = 40;
@@ -3828,7 +3825,7 @@ else if (sprite_index == sSlideLeft)
         holdItem = 0;
         pickupItemType = '';
       }
-      [instances_of(chest)].orEach(($) => {
+      instances_of(chest).forEach(($) => {
         with ($) {
           instance_create(x, y, oPoof);
           instance_destroy();
@@ -3852,7 +3849,7 @@ else if (sprite_index == sSlideLeft)
         holdItem = 0;
         pickupItemType = '';
       }
-      [instances_of(chest)].orEach(($) => {
+      instances_of(chest).forEach(($) => {
         with ($) {
           instance_create(x, y, oPoof);
           instance_destroy();
@@ -3887,7 +3884,7 @@ else if (sprite_index == sSlideLeft)
             holdItem.held = false;
           } else {
             global.bombs += 1;
-            [instances_of(holdItem)].orEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -3897,7 +3894,7 @@ else if (sprite_index == sSlideLeft)
           global.pickupItem = pickupItemType;
         } else if (holdItem.type == 'Rope') {
           global.rope += 1;
-          [instances_of(holdItem)].orEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -3906,7 +3903,7 @@ else if (sprite_index == sSlideLeft)
           global.pickupItem = pickupItemType;
         } else {
           global.pickupItem = holdItem.type;
-          [instances_of(holdItem)].forEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               breakPieces = false;
               instance_destroy();
@@ -3971,7 +3968,7 @@ else if (sprite_index == sSlideLeft)
           else global.idols += 1;
           playSound(global.sndCoin);
           instance_create(x, y - 8, oBigCollect);
-          [instances_of(holdItem)].orEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -3986,7 +3983,7 @@ else if (sprite_index == sSlideLeft)
             door = instance_place(x, y, oExit);
             holdItem.x = door.x + 8;
             holdItem.y = door.y + 8;
-            [instances_of(holdItem)].forEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 if (global.isDamsel) sprite_index = sPExit;
                 else sprite_index = sDamselExit;
@@ -4016,7 +4013,7 @@ else if (sprite_index == sSlideLeft)
             holdItem.held = false;
           } else {
             global.bombs += 1;
-            [instances_of(holdItem)].orEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -4026,7 +4023,7 @@ else if (sprite_index == sSlideLeft)
           global.pickupItem = pickupItemType;
         } else if (holdItem.type == 'Rope') {
           global.rope += 1;
-          [instances_of(holdItem)].orEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -4035,7 +4032,7 @@ else if (sprite_index == sSlideLeft)
           global.pickupItem = pickupItemType;
         } else {
           global.pickupItem = holdItem.type;
-          [instances_of(holdItem)].forEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               breakPieces = false;
               instance_destroy();
@@ -4078,7 +4075,7 @@ else if (sprite_index == sSlideLeft)
         }
       }
 
-      [instances_of(oMonkey)].forEach(($) => {
+      instances_of(oMonkey).forEach(($) => {
         with ($) {
           // knock off monkeys that grabbed you
           if (status == 7) {
@@ -4136,7 +4133,7 @@ else if (sprite_index == sSlideLeft)
         if (holdItem.sprite_index == sBombArmed) {
           // do nothing
         } else if (holdItem.sprite_index == sBomb) {
-          [instances_of(holdItem)].forEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               global.bombs += 1;
               instance_destroy();
@@ -4152,7 +4149,7 @@ else if (sprite_index == sSlideLeft)
             scrHoldItem(pickupItemType);
           }
         } else if (holdItem.sprite_index == sRopeEnd) {
-          [instances_of(holdItem)].forEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               global.rope += 1;
               instance_destroy();
@@ -4166,7 +4163,7 @@ else if (sprite_index == sSlideLeft)
             if (holdItem.type == 'Bow' && bowArmed) {
               scrFireBow();
             }
-            [instances_of(holdItem)].forEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 breakPieces = false;
                 instance_destroy();
@@ -4212,7 +4209,7 @@ else if (sprite_index == sSlideLeft)
             obj = instance_create(x + 16, y, oRopeThrow);
           }
 
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               t = true;
               move_snap(16, 1);
@@ -4293,7 +4290,7 @@ else if (sprite_index == sSlideLeft)
       if (global.hasStickyBombs) obj.sticky = true;
       obj.sprite_index = sBombArmed;
       obj.armed = true;
-      [instances_of(obj)].forEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           alarm[0] = 80;
           image_speed = 0.2;
@@ -4369,7 +4366,7 @@ else if (sprite_index == sSlideLeft)
               global.idolsGrabbed += 1;
               if (global.levelType == 0) {
                 trap = instance_nearest(x, y - 64, oGiantTikiHead);
-                [instances_of(trap)].orEach(($) => {
+                instances_of(trap).forEach(($) => {
                   with ($) {
                     alarm[0] = 100;
                   }
@@ -4392,7 +4389,7 @@ else if (sprite_index == sSlideLeft)
                     );
                   global.ghostExists = true;
                 }
-                [instances_of(oTrapBlock)].forEach(($) => {
+                instances_of(oTrapBlock).forEach(($) => {
                   with ($) {
                     dist = distance_to_object(oCharacter);
                     if (dist < 90) {
@@ -4403,7 +4400,7 @@ else if (sprite_index == sSlideLeft)
                 });
               } else if (global.levelType == 3) {
                 if (instance_exists(oCeilingTrap)) {
-                  [instances_of(oCeilingTrap)].forEach(($) => {
+                  instances_of(oCeilingTrap).forEach(($) => {
                     with ($) {
                       status = 1;
                       yVel = 0.5;
@@ -4422,7 +4419,7 @@ else if (sprite_index == sSlideLeft)
                     trap.yVel = 1;
                   }
                 } else {
-                  [instances_of(oTrapBlock)].forEach(($) => {
+                  instances_of(oTrapBlock).forEach(($) => {
                     with ($) {
                       dist = distance_to_object(oCharacter);
                       if (dist < 90) {
@@ -4511,7 +4508,7 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
             global.message = "YOU HAVEN'T GOT ENOUGH MONEY!";
             global.message2 = '';
             global.messageTimer = 80;
-            [instances_of(holdItem)].orEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 held = false;
               }
@@ -4659,7 +4656,7 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
 
           scrCreateBlood(x, y, 3);
 
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -4708,7 +4705,7 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
 
           scrCreateBlood(x, y, 3);
 
-          [instances_of(obj)].forEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               instance_create(x, y, oLaserExplode);
               instance_destroy();
@@ -4829,7 +4826,7 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
 
         obj = instance_place(x, y, oSpikes);
         if (obj) {
-          [instances_of(obj)].orEach(($) => {
+          instances_of(obj).forEach(($) => {
             with ($) {
               sprite_index = sSpikesBlood;
             }
@@ -4868,7 +4865,7 @@ if ((dead or stunned) and holdItem != 0)
     if (dead || stunned) {
       if (instance_exists(oParachute)) {
         instance_create(x - 8, y - 16 - 8, oParaUsed);
-        [instances_of(oParachute)].orEach(($) => {
+        instances_of(oParachute).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -4877,7 +4874,7 @@ if ((dead or stunned) and holdItem != 0)
 
       if (whipping) {
         whipping = false;
-        [instances_of(oWhip)].forEach(($) => {
+        instances_of(oWhip).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -4974,7 +4971,7 @@ if ((dead or stunned) and holdItem != 0)
           if (global.moaiX != 0) {
             x = global.moaiX + 8;
             y = global.moaiY + 8;
-            [instances_of(oMoaiInside)].orEach(($) => {
+            instances_of(oMoaiInside).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -4987,20 +4984,19 @@ if ((dead or stunned) and holdItem != 0)
             x = oEntrance.x + 8;
             y = oEntrance.y + 8;
           }
-          [instances_of(oBall)]
-            .forEach(($) => {
-              with ($) {
-                x = oPlayer1.x;
-                y = oPlayer1.y;
-              }
-            })
+          instances_of(oBall).forEach(($) => {
+            with ($) {
+              x = oPlayer1.x;
+              y = oPlayer1.y;
+            }
+          });
 
-            [instances_of(oChain)].forEach(($) => {
-              with ($) {
-                x = oPlayer1.x;
-                y = oPlayer1.y;
-              }
-            });
+          instances_of(oChain).forEach(($) => {
+            with ($) {
+              x = oPlayer1.x;
+              y = oPlayer1.y;
+            }
+          });
 
           xVel = 0;
           yVel = 0;
@@ -5093,7 +5089,7 @@ else if (sprite_index == sSlideLeft)
           if (abs(obj.xVel) < 1 && abs(obj.yVel) < 1 && !obj.stuck) {
             global.arrows += 1;
             playSound(global.sndPickup);
-            [instances_of(obj)].orEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -5143,7 +5139,7 @@ else if (sprite_index == sSlideLeft)
         if (coin) playSound(global.sndCoin);
         else playSound(global.sndGem);
 
-        [instances_of(gem)].orEach(($) => {
+        instances_of(gem).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -5165,7 +5161,7 @@ else if (sprite_index == sSlideLeft)
         global.bombs += 3;
         disp = instance_create(obj.x, obj.y - 14, oItemsGet);
         disp.sprite_index = sBombsGet;
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -5191,7 +5187,7 @@ else if (sprite_index == sSlideLeft)
         global.bombs += 12;
         disp = instance_create(obj.x, obj.y - 14, oItemsGet);
         disp.sprite_index = sBombsGet;
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -5217,7 +5213,7 @@ else if (sprite_index == sSlideLeft)
         global.rope += 3;
         disp = instance_create(obj.x, obj.y - 15, oItemsGet);
         disp.sprite_index = sRopeGet;
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -5241,7 +5237,7 @@ else if (sprite_index == sSlideLeft)
           else global.idols += 1;
           playSound(global.sndCoin);
           instance_create(x, y - 8, oBigCollect);
-          [instances_of(holdItem)].orEach(($) => {
+          instances_of(holdItem).forEach(($) => {
             with ($) {
               instance_destroy();
             }
@@ -5255,7 +5251,7 @@ else if (sprite_index == sSlideLeft)
             door = instance_place(x, y, oExit);
             holdItem.x = door.x + 8;
             holdItem.y = door.y + 8;
-            [instances_of(holdItem)].forEach(($) => {
+            instances_of(holdItem).forEach(($) => {
               with ($) {
                 if (global.isDamsel) sprite_index = sPExit;
                 else sprite_index = sDamselExit2;
@@ -5401,20 +5397,27 @@ class oPlayer1 extends oCharacter {
   FALLING;
   HANGING;
   IN_AIR;
+  JUMPING;
   LOOKING_UP;
   ON_GROUND;
   RUNNING;
   STANDING;
-  bet;
-  blink;
+  arrows;
+  attackPressed;
+  bigemeralds;
+  bigrubies;
+  bigsapphires;
+  blackMarket;
+  blinkToggle;
   bombArrowCounter;
   bowArmed;
-  bowStrength;
   canRun;
   cantJump;
+  cemetary;
   chest;
   climbAcc;
   climbAnimSpeed;
+  climbSndToggle;
   coin;
   colIceBot;
   colLadder;
@@ -5425,15 +5428,23 @@ class oPlayer1 extends oCharacter {
   colSolidRight;
   colSpikes;
   colWaterTop;
-  collect;
+  collisionbottomcheck;
+  customLevel;
   deadCounter;
   departLadderXVel;
   departLadderYVel;
+  diamonds;
+  diceGamesPlayed;
   disp;
   distToNearestLightSource;
+  downToRun;
+  drawHUD;
+  drawStatus;
+  emeralds;
   excess;
   explosion;
   fallTimer;
+  firingMax;
   firingPistolMax;
   firingShotgunMax;
   firstLevelSkip;
@@ -5441,16 +5452,31 @@ class oPlayer1 extends oCharacter {
   frictionClimbingY;
   frictionRunningFastX;
   frictionRunningX;
+  gamepad;
+  genBlackMarket;
+  ghostExists;
+  goldbar;
+  goldbars;
   gravNorm;
   gravityIntensity;
   hangCount;
   hangCountMax;
-  hawkThrow;
+  hasAnkh;
+  hasCape;
+  hasGloves;
+  hasJetpack;
+  hasJordans;
+  hasMitt;
+  hasParachute;
+  hasSpringShoes;
+  hasStickyBombs;
   holdArrow;
   holdArrowToggle;
   holdItemType;
+  idolsConverted;
   inGame;
   initialJumpAcc;
+  itemsBought;
   jetpackFuel;
   jumpButtonReleased;
   jumpTime;
@@ -5483,37 +5509,183 @@ class oPlayer1 extends oCharacter {
   kRopePressed;
   kRun;
   kUp;
+  kissesBought;
   ladder;
   ladderTimer;
+  leadsTo;
+  levelDeaths;
   levelSkip;
+  life;
   lookOff;
   looking;
   maxDownSlope;
   maxSlope;
-  money;
+  mini1;
+  mini2;
+  mini3;
+  miscDeaths;
+  moaiX;
+  moaiY;
+  moneyCount;
   moveToggle;
+  new;
+  newObj;
+  nextCustomLevel;
+  nuggets;
+  oArrowTrapLeftLit;
+  oArrowTrapRightLit;
+  oBall;
+  oBombBag;
+  oBombBox;
+  oBoulder;
+  oBow;
+  oCape;
+  oCeilingTrap;
+  oChain;
+  oChest;
+  oCompass;
+  oDoor;
+  oEmerald;
+  oEntrance;
+  oFlare;
+  oFlareCrate;
+  oGame;
+  oGhost;
+  oGiantTikiHead;
+  oGloves;
+  oItemsGet;
+  oJetpack;
+  oLadder;
+  oLadderTop;
+  oLamp;
+  oLampItem;
+  oLaserExplode;
+  oMachete;
+  oMachetePre;
+  oMattockHit;
+  oMattockPre;
+  oMitt;
+  oMoaiInside;
+  oMonkey;
+  oPDummy5;
+  oParaPickup;
+  oParaUsed;
+  oParachute;
+  oPistol;
+  oRock;
+  oRuby;
+  oSapphire;
+  oShotgunBlastLeft;
+  oShotgunBlastRight;
+  oSlash;
+  oSmashTrap;
+  oSmashTrapLit;
+  oSpearTrapLit;
+  oSpectacles;
+  oSpringShoes;
+  oSpringTrap;
+  oStarsRoom;
+  oSunRoom;
+  oTeleporter;
+  oTikiTorch;
+  oTrapBlock;
+  oTree;
+  oWebCannon;
+  oWhip;
+  oWhipPre;
+  oXChange;
+  oXChange2;
+  oXEnd;
+  oXGold;
+  oXMarket;
+  oXMoon;
+  oXScores;
+  oXShortcut13;
+  oXShortcut5;
+  oXShortcut9;
+  oXStars;
+  oXStart;
+  oXSun;
+  oXTitle;
+  oXTutorial;
+  open;
   pExit;
   point;
+  points;
+  prevCustomLevel;
   pushTimer;
+  rHighscores;
+  rLevelEditor;
+  rLoadLevel;
   ratio;
   redColor;
   redToggle;
+  room_height;
+  room_width;
   rr;
+  rubies;
   runAcc;
   runAnimSpeed;
   runHeld;
   runKey;
-  shopThrow;
+  sAttackLeft;
+  sBomb;
+  sBombsGet;
+  sChest;
+  sChestOpen;
+  sCrystalSkull;
+  sDamselAttackL;
+  sDamselDtHL;
+  sDamselExit;
+  sDamselHoldL;
+  sDamselWhoaL;
+  sDuckToHangL;
+  sRopeEnd;
+  sRopeGet;
+  sSpearsLeft;
+  sTunnelAttackL;
+  sTunnelDieL;
+  sTunnelDieLL;
+  sTunnelDieLR;
+  sTunnelDtHL;
+  sTunnelExit;
+  sTunnelFallL;
+  sTunnelLBounce;
+  sTunnelLeft;
+  sTunnelStunL;
+  sTunnelWhoaL;
+  sWhipLeft;
+  sWhipPreL;
+  sWhipPreR;
+  sWhipRight;
+  sWhoaLeft;
+  sapphires;
+  scoresStart;
+  skulls;
   slopeChangeInY;
   slopeYPrev;
+  sndBowPull;
+  sndGem;
+  sndJump;
+  sndPickup;
+  sndTeleport;
+  sndThud;
+  sndTrap;
+  sndWhip;
   source;
+  startPressed;
   statePrev;
   statePrevPrev;
+  style;
   t;
+  testLevel;
+  timer;
+  totalChests;
+  totalCrates;
+  trap;
   upYPrev;
   viewCount;
   walkSndToggle;
-  wallHurt;
   whipping;
   whoaTimer;
   whoaTimerMax;
@@ -5535,10 +5707,11 @@ class oPlayer1 extends oCharacter {
   xTUTORIAL;
   xVelInteger;
   xVelLimit;
+  xmoney;
   yAccLimit;
   yFric;
   yPrev;
   yPrevHigh;
   yVelInteger;
-  yetiThrow;
 }
+ObjType.oPlayer1 = oPlayer1;

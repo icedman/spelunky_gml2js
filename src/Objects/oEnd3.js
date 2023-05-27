@@ -165,7 +165,7 @@ function oEnd3_CREATE($) {
 
     alarm[0] = 50;
 
-    [instances_of(oMenu)].forEach(($) => {
+    instances_of(oMenu).forEach(($) => {
       with ($) {
         visible = false;
       }
@@ -173,4 +173,8 @@ function oEnd3_CREATE($) {
   }
 }
 
-class oEnd3 extends oObject {}
+class oEnd3 extends oObject {
+  oPDummy2;
+  rCredits2;
+}
+ObjType.oEnd3 = oEnd3;

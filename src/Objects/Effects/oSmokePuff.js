@@ -30,3 +30,4 @@ function oSmokePuff_CREATE($) {
 }
 
 class oSmokePuff extends oDrawnSprite {}
+ObjType.oSmokePuff = oSmokePuff;

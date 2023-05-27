@@ -79,4 +79,13 @@ function oPushBlock_CREATE($) {
   }
 }
 
-class oPushBlock extends oMoveableSolid {}
+class oPushBlock extends oMoveableSolid {
+  cityOfGold;
+  gold;
+  oGoldChunk;
+  oGoldNugget;
+  sGoldBlock;
+  sRubbleLush;
+  sRubbleLushSmall;
+}
+ObjType.oPushBlock = oPushBlock;

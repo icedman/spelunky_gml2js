@@ -189,3 +189,4 @@ function oSmashTrap_CREATE($) {
 }
 
 class oSmashTrap extends oMovingSolid {}
+ObjType.oSmashTrap = oSmashTrap;

@@ -21,3 +21,4 @@ function oGoldBig_DESTROY($) {
 }
 
 class oGoldBig extends oDrawnSprite {}
+ObjType.oGoldBig = oGoldBig;

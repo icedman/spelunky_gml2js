@@ -16,4 +16,7 @@ function oExit_CREATE($) {
   }
 }
 
-class oExit extends oDrawnSprite {}
+class oExit extends oDrawnSprite {
+  myFontSmall;
+}
+ObjType.oExit = oExit;

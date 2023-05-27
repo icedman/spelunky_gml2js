@@ -130,4 +130,9 @@ function oSkeleton_CREATE($) {
   }
 }
 
-class oSkeleton extends oEnemy {}
+class oSkeleton extends oEnemy {
+  sSkeletonLeft;
+  sSkeletonWalkLeft;
+  skeletons;
+}
+ObjType.oSkeleton = oSkeleton;

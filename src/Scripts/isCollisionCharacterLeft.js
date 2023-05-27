@@ -7,25 +7,25 @@ with the character.
   //the solid must be hitting the character's right side, so...
   oGame.collisionTempId = id;
   w = arguments[1];
-  if (arguments[1] == 0 || arguments[1] == noone)
-    w = oCharacter[instances_of(w)].forEach(($) => {
-      with ($) {
-        calculateCollisionBounds();
-        //if there is a collision with tempId on the character's right side
-        if (
-          collision_line(
-            round(rb + arguments[0] - 1),
-            round(tb),
-            round(rb + arguments[0] - 1),
-            round(bb - 1),
-            oGame.collisionTempId,
-            1,
-            1
-          ) > 0
-        )
-          return 1;
-      }
-    });
+  if (arguments[1] == 0 || arguments[1] == noone) w = oCharacter;
+  instances_of(w).forEach(($) => {
+    with ($) {
+      calculateCollisionBounds();
+      //if there is a collision with tempId on the character's right side
+      if (
+        collision_line(
+          round(rb + arguments[0] - 1),
+          round(tb),
+          round(rb + arguments[0] - 1),
+          round(bb - 1),
+          oGame.collisionTempId,
+          1,
+          1
+        ) > 0
+      )
+        return 1;
+    }
+  });
 
   return 0;
 }

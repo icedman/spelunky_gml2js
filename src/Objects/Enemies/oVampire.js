@@ -268,7 +268,7 @@ function oVampire_STEP($) {
             status = IDLE;
             if (held) {
               held = false;
-              [instances_of(oPlayer1)].orEach(($) => {
+              instances_of(oPlayer1).forEach(($) => {
                 with ($) {
                   holdItem = 0;
                   pickupItemType = '';
@@ -465,7 +465,7 @@ function oVampire_CREATE($) {
 function oVampire_COLLISION_oBlood($) {
   with ($) {
     hp += 1;
-    [instances_of(other)].orEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -475,4 +475,21 @@ function oVampire_COLLISION_oBlood($) {
 
 class oVampire extends oEnemy {
   FLY;
+  HANG;
+  oCapePickup;
+  sVampireBatHang;
+  sVampireBatLeft;
+  sVampireBounceL;
+  sVampireDHeldL;
+  sVampireDieLL;
+  sVampireDieLR;
+  sVampireFallL;
+  sVampireHeldL;
+  sVampireJumpL;
+  sVampireLeft;
+  sVampireRunL;
+  sVampireStunL;
+  sndBat;
+  vampires;
 }
+ObjType.oVampire = oVampire;

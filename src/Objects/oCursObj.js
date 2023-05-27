@@ -23,4 +23,7 @@ function oCursObj_CREATE($) {
   }
 }
 
-class oCursObj extends oObject {}
+class oCursObj extends oObject {
+  mouse_y;
+}
+ObjType.oCursObj = oCursObj;

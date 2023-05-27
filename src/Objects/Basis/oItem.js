@@ -268,7 +268,7 @@ function oItem_STEP($) {
             if (type == 'Arrow' && obj.status != 98 && obj.type == 'Vampire')
               obj.hp -= 3;
 
-            [instances_of(obj)].forEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 if (
                   type == 'Caveman' ||
@@ -373,7 +373,7 @@ function oItem_STEP($) {
           if (!obj.invincible && obj.status != 99 && obj.hit == 0) {
             if (!(obj.held && safe)) {
               scrCreateBlood(obj.x, obj.y, 1);
-              [instances_of(obj)].forEach(($) => {
+              instances_of(obj).forEach(($) => {
                 with ($) {
                   if (obj.held) {
                     obj.held = false;
@@ -453,5 +453,9 @@ function oItem_CREATE($) {
 }
 
 class oItem extends oDrawnSprite {
+  itemsStolen;
+  sBombArrowRight;
+  self;
   stolen;
 }
+ObjType.oItem = oItem;

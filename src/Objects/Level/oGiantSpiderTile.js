@@ -9,3 +9,4 @@ function oGiantSpiderTile_CREATE($) {
 }
 
 class oGiantSpiderTile extends oDrawnSprite {}
+ObjType.oGiantSpiderTile = oGiantSpiderTile;

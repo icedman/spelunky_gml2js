@@ -88,4 +88,9 @@ function oTemple_CREATE($) {
   }
 }
 
-class oTemple extends oSolid {}
+class oTemple extends oSolid {
+  sGTemple;
+  sTempleGold;
+  sTempleGoldBig;
+}
+ObjType.oTemple = oTemple;

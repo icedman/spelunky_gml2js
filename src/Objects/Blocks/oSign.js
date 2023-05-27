@@ -24,3 +24,4 @@ function oSign_DESTROY($) {
 }
 
 class oSign extends oSolid {}
+ObjType.oSign = oSign;

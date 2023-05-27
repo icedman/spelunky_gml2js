@@ -1,7 +1,7 @@
 function oPageDown_MOUSE($) {
   with ($) {
     oLoadLevel.page += 1;
-    [instances_of(oMenuSel)].orEach(($) => {
+    instances_of(oMenuSel).forEach(($) => {
       with ($) {
         sprite_index = sMenuSelOff;
       }
@@ -19,7 +19,7 @@ function oPageDown_MOUSE($) {
 function oPageDown_KEYPRESS($) {
   with ($) {
     oLoadLevel.page += 1;
-    [instances_of(oMenuSel)].orEach(($) => {
+    instances_of(oMenuSel).forEach(($) => {
       with ($) {
         sprite_index = sMenuSelOff;
       }
@@ -30,4 +30,7 @@ function oPageDown_KEYPRESS($) {
   }
 }
 
-class oPageDown extends oObject {}
+class oPageDown extends oObject {
+  numPages;
+}
+ObjType.oPageDown = oPageDown;

@@ -250,5 +250,14 @@ function oGiantSpider_CREATE($) {
 class oGiantSpider extends oEnemy {
   CRAWL;
   SQUIRT;
+  oWebBall;
+  sGiantSpider;
+  sGiantSpiderCrawl;
+  sGiantSpiderFlip;
+  sGiantSpiderJump;
+  sGiantSpiderSquirt;
+  sndGiantSpider;
+  sndSpiderJump;
   squirtTimer;
 }
+ObjType.oGiantSpider = oGiantSpider;

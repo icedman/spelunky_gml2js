@@ -17,3 +17,4 @@ function oChain_CREATE($) {
 }
 
 class oChain extends oDrawnSprite {}
+ObjType.oChain = oChain;

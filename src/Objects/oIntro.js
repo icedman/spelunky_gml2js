@@ -226,6 +226,18 @@ function oIntro_ALARM_10($) {
 }
 
 class oIntro extends oObject {
+  c_black;
+  fadeIn;
+  fadeLevel;
+  fadeOut;
+  gameStart;
+  oPDummy3;
+  rTitle;
+  str;
   str1;
+  str2;
   str3;
+  vk_enter;
+  vk_escape;
 }
+ObjType.oIntro = oIntro;

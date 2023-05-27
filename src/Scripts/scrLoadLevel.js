@@ -28,19 +28,19 @@ function scrLoadLevel() {
   else file = file_text_open_read('levels/' + string_lower(levelName) + '.lvl');
   if (file) {
     window_set_cursor(cr_none);
-    [instances_of(oMenu)].orEach(($) => {
+    instances_of(oMenu).forEach(($) => {
       with ($) {
         instance_destroy();
       }
     });
     instance_activate_object(oPageUp);
-    [instances_of(oPageUp)].orEach(($) => {
+    instances_of(oPageUp).forEach(($) => {
       with ($) {
         instance_destroy();
       }
     });
     instance_activate_object(oPageDown);
-    [instances_of(oPageDown)].orEach(($) => {
+    instances_of(oPageDown).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -162,7 +162,7 @@ function scrLoadLevel() {
       instance_create(24, 24, oPlayer1);
     }
 
-    [instances_of(oEntrance)].forEach(($) => {
+    instances_of(oEntrance).forEach(($) => {
       with ($) {
         if (leadsTo == global.prevCustomLevel) {
           oPlayer1.x = x + 8;
@@ -180,7 +180,7 @@ function scrLoadLevel() {
     if (gamepad.attackPressed) gamepad.attackPressed = false;
     if (gamepad.startPressed) gamepad.startPressed = false;
 
-    [instances_of(oLoadButton)].orEach(($) => {
+    instances_of(oLoadButton).forEach(($) => {
       with ($) {
         instance_destroy();
       }

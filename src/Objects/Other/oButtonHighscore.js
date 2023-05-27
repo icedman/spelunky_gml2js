@@ -15,32 +15,31 @@ function oButtonHighscore_STEP($) {
         global.shake = 60;
         playSound(global.sndThump);
       }
-      [instances_of(oTrophy)]
-        .orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        })
-        [instances_of(oXSun)].orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        })
-        [instances_of(oXMoon)].orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        })
-        [instances_of(oXStars)].orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        })
-        [instances_of(oXChange)].orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        });
+      instances_of(oTrophy).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
+      instances_of(oXSun).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
+      instances_of(oXMoon).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
+      instances_of(oXStars).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
+      instances_of(oXChange).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
       sprite_index = sButtonPushed;
 
       oHighscores.tMoney = 0;
@@ -58,5 +57,14 @@ function oButtonHighscore_CREATE($) {
 }
 
 class oButtonHighscore extends oObject {
+  oHighscores;
+  oTrophy;
   pushed;
+  sButton;
+  sButtonPushed;
+  tKills;
+  tMoney;
+  tSaves;
+  tTime;
 }
+ObjType.oButtonHighscore = oButtonHighscore;

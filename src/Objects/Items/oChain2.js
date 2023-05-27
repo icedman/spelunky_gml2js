@@ -17,4 +17,7 @@ function oChain2_CREATE($) {
   }
 }
 
-class oChain2 extends oDrawnSprite {}
+class oChain2 extends oDrawnSprite {
+  oBall2;
+}
+ObjType.oChain2 = oChain2;

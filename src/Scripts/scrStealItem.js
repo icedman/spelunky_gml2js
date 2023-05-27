@@ -25,7 +25,7 @@ function scrStealItem() {
   if (holdItem.type == 'Udjat Eye') {
     global.hasUdjatEye = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -38,7 +38,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Ankh') {
     global.hasAnkh = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -51,7 +51,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Crown') {
     global.hasCrown = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -64,7 +64,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Kapala') {
     global.hasKapala = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -78,7 +78,7 @@ function scrStealItem() {
     global.bombs += 3;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
     disp.sprite_index = sBombsGet;
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -92,7 +92,7 @@ function scrStealItem() {
     global.bombs += 12;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
     disp.sprite_index = sBombsGet;
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -105,7 +105,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Paste') {
     global.hasStickyBombs = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -119,7 +119,7 @@ function scrStealItem() {
     global.rope += 3;
     disp = instance_create(holdItem.x, holdItem.y - 15, oItemsGet);
     disp.sprite_index = sRopeGet;
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -132,7 +132,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Parachute') {
     global.hasParachute = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -145,7 +145,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Spectacles') {
     global.hasSpectacles = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -158,7 +158,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Gloves') {
     global.hasGloves = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -173,7 +173,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Mitt') {
     global.hasMitt = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -186,7 +186,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Compass') {
     global.hasCompass = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -199,7 +199,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Spring Shoes') {
     global.hasSpringShoes = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -212,7 +212,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Spike Shoes') {
     global.hasSpikeShoes = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -225,7 +225,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Jordans') {
     global.hasJordans = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -238,7 +238,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Cape') {
     global.hasCape = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -258,7 +258,7 @@ function scrStealItem() {
   } else if (holdItem.type == 'Jetpack') {
     global.hasJetpack = true;
     disp = instance_create(holdItem.x, holdItem.y - 14, oItemsGet);
-    [instances_of(holdItem)].orEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -274,7 +274,7 @@ function scrStealItem() {
       obj.orSale = false;
       obj.yVel = -1;
       global.hasCape = false;
-      [instances_of(oCape)].orEach(($) => {
+      instances_of(oCape).forEach(($) => {
         with ($) {
           instance_destroy();
         }

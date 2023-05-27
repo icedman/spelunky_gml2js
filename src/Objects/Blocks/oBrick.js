@@ -82,4 +82,9 @@ function oBrick_CREATE($) {
   }
 }
 
-class oBrick extends oSolid {}
+class oBrick extends oSolid {
+  sBrick2;
+  sBrickGold;
+  sBrickGoldBig;
+}
+ObjType.oBrick = oBrick;

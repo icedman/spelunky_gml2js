@@ -21,3 +21,4 @@ function oHeart_CREATE($) {
 }
 
 class oHeart extends oDrawnSprite {}
+ObjType.oHeart = oHeart;

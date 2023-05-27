@@ -9,3 +9,4 @@ function oXMarket_CREATE($) {
 }
 
 class oXMarket extends oExit {}
+ObjType.oXMarket = oXMarket;

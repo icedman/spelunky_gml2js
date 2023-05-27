@@ -142,4 +142,12 @@ function oZombie_CREATE($) {
   }
 }
 
-class oZombie extends oEnemy {}
+class oZombie extends oEnemy {
+  oSkull;
+  sZombieJumpL;
+  sZombieLeft;
+  skull;
+  sndZombie;
+  zombies;
+}
+ObjType.oZombie = oZombie;

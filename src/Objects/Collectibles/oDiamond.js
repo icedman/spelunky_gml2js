@@ -20,3 +20,4 @@ function oDiamond_CREATE($) {
 }
 
 class oDiamond extends oTreasure {}
+ObjType.oDiamond = oDiamond;

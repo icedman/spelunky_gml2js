@@ -25,4 +25,8 @@ function oWebCannon_CREATE($) {
   }
 }
 
-class oWebCannon extends oItem {}
+class oWebCannon extends oItem {
+  sWebCannonL;
+  sWebCannonR;
+}
+ObjType.oWebCannon = oWebCannon;

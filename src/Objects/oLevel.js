@@ -104,7 +104,7 @@ function oLevel_STEP($) {
       // deactivate all instances outside the region
 
       // this is to prevent water from only getting drained partway
-      [instances_of(oWater)].forEach(($) => {
+      instances_of(oWater).forEach(($) => {
         with ($) {
           if (
             x + 8 < view_xview[0] - 96 ||
@@ -233,7 +233,7 @@ function oLevel_CREATE($) {
     }
 
     if (instance_exists(oPlayer1)) {
-      [instances_of(oPlayer1)].forEach(($) => {
+      instances_of(oPlayer1).forEach(($) => {
         with ($) {
           scrHoldItem(global.pickupItem);
           holdItem.cost = 0;
@@ -256,8 +256,12 @@ function oLevel_CREATE($) {
 
 class oLevel extends oObject {
   checked;
-  musicFade;
   musicFadeTimer;
+  oGamepad;
+  oGlobals;
   offset;
   shakeSwitch;
+  xviewPrev;
+  yviewPrev;
 }
+ObjType.oLevel = oLevel;

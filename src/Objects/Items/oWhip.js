@@ -25,3 +25,4 @@ function oWhip_CREATE($) {
 }
 
 class oWhip extends oDrawnSprite {}
+ObjType.oWhip = oWhip;

@@ -23,3 +23,4 @@ function oBones_CREATE($) {
 }
 
 class oBones extends oDrawnSprite {}
+ObjType.oBones = oBones;

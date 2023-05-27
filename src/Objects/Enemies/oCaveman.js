@@ -223,7 +223,7 @@ function oCaveman_STEP($) {
             status = IDLE;
             if (held) {
               held = false;
-              [instances_of(oPlayer1)].orEach(($) => {
+              instances_of(oPlayer1).forEach(($) => {
                 with ($) {
                   holdItem = 0;
                   pickupItemType = '';
@@ -309,4 +309,17 @@ function oCaveman_CREATE($) {
   }
 }
 
-class oCaveman extends oEnemy {}
+class oCaveman extends oEnemy {
+  cavemen;
+  sCavemanBounceL;
+  sCavemanDHeldL;
+  sCavemanDeadL;
+  sCavemanDieLL;
+  sCavemanDieLR;
+  sCavemanFallL;
+  sCavemanHeldL;
+  sCavemanLeft;
+  sCavemanRunLeft;
+  sCavemanStunL;
+}
+ObjType.oCaveman = oCaveman;

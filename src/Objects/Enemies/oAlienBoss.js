@@ -35,7 +35,7 @@ function oAlienBoss_OTHER($) {
   with ($) {
     if (sprite_index == sAlienBossDie) {
       sprite_index = sAlienBossDead;
-      [instances_of(oBarrierEmitter)].orEach(($) => {
+      instances_of(oBarrierEmitter).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -184,6 +184,19 @@ function oAlienBoss_CREATE($) {
 }
 
 class oAlienBoss extends oEnemy {
+  alienbosses;
   blood;
+  gem;
+  n;
+  oBarrierEmitter;
+  oEmeraldBig;
+  oPsychicCreate;
+  oPsychicWave;
+  oRubyBig;
   psychicRecover;
+  sAlienBoss;
+  sAlienBossDead;
+  sAlienBossDie;
+  sAlienBossHurt;
 }
+ObjType.oAlienBoss = oAlienBoss;

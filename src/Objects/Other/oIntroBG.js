@@ -15,4 +15,8 @@ function oIntroBG_CREATE($) {
   }
 }
 
-class oIntroBG extends oObject {}
+class oIntroBG extends oObject {
+  oCamel;
+  xOff;
+}
+ObjType.oIntroBG = oIntroBG;

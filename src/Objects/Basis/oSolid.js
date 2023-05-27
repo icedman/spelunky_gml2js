@@ -1,7 +1,7 @@
 function oSolid_DESTROY($) {
   with ($) {
     if (shopWall) {
-      [instances_of(oShopkeeper)].forEach(($) => {
+      instances_of(oShopkeeper).forEach(($) => {
         with ($) {
           scrShopkeeperAnger(1);
         }
@@ -10,7 +10,7 @@ function oSolid_DESTROY($) {
 
     if (collision_point(x + 8, y - 1, oSpikes, 0, 0)) {
       obj = instance_place(x + 8, y - 1, oSpikes);
-      [instances_of(obj)].orEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -18,7 +18,7 @@ function oSolid_DESTROY($) {
     }
     if (collision_point(x + 8, y - 1, oTikiTorch, 0, 0)) {
       obj = instance_place(x + 8, y - 1, oTikiTorch);
-      [instances_of(obj)].orEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -26,7 +26,7 @@ function oSolid_DESTROY($) {
     }
     if (collision_point(x + 8, y - 1, oGrave, 0, 0)) {
       obj = instance_place(x + 8, y - 1, oGrave);
-      [instances_of(obj)].orEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -34,7 +34,7 @@ function oSolid_DESTROY($) {
     }
     if (collision_point(x + 8, y + 18, oLampRed, 0, 0)) {
       obj = instance_place(x + 8, y + 16, oLampRed);
-      [instances_of(obj)].orEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           instance_create(x + 8, y + 12, oLampRedItem);
           instance_destroy();
@@ -43,7 +43,7 @@ function oSolid_DESTROY($) {
     }
     if (collision_point(x + 8, y + 18, oLamp, 0, 0)) {
       obj = instance_place(x + 8, y + 16, oLamp);
-      [instances_of(obj)].orEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           instance_create(x + 8, y + 12, oLampItem);
           instance_destroy();
@@ -69,4 +69,9 @@ function oSolid_CREATE($) {
   }
 }
 
-class oSolid extends oDrawnSprite {}
+class oSolid extends oDrawnSprite {
+  oGrave;
+  oLampRed;
+  oLampRedItem;
+}
+ObjType.oSolid = oSolid;

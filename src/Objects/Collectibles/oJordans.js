@@ -14,3 +14,4 @@ function oJordans_CREATE($) {
 }
 
 class oJordans extends oItem {}
+ObjType.oJordans = oJordans;

@@ -170,4 +170,13 @@ function oSpearTrapTop_CREATE($) {
   }
 }
 
-class oSpearTrapTop extends oSolid {}
+class oSpearTrapTop extends oSolid {
+  checkWater;
+  firedMax;
+  oSpearsLeft;
+  prox;
+  range;
+  sSpearsRight;
+  spears;
+}
+ObjType.oSpearTrapTop = oSpearTrapTop;

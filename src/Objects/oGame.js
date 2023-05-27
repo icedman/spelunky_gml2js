@@ -221,7 +221,7 @@ function oGame_STEP($) {
 
     if (!instance_exists(oXMarket)) global.udjatBlink = false;
     else {
-      [instances_of(oPlayer1)].forEach(($) => {
+      instances_of(oPlayer1).forEach(($) => {
         with ($) {
           dm = distance_to_object(oXMarket);
           if (dm < 4) dm = 4;
@@ -286,7 +286,7 @@ function oGame_STEP($) {
 
     if (global.checkWater) {
       global.waterCounter = 0;
-      [instances_of(oWater)].forEach(($) => {
+      instances_of(oWater).forEach(($) => {
         with ($) {
           // if (y > view_yview[0]-32 && y < view_yview[0] + view_hview[0]+32 && ! isRoom("rOlmec"))
           if (!isRoom('rOlmec')) {
@@ -427,6 +427,12 @@ class oGame extends oObject {
   genWeaponShop;
   idol;
   moveableSolidGrav;
+  musicFade;
+  oLevel;
   room_speed;
-  time;
+  sLavaTop;
+  sWaterTop;
+  waterCounter;
+  waterLoopSafety;
 }
+ObjType.oGame = oGame;

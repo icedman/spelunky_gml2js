@@ -5,3 +5,4 @@ function oForeground_CREATE($) {
 }
 
 class oForeground extends oObject {}
+ObjType.oForeground = oForeground;

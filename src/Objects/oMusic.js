@@ -76,4 +76,16 @@ function oMusic_CREATE($) {
   }
 }
 
-class oMusic extends oObject {}
+class oMusic extends oObject {
+  musIce;
+  musLush;
+  musTemple;
+  musTitle;
+  sndBlink1;
+  sndBlink2;
+  sndIgnite;
+  sndJetpack;
+  sndPFall;
+  sndPush;
+}
+ObjType.oMusic = oMusic;

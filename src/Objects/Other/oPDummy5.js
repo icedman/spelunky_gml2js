@@ -29,4 +29,10 @@ function oPDummy5_CREATE($) {
   }
 }
 
-class oPDummy5 extends oDrawnSprite {}
+class oPDummy5 extends oDrawnSprite {
+  oTitle;
+  sClimbUp2;
+  sDamselClimb2;
+  sTunnelClimb2;
+}
+ObjType.oPDummy5 = oPDummy5;

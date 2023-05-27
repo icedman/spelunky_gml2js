@@ -241,4 +241,29 @@ function oTombLord_CREATE($) {
   }
 }
 
-class oTombLord extends oEnemy {}
+class oTombLord extends oEnemy {
+  TURN;
+  attackTimer;
+  blink;
+  canPickUp;
+  currLevel;
+  heavy;
+  image_alpha;
+  image_angle;
+  image_blend;
+  image_yscale;
+  oFly;
+  oSceptre;
+  sTombLordAttackL;
+  sTombLordAttackR;
+  sTombLordLeft;
+  sTombLordRight;
+  sTombLordTurnL;
+  sTombLordTurnR;
+  sTombLordWalkL;
+  sTombLordWalkR;
+  sndHurt;
+  tomblords;
+  whipped;
+}
+ObjType.oTombLord = oTombLord;

@@ -17,3 +17,4 @@ function oBGEnd3_CREATE($) {
 }
 
 class oBGEnd3 extends oObject {}
+ObjType.oBGEnd3 = oBGEnd3;

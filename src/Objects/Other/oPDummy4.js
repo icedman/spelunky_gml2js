@@ -53,4 +53,8 @@ function oPDummy4_CREATE($) {
   }
 }
 
-class oPDummy4 extends oDrawnSprite {}
+class oPDummy4 extends oDrawnSprite {
+  player;
+  sFallLeft;
+}
+ObjType.oPDummy4 = oPDummy4;

@@ -27,3 +27,4 @@ function oBubble_CREATE($) {
 }
 
 class oBubble extends oDrawnSprite {}
+ObjType.oBubble = oBubble;

@@ -763,7 +763,7 @@ if (colLadder and state == CLIMBING and kJumpPressed and not whipping)
         scrDropItem(-1, -4);
       }
 
-      [instances_of(oMonkey)].forEach(($) => {
+      instances_of(oMonkey).forEach(($) => {
         with ($) {
           // knock off monkeys that grabbed you
           if (status == 7) {
@@ -791,7 +791,7 @@ if (colLadder and state == CLIMBING and kJumpPressed and not whipping)
         scrDropItem(1, -4);
       }
 
-      [instances_of(oMonkey)].forEach(($) => {
+      instances_of(oMonkey).forEach(($) => {
         with ($) {
           // knock off monkeys that grabbed you
           if (status == 7) {

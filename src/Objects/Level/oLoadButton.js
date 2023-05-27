@@ -1,7 +1,7 @@
 function oLoadButton_MOUSE($) {
   with ($) {
     if (sprite_index == sLoadButtonPressed && active) {
-      [instances_of(oLoadLevel)].forEach(($) => {
+      instances_of(oLoadLevel).forEach(($) => {
         with ($) {
           global.irstCustomLevel = levelName;
           scrLoadLevel();
@@ -19,7 +19,7 @@ function oLoadButton_MOUSE($) {
 function oLoadButton_STEP($) {
   with ($) {
     if (checkStartPressed() || gamepad.attackPressed) {
-      [instances_of(oLoadLevel)].forEach(($) => {
+      instances_of(oLoadLevel).forEach(($) => {
         with ($) {
           global.irstCustomLevel = levelName;
           scrLoadLevel();
@@ -35,4 +35,9 @@ function oLoadButton_CREATE($) {
   }
 }
 
-class oLoadButton extends oObject {}
+class oLoadButton extends oObject {
+  irstCustomLevel;
+  sLoadButton;
+  sLoadButtonPressed;
+}
+ObjType.oLoadButton = oLoadButton;

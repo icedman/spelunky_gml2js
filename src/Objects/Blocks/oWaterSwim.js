@@ -7,3 +7,4 @@ function oWaterSwim_DESTROY($) {
 }
 
 class oWaterSwim extends oWater {}
+ObjType.oWaterSwim = oWaterSwim;

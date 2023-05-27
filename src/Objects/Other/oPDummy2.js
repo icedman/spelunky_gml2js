@@ -8,7 +8,7 @@ function oPDummy2_ALARM_1($) {
 
 function oPDummy2_ALARM_2($) {
   with ($) {
-    [instances_of(oEnd3)].forEach(($) => {
+    instances_of(oEnd3).forEach(($) => {
       with ($) {
         drawStatus = 1;
         alarm[1] = 50;
@@ -132,13 +132,13 @@ function oPDummy2_STEP($) {
         else if (global.isTunnelMan) sprite_index = sTunnelStunL;
         else sprite_index = sStunL;
         poof = instance_create(x - 4, y + 6, oPoof);
-        [instances_of(poof)].orEach(($) => {
+        instances_of(poof).forEach(($) => {
           with ($) {
             xVel = -0.4;
           }
         });
         poof = instance_create(x + 4, y + 6, oPoof);
-        [instances_of(poof)].orEach(($) => {
+        instances_of(poof).forEach(($) => {
           with ($) {
             xVel = 0.4;
           }
@@ -170,7 +170,7 @@ function oPDummy2_STEP($) {
         else if (global.isTunnelMan) sprite_index = sTunnelLeft;
         else sprite_index = sStandLeft;
         facing = RIGHT;
-        [instances_of(oMenu)].forEach(($) => {
+        instances_of(oMenu).forEach(($) => {
           with ($) {
             visible = true;
           }
@@ -223,4 +223,12 @@ function oPDummy2_CREATE($) {
 
 class oPDummy2 extends oDrawnSprite {
   GETUP;
+  musVictory;
+  oDesert2;
+  oEnd3;
+  oMenu;
+  poof;
+  sJumpLeft;
+  sndTFall;
 }
+ObjType.oPDummy2 = oPDummy2;

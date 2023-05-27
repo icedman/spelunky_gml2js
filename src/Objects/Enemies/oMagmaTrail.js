@@ -15,3 +15,4 @@ function oMagmaTrail_CREATE($) {
 }
 
 class oMagmaTrail extends oDrawnSprite {}
+ObjType.oMagmaTrail = oMagmaTrail;

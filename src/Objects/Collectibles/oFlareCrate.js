@@ -8,7 +8,7 @@ function oFlareCrate_STEP($) {
       instance_create(x, y, oSplash);
       playSound(global.sndSplash);
       if (held) {
-        [instances_of(oPlayer1)].forEach(($) => {
+        instances_of(oPlayer1).forEach(($) => {
           with ($) {
             holdItem = 0;
             pickupItemType = '';
@@ -54,3 +54,4 @@ function oFlareCrate_CREATE($) {
 }
 
 class oFlareCrate extends oItem {}
+ObjType.oFlareCrate = oFlareCrate;

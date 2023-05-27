@@ -14,3 +14,4 @@ function oCompass_CREATE($) {
 }
 
 class oCompass extends oItem {}
+ObjType.oCompass = oCompass;

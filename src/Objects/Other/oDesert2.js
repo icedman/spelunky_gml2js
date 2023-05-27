@@ -8,4 +8,7 @@ function oDesert2_CREATE($) {
   }
 }
 
-class oDesert2 extends oSolid {}
+class oDesert2 extends oSolid {
+  sDesertNight2;
+}
+ObjType.oDesert2 = oDesert2;

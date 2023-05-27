@@ -14,3 +14,4 @@ function oCrown_CREATE($) {
 }
 
 class oCrown extends oItem {}
+ObjType.oCrown = oCrown;

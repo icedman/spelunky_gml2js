@@ -11,3 +11,4 @@ function oRock_CREATE($) {
 }
 
 class oRock extends oItem {}
+ObjType.oRock = oRock;

@@ -28,3 +28,4 @@ function oBrickSmooth_DESTROY($) {
 }
 
 class oBrickSmooth extends oSolid {}
+ObjType.oBrickSmooth = oBrickSmooth;

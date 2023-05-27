@@ -15,3 +15,4 @@ function oPaste_CREATE($) {
 }
 
 class oPaste extends oItem {}
+ObjType.oPaste = oPaste;

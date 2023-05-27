@@ -29,7 +29,7 @@ function oSacAltarLeft_DESTROY($) {
       global.avor -= 16;
 
       if (global.kaliPunish == 0) {
-        [instances_of(oKaliHead)].forEach(($) => {
+        instances_of(oKaliHead).forEach(($) => {
           with ($) {
             alarm[0] = 1;
           }
@@ -46,7 +46,7 @@ function oSacAltarLeft_DESTROY($) {
         obj.linkVal = 4;
       } else {
         if (global.darkLevel && global.ghostExists) {
-          [instances_of(oKaliHead)].forEach(($) => {
+          instances_of(oKaliHead).forEach(($) => {
             with ($) {
               alarm[0] = 1;
             }
@@ -73,7 +73,7 @@ function oSacAltarLeft_DESTROY($) {
 
       global.kaliPunish += 1;
 
-      [instances_of(oSacAltarLeft)].forEach(($) => {
+      instances_of(oSacAltarLeft).forEach(($) => {
         with ($) {
           defile = false;
           instance_destroy();
@@ -108,6 +108,10 @@ function oSacAltarLeft_CREATE($) {
 }
 
 class oSacAltarLeft extends oSolid {
+  darkLevel;
   defile;
-  float;
+  kaliPunish;
+  linkVal;
+  oKaliHead;
 }
+ObjType.oSacAltarLeft = oSacAltarLeft;

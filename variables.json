@@ -1,10 +1,50 @@
 {
-    "oAlien": {},
+    "oAlien": {
+        "aliens": {
+            "type": ""
+        }
+    },
     "oAlienBoss": {
+        "alienbosses": {
+            "type": ""
+        },
         "blood": {
             "type": ""
         },
+        "gem": {
+            "type": ""
+        },
+        "n": {
+            "type": ""
+        },
+        "oBarrierEmitter": {
+            "type": ""
+        },
+        "oEmeraldBig": {
+            "type": ""
+        },
+        "oPsychicCreate": {
+            "type": ""
+        },
+        "oPsychicWave": {
+            "type": ""
+        },
+        "oRubyBig": {
+            "type": ""
+        },
         "psychicRecover": {
+            "type": ""
+        },
+        "sAlienBoss": {
+            "type": ""
+        },
+        "sAlienBossDead": {
+            "type": ""
+        },
+        "sAlienBossDie": {
+            "type": ""
+        },
+        "sAlienBossHurt": {
             "type": ""
         }
     },
@@ -18,48 +58,155 @@
         },
         "FLOAT": {
             "type": ""
+        },
+        "oAlien": {
+            "type": ""
+        },
+        "sAlienDeploy": {
+            "type": ""
+        },
+        "sAlienParachute": {
+            "type": ""
         }
     },
     "oAlienShip": {},
-    "oAlienShipFloor": {},
+    "oAlienShipFloor": {
+        "oRubbleDarkSmall": {
+            "type": ""
+        }
+    },
     "oAlienTile": {},
     "oAltarLeft": {},
     "oAltarRight": {},
-    "oAnkh": {},
-    "oArrow": {},
+    "oAnkh": {
+        "buyMessage": {
+            "type": ""
+        }
+    },
+    "oArrow": {
+        "oTarget": {
+            "type": ""
+        },
+        "stuck": {
+            "type": ""
+        }
+    },
     "oArrowRepeaterL": {},
-    "oArrowRepeaterR": {},
+    "oArrowRepeaterR": {
+        "arrow": {
+            "type": ""
+        },
+        "fired": {
+            "type": ""
+        },
+        "firing": {
+            "type": ""
+        },
+        "oArrow": {
+            "type": ""
+        },
+        "sndArrowTrap": {
+            "type": ""
+        },
+        "xAct": {
+            "type": ""
+        }
+    },
     "oArrowTrapLeft": {},
     "oArrowTrapLeftLit": {},
-    "oArrowTrapRight": {},
-    "oArrowTrapRightLit": {},
-    "oArrowTrapTest": {
+    "oArrowTrapRight": {
+        "id": {
+            "type": ""
+        },
+        "image_xscale": {
+            "type": ""
+        },
+        "oArrowTrapTest": {
+            "type": ""
+        },
         "trapID": {
             "type": ""
         }
     },
+    "oArrowTrapRightLit": {},
+    "oArrowTrapTest": {},
     "oBGEnd3": {},
     "oBackdrop": {},
     "oBall": {},
-    "oBall2": {},
+    "oBall2": {
+        "oPDummy": {
+            "type": ""
+        }
+    },
     "oBarrier": {},
-    "oBarrierEmitter": {},
-    "oBasket": {},
+    "oBarrierEmitter": {
+        "oBarrier": {
+            "type": ""
+        }
+    },
+    "oBasket": {
+        "sBasket": {
+            "type": ""
+        }
+    },
     "oBasketball": {
+        "baskets": {
+            "type": ""
+        },
         "bounces": {
             "type": ""
         },
         "goingIn": {
             "type": ""
         },
+        "oBasket": {
+            "type": ""
+        },
+        "oMoonRoom": {
+            "type": ""
+        },
+        "oRim": {
+            "type": ""
+        },
+        "oRimDeflect": {
+            "type": ""
+        },
+        "sBasketSwoosh": {
+            "type": ""
+        },
+        "sBasketball": {
+            "type": ""
+        },
+        "sDribble": {
+            "type": ""
+        },
         "wallBounce": {
             "type": ""
         }
     },
-    "oBat": {},
+    "oBat": {
+        "bats": {
+            "type": ""
+        },
+        "sBatHang": {
+            "type": ""
+        },
+        "sBatLeft": {
+            "type": ""
+        },
+        "sBatRight": {
+            "type": ""
+        }
+    },
     "oBatIntro": {},
     "oBatTarget": {
         "difficulty": {
+            "type": ""
+        },
+        "oBatTarget": {
+            "type": ""
+        },
+        "xDiff": {
             "type": ""
         },
         "xMid": {
@@ -77,57 +224,281 @@
     "oBlood": {
         "collectible": {
             "type": ""
+        },
+        "oBloodTrail": {
+            "type": ""
         }
     },
     "oBloodSpark": {},
     "oBloodTrail": {},
-    "oBomb": {},
-    "oBombBag": {},
+    "oBomb": {
+        "bombID": {
+            "type": ""
+        },
+        "enemyID": {
+            "type": ""
+        },
+        "graphicsHigh": {
+            "type": ""
+        },
+        "oExplosion": {
+            "type": ""
+        },
+        "roomPath": {
+            "type": ""
+        },
+        "sticky": {
+            "type": ""
+        },
+        "stickyXDiff": {
+            "type": ""
+        },
+        "stickyYDiff": {
+            "type": ""
+        }
+    },
+    "oBombBag": {
+        "shopDesc": {
+            "type": ""
+        }
+    },
     "oBombBagTile": {},
     "oBombBox": {},
     "oBombBoxTile": {},
     "oBombPasteTile": {},
-    "oBone": {},
-    "oBones": {},
-    "oBonesTile": {},
-    "oBoulder": {},
-    "oBow": {},
-    "oBowTile": {},
-    "oBrick": {},
-    "oBrickSmooth": {},
-    "oBricks": {
-        "scrSetupWalls": {
-            "type": "function"
+    "oBone": {
+        "sSmokePuff": {
+            "type": ""
         }
     },
+    "oBones": {},
+    "oBonesTile": {},
+    "oBoulder": {
+        "bounced": {
+            "type": ""
+        },
+        "oSpikes": {
+            "type": ""
+        },
+        "other": {
+            "type": ""
+        },
+        "sBoulder": {
+            "type": ""
+        },
+        "sBoulderRotateL": {
+            "type": ""
+        },
+        "sBoulderRotateR": {
+            "type": ""
+        },
+        "sndCrunch": {
+            "type": ""
+        },
+        "tile": {
+            "type": ""
+        }
+    },
+    "oBow": {
+        "bowStrength": {
+            "type": ""
+        },
+        "sBowLeft": {
+            "type": ""
+        },
+        "sBowRight": {
+            "type": ""
+        }
+    },
+    "oBowTile": {},
+    "oBrick": {
+        "sBrick2": {
+            "type": ""
+        },
+        "sBrickGold": {
+            "type": ""
+        },
+        "sBrickGoldBig": {
+            "type": ""
+        }
+    },
+    "oBrickSmooth": {},
+    "oBricks": {},
     "oBubble": {},
     "oBullet": {},
     "oBurn": {},
     "oButtonHighscore": {
+        "oHighscores": {
+            "type": ""
+        },
+        "oTrophy": {
+            "type": ""
+        },
         "pushed": {
+            "type": ""
+        },
+        "sButton": {
+            "type": ""
+        },
+        "sButtonPushed": {
+            "type": ""
+        },
+        "tKills": {
+            "type": ""
+        },
+        "tMoney": {
+            "type": ""
+        },
+        "tSaves": {
+            "type": ""
+        },
+        "tTime": {
             "type": ""
         }
     },
-    "oCamel": {},
-    "oCape": {},
+    "oCamel": {
+        "musCredits": {
+            "type": ""
+        },
+        "oCredits1": {
+            "type": ""
+        },
+        "sCamelDamsel": {
+            "type": ""
+        },
+        "sCamelTunnel": {
+            "type": ""
+        }
+    },
+    "oCape": {
+        "oTransition": {
+            "type": ""
+        },
+        "sCapeBack": {
+            "type": ""
+        },
+        "sCapeDL": {
+            "type": ""
+        },
+        "sCapeDR": {
+            "type": ""
+        },
+        "sCapeLeft": {
+            "type": ""
+        },
+        "sCapeRight": {
+            "type": ""
+        },
+        "sCapeUL": {
+            "type": ""
+        },
+        "sCapeUR": {
+            "type": ""
+        },
+        "sTunnelRunL": {
+            "type": ""
+        }
+    },
     "oCapePickup": {},
     "oCapeTile": {},
-    "oCaravan": {},
-    "oCaveBG": {},
+    "oCaravan": {
+        "oCredits2": {
+            "type": ""
+        },
+        "sCaravan2": {
+            "type": ""
+        },
+        "sCaravan3": {
+            "type": ""
+        }
+    },
+    "oCaveBG": {
+        "sCaveBG1": {
+            "type": ""
+        },
+        "sCaveBG2": {
+            "type": ""
+        }
+    },
     "oCaveBG2": {},
     "oCaveBGEntrance": {},
     "oCaveUp": {},
-    "oCaveman": {},
+    "oCaveman": {
+        "cavemen": {
+            "type": ""
+        },
+        "sCavemanBounceL": {
+            "type": ""
+        },
+        "sCavemanDHeldL": {
+            "type": ""
+        },
+        "sCavemanDeadL": {
+            "type": ""
+        },
+        "sCavemanDieLL": {
+            "type": ""
+        },
+        "sCavemanDieLR": {
+            "type": ""
+        },
+        "sCavemanFallL": {
+            "type": ""
+        },
+        "sCavemanHeldL": {
+            "type": ""
+        },
+        "sCavemanLeft": {
+            "type": ""
+        },
+        "sCavemanRunLeft": {
+            "type": ""
+        },
+        "sCavemanStunL": {
+            "type": ""
+        }
+    },
     "oCavemanTile": {},
     "oCavemanWorship": {},
-    "oCeilingTrap": {},
+    "oCeilingTrap": {
+        "oSolid": {
+            "type": ""
+        },
+        "sBlock": {
+            "type": ""
+        },
+        "sCeilingTrap": {
+            "type": ""
+        },
+        "sCeilingTrapS": {
+            "type": ""
+        }
+    },
     "oChain": {},
-    "oChain2": {},
+    "oChain2": {
+        "oBall2": {
+            "type": ""
+        }
+    },
     "oCharacter": {},
-    "oCheckBox": {},
+    "oCheckBox": {
+        "ullscreen": {
+            "type": ""
+        }
+    },
     "oCheckBox2": {},
     "oCheckBox3": {},
-    "oCheckBox4": {},
+    "oCheckBox4": {
+        "on": {
+            "type": ""
+        },
+        "sBox": {
+            "type": ""
+        },
+        "sBoxChecked": {
+            "type": ""
+        }
+    },
     "oChest": {},
     "oChestTile": {},
     "oCompass": {},
@@ -135,26 +506,207 @@
     "oCopy": {},
     "oCrate": {},
     "oCrateTile": {},
-    "oCredits1": {},
-    "oCredits2": {},
+    "oCredits1": {
+        "canPause": {
+            "type": ""
+        },
+        "oDesertScroll": {
+            "type": ""
+        },
+        "oDesertScroll2": {
+            "type": ""
+        },
+        "oDesertTopScroll": {
+            "type": ""
+        },
+        "oIntroBG": {
+            "type": ""
+        },
+        "oPalmTreeScroll": {
+            "type": ""
+        },
+        "oShrubScroll": {
+            "type": ""
+        },
+        "scrollStart": {
+            "type": ""
+        },
+        "scrolling": {
+            "type": ""
+        }
+    },
+    "oCredits2": {
+        "oCaravan": {
+            "type": ""
+        }
+    },
     "oCrown": {},
-    "oCrystalSkull": {},
+    "oCrystalSkull": {
+        "type": {
+            "type": ""
+        },
+        "value": {
+            "type": ""
+        }
+    },
     "oCrystalSkullTile": {},
-    "oCursObj": {},
+    "oCursObj": {
+        "mouse_y": {
+            "type": ""
+        }
+    },
     "oDamsel": {
+        "EXIT": {
+            "type": ""
+        },
         "KISS": {
+            "type": ""
+        },
+        "RUN": {
             "type": ""
         },
         "SLAVE": {
             "type": ""
         },
-        "SS_SetSoundPan": {
-            "type": "function"
+        "THROWN": {
+            "type": ""
+        },
+        "YELL": {
+            "type": ""
+        },
+        "avor": {
+            "type": ""
+        },
+        "cimg": {
+            "type": ""
+        },
+        "damsels": {
+            "type": ""
+        },
+        "damselsGrabbed": {
+            "type": ""
+        },
+        "damselsKilled": {
+            "type": ""
+        },
+        "damselsKilledTotal": {
+            "type": ""
+        },
+        "damselsSavedTotal": {
+            "type": ""
+        },
+        "door": {
+            "type": ""
+        },
+        "forSale": {
+            "type": ""
+        },
+        "oExit": {
+            "type": ""
+        },
+        "oHeart": {
+            "type": ""
+        },
+        "oSacAltarLeft": {
+            "type": ""
+        },
+        "oYellHelp": {
+            "type": ""
+        },
+        "sDamselBounceL": {
+            "type": ""
+        },
+        "sDamselDieL": {
+            "type": ""
+        },
+        "sDamselDieLL": {
+            "type": ""
+        },
+        "sDamselDieLR": {
+            "type": ""
+        },
+        "sDamselExit2": {
+            "type": ""
+        },
+        "sDamselFallL": {
+            "type": ""
+        },
+        "sDamselKissL": {
+            "type": ""
+        },
+        "sDamselLeft": {
+            "type": ""
+        },
+        "sDamselRunL": {
+            "type": ""
+        },
+        "sDamselStunL": {
+            "type": ""
+        },
+        "sDamselYellL": {
+            "type": ""
+        },
+        "sDieL": {
+            "type": ""
+        },
+        "sDieLBounce": {
+            "type": ""
+        },
+        "sDieLFall": {
+            "type": ""
+        },
+        "sDieLL": {
+            "type": ""
+        },
+        "sDieLR": {
+            "type": ""
+        },
+        "sPExit": {
+            "type": ""
+        },
+        "sPKissL": {
+            "type": ""
+        },
+        "sRunLeft": {
+            "type": ""
+        },
+        "sSmallCollect": {
+            "type": ""
+        },
+        "sSpikesBlood": {
+            "type": ""
+        },
+        "sStandLeft": {
+            "type": ""
+        },
+        "sStunL": {
+            "type": ""
+        },
+        "sYellLeft": {
+            "type": ""
+        },
+        "sacCount": {
+            "type": ""
+        },
+        "shake": {
+            "type": ""
+        },
+        "sndDamsel": {
+            "type": ""
+        },
+        "sndKiss": {
+            "type": ""
+        },
+        "sndSteps": {
+            "type": ""
         },
         "startled": {
             "type": ""
         },
         "stunMax": {
+            "type": ""
+        },
+        "xdamsels": {
             "type": ""
         }
     },
@@ -164,10 +716,29 @@
         }
     },
     "oDamselTile": {},
-    "oDark": {},
+    "oDark": {
+        "room": {
+            "type": ""
+        },
+        "sDarkGold": {
+            "type": ""
+        },
+        "sDarkGoldBig": {
+            "type": ""
+        }
+    },
     "oDarkFall": {
-        "isCollisionCharacterTop": {
-            "type": "function"
+        "grav": {
+            "type": ""
+        },
+        "oRubbleDark": {
+            "type": ""
+        },
+        "oSmokePuff": {
+            "type": ""
+        },
+        "sndBreak": {
+            "type": ""
         },
         "timeFall": {
             "type": ""
@@ -176,37 +747,180 @@
             "type": ""
         }
     },
-    "oDeadFish": {},
-    "oDesert": {},
-    "oDesert2": {},
-    "oDesertScroll": {},
-    "oDesertScroll2": {},
-    "oDesertTop": {},
-    "oDesertTopScroll": {},
-    "oDetritus": {},
-    "oDiamond": {},
-    "oDiamondTile": {},
-    "oDice": {
-        "rolling": {
+    "oDeadFish": {
+        "ObjType": {
+            "type": ""
+        },
+        "PAUSE": {
+            "type": ""
+        },
+        "bubbleTimer": {
+            "type": ""
+        },
+        "bubbleTimerMax": {
+            "type": ""
+        },
+        "deadfish": {
+            "type": ""
+        },
+        "oFishBone": {
+            "type": ""
+        },
+        "sDeadFishLeft": {
+            "type": ""
+        },
+        "sDeadFishRight": {
             "type": ""
         }
     },
-    "oDoor": {},
+    "oDesert": {
+        "sDesertNight": {
+            "type": ""
+        }
+    },
+    "oDesert2": {
+        "sDesertNight2": {
+            "type": ""
+        }
+    },
+    "oDesertScroll": {},
+    "oDesertScroll2": {},
+    "oDesertTop": {
+        "sDesertTopNight": {
+            "type": ""
+        }
+    },
+    "oDesertTopScroll": {},
+    "oDetritus": {
+        "oDetritus": {
+            "type": ""
+        }
+    },
+    "oDiamond": {},
+    "oDiamondTile": {},
+    "oDice": {
+        "bet": {
+            "type": ""
+        },
+        "bounceFactor": {
+            "type": ""
+        },
+        "c_white": {
+            "type": ""
+        },
+        "frictionFactor": {
+            "type": ""
+        },
+        "hasSpectacles": {
+            "type": ""
+        },
+        "rolled": {
+            "type": ""
+        },
+        "rolling": {
+            "type": ""
+        },
+        "sDice1": {
+            "type": ""
+        },
+        "sDice2": {
+            "type": ""
+        },
+        "sDice3": {
+            "type": ""
+        },
+        "sDice4": {
+            "type": ""
+        },
+        "sDice5": {
+            "type": ""
+        },
+        "sDice6": {
+            "type": ""
+        },
+        "sDiceRoll": {
+            "type": ""
+        },
+        "sRedArrowDown": {
+            "type": ""
+        }
+    },
+    "oDoor": {
+        "depth": {
+            "type": ""
+        }
+    },
     "oDrawnSprite": {},
     "oDrip": {},
-    "oEditButton": {},
+    "oEditButton": {
+        "oNewButton": {
+            "type": ""
+        },
+        "sEditButton": {
+            "type": ""
+        },
+        "sEditButtonPressed": {
+            "type": ""
+        }
+    },
     "oEmerald": {},
     "oEmeraldBig": {},
     "oEmeraldBigTile": {},
-    "oEnd": {},
-    "oEnd2": {},
+    "oEnd": {
+        "oChain2": {
+            "type": ""
+        }
+    },
+    "oEnd2": {
+        "oPlayerSil": {
+            "type": ""
+        },
+        "oTreasureSil": {
+            "type": ""
+        },
+        "oVolcanoFlame": {
+            "type": ""
+        }
+    },
     "oEnd2BG": {},
-    "oEnd3": {},
-    "oEndCustom": {},
+    "oEnd3": {
+        "oPDummy2": {
+            "type": ""
+        },
+        "rCredits2": {
+            "type": ""
+        }
+    },
+    "oEndCustom": {
+        "cr_none": {
+            "type": ""
+        },
+        "m": {
+            "type": ""
+        },
+        "moneyDiff": {
+            "type": ""
+        },
+        "poop": {
+            "type": ""
+        },
+        "s": {
+            "type": ""
+        },
+        "time": {
+            "type": ""
+        }
+    },
     "oEndPlat": {},
     "oEndWall": {},
     "oEnemy": {
         "myGravWater": {
+            "type": ""
+        },
+        "oAlienEject": {
+            "type": ""
+        },
+        "oFrog": {
             "type": ""
         },
         "shaking": {
@@ -216,51 +930,120 @@
             "type": ""
         }
     },
-    "oEnemySight": {
-        "owner": {
+    "oEnemySight": {},
+    "oEntrance": {},
+    "oEntranceCheck": {},
+    "oExit": {
+        "myFontSmall": {
             "type": ""
         }
     },
-    "oEntrance": {},
-    "oEntranceCheck": {},
-    "oExit": {},
     "oExplosion": {},
-    "oFakeBones": {},
+    "oFakeBones": {
+        "oSkeleton": {
+            "type": ""
+        },
+        "sSkeletonCreateL": {
+            "type": ""
+        }
+    },
     "oFinalBoss": {
         "brick": {
             "type": ""
         },
         "doorOpen": {
             "type": ""
+        }
+    },
+    "oFireFrog": {
+        "DROWNED": {
+            "type": ""
         },
-        "olmecDead": {
+        "countsAsKill": {
+            "type": ""
+        },
+        "irefrogs": {
+            "type": ""
+        },
+        "myGravNorm": {
+            "type": ""
+        },
+        "oFireFrogBomb": {
+            "type": ""
+        },
+        "oWater": {
+            "type": ""
+        },
+        "sFireFrogJumpL": {
+            "type": ""
+        },
+        "sFireFrogLeft": {
+            "type": ""
+        },
+        "shakeCounter": {
+            "type": ""
+        },
+        "shakeToggle": {
+            "type": ""
+        },
+        "sndFrog": {
+            "type": ""
+        },
+        "swimming": {
+            "type": ""
+        },
+        "yVelLimit": {
             "type": ""
         }
     },
-    "oFireFrog": {},
     "oFireFrogArmed": {},
-    "oFireFrogBomb": {},
+    "oFireFrogBomb": {
+        "oWaterSwim": {
+            "type": ""
+        }
+    },
     "oFireFrogTile": {},
     "oFishBone": {},
-    "oFlame": {},
+    "oFlame": {
+        "oFlameTrail": {
+            "type": ""
+        }
+    },
     "oFlameTrail": {},
     "oFlare": {
+        "bounce": {
+            "type": ""
+        },
         "distToPlayer": {
             "type": ""
         }
     },
     "oFlareCrate": {},
     "oFlareSpark": {},
-    "oFly": {},
+    "oFly": {
+        "sFlyLeft": {
+            "type": ""
+        },
+        "sFlyRight": {
+            "type": ""
+        }
+    },
     "oForeground": {},
     "oFrill": {},
-    "oFrog": {},
+    "oFrog": {
+        "rogs": {
+            "type": ""
+        },
+        "sFrogJumpL": {
+            "type": ""
+        },
+        "sFrogLeft": {
+            "type": ""
+        }
+    },
     "oFrogTile": {},
     "oFrozenCaveman": {},
     "oGame": {
-        "action_color": {
-            "type": "function"
-        },
         "altar": {
             "type": ""
         },
@@ -294,21 +1077,30 @@
         "moveableSolidGrav": {
             "type": ""
         },
+        "musicFade": {
+            "type": ""
+        },
+        "oLevel": {
+            "type": ""
+        },
         "room_speed": {
             "type": ""
         },
-        "scrInitLevel": {
-            "type": "function"
+        "sLavaTop": {
+            "type": ""
         },
-        "time": {
+        "sWaterTop": {
+            "type": ""
+        },
+        "waterCounter": {
+            "type": ""
+        },
+        "waterLoopSafety": {
             "type": ""
         }
     },
     "oGamepad": {
         "attack": {
-            "type": ""
-        },
-        "attackPressed": {
             "type": ""
         },
         "attackReleased": {
@@ -332,6 +1124,9 @@
         "downReleased": {
             "type": ""
         },
+        "flare": {
+            "type": ""
+        },
         "flarePressed": {
             "type": ""
         },
@@ -344,20 +1139,20 @@
         "itemReleased": {
             "type": ""
         },
-        "joystick_check_button": {
-            "type": "function"
+        "joyBombVal": {
+            "type": ""
         },
-        "joystick_direction": {
-            "type": "function"
+        "joyFlareVal": {
+            "type": ""
         },
-        "joystick_has_pov": {
-            "type": "function"
+        "joyRopeVal": {
+            "type": ""
         },
-        "joystick_pov": {
-            "type": "function"
+        "joyStartVal": {
+            "type": ""
         },
-        "joystick_zpos": {
-            "type": "function"
+        "joyid": {
+            "type": ""
         },
         "jump": {
             "type": ""
@@ -407,9 +1202,6 @@
         "start": {
             "type": ""
         },
-        "startPressed": {
-            "type": ""
-        },
         "startReleased": {
             "type": ""
         },
@@ -423,7 +1215,26 @@
             "type": ""
         }
     },
-    "oGhost": {},
+    "oGhost": {
+        "sGhostDisappear": {
+            "type": ""
+        },
+        "sGhostLeft": {
+            "type": ""
+        },
+        "sGhostRight": {
+            "type": ""
+        },
+        "sGhostTurnLeft": {
+            "type": ""
+        },
+        "sGhostTurnRight": {
+            "type": ""
+        },
+        "sndGhost": {
+            "type": ""
+        }
+    },
     "oGiantSpider": {
         "CRAWL": {
             "type": ""
@@ -431,19 +1242,105 @@
         "SQUIRT": {
             "type": ""
         },
+        "oWebBall": {
+            "type": ""
+        },
+        "sGiantSpider": {
+            "type": ""
+        },
+        "sGiantSpiderCrawl": {
+            "type": ""
+        },
+        "sGiantSpiderFlip": {
+            "type": ""
+        },
+        "sGiantSpiderJump": {
+            "type": ""
+        },
+        "sGiantSpiderSquirt": {
+            "type": ""
+        },
+        "sndGiantSpider": {
+            "type": ""
+        },
+        "sndSpiderJump": {
+            "type": ""
+        },
         "squirtTimer": {
             "type": ""
         }
     },
-    "oGiantSpiderHang": {},
-    "oGiantSpiderTile": {},
-    "oGiantTikiHead": {},
-    "oGlobals": {
-        "highscore_value": {
-            "type": "function"
+    "oGiantSpiderHang": {
+        "giantspiders": {
+            "type": ""
         },
-        "scrImportHighscores": {
-            "type": "function"
+        "oGiantSpider": {
+            "type": ""
+        },
+        "oPaste": {
+            "type": ""
+        },
+        "oWeb": {
+            "type": ""
+        },
+        "r1": {
+            "type": ""
+        }
+    },
+    "oGiantSpiderTile": {},
+    "oGiantTikiHead": {
+        "sGTHHole": {
+            "type": ""
+        }
+    },
+    "oGlobals": {
+        "darknessLerp": {
+            "type": ""
+        },
+        "dataFile": {
+            "type": ""
+        },
+        "emptyHighscores": {
+            "type": ""
+        },
+        "hadDarkLevel": {
+            "type": ""
+        },
+        "irstTime": {
+            "type": ""
+        },
+        "lake": {
+            "type": ""
+        },
+        "levelSelect": {
+            "type": ""
+        },
+        "newKills": {
+            "type": ""
+        },
+        "newMoney": {
+            "type": ""
+        },
+        "newSaves": {
+            "type": ""
+        },
+        "newTime": {
+            "type": ""
+        },
+        "tunnel1Max": {
+            "type": ""
+        },
+        "tunnel2Max": {
+            "type": ""
+        },
+        "udjatBlink": {
+            "type": ""
+        },
+        "udjatCounter": {
+            "type": ""
+        },
+        "usedShortcut": {
+            "type": ""
         }
     },
     "oGloves": {},
@@ -454,14 +1351,103 @@
     "oGoldBars": {},
     "oGoldBarsTile": {},
     "oGoldBig": {},
-    "oGoldChunk": {},
-    "oGoldDoor": {},
-    "oGoldIdol": {},
+    "oGoldChunk": {
+        "yOff": {
+            "type": ""
+        }
+    },
+    "oGoldDoor": {
+        "hasCrown": {
+            "type": ""
+        }
+    },
+    "oGoldIdol": {
+        "idols": {
+            "type": ""
+        },
+        "idolsGrabbed": {
+            "type": ""
+        },
+        "message": {
+            "type": ""
+        },
+        "message2": {
+            "type": ""
+        },
+        "messageTimer": {
+            "type": ""
+        },
+        "murderer": {
+            "type": ""
+        },
+        "oBigCollect": {
+            "type": ""
+        },
+        "oBrickSmooth": {
+            "type": ""
+        },
+        "thiefLevel": {
+            "type": ""
+        }
+    },
     "oGoldIdolTile": {},
     "oGoldNugget": {},
-    "oGrave": {},
+    "oGrave": {
+        "sGrave2": {
+            "type": ""
+        },
+        "sGrave3": {
+            "type": ""
+        },
+        "sGrave4": {
+            "type": ""
+        },
+        "sGrave5": {
+            "type": ""
+        },
+        "sGrave6": {
+            "type": ""
+        }
+    },
     "oHardBlock": {},
-    "oHawkman": {},
+    "oHawkman": {
+        "hawkmen": {
+            "type": ""
+        },
+        "sHawkBounceL": {
+            "type": ""
+        },
+        "sHawkDHeldL": {
+            "type": ""
+        },
+        "sHawkDeadL": {
+            "type": ""
+        },
+        "sHawkDieLL": {
+            "type": ""
+        },
+        "sHawkDieLR": {
+            "type": ""
+        },
+        "sHawkFallL": {
+            "type": ""
+        },
+        "sHawkHeldL": {
+            "type": ""
+        },
+        "sHawkLeft": {
+            "type": ""
+        },
+        "sHawkRunLeft": {
+            "type": ""
+        },
+        "sHawkStunL": {
+            "type": ""
+        },
+        "sHawkThrowL": {
+            "type": ""
+        }
+    },
     "oHawkmanTile": {},
     "oHawkmanWorship": {},
     "oHeart": {},
@@ -470,6 +1456,27 @@
             "type": ""
         },
         "moonGold": {
+            "type": ""
+        },
+        "oButtonHighscore": {
+            "type": ""
+        },
+        "oNew": {
+            "type": ""
+        },
+        "oPushBlock": {
+            "type": ""
+        },
+        "sBronzeTrophy": {
+            "type": ""
+        },
+        "sGoldTrophy": {
+            "type": ""
+        },
+        "sSilverTrophy": {
+            "type": ""
+        },
+        "snakePit": {
             "type": ""
         },
         "starsGold": {
@@ -491,32 +1498,157 @@
             "type": ""
         }
     },
-    "oHintHand": {},
-    "oIce": {},
-    "oIceBlock": {},
+    "oHintHand": {
+        "strLen": {
+            "type": ""
+        }
+    },
+    "oIce": {
+        "oFrozenCaveman": {
+            "type": ""
+        }
+    },
+    "oIceBlock": {
+        "oDrip": {
+            "type": ""
+        }
+    },
     "oIceBottom": {},
     "oIceTile": {},
     "oIntro": {
+        "c_black": {
+            "type": ""
+        },
+        "fadeIn": {
+            "type": ""
+        },
+        "fadeLevel": {
+            "type": ""
+        },
+        "fadeOut": {
+            "type": ""
+        },
+        "gameStart": {
+            "type": ""
+        },
+        "oPDummy3": {
+            "type": ""
+        },
+        "rTitle": {
+            "type": ""
+        },
+        "str": {
+            "type": ""
+        },
         "str1": {
+            "type": ""
+        },
+        "str2": {
             "type": ""
         },
         "str3": {
             "type": ""
+        },
+        "vk_enter": {
+            "type": ""
+        },
+        "vk_escape": {
+            "type": ""
         }
     },
-    "oIntroBG": {},
+    "oIntroBG": {
+        "oCamel": {
+            "type": ""
+        },
+        "xOff": {
+            "type": ""
+        }
+    },
     "oItem": {
-        "collision_rectangle_obj": {
-            "type": "function"
+        "itemsStolen": {
+            "type": ""
+        },
+        "sBombArrowRight": {
+            "type": ""
+        },
+        "self": {
+            "type": ""
         },
         "stolen": {
             "type": ""
         }
     },
     "oItemsGet": {},
-    "oJar": {},
+    "oJar": {
+        "DUCKING": {
+            "type": ""
+        },
+        "breakPieces": {
+            "type": ""
+        },
+        "destroy": {
+            "type": ""
+        },
+        "enemy": {
+            "type": ""
+        },
+        "oDamsel": {
+            "type": ""
+        },
+        "oFlame": {
+            "type": ""
+        },
+        "oSnake": {
+            "type": ""
+        },
+        "pickupItem": {
+            "type": ""
+        },
+        "piece": {
+            "type": ""
+        },
+        "sndExplosion": {
+            "type": ""
+        }
+    },
     "oJarTile": {},
     "oJaws": {
+        "megamouths": {
+            "type": ""
+        },
+        "oCrate": {
+            "type": ""
+        },
+        "sJawsBody1L": {
+            "type": ""
+        },
+        "sJawsBody1R": {
+            "type": ""
+        },
+        "sJawsBody2L": {
+            "type": ""
+        },
+        "sJawsBody2R": {
+            "type": ""
+        },
+        "sJawsBody3L": {
+            "type": ""
+        },
+        "sJawsBody3R": {
+            "type": ""
+        },
+        "sJawsLeft": {
+            "type": ""
+        },
+        "sJawsRight": {
+            "type": ""
+        },
+        "sJawsTurnL": {
+            "type": ""
+        },
+        "sJawsTurnR": {
+            "type": ""
+        },
         "turn": {
             "type": ""
         }
@@ -525,8 +1657,8 @@
     "oJetpackTile": {},
     "oJordans": {},
     "oJoyConfig": {
-        "checkJoyButton": {
-            "type": "function"
+        "currVal": {
+            "type": ""
         },
         "joy": {
             "type": ""
@@ -539,13 +1671,64 @@
         },
         "joyReleased": {
             "type": ""
+        },
+        "rInit": {
+            "type": ""
         }
     },
-    "oJoyConfigButton": {},
-    "oKaliHead": {},
+    "oJoyConfigButton": {
+        "rJoyConfig": {
+            "type": ""
+        },
+        "sJoyConfigButton": {
+            "type": ""
+        },
+        "sJoyConfigButtonPressed": {
+            "type": ""
+        }
+    },
+    "oKaliHead": {
+        "sKaliHead1": {
+            "type": ""
+        },
+        "sKaliHead2": {
+            "type": ""
+        },
+        "sKaliHead3": {
+            "type": ""
+        }
+    },
     "oKapala": {},
-    "oKey": {},
+    "oKey": {
+        "sKeyLeft": {
+            "type": ""
+        },
+        "sKeyRight": {
+            "type": ""
+        }
+    },
     "oKeyConfig": {
+        "keyBombVal": {
+            "type": ""
+        },
+        "keyDownVal": {
+            "type": ""
+        },
+        "keyFlareVal": {
+            "type": ""
+        },
+        "keyLeftVal": {
+            "type": ""
+        },
+        "keyRightVal": {
+            "type": ""
+        },
+        "keyRopeVal": {
+            "type": ""
+        },
+        "keyUpVal": {
+            "type": ""
+        },
         "vk_alt": {
             "type": ""
         },
@@ -571,18 +1754,48 @@
             "type": ""
         }
     },
-    "oKeyConfigButton": {},
+    "oKeyConfigButton": {
+        "rKeyConfig": {
+            "type": ""
+        },
+        "sKeyConfigButton": {
+            "type": ""
+        },
+        "sKeyConfigButtonPressed": {
+            "type": ""
+        }
+    },
     "oLadder": {},
     "oLadderOrange": {},
     "oLadderTop": {},
     "oLamp": {},
-    "oLampItem": {},
+    "oLampItem": {
+        "trigger": {
+            "type": ""
+        }
+    },
     "oLampRed": {},
     "oLampRedItem": {},
-    "oLaser": {},
+    "oLaser": {
+        "oGold": {
+            "type": ""
+        },
+        "oGoldBig": {
+            "type": ""
+        },
+        "oLaserTrail": {
+            "type": ""
+        }
+    },
     "oLaserExplode": {},
     "oLaserTrail": {},
     "oLava": {
+        "flame": {
+            "type": ""
+        },
+        "oLavaDrip": {
+            "type": ""
+        },
         "spurt": {
             "type": ""
         },
@@ -595,10 +1808,32 @@
     },
     "oLavaDrip": {},
     "oLavaSolid": {},
-    "oLavaSpray": {},
+    "oLavaSpray": {
+        "rEnd2": {
+            "type": ""
+        }
+    },
     "oLavaTile": {},
     "oLeaf": {},
     "oLeaves": {
+        "oLeaves": {
+            "type": ""
+        },
+        "sLeaves": {
+            "type": ""
+        },
+        "sLeavesDead": {
+            "type": ""
+        },
+        "sLeavesDeadR": {
+            "type": ""
+        },
+        "sLeavesRight": {
+            "type": ""
+        },
+        "sLeavesTop": {
+            "type": ""
+        },
         "spriteSet": {
             "type": ""
         }
@@ -608,22 +1843,25 @@
         "checked": {
             "type": ""
         },
-        "instance_deactivate_region": {
-            "type": "function"
-        },
-        "musicFade": {
+        "musicFadeTimer": {
             "type": ""
         },
-        "musicFadeTimer": {
+        "oGamepad": {
+            "type": ""
+        },
+        "oGlobals": {
             "type": ""
         },
         "offset": {
             "type": ""
         },
-        "scrMusicFade": {
-            "type": "function"
-        },
         "shakeSwitch": {
+            "type": ""
+        },
+        "xviewPrev": {
+            "type": ""
+        },
+        "yviewPrev": {
             "type": ""
         }
     },
@@ -677,7 +1915,7 @@
             "type": ""
         },
         "blockArray": {
-            "type": "array"
+            "type": ""
         },
         "dropMax": {
             "type": ""
@@ -689,10 +1927,10 @@
             "type": ""
         },
         "enemyArray": {
-            "type": "array"
+            "type": ""
         },
         "exitNames": {
-            "type": "array"
+            "type": ""
         },
         "exitNamesID": {
             "type": ""
@@ -700,26 +1938,35 @@
         "exitNamesNum": {
             "type": ""
         },
-        "file_delete": {
-            "type": "function"
-        },
-        "file_text_eof": {
-            "type": "function"
+        "file": {
+            "type": ""
         },
         "lootArray": {
-            "type": "array"
+            "type": ""
         },
         "mb_right": {
             "type": ""
         },
-        "scrCreateTile": {
-            "type": "function"
+        "oCursObj": {
+            "type": ""
         },
-        "scrSetCursorTile": {
-            "type": "function"
+        "oDrawnSprite": {
+            "type": ""
+        },
+        "oMsgSign": {
+            "type": ""
+        },
+        "sEntrance": {
+            "type": ""
+        },
+        "sGoldBarTile": {
+            "type": ""
+        },
+        "sSpikes": {
+            "type": ""
         },
         "signNames": {
-            "type": "array"
+            "type": ""
         },
         "signNamesID": {
             "type": ""
@@ -727,31 +1974,62 @@
         "signNamesNum": {
             "type": ""
         },
-        "string_lower": {
-            "type": "function"
-        },
         "textEdit": {
             "type": ""
         },
         "trapArray": {
-            "type": "array"
+            "type": ""
         }
     },
-    "oLoadButton": {},
+    "oLoadButton": {
+        "irstCustomLevel": {
+            "type": ""
+        },
+        "sLoadButton": {
+            "type": ""
+        },
+        "sLoadButtonPressed": {
+            "type": ""
+        }
+    },
     "oLoadLevel": {
+        "GET_FILE_NAME": {
+            "type": ""
+        },
+        "author": {
+            "type": ""
+        },
         "blackOut": {
             "type": ""
         },
-        "file_find_first": {
-            "type": "function"
+        "bombStart": {
+            "type": ""
         },
-        "file_find_next": {
-            "type": "function"
+        "c_red": {
+            "type": ""
         },
-        "levelList": {
-            "type": "array"
+        "cr_default": {
+            "type": ""
+        },
+        "enabled": {
+            "type": ""
+        },
+        "j": {
+            "type": ""
+        },
+        "keepScore": {
+            "type": ""
+        },
+        "keyboard_key": {
+            "type": ""
+        },
+        "levelArray": {
+            "type": ""
         },
         "levelLoaded": {
+            "type": ""
+        },
+        "lifeStart": {
             "type": ""
         },
         "msg": {
@@ -760,26 +2038,122 @@
         "msgTimer": {
             "type": ""
         },
-        "numLevels": {
+        "nextLevel": {
             "type": ""
         },
-        "numPages": {
+        "oLoadButton": {
             "type": ""
         },
-        "page": {
+        "oScreen": {
+            "type": ""
+        },
+        "ropeStart": {
             "type": ""
         },
         "tempFile": {
             "type": ""
+        },
+        "titleStart": {
+            "type": ""
+        },
+        "vk_backspace": {
+            "type": ""
+        },
+        "vk_delete": {
+            "type": ""
         }
     },
-    "oLockedChest": {},
-    "oLush": {},
-    "oMachete": {},
-    "oMachetePre": {},
+    "oLockedChest": {
+        "oPoof": {
+            "type": ""
+        },
+        "oUdjatEye": {
+            "type": ""
+        },
+        "sLockedChest": {
+            "type": ""
+        },
+        "sLockedChestOpen": {
+            "type": ""
+        },
+        "sndChestOpen": {
+            "type": ""
+        }
+    },
+    "oLush": {
+        "sLushGold": {
+            "type": ""
+        },
+        "sLushGoldBig": {
+            "type": ""
+        }
+    },
+    "oMachete": {
+        "sMacheteLeft": {
+            "type": ""
+        },
+        "sMacheteRight": {
+            "type": ""
+        }
+    },
+    "oMachetePre": {
+        "sMachetePreL": {
+            "type": ""
+        },
+        "sMachetePreR": {
+            "type": ""
+        }
+    },
     "oMacheteTile": {},
-    "oMagma": {},
-    "oMagmaMan": {},
+    "oMagma": {
+        "dying": {
+            "type": ""
+        },
+        "oMagmaMan": {
+            "type": ""
+        },
+        "oMagmaTrail": {
+            "type": ""
+        },
+        "sMagmaManCreate": {
+            "type": ""
+        }
+    },
+    "oMagmaMan": {
+        "THROW": {
+            "type": ""
+        },
+        "burning": {
+            "type": ""
+        },
+        "magma": {
+            "type": ""
+        },
+        "oBurn": {
+            "type": ""
+        },
+        "oMagma": {
+            "type": ""
+        },
+        "sBombArmed": {
+            "type": ""
+        },
+        "sMagmaManDie": {
+            "type": ""
+        },
+        "sMagmaManLeft": {
+            "type": ""
+        },
+        "sMagmaManWalkL": {
+            "type": ""
+        },
+        "sightCounter": {
+            "type": ""
+        },
+        "stunTimer": {
+            "type": ""
+        }
+    },
     "oMagmaTrail": {},
     "oManTrap": {
         "EATING": {
@@ -788,18 +2162,180 @@
         "SLEEPY": {
             "type": ""
         },
+        "STUNNED": {
+            "type": ""
+        },
+        "allTimer": {
+            "type": ""
+        },
         "ateShopkeeper": {
+            "type": ""
+        },
+        "bloodless": {
             "type": ""
         },
         "bone": {
             "type": ""
+        },
+        "cost": {
+            "type": ""
+        },
+        "damage": {
+            "type": ""
+        },
+        "dead": {
+            "type": ""
+        },
+        "enemyDeaths": {
+            "type": ""
+        },
+        "favor": {
+            "type": ""
+        },
+        "hasSpikeShoes": {
+            "type": ""
+        },
+        "held": {
+            "type": ""
+        },
+        "holdItem": {
+            "type": ""
+        },
+        "inWeb": {
+            "type": ""
+        },
+        "isDamsel": {
+            "type": ""
+        },
+        "isTunnelMan": {
+            "type": ""
+        },
+        "mantraps": {
+            "type": ""
+        },
+        "oBlood": {
+            "type": ""
+        },
+        "oBone": {
+            "type": ""
+        },
+        "oLeaf": {
+            "type": ""
+        },
+        "oShopkeeper": {
+            "type": ""
+        },
+        "oShotgun": {
+            "type": ""
+        },
+        "orSale": {
+            "type": ""
+        },
+        "pickupItemType": {
+            "type": ""
+        },
+        "plife": {
+            "type": ""
+        },
+        "sManTrapEatCavemanL": {
+            "type": ""
+        },
+        "sManTrapEatDamselL": {
+            "type": ""
+        },
+        "sManTrapEatHawkman": {
+            "type": ""
+        },
+        "sManTrapEatL": {
+            "type": ""
+        },
+        "sManTrapEatShopkeeperL": {
+            "type": ""
+        },
+        "sManTrapEatTunnelL": {
+            "type": ""
+        },
+        "sManTrapEatVampire": {
+            "type": ""
+        },
+        "sManTrapEatYeti": {
+            "type": ""
+        },
+        "sManTrapLeft": {
+            "type": ""
+        },
+        "sManTrapSleepL": {
+            "type": ""
+        },
+        "sManTrapStunL": {
+            "type": ""
+        },
+        "sndDie": {
+            "type": ""
+        },
+        "sndHit": {
+            "type": ""
+        },
+        "sndSmallExplode": {
+            "type": ""
+        },
+        "sprite_height": {
+            "type": ""
+        },
+        "sprite_width": {
+            "type": ""
+        },
+        "state": {
+            "type": ""
+        },
+        "stunTime": {
+            "type": ""
+        },
+        "stunned": {
+            "type": ""
+        },
+        "visible": {
+            "type": ""
         }
     },
     "oManTrapTile": {},
-    "oMattock": {},
+    "oMattock": {
+        "sMattockLeft": {
+            "type": ""
+        },
+        "sMattockRight": {
+            "type": ""
+        }
+    },
     "oMattockHead": {},
-    "oMattockHit": {},
-    "oMattockPre": {},
+    "oMattockHit": {
+        "oMattock": {
+            "type": ""
+        },
+        "oMattockHead": {
+            "type": ""
+        },
+        "oTreasure": {
+            "type": ""
+        },
+        "sMattockHitL": {
+            "type": ""
+        },
+        "sMattockHitR": {
+            "type": ""
+        },
+        "sndMattockBreak": {
+            "type": ""
+        }
+    },
+    "oMattockPre": {
+        "sMattockPreL": {
+            "type": ""
+        },
+        "sMattockPreR": {
+            "type": ""
+        }
+    },
     "oMattockTile": {},
     "oMegaMouthTile": {},
     "oMenu": {},
@@ -808,7 +2344,32 @@
     "oMenuLR": {},
     "oMenuLeft": {},
     "oMenuRight": {},
-    "oMenuSel": {},
+    "oMenuSel": {
+        "levelList": {
+            "type": ""
+        },
+        "levelName": {
+            "type": ""
+        },
+        "numLevels": {
+            "type": ""
+        },
+        "oLoadLevel": {
+            "type": ""
+        },
+        "oMenuSel": {
+            "type": ""
+        },
+        "page": {
+            "type": ""
+        },
+        "sMenuSelOff": {
+            "type": ""
+        },
+        "sMenuSelOn": {
+            "type": ""
+        }
+    },
     "oMenuTop": {},
     "oMenuUL": {},
     "oMenuUR": {},
@@ -825,1133 +2386,232 @@
         "GRAB": {
             "type": ""
         },
+        "alling": {
+            "type": ""
+        },
+        "armed": {
+            "type": ""
+        },
+        "bombs": {
+            "type": ""
+        },
+        "canCollect": {
+            "type": ""
+        },
+        "grabCounter": {
+            "type": ""
+        },
         "grabX": {
             "type": ""
         },
         "grabY": {
             "type": ""
         },
-        "int": {
+        "levelType": {
+            "type": ""
+        },
+        "money": {
+            "type": ""
+        },
+        "monkeys": {
+            "type": ""
+        },
+        "oBomb": {
+            "type": ""
+        },
+        "oRopeThrow": {
+            "type": ""
+        },
+        "oSplash": {
+            "type": ""
+        },
+        "oVine": {
+            "type": ""
+        },
+        "rope": {
+            "type": ""
+        },
+        "sMonkeyClimbL": {
+            "type": ""
+        },
+        "sMonkeyHangL": {
+            "type": ""
+        },
+        "sMonkeyJumpL": {
+            "type": ""
+        },
+        "sMonkeyLeft": {
+            "type": ""
+        },
+        "sMonkeyWalkL": {
+            "type": ""
+        },
+        "sndMonkey": {
+            "type": ""
+        },
+        "sndSplash": {
+            "type": ""
+        },
+        "sndThrow": {
             "type": ""
         },
         "throwCounter": {
+            "type": ""
+        },
+        "totalMonkeyKills": {
+            "type": ""
+        },
+        "vineCounter": {
             "type": ""
         }
     },
     "oMonkeyTile": {},
     "oMoon": {},
     "oMoonRoom": {
-        "baskets": {
+        "c_yellow": {
+            "type": ""
+        },
+        "highscore": {
+            "type": ""
+        },
+        "music": {
+            "type": ""
+        },
+        "myFont": {
+            "type": ""
+        },
+        "sHoopsIcon": {
+            "type": ""
+        },
+        "sTimerIcon": {
             "type": ""
         }
     },
     "oMoveableSolid": {},
     "oMovingSolid": {},
     "oMsgSign": {
-        "message": {
+        "joyAttackVal": {
             "type": ""
         },
-        "message2": {
+        "joyItemVal": {
+            "type": ""
+        },
+        "joyJumpVal": {
+            "type": ""
+        },
+        "joyRunVal": {
+            "type": ""
+        },
+        "keyAttackVal": {
+            "type": ""
+        },
+        "keyItemVal": {
+            "type": ""
+        },
+        "keyJumpVal": {
+            "type": ""
+        },
+        "keyRunVal": {
             "type": ""
         }
     },
     "oMultiTrophy": {},
     "oMusic": {
-        "SS_LoadSound": {
-            "type": "function"
+        "musIce": {
+            "type": ""
+        },
+        "musLush": {
+            "type": ""
+        },
+        "musTemple": {
+            "type": ""
+        },
+        "musTitle": {
+            "type": ""
+        },
+        "sndBlink1": {
+            "type": ""
+        },
+        "sndBlink2": {
+            "type": ""
+        },
+        "sndIgnite": {
+            "type": ""
+        },
+        "sndJetpack": {
+            "type": ""
+        },
+        "sndPFall": {
+            "type": ""
+        },
+        "sndPush": {
+            "type": ""
         }
     },
     "oNew": {},
-    "oNewButton": {},
-    "oOKButton": {},
-    "oObject": {
-        "ATTACK": {
+    "oNewButton": {
+        "oEditButton": {
             "type": ""
         },
+        "oTestButton": {
+            "type": ""
+        },
+        "sNewButton": {
+            "type": ""
+        },
+        "sNewButtonPressed": {
+            "type": ""
+        }
+    },
+    "oOKButton": {
+        "oInit": {
+            "type": ""
+        },
+        "sOKButton": {
+            "type": ""
+        },
+        "sOKButtonPressed": {
+            "type": ""
+        },
+        "startGame": {
+            "type": ""
+        }
+    },
+    "oObject": {
+        "path": ""
+    },
+    "oOlmec": {
+        "$": {
+            "type": ""
+        },
+        "::": {
+            "type": "function"
+        },
         "BOUNCE": {
+            "type": ""
+        },
+        "CREATE": {
             "type": ""
         },
         "DEAD": {
             "type": ""
         },
-        "DOWN": {
-            "type": ""
-        },
-        "DROP": {
-            "type": ""
-        },
-        "DROWNED": {
-            "type": ""
-        },
-        "DUCKING": {
-            "type": ""
-        },
-        "EXIT": {
-            "type": ""
-        },
-        "GET_FILE_NAME": {
-            "type": ""
-        },
-        "HANG": {
+        "DROWNING": {
             "type": ""
         },
         "IDLE": {
             "type": ""
         },
-        "JUMPING": {
-            "type": ""
-        },
         "LEFT": {
             "type": ""
         },
-        "ObjType": {
-            "type": ""
-        },
-        "PAUSE": {
+        "PREPARE": {
             "type": ""
         },
         "RECOVER": {
             "type": ""
         },
-        "RETURN": {
-            "type": ""
-        },
         "RIGHT": {
-            "type": ""
-        },
-        "RUN": {
-            "type": ""
-        },
-        "SS_IsSoundPlaying": {
-            "type": "function"
-        },
-        "SS_SetSoundVol": {
-            "type": "function"
-        },
-        "STUNNED": {
-            "type": ""
-        },
-        "THROW": {
-            "type": ""
-        },
-        "THROWN": {
-            "type": ""
-        },
-        "TRANSITION": {
-            "type": ""
-        },
-        "TURN": {
-            "type": ""
-        },
-        "UP": {
-            "type": ""
-        },
-        "WAIT": {
-            "type": ""
-        },
-        "WALK": {
-            "type": ""
-        },
-        "YELL": {
-            "type": ""
-        },
-        "abs": {
-            "type": "function"
-        },
-        "action_execute_script": {
-            "type": "function"
-        },
-        "action_if": {
-            "type": "function"
-        },
-        "action_inherited": {
-            "type": "function"
-        },
-        "action_kill_object": {
-            "type": "function"
-        },
-        "active": {
-            "type": ""
-        },
-        "alarm": {
-            "type": "array"
-        },
-        "arctan": {
-            "type": "function"
-        },
-        "armed": {
-            "type": ""
-        },
-        "arrow": {
-            "type": ""
-        },
-        "attackTimer": {
-            "type": ""
-        },
-        "author": {
-            "type": ""
-        },
-        "blinkToggle": {
-            "type": ""
-        },
-        "bloodLeft": {
-            "type": ""
-        },
-        "bloodless": {
-            "type": ""
-        },
-        "bombID": {
-            "type": ""
-        },
-        "bombStart": {
-            "type": ""
-        },
-        "bounce": {
-            "type": ""
-        },
-        "bounceCounter": {
-            "type": ""
-        },
-        "bounceFactor": {
-            "type": ""
-        },
-        "bounced": {
-            "type": ""
-        },
-        "breakPieces": {
-            "type": ""
-        },
-        "bubbleTimer": {
-            "type": ""
-        },
-        "bubbleTimerMax": {
-            "type": ""
-        },
-        "burnTimer": {
-            "type": ""
-        },
-        "burning": {
-            "type": ""
-        },
-        "buyMessage": {
-            "type": ""
-        },
-        "c": {
-            "type": ""
-        },
-        "c_black": {
-            "type": ""
-        },
-        "c_red": {
-            "type": ""
-        },
-        "c_white": {
-            "type": ""
-        },
-        "c_yellow": {
-            "type": ""
-        },
-        "canCollect": {
-            "type": ""
-        },
-        "canPause": {
-            "type": ""
-        },
-        "canPickUp": {
-            "type": ""
-        },
-        "ceil": {
-            "type": "function"
-        },
-        "checkAttack": {
-            "type": "function"
-        },
-        "checkAttackPressed": {
-            "type": "function"
-        },
-        "checkBombPressed": {
-            "type": "function"
-        },
-        "checkDown": {
-            "type": "function"
-        },
-        "checkRopePressed": {
-            "type": "function"
-        },
-        "checkStartPressed": {
-            "type": "function"
-        },
-        "checkUp": {
-            "type": "function"
-        },
-        "cimg": {
-            "type": ""
-        },
-        "cleanDeath": {
-            "type": ""
-        },
-        "climbSndToggle": {
-            "type": ""
-        },
-        "colBot": {
-            "type": ""
-        },
-        "colLeft": {
-            "type": ""
-        },
-        "colRight": {
-            "type": ""
-        },
-        "colTop": {
-            "type": ""
-        },
-        "collision_point": {
-            "type": "function"
-        },
-        "collision_rectangle": {
-            "type": "function"
-        },
-        "cos": {
-            "type": "function"
-        },
-        "cost": {
-            "type": ""
-        },
-        "counter": {
-            "type": ""
-        },
-        "countsAsKill": {
-            "type": ""
-        },
-        "cr_default": {
-            "type": ""
-        },
-        "cr_none": {
-            "type": ""
-        },
-        "currVal": {
-            "type": ""
-        },
-        "damage": {
-            "type": ""
-        },
-        "darkness": {
-            "type": ""
-        },
-        "dead": {
-            "type": ""
-        },
-        "deathTimer": {
-            "type": ""
-        },
-        "degtorad": {
-            "type": "function"
-        },
-        "depth": {
-            "type": ""
-        },
-        "destroy": {
-            "type": ""
-        },
-        "dir": {
-            "type": ""
-        },
-        "direction": {
-            "type": ""
-        },
-        "dist": {
-            "type": ""
-        },
-        "distance_to_object": {
-            "type": "function"
-        },
-        "door": {
-            "type": ""
-        },
-        "downHeld": {
-            "type": ""
-        },
-        "drawStatus": {
-            "type": ""
-        },
-        "draw_rectangle": {
-            "type": "function"
-        },
-        "draw_set_alpha": {
-            "type": "function"
-        },
-        "draw_set_color": {
-            "type": "function"
-        },
-        "draw_set_font": {
-            "type": "function"
-        },
-        "draw_sprite": {
-            "type": "function"
-        },
-        "draw_sprite_ext": {
-            "type": "function"
-        },
-        "draw_text": {
-            "type": "function"
-        },
-        "dying": {
-            "type": ""
-        },
-        "enemy": {
-            "type": ""
-        },
-        "enemyID": {
-            "type": ""
-        },
-        "facing": {
-            "type": ""
-        },
-        "fadeIn": {
-            "type": ""
-        },
-        "fadeLevel": {
-            "type": ""
-        },
-        "fadeOut": {
-            "type": ""
-        },
-        "falling": {
-            "type": ""
-        },
-        "favor": {
-            "type": ""
-        },
-        "file": {
-            "type": ""
-        },
-        "file_exists": {
-            "type": "function"
-        },
-        "file_text_close": {
-            "type": "function"
-        },
-        "file_text_open_read": {
-            "type": "function"
-        },
-        "file_text_open_write": {
-            "type": "function"
-        },
-        "file_text_read_string": {
-            "type": "function"
-        },
-        "file_text_readln": {
-            "type": "function"
-        },
-        "file_text_write_string": {
-            "type": "function"
-        },
-        "file_text_writeln": {
-            "type": "function"
-        },
-        "fired": {
-            "type": ""
-        },
-        "firedMax": {
-            "type": ""
-        },
-        "firing": {
-            "type": ""
-        },
-        "firingMax": {
-            "type": ""
-        },
-        "flame": {
-            "type": ""
-        },
-        "flare": {
-            "type": ""
-        },
-        "floor": {
-            "type": "function"
-        },
-        "flying": {
-            "type": ""
-        },
-        "forSale": {
-            "type": ""
-        },
-        "frictionFactor": {
-            "type": ""
-        },
-        "game_end": {
-            "type": "function"
-        },
-        "gamepad": {
-            "type": ""
-        },
-        "gem": {
-            "type": ""
-        },
-        "getKissValue": {
-            "type": "function"
-        },
-        "global": {
-            "type": ""
-        },
-        "gold": {
-            "type": ""
-        },
-        "grabCounter": {
-            "type": ""
-        },
-        "grav": {
-            "type": ""
-        },
-        "hasGun": {
-            "type": ""
-        },
-        "heavy": {
-            "type": ""
-        },
-        "held": {
-            "type": ""
-        },
-        "highscore": {
-            "type": ""
-        },
-        "hit": {
-            "type": ""
-        },
-        "holdItem": {
-            "type": ""
-        },
-        "hp": {
-            "type": ""
-        },
-        "i": {
-            "type": ""
-        },
-        "id": {
-            "type": ""
-        },
-        "image_alpha": {
-            "type": ""
-        },
-        "image_angle": {
-            "type": ""
-        },
-        "image_blend": {
-            "type": ""
-        },
-        "image_index": {
-            "type": ""
-        },
-        "image_speed": {
-            "type": ""
-        },
-        "image_xscale": {
-            "type": ""
-        },
-        "image_yscale": {
-            "type": ""
-        },
-        "inDiceHouse": {
-            "type": ""
-        },
-        "inWeb": {
-            "type": ""
-        },
-        "instance_activate_object": {
-            "type": "function"
-        },
-        "instance_activate_region": {
-            "type": "function"
-        },
-        "instance_create": {
-            "type": "function"
-        },
-        "instance_deactivate_object": {
-            "type": "function"
-        },
-        "instance_destroy": {
-            "type": "function"
-        },
-        "instance_exists": {
-            "type": "function"
-        },
-        "instance_nearest": {
-            "type": "function"
-        },
-        "instance_number": {
-            "type": "function"
-        },
-        "instance_place": {
-            "type": "function"
-        },
-        "instance_position": {
-            "type": "function"
-        },
-        "instances_of": {
-            "type": "function"
-        },
-        "invincible": {
-            "type": ""
-        },
-        "isCollisionBottom": {
-            "type": "function"
-        },
-        "isCollisionLadder": {
-            "type": "function"
-        },
-        "isCollisionLeft": {
-            "type": "function"
-        },
-        "isCollisionRight": {
-            "type": "function"
-        },
-        "isCollisionSolid": {
-            "type": "function"
-        },
-        "isCollisionTop": {
-            "type": "function"
-        },
-        "isInShop": {
-            "type": "function"
-        },
-        "isLevel": {
-            "type": "function"
-        },
-        "isRealLevel": {
-            "type": "function"
-        },
-        "isRoom": {
-            "type": "function"
-        },
-        "item": {
-            "type": ""
-        },
-        "j": {
-            "type": ""
-        },
-        "joyid": {
-            "type": ""
-        },
-        "joystick_exists": {
-            "type": "function"
-        },
-        "keyboard_check_pressed": {
-            "type": "function"
-        },
-        "keyboard_key": {
-            "type": ""
-        },
-        "leadsTo": {
-            "type": ""
-        },
-        "levelArray": {
-            "type": "array"
-        },
-        "levelName": {
-            "type": ""
-        },
-        "life": {
-            "type": ""
-        },
-        "lifeStart": {
-            "type": ""
-        },
-        "linkVal": {
-            "type": ""
-        },
-        "m": {
-            "type": ""
-        },
-        "m2": {
-            "type": ""
-        },
-        "magma": {
-            "type": ""
-        },
-        "makeActive": {
-            "type": "function"
-        },
-        "mb_left": {
-            "type": ""
-        },
-        "moneyCount": {
-            "type": ""
-        },
-        "moneyDiff": {
-            "type": ""
-        },
-        "mouse_check_button": {
-            "type": "function"
-        },
-        "mouse_x": {
-            "type": ""
-        },
-        "mouse_y": {
-            "type": ""
-        },
-        "move_snap": {
-            "type": "function"
-        },
-        "music": {
-            "type": ""
-        },
-        "myGrav": {
-            "type": ""
-        },
-        "myGravNorm": {
-            "type": ""
-        },
-        "n": {
-            "type": ""
-        },
-        "nextLevel": {
-            "type": ""
-        },
-        "obj": {
-            "type": ""
-        },
-        "objChecked": {
-            "type": ""
-        },
-        "on": {
-            "type": ""
-        },
-        "ord": {
-            "type": "function"
-        },
-        "origX": {
-            "type": ""
-        },
-        "origY": {
-            "type": ""
-        },
-        "other": {
-            "type": ""
-        },
-        "path": "",
-        "person": {
-            "type": ""
-        },
-        "pickupItemType": {
-            "type": ""
-        },
-        "piece": {
-            "type": ""
-        },
-        "playMusic": {
-            "type": "function"
-        },
-        "playSound": {
-            "type": "function"
-        },
-        "player": {
-            "type": ""
-        },
-        "point_direction": {
-            "type": "function"
-        },
-        "point_distance": {
-            "type": "function"
-        },
-        "poof": {
-            "type": ""
-        },
-        "poop": {
-            "type": ""
-        },
-        "prox": {
-            "type": ""
-        },
-        "puncture": {
-            "type": ""
-        },
-        "py": {
-            "type": ""
-        },
-        "r": {
-            "type": ""
-        },
-        "r1": {
-            "type": ""
-        },
-        "radtodeg": {
-            "type": "function"
-        },
-        "rand": {
-            "type": "function"
-        },
-        "random": {
-            "type": "function"
-        },
-        "range": {
-            "type": ""
-        },
-        "real": {
-            "type": "function"
-        },
-        "repeat": {
-            "type": "function"
-        },
-        "rolled": {
-            "type": ""
-        },
-        "room": {
-            "type": ""
-        },
-        "room_get_name": {
-            "type": "function"
-        },
-        "room_goto": {
-            "type": "function"
-        },
-        "room_goto_next": {
-            "type": "function"
-        },
-        "room_height": {
-            "type": ""
-        },
-        "room_restart": {
-            "type": "function"
-        },
-        "room_width": {
-            "type": ""
-        },
-        "rope": {
-            "type": ""
-        },
-        "ropeStart": {
-            "type": ""
-        },
-        "rubble": {
-            "type": ""
-        },
-        "s": {
-            "type": ""
-        },
-        "s2": {
-            "type": ""
-        },
-        "sacCount": {
-            "type": ""
-        },
-        "safe": {
-            "type": ""
-        },
-        "scrCheckCollisions": {
-            "type": "function"
-        },
-        "scrClearGlobals": {
-            "type": "function"
-        },
-        "scrCreateBlood": {
-            "type": "function"
-        },
-        "scrCreateFlame": {
-            "type": "function"
-        },
-        "scrDropItem": {
-            "type": "function"
-        },
-        "scrGenerateItem": {
-            "type": "function"
-        },
-        "scrGetChar": {
-            "type": "function"
-        },
-        "scrGetFavorMsg": {
-            "type": "function"
-        },
-        "scrGetJoy": {
-            "type": "function"
-        },
-        "scrGetKey": {
-            "type": "function"
-        },
-        "scrGetRoomX": {
-            "type": "function"
-        },
-        "scrGetRoomY": {
-            "type": "function"
-        },
-        "scrGetScore": {
-            "type": "function"
-        },
-        "scrHoldItem": {
-            "type": "function"
-        },
-        "scrLoadLevel": {
-            "type": "function"
-        },
-        "scrResetHighscores": {
-            "type": "function"
-        },
-        "scrShake": {
-            "type": "function"
-        },
-        "scrShopkeeperAnger": {
-            "type": "function"
-        },
-        "scrTestLevel": {
-            "type": "function"
-        },
-        "scrUpdateHighscores": {
-            "type": "function"
-        },
-        "scrollStart": {
-            "type": ""
-        },
-        "scrolling": {
-            "type": ""
-        },
-        "setCollisionBounds": {
-            "type": "function"
-        },
-        "shakeCounter": {
-            "type": ""
-        },
-        "shakeToggle": {
-            "type": ""
-        },
-        "shopDesc": {
-            "type": ""
-        },
-        "shopWall": {
-            "type": ""
-        },
-        "sight": {
-            "type": ""
-        },
-        "sightCounter": {
-            "type": ""
-        },
-        "sin": {
-            "type": "function"
-        },
-        "skull": {
-            "type": ""
-        },
-        "spears": {
-            "type": ""
-        },
-        "spider": {
-            "type": ""
-        },
-        "sprite_height": {
-            "type": ""
-        },
-        "sprite_index": {
-            "type": ""
-        },
-        "sprite_width": {
-            "type": ""
-        },
-        "startMusic": {
-            "type": "function"
-        },
-        "state": {
-            "type": ""
-        },
-        "sticky": {
-            "type": ""
-        },
-        "stickyXDiff": {
-            "type": ""
-        },
-        "stickyYDiff": {
-            "type": ""
-        },
-        "stopAllMusic": {
-            "type": "function"
-        },
-        "str": {
-            "type": ""
-        },
-        "str2": {
-            "type": ""
-        },
-        "strLen": {
-            "type": ""
-        },
-        "string": {
-            "type": "function"
-        },
-        "string_char_at": {
-            "type": "function"
-        },
-        "string_delete": {
-            "type": "function"
-        },
-        "string_length": {
-            "type": "function"
-        },
-        "string_upper": {
-            "type": "function"
-        },
-        "stuck": {
-            "type": ""
-        },
-        "stunTime": {
-            "type": ""
-        },
-        "stunTimer": {
-            "type": ""
-        },
-        "stunned": {
-            "type": ""
-        },
-        "swimming": {
-            "type": ""
-        },
-        "tKills": {
-            "type": ""
-        },
-        "tMoney": {
-            "type": ""
-        },
-        "tSaves": {
-            "type": ""
-        },
-        "tTime": {
-            "type": ""
-        },
-        "talk": {
-            "type": ""
-        },
-        "thickness": {
-            "type": ""
-        },
-        "tile": {
-            "type": ""
-        },
-        "tile_delete": {
-            "type": "function"
-        },
-        "tile_layer_find": {
-            "type": "function"
-        },
-        "timer": {
-            "type": ""
-        },
-        "trap": {
-            "type": ""
-        },
-        "treasure": {
-            "type": ""
-        },
-        "trigger": {
-            "type": ""
-        },
-        "type": {
-            "type": ""
-        },
-        "upHeld": {
-            "type": ""
-        },
-        "value": {
-            "type": ""
-        },
-        "view_enabled": {
-            "type": ""
-        },
-        "view_hview": {
-            "type": "array"
-        },
-        "view_vborder": {
-            "type": "array"
-        },
-        "view_wview": {
-            "type": "array"
-        },
-        "view_xview": {
-            "type": "array"
-        },
-        "view_yview": {
-            "type": "array"
-        },
-        "vineCounter": {
-            "type": ""
-        },
-        "viscidTop": {
-            "type": ""
-        },
-        "visible": {
-            "type": ""
-        },
-        "vk_backspace": {
-            "type": ""
-        },
-        "vk_delete": {
-            "type": ""
-        },
-        "vk_enter": {
-            "type": ""
-        },
-        "vk_escape": {
-            "type": ""
-        },
-        "whipped": {
-            "type": ""
-        },
-        "window_set_cursor": {
-            "type": "function"
-        },
-        "x": {
-            "type": ""
-        },
-        "xAcc": {
-            "type": ""
-        },
-        "xAct": {
-            "type": ""
-        },
-        "xDiff": {
-            "type": ""
-        },
-        "xOff": {
-            "type": ""
-        },
-        "xVel": {
-            "type": ""
-        },
-        "xa": {
-            "type": ""
-        },
-        "xv": {
-            "type": ""
-        },
-        "y": {
-            "type": ""
-        },
-        "yAcc": {
-            "type": ""
-        },
-        "yDelta": {
-            "type": ""
-        },
-        "yOff": {
-            "type": ""
-        },
-        "yVel": {
-            "type": ""
-        },
-        "yVelLimit": {
-            "type": ""
-        },
-        "ya": {
-            "type": ""
-        },
-        "yv": {
-            "type": ""
-        }
-    },
-    "oOlmec": {
-        "CREATE": {
-            "type": ""
-        },
-        "DROWNING": {
-            "type": ""
-        },
-        "PREPARE": {
             "type": ""
         },
         "SLAM": {
@@ -1963,27 +2623,206 @@
         "START2": {
             "type": ""
         },
+        "WALK": {
+            "type": ""
+        },
+        "acing": {
+            "type": ""
+        },
+        "active": {
+            "type": ""
+        },
+        "alarm": {
+            "type": ""
+        },
+        "bounceCounter": {
+            "type": ""
+        },
+        "c": {
+            "type": ""
+        },
         "carryPlayer": {
+            "type": ""
+        },
+        "counter": {
             "type": ""
         },
         "debris": {
             "type": ""
         },
+        "dist": {
+            "type": ""
+        },
+        "enemyKills": {
+            "type": ""
+        },
+        "err": {
+            "type": ""
+        },
+        "facing": {
+            "type": ""
+        },
+        "global": {
+            "type": ""
+        },
+        "hp": {
+            "type": ""
+        },
+        "i": {
+            "type": ""
+        },
+        "image_index": {
+            "type": ""
+        },
+        "image_speed": {
+            "type": ""
+        },
+        "invincible": {
+            "type": ""
+        },
+        "kills": {
+            "type": ""
+        },
+        "musBoss": {
+            "type": ""
+        },
+        "myGrav": {
+            "type": ""
+        },
+        "oCaveman": {
+            "type": ""
+        },
+        "oCavemanWorship": {
+            "type": ""
+        },
+        "oFinalBoss": {
+            "type": ""
+        },
+        "oHawkman": {
+            "type": ""
+        },
+        "oHawkmanWorship": {
+            "type": ""
+        },
+        "oLava": {
+            "type": ""
+        },
+        "oOlmec": {
+            "type": ""
+        },
+        "oOlmecDebris": {
+            "type": ""
+        },
+        "oOlmecSlam": {
+            "type": ""
+        },
+        "oPlayer1": {
+            "type": ""
+        },
+        "oPsychicCreate2": {
+            "type": ""
+        },
+        "oYellowBall": {
+            "type": ""
+        },
+        "obj": {
+            "type": ""
+        },
+        "olmecDead": {
+            "type": ""
+        },
+        "r": {
+            "type": ""
+        },
+        "sOlmec": {
+            "type": ""
+        },
+        "sOlmecStart2": {
+            "type": ""
+        },
+        "sOlmecStart3": {
+            "type": ""
+        },
+        "shopWall": {
+            "type": ""
+        },
         "slammed": {
+            "type": ""
+        },
+        "sndAlert": {
+            "type": ""
+        },
+        "sndBigJump": {
+            "type": ""
+        },
+        "sndFlame": {
+            "type": ""
+        },
+        "sndPsychic": {
+            "type": ""
+        },
+        "sndThump": {
+            "type": ""
+        },
+        "sprite_index": {
+            "type": ""
+        },
+        "status": {
             "type": ""
         },
         "toggle": {
             "type": ""
         },
         "view_hborder": {
-            "type": "array"
+            "type": ""
         },
         "view_object": {
-            "type": "array"
+            "type": ""
+        },
+        "view_vborder": {
+            "type": ""
+        },
+        "view_xview": {
+            "type": ""
+        },
+        "view_yview": {
+            "type": ""
+        },
+        "viscidTop": {
+            "type": ""
+        },
+        "x": {
+            "type": ""
+        },
+        "xVel": {
+            "type": ""
+        },
+        "y": {
+            "type": ""
+        },
+        "yDelta": {
+            "type": ""
+        },
+        "yVel": {
+            "type": ""
         }
     },
-    "oOlmecDebris": {},
-    "oOlmecSlam": {},
+    "oOlmecDebris": {
+        "oTemple": {
+            "type": ""
+        },
+        "sOlmecDebris2": {
+            "type": ""
+        },
+        "sOlmecDebris3": {
+            "type": ""
+        }
+    },
+    "oOlmecSlam": {
+        "sndSlam": {
+            "type": ""
+        }
+    },
     "oPDummy": {
         "END": {
             "type": ""
@@ -1996,29 +2835,173 @@
         },
         "STOPPED": {
             "type": ""
+        },
+        "oBigChest": {
+            "type": ""
+        },
+        "oBigTreasure": {
+            "type": ""
+        },
+        "oDamselKiss": {
+            "type": ""
+        },
+        "oEndPlat": {
+            "type": ""
+        },
+        "oLavaSpray": {
+            "type": ""
+        },
+        "oTunnelMan": {
+            "type": ""
+        },
+        "person": {
+            "type": ""
+        },
+        "sArrowRight": {
+            "type": ""
+        },
+        "sBigChestOpen": {
+            "type": ""
+        },
+        "sFishBone": {
+            "type": ""
+        },
+        "sFlare": {
+            "type": ""
+        },
+        "sJar": {
+            "type": ""
+        },
+        "sJetpackBack": {
+            "type": ""
+        },
+        "sJetpackRight": {
+            "type": ""
+        },
+        "sMattockHead": {
+            "type": ""
+        },
+        "sRock": {
+            "type": ""
+        },
+        "sSkull": {
+            "type": ""
+        },
+        "sTeleporter": {
+            "type": ""
+        },
+        "sndClick": {
+            "type": ""
+        },
+        "talk": {
+            "type": ""
         }
     },
     "oPDummy2": {
         "GETUP": {
+            "type": ""
+        },
+        "musVictory": {
+            "type": ""
+        },
+        "oDesert2": {
+            "type": ""
+        },
+        "oEnd3": {
+            "type": ""
+        },
+        "oMenu": {
+            "type": ""
+        },
+        "poof": {
+            "type": ""
+        },
+        "sJumpLeft": {
+            "type": ""
+        },
+        "sndTFall": {
             "type": ""
         }
     },
     "oPDummy3": {
         "ROPEDROP": {
             "type": ""
+        },
+        "TRANSITION": {
+            "type": ""
+        },
+        "adeOut": {
+            "type": ""
+        },
+        "oIntro": {
+            "type": ""
+        },
+        "sClimbUp3": {
+            "type": ""
+        },
+        "sDuckLeft": {
+            "type": ""
+        },
+        "sndClimb1": {
+            "type": ""
+        },
+        "sndClimb2": {
+            "type": ""
         }
     },
-    "oPDummy4": {},
-    "oPDummy5": {},
+    "oPDummy4": {
+        "player": {
+            "type": ""
+        },
+        "sFallLeft": {
+            "type": ""
+        }
+    },
+    "oPDummy5": {
+        "oTitle": {
+            "type": ""
+        },
+        "sClimbUp2": {
+            "type": ""
+        },
+        "sDamselClimb2": {
+            "type": ""
+        },
+        "sTunnelClimb2": {
+            "type": ""
+        }
+    },
     "oPDummy6": {},
-    "oPageDown": {},
-    "oPageUp": {},
+    "oPageDown": {
+        "numPages": {
+            "type": ""
+        }
+    },
+    "oPageUp": {
+        "oPageDown": {
+            "type": ""
+        },
+        "oPageUp": {
+            "type": ""
+        }
+    },
     "oPalmTree": {},
     "oPalmTreeDark": {},
-    "oPalmTreeScroll": {},
+    "oPalmTreeScroll": {
+        "sPalmTreeDark": {
+            "type": ""
+        }
+    },
     "oParaPickup": {},
     "oParaUsed": {},
-    "oParachute": {},
+    "oParachute": {
+        "sParaOpen": {
+            "type": ""
+        },
+        "sParachute": {
+            "type": ""
+        }
+    },
     "oParachuteTile": {},
     "oPaste": {},
     "oPiranha": {
@@ -2027,10 +3010,32 @@
         },
         "canBite": {
             "type": ""
+        },
+        "oBubble": {
+            "type": ""
+        },
+        "oYeti": {
+            "type": ""
+        },
+        "piranhas": {
+            "type": ""
+        },
+        "sPiranhaLeft": {
+            "type": ""
+        },
+        "sPiranhaRight": {
+            "type": ""
         }
     },
     "oPiranhaTile": {},
-    "oPistol": {},
+    "oPistol": {
+        "sPistolLeft": {
+            "type": ""
+        },
+        "sPistolRight": {
+            "type": ""
+        }
+    },
     "oPistolTile": {},
     "oPlatform": {},
     "oPlayer1": {
@@ -2055,6 +3060,9 @@
         "IN_AIR": {
             "type": ""
         },
+        "JUMPING": {
+            "type": ""
+        },
         "LOOKING_UP": {
             "type": ""
         },
@@ -2064,19 +3072,28 @@
         "RUNNING": {
             "type": ""
         },
-        "SS_StopSound": {
-            "type": "function"
-        },
         "STANDING": {
             "type": ""
         },
-        "approximatelyZero": {
-            "type": "function"
-        },
-        "bet": {
+        "arrows": {
             "type": ""
         },
-        "blink": {
+        "attackPressed": {
+            "type": ""
+        },
+        "bigemeralds": {
+            "type": ""
+        },
+        "bigrubies": {
+            "type": ""
+        },
+        "bigsapphires": {
+            "type": ""
+        },
+        "blackMarket": {
+            "type": ""
+        },
+        "blinkToggle": {
             "type": ""
         },
         "bombArrowCounter": {
@@ -2085,59 +3102,14 @@
         "bowArmed": {
             "type": ""
         },
-        "bowStrength": {
-            "type": ""
-        },
         "canRun": {
             "type": ""
         },
         "cantJump": {
             "type": ""
         },
-        "characterSprite": {
-            "type": "function"
-        },
-        "characterStepEvent": {
-            "type": "function"
-        },
-        "checkAttackReleased": {
-            "type": "function"
-        },
-        "checkItemPressed": {
-            "type": "function"
-        },
-        "checkJump": {
-            "type": "function"
-        },
-        "checkJumpPressed": {
-            "type": "function"
-        },
-        "checkJumpReleased": {
-            "type": "function"
-        },
-        "checkLeft": {
-            "type": "function"
-        },
-        "checkLeftPressed": {
-            "type": "function"
-        },
-        "checkLeftReleased": {
-            "type": "function"
-        },
-        "checkPayPressed": {
-            "type": "function"
-        },
-        "checkRight": {
-            "type": "function"
-        },
-        "checkRightPressed": {
-            "type": "function"
-        },
-        "checkRightReleased": {
-            "type": "function"
-        },
-        "checkRun": {
-            "type": "function"
+        "cemetary": {
+            "type": ""
         },
         "chest": {
             "type": ""
@@ -2146,6 +3118,9 @@
             "type": ""
         },
         "climbAnimSpeed": {
+            "type": ""
+        },
+        "climbSndToggle": {
             "type": ""
         },
         "coin": {
@@ -2178,11 +3153,11 @@
         "colWaterTop": {
             "type": ""
         },
-        "collect": {
+        "collisionbottomcheck": {
             "type": ""
         },
-        "collision_line": {
-            "type": "function"
+        "customLevel": {
+            "type": ""
         },
         "deadCounter": {
             "type": ""
@@ -2193,10 +3168,28 @@
         "departLadderYVel": {
             "type": ""
         },
+        "diamonds": {
+            "type": ""
+        },
+        "diceGamesPlayed": {
+            "type": ""
+        },
         "disp": {
             "type": ""
         },
         "distToNearestLightSource": {
+            "type": ""
+        },
+        "downToRun": {
+            "type": ""
+        },
+        "drawHUD": {
+            "type": ""
+        },
+        "drawStatus": {
+            "type": ""
+        },
+        "emeralds": {
             "type": ""
         },
         "excess": {
@@ -2206,6 +3199,9 @@
             "type": ""
         },
         "fallTimer": {
+            "type": ""
+        },
+        "firingMax": {
             "type": ""
         },
         "firingPistolMax": {
@@ -2229,6 +3225,21 @@
         "frictionRunningX": {
             "type": ""
         },
+        "gamepad": {
+            "type": ""
+        },
+        "genBlackMarket": {
+            "type": ""
+        },
+        "ghostExists": {
+            "type": ""
+        },
+        "goldbar": {
+            "type": ""
+        },
+        "goldbars": {
+            "type": ""
+        },
         "gravNorm": {
             "type": ""
         },
@@ -2241,7 +3252,31 @@
         "hangCountMax": {
             "type": ""
         },
-        "hawkThrow": {
+        "hasAnkh": {
+            "type": ""
+        },
+        "hasCape": {
+            "type": ""
+        },
+        "hasGloves": {
+            "type": ""
+        },
+        "hasJetpack": {
+            "type": ""
+        },
+        "hasJordans": {
+            "type": ""
+        },
+        "hasMitt": {
+            "type": ""
+        },
+        "hasParachute": {
+            "type": ""
+        },
+        "hasSpringShoes": {
+            "type": ""
+        },
+        "hasStickyBombs": {
             "type": ""
         },
         "holdArrow": {
@@ -2253,26 +3288,17 @@
         "holdItemType": {
             "type": ""
         },
+        "idolsConverted": {
+            "type": ""
+        },
         "inGame": {
             "type": ""
         },
         "initialJumpAcc": {
             "type": ""
         },
-        "isCollisionMoveableSolidLeft": {
-            "type": "function"
-        },
-        "isCollisionMoveableSolidRight": {
-            "type": "function"
-        },
-        "isCollisionPlatform": {
-            "type": "function"
-        },
-        "isCollisionPlatformBottom": {
-            "type": "function"
-        },
-        "isCollisionWaterTop": {
-            "type": "function"
+        "itemsBought": {
+            "type": ""
         },
         "jetpackFuel": {
             "type": ""
@@ -2370,13 +3396,25 @@
         "kUp": {
             "type": ""
         },
+        "kissesBought": {
+            "type": ""
+        },
         "ladder": {
             "type": ""
         },
         "ladderTimer": {
             "type": ""
         },
+        "leadsTo": {
+            "type": ""
+        },
+        "levelDeaths": {
+            "type": ""
+        },
         "levelSkip": {
+            "type": ""
+        },
+        "life": {
             "type": ""
         },
         "lookOff": {
@@ -2391,22 +3429,295 @@
         "maxSlope": {
             "type": ""
         },
-        "money": {
+        "mini1": {
+            "type": ""
+        },
+        "mini2": {
+            "type": ""
+        },
+        "mini3": {
+            "type": ""
+        },
+        "miscDeaths": {
+            "type": ""
+        },
+        "moaiX": {
+            "type": ""
+        },
+        "moaiY": {
+            "type": ""
+        },
+        "moneyCount": {
             "type": ""
         },
         "moveToggle": {
             "type": ""
         },
-        "pExit": {
+        "new": {
             "type": ""
         },
-        "platformCharacterIs": {
-            "type": "function"
+        "newObj": {
+            "type": ""
+        },
+        "nextCustomLevel": {
+            "type": ""
+        },
+        "nuggets": {
+            "type": ""
+        },
+        "oArrowTrapLeftLit": {
+            "type": ""
+        },
+        "oArrowTrapRightLit": {
+            "type": ""
+        },
+        "oBall": {
+            "type": ""
+        },
+        "oBombBag": {
+            "type": ""
+        },
+        "oBombBox": {
+            "type": ""
+        },
+        "oBoulder": {
+            "type": ""
+        },
+        "oBow": {
+            "type": ""
+        },
+        "oCape": {
+            "type": ""
+        },
+        "oCeilingTrap": {
+            "type": ""
+        },
+        "oChain": {
+            "type": ""
+        },
+        "oChest": {
+            "type": ""
+        },
+        "oCompass": {
+            "type": ""
+        },
+        "oDoor": {
+            "type": ""
+        },
+        "oEmerald": {
+            "type": ""
+        },
+        "oEntrance": {
+            "type": ""
+        },
+        "oFlare": {
+            "type": ""
+        },
+        "oFlareCrate": {
+            "type": ""
+        },
+        "oGame": {
+            "type": ""
+        },
+        "oGhost": {
+            "type": ""
+        },
+        "oGiantTikiHead": {
+            "type": ""
+        },
+        "oGloves": {
+            "type": ""
+        },
+        "oItemsGet": {
+            "type": ""
+        },
+        "oJetpack": {
+            "type": ""
+        },
+        "oLadder": {
+            "type": ""
+        },
+        "oLadderTop": {
+            "type": ""
+        },
+        "oLamp": {
+            "type": ""
+        },
+        "oLampItem": {
+            "type": ""
+        },
+        "oLaserExplode": {
+            "type": ""
+        },
+        "oMachete": {
+            "type": ""
+        },
+        "oMachetePre": {
+            "type": ""
+        },
+        "oMattockHit": {
+            "type": ""
+        },
+        "oMattockPre": {
+            "type": ""
+        },
+        "oMitt": {
+            "type": ""
+        },
+        "oMoaiInside": {
+            "type": ""
+        },
+        "oMonkey": {
+            "type": ""
+        },
+        "oPDummy5": {
+            "type": ""
+        },
+        "oParaPickup": {
+            "type": ""
+        },
+        "oParaUsed": {
+            "type": ""
+        },
+        "oParachute": {
+            "type": ""
+        },
+        "oPistol": {
+            "type": ""
+        },
+        "oRock": {
+            "type": ""
+        },
+        "oRuby": {
+            "type": ""
+        },
+        "oSapphire": {
+            "type": ""
+        },
+        "oShotgunBlastLeft": {
+            "type": ""
+        },
+        "oShotgunBlastRight": {
+            "type": ""
+        },
+        "oSlash": {
+            "type": ""
+        },
+        "oSmashTrap": {
+            "type": ""
+        },
+        "oSmashTrapLit": {
+            "type": ""
+        },
+        "oSpearTrapLit": {
+            "type": ""
+        },
+        "oSpectacles": {
+            "type": ""
+        },
+        "oSpringShoes": {
+            "type": ""
+        },
+        "oSpringTrap": {
+            "type": ""
+        },
+        "oStarsRoom": {
+            "type": ""
+        },
+        "oSunRoom": {
+            "type": ""
+        },
+        "oTeleporter": {
+            "type": ""
+        },
+        "oTikiTorch": {
+            "type": ""
+        },
+        "oTrapBlock": {
+            "type": ""
+        },
+        "oTree": {
+            "type": ""
+        },
+        "oWebCannon": {
+            "type": ""
+        },
+        "oWhip": {
+            "type": ""
+        },
+        "oWhipPre": {
+            "type": ""
+        },
+        "oXChange": {
+            "type": ""
+        },
+        "oXChange2": {
+            "type": ""
+        },
+        "oXEnd": {
+            "type": ""
+        },
+        "oXGold": {
+            "type": ""
+        },
+        "oXMarket": {
+            "type": ""
+        },
+        "oXMoon": {
+            "type": ""
+        },
+        "oXScores": {
+            "type": ""
+        },
+        "oXShortcut13": {
+            "type": ""
+        },
+        "oXShortcut5": {
+            "type": ""
+        },
+        "oXShortcut9": {
+            "type": ""
+        },
+        "oXStars": {
+            "type": ""
+        },
+        "oXStart": {
+            "type": ""
+        },
+        "oXSun": {
+            "type": ""
+        },
+        "oXTitle": {
+            "type": ""
+        },
+        "oXTutorial": {
+            "type": ""
+        },
+        "open": {
+            "type": ""
+        },
+        "pExit": {
+            "type": ""
         },
         "point": {
             "type": ""
         },
+        "points": {
+            "type": ""
+        },
+        "prevCustomLevel": {
+            "type": ""
+        },
         "pushTimer": {
+            "type": ""
+        },
+        "rHighscores": {
+            "type": ""
+        },
+        "rLevelEditor": {
+            "type": ""
+        },
+        "rLoadLevel": {
             "type": ""
         },
         "ratio": {
@@ -2418,10 +3729,16 @@
         "redToggle": {
             "type": ""
         },
-        "round": {
-            "type": "function"
+        "room_height": {
+            "type": ""
+        },
+        "room_width": {
+            "type": ""
         },
         "rr": {
+            "type": ""
+        },
+        "rubies": {
             "type": ""
         },
         "runAcc": {
@@ -2436,16 +3753,106 @@
         "runKey": {
             "type": ""
         },
-        "scrFireBow": {
-            "type": "function"
+        "sAttackLeft": {
+            "type": ""
         },
-        "scrStealItem": {
-            "type": "function"
+        "sBomb": {
+            "type": ""
         },
-        "scrUseItem": {
-            "type": "function"
+        "sBombsGet": {
+            "type": ""
         },
-        "shopThrow": {
+        "sChest": {
+            "type": ""
+        },
+        "sChestOpen": {
+            "type": ""
+        },
+        "sCrystalSkull": {
+            "type": ""
+        },
+        "sDamselAttackL": {
+            "type": ""
+        },
+        "sDamselDtHL": {
+            "type": ""
+        },
+        "sDamselExit": {
+            "type": ""
+        },
+        "sDamselHoldL": {
+            "type": ""
+        },
+        "sDamselWhoaL": {
+            "type": ""
+        },
+        "sDuckToHangL": {
+            "type": ""
+        },
+        "sRopeEnd": {
+            "type": ""
+        },
+        "sRopeGet": {
+            "type": ""
+        },
+        "sSpearsLeft": {
+            "type": ""
+        },
+        "sTunnelAttackL": {
+            "type": ""
+        },
+        "sTunnelDieL": {
+            "type": ""
+        },
+        "sTunnelDieLL": {
+            "type": ""
+        },
+        "sTunnelDieLR": {
+            "type": ""
+        },
+        "sTunnelDtHL": {
+            "type": ""
+        },
+        "sTunnelExit": {
+            "type": ""
+        },
+        "sTunnelFallL": {
+            "type": ""
+        },
+        "sTunnelLBounce": {
+            "type": ""
+        },
+        "sTunnelLeft": {
+            "type": ""
+        },
+        "sTunnelStunL": {
+            "type": ""
+        },
+        "sTunnelWhoaL": {
+            "type": ""
+        },
+        "sWhipLeft": {
+            "type": ""
+        },
+        "sWhipPreL": {
+            "type": ""
+        },
+        "sWhipPreR": {
+            "type": ""
+        },
+        "sWhipRight": {
+            "type": ""
+        },
+        "sWhoaLeft": {
+            "type": ""
+        },
+        "sapphires": {
+            "type": ""
+        },
+        "scoresStart": {
+            "type": ""
+        },
+        "skulls": {
             "type": ""
         },
         "slopeChangeInY": {
@@ -2454,14 +3861,35 @@
         "slopeYPrev": {
             "type": ""
         },
+        "sndBowPull": {
+            "type": ""
+        },
+        "sndGem": {
+            "type": ""
+        },
+        "sndJump": {
+            "type": ""
+        },
+        "sndPickup": {
+            "type": ""
+        },
+        "sndTeleport": {
+            "type": ""
+        },
+        "sndThud": {
+            "type": ""
+        },
+        "sndTrap": {
+            "type": ""
+        },
+        "sndWhip": {
+            "type": ""
+        },
         "source": {
             "type": ""
         },
-        "sqr": {
-            "type": "function"
-        },
-        "sqrt": {
-            "type": "function"
+        "startPressed": {
+            "type": ""
         },
         "statePrev": {
             "type": ""
@@ -2469,7 +3897,25 @@
         "statePrevPrev": {
             "type": ""
         },
+        "style": {
+            "type": ""
+        },
         "t": {
+            "type": ""
+        },
+        "testLevel": {
+            "type": ""
+        },
+        "timer": {
+            "type": ""
+        },
+        "totalChests": {
+            "type": ""
+        },
+        "totalCrates": {
+            "type": ""
+        },
+        "trap": {
             "type": ""
         },
         "upYPrev": {
@@ -2479,9 +3925,6 @@
             "type": ""
         },
         "walkSndToggle": {
-            "type": ""
-        },
-        "wallHurt": {
             "type": ""
         },
         "whipping": {
@@ -2547,6 +3990,9 @@
         "xVelLimit": {
             "type": ""
         },
+        "xmoney": {
+            "type": ""
+        },
         "yAccLimit": {
             "type": ""
         },
@@ -2561,32 +4007,68 @@
         },
         "yVelInteger": {
             "type": ""
-        },
-        "yetiThrow": {
-            "type": ""
         }
     },
     "oPlayerSil": {},
     "oPoof": {},
-    "oPsychicCreate": {},
+    "oPsychicCreate": {
+        "oAlienBoss": {
+            "type": ""
+        }
+    },
     "oPsychicCreate2": {},
     "oPsychicCreateP": {},
     "oPsychicWave": {},
     "oPsychicWaveP": {},
     "oPushBlock": {
-        "scrMoveableSolidRecurseDrop": {
-            "type": "function"
+        "cityOfGold": {
+            "type": ""
+        },
+        "gold": {
+            "type": ""
+        },
+        "oGoldChunk": {
+            "type": ""
+        },
+        "oGoldNugget": {
+            "type": ""
+        },
+        "sGoldBlock": {
+            "type": ""
+        },
+        "sRubbleLush": {
+            "type": ""
+        },
+        "sRubbleLushSmall": {
+            "type": ""
         }
     },
     "oQuitSign": {},
-    "oRadioBox": {},
+    "oRadioBox": {
+        "oRadioBox": {
+            "type": ""
+        },
+        "sBoxMarked": {
+            "type": ""
+        },
+        "screenScale": {
+            "type": ""
+        }
+    },
     "oResetSign": {},
     "oRim": {},
     "oRimDeflect": {},
     "oRock": {},
     "oRockTile": {},
     "oRoom": {},
-    "oRope": {},
+    "oRope": {
+        "burnTimer": {
+            "type": ""
+        },
+        "oRopeBurn": {
+            "type": ""
+        }
+    },
     "oRopeBag": {},
     "oRopeBurn": {},
     "oRopePile": {},
@@ -2595,41 +4077,100 @@
         "fallCount": {
             "type": ""
         },
+        "falling": {
+            "type": ""
+        },
+        "oRope": {
+            "type": ""
+        },
+        "oRopeTop": {
+            "type": ""
+        },
         "px": {
+            "type": ""
+        },
+        "py": {
+            "type": ""
+        },
+        "safe": {
             "type": ""
         }
     },
     "oRopeTop": {},
     "oRubble": {},
-    "oRubbleDark": {},
+    "oRubbleDark": {
+        "oBlock": {
+            "type": ""
+        },
+        "oBrick": {
+            "type": ""
+        }
+    },
     "oRubbleDarkSmall": {},
-    "oRubblePiece": {},
+    "oRubblePiece": {
+        "sLeafStill": {
+            "type": ""
+        },
+        "view_enabled": {
+            "type": ""
+        }
+    },
     "oRubbleSmall": {},
     "oRuby": {},
     "oRubyBig": {},
     "oRubyBigTile": {},
     "oSacAltarLeft": {
+        "darkLevel": {
+            "type": ""
+        },
         "defile": {
             "type": ""
         },
-        "float": {
+        "kaliPunish": {
+            "type": ""
+        },
+        "linkVal": {
+            "type": ""
+        },
+        "oKaliHead": {
             "type": ""
         }
     },
     "oSacAltarRight": {},
     "oSapphire": {},
-    "oSapphireBig": {},
+    "oSapphireBig": {
+        "oDiamond": {
+            "type": ""
+        }
+    },
     "oSapphireBigTile": {},
-    "oScarab": {},
-    "oSceptre": {},
+    "oScarab": {
+        "collect": {
+            "type": ""
+        },
+        "collectCounter": {
+            "type": ""
+        },
+        "oFlareSpark": {
+            "type": ""
+        },
+        "scarabs": {
+            "type": ""
+        },
+        "sndCoin": {
+            "type": ""
+        }
+    },
+    "oSceptre": {
+        "sSceptreLeft": {
+            "type": ""
+        },
+        "sSceptreRight": {
+            "type": ""
+        }
+    },
     "oScoresSign": {},
     "oScreen": {
-        "SS_Unload": {
-            "type": "function"
-        },
-        "action_fullscreen": {
-            "type": "function"
-        },
         "bm_dest_color": {
             "type": ""
         },
@@ -2645,14 +4186,11 @@
         "bm_zero": {
             "type": ""
         },
-        "darkSurf": {
+        "customLevelAuthor": {
             "type": ""
         },
-        "display_get_height": {
-            "type": "function"
-        },
-        "display_get_width": {
-            "type": "function"
+        "darkSurf": {
+            "type": ""
         },
         "displayheight": {
             "type": ""
@@ -2663,37 +4201,13 @@
         "distToLamp": {
             "type": ""
         },
-        "draw_circle": {
-            "type": "function"
-        },
-        "draw_clear": {
-            "type": "function"
-        },
-        "draw_set_blend_mode": {
-            "type": "function"
-        },
-        "draw_set_blend_mode_ext": {
-            "type": "function"
-        },
-        "draw_surface": {
-            "type": "function"
-        },
-        "draw_surface_stretched": {
-            "type": "function"
-        },
-        "enabled": {
+        "h": {
             "type": ""
         },
-        "instance_activate_all": {
-            "type": "function"
-        },
-        "instance_deactivate_all": {
-            "type": "function"
-        },
-        "make_color_rgb": {
-            "type": "function"
-        },
         "noone": {
+            "type": ""
+        },
+        "oScarab": {
             "type": ""
         },
         "pSurf": {
@@ -2702,29 +4216,53 @@
         "paused": {
             "type": ""
         },
-        "room_set_view": {
-            "type": "function"
+        "rEnd": {
+            "type": ""
         },
-        "scrDrawHUD": {
-            "type": "function"
+        "rEndCustom": {
+            "type": ""
         },
-        "scrInit": {
-            "type": "function"
+        "rIntro": {
+            "type": ""
         },
-        "scrReadStats": {
-            "type": "function"
+        "rMoon": {
+            "type": ""
         },
-        "scrWriteStats": {
-            "type": "function"
+        "rStars": {
+            "type": ""
+        },
+        "rSun": {
+            "type": ""
+        },
+        "rTransition1": {
+            "type": ""
+        },
+        "rTransition1x": {
+            "type": ""
+        },
+        "rTransition2": {
+            "type": ""
+        },
+        "rTransition2x": {
+            "type": ""
+        },
+        "rTransition3": {
+            "type": ""
+        },
+        "rTransition3x": {
+            "type": ""
+        },
+        "rTransition4": {
+            "type": ""
+        },
+        "rTutorial": {
+            "type": ""
+        },
+        "screen": {
+            "type": ""
         },
         "screen_h": {
             "type": ""
-        },
-        "screen_redraw": {
-            "type": "function"
-        },
-        "screen_refresh": {
-            "type": "function"
         },
         "screen_scale": {
             "type": ""
@@ -2738,29 +4276,11 @@
         "screen_y": {
             "type": ""
         },
-        "surface_create": {
-            "type": "function"
+        "softfullscreen": {
+            "type": ""
         },
-        "surface_exists": {
-            "type": "function"
-        },
-        "surface_free": {
-            "type": "function"
-        },
-        "surface_reset_target": {
-            "type": "function"
-        },
-        "surface_set_target": {
-            "type": "function"
-        },
-        "window_set_position": {
-            "type": "function"
-        },
-        "window_set_showborder": {
-            "type": "function"
-        },
-        "window_set_size": {
-            "type": "function"
+        "w": {
+            "type": ""
         }
     },
     "oShopkeeper": {
@@ -2776,10 +4296,76 @@
         "betValue": {
             "type": ""
         },
-        "scrGetName": {
-            "type": "function"
+        "diceGamesLost": {
+            "type": ""
         },
-        "style": {
+        "diceGamesWon": {
+            "type": ""
+        },
+        "diceRolled": {
+            "type": ""
+        },
+        "diceValue": {
+            "type": ""
+        },
+        "gamepadOn": {
+            "type": ""
+        },
+        "inDiceHouse": {
+            "type": ""
+        },
+        "item": {
+            "type": ""
+        },
+        "joyPayVal": {
+            "type": ""
+        },
+        "keyPayVal": {
+            "type": ""
+        },
+        "oBullet": {
+            "type": ""
+        },
+        "oDice": {
+            "type": ""
+        },
+        "sShopBounceL": {
+            "type": ""
+        },
+        "sShopDHeldL": {
+            "type": ""
+        },
+        "sShopDieL": {
+            "type": ""
+        },
+        "sShopDieLL": {
+            "type": ""
+        },
+        "sShopDieLR": {
+            "type": ""
+        },
+        "sShopFallL": {
+            "type": ""
+        },
+        "sShopHeldL": {
+            "type": ""
+        },
+        "sShopLeft": {
+            "type": ""
+        },
+        "sShopRunLeft": {
+            "type": ""
+        },
+        "sShopStunL": {
+            "type": ""
+        },
+        "sShopThrowL": {
+            "type": ""
+        },
+        "shopkeepers": {
+            "type": ""
+        },
+        "sndShotgun": {
             "type": ""
         },
         "throwCount": {
@@ -2792,41 +4378,244 @@
             "type": ""
         }
     },
-    "oShopkeeper2": {},
+    "oShopkeeper2": {
+        "deathTimer": {
+            "type": ""
+        },
+        "hasGun": {
+            "type": ""
+        }
+    },
     "oShopkeeperTile": {},
-    "oShotgun": {},
+    "oShotgun": {
+        "sShotgunLeft": {
+            "type": ""
+        },
+        "sShotgunRight": {
+            "type": ""
+        }
+    },
     "oShotgunBlastLeft": {},
     "oShotgunBlastRight": {},
     "oShotgunTile": {},
     "oShrub": {},
     "oShrubDark": {},
-    "oShrubScroll": {},
+    "oShrubScroll": {
+        "sShrubDark": {
+            "type": ""
+        },
+        "scroll": {
+            "type": ""
+        }
+    },
     "oSign": {},
-    "oSkeleton": {},
+    "oSkeleton": {
+        "sSkeletonLeft": {
+            "type": ""
+        },
+        "sSkeletonWalkLeft": {
+            "type": ""
+        },
+        "skeletons": {
+            "type": ""
+        }
+    },
     "oSkeletonTile": {},
     "oSkull": {},
-    "oSlash": {},
-    "oSlider1": {},
-    "oSlider2": {},
+    "oSlash": {
+        "sSlashLeft": {
+            "type": ""
+        },
+        "sSlashRight": {
+            "type": ""
+        }
+    },
+    "oSlider1": {
+        "focus": {
+            "type": ""
+        },
+        "mb_left": {
+            "type": ""
+        },
+        "mouse_x": {
+            "type": ""
+        },
+        "musCave": {
+            "type": ""
+        },
+        "musicVol": {
+            "type": ""
+        }
+    },
+    "oSlider2": {
+        "soundVol": {
+            "type": ""
+        }
+    },
     "oSliderBG": {},
     "oSmallCollect": {},
     "oSmashTrap": {},
-    "oSmashTrapLit": {},
+    "oSmashTrapLit": {
+        "ATTACK": {
+            "type": ""
+        },
+        "DOWN": {
+            "type": ""
+        },
+        "UP": {
+            "type": ""
+        },
+        "cleanDeath": {
+            "type": ""
+        },
+        "cleanSolids": {
+            "type": ""
+        },
+        "colBot": {
+            "type": ""
+        },
+        "colLeft": {
+            "type": ""
+        },
+        "colRight": {
+            "type": ""
+        },
+        "colTop": {
+            "type": ""
+        },
+        "dir": {
+            "type": ""
+        },
+        "hit": {
+            "type": ""
+        },
+        "oCharacter": {
+            "type": ""
+        },
+        "oRubble": {
+            "type": ""
+        },
+        "oRubbleSmall": {
+            "type": ""
+        },
+        "oTombLord": {
+            "type": ""
+        },
+        "rubble": {
+            "type": ""
+        },
+        "sRubbleTan": {
+            "type": ""
+        },
+        "sRubbleTanSmall": {
+            "type": ""
+        },
+        "view_hview": {
+            "type": ""
+        },
+        "view_wview": {
+            "type": ""
+        },
+        "xAcc": {
+            "type": ""
+        },
+        "xa": {
+            "type": ""
+        },
+        "xv": {
+            "type": ""
+        },
+        "yAcc": {
+            "type": ""
+        },
+        "ya": {
+            "type": ""
+        },
+        "yv": {
+            "type": ""
+        }
+    },
     "oSmashTrapTile": {},
     "oSmokePuff": {},
-    "oSnake": {},
+    "oSnake": {
+        "sSnakeWalkL": {
+            "type": ""
+        },
+        "snakes": {
+            "type": ""
+        }
+    },
     "oSnakeTile": {},
-    "oSolid": {},
+    "oSolid": {
+        "oGrave": {
+            "type": ""
+        },
+        "oLampRed": {
+            "type": ""
+        },
+        "oLampRedItem": {
+            "type": ""
+        }
+    },
     "oSpearTrapBottom": {},
     "oSpearTrapLit": {},
     "oSpearTrapTileBot": {},
     "oSpearTrapTileTop": {},
-    "oSpearTrapTop": {},
-    "oSpearsLeft": {},
+    "oSpearTrapTop": {
+        "checkWater": {
+            "type": ""
+        },
+        "firedMax": {
+            "type": ""
+        },
+        "oSpearsLeft": {
+            "type": ""
+        },
+        "prox": {
+            "type": ""
+        },
+        "range": {
+            "type": ""
+        },
+        "sSpearsRight": {
+            "type": ""
+        },
+        "spears": {
+            "type": ""
+        }
+    },
+    "oSpearsLeft": {
+        "oSpearTrapBottom": {
+            "type": ""
+        },
+        "oSpearTrapTop": {
+            "type": ""
+        }
+    },
     "oSpectacles": {},
     "oSpectaclesTile": {},
-    "oSpider": {},
-    "oSpiderHang": {},
+    "oSpider": {
+        "sSpider": {
+            "type": ""
+        },
+        "sSpiderDrowning": {
+            "type": ""
+        },
+        "sSpiderFlip": {
+            "type": ""
+        }
+    },
+    "oSpiderHang": {
+        "oSpider": {
+            "type": ""
+        },
+        "spider": {
+            "type": ""
+        },
+        "spiders": {
+            "type": ""
+        }
+    },
     "oSpiderTile": {},
     "oSpikeShoes": {},
     "oSpikeShoesTile": {},
@@ -2837,18 +4626,39 @@
     "oSpringTrap": {
         "SPRUNG": {
             "type": ""
+        },
+        "lying": {
+            "type": ""
+        },
+        "sSpringTrap": {
+            "type": ""
+        },
+        "sSpringTrapSprung": {
+            "type": ""
+        },
+        "sndBoing": {
+            "type": ""
         }
     },
     "oSpringTrapTile": {},
     "oSprite": {},
     "oStarsRoom": {
-        "kills": {
+        "oShopkeeper2": {
+            "type": ""
+        },
+        "sHeart": {
+            "type": ""
+        },
+        "sShopkeeperIcon": {
             "type": ""
         }
     },
     "oStartSign": {},
     "oSunRoom": {
-        "points": {
+        "oVampire": {
+            "type": ""
+        },
+        "sDamselIcon": {
             "type": ""
         }
     },
@@ -2863,34 +4673,180 @@
     "oTeleporter": {},
     "oTeleporterTile": {},
     "oTemp": {
-        "sndArrowTrap": {
+        "oEnemy": {
             "type": ""
         },
-        "sound_play": {
-            "type": "function"
+        "oItem": {
+            "type": ""
+        },
+        "oMoveableSolid": {
+            "type": ""
         }
     },
-    "oTemple": {},
+    "oTemple": {
+        "sGTemple": {
+            "type": ""
+        },
+        "sTempleGold": {
+            "type": ""
+        },
+        "sTempleGoldBig": {
+            "type": ""
+        }
+    },
     "oTempleFake": {},
-    "oTestButton": {},
-    "oThinIce": {},
-    "oThwompTrap": {},
+    "oTestButton": {
+        "oLevelEditor": {
+            "type": ""
+        },
+        "sTestButton": {
+            "type": ""
+        },
+        "sTestButtonPressed": {
+            "type": ""
+        }
+    },
+    "oThinIce": {
+        "sThinIce1": {
+            "type": ""
+        },
+        "sThinIce2": {
+            "type": ""
+        },
+        "sThinIce3": {
+            "type": ""
+        },
+        "sThinIce4": {
+            "type": ""
+        },
+        "sThinIce5": {
+            "type": ""
+        },
+        "sThinIce6": {
+            "type": ""
+        }
+    },
+    "oThwompTrap": {
+        "DROP": {
+            "type": ""
+        },
+        "RETURN": {
+            "type": ""
+        },
+        "WAIT": {
+            "type": ""
+        }
+    },
     "oTikiTorch": {},
     "oTitle": {
+        "darkness": {
+            "type": ""
+        },
         "needDark": {
+            "type": ""
+        },
+        "oHintHand": {
+            "type": ""
+        },
+        "oLadderOrange": {
+            "type": ""
+        },
+        "oLevel13Sign": {
+            "type": ""
+        },
+        "oLevel9Sign": {
+            "type": ""
+        },
+        "oMultiTrophy": {
+            "type": ""
+        },
+        "oPDummy4": {
+            "type": ""
+        },
+        "rCredits1": {
+            "type": ""
+        },
+        "tofu": {
             "type": ""
         }
     },
     "oTitleBG": {},
     "oTitleLogo": {},
-    "oTombLord": {},
+    "oTombLord": {
+        "TURN": {
+            "type": ""
+        },
+        "attackTimer": {
+            "type": ""
+        },
+        "blink": {
+            "type": ""
+        },
+        "canPickUp": {
+            "type": ""
+        },
+        "currLevel": {
+            "type": ""
+        },
+        "heavy": {
+            "type": ""
+        },
+        "image_alpha": {
+            "type": ""
+        },
+        "image_angle": {
+            "type": ""
+        },
+        "image_blend": {
+            "type": ""
+        },
+        "image_yscale": {
+            "type": ""
+        },
+        "oFly": {
+            "type": ""
+        },
+        "oSceptre": {
+            "type": ""
+        },
+        "sTombLordAttackL": {
+            "type": ""
+        },
+        "sTombLordAttackR": {
+            "type": ""
+        },
+        "sTombLordLeft": {
+            "type": ""
+        },
+        "sTombLordRight": {
+            "type": ""
+        },
+        "sTombLordTurnL": {
+            "type": ""
+        },
+        "sTombLordTurnR": {
+            "type": ""
+        },
+        "sTombLordWalkL": {
+            "type": ""
+        },
+        "sTombLordWalkR": {
+            "type": ""
+        },
+        "sndHurt": {
+            "type": ""
+        },
+        "tomblords": {
+            "type": ""
+        },
+        "whipped": {
+            "type": ""
+        }
+    },
     "oTombLordTile": {},
     "oTransition": {
-        "checkDownPressed": {
-            "type": "function"
-        },
-        "checkUpPressed": {
-            "type": "function"
+        "customLevelName": {
+            "type": ""
         },
         "debugCounter": {
             "type": ""
@@ -2913,7 +4869,115 @@
         "isLoot": {
             "type": ""
         },
+        "m2": {
+            "type": ""
+        },
+        "noDarkLevel": {
+            "type": ""
+        },
+        "oSprite": {
+            "type": ""
+        },
+        "probLake": {
+            "type": ""
+        },
+        "rLevel": {
+            "type": ""
+        },
+        "rLevel2": {
+            "type": ""
+        },
+        "rLevel3": {
+            "type": ""
+        },
+        "rOlmec": {
+            "type": ""
+        },
+        "s2": {
+            "type": ""
+        },
+        "sAlien": {
+            "type": ""
+        },
+        "sAlienBossDisp": {
+            "type": ""
+        },
+        "sCrystalSkullIco": {
+            "type": ""
+        },
+        "sDamselLeftIco": {
+            "type": ""
+        },
+        "sDeadFishLeftIco": {
+            "type": ""
+        },
+        "sDiamond": {
+            "type": ""
+        },
+        "sEmerald": {
+            "type": ""
+        },
+        "sEmeraldBig": {
+            "type": ""
+        },
+        "sGiantSpiderDisp": {
+            "type": ""
+        },
+        "sGoldBarDraw": {
+            "type": ""
+        },
+        "sGoldBarsDraw": {
+            "type": ""
+        },
+        "sGoldChunk": {
+            "type": ""
+        },
+        "sGoldIdolIco": {
+            "type": ""
+        },
+        "sGoldNugget": {
+            "type": ""
+        },
+        "sMegaMouth": {
+            "type": ""
+        },
+        "sPiranhaLeftIco": {
+            "type": ""
+        },
+        "sRuby": {
+            "type": ""
+        },
+        "sRubyBig": {
+            "type": ""
+        },
+        "sSapphire": {
+            "type": ""
+        },
+        "sSapphireBig": {
+            "type": ""
+        },
+        "sScarabDisp": {
+            "type": ""
+        },
+        "sShopLeftIco": {
+            "type": ""
+        },
+        "sSnakeLeft": {
+            "type": ""
+        },
+        "sStandLeftIco": {
+            "type": ""
+        },
+        "sTombLordDisp": {
+            "type": ""
+        },
+        "sYetiKingDisp": {
+            "type": ""
+        },
         "sprite": {
+            "type": ""
+        },
+        "xtime": {
             "type": ""
         }
     },
@@ -2924,11 +4988,25 @@
         },
         "STATIC": {
             "type": ""
+        },
+        "hasUdjatEye": {
+            "type": ""
         }
     },
-    "oTreasureSil": {},
+    "oTreasureSil": {
+        "rEnd3": {
+            "type": ""
+        }
+    },
     "oTree": {},
-    "oTreeBranch": {},
+    "oTreeBranch": {
+        "sTreeBranchDeadL": {
+            "type": ""
+        },
+        "sTreeBranchDeadR": {
+            "type": ""
+        }
+    },
     "oTreeBranchTile": {},
     "oTreeTile": {},
     "oTrophy": {},
@@ -2939,7 +5017,25 @@
         "downCounter": {
             "type": ""
         },
+        "downHeld": {
+            "type": ""
+        },
+        "sTunnelManRight": {
+            "type": ""
+        },
+        "tunnel1": {
+            "type": ""
+        },
+        "tunnel2": {
+            "type": ""
+        },
+        "tunnel3Max": {
+            "type": ""
+        },
         "upCounter": {
+            "type": ""
+        },
+        "upHeld": {
             "type": ""
         }
     },
@@ -2957,10 +5053,43 @@
         "alerted": {
             "type": ""
         },
+        "flying": {
+            "type": ""
+        },
+        "oLaser": {
+            "type": ""
+        },
+        "oUFOCrash": {
+            "type": ""
+        },
+        "origX": {
+            "type": ""
+        },
+        "origY": {
+            "type": ""
+        },
+        "sUFO": {
+            "type": ""
+        },
+        "sUFOBlast": {
+            "type": ""
+        },
         "shift": {
             "type": ""
         },
         "shiftToggle": {
+            "type": ""
+        },
+        "sndAlien": {
+            "type": ""
+        },
+        "sndLaser": {
+            "type": ""
+        },
+        "sndLaserCharge": {
+            "type": ""
+        },
+        "ufos": {
             "type": ""
         }
     },
@@ -2971,21 +5100,88 @@
         "FLY": {
             "type": ""
         },
-        "distance_to_point": {
-            "type": "function"
+        "HANG": {
+            "type": ""
+        },
+        "oCapePickup": {
+            "type": ""
+        },
+        "sVampireBatHang": {
+            "type": ""
+        },
+        "sVampireBatLeft": {
+            "type": ""
+        },
+        "sVampireBounceL": {
+            "type": ""
+        },
+        "sVampireDHeldL": {
+            "type": ""
+        },
+        "sVampireDieLL": {
+            "type": ""
+        },
+        "sVampireDieLR": {
+            "type": ""
+        },
+        "sVampireFallL": {
+            "type": ""
+        },
+        "sVampireHeldL": {
+            "type": ""
+        },
+        "sVampireJumpL": {
+            "type": ""
+        },
+        "sVampireLeft": {
+            "type": ""
+        },
+        "sVampireRunL": {
+            "type": ""
+        },
+        "sVampireStunL": {
+            "type": ""
+        },
+        "sndBat": {
+            "type": ""
+        },
+        "vampires": {
+            "type": ""
         }
     },
     "oVampireTile": {},
     "oVine": {},
     "oVineTop": {},
     "oVolcanoFlame": {},
-    "oWalDamsel": {},
-    "oWater": {},
+    "oWalDamsel": {
+        "oEndCustom": {
+            "type": ""
+        }
+    },
+    "oWater": {
+        "objChecked": {
+            "type": ""
+        }
+    },
     "oWaterSwim": {},
     "oWaterTile": {},
     "oWeb": {},
-    "oWebBall": {},
-    "oWebCannon": {},
+    "oWebBall": {
+        "oYellowTrail": {
+            "type": ""
+        },
+        "sWebCreate": {
+            "type": ""
+        }
+    },
+    "oWebCannon": {
+        "sWebCannonL": {
+            "type": ""
+        },
+        "sWebCannonR": {
+            "type": ""
+        }
+    },
     "oWebCannonTile": {},
     "oWebTile": {},
     "oWhip": {},
@@ -3005,14 +5201,180 @@
     "oXSun": {},
     "oXTitle": {},
     "oXTutorial": {},
-    "oXocBlock": {},
+    "oXocBlock": {
+        "treasure": {
+            "type": ""
+        }
+    },
     "oYellHelp": {},
-    "oYellowBall": {},
+    "oYellowBall": {
+        "oBat": {
+            "type": ""
+        },
+        "oFireFrog": {
+            "type": ""
+        }
+    },
     "oYellowTrail": {},
-    "oYeti": {},
-    "oYetiKing": {},
+    "oYeti": {
+        "bloodLeft": {
+            "type": ""
+        },
+        "direction": {
+            "type": ""
+        },
+        "hawkThrow": {
+            "type": ""
+        },
+        "oEnemySight": {
+            "type": ""
+        },
+        "owner": {
+            "type": ""
+        },
+        "sYetiBounceL": {
+            "type": ""
+        },
+        "sYetiDHeldL": {
+            "type": ""
+        },
+        "sYetiDeadL": {
+            "type": ""
+        },
+        "sYetiDieLL": {
+            "type": ""
+        },
+        "sYetiDieLR": {
+            "type": ""
+        },
+        "sYetiFallL": {
+            "type": ""
+        },
+        "sYetiHeldL": {
+            "type": ""
+        },
+        "sYetiLeft": {
+            "type": ""
+        },
+        "sYetiRunLeft": {
+            "type": ""
+        },
+        "sYetiStunL": {
+            "type": ""
+        },
+        "sYetiThrowL": {
+            "type": ""
+        },
+        "shopThrow": {
+            "type": ""
+        },
+        "sight": {
+            "type": ""
+        },
+        "sndCavemanDie": {
+            "type": ""
+        },
+        "speed": {
+            "type": ""
+        },
+        "wallHurt": {
+            "type": ""
+        },
+        "yetiThrow": {
+            "type": ""
+        },
+        "yetis": {
+            "type": ""
+        }
+    },
+    "oYetiKing": {
+        "oIce": {
+            "type": ""
+        },
+        "oIceBlock": {
+            "type": ""
+        },
+        "oRopePile": {
+            "type": ""
+        },
+        "oSapphireBig": {
+            "type": ""
+        },
+        "oSpikeShoes": {
+            "type": ""
+        },
+        "oThinIce": {
+            "type": ""
+        },
+        "oYetiKing": {
+            "type": ""
+        },
+        "puncture": {
+            "type": ""
+        },
+        "sYetiKingLeft": {
+            "type": ""
+        },
+        "sYetiKingRight": {
+            "type": ""
+        },
+        "sYetiKingTurnL": {
+            "type": ""
+        },
+        "sYetiKingTurnR": {
+            "type": ""
+        },
+        "sYetiKingWalkL": {
+            "type": ""
+        },
+        "sYetiKingWalkR": {
+            "type": ""
+        },
+        "sYetiKingYellL": {
+            "type": ""
+        },
+        "sYetiKingYellR": {
+            "type": ""
+        },
+        "sndYetiYell": {
+            "type": ""
+        },
+        "thickness": {
+            "type": ""
+        },
+        "yetikings": {
+            "type": ""
+        }
+    },
     "oYetiKingTile": {},
     "oYetiTile": {},
-    "oZombie": {},
-    "oZombieTile": {}
+    "oZombie": {
+        "oSkull": {
+            "type": ""
+        },
+        "sZombieJumpL": {
+            "type": ""
+        },
+        "sZombieLeft": {
+            "type": ""
+        },
+        "skull": {
+            "type": ""
+        },
+        "sndZombie": {
+            "type": ""
+        },
+        "zombies": {
+            "type": ""
+        }
+    },
+    "oZombieTile": {},
+    "objects": {
+        "cc": {
+            "type": ""
+        },
+        "className": {
+            "type": "function"
+        }
+    }
 }

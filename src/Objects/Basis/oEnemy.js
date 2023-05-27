@@ -269,7 +269,7 @@ if ((x &gt; view_xview[0]-8 and x &lt; view_xview[0]+view_wview[0]+8 and
         spikes = instance_place(x + 8, y + 14, oSpikes);
 
         if (!bloodless) {
-          [instances_of(spikes)].orEach(($) => {
+          instances_of(spikes).forEach(($) => {
             with ($) {
               sprite_index = sSpikesBlood;
             }
@@ -331,7 +331,7 @@ if ((x &gt; view_xview[0]-8 and x &lt; view_xview[0]+view_wview[0]+8 and
           if (obj != null) {
             if (!obj.invincible && obj.type != 'Magma Man') {
               if (obj.status < 98) obj.xVel = xVel;
-              [instances_of(obj)].forEach(($) => {
+              instances_of(obj).forEach(($) => {
                 with ($) {
                   if (
                     type == 'Caveman' ||
@@ -477,6 +477,9 @@ function oEnemy_CREATE($) {
 
 class oEnemy extends oDrawnSprite {
   myGravWater;
+  oAlienEject;
+  oFrog;
   shaking;
   spikes;
 }
+ObjType.oEnemy = oEnemy;

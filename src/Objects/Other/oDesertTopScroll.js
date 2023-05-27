@@ -14,3 +14,4 @@ function oDesertTopScroll_CREATE($) {
 }
 
 class oDesertTopScroll extends oObject {}
+ObjType.oDesertTopScroll = oDesertTopScroll;

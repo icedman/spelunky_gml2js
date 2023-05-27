@@ -79,14 +79,14 @@ function oHighscores_DRAW($) {
         } else {
           draw_text(128, 112, 'LOCKED.');
         }
-        [instances_of(oNew)].forEach(($) => {
+        instances_of(oNew).forEach(($) => {
           with ($) {
             visible = false;
           }
         });
       }
     } else {
-      [instances_of(oNew)].forEach(($) => {
+      instances_of(oNew).forEach(($) => {
         with ($) {
           visible = true;
         }
@@ -155,7 +155,7 @@ function oHighscores_STEP($) {
 
 function oHighscores_CREATE($) {
   with ($) {
-    [instances_of(oScreen)].orEach(($) => {
+    instances_of(oScreen).forEach(($) => {
       with ($) {
         canPause = true;
       }
@@ -261,6 +261,13 @@ tSaves = 8;
 class oHighscores extends oObject {
   block;
   moonGold;
+  oButtonHighscore;
+  oNew;
+  oPushBlock;
+  sBronzeTrophy;
+  sGoldTrophy;
+  sSilverTrophy;
+  snakePit;
   starsGold;
   sunGold;
   tMini1;
@@ -268,3 +275,4 @@ class oHighscores extends oObject {
   tMini3;
   trophy;
 }
+ObjType.oHighscores = oHighscores;

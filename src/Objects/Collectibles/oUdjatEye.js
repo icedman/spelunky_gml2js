@@ -14,3 +14,4 @@ function oUdjatEye_CREATE($) {
 }
 
 class oUdjatEye extends oItem {}
+ObjType.oUdjatEye = oUdjatEye;

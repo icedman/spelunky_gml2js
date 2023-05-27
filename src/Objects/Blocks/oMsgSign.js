@@ -140,6 +140,13 @@ function oMsgSign_CREATE($) {
 }
 
 class oMsgSign extends oDrawnSprite {
-  message;
-  message2;
+  joyAttackVal;
+  joyItemVal;
+  joyJumpVal;
+  joyRunVal;
+  keyAttackVal;
+  keyItemVal;
+  keyJumpVal;
+  keyRunVal;
 }
+ObjType.oMsgSign = oMsgSign;

@@ -29,4 +29,8 @@ function oMachetePre_CREATE($) {
   }
 }
 
-class oMachetePre extends oWhipPre {}
+class oMachetePre extends oWhipPre {
+  sMachetePreL;
+  sMachetePreR;
+}
+ObjType.oMachetePre = oMachetePre;

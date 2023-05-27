@@ -26,4 +26,7 @@ function oSapphireBig_CREATE($) {
   }
 }
 
-class oSapphireBig extends oTreasure {}
+class oSapphireBig extends oTreasure {
+  oDiamond;
+}
+ObjType.oSapphireBig = oSapphireBig;

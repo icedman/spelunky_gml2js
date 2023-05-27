@@ -25,7 +25,7 @@ function oFireFrogBomb_STEP($) {
           global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] == 5) &&
         distance_to_object(oShopkeeper) < 96
       ) {
-        [instances_of(oShopkeeper)].forEach(($) => {
+        instances_of(oShopkeeper).forEach(($) => {
           with ($) {
             scrShopkeeperAnger(2);
           }
@@ -61,4 +61,7 @@ function oFireFrogBomb_CREATE($) {
   }
 }
 
-class oFireFrogBomb extends oItem {}
+class oFireFrogBomb extends oItem {
+  oWaterSwim;
+}
+ObjType.oFireFrogBomb = oFireFrogBomb;

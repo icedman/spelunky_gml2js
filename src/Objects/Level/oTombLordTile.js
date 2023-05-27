@@ -10,3 +10,4 @@ function oTombLordTile_CREATE($) {
 }
 
 class oTombLordTile extends oDrawnSprite {}
+ObjType.oTombLordTile = oTombLordTile;

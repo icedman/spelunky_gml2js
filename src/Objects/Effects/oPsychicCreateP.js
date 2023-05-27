@@ -31,3 +31,4 @@ function oPsychicCreateP_CREATE($) {
 }
 
 class oPsychicCreateP extends oDrawnSprite {}
+ObjType.oPsychicCreateP = oPsychicCreateP;

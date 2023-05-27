@@ -24,3 +24,4 @@ function oCrate_CREATE($) {
 }
 
 class oCrate extends oItem {}
+ObjType.oCrate = oCrate;

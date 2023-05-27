@@ -11,3 +11,4 @@ function oRopeBag_CREATE($) {
 }
 
 class oRopeBag extends oItem {}
+ObjType.oRopeBag = oRopeBag;

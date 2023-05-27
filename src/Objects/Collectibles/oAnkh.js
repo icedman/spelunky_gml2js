@@ -13,4 +13,7 @@ function oAnkh_CREATE($) {
   }
 }
 
-class oAnkh extends oItem {}
+class oAnkh extends oItem {
+  buyMessage;
+}
+ObjType.oAnkh = oAnkh;

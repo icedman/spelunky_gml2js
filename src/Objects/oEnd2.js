@@ -45,4 +45,9 @@ function oEnd2_CREATE($) {
   }
 }
 
-class oEnd2 extends oObject {}
+class oEnd2 extends oObject {
+  oPlayerSil;
+  oTreasureSil;
+  oVolcanoFlame;
+}
+ObjType.oEnd2 = oEnd2;

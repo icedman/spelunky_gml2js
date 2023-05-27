@@ -9,3 +9,4 @@ function oMovingSolid_CREATE($) {
 }
 
 class oMovingSolid extends oSolid {}
+ObjType.oMovingSolid = oMovingSolid;

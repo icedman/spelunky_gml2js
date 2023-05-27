@@ -23,32 +23,31 @@ function oCredits1_ALARM_1($) {
       instance_create(-16, 192, oDesertScroll2);
       instance_create(-16, 208, oDesertScroll);
       instance_create(-16, 224, oDesertScroll);
-      [instances_of(oDesertScroll)]
-        .orEach(($) => {
-          with ($) {
-            scroll = true;
-          }
-        })
-        [instances_of(oDesertScroll2)].orEach(($) => {
-          with ($) {
-            scroll = true;
-          }
-        })
-        [instances_of(oDesertTopScroll)].orEach(($) => {
-          with ($) {
-            scroll = true;
-          }
-        })
-        [instances_of(oShrubScroll)].orEach(($) => {
-          with ($) {
-            scroll = true;
-          }
-        })
-        [instances_of(oPalmTreeScroll)].orEach(($) => {
-          with ($) {
-            scroll = true;
-          }
-        });
+      instances_of(oDesertScroll).forEach(($) => {
+        with ($) {
+          scroll = true;
+        }
+      });
+      instances_of(oDesertScroll2).forEach(($) => {
+        with ($) {
+          scroll = true;
+        }
+      });
+      instances_of(oDesertTopScroll).forEach(($) => {
+        with ($) {
+          scroll = true;
+        }
+      });
+      instances_of(oShrubScroll).forEach(($) => {
+        with ($) {
+          scroll = true;
+        }
+      });
+      instances_of(oPalmTreeScroll).forEach(($) => {
+        with ($) {
+          scroll = true;
+        }
+      });
       alarm[1] = 16;
     }
   }
@@ -81,32 +80,31 @@ function oCredits1_ALARM_2($) {
 function oCredits1_ALARM_8($) {
   with ($) {
     scrolling = false;
-    [instances_of(oDesertScroll)]
-      .orEach(($) => {
-        with ($) {
-          scroll = false;
-        }
-      })
-      [instances_of(oDesertScroll2)].orEach(($) => {
-        with ($) {
-          scroll = false;
-        }
-      })
-      [instances_of(oDesertTopScroll)].orEach(($) => {
-        with ($) {
-          scroll = false;
-        }
-      })
-      [instances_of(oPalmTreeScroll)].orEach(($) => {
-        with ($) {
-          scroll = false;
-        }
-      })
-      [instances_of(oShrubScroll)].orEach(($) => {
-        with ($) {
-          scroll = false;
-        }
-      });
+    instances_of(oDesertScroll).forEach(($) => {
+      with ($) {
+        scroll = false;
+      }
+    });
+    instances_of(oDesertScroll2).forEach(($) => {
+      with ($) {
+        scroll = false;
+      }
+    });
+    instances_of(oDesertTopScroll).forEach(($) => {
+      with ($) {
+        scroll = false;
+      }
+    });
+    instances_of(oPalmTreeScroll).forEach(($) => {
+      with ($) {
+        scroll = false;
+      }
+    });
+    instances_of(oShrubScroll).forEach(($) => {
+      with ($) {
+        scroll = false;
+      }
+    });
     oCamel.status = 2;
   }
 }
@@ -216,7 +214,7 @@ function oCredits1_STEP($) {
 
     if (instance_exists(oCamel)) {
       if (oCamel.x <= 160 && !scrollStart) {
-        [instances_of(oDesertScroll)].forEach(($) => {
+        instances_of(oDesertScroll).forEach(($) => {
           with ($) {
             scroll = true;
           }
@@ -276,4 +274,15 @@ function oCredits1_ALARM_6($) {
   }
 }
 
-class oCredits1 extends oObject {}
+class oCredits1 extends oObject {
+  canPause;
+  oDesertScroll;
+  oDesertScroll2;
+  oDesertTopScroll;
+  oIntroBG;
+  oPalmTreeScroll;
+  oShrubScroll;
+  scrollStart;
+  scrolling;
+}
+ObjType.oCredits1 = oCredits1;

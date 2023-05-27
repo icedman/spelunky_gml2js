@@ -14,3 +14,4 @@ function oLampRedItem_CREATE($) {
 }
 
 class oLampRedItem extends oItem {}
+ObjType.oLampRedItem = oLampRedItem;

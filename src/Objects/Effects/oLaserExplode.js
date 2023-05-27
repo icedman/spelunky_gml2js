@@ -17,3 +17,4 @@ function oLaserExplode_CREATE($) {
 }
 
 class oLaserExplode extends oDrawnSprite {}
+ObjType.oLaserExplode = oLaserExplode;

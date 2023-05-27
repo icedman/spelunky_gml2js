@@ -9,3 +9,4 @@ function oFireFrogTile_CREATE($) {
 }
 
 class oFireFrogTile extends oDrawnSprite {}
+ObjType.oFireFrogTile = oFireFrogTile;

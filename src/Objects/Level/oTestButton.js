@@ -1,7 +1,7 @@
 function oTestButton_MOUSE($) {
   with ($) {
     if (sprite_index == sTestButtonPressed) {
-      [instances_of(oLevelEditor)].forEach(($) => {
+      instances_of(oLevelEditor).forEach(($) => {
         with ($) {
           scrTestLevel();
         }
@@ -25,4 +25,9 @@ function oTestButton_STEP($) {
   }
 }
 
-class oTestButton extends oObject {}
+class oTestButton extends oObject {
+  oLevelEditor;
+  sTestButton;
+  sTestButtonPressed;
+}
+ObjType.oTestButton = oTestButton;

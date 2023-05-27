@@ -128,7 +128,7 @@ function oYeti_COLLISION_oCharacter($) {
           other.shopThrow = false;
         }
 
-        [instances_of(other)].forEach(($) => {
+        instances_of(other).forEach(($) => {
           with ($) {
             if (holdItem) {
               if (holdItem.type == 'Gold Idol') holdItem.y -= 8;
@@ -291,7 +291,7 @@ function oYeti_STEP($) {
             status = IDLE;
             if (held) {
               held = false;
-              [instances_of(oPlayer1)].orEach(($) => {
+              instances_of(oPlayer1).forEach(($) => {
                 with ($) {
                   holdItem = 0;
                   pickupItemType = '';
@@ -387,4 +387,29 @@ function oYeti_CREATE($) {
   }
 }
 
-class oYeti extends oEnemy {}
+class oYeti extends oEnemy {
+  bloodLeft;
+  direction;
+  hawkThrow;
+  oEnemySight;
+  owner;
+  sYetiBounceL;
+  sYetiDHeldL;
+  sYetiDeadL;
+  sYetiDieLL;
+  sYetiDieLR;
+  sYetiFallL;
+  sYetiHeldL;
+  sYetiLeft;
+  sYetiRunLeft;
+  sYetiStunL;
+  sYetiThrowL;
+  shopThrow;
+  sight;
+  sndCavemanDie;
+  speed;
+  wallHurt;
+  yetiThrow;
+  yetis;
+}
+ObjType.oYeti = oYeti;

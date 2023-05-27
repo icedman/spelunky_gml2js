@@ -26,4 +26,8 @@ function oShopkeeper2_CREATE($) {
   }
 }
 
-class oShopkeeper2 extends oShopkeeper {}
+class oShopkeeper2 extends oShopkeeper {
+  deathTimer;
+  hasGun;
+}
+ObjType.oShopkeeper2 = oShopkeeper2;

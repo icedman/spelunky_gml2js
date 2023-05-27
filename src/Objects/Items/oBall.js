@@ -49,3 +49,4 @@ function oBall_CREATE($) {
 }
 
 class oBall extends oItem {}
+ObjType.oBall = oBall;

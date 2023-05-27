@@ -20,3 +20,4 @@ function oEmerald_CREATE($) {
 }
 
 class oEmerald extends oTreasure {}
+ObjType.oEmerald = oEmerald;

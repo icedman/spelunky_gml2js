@@ -29,4 +29,8 @@ function oRope_CREATE($) {
   }
 }
 
-class oRope extends oLadder {}
+class oRope extends oLadder {
+  burnTimer;
+  oRopeBurn;
+}
+ObjType.oRope = oRope;

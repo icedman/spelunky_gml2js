@@ -9,3 +9,4 @@ function oAlienBossTile_CREATE($) {
 }
 
 class oAlienBossTile extends oDrawnSprite {}
+ObjType.oAlienBossTile = oAlienBossTile;

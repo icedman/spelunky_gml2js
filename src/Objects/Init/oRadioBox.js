@@ -1,7 +1,7 @@
 function oRadioBox_MOUSE($) {
   with ($) {
     if (!on) {
-      [instances_of(oRadioBox)].forEach(($) => {
+      instances_of(oRadioBox).forEach(($) => {
         with ($) {
           on = false;
           sprite_index = sBox;
@@ -39,4 +39,9 @@ function oRadioBox_CREATE($) {
   }
 }
 
-class oRadioBox extends oObject {}
+class oRadioBox extends oObject {
+  oRadioBox;
+  sBoxMarked;
+  screenScale;
+}
+ObjType.oRadioBox = oRadioBox;

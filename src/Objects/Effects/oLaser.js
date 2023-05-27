@@ -6,12 +6,12 @@ function oLaser_OTHER($) {
 
 function oLaser_COLLISION_oSolid($) {
   with ($) {
-    [instances_of(other)].forEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         if (!invincible) {
           if (collision_point(x, y, oGold, 0, 0)) {
             gold = instance_place(x, y, oGold);
-            [instances_of(gold)].orEach(($) => {
+            instances_of(gold).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -19,7 +19,7 @@ function oLaser_COLLISION_oSolid($) {
           }
           if (collision_point(x, y, oGoldBig, 0, 0)) {
             gold = instance_place(x, y, oGoldBig);
-            [instances_of(gold)].orEach(($) => {
+            instances_of(gold).forEach(($) => {
               with ($) {
                 instance_destroy();
               }
@@ -102,4 +102,9 @@ function oLaser_COLLISION_oDamsel($) {
   }
 }
 
-class oLaser extends oDrawnSprite {}
+class oLaser extends oDrawnSprite {
+  oGold;
+  oGoldBig;
+  oLaserTrail;
+}
+ObjType.oLaser = oLaser;

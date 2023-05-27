@@ -39,7 +39,7 @@ function scrCreateTile() {
     if (!obj)
       obj = instance_position(arguments[1] + 8, arguments[2] + 4, oDrawnSprite);
     if (obj) {
-      [instances_of(obj)].forEach(($) => {
+      instances_of(obj).forEach(($) => {
         with ($) {
           if (
             type == 'Giant Spider' ||

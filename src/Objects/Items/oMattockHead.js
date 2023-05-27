@@ -11,3 +11,4 @@ function oMattockHead_CREATE($) {
 }
 
 class oMattockHead extends oItem {}
+ObjType.oMattockHead = oMattockHead;

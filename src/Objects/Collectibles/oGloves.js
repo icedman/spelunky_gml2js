@@ -15,3 +15,4 @@ function oGloves_CREATE($) {
 }
 
 class oGloves extends oItem {}
+ObjType.oGloves = oGloves;

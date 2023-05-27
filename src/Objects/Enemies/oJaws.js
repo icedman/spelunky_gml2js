@@ -226,5 +226,18 @@ function oJaws_CREATE($) {
 }
 
 class oJaws extends oEnemy {
+  megamouths;
+  oCrate;
+  sJawsBody1L;
+  sJawsBody1R;
+  sJawsBody2L;
+  sJawsBody2R;
+  sJawsBody3L;
+  sJawsBody3R;
+  sJawsLeft;
+  sJawsRight;
+  sJawsTurnL;
+  sJawsTurnR;
   turn;
 }
+ObjType.oJaws = oJaws;

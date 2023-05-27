@@ -23,4 +23,7 @@ function oTreasureSil_CREATE($) {
   }
 }
 
-class oTreasureSil extends oDrawnSprite {}
+class oTreasureSil extends oDrawnSprite {
+  rEnd3;
+}
+ObjType.oTreasureSil = oTreasureSil;

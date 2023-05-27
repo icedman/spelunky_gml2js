@@ -15,7 +15,7 @@ def copy_and_overwrite(from_path, to_path):
     copytree(from_path, to_path)
 
 if len(sys.argv) < 2:
-    print("globals.py ./src")
+    print("generate.py ./src")
     exit()
 
 path = sys.argv[1]
@@ -106,7 +106,8 @@ def cleanUpCode(l):
         if match != None:
             withWhat = match.group(1)
             ls = ls.replace("with " + withWhat, "")
-            l = "[instances_of(" + withWhat + ")].forEach(($) => { with($)\n" + ls + "\n})\n"
+            l = "instances_of(" + withWhat + ").forEach(($) => { with($)\n" + ls + "\n})\n"
+            return l
 
     # float suffix 0.5f
     for i in range(1, 10):
@@ -407,7 +408,7 @@ def cleanUpCode2(code):
             if match != None:
                 withWhat = match.group(1)
                 ls = ls.replace("with " + withWhat, "")
-                l = "[instances_of(" + withWhat + ")].forEach(($) => { with($)\n"
+                l = "instances_of(" + withWhat + ").forEach(($) => { with($)\n"
                 closeBracket = lines[idx+1].rstrip().replace("{", "}")
                 closeBrackets.append(closeBracket)
         cleanCode += l + "\n"
@@ -479,6 +480,8 @@ def generateClassCode(k, obj):
     # code += ']\n'
 
     code += "}\n"
+
+    code += "ObjType." + k + "=" + k + "\n"
 
     f = open(dstFile, 'w')
     f.write(code)

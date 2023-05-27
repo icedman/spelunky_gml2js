@@ -75,4 +75,10 @@ function oCeilingTrap_CREATE($) {
   }
 }
 
-class oCeilingTrap extends oMovingSolid {}
+class oCeilingTrap extends oMovingSolid {
+  oSolid;
+  sBlock;
+  sCeilingTrap;
+  sCeilingTrapS;
+}
+ObjType.oCeilingTrap = oCeilingTrap;

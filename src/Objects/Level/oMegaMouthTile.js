@@ -9,3 +9,4 @@ function oMegaMouthTile_CREATE($) {
 }
 
 class oMegaMouthTile extends oDrawnSprite {}
+ObjType.oMegaMouthTile = oMegaMouthTile;

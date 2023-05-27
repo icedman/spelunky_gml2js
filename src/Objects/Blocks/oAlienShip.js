@@ -31,3 +31,4 @@ function oAlienShip_CREATE($) {
 }
 
 class oAlienShip extends oSolid {}
+ObjType.oAlienShip = oAlienShip;

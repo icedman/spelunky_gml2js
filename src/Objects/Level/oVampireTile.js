@@ -9,3 +9,4 @@ function oVampireTile_CREATE($) {
 }
 
 class oVampireTile extends oDrawnSprite {}
+ObjType.oVampireTile = oVampireTile;

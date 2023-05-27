@@ -23,3 +23,4 @@ function oLeavesTile_CREATE($) {
 }
 
 class oLeavesTile extends oPlatform {}
+ObjType.oLeavesTile = oLeavesTile;

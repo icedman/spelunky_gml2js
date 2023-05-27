@@ -1,6 +1,6 @@
 function oBarrier_COLLISION_oWebBall($) {
   with ($) {
-    [instances_of(other)].forEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -10,7 +10,7 @@ function oBarrier_COLLISION_oWebBall($) {
 
 function oBarrier_COLLISION_oBullet($) {
   with ($) {
-    [instances_of(other)].forEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         instance_create(x, y, oSmokePuff);
         playSound(global.sndHit);
@@ -38,7 +38,7 @@ function oBarrier_COLLISION_oCharacter($) {
 function oBarrier_COLLISION_oItem($) {
   with ($) {
     if (other.type == 'Bomb') {
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           sprite_index = sBombArmed;
           image_speed = 1;
@@ -57,3 +57,4 @@ function oBarrier_COLLISION_oItem($) {
 }
 
 class oBarrier extends oObject {}
+ObjType.oBarrier = oBarrier;

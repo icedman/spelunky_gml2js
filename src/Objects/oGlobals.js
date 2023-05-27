@@ -85,4 +85,22 @@ function oGlobals_CREATE($) {
   }
 }
 
-class oGlobals extends oObject {}
+class oGlobals extends oObject {
+  darknessLerp;
+  dataFile;
+  emptyHighscores;
+  hadDarkLevel;
+  irstTime;
+  lake;
+  levelSelect;
+  newKills;
+  newMoney;
+  newSaves;
+  newTime;
+  tunnel1Max;
+  tunnel2Max;
+  udjatBlink;
+  udjatCounter;
+  usedShortcut;
+}
+ObjType.oGlobals = oGlobals;

@@ -9,4 +9,9 @@ function oJoyConfigButton_MOUSE($) {
   }
 }
 
-class oJoyConfigButton extends oObject {}
+class oJoyConfigButton extends oObject {
+  rJoyConfig;
+  sJoyConfigButton;
+  sJoyConfigButtonPressed;
+}
+ObjType.oJoyConfigButton = oJoyConfigButton;

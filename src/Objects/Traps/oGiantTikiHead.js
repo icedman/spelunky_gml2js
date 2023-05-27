@@ -6,4 +6,7 @@ function oGiantTikiHead_ALARM_0($) {
   }
 }
 
-class oGiantTikiHead extends oDrawnSprite {}
+class oGiantTikiHead extends oDrawnSprite {
+  sGTHHole;
+}
+ObjType.oGiantTikiHead = oGiantTikiHead;

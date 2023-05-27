@@ -1,7 +1,7 @@
 function oTitle_ALARM_3($) {
   with ($) {
     instance_create(320 + 280, -32, oPDummy4);
-    [instances_of(oScreen)].orEach(($) => {
+    instances_of(oScreen).forEach(($) => {
       with ($) {
         canPause = true;
       }
@@ -189,7 +189,7 @@ function oTitle_CREATE($) {
     if (global.titleStart == 0) {
       darkness = 1;
       alarm[0] = 50;
-      [instances_of(oScreen)].orEach(($) => {
+      instances_of(oScreen).forEach(($) => {
         with ($) {
           canPause = false;
         }
@@ -201,7 +201,7 @@ function oTitle_CREATE($) {
       player = instance_create(432 + 8, 184, oPlayer1);
       player.acing = 19;
       instance_create(320 + 280, 188, oFlare);
-      [instances_of(oScreen)].orEach(($) => {
+      instances_of(oScreen).forEach(($) => {
         with ($) {
           canPause = true;
         }
@@ -213,7 +213,7 @@ function oTitle_CREATE($) {
       player = instance_create(320 + 280, 184, oPlayer1);
       player.acing = 18;
       instance_create(320 + 280, 188, oFlare);
-      [instances_of(oScreen)].orEach(($) => {
+      instances_of(oScreen).forEach(($) => {
         with ($) {
           canPause = true;
         }
@@ -225,7 +225,7 @@ function oTitle_CREATE($) {
       player = instance_create(336 + 8, 184, oPlayer1);
       player.acing = 19;
       instance_create(320 + 280, 188, oFlare);
-      [instances_of(oScreen)].orEach(($) => {
+      instances_of(oScreen).forEach(($) => {
         with ($) {
           canPause = true;
         }
@@ -243,5 +243,15 @@ function oTitle_CREATE($) {
 }
 
 class oTitle extends oObject {
+  darkness;
   needDark;
+  oHintHand;
+  oLadderOrange;
+  oLevel13Sign;
+  oLevel9Sign;
+  oMultiTrophy;
+  oPDummy4;
+  rCredits1;
+  tofu;
 }
+ObjType.oTitle = oTitle;

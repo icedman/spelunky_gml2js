@@ -35,4 +35,7 @@ function oLavaSpray_CREATE($) {
   }
 }
 
-class oLavaSpray extends oObject {}
+class oLavaSpray extends oObject {
+  rEnd2;
+}
+ObjType.oLavaSpray = oLavaSpray;

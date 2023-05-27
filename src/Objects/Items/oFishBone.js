@@ -41,3 +41,4 @@ function oFishBone_CREATE($) {
 }
 
 class oFishBone extends oItem {}
+ObjType.oFishBone = oFishBone;

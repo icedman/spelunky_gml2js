@@ -25,4 +25,10 @@ function oCamel_CREATE($) {
   }
 }
 
-class oCamel extends oObject {}
+class oCamel extends oObject {
+  musCredits;
+  oCredits1;
+  sCamelDamsel;
+  sCamelTunnel;
+}
+ObjType.oCamel = oCamel;

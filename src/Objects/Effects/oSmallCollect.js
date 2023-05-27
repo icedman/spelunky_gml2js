@@ -24,3 +24,4 @@ function oSmallCollect_CREATE($) {
 }
 
 class oSmallCollect extends oDrawnSprite {}
+ObjType.oSmallCollect = oSmallCollect;

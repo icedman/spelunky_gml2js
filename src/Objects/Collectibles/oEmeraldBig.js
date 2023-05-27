@@ -27,3 +27,4 @@ function oEmeraldBig_CREATE($) {
 }
 
 class oEmeraldBig extends oTreasure {}
+ObjType.oEmeraldBig = oEmeraldBig;

@@ -10,3 +10,4 @@ function oTreeTile_CREATE($) {
 }
 
 class oTreeTile extends oSolid {}
+ObjType.oTreeTile = oTreeTile;

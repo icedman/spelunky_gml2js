@@ -5,3 +5,4 @@ function oCavemanWorship_CREATE($) {
 }
 
 class oCavemanWorship extends oObject {}
+ObjType.oCavemanWorship = oCavemanWorship;

@@ -42,4 +42,8 @@ function oFakeBones_CREATE($) {
   }
 }
 
-class oFakeBones extends oDrawnSprite {}
+class oFakeBones extends oDrawnSprite {
+  oSkeleton;
+  sSkeletonCreateL;
+}
+ObjType.oFakeBones = oFakeBones;

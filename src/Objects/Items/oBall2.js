@@ -26,4 +26,7 @@ function oBall2_CREATE($) {
   }
 }
 
-class oBall2 extends oItem {}
+class oBall2 extends oItem {
+  oPDummy;
+}
+ObjType.oBall2 = oBall2;

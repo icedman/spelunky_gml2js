@@ -40,11 +40,14 @@ def dumpList(path):
         dump(f)
 
 dump('engine/polyfill.js')
+dumpFiles('engine/polyfill/')
 dump('engine/global.js')
 dump('engine/objects.js')
 dump('engine/rooms.js')
 dumpFiles('src/Sprites/')
 dumpList('./list.txt')
 dumpFiles('src/Scripts')
+dumpFiles('src/Rooms/')
+dump('./engine/main.js')
 
 output.close()

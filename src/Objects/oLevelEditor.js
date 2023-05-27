@@ -145,42 +145,40 @@ function oLevelEditor_KEYPRESS($) {
             if (obj.type == 'Exit') {
               textEdit = obj.leadsTo;
               oLevelEditor.status = EDIT_DOOR;
-              [instances_of(oNewButton)]
-                .orEach(($) => {
-                  with ($) {
-                    instance_destroy();
-                  }
-                })
-                [instances_of(oTestButton)].orEach(($) => {
-                  with ($) {
-                    instance_destroy();
-                  }
-                })
-                [instances_of(oEditButton)].orEach(($) => {
-                  with ($) {
-                    instance_destroy();
-                  }
-                });
+              instances_of(oNewButton).forEach(($) => {
+                with ($) {
+                  instance_destroy();
+                }
+              });
+              instances_of(oTestButton).forEach(($) => {
+                with ($) {
+                  instance_destroy();
+                }
+              });
+              instances_of(oEditButton).forEach(($) => {
+                with ($) {
+                  instance_destroy();
+                }
+              });
               //levelArray[floor(oCursObj.x/16)-1, floor(oCursObj.y/16)-1] = "0";
             } else if (obj.type == 'Message Sign') {
               textEdit = obj.message;
               oLevelEditor.status = EDIT_MSG;
-              [instances_of(oNewButton)]
-                .orEach(($) => {
-                  with ($) {
-                    instance_destroy();
-                  }
-                })
-                [instances_of(oTestButton)].orEach(($) => {
-                  with ($) {
-                    instance_destroy();
-                  }
-                })
-                [instances_of(oEditButton)].orEach(($) => {
-                  with ($) {
-                    instance_destroy();
-                  }
-                });
+              instances_of(oNewButton).forEach(($) => {
+                with ($) {
+                  instance_destroy();
+                }
+              });
+              instances_of(oTestButton).forEach(($) => {
+                with ($) {
+                  instance_destroy();
+                }
+              });
+              instances_of(oEditButton).forEach(($) => {
+                with ($) {
+                  instance_destroy();
+                }
+              });
               //levelArray[floor(oCursObj.x/16)-1, floor(oCursObj.y/16)-1] = "0";
             }
           }
@@ -615,7 +613,7 @@ function oLevelEditor_STEP($) {
           ); // instance_position(oCursObj.x+8, oCursObj.y+12, oDrawnSprite);
           // if (!obj) obj = instance_position(oCursObj.x+8, oCursObj.y+4, oDrawnSprite);
           if (obj) {
-            [instances_of(obj)].forEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 if (type == 'Giant Spider' || type == 'Tomb Lord') {
                   if (x == oCursObj.x && y == oCursObj.y) {
@@ -912,19 +910,27 @@ class oLevelEditor extends oObject {
   ITEMS;
   NEW;
   TRAPS;
-  blockArray = [];
+  blockArray;
   dropMax;
   dropSelect;
   dropVal;
-  enemyArray = [];
-  exitNames = [];
+  enemyArray;
+  exitNames;
   exitNamesID;
   exitNamesNum;
-  lootArray = [];
+  file;
+  lootArray;
   mb_right;
-  signNames = [];
+  oCursObj;
+  oDrawnSprite;
+  oMsgSign;
+  sEntrance;
+  sGoldBarTile;
+  sSpikes;
+  signNames;
   signNamesID;
   signNamesNum;
   textEdit;
-  trapArray = [];
+  trapArray;
 }
+ObjType.oLevelEditor = oLevelEditor;

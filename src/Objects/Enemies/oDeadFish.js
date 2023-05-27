@@ -117,4 +117,14 @@ function oDeadFish_CREATE($) {
   }
 }
 
-class oDeadFish extends oEnemy {}
+class oDeadFish extends oEnemy {
+  ObjType;
+  PAUSE;
+  bubbleTimer;
+  bubbleTimerMax;
+  deadfish;
+  oFishBone;
+  sDeadFishLeft;
+  sDeadFishRight;
+}
+ObjType.oDeadFish = oDeadFish;

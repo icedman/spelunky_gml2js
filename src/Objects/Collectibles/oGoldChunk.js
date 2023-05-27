@@ -13,4 +13,7 @@ function oGoldChunk_CREATE($) {
   }
 }
 
-class oGoldChunk extends oTreasure {}
+class oGoldChunk extends oTreasure {
+  yOff;
+}
+ObjType.oGoldChunk = oGoldChunk;

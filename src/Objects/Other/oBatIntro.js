@@ -27,3 +27,4 @@ function oBatIntro_CREATE($) {
 }
 
 class oBatIntro extends oObject {}
+ObjType.oBatIntro = oBatIntro;

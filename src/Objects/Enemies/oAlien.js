@@ -116,4 +116,7 @@ function oAlien_CREATE($) {
   }
 }
 
-class oAlien extends oEnemy {}
+class oAlien extends oEnemy {
+  aliens;
+}
+ObjType.oAlien = oAlien;

@@ -40,7 +40,10 @@ function oLava_CREATE($) {
 }
 
 class oLava extends oWater {
+  flame;
+  oLavaDrip;
   spurt;
   spurtCounter;
   spurtTime;
 }
+ObjType.oLava = oLava;

@@ -6,3 +6,4 @@ function oDrawnSprite_CREATE($) {
 }
 
 class oDrawnSprite extends oObject {}
+ObjType.oDrawnSprite = oDrawnSprite;

@@ -19,13 +19,13 @@ function oBigTreasure_STEP($) {
       if (isCollisionBottom(1)) {
         if (yVel > 5) {
           poof = instance_create(x + 16 - 4, y + 30, oPoof);
-          [instances_of(poof)].orEach(($) => {
+          instances_of(poof).forEach(($) => {
             with ($) {
               xVel = -0.4;
             }
           });
           poof = instance_create(x + 16 + 4, y + 30, oPoof);
-          [instances_of(poof)].orEach(($) => {
+          instances_of(poof).forEach(($) => {
             with ($) {
               xVel = 0.4;
             }
@@ -65,3 +65,4 @@ function oBigTreasure_CREATE($) {
 }
 
 class oBigTreasure extends oObject {}
+ObjType.oBigTreasure = oBigTreasure;

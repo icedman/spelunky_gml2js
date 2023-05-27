@@ -70,3 +70,4 @@ function oArrowRepeaterL_CREATE($) {
 }
 
 class oArrowRepeaterL extends oSolid {}
+ObjType.oArrowRepeaterL = oArrowRepeaterL;

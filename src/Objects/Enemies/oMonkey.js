@@ -212,7 +212,7 @@ function oMonkey_STEP($) {
           n = int(500 + ceil(500 / 4) * global.levelType);
           if (rand(1, 4) == 1) {
             // trip player
-            [instances_of(oPlayer1)].forEach(($) => {
+            instances_of(oPlayer1).forEach(($) => {
               with ($) {
                 if (facing == 18) xVel = -3;
                 else xVel = 3;
@@ -243,7 +243,7 @@ function oMonkey_STEP($) {
             // throw out money
             global.money -= n;
             obj = instance_create(x, y, oGoldNugget);
-            [instances_of(obj)].forEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 canCollect = false;
                 alarm[0] = 20;
@@ -257,7 +257,7 @@ function oMonkey_STEP($) {
             // throw out rope
             global.rope -= 1;
             obj = instance_create(x, y, oRopeThrow);
-            [instances_of(obj)].forEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 xVel = rand(1, 3) - rand(1, 3);
                 yVel = -rand(3, 4);
@@ -275,7 +275,7 @@ function oMonkey_STEP($) {
               obj.image_speed = 1;
               obj.alarm[1] = 40;
             }
-            [instances_of(obj)].forEach(($) => {
+            instances_of(obj).forEach(($) => {
               with ($) {
                 xVel = rand(1, 3) - rand(1, 3);
                 yVel = -rand(3, 4);
@@ -369,8 +369,31 @@ function oMonkey_CREATE($) {
 class oMonkey extends oEnemy {
   CLIMB;
   GRAB;
+  alling;
+  armed;
+  bombs;
+  canCollect;
+  grabCounter;
   grabX;
   grabY;
-  int;
+  levelType;
+  money;
+  monkeys;
+  oBomb;
+  oRopeThrow;
+  oSplash;
+  oVine;
+  rope;
+  sMonkeyClimbL;
+  sMonkeyHangL;
+  sMonkeyJumpL;
+  sMonkeyLeft;
+  sMonkeyWalkL;
+  sndMonkey;
+  sndSplash;
+  sndThrow;
   throwCounter;
+  totalMonkeyKills;
+  vineCounter;
 }
+ObjType.oMonkey = oMonkey;

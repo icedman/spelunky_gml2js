@@ -39,4 +39,7 @@ function oSlider2_CREATE($) {
   }
 }
 
-class oSlider2 extends oObject {}
+class oSlider2 extends oObject {
+  soundVol;
+}
+ObjType.oSlider2 = oSlider2;

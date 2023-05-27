@@ -9,3 +9,4 @@ function oMoai2_CREATE($) {
 }
 
 class oMoai2 extends oSolid {}
+ObjType.oMoai2 = oMoai2;

@@ -14,3 +14,4 @@ function oRopePile_CREATE($) {
 }
 
 class oRopePile extends oItem {}
+ObjType.oRopePile = oRopePile;

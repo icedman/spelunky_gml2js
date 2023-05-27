@@ -9,3 +9,4 @@ function oDrip_CREATE($) {
 }
 
 class oDrip extends oRubblePiece {}
+ObjType.oDrip = oDrip;

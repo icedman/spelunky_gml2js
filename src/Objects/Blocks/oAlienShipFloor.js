@@ -30,4 +30,7 @@ function oAlienShipFloor_CREATE($) {
   }
 }
 
-class oAlienShipFloor extends oSolid {}
+class oAlienShipFloor extends oSolid {
+  oRubbleDarkSmall;
+}
+ObjType.oAlienShipFloor = oAlienShipFloor;

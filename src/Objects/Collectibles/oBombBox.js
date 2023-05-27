@@ -15,3 +15,4 @@ function oBombBox_CREATE($) {
 }
 
 class oBombBox extends oItem {}
+ObjType.oBombBox = oBombBox;

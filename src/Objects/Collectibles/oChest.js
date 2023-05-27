@@ -24,3 +24,4 @@ function oChest_CREATE($) {
 }
 
 class oChest extends oItem {}
+ObjType.oChest = oChest;

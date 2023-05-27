@@ -655,7 +655,7 @@ The string representing a room or obstacle must be laid out unbroken:
         tile_add(bgAlienShip3, 0, 0, 16, 16, xpos, ypos, 9005);
       } else if (tile == 'B') {
         tile = instance_create(xpos, ypos, oAlienShip);
-        [instances_of(tile)].orEach(($) => {
+        instances_of(tile).forEach(($) => {
           with ($) {
             sprite_index = sAlienFloor;
           }
@@ -667,7 +667,7 @@ The string representing a room or obstacle must be laid out unbroken:
           else instance_create(xpos, ypos, oDark);
         } else {
           tile = instance_create(xpos, ypos, oAlienShip);
-          [instances_of(tile)].orEach(($) => {
+          instances_of(tile).forEach(($) => {
             with ($) {
               sprite_index = sAlienFloor;
             }
@@ -676,19 +676,19 @@ The string representing a room or obstacle must be laid out unbroken:
         }
       } else if (tile == 'C') {
         tile = instance_create(xpos, ypos, oAlienShip);
-        [instances_of(tile)].orEach(($) => {
+        instances_of(tile).forEach(($) => {
           with ($) {
             sprite_index = sAlienFront;
           }
         });
         tile = instance_create(xpos, ypos + 16, oAlienShip);
-        [instances_of(tile)].orEach(($) => {
+        instances_of(tile).forEach(($) => {
           with ($) {
             sprite_index = sAlienFront;
           }
         });
         tile = instance_create(xpos, ypos + 32, oAlienShip);
-        [instances_of(tile)].orEach(($) => {
+        instances_of(tile).forEach(($) => {
           with ($) {
             sprite_index = sAlienFront2;
           }
@@ -698,7 +698,7 @@ The string representing a room or obstacle must be laid out unbroken:
         tile_add(bgAlienShip3, 0, 0, 16, 16, xpos, ypos + 32, 160);
       } else if (tile == 'D') {
         tile = instance_create(xpos, ypos, oAlienShip);
-        [instances_of(tile)].orEach(($) => {
+        instances_of(tile).forEach(($) => {
           with ($) {
             sprite_index = sAlienFront3;
           }

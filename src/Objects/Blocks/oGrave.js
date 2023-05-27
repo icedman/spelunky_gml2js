@@ -66,4 +66,11 @@ function oGrave_CREATE($) {
   }
 }
 
-class oGrave extends oSolid {}
+class oGrave extends oSolid {
+  sGrave2;
+  sGrave3;
+  sGrave4;
+  sGrave5;
+  sGrave6;
+}
+ObjType.oGrave = oGrave;

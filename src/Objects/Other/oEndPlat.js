@@ -11,3 +11,4 @@ function oEndPlat_CREATE($) {
 }
 
 class oEndPlat extends oSolid {}
+ObjType.oEndPlat = oEndPlat;

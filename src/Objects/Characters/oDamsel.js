@@ -204,7 +204,7 @@ function oDamsel_STEP($) {
 
       if (collision_point(x, y + 6, oSpikes, 0, 0) && yVel > 2) {
         obj = instance_place(x, y + 6, oSpikes);
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             sprite_index = sSpikesBlood;
           }
@@ -236,7 +236,7 @@ function oDamsel_STEP($) {
         if (obj.image_index >= 19 && obj.image_index < 28) {
           if (held) {
             held = false;
-            [instances_of(oPlayer1)].orEach(($) => {
+            instances_of(oPlayer1).forEach(($) => {
               with ($) {
                 holdItem = 0;
                 pickupItemType = '';
@@ -457,8 +457,56 @@ function oDamsel_CREATE($) {
 }
 
 class oDamsel extends oItem {
+  EXIT;
   KISS;
+  RUN;
   SLAVE;
+  THROWN;
+  YELL;
+  avor;
+  cimg;
+  damsels;
+  damselsGrabbed;
+  damselsKilled;
+  damselsKilledTotal;
+  damselsSavedTotal;
+  door;
+  forSale;
+  oExit;
+  oHeart;
+  oSacAltarLeft;
+  oYellHelp;
+  sDamselBounceL;
+  sDamselDieL;
+  sDamselDieLL;
+  sDamselDieLR;
+  sDamselExit2;
+  sDamselFallL;
+  sDamselKissL;
+  sDamselLeft;
+  sDamselRunL;
+  sDamselStunL;
+  sDamselYellL;
+  sDieL;
+  sDieLBounce;
+  sDieLFall;
+  sDieLL;
+  sDieLR;
+  sPExit;
+  sPKissL;
+  sRunLeft;
+  sSmallCollect;
+  sSpikesBlood;
+  sStandLeft;
+  sStunL;
+  sYellLeft;
+  sacCount;
+  shake;
+  sndDamsel;
+  sndKiss;
+  sndSteps;
   startled;
   stunMax;
+  xdamsels;
 }
+ObjType.oDamsel = oDamsel;

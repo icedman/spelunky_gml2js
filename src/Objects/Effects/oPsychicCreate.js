@@ -25,4 +25,7 @@ function oPsychicCreate_CREATE($) {
   }
 }
 
-class oPsychicCreate extends oDrawnSprite {}
+class oPsychicCreate extends oDrawnSprite {
+  oAlienBoss;
+}
+ObjType.oPsychicCreate = oPsychicCreate;

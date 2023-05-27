@@ -23,3 +23,4 @@ function oParaUsed_CREATE($) {
 }
 
 class oParaUsed extends oDrawnSprite {}
+ObjType.oParaUsed = oParaUsed;

@@ -54,3 +54,4 @@ function oBlock_CREATE($) {
 }
 
 class oBlock extends oSolid {}
+ObjType.oBlock = oBlock;

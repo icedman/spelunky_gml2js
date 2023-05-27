@@ -197,27 +197,26 @@ function oYetiKing_STEP($) {
         if (image_index >= 7 && image_index <= 12) {
           if (!SS_IsSoundPlaying(global.sndYetiYell))
             playSound(global.sndYetiYell);
-          [instances_of(oIce)]
-            .forEach(($) => {
-              with ($) {
-                if (instance_exists(oYetiKing)) {
-                  if (
-                    rand(1, 60) == 1 &&
-                    abs(oYetiKing.x + 16 - (x + 8)) > 16 &&
-                    point_distance(x, y, oYetiKing.x, oYetiKing.y) < 96
-                  ) {
-                    instance_create(x, y, oIceBlock);
-                    instance_destroy();
-                  }
+          instances_of(oIce).forEach(($) => {
+            with ($) {
+              if (instance_exists(oYetiKing)) {
+                if (
+                  rand(1, 60) == 1 &&
+                  abs(oYetiKing.x + 16 - (x + 8)) > 16 &&
+                  point_distance(x, y, oYetiKing.x, oYetiKing.y) < 96
+                ) {
+                  instance_create(x, y, oIceBlock);
+                  instance_destroy();
                 }
               }
-            })
+            }
+          });
 
-            [instances_of(oThinIce)].forEach(($) => {
-              with ($) {
-                thickness -= 2;
-              }
-            });
+          instances_of(oThinIce).forEach(($) => {
+            with ($) {
+              thickness -= 2;
+            }
+          });
         }
       }
 
@@ -276,4 +275,25 @@ function oYetiKing_CREATE($) {
   }
 }
 
-class oYetiKing extends oEnemy {}
+class oYetiKing extends oEnemy {
+  oIce;
+  oIceBlock;
+  oRopePile;
+  oSapphireBig;
+  oSpikeShoes;
+  oThinIce;
+  oYetiKing;
+  puncture;
+  sYetiKingLeft;
+  sYetiKingRight;
+  sYetiKingTurnL;
+  sYetiKingTurnR;
+  sYetiKingWalkL;
+  sYetiKingWalkR;
+  sYetiKingYellL;
+  sYetiKingYellR;
+  sndYetiYell;
+  thickness;
+  yetikings;
+}
+ObjType.oYetiKing = oYetiKing;

@@ -43,7 +43,7 @@ function oScreen_STEP($) {
       if (paused && global.plife > 0 && isLevel()) {
         instance_activate_all();
         paused = false;
-        [instances_of(oPlayer1)].forEach(($) => {
+        instances_of(oPlayer1).forEach(($) => {
           with ($) {
             if (facing == 18) xVel = -3;
             else xVel = 3;
@@ -229,7 +229,7 @@ function oScreen_STEP($) {
             )
           );
           if (instance_exists(oLampRed)) {
-            [instances_of(oPlayer1)].forEach(($) => {
+            instances_of(oPlayer1).forEach(($) => {
               with ($) {
                 distToLamp = distance_to_object(oLampRed);
                 if (distToLamp <= 96) {
@@ -245,7 +245,7 @@ function oScreen_STEP($) {
             });
           }
           if (instance_exists(oLampRedItem)) {
-            [instances_of(oPlayer1)].forEach(($) => {
+            instances_of(oPlayer1).forEach(($) => {
               with ($) {
                 distToLamp = distance_to_object(oLampRedItem);
                 if (distToLamp <= 96) {
@@ -266,145 +266,139 @@ function oScreen_STEP($) {
             96 - 64 * oLevel.darkness,
             false
           );
-          [instances_of(oFlare)]
-            .forEach(($) => {
-              with ($) {
-                draw_circle(x - view_xview[0], y - view_yview[0], 96, false);
-              }
-            })
+          instances_of(oFlare).forEach(($) => {
+            with ($) {
+              draw_circle(x - view_xview[0], y - view_yview[0], 96, false);
+            }
+          });
 
-            [instances_of(oFlareCrate)].forEach(($) => {
-              with ($) {
-                draw_circle(x - view_xview[0], y - view_yview[0], 96, false);
-              }
-            })
+          instances_of(oFlareCrate).forEach(($) => {
+            with ($) {
+              draw_circle(x - view_xview[0], y - view_yview[0], 96, false);
+            }
+          });
 
-            [instances_of(oLamp)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  96,
-                  false
-                );
-              }
-            })
+          instances_of(oLamp).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                96,
+                false
+              );
+            }
+          });
 
-            [instances_of(oLampItem)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x - view_xview[0],
-                  y - 4 - view_yview[0],
-                  96,
-                  false
-                );
-              }
-            })
+          instances_of(oLampItem).forEach(($) => {
+            with ($) {
+              draw_circle(x - view_xview[0], y - 4 - view_yview[0], 96, false);
+            }
+          });
 
-            [instances_of(oArrowTrapLeftLit)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  32,
-                  false
-                );
-              }
-            })
+          instances_of(oArrowTrapLeftLit).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                32,
+                false
+              );
+            }
+          });
 
-            [instances_of(oArrowTrapRightLit)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  32,
-                  false
-                );
-              }
-            })
+          instances_of(oArrowTrapRightLit).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                32,
+                false
+              );
+            }
+          });
 
-            [instances_of(oTikiTorch)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  32,
-                  false
-                );
-              }
-            })
+          instances_of(oTikiTorch).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                32,
+                false
+              );
+            }
+          });
 
-            [instances_of(oFireFrog)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  32,
-                  false
-                );
-              }
-            })
+          instances_of(oFireFrog).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                32,
+                false
+              );
+            }
+          });
 
-            [instances_of(oSpearTrapLit)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  32,
-                  false
-                );
-              }
-            })
+          instances_of(oSpearTrapLit).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                32,
+                false
+              );
+            }
+          });
 
-            [instances_of(oSmashTrapLit)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  32,
-                  false
-                );
-              }
-            })
+          instances_of(oSmashTrapLit).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                32,
+                false
+              );
+            }
+          });
 
-            [instances_of(oExplosion)].forEach(($) => {
-              with ($) {
-                draw_circle(x - view_xview[0], y - view_yview[0], 96, false);
-              }
-            })
+          instances_of(oExplosion).forEach(($) => {
+            with ($) {
+              draw_circle(x - view_xview[0], y - view_yview[0], 96, false);
+            }
+          });
 
-            [instances_of(oLava)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  32,
-                  false
-                );
-              }
-            })
+          instances_of(oLava).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                32,
+                false
+              );
+            }
+          });
 
-            [instances_of(oScarab)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 8 - view_xview[0],
-                  y + 8 - view_yview[0],
-                  16,
-                  false
-                );
-              }
-            })
+          instances_of(oScarab).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 8 - view_xview[0],
+                y + 8 - view_yview[0],
+                16,
+                false
+              );
+            }
+          });
 
-            [instances_of(oGhost)].forEach(($) => {
-              with ($) {
-                draw_circle(
-                  x + 16 - view_xview[0],
-                  y + 16 - view_yview[0],
-                  64,
-                  false
-                );
-              }
-            });
+          instances_of(oGhost).forEach(($) => {
+            with ($) {
+              draw_circle(
+                x + 16 - view_xview[0],
+                y + 16 - view_yview[0],
+                64,
+                false
+              );
+            }
+          });
 
           surface_set_target(screen);
           draw_set_blend_mode_ext(bm_dest_color, bm_zero);
@@ -458,7 +452,7 @@ function oScreen_KEYPRESS($) {
     if (paused && global.plife > 0 && isLevel()) {
       instance_activate_all();
       paused = false;
-      [instances_of(oPlayer1)].forEach(($) => {
+      instances_of(oPlayer1).forEach(($) => {
         with ($) {
           if (facing == 18) xVel = -3;
           else xVel = 3;
@@ -1006,17 +1000,37 @@ class oScreen extends oObject {
   bm_one;
   bm_src_color;
   bm_zero;
+  customLevelAuthor;
   darkSurf;
   displayheight;
   displaywidth;
   distToLamp;
-  enabled;
+  h;
   noone;
+  oScarab;
   pSurf;
   paused;
+  rEnd;
+  rEndCustom;
+  rIntro;
+  rMoon;
+  rStars;
+  rSun;
+  rTransition1;
+  rTransition1x;
+  rTransition2;
+  rTransition2x;
+  rTransition3;
+  rTransition3x;
+  rTransition4;
+  rTutorial;
+  screen;
   screen_h;
   screen_scale;
   screen_w;
   screen_x;
   screen_y;
+  softfullscreen;
+  w;
 }
+ObjType.oScreen = oScreen;

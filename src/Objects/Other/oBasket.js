@@ -4,4 +4,7 @@ function oBasket_OTHER($) {
   }
 }
 
-class oBasket extends oObject {}
+class oBasket extends oObject {
+  sBasket;
+}
+ObjType.oBasket = oBasket;

@@ -9,7 +9,7 @@ function oSpringTrap_COLLISION_oPlayer1($) {
         sprite_index = sSpringTrapSprung;
         playSound(global.sndBoing);
         status = SPRUNG;
-        [instances_of(other)].forEach(($) => {
+        instances_of(other).forEach(($) => {
           with ($) {
             y -= 16;
             yVel = -16;
@@ -34,7 +34,7 @@ function oSpringTrap_COLLISION_oItem($) {
       sprite_index = sSpringTrapSprung;
       playSound(global.sndBoing);
       status = SPRUNG;
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           y -= 24;
           yVel = -8;
@@ -84,7 +84,7 @@ function oSpringTrap_COLLISION_oEnemy($) {
       sprite_index = sSpringTrapSprung;
       playSound(global.sndBoing);
       status = SPRUNG;
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           y -= 16;
           yVel = -8;
@@ -109,4 +109,9 @@ function oSpringTrap_CREATE($) {
 
 class oSpringTrap extends oObject {
   SPRUNG;
+  lying;
+  sSpringTrap;
+  sSpringTrapSprung;
+  sndBoing;
 }
+ObjType.oSpringTrap = oSpringTrap;

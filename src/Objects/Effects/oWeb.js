@@ -77,3 +77,4 @@ function oWeb_COLLISION_oTreasure($) {
 }
 
 class oWeb extends oObject {}
+ObjType.oWeb = oWeb;

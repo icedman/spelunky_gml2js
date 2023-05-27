@@ -102,4 +102,8 @@ function oYellowBall_CREATE($) {
   }
 }
 
-class oYellowBall extends oDrawnSprite {}
+class oYellowBall extends oDrawnSprite {
+  oBat;
+  oFireFrog;
+}
+ObjType.oYellowBall = oYellowBall;

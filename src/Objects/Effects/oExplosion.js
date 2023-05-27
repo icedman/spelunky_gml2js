@@ -1,6 +1,6 @@
 function oExplosion_COLLISION_oBarrierEmitter($) {
   with ($) {
-    [instances_of(other)].orEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -33,7 +33,7 @@ function oExplosion_COLLISION_oBoulder($) {
       rubble.sprite_index = sRubbleTanSmall;
     }
 
-    [instances_of(other)].orEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -43,7 +43,7 @@ function oExplosion_COLLISION_oBoulder($) {
 
 function oExplosion_COLLISION_oWeb($) {
   with ($) {
-    [instances_of(other)].orEach(($) => {
+    instances_of(other).forEach(($) => {
       with ($) {
         instance_destroy();
       }
@@ -60,34 +60,33 @@ function oExplosion_COLLISION_oSolid($) {
         y > view_yview[0] - 16 &&
         y < view_yview[0] + view_hview[0] + 16)
     ) {
-      [instances_of(other)]
-        .forEach(($) => {
-          with ($) {
-            repeat(2);
-            {
-              tile = tile_layer_find(3, x + 1, y - 1);
-              if (tile) tile_delete(tile);
-            }
-            tile = tile_layer_find(3, x + 1, y + 16);
+      instances_of(other).forEach(($) => {
+        with ($) {
+          repeat(2);
+          {
+            tile = tile_layer_find(3, x + 1, y - 1);
             if (tile) tile_delete(tile);
-
-            if (!invincible) instance_destroy();
           }
-        })
+          tile = tile_layer_find(3, x + 1, y + 16);
+          if (tile) tile_delete(tile);
 
-        [instances_of(oTreasure)].forEach(($) => {
-          with ($) {
-            state = 1;
-          }
-        })
+          if (!invincible) instance_destroy();
+        }
+      });
 
-        [instances_of(oSpikes)].forEach(($) => {
-          with ($) {
-            if (!collision_point(x, y + 16, oSolid, 0, 0)) {
-              instance_destroy();
-            }
+      instances_of(oTreasure).forEach(($) => {
+        with ($) {
+          state = 1;
+        }
+      });
+
+      instances_of(oSpikes).forEach(($) => {
+        with ($) {
+          if (!collision_point(x, y + 16, oSolid, 0, 0)) {
+            instance_destroy();
           }
-        });
+        }
+      });
 
       //global.checkWater = true;
     }
@@ -102,13 +101,13 @@ function oExplosion_COLLISION_oItem($) {
       other.type == 'Jar' ||
       other.type == 'Skull'
     ) {
-      [instances_of(other)].orEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_destroy();
         }
       });
     } else if (other.type == 'Bomb') {
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           sprite_index = sBombArmed;
           image_speed = 1;
@@ -135,7 +134,7 @@ function oExplosion_COLLISION_oItem($) {
     }
 
     if (other.held) {
-      [instances_of(oPlayer1)].forEach(($) => {
+      instances_of(oPlayer1).forEach(($) => {
         with ($) {
           holdItem = 0;
           pickupItemType = '';
@@ -156,7 +155,7 @@ function oExplosion_OTHER($) {
 function oExplosion_COLLISION_oEnemy($) {
   with ($) {
     if (other.type == 'Magma Man') {
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           flame = instance_create(x + 8, y - 4, oMagma);
           flame.yVel = -rand(1, 3);
@@ -202,3 +201,4 @@ function oExplosion_COLLISION_oDamsel($) {
 }
 
 class oExplosion extends oDrawnSprite {}
+ObjType.oExplosion = oExplosion;

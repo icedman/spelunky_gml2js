@@ -9,3 +9,4 @@ function oSpikes_CREATE($) {
 }
 
 class oSpikes extends oDrawnSprite {}
+ObjType.oSpikes = oSpikes;

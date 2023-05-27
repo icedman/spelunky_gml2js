@@ -24,3 +24,4 @@ function oFireFrogArmed_CREATE($) {
 }
 
 class oFireFrogArmed extends oItem {}
+ObjType.oFireFrogArmed = oFireFrogArmed;

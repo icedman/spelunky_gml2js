@@ -17,6 +17,8 @@ target = sys.argv[2]
 path = sys.argv[1]
 sheets = {}
 
+sprites = {}
+
 makedirs(target + "/Sprites", exist_ok=True)
 makedirs(target + "/Rooms", exist_ok=True)
 
@@ -25,10 +27,10 @@ def getPivot(xml):
     oy = 0
     for l in open(xml):
         if "origin" in l:
-            match = re.search('x="([0-9*])', l)
+            match = re.search('x="([0-9]*)', l)
             if match != None:
                 ox = match.group(1)
-            match = re.search('y="([0-9*])', l)
+            match = re.search('y="([0-9]*)', l)
             if match != None:
                 oy = match.group(1)
 
@@ -89,6 +91,12 @@ def copyFiles(path):
                 # dstTxt = join(td, tf) + ".txt"
                 dstJs = join(td, tf) + ".js"
 
+            if not tf in sprites:
+                sprites[tf] = {
+                    'name': tf
+                }
+            sprite = sprites[tf]
+
             if not isSheet:
                 copyfile(src, dst)
                 print(src + "..")
@@ -105,7 +113,9 @@ def copyFiles(path):
 
                 if not tf in sheets:
                     sheets[tf] = { 'frames': [] }
-                sheets[tf]['frames'].append({ 'frame': 0, 'name': tf, 'ox': pivot[0], 'oy': pivot[1] })
+                sheets[tf]['frames'].append({ 'frame': 0, 'name': tf, 'ox': pivot[0], 'oy': pivot[1], 'path': dst })
+
+                sprite['frames'] = sheets[tf]['frames']
 
                 # with Image.open(src) as im:
                 #     w, h = im.size
@@ -134,7 +144,9 @@ def copyFiles(path):
 
                     if not tf in sheets:
                         sheets[tf] = { 'frames': [] }
-                    sheets[tf]['frames'].append({ 'frame': i, 'name': tf, 'ox': pivot[0], 'oy': pivot[1] })
+                    sheets[tf]['frames'].append({ 'frame': i, 'name': tf + "_" + str(i), 'ox': pivot[0], 'oy': pivot[1], 'path': dst2 })
+
+                    sprite['frames'] = sheets[tf]['frames']
 
                     print(src2 + "..")
                     print("copy " + dst2)
@@ -170,5 +182,26 @@ if not isdir(target):
     mkdir(target)
 copyFiles(path)
 
+def dumpSprite(sprite):
+    code = sprite['name'] + '= {\n'
+    code += '\'name\': \'' + sprite['name'] + '\',\n'
+    code += '\'frames\': [\n'
+    for frame in sprite['frames']:
+        code += '{\n'
+        code += '\'ox\': ' + frame['ox'] + ',\n'
+        code += '\'oy\': ' + frame['oy'] + ',\n'
+        code += '\'path\': \'' + frame['path'] + '\',\n'
+        code += '},\n'
+    code += ']\n'
+    code += '}\n'
 
-pprint(sheets)
+    f = open('./src/Sprites/' + sprite['name'] + '.js', 'w')
+    f.write(code)
+    f.close()
+
+    # pprint(sprite)
+
+for s in sprites:
+    dumpSprite(sprites[s])
+
+# pprint(sheets)

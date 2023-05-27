@@ -23,3 +23,4 @@ function oBloodSpark_CREATE($) {
 }
 
 class oBloodSpark extends oDrawnSprite {}
+ObjType.oBloodSpark = oBloodSpark;

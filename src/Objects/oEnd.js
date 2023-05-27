@@ -62,4 +62,7 @@ function oEnd_CREATE($) {
   }
 }
 
-class oEnd extends oObject {}
+class oEnd extends oObject {
+  oChain2;
+}
+ObjType.oEnd = oEnd;

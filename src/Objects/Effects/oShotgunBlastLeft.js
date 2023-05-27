@@ -11,3 +11,4 @@ function oShotgunBlastLeft_CREATE($) {
 }
 
 class oShotgunBlastLeft extends oObject {}
+ObjType.oShotgunBlastLeft = oShotgunBlastLeft;

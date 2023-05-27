@@ -27,3 +27,4 @@ function oRubyBig_CREATE($) {
 }
 
 class oRubyBig extends oTreasure {}
+ObjType.oRubyBig = oRubyBig;

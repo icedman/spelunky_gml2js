@@ -13,3 +13,4 @@ function oGoldBar_CREATE($) {
 }
 
 class oGoldBar extends oTreasure {}
+ObjType.oGoldBar = oGoldBar;

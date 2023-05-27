@@ -149,4 +149,9 @@ function oSpider_CREATE($) {
   }
 }
 
-class oSpider extends oEnemy {}
+class oSpider extends oEnemy {
+  sSpider;
+  sSpiderDrowning;
+  sSpiderFlip;
+}
+ObjType.oSpider = oSpider;

@@ -4,7 +4,8 @@ function getIdCollisionCharacterTop() {
 with the character.
 */
   //the solid must be hitting the character's bottom side, so...
-  oCharacter.tempId = id[instances_of(oCharacter)].forEach(($) => {
+  oCharacter.tempId = id;
+  instances_of(oCharacter).forEach(($) => {
     with ($) {
       calculateCollisionBounds();
       //if there is a collision with tempId on the character's bottom side

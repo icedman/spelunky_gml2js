@@ -25,4 +25,12 @@ function oThinIce_CREATE($) {
   }
 }
 
-class oThinIce extends oSolid {}
+class oThinIce extends oSolid {
+  sThinIce1;
+  sThinIce2;
+  sThinIce3;
+  sThinIce4;
+  sThinIce5;
+  sThinIce6;
+}
+ObjType.oThinIce = oThinIce;

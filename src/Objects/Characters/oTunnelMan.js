@@ -23,7 +23,7 @@ function oTunnelMan_STEP($) {
           } else talk = 4;
         }
 
-        [instances_of(oPDummy)].forEach(($) => {
+        instances_of(oPDummy).forEach(($) => {
           with ($) {
             status = TRANSITION;
             if (global.isDamsel) sprite_index = sDamselRunL;
@@ -89,5 +89,12 @@ function oTunnelMan_CREATE($) {
 class oTunnelMan extends oObject {
   donate;
   downCounter;
+  downHeld;
+  sTunnelManRight;
+  tunnel1;
+  tunnel2;
+  tunnel3Max;
   upCounter;
+  upHeld;
 }
+ObjType.oTunnelMan = oTunnelMan;

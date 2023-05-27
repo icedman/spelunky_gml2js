@@ -22,4 +22,9 @@ function oCheckBox4_CREATE($) {
   }
 }
 
-class oCheckBox4 extends oObject {}
+class oCheckBox4 extends oObject {
+  on;
+  sBox;
+  sBoxChecked;
+}
+ObjType.oCheckBox4 = oCheckBox4;

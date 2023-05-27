@@ -13,4 +13,7 @@ function oLampItem_CREATE($) {
   }
 }
 
-class oLampItem extends oItem {}
+class oLampItem extends oItem {
+  trigger;
+}
+ObjType.oLampItem = oLampItem;

@@ -7,7 +7,7 @@ function oIce_DESTROY($) {
 
       if (collision_point(x + 8, y + 8, oFrozenCaveman, 0, 0)) {
         obj = instance_place(x + 8, y + 8, oFrozenCaveman);
-        [instances_of(obj)].orEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -28,4 +28,7 @@ function oIce_CREATE($) {
   }
 }
 
-class oIce extends oSolid {}
+class oIce extends oSolid {
+  oFrozenCaveman;
+}
+ObjType.oIce = oIce;

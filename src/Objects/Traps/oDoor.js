@@ -60,4 +60,7 @@ function oDoor_CREATE($) {
   }
 }
 
-class oDoor extends oMovingSolid {}
+class oDoor extends oMovingSolid {
+  depth;
+}
+ObjType.oDoor = oDoor;

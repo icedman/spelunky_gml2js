@@ -15,3 +15,4 @@ function oLaserTrail_CREATE($) {
 }
 
 class oLaserTrail extends oDrawnSprite {}
+ObjType.oLaserTrail = oLaserTrail;

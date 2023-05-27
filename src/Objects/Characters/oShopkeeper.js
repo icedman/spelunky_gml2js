@@ -43,7 +43,7 @@ function oShopkeeper_COLLISION_oWhipPre($) {
 function oShopkeeper_COLLISION_oShotgun($) {
   with ($) {
     if (hp > 0 && status == ATTACK && !hasGun) {
-      [instances_of(other)].forEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           if (held) {
             oPlayer1.holdItem = 0;
@@ -135,7 +135,7 @@ function oShopkeeper_COLLISION_oCharacter($) {
           other.shopThrow = true;
         }
 
-        [instances_of(other)].forEach(($) => {
+        instances_of(other).forEach(($) => {
           with ($) {
             if (holdItem) {
               if (holdItem.type == 'Gold Idol') holdItem.y -= 8;
@@ -377,7 +377,7 @@ function oShopkeeper_STEP($) {
           global.diceRolled = true;
           global.diceValue = 0;
           if (instance_number(oDice) == 2 && oPlayer1.bet > 0) {
-            [instances_of(oDice)].forEach(($) => {
+            instances_of(oDice).forEach(($) => {
               with ($) {
                 if (!rolled) global.diceRolled = false;
                 global.diceValue += value;
@@ -394,7 +394,7 @@ function oShopkeeper_STEP($) {
               global.message2 = 'YOU WIN A PRIZE!';
               global.messageTimer = 200;
               oPlayer1.bet = 0;
-              [instances_of(oItem)].forEach(($) => {
+              instances_of(oItem).forEach(($) => {
                 with ($) {
                   if (inDiceHouse) {
                     obj = instance_create(x - 4, y + 6, oPoof);
@@ -432,7 +432,7 @@ function oShopkeeper_STEP($) {
               oPlayer1.bet = 0;
             }
             global.diceRolled = false;
-            [instances_of(oDice)].orEach(($) => {
+            instances_of(oDice).forEach(($) => {
               with ($) {
                 rolled = false;
               }
@@ -533,7 +533,7 @@ function oShopkeeper_STEP($) {
         image_speed = 1;
 
         if (!angered) {
-          [instances_of(oItem)].forEach(($) => {
+          instances_of(oItem).forEach(($) => {
             with ($) {
               cost = 0;
               forSale = false;
@@ -573,7 +573,7 @@ function oShopkeeper_STEP($) {
                 if (obj.xVel >= -6) obj.xVel = -6;
                 obj.yVel = random(1) - random(1);
                 obj.safe = true;
-                [instances_of(obj)].orEach(($) => {
+                instances_of(obj).forEach(($) => {
                   with ($) {
                     if (collision_point(x, y, oSolid, 0, 0)) instance_destroy();
                   }
@@ -592,7 +592,7 @@ function oShopkeeper_STEP($) {
                 if (obj.xVel < 6) obj.xVel = 6;
                 obj.yVel = random(1) - random(1);
                 obj.safe = true;
-                [instances_of(obj)].orEach(($) => {
+                instances_of(obj).forEach(($) => {
                   with ($) {
                     if (collision_point(x, y, oSolid, 0, 0)) instance_destroy();
                   }
@@ -660,7 +660,7 @@ function oShopkeeper_STEP($) {
             status = ATTACK;
             if (held) {
               held = false;
-              [instances_of(oPlayer1)].orEach(($) => {
+              instances_of(oPlayer1).forEach(($) => {
                 with ($) {
                   holdItem = 0;
                   pickupItemType = '';
@@ -797,8 +797,32 @@ class oShopkeeper extends oEnemy {
   PATROL;
   angered;
   betValue;
-  style;
+  diceGamesLost;
+  diceGamesWon;
+  diceRolled;
+  diceValue;
+  gamepadOn;
+  inDiceHouse;
+  item;
+  joyPayVal;
+  keyPayVal;
+  oBullet;
+  oDice;
+  sShopBounceL;
+  sShopDHeldL;
+  sShopDieL;
+  sShopDieLL;
+  sShopDieLR;
+  sShopFallL;
+  sShopHeldL;
+  sShopLeft;
+  sShopRunLeft;
+  sShopStunL;
+  sShopThrowL;
+  shopkeepers;
+  sndShotgun;
   throwCount;
   turnTimer;
   welcomed;
 }
+ObjType.oShopkeeper = oShopkeeper;

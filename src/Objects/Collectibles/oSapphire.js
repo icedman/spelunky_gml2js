@@ -20,3 +20,4 @@ function oSapphire_CREATE($) {
 }
 
 class oSapphire extends oTreasure {}
+ObjType.oSapphire = oSapphire;

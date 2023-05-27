@@ -25,3 +25,4 @@ function oJetpack_CREATE($) {
 }
 
 class oJetpack extends oItem {}
+ObjType.oJetpack = oJetpack;

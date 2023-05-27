@@ -15,3 +15,4 @@ function oMitt_CREATE($) {
 }
 
 class oMitt extends oItem {}
+ObjType.oMitt = oMitt;

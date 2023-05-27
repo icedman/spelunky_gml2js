@@ -117,4 +117,10 @@ function oArrowTrapRight_CREATE($) {
   }
 }
 
-class oArrowTrapRight extends oSolid {}
+class oArrowTrapRight extends oSolid {
+  id;
+  image_xscale;
+  oArrowTrapTest;
+  trapID;
+}
+ObjType.oArrowTrapRight = oArrowTrapRight;

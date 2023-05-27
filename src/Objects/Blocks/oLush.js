@@ -85,4 +85,8 @@ function oLush_CREATE($) {
   }
 }
 
-class oLush extends oSolid {}
+class oLush extends oSolid {
+  sLushGold;
+  sLushGoldBig;
+}
+ObjType.oLush = oLush;

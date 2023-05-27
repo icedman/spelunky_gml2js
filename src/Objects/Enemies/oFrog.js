@@ -125,4 +125,9 @@ function oFrog_CREATE($) {
   }
 }
 
-class oFrog extends oEnemy {}
+class oFrog extends oEnemy {
+  rogs;
+  sFrogJumpL;
+  sFrogLeft;
+}
+ObjType.oFrog = oFrog;

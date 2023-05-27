@@ -12,14 +12,14 @@ function oLoadLevel_KEYPRESS($) {
       } else if (keyboard_key == vk_backspace || keyboard_key == vk_delete) {
         //levelName += "DEL";
         levelName = string_delete(levelName, string_length(levelName), 1);
-        [instances_of(oMenuSel)].orEach(($) => {
+        instances_of(oMenuSel).forEach(($) => {
           with ($) {
             sprite_index = sMenuSelOff;
           }
         });
       } else {
         levelName += scrGetChar(keyboard_key);
-        [instances_of(oMenuSel)].orEach(($) => {
+        instances_of(oMenuSel).forEach(($) => {
           with ($) {
             sprite_index = sMenuSelOff;
           }
@@ -190,13 +190,28 @@ function oLoadLevel_CREATE($) {
 }
 
 class oLoadLevel extends oObject {
+  GET_FILE_NAME;
+  author;
   blackOut;
-  levelList = [];
+  bombStart;
+  c_red;
+  cr_default;
+  enabled;
+  j;
+  keepScore;
+  keyboard_key;
+  levelArray;
   levelLoaded;
+  lifeStart;
   msg;
   msgTimer;
-  numLevels;
-  numPages;
-  page;
+  nextLevel;
+  oLoadButton;
+  oScreen;
+  ropeStart;
   tempFile;
+  titleStart;
+  vk_backspace;
+  vk_delete;
 }
+ObjType.oLoadLevel = oLoadLevel;

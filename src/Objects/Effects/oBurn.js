@@ -27,3 +27,4 @@ function oBurn_CREATE($) {
 }
 
 class oBurn extends oDrawnSprite {}
+ObjType.oBurn = oBurn;

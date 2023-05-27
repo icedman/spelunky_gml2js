@@ -103,4 +103,8 @@ function oWebBall_COLLISION_oWater($) {
   }
 }
 
-class oWebBall extends oDrawnSprite {}
+class oWebBall extends oDrawnSprite {
+  oYellowTrail;
+  sWebCreate;
+}
+ObjType.oWebBall = oWebBall;

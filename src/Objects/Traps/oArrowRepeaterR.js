@@ -69,4 +69,12 @@ function oArrowRepeaterR_CREATE($) {
   }
 }
 
-class oArrowRepeaterR extends oSolid {}
+class oArrowRepeaterR extends oSolid {
+  arrow;
+  fired;
+  firing;
+  oArrow;
+  sndArrowTrap;
+  xAct;
+}
+ObjType.oArrowRepeaterR = oArrowRepeaterR;

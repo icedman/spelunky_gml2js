@@ -1,7 +1,7 @@
 function oEntranceCheck_COLLISION_oSolid($) {
   with ($) {
     if (other.type == 'Arrow Trap') {
-      [instances_of(other)].orEach(($) => {
+      instances_of(other).forEach(($) => {
         with ($) {
           instance_destroy();
         }
@@ -19,3 +19,4 @@ function oEntranceCheck_STEP($) {
 }
 
 class oEntranceCheck extends oObject {}
+ObjType.oEntranceCheck = oEntranceCheck;

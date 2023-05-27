@@ -25,7 +25,7 @@ function scrUseItem() {
   if (holdItem.sprite_index == sBomb) {
     holdItem.sprite_index = sBombArmed;
     holdItem.armed = true;
-    [instances_of(holdItem)].forEach(($) => {
+    instances_of(holdItem).forEach(($) => {
       with ($) {
         alarm[0] = 80;
         image_speed = 0.2;
@@ -49,60 +49,55 @@ function scrUseItem() {
         } else {
           obj = instance_create(x + 16, y, oRopeThrow);
         }
-        [instances_of(obj)]
-          .forEach(($) => {
-            with ($) {
-              t = true;
-              move_snap(16, 1);
-              if (
-                oPlayer1.x < x &&
-                !collision_point(oPlayer1.x + 2, oPlayer1.y, oSolid, 0, 0)
-              ) {
-                if (
-                  !collision_rectangle(x - 8, y, x - 7, y + 16, oSolid, 0, 0)
-                ) {
-                  x -= 8;
-                } else if (
-                  !collision_rectangle(x + 7, y, x + 8, y + 16, oSolid, 0, 0)
-                ) {
-                  x += 8;
-                } else t = false;
+        instances_of(obj).forEach(($) => {
+          with ($) {
+            t = true;
+            move_snap(16, 1);
+            if (
+              oPlayer1.x < x &&
+              !collision_point(oPlayer1.x + 2, oPlayer1.y, oSolid, 0, 0)
+            ) {
+              if (!collision_rectangle(x - 8, y, x - 7, y + 16, oSolid, 0, 0)) {
+                x -= 8;
               } else if (
-                !collision_point(oPlayer1.x - 2, oPlayer1.y, oSolid, 0, 0)
+                !collision_rectangle(x + 7, y, x + 8, y + 16, oSolid, 0, 0)
               ) {
-                if (
-                  !collision_rectangle(x + 7, y, x + 8, y + 16, oSolid, 0, 0)
-                ) {
-                  x += 8;
-                } else if (
-                  !collision_rectangle(x - 8, y, x - 7, y + 16, oSolid, 0, 0)
-                ) {
-                  x -= 8;
-                } else t = false;
-              }
-
-              if (!t) {
-                obj = oPlayer1.holdItem;
-                obj = instance_create(obj.x, obj.y, oRopeThrow);
-                if (oPlayer1.acing == 18) obj.xVel = -3.2;
-                else obj.xVel = 3.2;
-                obj.yVel = 0.5;
-                instance_destroy();
-              } else {
-                instance_create(x, y, oRopeTop);
-                armed = false;
-                falling = true;
-                xVel = 0;
-                yVel = 0;
-              }
+                x += 8;
+              } else t = false;
+            } else if (
+              !collision_point(oPlayer1.x - 2, oPlayer1.y, oSolid, 0, 0)
+            ) {
+              if (!collision_rectangle(x + 7, y, x + 8, y + 16, oSolid, 0, 0)) {
+                x += 8;
+              } else if (
+                !collision_rectangle(x - 8, y, x - 7, y + 16, oSolid, 0, 0)
+              ) {
+                x -= 8;
+              } else t = false;
             }
-          })
 
-          [instances_of(holdItem)].orEach(($) => {
-            with ($) {
+            if (!t) {
+              obj = oPlayer1.holdItem;
+              obj = instance_create(obj.x, obj.y, oRopeThrow);
+              if (oPlayer1.acing == 18) obj.xVel = -3.2;
+              else obj.xVel = 3.2;
+              obj.yVel = 0.5;
               instance_destroy();
+            } else {
+              instance_create(x, y, oRopeTop);
+              armed = false;
+              falling = true;
+              xVel = 0;
+              yVel = 0;
             }
-          });
+          }
+        });
+
+        instances_of(holdItem).forEach(($) => {
+          with ($) {
+            instance_destroy();
+          }
+        });
         holdItem = 0;
       } else {
         holdItem.x = x;
@@ -379,25 +374,24 @@ function scrUseItem() {
       if (y < 8) y = 8;
       x = tx;
       y = ty;
-      [instances_of(oBall)]
-        .forEach(($) => {
-          with ($) {
-            x = oPlayer1.x;
-            y = oPlayer1.y;
-          }
-        })
+      instances_of(oBall).forEach(($) => {
+        with ($) {
+          x = oPlayer1.x;
+          y = oPlayer1.y;
+        }
+      });
 
-        [instances_of(oChain)].forEach(($) => {
-          with ($) {
-            x = oPlayer1.x;
-            y = oPlayer1.y;
-          }
-        });
+      instances_of(oChain).forEach(($) => {
+        with ($) {
+          x = oPlayer1.x;
+          y = oPlayer1.y;
+        }
+      });
 
       // state = STANDING;
       obj = instance_place(x, y, oEnemy);
       if (obj) {
-        [instances_of(obj)].forEach(($) => {
+        instances_of(obj).forEach(($) => {
           with ($) {
             scrCreateBlood(oPlayer1.x, oPlayer1.y, 3);
             hp -= 99;
@@ -406,7 +400,7 @@ function scrUseItem() {
         });
       }
       playSound(global.sndTeleport);
-      [instances_of(oPlayer1)].forEach(($) => {
+      instances_of(oPlayer1).forEach(($) => {
         with ($) {
           state = 16;
         }

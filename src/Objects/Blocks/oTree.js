@@ -51,3 +51,4 @@ function oTree_CREATE($) {
 }
 
 class oTree extends oSolid {}
+ObjType.oTree = oTree;

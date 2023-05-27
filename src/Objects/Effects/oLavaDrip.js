@@ -15,3 +15,4 @@ function oLavaDrip_CREATE($) {
 }
 
 class oLavaDrip extends oRubblePiece {}
+ObjType.oLavaDrip = oLavaDrip;

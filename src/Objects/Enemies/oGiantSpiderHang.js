@@ -89,4 +89,11 @@ function oGiantSpiderHang_CREATE($) {
   }
 }
 
-class oGiantSpiderHang extends oEnemy {}
+class oGiantSpiderHang extends oEnemy {
+  giantspiders;
+  oGiantSpider;
+  oPaste;
+  oWeb;
+  r1;
+}
+ObjType.oGiantSpiderHang = oGiantSpiderHang;

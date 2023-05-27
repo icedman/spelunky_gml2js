@@ -8,3 +8,4 @@ function oTempleFake_STEP($) {
 }
 
 class oTempleFake extends oObject {}
+ObjType.oTempleFake = oTempleFake;

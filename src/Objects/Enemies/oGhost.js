@@ -113,4 +113,12 @@ function oGhost_CREATE($) {
   }
 }
 
-class oGhost extends oDrawnSprite {}
+class oGhost extends oDrawnSprite {
+  sGhostDisappear;
+  sGhostLeft;
+  sGhostRight;
+  sGhostTurnLeft;
+  sGhostTurnRight;
+  sndGhost;
+}
+ObjType.oGhost = oGhost;

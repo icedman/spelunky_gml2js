@@ -56,4 +56,15 @@ function oGoldIdol_CREATE($) {
   }
 }
 
-class oGoldIdol extends oItem {}
+class oGoldIdol extends oItem {
+  idols;
+  idolsGrabbed;
+  message;
+  message2;
+  messageTimer;
+  murderer;
+  oBigCollect;
+  oBrickSmooth;
+  thiefLevel;
+}
+ObjType.oGoldIdol = oGoldIdol;

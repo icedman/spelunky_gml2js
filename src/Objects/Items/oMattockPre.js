@@ -29,4 +29,8 @@ function oMattockPre_CREATE($) {
   }
 }
 
-class oMattockPre extends oWhipPre {}
+class oMattockPre extends oWhipPre {
+  sMattockPreL;
+  sMattockPreR;
+}
+ObjType.oMattockPre = oMattockPre;

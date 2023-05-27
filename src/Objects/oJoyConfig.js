@@ -227,8 +227,11 @@ function oJoyConfig_CREATE($) {
 }
 
 class oJoyConfig extends oObject {
+  currVal;
   joy;
   joyKey;
   joyPressed;
   joyReleased;
+  rInit;
 }
+ObjType.oJoyConfig = oJoyConfig;

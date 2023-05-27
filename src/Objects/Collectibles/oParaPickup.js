@@ -14,3 +14,4 @@ function oParaPickup_CREATE($) {
 }
 
 class oParaPickup extends oItem {}
+ObjType.oParaPickup = oParaPickup;

@@ -25,4 +25,8 @@ function oShotgun_CREATE($) {
   }
 }
 
-class oShotgun extends oItem {}
+class oShotgun extends oItem {
+  sShotgunLeft;
+  sShotgunRight;
+}
+ObjType.oShotgun = oShotgun;

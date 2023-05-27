@@ -2,17 +2,16 @@ function oNewButton_MOUSE($) {
   with ($) {
     if (sprite_index == sNewButtonPressed) {
       oLevelEditor.status = 10;
-      [instances_of(oEditButton)]
-        .orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        })
-        [instances_of(oTestButton)].orEach(($) => {
-          with ($) {
-            instance_destroy();
-          }
-        });
+      instances_of(oEditButton).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
+      instances_of(oTestButton).forEach(($) => {
+        with ($) {
+          instance_destroy();
+        }
+      });
       instance_destroy();
     }
     sprite_index = sNewButton;
@@ -31,4 +30,10 @@ function oNewButton_STEP($) {
   }
 }
 
-class oNewButton extends oObject {}
+class oNewButton extends oObject {
+  oEditButton;
+  oTestButton;
+  sNewButton;
+  sNewButtonPressed;
+}
+ObjType.oNewButton = oNewButton;

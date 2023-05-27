@@ -49,4 +49,7 @@ function oFlame_COLLISION_oWater($) {
   }
 }
 
-class oFlame extends oDetritus {}
+class oFlame extends oDetritus {
+  oFlameTrail;
+}
+ObjType.oFlame = oFlame;

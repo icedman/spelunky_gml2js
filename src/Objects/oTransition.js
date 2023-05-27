@@ -433,7 +433,7 @@ function oTransition_ALARM_0($) {
         isKills = true;
       } else {
         drawLoot = 2;
-        [instances_of(sprite)].orEach(($) => {
+        instances_of(sprite).forEach(($) => {
           with ($) {
             instance_destroy();
           }
@@ -524,6 +524,7 @@ function oTransition_CREATE($) {
 }
 
 class oTransition extends oObject {
+  customLevelName;
   debugCounter;
   drawLoot;
   drawPosX;
@@ -531,5 +532,42 @@ class oTransition extends oObject {
   hurryup;
   isKills;
   isLoot;
+  m2;
+  noDarkLevel;
+  oSprite;
+  probLake;
+  rLevel;
+  rLevel2;
+  rLevel3;
+  rOlmec;
+  s2;
+  sAlien;
+  sAlienBossDisp;
+  sCrystalSkullIco;
+  sDamselLeftIco;
+  sDeadFishLeftIco;
+  sDiamond;
+  sEmerald;
+  sEmeraldBig;
+  sGiantSpiderDisp;
+  sGoldBarDraw;
+  sGoldBarsDraw;
+  sGoldChunk;
+  sGoldIdolIco;
+  sGoldNugget;
+  sMegaMouth;
+  sPiranhaLeftIco;
+  sRuby;
+  sRubyBig;
+  sSapphire;
+  sSapphireBig;
+  sScarabDisp;
+  sShopLeftIco;
+  sSnakeLeft;
+  sStandLeftIco;
+  sTombLordDisp;
+  sYetiKingDisp;
   sprite;
+  xtime;
 }
+ObjType.oTransition = oTransition;

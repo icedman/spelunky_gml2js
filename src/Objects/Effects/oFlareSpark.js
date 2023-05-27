@@ -27,3 +27,4 @@ function oFlareSpark_CREATE($) {
 }
 
 class oFlareSpark extends oDrawnSprite {}
+ObjType.oFlareSpark = oFlareSpark;
