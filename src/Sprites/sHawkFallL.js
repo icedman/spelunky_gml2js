@@ -4,7 +4,7 @@ sHawkFallL = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sHawkFallL.png',
+      path: './dist/sprites/enemies/sHawkFallL.png',
     },
   ],
 };

@@ -48,5 +48,8 @@ function oBall_CREATE($) {
   }
 }
 
-class oBall extends oItem {}
+class oBall extends oItem {
+  sprite_index = sBall;
+  visible = true;
+}
 ObjType.oBall = oBall;

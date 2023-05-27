@@ -1,2 +1,5 @@
-class oBonesTile extends oDrawnSprite {}
+class oBonesTile extends oDrawnSprite {
+  sprite_index = sFakeBonesLeft;
+  visible = true;
+}
 ObjType.oBonesTile = oBonesTile;

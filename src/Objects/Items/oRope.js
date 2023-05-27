@@ -32,5 +32,7 @@ function oRope_CREATE($) {
 class oRope extends oLadder {
   burnTimer;
   oRopeBurn;
+  sprite_index = sRope;
+  visible = true;
 }
 ObjType.oRope = oRope;

@@ -198,5 +198,7 @@ class oAlienBoss extends oEnemy {
   sAlienBossDead;
   sAlienBossDie;
   sAlienBossHurt;
+  sprite_index = sAlienBoss;
+  visible = true;
 }
 ObjType.oAlienBoss = oAlienBoss;

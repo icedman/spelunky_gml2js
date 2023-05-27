@@ -15,5 +15,7 @@ function oWalDamsel_CREATE($) {
 
 class oWalDamsel extends oObject {
   oEndCustom;
+  sprite_index = sWalDamsel;
+  visible = true;
 }
 ObjType.oWalDamsel = oWalDamsel;

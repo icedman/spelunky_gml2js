@@ -4,7 +4,7 @@ sDesertNight2 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sDesertNight2.png',
+      path: './dist/sprites/other/sDesertNight2.png',
     },
   ],
 };

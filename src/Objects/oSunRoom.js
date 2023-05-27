@@ -150,5 +150,6 @@ function oSunRoom_ALARM_10($) {
 class oSunRoom extends oObject {
   oVampire;
   sDamselIcon;
+  visible = true;
 }
 ObjType.oSunRoom = oSunRoom;

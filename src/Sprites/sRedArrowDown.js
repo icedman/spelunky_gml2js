@@ -4,7 +4,7 @@ sRedArrowDown = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sRedArrowDown.png',
+      path: './dist/sprites/items/sRedArrowDown.png',
     },
   ],
 };

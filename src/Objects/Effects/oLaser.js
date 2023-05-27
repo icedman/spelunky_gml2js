@@ -106,5 +106,7 @@ class oLaser extends oDrawnSprite {
   oGold;
   oGoldBig;
   oLaserTrail;
+  sprite_index = sLaser;
+  visible = true;
 }
 ObjType.oLaser = oLaser;

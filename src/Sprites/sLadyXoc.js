@@ -4,7 +4,7 @@ sLadyXoc = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLadyXoc.png',
+      path: './dist/sprites/blocks/sLadyXoc.png',
     },
   ],
 };

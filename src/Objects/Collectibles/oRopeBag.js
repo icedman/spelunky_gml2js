@@ -10,5 +10,8 @@ function oRopeBag_CREATE($) {
   }
 }
 
-class oRopeBag extends oItem {}
+class oRopeBag extends oItem {
+  sprite_index = sRopeEnd;
+  visible = true;
+}
 ObjType.oRopeBag = oRopeBag;

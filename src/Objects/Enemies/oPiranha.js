@@ -199,5 +199,7 @@ class oPiranha extends oEnemy {
   piranhas;
   sPiranhaLeft;
   sPiranhaRight;
+  sprite_index = sPiranhaLeft;
+  visible = true;
 }
 ObjType.oPiranha = oPiranha;

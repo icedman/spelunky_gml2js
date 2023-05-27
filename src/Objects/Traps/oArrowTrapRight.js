@@ -122,5 +122,7 @@ class oArrowTrapRight extends oSolid {
   image_xscale;
   oArrowTrapTest;
   trapID;
+  sprite_index = sArrowTrapRight;
+  visible = true;
 }
 ObjType.oArrowTrapRight = oArrowTrapRight;

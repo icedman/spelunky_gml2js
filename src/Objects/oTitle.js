@@ -253,5 +253,6 @@ class oTitle extends oObject {
   oPDummy4;
   rCredits1;
   tofu;
+  visible = true;
 }
 ObjType.oTitle = oTitle;

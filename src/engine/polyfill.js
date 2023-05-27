@@ -1,3 +1,7 @@
+app = globalThis.app || { loadImage: () => {} };
+console = globalThis.console || app;
+window = globalThis.window || {};
+
 sqr = (n) => Math.sqr(n);
 sqrt = (n) => Math.sqrt(n);
 ord = (n) => Math.ord(n);
@@ -27,9 +31,24 @@ action_kill_object = () => {};
 
 // string
 string = () => {};
-string_char_at = () => {};
-string_delete = () => {};
-string_length = () => {};
+
+string_char_at = (str, idx) => {
+  return str[idx];
+};
+
+// strTemp = string_delete(strTemp, j, 5);
+// strTemp = string_insert(strObs1, strTemp, j);
+
+string_insert = (str, str2, idx) => {
+  return str.slice(0, idx) + str2 + str.slice(idx);
+};
+string_delete = (str, idx, len) => {
+  return str.slice(0, idx) + str.slice(idx + len);
+};
+
+string_length = (str) => {
+  return str.length;
+};
 string_lower = () => {};
 string_upper = () => {};
 
@@ -40,12 +59,6 @@ SS_SetSoundPan = () => {};
 SS_SetSoundVol = () => {};
 SS_StopSound = () => {};
 SS_Unload = () => {};
-
-// collision
-collision_line = () => {};
-collision_point = () => {};
-collision_rectangle = () => {};
-collision_rectangle_obj = () => {};
 
 // display
 display_get_height = () => {};
@@ -134,6 +147,7 @@ surface_free = () => {};
 surface_reset_target = () => {};
 surface_set_target = () => {};
 
+tile_add = () => {};
 tile_delete = () => {};
 tile_layer_find = () => {};
 window_set_cursor = () => {};

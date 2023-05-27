@@ -4,7 +4,7 @@ sCeilingTrap = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/traps/sCeilingTrap.png',
+      path: './dist/sprites/traps/sCeilingTrap.png',
     },
   ],
 };

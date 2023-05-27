@@ -80,5 +80,7 @@ function oTarget_CREATE($) {
 class oTarget extends oObject {
   hard;
   moveOff;
+  sprite_index = sTarget;
+  visible = true;
 }
 ObjType.oTarget = oTarget;

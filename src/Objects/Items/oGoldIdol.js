@@ -66,5 +66,7 @@ class oGoldIdol extends oItem {
   oBigCollect;
   oBrickSmooth;
   thiefLevel;
+  sprite_index = sGoldIdol;
+  visible = true;
 }
 ObjType.oGoldIdol = oGoldIdol;

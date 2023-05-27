@@ -56,5 +56,7 @@ function oBarrierEmitter_CREATE($) {
 
 class oBarrierEmitter extends oObject {
   oBarrier;
+  sprite_index = sBarrierEmitter;
+  visible = true;
 }
 ObjType.oBarrierEmitter = oBarrierEmitter;

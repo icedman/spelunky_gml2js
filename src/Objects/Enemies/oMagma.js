@@ -104,5 +104,7 @@ class oMagma extends oDetritus {
   oMagmaMan;
   oMagmaTrail;
   sMagmaManCreate;
+  sprite_index = sMagma;
+  visible = true;
 }
 ObjType.oMagma = oMagma;

@@ -28,5 +28,7 @@ function oMattock_CREATE($) {
 class oMattock extends oItem {
   sMattockLeft;
   sMattockRight;
+  sprite_index = sMattockRight;
+  visible = true;
 }
 ObjType.oMattock = oMattock;

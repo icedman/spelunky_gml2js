@@ -188,5 +188,8 @@ function oSmashTrap_CREATE($) {
   }
 }
 
-class oSmashTrap extends oMovingSolid {}
+class oSmashTrap extends oMovingSolid {
+  sprite_index = sSmashTrap;
+  visible = true;
+}
 ObjType.oSmashTrap = oSmashTrap;

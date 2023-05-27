@@ -8,5 +8,8 @@ function oAlienTile_CREATE($) {
   }
 }
 
-class oAlienTile extends oDrawnSprite {}
+class oAlienTile extends oDrawnSprite {
+  sprite_index = sAlien;
+  visible = true;
+}
 ObjType.oAlienTile = oAlienTile;

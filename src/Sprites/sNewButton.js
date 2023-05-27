@@ -4,7 +4,7 @@ sNewButton = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sNewButton.png',
+      path: './dist/sprites/other/sNewButton.png',
     },
   ],
 };

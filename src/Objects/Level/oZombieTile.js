@@ -8,5 +8,8 @@ function oZombieTile_CREATE($) {
   }
 }
 
-class oZombieTile extends oDrawnSprite {}
+class oZombieTile extends oDrawnSprite {
+  sprite_index = sZombieLeft;
+  visible = true;
+}
 ObjType.oZombieTile = oZombieTile;

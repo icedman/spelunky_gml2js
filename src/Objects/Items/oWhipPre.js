@@ -30,5 +30,8 @@ function oWhipPre_CREATE($) {
   }
 }
 
-class oWhipPre extends oDrawnSprite {}
+class oWhipPre extends oDrawnSprite {
+  sprite_index = sWhipPreR;
+  visible = true;
+}
 ObjType.oWhipPre = oWhipPre;

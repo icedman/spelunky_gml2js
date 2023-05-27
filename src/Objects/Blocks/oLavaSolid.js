@@ -8,5 +8,8 @@ function oLavaSolid_CREATE($) {
   }
 }
 
-class oLavaSolid extends oSolid {}
+class oLavaSolid extends oSolid {
+  sprite_index = sLava;
+  visible = true;
+}
 ObjType.oLavaSolid = oLavaSolid;

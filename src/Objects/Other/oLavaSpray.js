@@ -37,5 +37,7 @@ function oLavaSpray_CREATE($) {
 
 class oLavaSpray extends oObject {
   rEnd2;
+  sprite_index = sLavaSpray;
+  visible = true;
 }
 ObjType.oLavaSpray = oLavaSpray;

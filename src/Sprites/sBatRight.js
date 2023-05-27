@@ -4,17 +4,17 @@ sBatRight = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sBatRight_0.png',
+      path: './dist/sprites/enemies/sBatRight_0.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sBatRight_1.png',
+      path: './dist/sprites/enemies/sBatRight_1.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sBatRight_2.png',
+      path: './dist/sprites/enemies/sBatRight_2.png',
     },
   ],
 };

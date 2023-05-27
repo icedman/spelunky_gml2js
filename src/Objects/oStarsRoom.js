@@ -104,5 +104,6 @@ class oStarsRoom extends oObject {
   oShopkeeper2;
   sHeart;
   sShopkeeperIcon;
+  visible = true;
 }
 ObjType.oStarsRoom = oStarsRoom;

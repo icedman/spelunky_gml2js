@@ -120,5 +120,7 @@ class oGhost extends oDrawnSprite {
   sGhostTurnLeft;
   sGhostTurnRight;
   sndGhost;
+  sprite_index = sGhostRight;
+  visible = true;
 }
 ObjType.oGhost = oGhost;

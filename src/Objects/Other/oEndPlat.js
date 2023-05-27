@@ -10,5 +10,8 @@ function oEndPlat_CREATE($) {
   }
 }
 
-class oEndPlat extends oSolid {}
+class oEndPlat extends oSolid {
+  sprite_index = sEndPlat;
+  visible = true;
+}
 ObjType.oEndPlat = oEndPlat;

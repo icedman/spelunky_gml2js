@@ -53,5 +53,8 @@ function oFlareCrate_CREATE($) {
   }
 }
 
-class oFlareCrate extends oItem {}
+class oFlareCrate extends oItem {
+  sprite_index = sFlareCrate;
+  visible = true;
+}
 ObjType.oFlareCrate = oFlareCrate;

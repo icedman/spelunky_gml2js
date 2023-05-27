@@ -9,5 +9,8 @@ function oTombLordTile_CREATE($) {
   }
 }
 
-class oTombLordTile extends oDrawnSprite {}
+class oTombLordTile extends oDrawnSprite {
+  sprite_index = sTombLordLeft;
+  visible = true;
+}
 ObjType.oTombLordTile = oTombLordTile;

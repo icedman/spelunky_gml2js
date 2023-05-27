@@ -4,17 +4,17 @@ sLampItem = {
     {
       ox: 8,
       oy: 12,
-      path: './src/Sprites/items/sLampItem_0.png',
+      path: './dist/sprites/items/sLampItem_0.png',
     },
     {
       ox: 8,
       oy: 12,
-      path: './src/Sprites/items/sLampItem_1.png',
+      path: './dist/sprites/items/sLampItem_1.png',
     },
     {
       ox: 8,
       oy: 12,
-      path: './src/Sprites/items/sLampItem_2.png',
+      path: './dist/sprites/items/sLampItem_2.png',
     },
   ],
 };

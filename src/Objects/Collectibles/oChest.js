@@ -23,5 +23,8 @@ function oChest_CREATE($) {
   }
 }
 
-class oChest extends oItem {}
+class oChest extends oItem {
+  sprite_index = sChest;
+  visible = true;
+}
 ObjType.oChest = oChest;

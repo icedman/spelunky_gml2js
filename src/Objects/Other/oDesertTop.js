@@ -6,5 +6,7 @@ function oDesertTop_CREATE($) {
 
 class oDesertTop extends oObject {
   sDesertTopNight;
+  sprite_index = sDesertTop;
+  visible = true;
 }
 ObjType.oDesertTop = oDesertTop;

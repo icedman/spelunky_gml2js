@@ -4,7 +4,7 @@ sSpringShoes = {
     {
       ox: 8,
       oy: 6,
-      path: './src/Sprites/items/sSpringShoes.png',
+      path: './dist/sprites/items/sSpringShoes.png',
     },
   ],
 };

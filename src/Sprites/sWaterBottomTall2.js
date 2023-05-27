@@ -4,7 +4,7 @@ sWaterBottomTall2 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sWaterBottomTall2.png',
+      path: './dist/sprites/blocks/sWaterBottomTall2.png',
     },
   ],
 };

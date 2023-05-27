@@ -239,5 +239,6 @@ class oIntro extends oObject {
   str3;
   vk_enter;
   vk_escape;
+  visible = true;
 }
 ObjType.oIntro = oIntro;

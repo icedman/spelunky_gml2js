@@ -508,5 +508,7 @@ class oDamsel extends oItem {
   startled;
   stunMax;
   xdamsels;
+  sprite_index = sDamselLeft;
+  visible = true;
 }
 ObjType.oDamsel = oDamsel;

@@ -4,7 +4,7 @@ sBombBoxTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sBombBoxTile.png',
+      path: './dist/sprites/level/sBombBoxTile.png',
     },
   ],
 };

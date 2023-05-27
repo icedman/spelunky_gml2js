@@ -16,5 +16,7 @@ function oShrubScroll_CREATE($) {
 class oShrubScroll extends oDrawnSprite {
   sShrubDark;
   scroll;
+  sprite_index = sShrub;
+  visible = true;
 }
 ObjType.oShrubScroll = oShrubScroll;

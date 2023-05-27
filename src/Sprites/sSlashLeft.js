@@ -4,17 +4,17 @@ sSlashLeft = {
     {
       ox: 4,
       oy: 24,
-      path: './src/Sprites/items/sSlashLeft_0.png',
+      path: './dist/sprites/items/sSlashLeft_0.png',
     },
     {
       ox: 4,
       oy: 24,
-      path: './src/Sprites/items/sSlashLeft_1.png',
+      path: './dist/sprites/items/sSlashLeft_1.png',
     },
     {
       ox: 4,
       oy: 24,
-      path: './src/Sprites/items/sSlashLeft_2.png',
+      path: './dist/sprites/items/sSlashLeft_2.png',
     },
   ],
 };

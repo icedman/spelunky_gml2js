@@ -22,5 +22,8 @@ function oBones_CREATE($) {
   }
 }
 
-class oBones extends oDrawnSprite {}
+class oBones extends oDrawnSprite {
+  sprite_index = sBonesLeft;
+  visible = true;
+}
 ObjType.oBones = oBones;

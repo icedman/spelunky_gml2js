@@ -40,5 +40,6 @@ function oFinalBoss_CREATE($) {
 class oFinalBoss extends oObject {
   brick;
   doorOpen;
+  visible = true;
 }
 ObjType.oFinalBoss = oFinalBoss;

@@ -4,7 +4,7 @@ sMushroom8 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/mushrooms/sMushroom8.png',
+      path: './dist/sprites/mushrooms/sMushroom8.png',
     },
   ],
 };

@@ -745,6 +745,8 @@ The string representing a room or obstacle must be laid out unbroken:
     }
   }
 
+  console.log(strTemp)
+
   // Generate the tiles
   for (j = 0; j < 8; j += 1) {
     for (i = 1; i < 11; i += 1) {

@@ -95,5 +95,7 @@ class oGiantSpiderHang extends oEnemy {
   oPaste;
   oWeb;
   r1;
+  sprite_index = sGiantSpiderHang;
+  visible = true;
 }
 ObjType.oGiantSpiderHang = oGiantSpiderHang;

@@ -4,7 +4,7 @@ sBoxChecked = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sBoxChecked.png',
+      path: './dist/sprites/other/sBoxChecked.png',
     },
   ],
 };

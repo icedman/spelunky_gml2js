@@ -295,5 +295,7 @@ class oYetiKing extends oEnemy {
   sndYetiYell;
   thickness;
   yetikings;
+  sprite_index = sYetiKingLeft;
+  visible = true;
 }
 ObjType.oYetiKing = oYetiKing;

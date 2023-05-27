@@ -156,5 +156,7 @@ class oBoulder extends oMovingSolid {
   sBoulderRotateR;
   sndCrunch;
   tile;
+  sprite_index = sBoulder;
+  visible = true;
 }
 ObjType.oBoulder = oBoulder;

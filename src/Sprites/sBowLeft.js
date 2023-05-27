@@ -4,22 +4,22 @@ sBowLeft = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sBowLeft_0.png',
+      path: './dist/sprites/items/sBowLeft_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sBowLeft_1.png',
+      path: './dist/sprites/items/sBowLeft_1.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sBowLeft_2.png',
+      path: './dist/sprites/items/sBowLeft_2.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sBowLeft_3.png',
+      path: './dist/sprites/items/sBowLeft_3.png',
     },
   ],
 };

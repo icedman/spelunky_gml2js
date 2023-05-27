@@ -282,5 +282,6 @@ function oCredits2_ALARM_6($) {
 
 class oCredits2 extends oObject {
   oCaravan;
+  visible = true;
 }
 ObjType.oCredits2 = oCredits2;

@@ -4,7 +4,7 @@ sGiantTikiHead = {
     {
       ox: 16,
       oy: 16,
-      path: './src/Sprites/traps/sGiantTikiHead.png',
+      path: './dist/sprites/traps/sGiantTikiHead.png',
     },
   ],
 };

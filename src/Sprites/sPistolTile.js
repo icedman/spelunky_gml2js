@@ -4,7 +4,7 @@ sPistolTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sPistolTile.png',
+      path: './dist/sprites/level/sPistolTile.png',
     },
   ],
 };

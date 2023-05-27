@@ -4,7 +4,7 @@ sGoldBars = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sGoldBars.png',
+      path: './dist/sprites/items/sGoldBars.png',
     },
   ],
 };

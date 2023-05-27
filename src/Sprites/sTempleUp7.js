@@ -4,7 +4,7 @@ sTempleUp7 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sTempleUp7.png',
+      path: './dist/sprites/blocks/sTempleUp7.png',
     },
   ],
 };

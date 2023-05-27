@@ -23,5 +23,8 @@ function oPoof_CREATE($) {
   }
 }
 
-class oPoof extends oDrawnSprite {}
+class oPoof extends oDrawnSprite {
+  sprite_index = sPoof;
+  visible = true;
+}
 ObjType.oPoof = oPoof;

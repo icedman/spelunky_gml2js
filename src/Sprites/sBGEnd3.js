@@ -4,7 +4,7 @@ sBGEnd3 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sBGEnd3.png',
+      path: './dist/sprites/other/sBGEnd3.png',
     },
   ],
 };

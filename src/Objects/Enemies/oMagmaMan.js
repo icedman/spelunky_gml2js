@@ -223,5 +223,7 @@ class oMagmaMan extends oEnemy {
   sMagmaManWalkL;
   sightCounter;
   stunTimer;
+  sprite_index = sMagmaManLeft;
+  visible = true;
 }
 ObjType.oMagmaMan = oMagmaMan;

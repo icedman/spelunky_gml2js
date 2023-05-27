@@ -4,7 +4,7 @@ sBasketball = {
     {
       ox: 4,
       oy: 4,
-      path: './src/Sprites/items/sBasketball.png',
+      path: './dist/sprites/items/sBasketball.png',
     },
   ],
 };

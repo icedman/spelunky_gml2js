@@ -8,5 +8,8 @@ function oVampireTile_CREATE($) {
   }
 }
 
-class oVampireTile extends oDrawnSprite {}
+class oVampireTile extends oDrawnSprite {
+  sprite_index = sVampireLeft;
+  visible = true;
+}
 ObjType.oVampireTile = oVampireTile;

@@ -4,7 +4,7 @@ sPageUp = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sPageUp.png',
+      path: './dist/sprites/other/sPageUp.png',
     },
   ],
 };

@@ -102,5 +102,6 @@ class oGlobals extends oObject {
   udjatBlink;
   udjatCounter;
   usedShortcut;
+  visible = false;
 }
 ObjType.oGlobals = oGlobals;

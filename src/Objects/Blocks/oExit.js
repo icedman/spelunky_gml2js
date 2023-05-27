@@ -18,5 +18,7 @@ function oExit_CREATE($) {
 
 class oExit extends oDrawnSprite {
   myFontSmall;
+  sprite_index = sExit;
+  visible = true;
 }
 ObjType.oExit = oExit;

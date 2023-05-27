@@ -4,7 +4,7 @@ sDieLFall = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sDieLFall.png',
+      path: './dist/sprites/character/sDieLFall.png',
     },
   ],
 };

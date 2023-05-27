@@ -4,7 +4,7 @@ sHangLeft = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sHangLeft.png',
+      path: './dist/sprites/character/sHangLeft.png',
     },
   ],
 };

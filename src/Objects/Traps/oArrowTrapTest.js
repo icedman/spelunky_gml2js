@@ -166,5 +166,8 @@ function oArrowTrapTest_COLLISION_oTreasure($) {
   }
 }
 
-class oArrowTrapTest extends oObject {}
+class oArrowTrapTest extends oObject {
+  sprite_index = sRed;
+  visible = false;
+}
 ObjType.oArrowTrapTest = oArrowTrapTest;

@@ -4,7 +4,7 @@ sThwompTrap = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/traps/sThwompTrap.png',
+      path: './dist/sprites/traps/sThwompTrap.png',
     },
   ],
 };

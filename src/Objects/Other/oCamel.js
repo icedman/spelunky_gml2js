@@ -30,5 +30,7 @@ class oCamel extends oObject {
   oCredits1;
   sCamelDamsel;
   sCamelTunnel;
+  sprite_index = sCamel;
+  visible = true;
 }
 ObjType.oCamel = oCamel;

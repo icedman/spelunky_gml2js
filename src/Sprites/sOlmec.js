@@ -4,7 +4,7 @@ sOlmec = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sOlmec.png',
+      path: './dist/sprites/enemies/sOlmec.png',
     },
   ],
 };

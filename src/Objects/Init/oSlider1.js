@@ -37,5 +37,7 @@ class oSlider1 extends oObject {
   mouse_x;
   musCave;
   musicVol;
+  sprite_index = sSlider;
+  visible = true;
 }
 ObjType.oSlider1 = oSlider1;

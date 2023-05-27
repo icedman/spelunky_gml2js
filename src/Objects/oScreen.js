@@ -1032,5 +1032,6 @@ class oScreen extends oObject {
   screen_y;
   softfullscreen;
   w;
+  visible = false;
 }
 ObjType.oScreen = oScreen;

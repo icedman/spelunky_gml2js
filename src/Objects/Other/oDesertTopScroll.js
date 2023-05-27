@@ -13,5 +13,8 @@ function oDesertTopScroll_CREATE($) {
   }
 }
 
-class oDesertTopScroll extends oObject {}
+class oDesertTopScroll extends oObject {
+  sprite_index = sDesertTop;
+  visible = true;
+}
 ObjType.oDesertTopScroll = oDesertTopScroll;

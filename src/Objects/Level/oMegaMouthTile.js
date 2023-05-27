@@ -8,5 +8,8 @@ function oMegaMouthTile_CREATE($) {
   }
 }
 
-class oMegaMouthTile extends oDrawnSprite {}
+class oMegaMouthTile extends oDrawnSprite {
+  sprite_index = sMegaMouthTile;
+  visible = true;
+}
 ObjType.oMegaMouthTile = oMegaMouthTile;

@@ -4,7 +4,7 @@ sTimerIcon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/hud/sTimerIcon.png',
+      path: './dist/sprites/hud/sTimerIcon.png',
     },
   ],
 };

@@ -32,5 +32,7 @@ function oRubbleDark_CREATE($) {
 class oRubbleDark extends oDrawnSprite {
   oBlock;
   oBrick;
+  sprite_index = sRubbleDark;
+  visible = true;
 }
 ObjType.oRubbleDark = oRubbleDark;

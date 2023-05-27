@@ -14,5 +14,8 @@ function oMagmaTrail_CREATE($) {
   }
 }
 
-class oMagmaTrail extends oDrawnSprite {}
+class oMagmaTrail extends oDrawnSprite {
+  sprite_index = sFlameTrail;
+  visible = true;
+}
 ObjType.oMagmaTrail = oMagmaTrail;

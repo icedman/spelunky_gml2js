@@ -263,5 +263,6 @@ class oLevel extends oObject {
   shakeSwitch;
   xviewPrev;
   yviewPrev;
+  visible = true;
 }
 ObjType.oLevel = oLevel;

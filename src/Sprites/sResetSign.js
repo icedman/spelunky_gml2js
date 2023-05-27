@@ -4,7 +4,7 @@ sResetSign = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sResetSign.png',
+      path: './dist/sprites/other/sResetSign.png',
     },
   ],
 };

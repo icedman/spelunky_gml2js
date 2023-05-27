@@ -4,7 +4,7 @@ sCapeIcon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/hud/sCapeIcon.png',
+      path: './dist/sprites/hud/sCapeIcon.png',
     },
   ],
 };

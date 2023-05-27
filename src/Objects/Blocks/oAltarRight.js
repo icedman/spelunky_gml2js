@@ -23,5 +23,8 @@ function oAltarRight_DESTROY($) {
   }
 }
 
-class oAltarRight extends oSolid {}
+class oAltarRight extends oSolid {
+  sprite_index = sAltarRight;
+  visible = true;
+}
 ObjType.oAltarRight = oAltarRight;

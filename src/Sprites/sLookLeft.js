@@ -4,7 +4,7 @@ sLookLeft = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sLookLeft.png',
+      path: './dist/sprites/character/sLookLeft.png',
     },
   ],
 };

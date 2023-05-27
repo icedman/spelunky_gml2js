@@ -491,5 +491,7 @@ class oVampire extends oEnemy {
   sVampireStunL;
   sndBat;
   vampires;
+  sprite_index = sVampireLeft;
+  visible = true;
 }
 ObjType.oVampire = oVampire;

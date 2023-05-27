@@ -943,5 +943,6 @@ class oLevelEditor extends oObject {
   signNamesNum;
   textEdit;
   trapArray;
+  visible = true;
 }
 ObjType.oLevelEditor = oLevelEditor;

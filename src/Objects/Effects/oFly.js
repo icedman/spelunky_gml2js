@@ -120,5 +120,7 @@ function oFly_COLLISION_oDamsel($) {
 class oFly extends oObject {
   sFlyLeft;
   sFlyRight;
+  sprite_index = sFlyLeft;
+  visible = true;
 }
 ObjType.oFly = oFly;

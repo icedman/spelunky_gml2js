@@ -8,5 +8,8 @@ function oDrip_CREATE($) {
   }
 }
 
-class oDrip extends oRubblePiece {}
+class oDrip extends oRubblePiece {
+  sprite_index = sDrip;
+  visible = true;
+}
 ObjType.oDrip = oDrip;

@@ -23,5 +23,7 @@ function oHintHand_CREATE($) {
 
 class oHintHand extends oObject {
   strLen;
+  sprite_index = sHintPoint;
+  visible = true;
 }
 ObjType.oHintHand = oHintHand;

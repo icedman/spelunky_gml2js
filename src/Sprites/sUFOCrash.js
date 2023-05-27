@@ -4,7 +4,7 @@ sUFOCrash = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sUFOCrash.png',
+      path: './dist/sprites/enemies/sUFOCrash.png',
     },
   ],
 };

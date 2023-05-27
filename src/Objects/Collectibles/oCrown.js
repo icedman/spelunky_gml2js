@@ -13,5 +13,8 @@ function oCrown_CREATE($) {
   }
 }
 
-class oCrown extends oItem {}
+class oCrown extends oItem {
+  sprite_index = sCrown;
+  visible = true;
+}
 ObjType.oCrown = oCrown;

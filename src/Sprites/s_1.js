@@ -4,7 +4,7 @@ s_1 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_1.png',
+      path: './dist/sprites/supersound/s_1.png',
     },
   ],
 };

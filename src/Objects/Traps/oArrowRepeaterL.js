@@ -69,5 +69,8 @@ function oArrowRepeaterL_CREATE($) {
   }
 }
 
-class oArrowRepeaterL extends oSolid {}
+class oArrowRepeaterL extends oSolid {
+  sprite_index = sArrowTrapLeft;
+  visible = true;
+}
 ObjType.oArrowRepeaterL = oArrowRepeaterL;

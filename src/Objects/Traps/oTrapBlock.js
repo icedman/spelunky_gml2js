@@ -51,5 +51,8 @@ function oTrapBlock_CREATE($) {
   }
 }
 
-class oTrapBlock extends oSolid {}
+class oTrapBlock extends oSolid {
+  sprite_index = sSkullBlock;
+  visible = true;
+}
 ObjType.oTrapBlock = oTrapBlock;

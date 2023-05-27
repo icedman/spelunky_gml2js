@@ -4,7 +4,7 @@ sRopePileTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sRopePileTile.png',
+      path: './dist/sprites/level/sRopePileTile.png',
     },
   ],
 };

@@ -50,5 +50,8 @@ function oTree_CREATE($) {
   }
 }
 
-class oTree extends oSolid {}
+class oTree extends oSolid {
+  sprite_index = sTreeTrunk;
+  visible = true;
+}
 ObjType.oTree = oTree;

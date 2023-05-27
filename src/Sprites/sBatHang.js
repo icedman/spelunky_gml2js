@@ -4,7 +4,7 @@ sBatHang = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sBatHang.png',
+      path: './dist/sprites/enemies/sBatHang.png',
     },
   ],
 };

@@ -58,5 +58,7 @@ class oThwompTrap extends oMovingSolid {
   DROP;
   RETURN;
   WAIT;
+  sprite_index = sThwompTrap;
+  visible = true;
 }
 ObjType.oThwompTrap = oThwompTrap;

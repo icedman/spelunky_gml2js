@@ -14,5 +14,8 @@ function oPaste_CREATE($) {
   }
 }
 
-class oPaste extends oItem {}
+class oPaste extends oItem {
+  sprite_index = sPaste;
+  visible = true;
+}
 ObjType.oPaste = oPaste;

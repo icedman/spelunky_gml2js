@@ -4,7 +4,7 @@ sSilverTrophy = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sSilverTrophy.png',
+      path: './dist/sprites/other/sSilverTrophy.png',
     },
   ],
 };

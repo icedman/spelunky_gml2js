@@ -56,5 +56,8 @@ function oBarrier_COLLISION_oItem($) {
   }
 }
 
-class oBarrier extends oObject {}
+class oBarrier extends oObject {
+  sprite_index = sBarrier;
+  visible = true;
+}
 ObjType.oBarrier = oBarrier;

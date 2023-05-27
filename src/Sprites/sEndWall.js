@@ -4,7 +4,7 @@ sEndWall = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sEndWall.png',
+      path: './dist/sprites/other/sEndWall.png',
     },
   ],
 };

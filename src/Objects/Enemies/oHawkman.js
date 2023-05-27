@@ -387,5 +387,7 @@ class oHawkman extends oEnemy {
   sHawkRunLeft;
   sHawkStunL;
   sHawkThrowL;
+  sprite_index = sHawkLeft;
+  visible = true;
 }
 ObjType.oHawkman = oHawkman;

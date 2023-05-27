@@ -139,5 +139,7 @@ class oFireFrog extends oEnemy {
   sndFrog;
   swimming;
   yVelLimit;
+  sprite_index = sFireFrogLeft;
+  visible = true;
 }
 ObjType.oFireFrog = oFireFrog;

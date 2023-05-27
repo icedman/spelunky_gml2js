@@ -19,5 +19,8 @@ function oEmerald_CREATE($) {
   }
 }
 
-class oEmerald extends oTreasure {}
+class oEmerald extends oTreasure {
+  sprite_index = sEmerald;
+  visible = true;
+}
 ObjType.oEmerald = oEmerald;

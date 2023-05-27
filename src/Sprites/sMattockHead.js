@@ -4,7 +4,7 @@ sMattockHead = {
     {
       ox: 8,
       oy: 4,
-      path: './src/Sprites/items/sMattockHead.png',
+      path: './dist/sprites/items/sMattockHead.png',
     },
   ],
 };

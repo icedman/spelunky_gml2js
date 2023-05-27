@@ -569,5 +569,6 @@ class oTransition extends oObject {
   sYetiKingDisp;
   sprite;
   xtime;
+  visible = true;
 }
 ObjType.oTransition = oTransition;

@@ -28,5 +28,7 @@ function oPistol_CREATE($) {
 class oPistol extends oItem {
   sPistolLeft;
   sPistolRight;
+  sprite_index = sPistolRight;
+  visible = true;
 }
 ObjType.oPistol = oPistol;

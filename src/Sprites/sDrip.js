@@ -4,7 +4,7 @@ sDrip = {
     {
       ox: 1,
       oy: 1,
-      path: './src/Sprites/effects/sDrip.png',
+      path: './dist/sprites/effects/sDrip.png',
     },
   ],
 };

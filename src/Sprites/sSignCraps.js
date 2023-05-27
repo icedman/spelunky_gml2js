@@ -4,7 +4,7 @@ sSignCraps = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sSignCraps.png',
+      path: './dist/sprites/blocks/sSignCraps.png',
     },
   ],
 };

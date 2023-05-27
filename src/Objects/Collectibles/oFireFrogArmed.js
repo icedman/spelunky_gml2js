@@ -23,5 +23,8 @@ function oFireFrogArmed_CREATE($) {
   }
 }
 
-class oFireFrogArmed extends oItem {}
+class oFireFrogArmed extends oItem {
+  sprite_index = sFireFrogArmedL;
+  visible = true;
+}
 ObjType.oFireFrogArmed = oFireFrogArmed;

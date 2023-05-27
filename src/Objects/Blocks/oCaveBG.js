@@ -18,5 +18,7 @@ function oCaveBG_CREATE($) {
 class oCaveBG extends oObject {
   sCaveBG1;
   sCaveBG2;
+  sprite_index = sCaveBG1;
+  visible = true;
 }
 ObjType.oCaveBG = oCaveBG;

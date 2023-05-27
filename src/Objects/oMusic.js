@@ -87,5 +87,6 @@ class oMusic extends oObject {
   sndJetpack;
   sndPFall;
   sndPush;
+  visible = false;
 }
 ObjType.oMusic = oMusic;

@@ -4,7 +4,7 @@ sCompassSmallRight = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/items/sCompassSmallRight.png',
+      path: './dist/sprites/items/sCompassSmallRight.png',
     },
   ],
 };

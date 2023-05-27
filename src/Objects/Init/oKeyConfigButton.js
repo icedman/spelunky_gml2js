@@ -13,5 +13,7 @@ class oKeyConfigButton extends oObject {
   rKeyConfig;
   sKeyConfigButton;
   sKeyConfigButtonPressed;
+  sprite_index = sKeyConfigButton;
+  visible = true;
 }
 ObjType.oKeyConfigButton = oKeyConfigButton;

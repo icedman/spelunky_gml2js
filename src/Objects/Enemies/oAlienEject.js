@@ -126,5 +126,7 @@ class oAlienEject extends oDrawnSprite {
   oAlien;
   sAlienDeploy;
   sAlienParachute;
+  sprite_index = sAlienEject;
+  visible = true;
 }
 ObjType.oAlienEject = oAlienEject;

@@ -4,7 +4,7 @@ sQuitSign = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sQuitSign.png',
+      path: './dist/sprites/other/sQuitSign.png',
     },
   ],
 };

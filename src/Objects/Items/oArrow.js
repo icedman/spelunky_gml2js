@@ -90,5 +90,7 @@ function oArrow_CREATE($) {
 class oArrow extends oItem {
   oTarget;
   stuck;
+  sprite_index = sArrowRight;
+  visible = true;
 }
 ObjType.oArrow = oArrow;

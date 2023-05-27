@@ -45,5 +45,7 @@ function oFakeBones_CREATE($) {
 class oFakeBones extends oDrawnSprite {
   oSkeleton;
   sSkeletonCreateL;
+  sprite_index = sFakeBonesLeft;
+  visible = true;
 }
 ObjType.oFakeBones = oFakeBones;

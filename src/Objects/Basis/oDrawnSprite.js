@@ -5,5 +5,7 @@ function oDrawnSprite_CREATE($) {
   }
 }
 
-class oDrawnSprite extends oObject {}
+class oDrawnSprite extends oObject {
+  visible = true;
+}
 ObjType.oDrawnSprite = oDrawnSprite;

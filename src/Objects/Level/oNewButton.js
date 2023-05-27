@@ -35,5 +35,7 @@ class oNewButton extends oObject {
   oTestButton;
   sNewButton;
   sNewButtonPressed;
+  sprite_index = sNewButton;
+  visible = true;
 }
 ObjType.oNewButton = oNewButton;

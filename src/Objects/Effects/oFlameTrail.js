@@ -14,5 +14,8 @@ function oFlameTrail_CREATE($) {
   }
 }
 
-class oFlameTrail extends oDrawnSprite {}
+class oFlameTrail extends oDrawnSprite {
+  sprite_index = sFlameTrail;
+  visible = true;
+}
 ObjType.oFlameTrail = oFlameTrail;

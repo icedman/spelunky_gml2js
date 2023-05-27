@@ -172,5 +172,8 @@ function oSpearTrapBottom_CREATE($) {
   }
 }
 
-class oSpearTrapBottom extends oSolid {}
+class oSpearTrapBottom extends oSolid {
+  sprite_index = sSpearTrap2;
+  visible = true;
+}
 ObjType.oSpearTrapBottom = oSpearTrapBottom;

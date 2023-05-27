@@ -4,7 +4,7 @@ sGlovesTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sGlovesTile.png',
+      path: './dist/sprites/level/sGlovesTile.png',
     },
   ],
 };

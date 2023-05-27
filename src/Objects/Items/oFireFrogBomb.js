@@ -63,5 +63,7 @@ function oFireFrogBomb_CREATE($) {
 
 class oFireFrogBomb extends oItem {
   oWaterSwim;
+  sprite_index = sFireFrogArmedL;
+  visible = true;
 }
 ObjType.oFireFrogBomb = oFireFrogBomb;

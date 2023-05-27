@@ -4,37 +4,37 @@ sLavaTop = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLavaTop_0.png',
+      path: './dist/sprites/blocks/sLavaTop_0.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLavaTop_1.png',
+      path: './dist/sprites/blocks/sLavaTop_1.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLavaTop_2.png',
+      path: './dist/sprites/blocks/sLavaTop_2.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLavaTop_3.png',
+      path: './dist/sprites/blocks/sLavaTop_3.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLavaTop_4.png',
+      path: './dist/sprites/blocks/sLavaTop_4.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLavaTop_5.png',
+      path: './dist/sprites/blocks/sLavaTop_5.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLavaTop_6.png',
+      path: './dist/sprites/blocks/sLavaTop_6.png',
     },
   ],
 };

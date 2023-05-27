@@ -7,5 +7,8 @@ function oTempleFake_STEP($) {
   }
 }
 
-class oTempleFake extends oObject {}
+class oTempleFake extends oObject {
+  sprite_index = sTemple;
+  visible = true;
+}
 ObjType.oTempleFake = oTempleFake;

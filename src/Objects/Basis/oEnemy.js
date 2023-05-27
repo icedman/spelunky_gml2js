@@ -481,5 +481,6 @@ class oEnemy extends oDrawnSprite {
   oFrog;
   shaking;
   spikes;
+  visible = true;
 }
 ObjType.oEnemy = oEnemy;

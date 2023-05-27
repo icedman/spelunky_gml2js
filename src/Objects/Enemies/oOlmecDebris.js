@@ -55,5 +55,7 @@ class oOlmecDebris extends oDrawnSprite {
   oTemple;
   sOlmecDebris2;
   sOlmecDebris3;
+  sprite_index = sOlmecDebris;
+  visible = true;
 }
 ObjType.oOlmecDebris = oOlmecDebris;

@@ -33,5 +33,8 @@ function oVolcanoFlame_CREATE($) {
   }
 }
 
-class oVolcanoFlame extends oObject {}
+class oVolcanoFlame extends oObject {
+  sprite_index = sVolcanoFlame;
+  visible = true;
+}
 ObjType.oVolcanoFlame = oVolcanoFlame;

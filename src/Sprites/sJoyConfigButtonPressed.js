@@ -4,7 +4,7 @@ sJoyConfigButtonPressed = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sJoyConfigButtonPressed.png',
+      path: './dist/sprites/other/sJoyConfigButtonPressed.png',
     },
   ],
 };

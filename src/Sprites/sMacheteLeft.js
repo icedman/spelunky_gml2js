@@ -4,7 +4,7 @@ sMacheteLeft = {
     {
       ox: 8,
       oy: 6,
-      path: './src/Sprites/items/sMacheteLeft.png',
+      path: './dist/sprites/items/sMacheteLeft.png',
     },
   ],
 };

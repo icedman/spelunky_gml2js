@@ -4,7 +4,7 @@ sSpectaclesIcon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/hud/sSpectaclesIcon.png',
+      path: './dist/sprites/hud/sSpectaclesIcon.png',
     },
   ],
 };

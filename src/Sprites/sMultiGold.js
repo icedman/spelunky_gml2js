@@ -4,7 +4,7 @@ sMultiGold = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sMultiGold.png',
+      path: './dist/sprites/other/sMultiGold.png',
     },
   ],
 };

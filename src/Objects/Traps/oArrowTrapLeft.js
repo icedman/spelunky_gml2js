@@ -113,5 +113,8 @@ function oArrowTrapLeft_CREATE($) {
   }
 }
 
-class oArrowTrapLeft extends oSolid {}
+class oArrowTrapLeft extends oSolid {
+  sprite_index = sArrowTrapLeft;
+  visible = true;
+}
 ObjType.oArrowTrapLeft = oArrowTrapLeft;

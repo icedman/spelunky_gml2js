@@ -113,5 +113,7 @@ class oSacAltarLeft extends oSolid {
   kaliPunish;
   linkVal;
   oKaliHead;
+  sprite_index = sSacAltarLeft;
+  visible = true;
 }
 ObjType.oSacAltarLeft = oSacAltarLeft;

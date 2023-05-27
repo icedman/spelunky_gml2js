@@ -8,5 +8,8 @@ function oGiantSpiderTile_CREATE($) {
   }
 }
 
-class oGiantSpiderTile extends oDrawnSprite {}
+class oGiantSpiderTile extends oDrawnSprite {
+  sprite_index = sGiantSpiderHang;
+  visible = true;
+}
 ObjType.oGiantSpiderTile = oGiantSpiderTile;

@@ -4,7 +4,7 @@ sWebBall = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/enemies/sWebBall.png',
+      path: './dist/sprites/enemies/sWebBall.png',
     },
   ],
 };

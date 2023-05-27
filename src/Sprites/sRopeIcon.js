@@ -4,7 +4,7 @@ sRopeIcon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/hud/sRopeIcon.png',
+      path: './dist/sprites/hud/sRopeIcon.png',
     },
   ],
 };

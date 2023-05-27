@@ -4,7 +4,7 @@ sWhipPreR = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sWhipPreR.png',
+      path: './dist/sprites/items/sWhipPreR.png',
     },
   ],
 };

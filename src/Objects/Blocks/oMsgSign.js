@@ -148,5 +148,7 @@ class oMsgSign extends oDrawnSprite {
   keyItemVal;
   keyJumpVal;
   keyRunVal;
+  sprite_index = sMsgSign;
+  visible = true;
 }
 ObjType.oMsgSign = oMsgSign;

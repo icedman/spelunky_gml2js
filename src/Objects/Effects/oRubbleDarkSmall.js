@@ -4,5 +4,8 @@ function oRubbleDarkSmall_OTHER($) {
   }
 }
 
-class oRubbleDarkSmall extends oRubblePiece {}
+class oRubbleDarkSmall extends oRubblePiece {
+  sprite_index = sRubbleDarkSmall;
+  visible = true;
+}
 ObjType.oRubbleDarkSmall = oRubbleDarkSmall;

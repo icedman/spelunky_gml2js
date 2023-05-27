@@ -4,5 +4,7 @@ function oForeground_CREATE($) {
   }
 }
 
-class oForeground extends oObject {}
+class oForeground extends oObject {
+  visible = true;
+}
 ObjType.oForeground = oForeground;

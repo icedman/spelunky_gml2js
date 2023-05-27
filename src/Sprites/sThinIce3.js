@@ -4,7 +4,7 @@ sThinIce3 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sThinIce3.png',
+      path: './dist/sprites/blocks/sThinIce3.png',
     },
   ],
 };

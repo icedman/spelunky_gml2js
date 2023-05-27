@@ -30,5 +30,7 @@ function oIce_CREATE($) {
 
 class oIce extends oSolid {
   oFrozenCaveman;
+  sprite_index = sIce;
+  visible = true;
 }
 ObjType.oIce = oIce;

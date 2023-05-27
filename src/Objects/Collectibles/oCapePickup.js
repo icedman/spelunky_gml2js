@@ -13,5 +13,8 @@ function oCapePickup_CREATE($) {
   }
 }
 
-class oCapePickup extends oItem {}
+class oCapePickup extends oItem {
+  sprite_index = sCape;
+  visible = true;
+}
 ObjType.oCapePickup = oCapePickup;

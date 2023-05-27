@@ -4,7 +4,7 @@ sBigCollect = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sBigCollect.png',
+      path: './dist/sprites/effects/sBigCollect.png',
     },
   ],
 };

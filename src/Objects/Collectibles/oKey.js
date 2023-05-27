@@ -27,5 +27,7 @@ function oKey_CREATE($) {
 class oKey extends oItem {
   sKeyLeft;
   sKeyRight;
+  sprite_index = sKeyRight;
+  visible = true;
 }
 ObjType.oKey = oKey;

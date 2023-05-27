@@ -28,5 +28,7 @@ function oBall2_CREATE($) {
 
 class oBall2 extends oItem {
   oPDummy;
+  sprite_index = sBall;
+  visible = true;
 }
 ObjType.oBall2 = oBall2;

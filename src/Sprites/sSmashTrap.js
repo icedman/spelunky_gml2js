@@ -4,7 +4,7 @@ sSmashTrap = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/traps/sSmashTrap.png',
+      path: './dist/sprites/traps/sSmashTrap.png',
     },
   ],
 };

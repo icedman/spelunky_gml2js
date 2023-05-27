@@ -61,5 +61,7 @@ class oRopeThrow extends oItem {
   px;
   py;
   safe;
+  sprite_index = sRopeEnd;
+  visible = true;
 }
 ObjType.oRopeThrow = oRopeThrow;

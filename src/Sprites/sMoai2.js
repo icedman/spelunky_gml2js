@@ -4,7 +4,7 @@ sMoai2 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sMoai2.png',
+      path: './dist/sprites/blocks/sMoai2.png',
     },
   ],
 };

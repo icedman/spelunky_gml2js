@@ -14,5 +14,8 @@ function oYellowTrail_CREATE($) {
   }
 }
 
-class oYellowTrail extends oDrawnSprite {}
+class oYellowTrail extends oDrawnSprite {
+  sprite_index = sYellowTrail;
+  visible = true;
+}
 ObjType.oYellowTrail = oYellowTrail;

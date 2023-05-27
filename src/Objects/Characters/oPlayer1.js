@@ -5715,5 +5715,7 @@ class oPlayer1 extends oCharacter {
   yPrev;
   yPrevHigh;
   yVelInteger;
+  sprite_index = sStandLeft;
+  visible = true;
 }
 ObjType.oPlayer1 = oPlayer1;

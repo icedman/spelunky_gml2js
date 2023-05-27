@@ -4,17 +4,17 @@ sMattockHitL = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sMattockHitL_0.png',
+      path: './dist/sprites/items/sMattockHitL_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sMattockHitL_1.png',
+      path: './dist/sprites/items/sMattockHitL_1.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sMattockHitL_2.png',
+      path: './dist/sprites/items/sMattockHitL_2.png',
     },
   ],
 };

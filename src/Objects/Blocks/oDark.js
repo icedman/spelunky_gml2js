@@ -86,5 +86,7 @@ class oDark extends oSolid {
   room;
   sDarkGold;
   sDarkGoldBig;
+  sprite_index = sDark;
+  visible = true;
 }
 ObjType.oDark = oDark;

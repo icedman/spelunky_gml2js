@@ -4,7 +4,7 @@ sGoldBarsTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sGoldBarsTile.png',
+      path: './dist/sprites/level/sGoldBarsTile.png',
     },
   ],
 };

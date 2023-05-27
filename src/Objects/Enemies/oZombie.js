@@ -149,5 +149,7 @@ class oZombie extends oEnemy {
   skull;
   sndZombie;
   zombies;
+  sprite_index = sZombieLeft;
+  visible = true;
 }
 ObjType.oZombie = oZombie;

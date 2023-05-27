@@ -126,5 +126,8 @@ function oBullet_COLLISION_oDamsel($) {
   }
 }
 
-class oBullet extends oObject {}
+class oBullet extends oObject {
+  sprite_index = sBullet;
+  visible = true;
+}
 ObjType.oBullet = oBullet;

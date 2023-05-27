@@ -4,7 +4,7 @@ sWebCannonTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sWebCannonTile.png',
+      path: './dist/sprites/level/sWebCannonTile.png',
     },
   ],
 };

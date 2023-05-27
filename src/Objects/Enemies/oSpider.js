@@ -153,5 +153,7 @@ class oSpider extends oEnemy {
   sSpider;
   sSpiderDrowning;
   sSpiderFlip;
+  sprite_index = sSpiderFlip;
+  visible = true;
 }
 ObjType.oSpider = oSpider;

@@ -89,5 +89,7 @@ class oTemp extends oSolid {
   oEnemy;
   oItem;
   oMoveableSolid;
+  sprite_index = sArrowTrapLeft;
+  visible = true;
 }
 ObjType.oTemp = oTemp;

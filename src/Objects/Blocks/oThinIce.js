@@ -32,5 +32,7 @@ class oThinIce extends oSolid {
   sThinIce4;
   sThinIce5;
   sThinIce6;
+  sprite_index = sThinIce1;
+  visible = true;
 }
 ObjType.oThinIce = oThinIce;

@@ -4,7 +4,7 @@ sChestTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sChestTile.png',
+      path: './dist/sprites/level/sChestTile.png',
     },
   ],
 };

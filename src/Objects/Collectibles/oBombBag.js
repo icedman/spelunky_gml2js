@@ -15,5 +15,7 @@ function oBombBag_CREATE($) {
 
 class oBombBag extends oItem {
   shopDesc;
+  sprite_index = sBombBag;
+  visible = true;
 }
 ObjType.oBombBag = oBombBag;

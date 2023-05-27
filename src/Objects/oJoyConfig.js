@@ -233,5 +233,6 @@ class oJoyConfig extends oObject {
   joyPressed;
   joyReleased;
   rInit;
+  visible = true;
 }
 ObjType.oJoyConfig = oJoyConfig;

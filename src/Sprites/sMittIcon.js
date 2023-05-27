@@ -4,7 +4,7 @@ sMittIcon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/hud/sMittIcon.png',
+      path: './dist/sprites/hud/sMittIcon.png',
     },
   ],
 };

@@ -14,5 +14,8 @@ function oBloodTrail_CREATE($) {
   }
 }
 
-class oBloodTrail extends oDrawnSprite {}
+class oBloodTrail extends oDrawnSprite {
+  sprite_index = sBloodTrail;
+  visible = true;
+}
 ObjType.oBloodTrail = oBloodTrail;

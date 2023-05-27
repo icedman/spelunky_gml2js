@@ -60,5 +60,6 @@ function oDetritus_CREATE($) {
 
 class oDetritus extends oDrawnSprite {
   oDetritus;
+  visible = true;
 }
 ObjType.oDetritus = oDetritus;

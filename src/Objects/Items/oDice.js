@@ -266,5 +266,7 @@ class oDice extends oItem {
   sDice6;
   sDiceRoll;
   sRedArrowDown;
+  sprite_index = sDice1;
+  visible = true;
 }
 ObjType.oDice = oDice;

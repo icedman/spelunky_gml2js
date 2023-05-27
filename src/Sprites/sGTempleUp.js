@@ -4,7 +4,7 @@ sGTempleUp = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sGTempleUp.png',
+      path: './dist/sprites/blocks/sGTempleUp.png',
     },
   ],
 };

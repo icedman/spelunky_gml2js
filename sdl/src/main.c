@@ -27,6 +27,7 @@ static SDL_Texture *images[MAX_IMAGES];
 
 typedef struct sprite_t {
   SDL_Texture *texture;
+  int id;
   int x;
   int y;
   int ax;
@@ -65,7 +66,7 @@ void _freeImage(void *context, void *image) {}
 void _drawImage(context_t *context, sprite_t *sprite, vector_t pos) {
   vector_t vt = VectorTransformed(&pos, context->matrixStack.matrix);
   SDL_Renderer *renderer = (SDL_Renderer *)context->renderer;
-  float scale = 2;
+  float scale = 1.5;
 
   // if (sprite->sw == 0) {
     // printf("%d %d\n", sprite->sw,sprite->sh);
@@ -143,15 +144,16 @@ static JSValue js_draw_image(JSContext* ctx, JSValueConst this_val,
     int argc, JSValueConst* argv)
 {
     sprite_t *sprite = &sprites[spriteIndex++];
-    JS_ToInt32(ctx, &sprite->ax, argv[0]);
-    JS_ToInt32(ctx, &sprite->ay, argv[1]);
-    JS_ToInt32(ctx, &sprite->x, argv[2]);
-    JS_ToInt32(ctx, &sprite->y, argv[3]);
-    JS_ToInt32(ctx, &sprite->flipped, argv[4]);
-    JS_ToInt32(ctx, &sprite->sx, argv[5]);
-    JS_ToInt32(ctx, &sprite->sy, argv[6]);
-    JS_ToInt32(ctx, &sprite->sw, argv[7]);
-    JS_ToInt32(ctx, &sprite->sh, argv[8]);
+    JS_ToInt32(ctx, &sprite->id, argv[0]);
+    JS_ToInt32(ctx, &sprite->ax, argv[1]);
+    JS_ToInt32(ctx, &sprite->ay, argv[2]);
+    JS_ToInt32(ctx, &sprite->x, argv[3]);
+    JS_ToInt32(ctx, &sprite->y, argv[4]);
+    JS_ToInt32(ctx, &sprite->flipped, argv[5]);
+    JS_ToInt32(ctx, &sprite->sx, argv[6]);
+    JS_ToInt32(ctx, &sprite->sy, argv[7]);
+    JS_ToInt32(ctx, &sprite->sw, argv[8]);
+    JS_ToInt32(ctx, &sprite->sh, argv[9]);
     return JS_UNDEFINED;
 }
 
@@ -275,23 +277,23 @@ const int keyCodes[] = {
 };
 
 void ScriptSendKeyDown(int key) {
-  char script[64];
-  sprintf(script, "window.onkeydown(new KeyEvent('%s', %d));", keyNames[key], keyCodes[key]);
-  JSValue ret = JS_Eval(ctx, script, strlen(script), "<input>", JS_EVAL_TYPE_GLOBAL);
-  if (JS_IsException(ret)) {
-      js_std_dump_error(ctx);
-      JS_ResetUncatchableError(ctx);
-  }
+  // char script[64];
+  // sprintf(script, "window.onkeydown(new KeyEvent('%s', %d));", keyNames[key], keyCodes[key]);
+  // JSValue ret = JS_Eval(ctx, script, strlen(script), "<input>", JS_EVAL_TYPE_GLOBAL);
+  // if (JS_IsException(ret)) {
+  //     js_std_dump_error(ctx);
+  //     JS_ResetUncatchableError(ctx);
+  // }
 }
 
 void ScriptSendKeyUp(int key) {
-  char script[64];
-  sprintf(script, "window.onkeyup(new KeyEvent('%s', %d));", keyNames[key], keyCodes[key]);
-  JSValue ret = JS_Eval(ctx, script, strlen(script), "<input>", JS_EVAL_TYPE_GLOBAL);
-  if (JS_IsException(ret)) {
-      js_std_dump_error(ctx);
-      JS_ResetUncatchableError(ctx);
-  }
+  // char script[64];
+  // sprintf(script, "window.onkeyup(new KeyEvent('%s', %d));", keyNames[key], keyCodes[key]);
+  // JSValue ret = JS_Eval(ctx, script, strlen(script), "<input>", JS_EVAL_TYPE_GLOBAL);
+  // if (JS_IsException(ret)) {
+  //     js_std_dump_error(ctx);
+  //     JS_ResetUncatchableError(ctx);
+  // }
 }
 
 // {
@@ -490,13 +492,16 @@ int main(int argc, char **argv) {
     GameRender(&game, &context);
     ContextRestore(&context);
 
-    if (images[0] == NULL && imagePaths[0][0] != 0) {
-      images[0] = _loadImage(&context, imagePaths[0]);
-    }
-
     for(int i=0; i<spriteIndex; i++) {
       sprite_t *sprite = &sprites[i];
-      sprite->texture = images[0];
+
+      int idx = sprite->id;
+      if (images[idx] == NULL && imagePaths[idx][0] != 0) {
+        images[idx] = _loadImage(&context, imagePaths[idx]);
+        fprintf(stderr, "load image %d\n", idx);
+      }
+
+      sprite->texture = images[idx];
       vector_t pos;
       VectorInit(&pos, sprite->x, sprite->y, 0);
       _drawImage(&context, sprite, pos);

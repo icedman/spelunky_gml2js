@@ -13,5 +13,8 @@ function oJordans_CREATE($) {
   }
 }
 
-class oJordans extends oItem {}
+class oJordans extends oItem {
+  sprite_index = sJordans;
+  visible = true;
+}
 ObjType.oJordans = oJordans;

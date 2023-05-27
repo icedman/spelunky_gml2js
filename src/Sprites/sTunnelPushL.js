@@ -4,37 +4,37 @@ sTunnelPushL = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelPushL_0.png',
+      path: './dist/sprites/character/sTunnelPushL_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelPushL_1.png',
+      path: './dist/sprites/character/sTunnelPushL_1.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelPushL_2.png',
+      path: './dist/sprites/character/sTunnelPushL_2.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelPushL_3.png',
+      path: './dist/sprites/character/sTunnelPushL_3.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelPushL_4.png',
+      path: './dist/sprites/character/sTunnelPushL_4.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelPushL_5.png',
+      path: './dist/sprites/character/sTunnelPushL_5.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelPushL_6.png',
+      path: './dist/sprites/character/sTunnelPushL_6.png',
     },
   ],
 };

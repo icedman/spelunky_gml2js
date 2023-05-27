@@ -4,7 +4,7 @@ sUdjatEyeIcon2 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/items/sUdjatEyeIcon2.png',
+      path: './dist/sprites/items/sUdjatEyeIcon2.png',
     },
   ],
 };

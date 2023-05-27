@@ -4,7 +4,7 @@ sDarkRight = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sDarkRight.png',
+      path: './dist/sprites/blocks/sDarkRight.png',
     },
   ],
 };

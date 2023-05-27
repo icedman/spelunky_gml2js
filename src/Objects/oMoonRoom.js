@@ -162,5 +162,6 @@ class oMoonRoom extends oObject {
   myFont;
   sHoopsIcon;
   sTimerIcon;
+  visible = true;
 }
 ObjType.oMoonRoom = oMoonRoom;

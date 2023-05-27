@@ -126,5 +126,7 @@ class oDeadFish extends oEnemy {
   oFishBone;
   sDeadFishLeft;
   sDeadFishRight;
+  sprite_index = sDeadFishLeft;
+  visible = true;
 }
 ObjType.oDeadFish = oDeadFish;

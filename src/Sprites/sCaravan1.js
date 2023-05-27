@@ -4,22 +4,22 @@ sCaravan1 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sCaravan1_0.png',
+      path: './dist/sprites/enemies/sCaravan1_0.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sCaravan1_1.png',
+      path: './dist/sprites/enemies/sCaravan1_1.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sCaravan1_2.png',
+      path: './dist/sprites/enemies/sCaravan1_2.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sCaravan1_3.png',
+      path: './dist/sprites/enemies/sCaravan1_3.png',
     },
   ],
 };

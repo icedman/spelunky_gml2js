@@ -15,5 +15,7 @@ function oPalmTreeScroll_CREATE($) {
 
 class oPalmTreeScroll extends oDrawnSprite {
   sPalmTreeDark;
+  sprite_index = sPalmTree;
+  visible = true;
 }
 ObjType.oPalmTreeScroll = oPalmTreeScroll;

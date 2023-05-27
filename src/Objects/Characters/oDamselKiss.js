@@ -49,5 +49,7 @@ function oDamselKiss_CREATE($) {
 
 class oDamselKiss extends oDrawnSprite {
   kissed;
+  sprite_index = sDamselLeft;
+  visible = true;
 }
 ObjType.oDamselKiss = oDamselKiss;

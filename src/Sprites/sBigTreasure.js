@@ -4,7 +4,7 @@ sBigTreasure = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sBigTreasure.png',
+      path: './dist/sprites/other/sBigTreasure.png',
     },
   ],
 };

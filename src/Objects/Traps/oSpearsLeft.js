@@ -27,5 +27,7 @@ function oSpearsLeft_STEP($) {
 class oSpearsLeft extends oDrawnSprite {
   oSpearTrapBottom;
   oSpearTrapTop;
+  sprite_index = sSpearsLeft;
+  visible = true;
 }
 ObjType.oSpearsLeft = oSpearsLeft;

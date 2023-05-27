@@ -27,5 +27,7 @@ function oPsychicCreate_CREATE($) {
 
 class oPsychicCreate extends oDrawnSprite {
   oAlienBoss;
+  sprite_index = sPsychicCreate;
+  visible = true;
 }
 ObjType.oPsychicCreate = oPsychicCreate;

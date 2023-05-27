@@ -230,5 +230,7 @@ class oPDummy2 extends oDrawnSprite {
   poof;
   sJumpLeft;
   sndTFall;
+  sprite_index = sRunLeft;
+  visible = true;
 }
 ObjType.oPDummy2 = oPDummy2;

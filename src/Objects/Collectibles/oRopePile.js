@@ -13,5 +13,8 @@ function oRopePile_CREATE($) {
   }
 }
 
-class oRopePile extends oItem {}
+class oRopePile extends oItem {
+  sprite_index = sRopePile;
+  visible = true;
+}
 ObjType.oRopePile = oRopePile;

@@ -13,5 +13,8 @@ function oCompass_CREATE($) {
   }
 }
 
-class oCompass extends oItem {}
+class oCompass extends oItem {
+  sprite_index = sCompass;
+  visible = true;
+}
 ObjType.oCompass = oCompass;

@@ -4,7 +4,7 @@ sGiantSpiderDisp = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/enemies/sGiantSpiderDisp.png',
+      path: './dist/sprites/enemies/sGiantSpiderDisp.png',
     },
   ],
 };

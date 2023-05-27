@@ -8,5 +8,8 @@ function oFrogTile_CREATE($) {
   }
 }
 
-class oFrogTile extends oDrawnSprite {}
+class oFrogTile extends oDrawnSprite {
+  sprite_index = sFrogLeft;
+  visible = true;
+}
 ObjType.oFrogTile = oFrogTile;

@@ -4,7 +4,7 @@ sFishBone = {
     {
       ox: 4,
       oy: 4,
-      path: './src/Sprites/items/sFishBone.png',
+      path: './dist/sprites/items/sFishBone.png',
     },
   ],
 };

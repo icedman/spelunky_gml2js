@@ -106,5 +106,7 @@ function oWebBall_COLLISION_oWater($) {
 class oWebBall extends oDrawnSprite {
   oYellowTrail;
   sWebCreate;
+  sprite_index = sWebBall;
+  visible = true;
 }
 ObjType.oWebBall = oWebBall;

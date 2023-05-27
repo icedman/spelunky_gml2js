@@ -28,5 +28,7 @@ function oMachete_CREATE($) {
 class oMachete extends oItem {
   sMacheteLeft;
   sMacheteRight;
+  sprite_index = sMacheteRight;
+  visible = true;
 }
 ObjType.oMachete = oMachete;

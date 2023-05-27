@@ -4,7 +4,7 @@ sSceptreRight = {
     {
       ox: 8,
       oy: 6,
-      path: './src/Sprites/items/sSceptreRight.png',
+      path: './dist/sprites/items/sSceptreRight.png',
     },
   ],
 };

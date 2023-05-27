@@ -40,5 +40,8 @@ function oFishBone_CREATE($) {
   }
 }
 
-class oFishBone extends oItem {}
+class oFishBone extends oItem {
+  sprite_index = sFishBone;
+  visible = true;
+}
 ObjType.oFishBone = oFishBone;

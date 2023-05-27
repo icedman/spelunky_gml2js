@@ -4,7 +4,7 @@ sBasket = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sBasket.png',
+      path: './dist/sprites/other/sBasket.png',
     },
   ],
 };

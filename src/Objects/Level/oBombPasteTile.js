@@ -1,2 +1,5 @@
-class oBombPasteTile extends oDrawnSprite {}
+class oBombPasteTile extends oDrawnSprite {
+  sprite_index = sBombPasteTile;
+  visible = true;
+}
 ObjType.oBombPasteTile = oBombPasteTile;

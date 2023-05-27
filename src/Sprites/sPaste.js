@@ -4,7 +4,7 @@ sPaste = {
     {
       ox: 8,
       oy: 6,
-      path: './src/Sprites/items/sPaste.png',
+      path: './dist/sprites/items/sPaste.png',
     },
   ],
 };

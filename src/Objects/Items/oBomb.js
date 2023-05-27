@@ -86,5 +86,7 @@ class oBomb extends oItem {
   sticky;
   stickyXDiff;
   stickyYDiff;
+  sprite_index = sBomb;
+  visible = true;
 }
 ObjType.oBomb = oBomb;

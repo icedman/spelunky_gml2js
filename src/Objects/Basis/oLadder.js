@@ -1,2 +1,4 @@
-class oLadder extends oDrawnSprite {}
+class oLadder extends oDrawnSprite {
+  visible = true;
+}
 ObjType.oLadder = oLadder;

@@ -1,2 +1,5 @@
-class oHawkmanTile extends oDrawnSprite {}
+class oHawkmanTile extends oDrawnSprite {
+  sprite_index = sHawkLeft;
+  visible = true;
+}
 ObjType.oHawkmanTile = oHawkmanTile;

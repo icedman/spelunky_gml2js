@@ -80,5 +80,7 @@ class oCeilingTrap extends oMovingSolid {
   sBlock;
   sCeilingTrap;
   sCeilingTrapS;
+  sprite_index = sBlock;
+  visible = true;
 }
 ObjType.oCeilingTrap = oCeilingTrap;

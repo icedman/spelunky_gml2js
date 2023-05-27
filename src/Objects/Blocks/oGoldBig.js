@@ -20,5 +20,8 @@ function oGoldBig_DESTROY($) {
   }
 }
 
-class oGoldBig extends oDrawnSprite {}
+class oGoldBig extends oDrawnSprite {
+  sprite_index = sGoldBig;
+  visible = true;
+}
 ObjType.oGoldBig = oGoldBig;

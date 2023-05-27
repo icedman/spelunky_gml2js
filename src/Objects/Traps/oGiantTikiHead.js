@@ -8,5 +8,7 @@ function oGiantTikiHead_ALARM_0($) {
 
 class oGiantTikiHead extends oDrawnSprite {
   sGTHHole;
+  sprite_index = sGiantTikiHead;
+  visible = true;
 }
 ObjType.oGiantTikiHead = oGiantTikiHead;

@@ -66,5 +66,7 @@ class oButtonHighscore extends oObject {
   tMoney;
   tSaves;
   tTime;
+  sprite_index = sButton;
+  visible = true;
 }
 ObjType.oButtonHighscore = oButtonHighscore;

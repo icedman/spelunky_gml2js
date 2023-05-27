@@ -18,5 +18,7 @@ function oIntroBG_CREATE($) {
 class oIntroBG extends oObject {
   oCamel;
   xOff;
+  sprite_index = sIntroBG;
+  visible = true;
 }
 ObjType.oIntroBG = oIntroBG;

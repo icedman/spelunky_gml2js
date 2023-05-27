@@ -4,7 +4,7 @@ sAlienBossTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sAlienBossTile.png',
+      path: './dist/sprites/enemies/sAlienBossTile.png',
     },
   ],
 };

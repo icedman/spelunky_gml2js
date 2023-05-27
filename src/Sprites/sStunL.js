@@ -4,27 +4,27 @@ sStunL = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sStunL_0.png',
+      path: './dist/sprites/character/sStunL_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sStunL_1.png',
+      path: './dist/sprites/character/sStunL_1.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sStunL_2.png',
+      path: './dist/sprites/character/sStunL_2.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sStunL_3.png',
+      path: './dist/sprites/character/sStunL_3.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sStunL_4.png',
+      path: './dist/sprites/character/sStunL_4.png',
     },
   ],
 };

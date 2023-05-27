@@ -25,5 +25,7 @@ function oCursObj_CREATE($) {
 
 class oCursObj extends oObject {
   mouse_y;
+  sprite_index = sEntrance;
+  visible = false;
 }
 ObjType.oCursObj = oCursObj;

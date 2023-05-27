@@ -87,5 +87,7 @@ class oPushBlock extends oMoveableSolid {
   sGoldBlock;
   sRubbleLush;
   sRubbleLushSmall;
+  sprite_index = sBlock;
+  visible = true;
 }
 ObjType.oPushBlock = oPushBlock;

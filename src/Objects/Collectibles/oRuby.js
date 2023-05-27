@@ -19,5 +19,8 @@ function oRuby_CREATE($) {
   }
 }
 
-class oRuby extends oTreasure {}
+class oRuby extends oTreasure {
+  sprite_index = sRuby;
+  visible = true;
+}
 ObjType.oRuby = oRuby;

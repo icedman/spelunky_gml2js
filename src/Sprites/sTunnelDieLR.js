@@ -4,7 +4,7 @@ sTunnelDieLR = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelDieLR.png',
+      path: './dist/sprites/character/sTunnelDieLR.png',
     },
   ],
 };

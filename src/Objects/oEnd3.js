@@ -176,5 +176,6 @@ function oEnd3_CREATE($) {
 class oEnd3 extends oObject {
   oPDummy2;
   rCredits2;
+  visible = true;
 }
 ObjType.oEnd3 = oEnd3;

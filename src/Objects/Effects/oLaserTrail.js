@@ -14,5 +14,8 @@ function oLaserTrail_CREATE($) {
   }
 }
 
-class oLaserTrail extends oDrawnSprite {}
+class oLaserTrail extends oDrawnSprite {
+  sprite_index = sLaserTrail;
+  visible = true;
+}
 ObjType.oLaserTrail = oLaserTrail;

@@ -13,5 +13,8 @@ function oSpectacles_CREATE($) {
   }
 }
 
-class oSpectacles extends oItem {}
+class oSpectacles extends oItem {
+  sprite_index = sSpectacles;
+  visible = true;
+}
 ObjType.oSpectacles = oSpectacles;

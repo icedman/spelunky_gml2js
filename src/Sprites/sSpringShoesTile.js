@@ -4,7 +4,7 @@ sSpringShoesTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sSpringShoesTile.png',
+      path: './dist/sprites/level/sSpringShoesTile.png',
     },
   ],
 };

@@ -139,5 +139,7 @@ class oBat extends oEnemy {
   sBatHang;
   sBatLeft;
   sBatRight;
+  sprite_index = sBatHang;
+  visible = true;
 }
 ObjType.oBat = oBat;

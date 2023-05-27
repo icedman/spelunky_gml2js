@@ -4,7 +4,7 @@ sMittTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sMittTile.png',
+      path: './dist/sprites/level/sMittTile.png',
     },
   ],
 };

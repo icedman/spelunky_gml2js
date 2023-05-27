@@ -284,5 +284,6 @@ class oCredits1 extends oObject {
   oShrubScroll;
   scrollStart;
   scrolling;
+  visible = true;
 }
 ObjType.oCredits1 = oCredits1;

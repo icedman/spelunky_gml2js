@@ -32,5 +32,7 @@ function oPageDown_KEYPRESS($) {
 
 class oPageDown extends oObject {
   numPages;
+  sprite_index = sPageDown;
+  visible = true;
 }
 ObjType.oPageDown = oPageDown;

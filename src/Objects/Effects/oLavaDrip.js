@@ -14,5 +14,8 @@ function oLavaDrip_CREATE($) {
   }
 }
 
-class oLavaDrip extends oRubblePiece {}
+class oLavaDrip extends oRubblePiece {
+  sprite_index = sLavaDrip;
+  visible = true;
+}
 ObjType.oLavaDrip = oLavaDrip;

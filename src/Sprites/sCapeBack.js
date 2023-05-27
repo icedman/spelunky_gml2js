@@ -4,7 +4,7 @@ sCapeBack = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sCapeBack.png',
+      path: './dist/sprites/items/sCapeBack.png',
     },
   ],
 };

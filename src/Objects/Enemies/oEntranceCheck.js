@@ -18,5 +18,8 @@ function oEntranceCheck_STEP($) {
   }
 }
 
-class oEntranceCheck extends oObject {}
+class oEntranceCheck extends oObject {
+  sprite_index = sSight;
+  visible = false;
+}
 ObjType.oEntranceCheck = oEntranceCheck;

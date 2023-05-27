@@ -43,5 +43,7 @@ class oRadioBox extends oObject {
   oRadioBox;
   sBoxMarked;
   screenScale;
+  sprite_index = sBox;
+  visible = true;
 }
 ObjType.oRadioBox = oRadioBox;

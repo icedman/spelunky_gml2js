@@ -4,7 +4,7 @@ sLoadButtonPressed = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sLoadButtonPressed.png',
+      path: './dist/sprites/other/sLoadButtonPressed.png',
     },
   ],
 };

@@ -4,22 +4,22 @@ sOlmecDebris = {
     {
       ox: 6,
       oy: 6,
-      path: './src/Sprites/enemies/sOlmecDebris_0.png',
+      path: './dist/sprites/enemies/sOlmecDebris_0.png',
     },
     {
       ox: 6,
       oy: 6,
-      path: './src/Sprites/enemies/sOlmecDebris_1.png',
+      path: './dist/sprites/enemies/sOlmecDebris_1.png',
     },
     {
       ox: 6,
       oy: 6,
-      path: './src/Sprites/enemies/sOlmecDebris_2.png',
+      path: './dist/sprites/enemies/sOlmecDebris_2.png',
     },
     {
       ox: 6,
       oy: 6,
-      path: './src/Sprites/enemies/sOlmecDebris_3.png',
+      path: './dist/sprites/enemies/sOlmecDebris_3.png',
     },
   ],
 };

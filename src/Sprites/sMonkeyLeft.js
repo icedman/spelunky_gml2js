@@ -4,7 +4,7 @@ sMonkeyLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sMonkeyLeft.png',
+      path: './dist/sprites/enemies/sMonkeyLeft.png',
     },
   ],
 };

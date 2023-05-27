@@ -495,6 +495,11 @@ def generateClassCode(k, obj):
     #     code += '\'' + f + '\',\n'
     # code += ']\n'
 
+    if 'sprite' in obj:
+        code += 'sprite_index = ' + obj['sprite'] + ';\n'
+    if 'visible' in obj:
+        code += 'visible = ' + obj['visible'] + ';\n'
+        
     code += "}\n"
 
     code += "ObjType." + k + "=" + k + "\n"

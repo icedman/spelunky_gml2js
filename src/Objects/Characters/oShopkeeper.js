@@ -824,5 +824,7 @@ class oShopkeeper extends oEnemy {
   throwCount;
   turnTimer;
   welcomed;
+  sprite_index = sShopLeft;
+  visible = true;
 }
 ObjType.oShopkeeper = oShopkeeper;

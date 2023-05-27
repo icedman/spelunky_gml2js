@@ -26,5 +26,7 @@ class oCheckBox4 extends oObject {
   on;
   sBox;
   sBoxChecked;
+  sprite_index = sBoxChecked;
+  visible = true;
 }
 ObjType.oCheckBox4 = oCheckBox4;

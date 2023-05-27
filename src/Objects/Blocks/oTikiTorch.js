@@ -4,5 +4,8 @@ function oTikiTorch_CREATE($) {
   }
 }
 
-class oTikiTorch extends oObject {}
+class oTikiTorch extends oObject {
+  sprite_index = sTikiTorch;
+  visible = true;
+}
 ObjType.oTikiTorch = oTikiTorch;

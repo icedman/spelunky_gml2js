@@ -4,7 +4,7 @@ sRuby = {
     {
       ox: 2,
       oy: 2,
-      path: './src/Sprites/items/sRuby.png',
+      path: './dist/sprites/items/sRuby.png',
     },
   ],
 };

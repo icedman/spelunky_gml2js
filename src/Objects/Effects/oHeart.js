@@ -20,5 +20,8 @@ function oHeart_CREATE($) {
   }
 }
 
-class oHeart extends oDrawnSprite {}
+class oHeart extends oDrawnSprite {
+  sprite_index = sSmoochHeart;
+  visible = true;
+}
 ObjType.oHeart = oHeart;

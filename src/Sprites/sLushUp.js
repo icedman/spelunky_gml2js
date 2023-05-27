@@ -4,7 +4,7 @@ sLushUp = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLushUp.png',
+      path: './dist/sprites/blocks/sLushUp.png',
     },
   ],
 };

@@ -41,5 +41,7 @@ class oBow extends oItem {
   bowStrength;
   sBowLeft;
   sBowRight;
+  sprite_index = sBowRight;
+  visible = true;
 }
 ObjType.oBow = oBow;

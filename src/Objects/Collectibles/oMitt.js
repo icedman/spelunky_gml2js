@@ -14,5 +14,8 @@ function oMitt_CREATE($) {
   }
 }
 
-class oMitt extends oItem {}
+class oMitt extends oItem {
+  sprite_index = sMitt;
+  visible = true;
+}
 ObjType.oMitt = oMitt;

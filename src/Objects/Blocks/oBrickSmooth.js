@@ -27,5 +27,8 @@ function oBrickSmooth_DESTROY($) {
   }
 }
 
-class oBrickSmooth extends oSolid {}
+class oBrickSmooth extends oSolid {
+  sprite_index = sCaveSmooth;
+  visible = true;
+}
 ObjType.oBrickSmooth = oBrickSmooth;

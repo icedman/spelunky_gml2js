@@ -4,5 +4,8 @@ function oLampRed_CREATE($) {
   }
 }
 
-class oLampRed extends oLamp {}
+class oLampRed extends oLamp {
+  sprite_index = sLampRed;
+  visible = true;
+}
 ObjType.oLampRed = oLampRed;

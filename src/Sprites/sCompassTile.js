@@ -4,7 +4,7 @@ sCompassTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sCompassTile.png',
+      path: './dist/sprites/level/sCompassTile.png',
     },
   ],
 };

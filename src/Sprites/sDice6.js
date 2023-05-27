@@ -4,7 +4,7 @@ sDice6 = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sDice6.png',
+      path: './dist/sprites/items/sDice6.png',
     },
   ],
 };

@@ -26,5 +26,7 @@ function oOlmecSlam_CREATE($) {
 
 class oOlmecSlam extends oObject {
   sndSlam;
+  sprite_index = sOlmecSlam;
+  visible = false;
 }
 ObjType.oOlmecSlam = oOlmecSlam;

@@ -62,5 +62,7 @@ function oDoor_CREATE($) {
 
 class oDoor extends oMovingSolid {
   depth;
+  sprite_index = sDoor;
+  visible = true;
 }
 ObjType.oDoor = oDoor;

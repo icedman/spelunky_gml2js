@@ -26,5 +26,8 @@ function oBubble_CREATE($) {
   }
 }
 
-class oBubble extends oDrawnSprite {}
+class oBubble extends oDrawnSprite {
+  sprite_index = sBubble;
+  visible = true;
+}
 ObjType.oBubble = oBubble;

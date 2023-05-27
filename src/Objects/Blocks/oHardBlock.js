@@ -8,5 +8,8 @@ function oHardBlock_CREATE($) {
   }
 }
 
-class oHardBlock extends oSolid {}
+class oHardBlock extends oSolid {
+  sprite_index = sBrick;
+  visible = true;
+}
 ObjType.oHardBlock = oHardBlock;

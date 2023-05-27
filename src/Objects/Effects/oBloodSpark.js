@@ -22,5 +22,8 @@ function oBloodSpark_CREATE($) {
   }
 }
 
-class oBloodSpark extends oDrawnSprite {}
+class oBloodSpark extends oDrawnSprite {
+  sprite_index = sBloodSpark;
+  visible = true;
+}
 ObjType.oBloodSpark = oBloodSpark;

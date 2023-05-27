@@ -4,7 +4,7 @@ sFakeBonesLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/items/sFakeBonesLeft.png',
+      path: './dist/sprites/items/sFakeBonesLeft.png',
     },
   ],
 };

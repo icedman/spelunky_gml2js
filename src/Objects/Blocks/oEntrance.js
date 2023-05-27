@@ -16,5 +16,8 @@ function oEntrance_CREATE($) {
   }
 }
 
-class oEntrance extends oDrawnSprite {}
+class oEntrance extends oDrawnSprite {
+  sprite_index = sEntrance;
+  visible = true;
+}
 ObjType.oEntrance = oEntrance;

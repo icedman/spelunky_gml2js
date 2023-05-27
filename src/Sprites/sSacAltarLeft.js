@@ -4,7 +4,7 @@ sSacAltarLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sSacAltarLeft.png',
+      path: './dist/sprites/blocks/sSacAltarLeft.png',
     },
   ],
 };

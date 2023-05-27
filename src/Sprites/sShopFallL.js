@@ -4,7 +4,7 @@ sShopFallL = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sShopFallL.png',
+      path: './dist/sprites/enemies/sShopFallL.png',
     },
   ],
 };

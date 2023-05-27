@@ -4,7 +4,7 @@ sGoldEgg = {
     {
       ox: 4,
       oy: 4,
-      path: './src/Sprites/items/sGoldEgg.png',
+      path: './dist/sprites/items/sGoldEgg.png',
     },
   ],
 };

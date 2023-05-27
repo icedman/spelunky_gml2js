@@ -4,7 +4,7 @@ sCaveLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sCaveLeft.png',
+      path: './dist/sprites/blocks/sCaveLeft.png',
     },
   ],
 };

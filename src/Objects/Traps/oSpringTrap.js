@@ -113,5 +113,7 @@ class oSpringTrap extends oObject {
   sSpringTrap;
   sSpringTrapSprung;
   sndBoing;
+  sprite_index = sSpringTrap;
+  visible = true;
 }
 ObjType.oSpringTrap = oSpringTrap;

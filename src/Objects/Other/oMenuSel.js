@@ -24,5 +24,7 @@ class oMenuSel extends oMenu {
   page;
   sMenuSelOff;
   sMenuSelOn;
+  sprite_index = sMenuSelOff;
+  visible = true;
 }
 ObjType.oMenuSel = oMenuSel;

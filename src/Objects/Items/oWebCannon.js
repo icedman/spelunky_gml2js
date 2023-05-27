@@ -28,5 +28,7 @@ function oWebCannon_CREATE($) {
 class oWebCannon extends oItem {
   sWebCannonL;
   sWebCannonR;
+  sprite_index = sWebCannonR;
+  visible = true;
 }
 ObjType.oWebCannon = oWebCannon;

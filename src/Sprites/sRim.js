@@ -4,7 +4,7 @@ sRim = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sRim.png',
+      path: './dist/sprites/other/sRim.png',
     },
   ],
 };

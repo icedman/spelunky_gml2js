@@ -24,5 +24,8 @@ function oJetpack_CREATE($) {
   }
 }
 
-class oJetpack extends oItem {}
+class oJetpack extends oItem {
+  sprite_index = sJetpackRight;
+  visible = true;
+}
 ObjType.oJetpack = oJetpack;

@@ -15,5 +15,8 @@ function oMoon_CREATE($) {
   }
 }
 
-class oMoon extends oObject {}
+class oMoon extends oObject {
+  sprite_index = sMoon;
+  visible = true;
+}
 ObjType.oMoon = oMoon;

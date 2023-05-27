@@ -12,5 +12,8 @@ function oGold_DESTROY($) {
   }
 }
 
-class oGold extends oDrawnSprite {}
+class oGold extends oDrawnSprite {
+  sprite_index = sGold;
+  visible = true;
+}
 ObjType.oGold = oGold;

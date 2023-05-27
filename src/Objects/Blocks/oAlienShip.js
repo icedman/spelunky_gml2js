@@ -30,5 +30,8 @@ function oAlienShip_CREATE($) {
   }
 }
 
-class oAlienShip extends oSolid {}
+class oAlienShip extends oSolid {
+  sprite_index = sAlienTop;
+  visible = true;
+}
 ObjType.oAlienShip = oAlienShip;

@@ -4,7 +4,7 @@ sBullet = {
     {
       ox: 4,
       oy: 0,
-      path: './src/Sprites/effects/sBullet.png',
+      path: './dist/sprites/effects/sBullet.png',
     },
   ],
 };

@@ -4,7 +4,7 @@ sAnkhIcon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/items/sAnkhIcon.png',
+      path: './dist/sprites/items/sAnkhIcon.png',
     },
   ],
 };

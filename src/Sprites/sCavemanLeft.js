@@ -4,7 +4,7 @@ sCavemanLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sCavemanLeft.png',
+      path: './dist/sprites/enemies/sCavemanLeft.png',
     },
   ],
 };

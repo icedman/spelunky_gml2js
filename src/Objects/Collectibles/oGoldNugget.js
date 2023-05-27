@@ -18,5 +18,8 @@ function oGoldNugget_CREATE($) {
   }
 }
 
-class oGoldNugget extends oTreasure {}
+class oGoldNugget extends oTreasure {
+  sprite_index = sGoldNugget;
+  visible = true;
+}
 ObjType.oGoldNugget = oGoldNugget;

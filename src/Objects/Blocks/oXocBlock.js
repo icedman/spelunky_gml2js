@@ -75,5 +75,7 @@ function oXocBlock_CREATE($) {
 
 class oXocBlock extends oSolid {
   treasure;
+  sprite_index = sGoldBlock;
+  visible = true;
 }
 ObjType.oXocBlock = oXocBlock;

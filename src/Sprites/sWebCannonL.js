@@ -4,7 +4,7 @@ sWebCannonL = {
     {
       ox: 8,
       oy: 4,
-      path: './src/Sprites/items/sWebCannonL.png',
+      path: './dist/sprites/items/sWebCannonL.png',
     },
   ],
 };

@@ -29,5 +29,8 @@ function oSmokePuff_CREATE($) {
   }
 }
 
-class oSmokePuff extends oDrawnSprite {}
+class oSmokePuff extends oDrawnSprite {
+  sprite_index = sSmokePuff;
+  visible = true;
+}
 ObjType.oSmokePuff = oSmokePuff;

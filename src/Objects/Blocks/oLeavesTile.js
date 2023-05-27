@@ -22,5 +22,8 @@ function oLeavesTile_CREATE($) {
   }
 }
 
-class oLeavesTile extends oPlatform {}
+class oLeavesTile extends oPlatform {
+  sprite_index = sLeaves;
+  visible = true;
+}
 ObjType.oLeavesTile = oLeavesTile;

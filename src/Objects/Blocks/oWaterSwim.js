@@ -6,5 +6,8 @@ function oWaterSwim_DESTROY($) {
   }
 }
 
-class oWaterSwim extends oWater {}
+class oWaterSwim extends oWater {
+  sprite_index = sWater;
+  visible = true;
+}
 ObjType.oWaterSwim = oWaterSwim;

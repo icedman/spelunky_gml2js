@@ -23,5 +23,8 @@ function oSmallCollect_CREATE($) {
   }
 }
 
-class oSmallCollect extends oDrawnSprite {}
+class oSmallCollect extends oDrawnSprite {
+  sprite_index = sSmallCollect;
+  visible = true;
+}
 ObjType.oSmallCollect = oSmallCollect;

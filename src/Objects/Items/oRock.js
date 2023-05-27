@@ -10,5 +10,8 @@ function oRock_CREATE($) {
   }
 }
 
-class oRock extends oItem {}
+class oRock extends oItem {
+  sprite_index = sRock;
+  visible = true;
+}
 ObjType.oRock = oRock;

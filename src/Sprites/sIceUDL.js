@@ -4,7 +4,7 @@ sIceUDL = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sIceUDL.png',
+      path: './dist/sprites/blocks/sIceUDL.png',
     },
   ],
 };

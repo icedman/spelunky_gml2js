@@ -4,7 +4,7 @@ sZombieJumpL = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sZombieJumpL.png',
+      path: './dist/sprites/enemies/sZombieJumpL.png',
     },
   ],
 };

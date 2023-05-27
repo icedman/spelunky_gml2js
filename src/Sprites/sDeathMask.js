@@ -4,7 +4,7 @@ sDeathMask = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/hud/sDeathMask.png',
+      path: './dist/sprites/hud/sDeathMask.png',
     },
   ],
 };

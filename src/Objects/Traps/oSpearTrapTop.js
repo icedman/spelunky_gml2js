@@ -178,5 +178,7 @@ class oSpearTrapTop extends oSolid {
   range;
   sSpearsRight;
   spears;
+  sprite_index = sSpearTrap1;
+  visible = true;
 }
 ObjType.oSpearTrapTop = oSpearTrapTop;

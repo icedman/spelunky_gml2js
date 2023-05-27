@@ -25,5 +25,7 @@ function oParachute_STEP($) {
 class oParachute extends oObject {
   sParaOpen;
   sParachute;
+  sprite_index = sParaOpen;
+  visible = true;
 }
 ObjType.oParachute = oParachute;

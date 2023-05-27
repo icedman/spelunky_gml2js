@@ -8,5 +8,8 @@ function oYetiKingTile_CREATE($) {
   }
 }
 
-class oYetiKingTile extends oDrawnSprite {}
+class oYetiKingTile extends oDrawnSprite {
+  sprite_index = sYetiKingLeft;
+  visible = true;
+}
 ObjType.oYetiKingTile = oYetiKingTile;

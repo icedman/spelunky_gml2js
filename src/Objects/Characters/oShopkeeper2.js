@@ -29,5 +29,7 @@ function oShopkeeper2_CREATE($) {
 class oShopkeeper2 extends oShopkeeper {
   deathTimer;
   hasGun;
+  sprite_index = sShopLeft;
+  visible = true;
 }
 ObjType.oShopkeeper2 = oShopkeeper2;

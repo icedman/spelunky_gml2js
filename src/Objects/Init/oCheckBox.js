@@ -24,5 +24,7 @@ function oCheckBox_CREATE($) {
 
 class oCheckBox extends oObject {
   ullscreen;
+  sprite_index = sBoxChecked;
+  visible = true;
 }
 ObjType.oCheckBox = oCheckBox;

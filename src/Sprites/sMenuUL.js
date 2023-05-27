@@ -4,7 +4,7 @@ sMenuUL = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sMenuUL.png',
+      path: './dist/sprites/other/sMenuUL.png',
     },
   ],
 };

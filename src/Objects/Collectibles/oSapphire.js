@@ -19,5 +19,8 @@ function oSapphire_CREATE($) {
   }
 }
 
-class oSapphire extends oTreasure {}
+class oSapphire extends oTreasure {
+  sprite_index = sSapphire;
+  visible = true;
+}
 ObjType.oSapphire = oSapphire;

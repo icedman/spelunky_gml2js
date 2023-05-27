@@ -4,7 +4,7 @@ sJetpackLeft = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sJetpackLeft.png',
+      path: './dist/sprites/items/sJetpackLeft.png',
     },
   ],
 };

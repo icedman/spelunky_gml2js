@@ -11,5 +11,8 @@ function oLeaf_CREATE($) {
   }
 }
 
-class oLeaf extends oRubblePiece {}
+class oLeaf extends oRubblePiece {
+  sprite_index = sLeaf;
+  visible = true;
+}
 ObjType.oLeaf = oLeaf;

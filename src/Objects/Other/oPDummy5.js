@@ -34,5 +34,7 @@ class oPDummy5 extends oDrawnSprite {
   sClimbUp2;
   sDamselClimb2;
   sTunnelClimb2;
+  sprite_index = sRunLeft;
+  visible = true;
 }
 ObjType.oPDummy5 = oPDummy5;

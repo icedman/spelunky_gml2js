@@ -28,5 +28,7 @@ function oSceptre_CREATE($) {
 class oSceptre extends oItem {
   sSceptreLeft;
   sSceptreRight;
+  sprite_index = sSceptreRight;
+  visible = true;
 }
 ObjType.oSceptre = oSceptre;

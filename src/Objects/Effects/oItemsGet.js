@@ -25,5 +25,8 @@ function oItemsGet_CREATE($) {
   }
 }
 
-class oItemsGet extends oDrawnSprite {}
+class oItemsGet extends oDrawnSprite {
+  sprite_index = sItemGet;
+  visible = true;
+}
 ObjType.oItemsGet = oItemsGet;

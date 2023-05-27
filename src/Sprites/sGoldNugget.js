@@ -4,7 +4,7 @@ sGoldNugget = {
     {
       ox: 4,
       oy: 4,
-      path: './src/Sprites/items/sGoldNugget.png',
+      path: './dist/sprites/items/sGoldNugget.png',
     },
   ],
 };

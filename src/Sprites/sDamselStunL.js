@@ -4,27 +4,27 @@ sDamselStunL = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sDamselStunL_0.png',
+      path: './dist/sprites/character/sDamselStunL_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sDamselStunL_1.png',
+      path: './dist/sprites/character/sDamselStunL_1.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sDamselStunL_2.png',
+      path: './dist/sprites/character/sDamselStunL_2.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sDamselStunL_3.png',
+      path: './dist/sprites/character/sDamselStunL_3.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sDamselStunL_4.png',
+      path: './dist/sprites/character/sDamselStunL_4.png',
     },
   ],
 };

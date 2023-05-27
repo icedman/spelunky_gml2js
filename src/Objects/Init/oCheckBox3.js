@@ -22,5 +22,8 @@ function oCheckBox3_CREATE($) {
   }
 }
 
-class oCheckBox3 extends oObject {}
+class oCheckBox3 extends oObject {
+  sprite_index = sBoxChecked;
+  visible = true;
+}
 ObjType.oCheckBox3 = oCheckBox3;

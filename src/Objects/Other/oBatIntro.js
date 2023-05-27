@@ -26,5 +26,8 @@ function oBatIntro_CREATE($) {
   }
 }
 
-class oBatIntro extends oObject {}
+class oBatIntro extends oObject {
+  sprite_index = sBatLeft;
+  visible = true;
+}
 ObjType.oBatIntro = oBatIntro;

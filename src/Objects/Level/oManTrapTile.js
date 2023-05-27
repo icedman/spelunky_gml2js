@@ -8,5 +8,8 @@ function oManTrapTile_CREATE($) {
   }
 }
 
-class oManTrapTile extends oDrawnSprite {}
+class oManTrapTile extends oDrawnSprite {
+  sprite_index = sManTrapLeft;
+  visible = true;
+}
 ObjType.oManTrapTile = oManTrapTile;

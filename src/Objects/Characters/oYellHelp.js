@@ -22,5 +22,8 @@ function oYellHelp_CREATE($) {
   }
 }
 
-class oYellHelp extends oDrawnSprite {}
+class oYellHelp extends oDrawnSprite {
+  sprite_index = sYellHelp;
+  visible = true;
+}
 ObjType.oYellHelp = oYellHelp;

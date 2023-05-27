@@ -4,7 +4,7 @@ sDoor = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/traps/sDoor.png',
+      path: './dist/sprites/traps/sDoor.png',
     },
   ],
 };

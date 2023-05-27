@@ -35,5 +35,7 @@ function oSlash_CREATE($) {
 class oSlash extends oWhip {
   sSlashLeft;
   sSlashRight;
+  sprite_index = sSlashRight;
+  visible = true;
 }
 ObjType.oSlash = oSlash;

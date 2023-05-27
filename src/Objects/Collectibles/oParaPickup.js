@@ -13,5 +13,8 @@ function oParaPickup_CREATE($) {
   }
 }
 
-class oParaPickup extends oItem {}
+class oParaPickup extends oItem {
+  sprite_index = sParaPickup;
+  visible = true;
+}
 ObjType.oParaPickup = oParaPickup;

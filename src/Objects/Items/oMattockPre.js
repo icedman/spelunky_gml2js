@@ -32,5 +32,7 @@ function oMattockPre_CREATE($) {
 class oMattockPre extends oWhipPre {
   sMattockPreL;
   sMattockPreR;
+  sprite_index = sMattockPreR;
+  visible = true;
 }
 ObjType.oMattockPre = oMattockPre;

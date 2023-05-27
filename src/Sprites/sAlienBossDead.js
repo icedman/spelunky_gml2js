@@ -4,7 +4,7 @@ sAlienBossDead = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sAlienBossDead.png',
+      path: './dist/sprites/enemies/sAlienBossDead.png',
     },
   ],
 };

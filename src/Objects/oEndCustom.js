@@ -187,5 +187,6 @@ class oEndCustom extends oObject {
   poop;
   s;
   time;
+  visible = true;
 }
 ObjType.oEndCustom = oEndCustom;

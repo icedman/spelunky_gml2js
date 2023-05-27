@@ -1,2 +1,4 @@
-class oCharacter extends oDrawnSprite {}
+class oCharacter extends oDrawnSprite {
+  visible = true;
+}
 ObjType.oCharacter = oCharacter;

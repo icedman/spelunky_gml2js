@@ -118,5 +118,7 @@ function oAlien_CREATE($) {
 
 class oAlien extends oEnemy {
   aliens;
+  sprite_index = sAlien;
+  visible = true;
 }
 ObjType.oAlien = oAlien;

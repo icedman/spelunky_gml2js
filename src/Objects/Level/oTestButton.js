@@ -29,5 +29,7 @@ class oTestButton extends oObject {
   oLevelEditor;
   sTestButton;
   sTestButtonPressed;
+  sprite_index = sTestButton;
+  visible = true;
 }
 ObjType.oTestButton = oTestButton;

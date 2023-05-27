@@ -97,5 +97,7 @@ class oPDummy3 extends oDrawnSprite {
   sDuckLeft;
   sndClimb1;
   sndClimb2;
+  sprite_index = sRunLeft;
+  visible = true;
 }
 ObjType.oPDummy3 = oPDummy3;

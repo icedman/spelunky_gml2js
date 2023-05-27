@@ -215,5 +215,7 @@ class oSmashTrapLit extends oMovingSolid {
   yAcc;
   ya;
   yv;
+  sprite_index = sSmashTrapLit;
+  visible = true;
 }
 ObjType.oSmashTrapLit = oSmashTrapLit;

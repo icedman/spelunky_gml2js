@@ -45,5 +45,7 @@ class oLava extends oWater {
   spurt;
   spurtCounter;
   spurtTime;
+  sprite_index = sLava;
+  visible = true;
 }
 ObjType.oLava = oLava;

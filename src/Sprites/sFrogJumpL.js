@@ -4,7 +4,7 @@ sFrogJumpL = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sFrogJumpL.png',
+      path: './dist/sprites/enemies/sFrogJumpL.png',
     },
   ],
 };

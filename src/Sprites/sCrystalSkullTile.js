@@ -4,7 +4,7 @@ sCrystalSkullTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sCrystalSkullTile.png',
+      path: './dist/sprites/level/sCrystalSkullTile.png',
     },
   ],
 };

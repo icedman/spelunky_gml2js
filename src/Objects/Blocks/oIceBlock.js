@@ -41,5 +41,7 @@ function oIceBlock_CREATE($) {
 
 class oIceBlock extends oMoveableSolid {
   oDrip;
+  sprite_index = sIceBlock;
+  visible = true;
 }
 ObjType.oIceBlock = oIceBlock;

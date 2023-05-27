@@ -4,7 +4,7 @@ sGoldIdolIco = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sGoldIdolIco.png',
+      path: './dist/sprites/items/sGoldIdolIco.png',
     },
   ],
 };

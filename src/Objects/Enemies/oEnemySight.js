@@ -32,5 +32,8 @@ function oEnemySight_CREATE($) {
   }
 }
 
-class oEnemySight extends oObject {}
+class oEnemySight extends oObject {
+  sprite_index = sSight;
+  visible = false;
+}
 ObjType.oEnemySight = oEnemySight;

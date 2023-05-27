@@ -4,32 +4,32 @@ sTunnelRunL = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelRunL_0.png',
+      path: './dist/sprites/character/sTunnelRunL_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelRunL_1.png',
+      path: './dist/sprites/character/sTunnelRunL_1.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelRunL_2.png',
+      path: './dist/sprites/character/sTunnelRunL_2.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelRunL_3.png',
+      path: './dist/sprites/character/sTunnelRunL_3.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelRunL_4.png',
+      path: './dist/sprites/character/sTunnelRunL_4.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sTunnelRunL_5.png',
+      path: './dist/sprites/character/sTunnelRunL_5.png',
     },
   ],
 };

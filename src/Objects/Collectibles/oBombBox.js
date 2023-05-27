@@ -14,5 +14,8 @@ function oBombBox_CREATE($) {
   }
 }
 
-class oBombBox extends oItem {}
+class oBombBox extends oItem {
+  sprite_index = sBombBox;
+  visible = true;
+}
 ObjType.oBombBox = oBombBox;

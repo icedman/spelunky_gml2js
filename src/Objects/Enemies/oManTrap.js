@@ -529,5 +529,7 @@ class oManTrap extends oEnemy {
   stunTime;
   stunned;
   visible;
+  sprite_index = sManTrapLeft;
+  visible = true;
 }
 ObjType.oManTrap = oManTrap;

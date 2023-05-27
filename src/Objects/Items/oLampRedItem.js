@@ -13,5 +13,8 @@ function oLampRedItem_CREATE($) {
   }
 }
 
-class oLampRedItem extends oItem {}
+class oLampRedItem extends oItem {
+  sprite_index = sLampRedItem;
+  visible = true;
+}
 ObjType.oLampRedItem = oLampRedItem;

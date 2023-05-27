@@ -4,7 +4,7 @@ sBlackFadeUp = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/sblackfadeup/sBlackFadeUp.png',
+      path: './dist/sprites/sblackfadeup/sBlackFadeUp.png',
     },
   ],
 };

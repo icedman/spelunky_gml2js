@@ -4,7 +4,7 @@ sLockedChestOpen = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sLockedChestOpen.png',
+      path: './dist/sprites/items/sLockedChestOpen.png',
     },
   ],
 };

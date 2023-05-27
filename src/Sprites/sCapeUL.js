@@ -4,12 +4,12 @@ sCapeUL = {
     {
       ox: 8,
       oy: 16,
-      path: './src/Sprites/items/sCapeUL_0.png',
+      path: './dist/sprites/items/sCapeUL_0.png',
     },
     {
       ox: 8,
       oy: 16,
-      path: './src/Sprites/items/sCapeUL_1.png',
+      path: './dist/sprites/items/sCapeUL_1.png',
     },
   ],
 };

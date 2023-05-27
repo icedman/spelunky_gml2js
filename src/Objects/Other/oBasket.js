@@ -6,5 +6,7 @@ function oBasket_OTHER($) {
 
 class oBasket extends oObject {
   sBasket;
+  sprite_index = sBasket;
+  visible = true;
 }
 ObjType.oBasket = oBasket;

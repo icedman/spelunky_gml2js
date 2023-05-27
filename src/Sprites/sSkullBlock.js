@@ -4,7 +4,7 @@ sSkullBlock = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sSkullBlock.png',
+      path: './dist/sprites/blocks/sSkullBlock.png',
     },
   ],
 };

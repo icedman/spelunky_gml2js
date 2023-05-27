@@ -51,5 +51,7 @@ function oFlame_COLLISION_oWater($) {
 
 class oFlame extends oDetritus {
   oFlameTrail;
+  sprite_index = sFlame;
+  visible = true;
 }
 ObjType.oFlame = oFlame;

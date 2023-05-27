@@ -213,5 +213,6 @@ class oLoadLevel extends oObject {
   titleStart;
   vk_backspace;
   vk_delete;
+  visible = true;
 }
 ObjType.oLoadLevel = oLoadLevel;

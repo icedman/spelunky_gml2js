@@ -4,7 +4,7 @@ sLevel9Sign = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sLevel9Sign.png',
+      path: './dist/sprites/other/sLevel9Sign.png',
     },
   ],
 };

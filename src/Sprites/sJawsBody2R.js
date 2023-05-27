@@ -4,7 +4,7 @@ sJawsBody2R = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsBody2R.png',
+      path: './dist/sprites/enemies/sJawsBody2R.png',
     },
   ],
 };

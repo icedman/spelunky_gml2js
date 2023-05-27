@@ -4,7 +4,7 @@ sIceUR = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sIceUR.png',
+      path: './dist/sprites/blocks/sIceUR.png',
     },
   ],
 };

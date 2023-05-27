@@ -389,5 +389,7 @@ class oOlmec extends oMovingSolid {
   y;
   yDelta;
   yVel;
+  sprite_index = sOlmecStart1;
+  visible = true;
 }
 ObjType.oOlmec = oOlmec;

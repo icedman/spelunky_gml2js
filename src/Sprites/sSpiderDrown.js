@@ -4,7 +4,7 @@ sSpiderDrown = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sSpiderDrown.png',
+      path: './dist/sprites/enemies/sSpiderDrown.png',
     },
   ],
 };

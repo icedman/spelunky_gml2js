@@ -4,7 +4,7 @@ sRopeEnd = {
     {
       ox: 4,
       oy: 4,
-      path: './src/Sprites/items/sRopeEnd.png',
+      path: './dist/sprites/items/sRopeEnd.png',
     },
   ],
 };

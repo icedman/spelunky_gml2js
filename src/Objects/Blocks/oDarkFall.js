@@ -51,5 +51,7 @@ class oDarkFall extends oMovingSolid {
   sndBreak;
   timeFall;
   timeFallMax;
+  sprite_index = sDarkFall;
+  visible = true;
 }
 ObjType.oDarkFall = oDarkFall;

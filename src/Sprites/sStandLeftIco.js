@@ -4,7 +4,7 @@ sStandLeftIco = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/character/sStandLeftIco.png',
+      path: './dist/sprites/character/sStandLeftIco.png',
     },
   ],
 };

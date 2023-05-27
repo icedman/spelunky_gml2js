@@ -35,5 +35,7 @@ function oBone_CREATE($) {
 
 class oBone extends oDetritus {
   sSmokePuff;
+  sprite_index = sBone;
+  visible = true;
 }
 ObjType.oBone = oBone;

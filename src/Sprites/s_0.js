@@ -4,52 +4,52 @@ s_0 = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_0.png',
+      path: './dist/sprites/supersound/s_0_0.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_1.png',
+      path: './dist/sprites/supersound/s_0_1.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_2.png',
+      path: './dist/sprites/supersound/s_0_2.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_3.png',
+      path: './dist/sprites/supersound/s_0_3.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_4.png',
+      path: './dist/sprites/supersound/s_0_4.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_5.png',
+      path: './dist/sprites/supersound/s_0_5.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_6.png',
+      path: './dist/sprites/supersound/s_0_6.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_7.png',
+      path: './dist/sprites/supersound/s_0_7.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_8.png',
+      path: './dist/sprites/supersound/s_0_8.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/supersound/s_0_9.png',
+      path: './dist/sprites/supersound/s_0_9.png',
     },
   ],
 };

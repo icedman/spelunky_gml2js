@@ -12,5 +12,8 @@ function oTeleporter_CREATE($) {
   }
 }
 
-class oTeleporter extends oItem {}
+class oTeleporter extends oItem {
+  sprite_index = sTeleporter;
+  visible = true;
+}
 ObjType.oTeleporter = oTeleporter;

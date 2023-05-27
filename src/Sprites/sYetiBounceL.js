@@ -4,7 +4,7 @@ sYetiBounceL = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sYetiBounceL.png',
+      path: './dist/sprites/enemies/sYetiBounceL.png',
     },
   ],
 };

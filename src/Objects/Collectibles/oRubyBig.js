@@ -26,5 +26,8 @@ function oRubyBig_CREATE($) {
   }
 }
 
-class oRubyBig extends oTreasure {}
+class oRubyBig extends oTreasure {
+  sprite_index = sRubyBig;
+  visible = true;
+}
 ObjType.oRubyBig = oRubyBig;

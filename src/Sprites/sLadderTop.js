@@ -4,7 +4,7 @@ sLadderTop = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLadderTop.png',
+      path: './dist/sprites/blocks/sLadderTop.png',
     },
   ],
 };

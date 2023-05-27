@@ -4,7 +4,7 @@ sShopLeftIco = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sShopLeftIco.png',
+      path: './dist/sprites/enemies/sShopLeftIco.png',
     },
   ],
 };

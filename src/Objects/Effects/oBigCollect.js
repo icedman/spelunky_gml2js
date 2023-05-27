@@ -20,5 +20,8 @@ function oBigCollect_CREATE($) {
   }
 }
 
-class oBigCollect extends oDrawnSprite {}
+class oBigCollect extends oDrawnSprite {
+  sprite_index = sBigCollect;
+  visible = true;
+}
 ObjType.oBigCollect = oBigCollect;

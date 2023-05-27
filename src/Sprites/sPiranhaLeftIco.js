@@ -4,7 +4,7 @@ sPiranhaLeftIco = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sPiranhaLeftIco.png',
+      path: './dist/sprites/enemies/sPiranhaLeftIco.png',
     },
   ],
 };

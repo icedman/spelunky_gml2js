@@ -4,7 +4,7 @@ sBigChestOpen = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sBigChestOpen.png',
+      path: './dist/sprites/other/sBigChestOpen.png',
     },
   ],
 };

@@ -13,5 +13,8 @@ function oUdjatEye_CREATE($) {
   }
 }
 
-class oUdjatEye extends oItem {}
+class oUdjatEye extends oItem {
+  sprite_index = sUdjatEye;
+  visible = true;
+}
 ObjType.oUdjatEye = oUdjatEye;

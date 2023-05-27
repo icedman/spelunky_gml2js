@@ -28,5 +28,7 @@ function oSapphireBig_CREATE($) {
 
 class oSapphireBig extends oTreasure {
   oDiamond;
+  sprite_index = sSapphireBig;
+  visible = true;
 }
 ObjType.oSapphireBig = oSapphireBig;

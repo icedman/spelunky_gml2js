@@ -4,7 +4,7 @@ sStickyBombIcon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/hud/sStickyBombIcon.png',
+      path: './dist/sprites/hud/sStickyBombIcon.png',
     },
   ],
 };

@@ -17,5 +17,7 @@ class oOKButton extends oObject {
   sOKButton;
   sOKButtonPressed;
   startGame;
+  sprite_index = sOKButton;
+  visible = true;
 }
 ObjType.oOKButton = oOKButton;

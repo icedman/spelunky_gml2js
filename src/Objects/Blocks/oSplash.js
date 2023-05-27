@@ -14,5 +14,8 @@ function oSplash_CREATE($) {
   }
 }
 
-class oSplash extends oDrawnSprite {}
+class oSplash extends oDrawnSprite {
+  sprite_index = sSplash;
+  visible = true;
+}
 ObjType.oSplash = oSplash;

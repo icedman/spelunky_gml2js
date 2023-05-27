@@ -25,5 +25,8 @@ function oIceBottom_CREATE($) {
   }
 }
 
-class oIceBottom extends oDrawnSprite {}
+class oIceBottom extends oDrawnSprite {
+  sprite_index = sIceBottom2;
+  visible = true;
+}
 ObjType.oIceBottom = oIceBottom;

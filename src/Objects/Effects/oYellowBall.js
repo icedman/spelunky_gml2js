@@ -105,5 +105,7 @@ function oYellowBall_CREATE($) {
 class oYellowBall extends oDrawnSprite {
   oBat;
   oFireFrog;
+  sprite_index = sYellowBall;
+  visible = true;
 }
 ObjType.oYellowBall = oYellowBall;

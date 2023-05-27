@@ -96,5 +96,7 @@ class oTunnelMan extends oObject {
   tunnel3Max;
   upCounter;
   upHeld;
+  sprite_index = sTunnelManLeft;
+  visible = true;
 }
 ObjType.oTunnelMan = oTunnelMan;

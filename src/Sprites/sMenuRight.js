@@ -4,7 +4,7 @@ sMenuRight = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sMenuRight.png',
+      path: './dist/sprites/other/sMenuRight.png',
     },
   ],
 };

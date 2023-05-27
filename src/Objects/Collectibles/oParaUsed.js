@@ -22,5 +22,8 @@ function oParaUsed_CREATE($) {
   }
 }
 
-class oParaUsed extends oDrawnSprite {}
+class oParaUsed extends oDrawnSprite {
+  sprite_index = sParaUsed;
+  visible = true;
+}
 ObjType.oParaUsed = oParaUsed;

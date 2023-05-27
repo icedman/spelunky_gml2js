@@ -32,5 +32,7 @@ function oMachetePre_CREATE($) {
 class oMachetePre extends oWhipPre {
   sMachetePreL;
   sMachetePreR;
+  sprite_index = sMachetePreR;
+  visible = true;
 }
 ObjType.oMachetePre = oMachetePre;

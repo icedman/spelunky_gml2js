@@ -72,5 +72,7 @@ class oGrave extends oSolid {
   sGrave4;
   sGrave5;
   sGrave6;
+  sprite_index = sGrave;
+  visible = true;
 }
 ObjType.oGrave = oGrave;

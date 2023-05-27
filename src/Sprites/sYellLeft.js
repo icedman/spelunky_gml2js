@@ -4,52 +4,52 @@ sYellLeft = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_0.png',
+      path: './dist/sprites/character/sYellLeft_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_1.png',
+      path: './dist/sprites/character/sYellLeft_1.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_2.png',
+      path: './dist/sprites/character/sYellLeft_2.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_3.png',
+      path: './dist/sprites/character/sYellLeft_3.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_4.png',
+      path: './dist/sprites/character/sYellLeft_4.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_5.png',
+      path: './dist/sprites/character/sYellLeft_5.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_6.png',
+      path: './dist/sprites/character/sYellLeft_6.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_7.png',
+      path: './dist/sprites/character/sYellLeft_7.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_8.png',
+      path: './dist/sprites/character/sYellLeft_8.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellLeft_9.png',
+      path: './dist/sprites/character/sYellLeft_9.png',
     },
   ],
 };

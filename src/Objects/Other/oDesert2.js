@@ -10,5 +10,7 @@ function oDesert2_CREATE($) {
 
 class oDesert2 extends oSolid {
   sDesertNight2;
+  sprite_index = sDesert2;
+  visible = true;
 }
 ObjType.oDesert2 = oDesert2;

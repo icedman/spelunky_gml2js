@@ -4,7 +4,7 @@ sDarkTop = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sDarkTop.png',
+      path: './dist/sprites/blocks/sDarkTop.png',
     },
   ],
 };

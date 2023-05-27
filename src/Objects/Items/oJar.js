@@ -264,5 +264,7 @@ class oJar extends oItem {
   pickupItem;
   piece;
   sndExplosion;
+  sprite_index = sJar;
+  visible = true;
 }
 ObjType.oJar = oJar;

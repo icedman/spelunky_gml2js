@@ -4,32 +4,32 @@ sPsychicCreate = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sPsychicCreate_0.png',
+      path: './dist/sprites/effects/sPsychicCreate_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sPsychicCreate_1.png',
+      path: './dist/sprites/effects/sPsychicCreate_1.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sPsychicCreate_2.png',
+      path: './dist/sprites/effects/sPsychicCreate_2.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sPsychicCreate_3.png',
+      path: './dist/sprites/effects/sPsychicCreate_3.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sPsychicCreate_4.png',
+      path: './dist/sprites/effects/sPsychicCreate_4.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sPsychicCreate_5.png',
+      path: './dist/sprites/effects/sPsychicCreate_5.png',
     },
   ],
 };

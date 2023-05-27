@@ -67,5 +67,8 @@ function oPsychicWaveP_COLLISION_oDamsel($) {
   }
 }
 
-class oPsychicWaveP extends oDrawnSprite {}
+class oPsychicWaveP extends oDrawnSprite {
+  sprite_index = sPsychicWaveP;
+  visible = true;
+}
 ObjType.oPsychicWaveP = oPsychicWaveP;

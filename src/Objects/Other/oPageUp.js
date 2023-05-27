@@ -31,5 +31,7 @@ function oPageUp_KEYPRESS($) {
 class oPageUp extends oObject {
   oPageDown;
   oPageUp;
+  sprite_index = sPageUp;
+  visible = true;
 }
 ObjType.oPageUp = oPageUp;

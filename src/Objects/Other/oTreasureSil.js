@@ -25,5 +25,7 @@ function oTreasureSil_CREATE($) {
 
 class oTreasureSil extends oDrawnSprite {
   rEnd3;
+  sprite_index = sTreasureSil;
+  visible = true;
 }
 ObjType.oTreasureSil = oTreasureSil;

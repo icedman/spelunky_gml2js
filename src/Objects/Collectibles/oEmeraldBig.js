@@ -26,5 +26,8 @@ function oEmeraldBig_CREATE($) {
   }
 }
 
-class oEmeraldBig extends oTreasure {}
+class oEmeraldBig extends oTreasure {
+  sprite_index = sEmeraldBig;
+  visible = true;
+}
 ObjType.oEmeraldBig = oEmeraldBig;

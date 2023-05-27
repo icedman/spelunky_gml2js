@@ -8,5 +8,8 @@ function oMoai2_CREATE($) {
   }
 }
 
-class oMoai2 extends oSolid {}
+class oMoai2 extends oSolid {
+  sprite_index = sMoai2;
+  visible = true;
+}
 ObjType.oMoai2 = oMoai2;

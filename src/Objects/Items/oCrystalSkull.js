@@ -12,5 +12,7 @@ function oCrystalSkull_CREATE($) {
 class oCrystalSkull extends oGoldIdol {
   type;
   value;
+  sprite_index = sCrystalSkull;
+  visible = true;
 }
 ObjType.oCrystalSkull = oCrystalSkull;

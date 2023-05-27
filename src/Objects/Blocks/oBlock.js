@@ -53,5 +53,8 @@ function oBlock_CREATE($) {
   }
 }
 
-class oBlock extends oSolid {}
+class oBlock extends oSolid {
+  sprite_index = sBlock;
+  visible = true;
+}
 ObjType.oBlock = oBlock;

@@ -4,7 +4,7 @@ sEndPlat = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sEndPlat.png',
+      path: './dist/sprites/other/sEndPlat.png',
     },
   ],
 };

@@ -8,5 +8,7 @@ function oSprite_CREATE($) {
   }
 }
 
-class oSprite extends oDrawnSprite {}
+class oSprite extends oDrawnSprite {
+  visible = true;
+}
 ObjType.oSprite = oSprite;

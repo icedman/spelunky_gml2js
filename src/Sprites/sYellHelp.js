@@ -4,7 +4,7 @@ sYellHelp = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sYellHelp.png',
+      path: './dist/sprites/character/sYellHelp.png',
     },
   ],
 };

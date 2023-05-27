@@ -395,5 +395,7 @@ class oMonkey extends oEnemy {
   throwCounter;
   totalMonkeyKills;
   vineCounter;
+  sprite_index = sMonkeyLeft;
+  visible = true;
 }
 ObjType.oMonkey = oMonkey;

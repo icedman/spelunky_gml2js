@@ -86,5 +86,7 @@ class oLeaves extends oPlatform {
   sLeavesRight;
   sLeavesTop;
   spriteSet;
+  sprite_index = sLeaves;
+  visible = true;
 }
 ObjType.oLeaves = oLeaves;

@@ -132,5 +132,7 @@ class oScarab extends oEnemy {
   oFlareSpark;
   scarabs;
   sndCoin;
+  sprite_index = sScarab;
+  visible = true;
 }
 ObjType.oScarab = oScarab;

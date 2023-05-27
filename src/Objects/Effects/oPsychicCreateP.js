@@ -30,5 +30,8 @@ function oPsychicCreateP_CREATE($) {
   }
 }
 
-class oPsychicCreateP extends oDrawnSprite {}
+class oPsychicCreateP extends oDrawnSprite {
+  sprite_index = sPsychicCreate;
+  visible = true;
+}
 ObjType.oPsychicCreateP = oPsychicCreateP;

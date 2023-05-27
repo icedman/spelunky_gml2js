@@ -15,5 +15,8 @@ function oFrozenCaveman_STEP($) {
   }
 }
 
-class oFrozenCaveman extends oDrawnSprite {}
+class oFrozenCaveman extends oDrawnSprite {
+  sprite_index = sFrozenCaveman;
+  visible = true;
+}
 ObjType.oFrozenCaveman = oFrozenCaveman;

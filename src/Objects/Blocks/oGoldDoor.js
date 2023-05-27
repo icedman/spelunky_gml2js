@@ -30,5 +30,7 @@ function oGoldDoor_COLLISION_oSceptre($) {
 
 class oGoldDoor extends oDrawnSprite {
   hasCrown;
+  sprite_index = sGoldDoor;
+  visible = true;
 }
 ObjType.oGoldDoor = oGoldDoor;

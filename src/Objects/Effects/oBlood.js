@@ -58,5 +58,7 @@ function oBlood_CREATE($) {
 class oBlood extends oDetritus {
   collectible;
   oBloodTrail;
+  sprite_index = sBlood;
+  visible = true;
 }
 ObjType.oBlood = oBlood;

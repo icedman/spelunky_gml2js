@@ -39,5 +39,8 @@ function oUFOCrash_CREATE($) {
   }
 }
 
-class oUFOCrash extends oObject {}
+class oUFOCrash extends oObject {
+  sprite_index = sUFOCrash;
+  visible = true;
+}
 ObjType.oUFOCrash = oUFOCrash;

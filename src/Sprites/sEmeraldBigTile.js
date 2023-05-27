@@ -4,7 +4,7 @@ sEmeraldBigTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sEmeraldBigTile.png',
+      path: './dist/sprites/level/sEmeraldBigTile.png',
     },
   ],
 };

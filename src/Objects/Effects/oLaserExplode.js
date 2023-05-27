@@ -16,5 +16,8 @@ function oLaserExplode_CREATE($) {
   }
 }
 
-class oLaserExplode extends oDrawnSprite {}
+class oLaserExplode extends oDrawnSprite {
+  sprite_index = sLaserExplode;
+  visible = true;
+}
 ObjType.oLaserExplode = oLaserExplode;

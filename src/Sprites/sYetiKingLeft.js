@@ -4,7 +4,7 @@ sYetiKingLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sYetiKingLeft.png',
+      path: './dist/sprites/enemies/sYetiKingLeft.png',
     },
   ],
 };

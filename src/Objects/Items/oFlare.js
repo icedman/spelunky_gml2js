@@ -60,5 +60,7 @@ function oFlare_CREATE($) {
 class oFlare extends oItem {
   bounce;
   distToPlayer;
+  sprite_index = sFlare;
+  visible = true;
 }
 ObjType.oFlare = oFlare;

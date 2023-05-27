@@ -4,7 +4,7 @@ sAlienTop = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sAlienTop.png',
+      path: './dist/sprites/blocks/sAlienTop.png',
     },
   ],
 };

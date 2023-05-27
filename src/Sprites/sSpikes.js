@@ -4,7 +4,7 @@ sSpikes = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/traps/sSpikes.png',
+      path: './dist/sprites/traps/sSpikes.png',
     },
   ],
 };

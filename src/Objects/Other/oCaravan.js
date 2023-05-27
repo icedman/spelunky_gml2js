@@ -32,5 +32,7 @@ class oCaravan extends oObject {
   oCredits2;
   sCaravan2;
   sCaravan3;
+  sprite_index = sCaravan1;
+  visible = true;
 }
 ObjType.oCaravan = oCaravan;

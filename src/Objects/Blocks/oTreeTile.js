@@ -9,5 +9,8 @@ function oTreeTile_CREATE($) {
   }
 }
 
-class oTreeTile extends oSolid {}
+class oTreeTile extends oSolid {
+  sprite_index = sTreeTrunk;
+  visible = true;
+}
 ObjType.oTreeTile = oTreeTile;

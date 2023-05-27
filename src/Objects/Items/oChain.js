@@ -16,5 +16,8 @@ function oChain_CREATE($) {
   }
 }
 
-class oChain extends oDrawnSprite {}
+class oChain extends oDrawnSprite {
+  sprite_index = sChain;
+  visible = true;
+}
 ObjType.oChain = oChain;

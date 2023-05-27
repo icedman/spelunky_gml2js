@@ -180,5 +180,7 @@ class oUFO extends oEnemy {
   sndLaser;
   sndLaserCharge;
   ufos;
+  sprite_index = sUFO;
+  visible = true;
 }
 ObjType.oUFO = oUFO;

@@ -10,5 +10,8 @@ function oMattockHead_CREATE($) {
   }
 }
 
-class oMattockHead extends oItem {}
+class oMattockHead extends oItem {
+  sprite_index = sMattockHead;
+  visible = true;
+}
 ObjType.oMattockHead = oMattockHead;

@@ -23,5 +23,8 @@ function oSign_DESTROY($) {
   }
 }
 
-class oSign extends oSolid {}
+class oSign extends oSolid {
+  sprite_index = sSignGeneral;
+  visible = true;
+}
 ObjType.oSign = oSign;

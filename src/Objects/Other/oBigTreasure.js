@@ -64,5 +64,8 @@ function oBigTreasure_CREATE($) {
   }
 }
 
-class oBigTreasure extends oObject {}
+class oBigTreasure extends oObject {
+  sprite_index = sBigTreasure;
+  visible = true;
+}
 ObjType.oBigTreasure = oBigTreasure;

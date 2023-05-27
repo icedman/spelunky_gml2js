@@ -4,7 +4,7 @@ sMoon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sMoon.png',
+      path: './dist/sprites/other/sMoon.png',
     },
   ],
 };

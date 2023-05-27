@@ -28,5 +28,7 @@ function oShotgun_CREATE($) {
 class oShotgun extends oItem {
   sShotgunLeft;
   sShotgunRight;
+  sprite_index = sShotgunRight;
+  visible = true;
 }
 ObjType.oShotgun = oShotgun;

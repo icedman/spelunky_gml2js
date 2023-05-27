@@ -4,7 +4,7 @@ sTreeBranchDeadL = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sTreeBranchDeadL.png',
+      path: './dist/sprites/blocks/sTreeBranchDeadL.png',
     },
   ],
 };

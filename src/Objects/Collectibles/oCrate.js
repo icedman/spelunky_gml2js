@@ -23,5 +23,8 @@ function oCrate_CREATE($) {
   }
 }
 
-class oCrate extends oItem {}
+class oCrate extends oItem {
+  sprite_index = sCrate;
+  visible = true;
+}
 ObjType.oCrate = oCrate;

@@ -41,5 +41,7 @@ function oSlider2_CREATE($) {
 
 class oSlider2 extends oObject {
   soundVol;
+  sprite_index = sSlider;
+  visible = true;
 }
 ObjType.oSlider2 = oSlider2;

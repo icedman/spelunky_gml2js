@@ -63,5 +63,7 @@ class oSpiderHang extends oEnemy {
   oSpider;
   spider;
   spiders;
+  sprite_index = sSpiderHang;
+  visible = true;
 }
 ObjType.oSpiderHang = oSpiderHang;

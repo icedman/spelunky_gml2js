@@ -33,5 +33,7 @@ class oKaliHead extends oDrawnSprite {
   sKaliHead1;
   sKaliHead2;
   sKaliHead3;
+  sprite_index = sKaliHead1;
+  visible = true;
 }
 ObjType.oKaliHead = oKaliHead;

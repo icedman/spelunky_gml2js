@@ -92,5 +92,7 @@ class oTemple extends oSolid {
   sGTemple;
   sTempleGold;
   sTempleGoldBig;
+  sprite_index = sTemple;
+  visible = true;
 }
 ObjType.oTemple = oTemple;

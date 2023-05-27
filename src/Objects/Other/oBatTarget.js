@@ -95,5 +95,7 @@ class oBatTarget extends oObject {
   oBatTarget;
   xDiff;
   xMid;
+  sprite_index = sBatLeft;
+  visible = true;
 }
 ObjType.oBatTarget = oBatTarget;

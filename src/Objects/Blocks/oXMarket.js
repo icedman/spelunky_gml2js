@@ -8,5 +8,8 @@ function oXMarket_CREATE($) {
   }
 }
 
-class oXMarket extends oExit {}
+class oXMarket extends oExit {
+  sprite_index = sExit;
+  visible = true;
+}
 ObjType.oXMarket = oXMarket;

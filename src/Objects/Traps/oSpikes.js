@@ -8,5 +8,8 @@ function oSpikes_CREATE($) {
   }
 }
 
-class oSpikes extends oDrawnSprite {}
+class oSpikes extends oDrawnSprite {
+  sprite_index = sSpikes;
+  visible = true;
+}
 ObjType.oSpikes = oSpikes;

@@ -23,5 +23,8 @@ function oTreeBranchTile_CREATE($) {
   }
 }
 
-class oTreeBranchTile extends oPlatform {}
+class oTreeBranchTile extends oPlatform {
+  sprite_index = sTreeBranchLeft;
+  visible = true;
+}
 ObjType.oTreeBranchTile = oTreeBranchTile;

@@ -41,5 +41,7 @@ function oTreeBranch_CREATE($) {
 class oTreeBranch extends oPlatform {
   sTreeBranchDeadL;
   sTreeBranchDeadR;
+  sprite_index = sTreeBranchRight;
+  visible = true;
 }
 ObjType.oTreeBranch = oTreeBranch;

@@ -73,5 +73,6 @@ class oSolid extends oDrawnSprite {
   oGrave;
   oLampRed;
   oLampRedItem;
+  visible = true;
 }
 ObjType.oSolid = oSolid;

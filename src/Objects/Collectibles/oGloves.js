@@ -14,5 +14,8 @@ function oGloves_CREATE($) {
   }
 }
 
-class oGloves extends oItem {}
+class oGloves extends oItem {
+  sprite_index = sGlove;
+  visible = true;
+}
 ObjType.oGloves = oGloves;

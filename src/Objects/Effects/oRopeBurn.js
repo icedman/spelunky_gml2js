@@ -31,5 +31,8 @@ function oRopeBurn_CREATE($) {
   }
 }
 
-class oRopeBurn extends oDrawnSprite {}
+class oRopeBurn extends oDrawnSprite {
+  sprite_index = sBurn;
+  visible = true;
+}
 ObjType.oRopeBurn = oRopeBurn;

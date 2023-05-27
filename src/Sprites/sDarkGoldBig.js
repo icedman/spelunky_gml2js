@@ -4,7 +4,7 @@ sDarkGoldBig = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sDarkGoldBig.png',
+      path: './dist/sprites/blocks/sDarkGoldBig.png',
     },
   ],
 };

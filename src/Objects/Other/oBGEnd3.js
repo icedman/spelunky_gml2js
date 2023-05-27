@@ -16,5 +16,8 @@ function oBGEnd3_CREATE($) {
   }
 }
 
-class oBGEnd3 extends oObject {}
+class oBGEnd3 extends oObject {
+  sprite_index = sBGEnd3;
+  visible = true;
+}
 ObjType.oBGEnd3 = oBGEnd3;

@@ -76,5 +76,8 @@ function oWeb_COLLISION_oTreasure($) {
   }
 }
 
-class oWeb extends oObject {}
+class oWeb extends oObject {
+  sprite_index = sWeb;
+  visible = true;
+}
 ObjType.oWeb = oWeb;

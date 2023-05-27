@@ -10,5 +10,7 @@ function oMoveableSolid_CREATE($) {
   }
 }
 
-class oMoveableSolid extends oSolid {}
+class oMoveableSolid extends oSolid {
+  visible = true;
+}
 ObjType.oMoveableSolid = oMoveableSolid;

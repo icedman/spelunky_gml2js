@@ -11,5 +11,6 @@ function oWater_CREATE($) {
 
 class oWater extends oDrawnSprite {
   objChecked;
+  visible = true;
 }
 ObjType.oWater = oWater;

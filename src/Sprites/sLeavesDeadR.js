@@ -4,7 +4,7 @@ sLeavesDeadR = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLeavesDeadR.png',
+      path: './dist/sprites/blocks/sLeavesDeadR.png',
     },
   ],
 };

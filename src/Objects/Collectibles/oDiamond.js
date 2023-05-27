@@ -19,5 +19,8 @@ function oDiamond_CREATE($) {
   }
 }
 
-class oDiamond extends oTreasure {}
+class oDiamond extends oTreasure {
+  sprite_index = sDiamond;
+  visible = true;
+}
 ObjType.oDiamond = oDiamond;

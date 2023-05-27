@@ -4,7 +4,7 @@ sGraveAsh = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sGraveAsh.png',
+      path: './dist/sprites/blocks/sGraveAsh.png',
     },
   ],
 };

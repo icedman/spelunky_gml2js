@@ -4,7 +4,7 @@ sTreeBranchLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sTreeBranchLeft.png',
+      path: './dist/sprites/blocks/sTreeBranchLeft.png',
     },
   ],
 };

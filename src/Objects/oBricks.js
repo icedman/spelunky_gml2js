@@ -5,5 +5,7 @@ function oBricks_CREATE($) {
   }
 }
 
-class oBricks extends oObject {}
+class oBricks extends oObject {
+  visible = true;
+}
 ObjType.oBricks = oBricks;

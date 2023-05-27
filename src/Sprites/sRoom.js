@@ -4,7 +4,7 @@ sRoom = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/sroom/sRoom.png',
+      path: './dist/sprites/sroom/sRoom.png',
     },
   ],
 };

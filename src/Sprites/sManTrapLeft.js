@@ -4,22 +4,22 @@ sManTrapLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sManTrapLeft_0.png',
+      path: './dist/sprites/enemies/sManTrapLeft_0.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sManTrapLeft_1.png',
+      path: './dist/sprites/enemies/sManTrapLeft_1.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sManTrapLeft_2.png',
+      path: './dist/sprites/enemies/sManTrapLeft_2.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sManTrapLeft_3.png',
+      path: './dist/sprites/enemies/sManTrapLeft_3.png',
     },
   ],
 };

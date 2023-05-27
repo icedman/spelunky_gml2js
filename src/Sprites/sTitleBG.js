@@ -4,7 +4,7 @@ sTitleBG = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sTitleBG.png',
+      path: './dist/sprites/other/sTitleBG.png',
     },
   ],
 };

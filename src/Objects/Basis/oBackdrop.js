@@ -4,5 +4,7 @@ function oBackdrop_CREATE($) {
   }
 }
 
-class oBackdrop extends oObject {}
+class oBackdrop extends oObject {
+  visible = true;
+}
 ObjType.oBackdrop = oBackdrop;

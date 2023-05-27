@@ -4,7 +4,7 @@ sCopy = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sCopy.png',
+      path: './dist/sprites/other/sCopy.png',
     },
   ],
 };

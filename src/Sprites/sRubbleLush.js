@@ -4,7 +4,7 @@ sRubbleLush = {
     {
       ox: 4,
       oy: 4,
-      path: './src/Sprites/effects/sRubbleLush.png',
+      path: './dist/sprites/effects/sRubbleLush.png',
     },
   ],
 };

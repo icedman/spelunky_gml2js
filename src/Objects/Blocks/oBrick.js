@@ -86,5 +86,7 @@ class oBrick extends oSolid {
   sBrick2;
   sBrickGold;
   sBrickGoldBig;
+  sprite_index = sBrick;
+  visible = true;
 }
 ObjType.oBrick = oBrick;

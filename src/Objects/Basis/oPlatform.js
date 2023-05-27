@@ -1,2 +1,4 @@
-class oPlatform extends oDrawnSprite {}
+class oPlatform extends oDrawnSprite {
+  visible = true;
+}
 ObjType.oPlatform = oPlatform;

@@ -4,7 +4,7 @@ sLushGold = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sLushGold.png',
+      path: './dist/sprites/blocks/sLushGold.png',
     },
   ],
 };

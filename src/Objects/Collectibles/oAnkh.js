@@ -15,5 +15,7 @@ function oAnkh_CREATE($) {
 
 class oAnkh extends oItem {
   buyMessage;
+  sprite_index = sAnkh;
+  visible = true;
 }
 ObjType.oAnkh = oAnkh;

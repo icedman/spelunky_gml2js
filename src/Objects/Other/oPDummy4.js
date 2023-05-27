@@ -56,5 +56,7 @@ function oPDummy4_CREATE($) {
 class oPDummy4 extends oDrawnSprite {
   player;
   sFallLeft;
+  sprite_index = sRunLeft;
+  visible = true;
 }
 ObjType.oPDummy4 = oPDummy4;

@@ -231,5 +231,8 @@ function oSkull_CREATE($) {
   }
 }
 
-class oSkull extends oItem {}
+class oSkull extends oItem {
+  sprite_index = sSkull;
+  visible = true;
+}
 ObjType.oSkull = oSkull;

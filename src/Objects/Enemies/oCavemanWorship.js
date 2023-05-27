@@ -4,5 +4,8 @@ function oCavemanWorship_CREATE($) {
   }
 }
 
-class oCavemanWorship extends oObject {}
+class oCavemanWorship extends oObject {
+  sprite_index = sCavemanWorshipR;
+  visible = true;
+}
 ObjType.oCavemanWorship = oCavemanWorship;

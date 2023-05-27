@@ -88,5 +88,7 @@ function oLush_CREATE($) {
 class oLush extends oSolid {
   sLushGold;
   sLushGoldBig;
+  sprite_index = sLush;
+  visible = true;
 }
 ObjType.oLush = oLush;

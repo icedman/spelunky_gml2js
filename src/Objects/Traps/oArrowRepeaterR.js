@@ -76,5 +76,7 @@ class oArrowRepeaterR extends oSolid {
   oArrow;
   sndArrowTrap;
   xAct;
+  sprite_index = sArrowTrapRight;
+  visible = true;
 }
 ObjType.oArrowRepeaterR = oArrowRepeaterR;

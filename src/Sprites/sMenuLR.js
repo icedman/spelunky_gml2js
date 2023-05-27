@@ -4,7 +4,7 @@ sMenuLR = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sMenuLR.png',
+      path: './dist/sprites/other/sMenuLR.png',
     },
   ],
 };

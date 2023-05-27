@@ -8,5 +8,8 @@ function oUFOTile_CREATE($) {
   }
 }
 
-class oUFOTile extends oDrawnSprite {}
+class oUFOTile extends oDrawnSprite {
+  sprite_index = sUFO;
+  visible = true;
+}
 ObjType.oUFOTile = oUFOTile;

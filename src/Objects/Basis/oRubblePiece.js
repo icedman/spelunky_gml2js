@@ -47,5 +47,6 @@ function oRubblePiece_CREATE($) {
 class oRubblePiece extends oDrawnSprite {
   sLeafStill;
   view_enabled;
+  visible = true;
 }
 ObjType.oRubblePiece = oRubblePiece;

@@ -321,5 +321,7 @@ class oCaveman extends oEnemy {
   sCavemanLeft;
   sCavemanRunLeft;
   sCavemanStunL;
+  sprite_index = sCavemanLeft;
+  visible = true;
 }
 ObjType.oCaveman = oCaveman;

@@ -24,5 +24,8 @@ function oWhip_CREATE($) {
   }
 }
 
-class oWhip extends oDrawnSprite {}
+class oWhip extends oDrawnSprite {
+  sprite_index = sWhipRight;
+  visible = true;
+}
 ObjType.oWhip = oWhip;

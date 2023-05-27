@@ -4,7 +4,7 @@ sStartSign = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sStartSign.png',
+      path: './dist/sprites/other/sStartSign.png',
     },
   ],
 };

@@ -13,5 +13,8 @@ function oGoldBars_CREATE($) {
   }
 }
 
-class oGoldBars extends oTreasure {}
+class oGoldBars extends oTreasure {
+  sprite_index = sGoldBars;
+  visible = true;
+}
 ObjType.oGoldBars = oGoldBars;

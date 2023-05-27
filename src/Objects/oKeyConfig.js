@@ -344,5 +344,6 @@ class oKeyConfig extends oObject {
   vk_shift;
   vk_space;
   vk_up;
+  visible = true;
 }
 ObjType.oKeyConfig = oKeyConfig;

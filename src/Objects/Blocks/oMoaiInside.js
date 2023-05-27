@@ -14,5 +14,8 @@ function oMoaiInside_CREATE($) {
   }
 }
 
-class oMoaiInside extends oSolid {}
+class oMoaiInside extends oSolid {
+  sprite_index = sMoaiInside;
+  visible = true;
+}
 ObjType.oMoaiInside = oMoaiInside;

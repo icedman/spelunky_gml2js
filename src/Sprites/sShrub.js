@@ -4,7 +4,7 @@ sShrub = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sShrub.png',
+      path: './dist/sprites/other/sShrub.png',
     },
   ],
 };

@@ -13,5 +13,7 @@ class oJoyConfigButton extends oObject {
   rJoyConfig;
   sJoyConfigButton;
   sJoyConfigButtonPressed;
+  sprite_index = sJoyConfigButton;
+  visible = true;
 }
 ObjType.oJoyConfigButton = oJoyConfigButton;

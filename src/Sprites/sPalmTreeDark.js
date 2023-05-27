@@ -4,7 +4,7 @@ sPalmTreeDark = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sPalmTreeDark.png',
+      path: './dist/sprites/other/sPalmTreeDark.png',
     },
   ],
 };

@@ -88,5 +88,7 @@ class oBasketball extends oItem {
   sBasketball;
   sDribble;
   wallBounce;
+  sprite_index = sBasketball;
+  visible = true;
 }
 ObjType.oBasketball = oBasketball;

@@ -95,5 +95,7 @@ class oMattockHit extends oWhip {
   sMattockHitL;
   sMattockHitR;
   sndMattockBreak;
+  sprite_index = sMattockHitR;
+  visible = true;
 }
 ObjType.oMattockHit = oMattockHit;

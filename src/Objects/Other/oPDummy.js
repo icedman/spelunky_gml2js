@@ -296,5 +296,7 @@ class oPDummy extends oDrawnSprite {
   sTeleporter;
   sndClick;
   talk;
+  sprite_index = sRunLeft;
+  visible = true;
 }
 ObjType.oPDummy = oPDummy;

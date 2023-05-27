@@ -4,47 +4,47 @@ sJawsLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_0.png',
+      path: './dist/sprites/enemies/sJawsLeft_0.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_1.png',
+      path: './dist/sprites/enemies/sJawsLeft_1.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_2.png',
+      path: './dist/sprites/enemies/sJawsLeft_2.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_3.png',
+      path: './dist/sprites/enemies/sJawsLeft_3.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_4.png',
+      path: './dist/sprites/enemies/sJawsLeft_4.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_5.png',
+      path: './dist/sprites/enemies/sJawsLeft_5.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_6.png',
+      path: './dist/sprites/enemies/sJawsLeft_6.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_7.png',
+      path: './dist/sprites/enemies/sJawsLeft_7.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sJawsLeft_8.png',
+      path: './dist/sprites/enemies/sJawsLeft_8.png',
     },
   ],
 };

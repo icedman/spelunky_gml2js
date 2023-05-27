@@ -10,5 +10,8 @@ function oRopeTop_CREATE($) {
   }
 }
 
-class oRopeTop extends oDrawnSprite {}
+class oRopeTop extends oDrawnSprite {
+  sprite_index = sRopeTop;
+  visible = true;
+}
 ObjType.oRopeTop = oRopeTop;

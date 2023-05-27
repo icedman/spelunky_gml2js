@@ -13,5 +13,8 @@ function oSpikeShoes_CREATE($) {
   }
 }
 
-class oSpikeShoes extends oItem {}
+class oSpikeShoes extends oItem {
+  sprite_index = sSpikeShoes;
+  visible = true;
+}
 ObjType.oSpikeShoes = oSpikeShoes;

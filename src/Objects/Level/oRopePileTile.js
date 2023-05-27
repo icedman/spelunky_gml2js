@@ -1,2 +1,5 @@
-class oRopePileTile extends oDrawnSprite {}
+class oRopePileTile extends oDrawnSprite {
+  sprite_index = sRopePileTile;
+  visible = true;
+}
 ObjType.oRopePileTile = oRopePileTile;

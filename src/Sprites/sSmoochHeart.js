@@ -4,12 +4,12 @@ sSmoochHeart = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sSmoochHeart_0.png',
+      path: './dist/sprites/effects/sSmoochHeart_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/effects/sSmoochHeart_1.png',
+      path: './dist/sprites/effects/sSmoochHeart_1.png',
     },
   ],
 };

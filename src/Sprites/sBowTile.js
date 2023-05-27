@@ -4,7 +4,7 @@ sBowTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sBowTile.png',
+      path: './dist/sprites/level/sBowTile.png',
     },
   ],
 };

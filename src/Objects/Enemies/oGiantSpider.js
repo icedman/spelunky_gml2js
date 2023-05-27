@@ -259,5 +259,7 @@ class oGiantSpider extends oEnemy {
   sndGiantSpider;
   sndSpiderJump;
   squirtTimer;
+  sprite_index = sGiantSpiderFlip;
+  visible = true;
 }
 ObjType.oGiantSpider = oGiantSpider;

@@ -39,5 +39,7 @@ class oLoadButton extends oObject {
   irstCustomLevel;
   sLoadButton;
   sLoadButtonPressed;
+  sprite_index = sLoadButton;
+  visible = true;
 }
 ObjType.oLoadButton = oLoadButton;

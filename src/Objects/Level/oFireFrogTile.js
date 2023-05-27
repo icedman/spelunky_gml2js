@@ -8,5 +8,8 @@ function oFireFrogTile_CREATE($) {
   }
 }
 
-class oFireFrogTile extends oDrawnSprite {}
+class oFireFrogTile extends oDrawnSprite {
+  sprite_index = sFireFrogLeft;
+  visible = true;
+}
 ObjType.oFireFrogTile = oFireFrogTile;

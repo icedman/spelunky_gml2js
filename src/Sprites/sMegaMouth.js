@@ -4,7 +4,7 @@ sMegaMouth = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/enemies/sMegaMouth.png',
+      path: './dist/sprites/enemies/sMegaMouth.png',
     },
   ],
 };

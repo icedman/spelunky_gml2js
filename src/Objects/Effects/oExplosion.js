@@ -200,5 +200,8 @@ function oExplosion_COLLISION_oDamsel($) {
   }
 }
 
-class oExplosion extends oDrawnSprite {}
+class oExplosion extends oDrawnSprite {
+  sprite_index = sExplosion;
+  visible = true;
+}
 ObjType.oExplosion = oExplosion;

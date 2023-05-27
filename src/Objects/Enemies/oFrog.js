@@ -129,5 +129,7 @@ class oFrog extends oEnemy {
   rogs;
   sFrogJumpL;
   sFrogLeft;
+  sprite_index = sFrogLeft;
+  visible = true;
 }
 ObjType.oFrog = oFrog;

@@ -4,22 +4,22 @@ sVampireBatLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sVampireBatLeft_0.png',
+      path: './dist/sprites/enemies/sVampireBatLeft_0.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sVampireBatLeft_1.png',
+      path: './dist/sprites/enemies/sVampireBatLeft_1.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sVampireBatLeft_2.png',
+      path: './dist/sprites/enemies/sVampireBatLeft_2.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/enemies/sVampireBatLeft_3.png',
+      path: './dist/sprites/enemies/sVampireBatLeft_3.png',
     },
   ],
 };

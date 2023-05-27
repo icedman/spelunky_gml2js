@@ -103,5 +103,6 @@ class oTreasure extends oDrawnSprite {
   ACTIVE;
   STATIC;
   hasUdjatEye;
+  visible = true;
 }
 ObjType.oTreasure = oTreasure;

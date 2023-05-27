@@ -4,7 +4,7 @@ sSignGeneral = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sSignGeneral.png',
+      path: './dist/sprites/blocks/sSignGeneral.png',
     },
   ],
 };

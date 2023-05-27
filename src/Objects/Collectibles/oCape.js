@@ -75,5 +75,7 @@ class oCape extends oDrawnSprite {
   sCapeUL;
   sCapeUR;
   sTunnelRunL;
+  sprite_index = sCapeRight;
+  visible = true;
 }
 ObjType.oCape = oCape;

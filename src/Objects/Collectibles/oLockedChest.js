@@ -68,5 +68,7 @@ class oLockedChest extends oItem {
   sLockedChest;
   sLockedChestOpen;
   sndChestOpen;
+  sprite_index = sLockedChest;
+  visible = true;
 }
 ObjType.oLockedChest = oLockedChest;

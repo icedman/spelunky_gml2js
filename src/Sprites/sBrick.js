@@ -4,7 +4,7 @@ sBrick = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sBrick.png',
+      path: './dist/sprites/blocks/sBrick.png',
     },
   ],
 };

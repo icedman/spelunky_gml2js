@@ -457,5 +457,6 @@ class oItem extends oDrawnSprite {
   sBombArrowRight;
   self;
   stolen;
+  visible = true;
 }
 ObjType.oItem = oItem;

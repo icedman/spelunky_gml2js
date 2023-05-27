@@ -4,7 +4,7 @@ sRubbleSmall = {
     {
       ox: 4,
       oy: 4,
-      path: './src/Sprites/effects/sRubbleSmall.png',
+      path: './dist/sprites/effects/sRubbleSmall.png',
     },
   ],
 };

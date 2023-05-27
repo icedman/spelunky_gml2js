@@ -411,5 +411,7 @@ class oYeti extends oEnemy {
   wallHurt;
   yetiThrow;
   yetis;
+  sprite_index = sYetiLeft;
+  visible = true;
 }
 ObjType.oYeti = oYeti;

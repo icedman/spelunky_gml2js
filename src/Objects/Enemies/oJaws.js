@@ -239,5 +239,7 @@ class oJaws extends oEnemy {
   sJawsTurnL;
   sJawsTurnR;
   turn;
+  sprite_index = sJawsLeft;
+  visible = true;
 }
 ObjType.oJaws = oJaws;

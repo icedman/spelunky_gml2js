@@ -18,5 +18,8 @@ function oDesertScroll2_CREATE($) {
   }
 }
 
-class oDesertScroll2 extends oDrawnSprite {}
+class oDesertScroll2 extends oDrawnSprite {
+  sprite_index = sDesert2;
+  visible = true;
+}
 ObjType.oDesertScroll2 = oDesertScroll2;

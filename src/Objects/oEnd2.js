@@ -49,5 +49,6 @@ class oEnd2 extends oObject {
   oPlayerSil;
   oTreasureSil;
   oVolcanoFlame;
+  visible = true;
 }
 ObjType.oEnd2 = oEnd2;

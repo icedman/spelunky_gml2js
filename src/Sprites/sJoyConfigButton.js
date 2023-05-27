@@ -4,7 +4,7 @@ sJoyConfigButton = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sJoyConfigButton.png',
+      path: './dist/sprites/other/sJoyConfigButton.png',
     },
   ],
 };

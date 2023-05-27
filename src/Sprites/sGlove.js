@@ -4,7 +4,7 @@ sGlove = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sGlove.png',
+      path: './dist/sprites/items/sGlove.png',
     },
   ],
 };

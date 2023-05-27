@@ -4,7 +4,7 @@ sKaliHead1 = {
     {
       ox: 16,
       oy: 16,
-      path: './src/Sprites/traps/sKaliHead1.png',
+      path: './dist/sprites/traps/sKaliHead1.png',
     },
   ],
 };

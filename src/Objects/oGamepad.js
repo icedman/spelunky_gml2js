@@ -495,5 +495,6 @@ class oGamepad extends oObject {
   up;
   upPressed;
   upReleased;
+  visible = true;
 }
 ObjType.oGamepad = oGamepad;

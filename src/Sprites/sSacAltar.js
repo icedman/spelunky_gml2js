@@ -4,12 +4,12 @@ sSacAltar = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sSacAltar_0.png',
+      path: './dist/sprites/blocks/sSacAltar_0.png',
     },
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/blocks/sSacAltar_1.png',
+      path: './dist/sprites/blocks/sSacAltar_1.png',
     },
   ],
 };

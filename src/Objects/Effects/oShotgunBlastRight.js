@@ -10,5 +10,8 @@ function oShotgunBlastRight_CREATE($) {
   }
 }
 
-class oShotgunBlastRight extends oObject {}
+class oShotgunBlastRight extends oObject {
+  sprite_index = sShotgunBlastRight;
+  visible = true;
+}
 ObjType.oShotgunBlastRight = oShotgunBlastRight;

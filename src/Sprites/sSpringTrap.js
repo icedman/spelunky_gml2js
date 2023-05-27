@@ -4,7 +4,7 @@ sSpringTrap = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/traps/sSpringTrap.png',
+      path: './dist/sprites/traps/sSpringTrap.png',
     },
   ],
 };

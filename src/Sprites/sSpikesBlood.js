@@ -4,7 +4,7 @@ sSpikesBlood = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/traps/sSpikesBlood.png',
+      path: './dist/sprites/traps/sSpikesBlood.png',
     },
   ],
 };

@@ -4,12 +4,12 @@ sBombArrowRight = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sBombArrowRight_0.png',
+      path: './dist/sprites/items/sBombArrowRight_0.png',
     },
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sBombArrowRight_1.png',
+      path: './dist/sprites/items/sBombArrowRight_1.png',
     },
   ],
 };

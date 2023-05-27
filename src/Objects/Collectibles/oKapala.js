@@ -13,5 +13,8 @@ function oKapala_CREATE($) {
   }
 }
 
-class oKapala extends oItem {}
+class oKapala extends oItem {
+  sprite_index = sKapala;
+  visible = true;
+}
 ObjType.oKapala = oKapala;

@@ -102,9 +102,10 @@ def copyFiles(path):
 
             if not isSheet:
                 # copyfile(src, dst)
-                copyfile(src, dst.replace('./src/Sprites/', './dist/sprites/'))
+                imagePath = dst.replace('./src/Sprites/', './dist/sprites/')
+                copyfile(src, imagePath)
                 print(src + "..")
-                print("copy " + dst)
+                print("copy " + imagePath)
 
                 # fw = open(dstJs, "w")
                 # code = "class " + tf + " extends sSprite {\n"
@@ -117,7 +118,7 @@ def copyFiles(path):
 
                 if not tf in sheets:
                     sheets[tf] = { 'frames': [] }
-                sheets[tf]['frames'].append({ 'frame': 0, 'name': tf, 'ox': pivot[0], 'oy': pivot[1], 'path': dst })
+                sheets[tf]['frames'].append({ 'frame': 0, 'name': tf, 'ox': pivot[0], 'oy': pivot[1], 'path': imagePath })
 
                 sprite['frames'] = sheets[tf]['frames']
 
@@ -145,16 +146,17 @@ def copyFiles(path):
                         break
 
                     # copyfile(src2, dst2)
-                    copyfile(src2, dst2.replace('./src/Sprites/', './dist/sprites/'))
+                    imagePath = dst2.replace('./src/Sprites/', './dist/sprites/');
+                    copyfile(src2, imagePath)
 
                     if not tf in sheets:
                         sheets[tf] = { 'frames': [] }
-                    sheets[tf]['frames'].append({ 'frame': i, 'name': tf + "_" + str(i), 'ox': pivot[0], 'oy': pivot[1], 'path': dst2 })
+                    sheets[tf]['frames'].append({ 'frame': i, 'name': tf + "_" + str(i), 'ox': pivot[0], 'oy': pivot[1], 'path': imagePath })
 
                     sprite['frames'] = sheets[tf]['frames']
 
                     print(src2 + "..")
-                    print("copy " + dst2)
+                    print("copy " + imagePath)
 
                     # with Image.open(src2) as im:
                     #     w, h = im.size

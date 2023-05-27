@@ -4,7 +4,7 @@ sRimDeflect = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sRimDeflect.png',
+      path: './dist/sprites/other/sRimDeflect.png',
     },
   ],
 };

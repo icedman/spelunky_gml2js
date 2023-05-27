@@ -34,5 +34,7 @@ class oEditButton extends oObject {
   oNewButton;
   sEditButton;
   sEditButtonPressed;
+  sprite_index = sEditButton;
+  visible = true;
 }
 ObjType.oEditButton = oEditButton;

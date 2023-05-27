@@ -274,5 +274,6 @@ class oHighscores extends oObject {
   tMini2;
   tMini3;
   trophy;
+  visible = true;
 }
 ObjType.oHighscores = oHighscores;

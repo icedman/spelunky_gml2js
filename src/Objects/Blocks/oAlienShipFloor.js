@@ -32,5 +32,7 @@ function oAlienShipFloor_CREATE($) {
 
 class oAlienShipFloor extends oSolid {
   oRubbleDarkSmall;
+  sprite_index = sAlienFloor;
+  visible = true;
 }
 ObjType.oAlienShipFloor = oAlienShipFloor;

@@ -64,5 +64,6 @@ function oEnd_CREATE($) {
 
 class oEnd extends oObject {
   oChain2;
+  visible = true;
 }
 ObjType.oEnd = oEnd;

@@ -4,52 +4,52 @@ sExplosion = {
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_0.png',
+      path: './dist/sprites/effects/sExplosion_0.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_1.png',
+      path: './dist/sprites/effects/sExplosion_1.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_2.png',
+      path: './dist/sprites/effects/sExplosion_2.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_3.png',
+      path: './dist/sprites/effects/sExplosion_3.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_4.png',
+      path: './dist/sprites/effects/sExplosion_4.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_5.png',
+      path: './dist/sprites/effects/sExplosion_5.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_6.png',
+      path: './dist/sprites/effects/sExplosion_6.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_7.png',
+      path: './dist/sprites/effects/sExplosion_7.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_8.png',
+      path: './dist/sprites/effects/sExplosion_8.png',
     },
     {
       ox: 24,
       oy: 24,
-      path: './src/Sprites/effects/sExplosion_9.png',
+      path: './dist/sprites/effects/sExplosion_9.png',
     },
   ],
 };

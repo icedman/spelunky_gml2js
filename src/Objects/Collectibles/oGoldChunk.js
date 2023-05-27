@@ -15,5 +15,7 @@ function oGoldChunk_CREATE($) {
 
 class oGoldChunk extends oTreasure {
   yOff;
+  sprite_index = sGoldChunk;
+  visible = true;
 }
 ObjType.oGoldChunk = oGoldChunk;

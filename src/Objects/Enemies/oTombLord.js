@@ -265,5 +265,7 @@ class oTombLord extends oEnemy {
   sndHurt;
   tomblords;
   whipped;
+  sprite_index = sTombLordLeft;
+  visible = true;
 }
 ObjType.oTombLord = oTombLord;

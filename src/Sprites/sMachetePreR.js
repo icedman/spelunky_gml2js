@@ -4,7 +4,7 @@ sMachetePreR = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/items/sMachetePreR.png',
+      path: './dist/sprites/items/sMachetePreR.png',
     },
   ],
 };

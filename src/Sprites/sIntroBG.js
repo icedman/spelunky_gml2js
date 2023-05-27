@@ -4,7 +4,7 @@ sIntroBG = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/other/sIntroBG.png',
+      path: './dist/sprites/other/sIntroBG.png',
     },
   ],
 };

@@ -15,5 +15,7 @@ function oLampItem_CREATE($) {
 
 class oLampItem extends oItem {
   trigger;
+  sprite_index = sLampItem;
+  visible = true;
 }
 ObjType.oLampItem = oLampItem;

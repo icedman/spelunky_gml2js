@@ -21,5 +21,8 @@ function oPlayerSil_CREATE($) {
   }
 }
 
-class oPlayerSil extends oDrawnSprite {}
+class oPlayerSil extends oDrawnSprite {
+  sprite_index = sPlayerSil;
+  visible = true;
+}
 ObjType.oPlayerSil = oPlayerSil;

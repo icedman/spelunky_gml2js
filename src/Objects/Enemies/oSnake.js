@@ -133,5 +133,7 @@ function oSnake_CREATE($) {
 class oSnake extends oEnemy {
   sSnakeWalkL;
   snakes;
+  sprite_index = sSnakeLeft;
+  visible = true;
 }
 ObjType.oSnake = oSnake;

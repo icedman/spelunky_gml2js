@@ -4,7 +4,7 @@ sParaUsed = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/items/sParaUsed.png',
+      path: './dist/sprites/items/sParaUsed.png',
     },
   ],
 };

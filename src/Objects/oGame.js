@@ -434,5 +434,6 @@ class oGame extends oObject {
   sWaterTop;
   waterCounter;
   waterLoopSafety;
+  visible = true;
 }
 ObjType.oGame = oGame;

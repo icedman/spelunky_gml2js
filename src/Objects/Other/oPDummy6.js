@@ -24,5 +24,8 @@ function oPDummy6_CREATE($) {
   }
 }
 
-class oPDummy6 extends oDrawnSprite {}
+class oPDummy6 extends oDrawnSprite {
+  sprite_index = sStandLeft;
+  visible = true;
+}
 ObjType.oPDummy6 = oPDummy6;

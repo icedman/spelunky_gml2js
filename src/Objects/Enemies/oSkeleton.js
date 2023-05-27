@@ -134,5 +134,7 @@ class oSkeleton extends oEnemy {
   sSkeletonLeft;
   sSkeletonWalkLeft;
   skeletons;
+  sprite_index = sSkeletonCreateL;
+  visible = true;
 }
 ObjType.oSkeleton = oSkeleton;

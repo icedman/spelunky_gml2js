@@ -4,7 +4,7 @@ sParachuteIcon = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/hud/sParachuteIcon.png',
+      path: './dist/sprites/hud/sParachuteIcon.png',
     },
   ],
 };

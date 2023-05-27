@@ -4,7 +4,7 @@ sDamselDuckL = {
     {
       ox: 8,
       oy: 8,
-      path: './src/Sprites/character/sDamselDuckL.png',
+      path: './dist/sprites/character/sDamselDuckL.png',
     },
   ],
 };

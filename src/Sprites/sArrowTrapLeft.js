@@ -4,7 +4,7 @@ sArrowTrapLeft = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/traps/sArrowTrapLeft.png',
+      path: './dist/sprites/traps/sArrowTrapLeft.png',
     },
   ],
 };

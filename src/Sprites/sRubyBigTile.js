@@ -4,7 +4,7 @@ sRubyBigTile = {
     {
       ox: 0,
       oy: 0,
-      path: './src/Sprites/level/sRubyBigTile.png',
+      path: './dist/sprites/level/sRubyBigTile.png',
     },
   ],
 };
