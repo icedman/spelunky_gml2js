@@ -38,8 +38,8 @@ function oLevelEditor_KEYPRESS($) {
             for (j = 0; j < 32; j += 1) {
               str = file_text_read_string(file);
               for (i = 0; i < 40; i += 1) {
-                levelArray[(i, j)] = string_char_at(str, i + 1);
-                //scrCreateTile(levelArray[i, j], 16+i*16, 16+j*16);
+                levelArray[_arrayIndex(i, j)] = string_char_at(str, i + 1);
+                //scrCreateTile(levelArray[_arrayIndex(i, j)], 16+i*16, 16+j*16);
               }
               file_text_readln(file);
             }
@@ -85,8 +85,12 @@ function oLevelEditor_KEYPRESS($) {
             signNamesID = 0;
             for (j = 0; j < 32; j += 1) {
               for (i = 0; i < 40; i += 1) {
-                scrCreateTile(levelArray[(i, j)], 16 + i * 16, 16 + j * 16);
-                if (levelArray[(i, j)] == 'X') {
+                scrCreateTile(
+                  levelArray[_arrayIndex(i, j)],
+                  16 + i * 16,
+                  16 + j * 16
+                );
+                if (levelArray[_arrayIndex(i, j)] == 'X') {
                   obj = instance_position(16 + i * 16, 16 + j * 16, oExit);
                   if (obj) {
                     if (exitNamesNum > 0) {
@@ -94,7 +98,7 @@ function oLevelEditor_KEYPRESS($) {
                       exitNamesID += 1;
                     }
                   }
-                } else if (levelArray[(i, j)] == '@') {
+                } else if (levelArray[_arrayIndex(i, j)] == '@') {
                   obj = instance_position(16 + i * 16, 16 + j * 16, oEntrance);
                   if (obj) {
                     if (exitNamesNum > 0) {
@@ -102,7 +106,7 @@ function oLevelEditor_KEYPRESS($) {
                       exitNamesID += 1;
                     }
                   }
-                } else if (levelArray[(i, j)] == 'I') {
+                } else if (levelArray[_arrayIndex(i, j)] == 'I') {
                   obj = instance_position(16 + i * 16, 16 + j * 16, oMsgSign);
                   if (obj) {
                     if (signNamesNum > 0) {
@@ -338,8 +342,11 @@ function oLevelEditor_KEYPRESS($) {
       file = file_text_open_write('levels/' + string_lower(levelName) + '.lvl');
       for (j = 0; j < 32; j += 1) {
         for (i = 0; i < 40; i += 1) {
-          file_text_write_string(file, levelArray[(i, j)]);
-          if (levelArray[(i, j)] == 'X' || levelArray[(i, j)] == '@') {
+          file_text_write_string(file, levelArray[_arrayIndex(i, j)]);
+          if (
+            levelArray[_arrayIndex(i, j)] == 'X' ||
+            levelArray[_arrayIndex(i, j)] == '@'
+          ) {
             obj = instance_position(16 + i * 16, 16 + j * 16, oExit);
             if (!obj)
               obj = instance_position(16 + i * 16, 16 + j * 16, oEntrance);
@@ -347,7 +354,7 @@ function oLevelEditor_KEYPRESS($) {
               exitNames[exitNamesID] = obj.leadsTo;
               exitNamesID += 1;
             }
-          } else if (levelArray[(i, j)] == 'I') {
+          } else if (levelArray[_arrayIndex(i, j)] == 'I') {
             obj = instance_position(16 + i * 16, 16 + j * 16, oMsgSign);
             if (obj) {
               signNames[signNamesID] = obj.message;
@@ -663,7 +670,7 @@ function oLevelEditor_CREATE($) {
 
     for (j = 0; j < 32; j += 1) {
       for (i = 0; i < 40; i += 1) {
-        levelArray[(i, j)] = '0';
+        levelArray[_arrayIndex(i, j)] = '0';
       }
     }
 
@@ -808,8 +815,8 @@ function oLevelEditor_CREATE($) {
         for (j = 0; j < 32; j += 1) {
           str = file_text_read_string(file);
           for (i = 0; i < 40; i += 1) {
-            levelArray[(i, j)] = string_char_at(str, i + 1);
-            //scrCreateTile(levelArray[i, j], 16+i*16, 16+j*16);
+            levelArray[_arrayIndex(i, j)] = string_char_at(str, i + 1);
+            //scrCreateTile(levelArray[_arrayIndex(i, j)], 16+i*16, 16+j*16);
           }
           file_text_readln(file);
         }
@@ -855,8 +862,12 @@ function oLevelEditor_CREATE($) {
         signNamesID = 0;
         for (j = 0; j < 32; j += 1) {
           for (i = 0; i < 40; i += 1) {
-            scrCreateTile(levelArray[(i, j)], 16 + i * 16, 16 + j * 16);
-            if (levelArray[(i, j)] == 'X') {
+            scrCreateTile(
+              levelArray[_arrayIndex(i, j)],
+              16 + i * 16,
+              16 + j * 16
+            );
+            if (levelArray[_arrayIndex(i, j)] == 'X') {
               obj = instance_position(16 + i * 16, 16 + j * 16, oExit);
               if (obj) {
                 if (exitNamesNum > 0) {
@@ -864,7 +875,7 @@ function oLevelEditor_CREATE($) {
                   exitNamesID += 1;
                 }
               }
-            } else if (levelArray[(i, j)] == '@') {
+            } else if (levelArray[_arrayIndex(i, j)] == '@') {
               obj = instance_position(16 + i * 16, 16 + j * 16, oEntrance);
               if (obj) {
                 if (exitNamesNum > 0) {
@@ -872,7 +883,7 @@ function oLevelEditor_CREATE($) {
                   exitNamesID += 1;
                 }
               }
-            } else if (levelArray[(i, j)] == 'I') {
+            } else if (levelArray[_arrayIndex(i, j)] == 'I') {
               obj = instance_position(16 + i * 16, 16 + j * 16, oMsgSign);
               if (obj) {
                 if (signNamesNum > 0) {

@@ -159,7 +159,7 @@ function oGame_DRAW($) {
           draw_text(
             oPlayer1.x + 48 + i * 16,
             oPlayer1.y - 64 + 16 + j * 16,
-            string(global.roomPath[(i, j)])
+            string(global.roomPath[_arrayIndex(i, j)])
           );
         }
       }

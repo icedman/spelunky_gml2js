@@ -1,5 +1,3 @@
-room = null;
-
 function isRoom() {
   //
   // isRoom(name)

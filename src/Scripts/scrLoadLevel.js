@@ -52,8 +52,8 @@ function scrLoadLevel() {
     for (j = 0; j < 32; j += 1) {
       str = file_text_read_string(file);
       for (i = 0; i < 40; i += 1) {
-        levelArray[(i, j)] = string_char_at(str, i + 1);
-        //scrCreateTileObj(levelArray[i, j], 16+i*16, 16+j*16);
+        levelArray[_arrayIndex(i, j)] = string_char_at(str, i + 1);
+        //scrCreateTileObj(levelArray[_arrayIndex(i, j)], 16+i*16, 16+j*16);
       }
       file_text_readln(file);
     }
@@ -99,15 +99,19 @@ function scrLoadLevel() {
     signNamesID = 0;
     for (j = 0; j < 32; j += 1) {
       for (i = 0; i < 40; i += 1) {
-        scrCreateTileObj(levelArray[(i, j)], 16 + i * 16, 16 + j * 16);
+        scrCreateTileObj(
+          levelArray[_arrayIndex(i, j)],
+          16 + i * 16,
+          16 + j * 16
+        );
         obj = 0;
-        if (levelArray[(i, j)] == 'X') {
+        if (levelArray[_arrayIndex(i, j)] == 'X') {
           obj = instance_position(16 + i * 16, 16 + j * 16, oExit);
           if (obj) {
             global.exitX = obj.x;
             global.exitY = obj.y;
           }
-        } else if (levelArray[(i, j)] == '@') {
+        } else if (levelArray[_arrayIndex(i, j)] == '@') {
           obj = instance_position(16 + i * 16, 16 + j * 16, oEntrance);
         }
         if (obj) {
@@ -118,7 +122,7 @@ function scrLoadLevel() {
         }
 
         obj = 0;
-        if (levelArray[(i, j)] == 'I') {
+        if (levelArray[_arrayIndex(i, j)] == 'I') {
           obj = instance_position(16 + i * 16, 16 + j * 16, oMsgSign);
         }
         if (obj) {

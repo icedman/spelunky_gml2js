@@ -44,8 +44,8 @@ function oBomb_STEP($) {
 
     if (armed && instance_exists(oShopkeeper)) {
       if (
-        (global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] == 4 ||
-          global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] == 5) &&
+        (global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))] == 4 ||
+          global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))] == 5) &&
         distance_to_object(oShopkeeper) < 96
       ) {
         instances_of(oShopkeeper).forEach(($) => {

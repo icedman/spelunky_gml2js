@@ -4,8 +4,10 @@ room_get_name = ()=>{
 };
 
 room_goto = (r)=>{
-    console.log('goto room');
-    console.log(r)
+    room = r;
+    room['instances'].forEach((i) => {
+        instance_create(i.x, i.y, i.obj)
+    });
 };
 
 room_goto_next = ()=>{};

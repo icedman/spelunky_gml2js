@@ -29,7 +29,7 @@ function scrLevelGen() {
   roomY = 0;
   prevX = global.startRoomX;
   prevY = 0;
-  global.roomPath[(roomX, roomY)] = 1;
+  global.roomPath[_arrayIndex(roomX, roomY)] = 1;
   noStartX = -1;
   n = rand(0, 3);
 
@@ -52,22 +52,22 @@ function scrLevelGen() {
     global.startRoomY = 0;
     global.endRoomX = 3;
     global.endRoomY = 3;
-    global.roomPath[(0, 0)] = 2;
-    global.roomPath[(0, 1)] = 2;
-    global.roomPath[(0, 2)] = 2;
-    global.roomPath[(0, 3)] = 3;
-    global.roomPath[(1, 0)] = 4;
-    global.roomPath[(1, 1)] = 4;
-    global.roomPath[(1, 2)] = 4;
-    global.roomPath[(1, 3)] = 1;
-    global.roomPath[(2, 0)] = 4;
-    global.roomPath[(2, 1)] = 4;
-    global.roomPath[(2, 2)] = 5;
-    global.roomPath[(2, 3)] = 1;
-    global.roomPath[(3, 0)] = 2;
-    global.roomPath[(3, 1)] = 2;
-    global.roomPath[(3, 2)] = 4;
-    global.roomPath[(3, 3)] = 3;
+    global.roomPath[_arrayIndex(0, 0)] = 2;
+    global.roomPath[_arrayIndex(0, 1)] = 2;
+    global.roomPath[_arrayIndex(0, 2)] = 2;
+    global.roomPath[_arrayIndex(0, 3)] = 3;
+    global.roomPath[_arrayIndex(1, 0)] = 4;
+    global.roomPath[_arrayIndex(1, 1)] = 4;
+    global.roomPath[_arrayIndex(1, 2)] = 4;
+    global.roomPath[_arrayIndex(1, 3)] = 1;
+    global.roomPath[_arrayIndex(2, 0)] = 4;
+    global.roomPath[_arrayIndex(2, 1)] = 4;
+    global.roomPath[_arrayIndex(2, 2)] = 5;
+    global.roomPath[_arrayIndex(2, 3)] = 1;
+    global.roomPath[_arrayIndex(3, 0)] = 2;
+    global.roomPath[_arrayIndex(3, 1)] = 2;
+    global.roomPath[_arrayIndex(3, 2)] = 4;
+    global.roomPath[_arrayIndex(3, 3)] = 3;
     global.madeBlackMarket = true;
     return 0;
   }
@@ -78,9 +78,9 @@ function scrLevelGen() {
     }
 
     for (i = 0; i < 4; i += 1) {
-      if (i == 0) global.roomPath[(n, i)] = 7;
-      else if (i == 3) global.roomPath[(n, i)] = 9;
-      else global.roomPath[(n, i)] = 8;
+      if (i == 0) global.roomPath[_arrayIndex(n, i)] = 7;
+      else if (i == 3) global.roomPath[_arrayIndex(n, i)] = 9;
+      else global.roomPath[_arrayIndex(n, i)] = 8;
     }
     global.sacrificePit = true;
     oGame.idol = true;
@@ -110,7 +110,7 @@ function scrLevelGen() {
       d = true;
       if (roomY < 4) {
         global.roomPath[(roomX, roomY - 1)] = 2;
-        global.roomPath[(roomX, roomY)] = 3;
+        global.roomPath[_arrayIndex(roomX, roomY)] = 3;
         d = true;
       } else {
         global.endRoomX = roomX;
@@ -118,11 +118,11 @@ function scrLevelGen() {
       }
     }
 
-    if (!d) global.roomPath[(roomX, roomY)] = 1;
+    if (!d) global.roomPath[_arrayIndex(roomX, roomY)] = 1;
   }
 
   // City of Gold
-  if (global.cityOfGold) global.roomPath[(rand(0, 3), 2)] = 6;
+  if (global.cityOfGold) global.roomPath[_arrayIndex(rand(0, 3), 2)] = 6;
 
   // snake pit
   sX1 = 0;
@@ -132,12 +132,12 @@ function scrLevelGen() {
     for (j = 0; j < 2; j += 1) {
       for (i = 0; i < 4; i += 1) {
         if (
-          global.roomPath[(i, j)] == 0 &&
+          global.roomPath[_arrayIndex(i, j)] == 0 &&
           global.roomPath[(i, j + 1)] == 0 &&
           global.roomPath[(i, j + 2)] == 0 &&
           rand(1, global.probSnakePit) == 1
         ) {
-          global.roomPath[(i, j)] = 7; // top of pit
+          global.roomPath[_arrayIndex(i, j)] = 7; // top of pit
           if (true) {
             if (global.roomPath[(i, j + 2)] == 0) {
               global.roomPath[(i, j + 1)] = 8;
@@ -164,27 +164,27 @@ function scrLevelGen() {
     }
   }
 
-  global.roomPath[(0, 4)] = 0;
-  global.roomPath[(1, 4)] = 0;
-  global.roomPath[(2, 4)] = 0;
-  global.roomPath[(3, 4)] = 0;
+  global.roomPath[_arrayIndex(0, 4)] = 0;
+  global.roomPath[_arrayIndex(1, 4)] = 0;
+  global.roomPath[_arrayIndex(2, 4)] = 0;
+  global.roomPath[_arrayIndex(3, 4)] = 0;
 
   //  Lake
   //global.lake = false;
   if (global.lake) {
-    global.roomPath[(0, 3)] = 8;
-    global.roomPath[(1, 3)] = 8;
-    global.roomPath[(2, 3)] = 8;
-    global.roomPath[(3, 3)] = 8;
-    global.roomPath[(0, 4)] = 7;
-    global.roomPath[(1, 4)] = 7;
-    global.roomPath[(2, 4)] = 7;
-    global.roomPath[(3, 4)] = 7;
+    global.roomPath[_arrayIndex(0, 3)] = 8;
+    global.roomPath[_arrayIndex(1, 3)] = 8;
+    global.roomPath[_arrayIndex(2, 3)] = 8;
+    global.roomPath[_arrayIndex(3, 3)] = 8;
+    global.roomPath[_arrayIndex(0, 4)] = 7;
+    global.roomPath[_arrayIndex(1, 4)] = 7;
+    global.roomPath[_arrayIndex(2, 4)] = 7;
+    global.roomPath[_arrayIndex(3, 4)] = 7;
     n = rand(0, 3);
     while (n == global.endRoomX) {
       n = rand(0, 3);
     }
-    global.roomPath[(n, 4)] = 9;
+    global.roomPath[_arrayIndex(n, 4)] = 9;
   }
 
   if (global.levelType == 2) {
@@ -197,15 +197,16 @@ function scrLevelGen() {
         global.madeMoai = true;
       else if (global.currLevel == 12) global.madeMoai = true;
 
-      if (global.madeMoai) global.roomPath[(rand(0, 3), rand(1, 2))] = 6;
+      if (global.madeMoai)
+        global.roomPath[_arrayIndex(rand(0, 3), rand(1, 2))] = 6;
     } else if (rand(1, global.probAlien) == 1) {
       // alien craft
       k = rand(0, 2);
       j = rand(1, 2);
       for (i = k; i < 4; i += 1) {
-        if (i == k) global.roomPath[(i, j)] = 7;
-        else if (i == 3) global.roomPath[(i, j)] = 9;
-        else global.roomPath[(i, j)] = 8;
+        if (i == k) global.roomPath[_arrayIndex(i, j)] = 7;
+        else if (i == 3) global.roomPath[_arrayIndex(i, j)] = 9;
+        else global.roomPath[_arrayIndex(i, j)] = 8;
       }
       global.alienCraft = true;
     } else if (!global.alienCraft && rand(1, global.probYetiLair) == 1) {
@@ -226,13 +227,13 @@ function scrLevelGen() {
         global.roomPoss[(j, k)] = 0;
         //j = rand(0,3);
         //k = rand(0,3);
-        if (global.roomPath[(j, k)] == 0) {
+        if (global.roomPath[_arrayIndex(j, k)] == 0) {
           if (j < 3) {
             if (
               global.roomPath[(j + 1, k)] == 1 ||
               global.roomPath[(j + 1, k)] == 2
             ) {
-              //global.roomPath[j,k] = 4;
+              //global.roomPath[_arrayIndex(j,k)] = 4;
               global.roomPoss[(j, k)] = 4;
               i += 1;
               //global.shop = true;
@@ -243,7 +244,7 @@ function scrLevelGen() {
               global.roomPath[(j - 1, k)] == 1 ||
               global.roomPath[(j - 1, k)] == 2
             ) {
-              //global.roomPath[j,k] = 5;
+              //global.roomPath[_arrayIndex(j,k)] = 5;
               global.roomPoss[(j, k)] = 5;
               i += 1;
               //global.shop = true;
@@ -260,7 +261,7 @@ function scrLevelGen() {
         for (j = 0; j < 4; j += 1) {
           if (global.roomPoss[(j, k)] != 0) {
             if (n == 0) {
-              global.roomPath[(j, k)] = global.roomPoss[(j, k)];
+              global.roomPath[_arrayIndex(j, k)] = global.roomPoss[(j, k)];
               global.shop = true;
               j = 4;
               k = 4;

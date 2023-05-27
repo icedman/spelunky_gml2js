@@ -47,7 +47,7 @@ The string representing a room or obstacle must be laid out unbroken:
   strTemp =
     '00000000000000000000000000000000000000000000000000000000000000000000000000000000';
 
-  roomPath = global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))];
+  roomPath = global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))];
   roomPathAbove = -1;
   if (scrGetRoomY(y) != 0)
     roomPathAbove = global.roomPath[(scrGetRoomX(x), scrGetRoomY(y - 128))];

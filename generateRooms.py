@@ -15,6 +15,8 @@ if len(sys.argv) < 2:
 
 path = sys.argv[1]
 
+makedirs("src/Rooms", exist_ok=True)
+
 def generateRoomCode(room, path):
     match = re.search('\/([a-zA-Z0-9\s]*)\.xml', path)
     if match == None:

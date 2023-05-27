@@ -9,8 +9,8 @@ function isInShop() {
   ty = arguments[1];
 
   if (
-    global.roomPath[(scrGetRoomX(tx), scrGetRoomY(ty))] == 4 ||
-    global.roomPath[(scrGetRoomX(tx), scrGetRoomY(ty))] == 5
+    global.roomPath[_arrayIndex(scrGetRoomX(tx), scrGetRoomY(ty))] == 4 ||
+    global.roomPath[_arrayIndex(scrGetRoomX(tx), scrGetRoomY(ty))] == 5
   )
     return true;
 

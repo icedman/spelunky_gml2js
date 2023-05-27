@@ -137,7 +137,7 @@ function oLoadLevel_CREATE($) {
 
     for (j = 0; j < 32; j += 1) {
       for (i = 0; i < 40; i += 1) {
-        levelArray[(i, j)] = '0';
+        levelArray[_arrayIndex(i, j)] = '0';
       }
     }
 

@@ -22,6 +22,9 @@ function scrRoomGen() {
     
 ***********************************************************************************/
 
+  x = arguments[0];
+  y = arguments[1];
+
   /*
 Note:
 
@@ -47,7 +50,7 @@ The string representing a room or obstacle must be laid out unbroken:
   strTemp =
     '00000000000000000000000000000000000000000000000000000000000000000000000000000000';
 
-  roomPath = global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))];
+  roomPath = global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))];
   roomPathAbove = -1;
   shopType = 'General';
   if (scrGetRoomY(y) != 0)

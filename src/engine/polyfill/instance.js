@@ -3,16 +3,31 @@ object_instances = [];
 instance_activate_all = () => {};
 instance_activate_object = () => {};
 instance_activate_region = () => {};
-instance_create = () => {
-  console.log(arguments);
+
+instance_create = (x, y, obj) => {
+  var instance = new obj();
+  instance.x = x;
+  instance.y = y;
+  object_instances.push(instance);
+  instance.onCreate();
+  return instance;
 };
+
 instance_deactivate_all = () => {};
 instance_deactivate_object = () => {};
 instance_deactivate_region = () => {};
 instance_destroy = () => {};
-instance_exists = () => {};
+
+instance_exists = (o) => {
+  return instance_number(o) > 0;
+};
+
 instance_nearest = () => {};
-instance_number = () => {};
+
+instance_number = (o) => {
+  return instances_of(o).length;
+};
+
 instance_place = () => {};
 instance_position = () => {};
 

@@ -25,15 +25,6 @@ action_fullscreen = () => {};
 action_if = () => {};
 action_kill_object = () => {};
 
-// room
-room_get_name = () => {};
-room_goto = (r) => {
-  console.log(r);
-};
-room_goto_next = () => {};
-room_restart = () => {};
-room_set_view = () => {};
-
 // string
 string = () => {};
 string_char_at = () => {};

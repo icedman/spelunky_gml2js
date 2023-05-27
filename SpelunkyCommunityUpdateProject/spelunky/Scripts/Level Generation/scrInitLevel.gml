@@ -149,7 +149,7 @@ if (global.levelType == 1 and rand(1,global.probCemetary) == 1) global.cemetary 
 
 with oRoom
 {
-    if (global.levelType == 0) scrRoomGen();
+    if (global.levelType == 0) scrRoomGen(x, y);
     else if (global.levelType == 1)
     {
         if (global.blackMarket) scrRoomGenMarket();

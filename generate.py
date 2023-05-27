@@ -167,12 +167,28 @@ def cleanUpCode(l):
         l = l.replace("x=o", "x==o")
         l = l.replace("x)=o", "x)==o")
 
-    # 2-d array
-    if "roomPath[(" in ls:
-        l = l.replace("roomPath[(", "roomPath[_arrayIndex(")
+    if "roomPath[" in ls:
+        match = re.search('roomPath\[([a-zA-Z0-9,\s\(\)]*)\]', l)
+        if match != None:
+            fnd = match.group(0)
+            args = '_arrayIndex(' + match.group(1) + ')'.replace('((', '(').replace('))', ')')
+            rpl = fnd.replace(match.group(1), args)
+            l = l.replace(fnd, rpl)
 
-    if "levelArray[(" in ls:
-        l = l.replace("levelArray[(", "levelArray[_arrayIndex(")
+    if "levelArray[" in ls:
+        match = re.search('levelArray\[([a-zA-Z0-9,\s\(\)]*)\]', l)
+        if match != None:
+            fnd = match.group(0)
+            args = '_arrayIndex(' + match.group(1) + ')'.replace('((', '(').replace('))', ')')
+            rpl = fnd.replace(match.group(1), args)
+            l = l.replace(fnd, rpl)
+
+    # 2-d array
+    # if "roomPath[(" in ls:
+    #     l = l.replace("roomPath[(", "roomPath[_arrayIndex(")
+
+    # if "levelArray[(" in ls:
+    #     l = l.replace("levelArray[(", "levelArray[_arrayIndex(")
 
     ls = l.strip()
     match = re.search("int r1\s{0,1}=", ls)

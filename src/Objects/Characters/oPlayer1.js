@@ -1538,8 +1538,8 @@ function oPlayer1_STEP($) {
     if (holdItem > 0) {
       if (holdItem.cost > 0 && isLevel()) {
         if (
-          global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] != 4 &&
-          global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] != 5
+          global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))] != 4 &&
+          global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))] != 5
         ) {
           scrStealItem();
           if (instance_exists(oShopkeeper)) {
@@ -2370,7 +2370,8 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
 
         if (
           (global.blackMarket &&
-            global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] == 5) ||
+            global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))] ==
+              5) ||
           (!global.blackMarket && oShopkeeper.style == 'Craps')
         ) {
           if (global.thiefLevel > 0 || global.murderer) {
@@ -3698,8 +3699,8 @@ else if (sprite_index == sSlideLeft)
     if (holdItem > 0) {
       if (holdItem.cost > 0 && isLevel()) {
         if (
-          global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] != 4 &&
-          global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] != 5
+          global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))] != 4 &&
+          global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))] != 5
         ) {
           scrStealItem();
           if (instance_exists(oShopkeeper)) {
@@ -4529,7 +4530,8 @@ if (isLevel() and kFlarePressed and active and not dead and not stunned)
 
         if (
           (global.blackMarket &&
-            global.roomPath[(scrGetRoomX(x), scrGetRoomY(y))] == 5) ||
+            global.roomPath[_arrayIndex(scrGetRoomX(x), scrGetRoomY(y))] ==
+              5) ||
           (!global.blackMarket && oShopkeeper.style == 'Craps')
         ) {
           if (global.thiefLevel > 0 || global.murderer) {

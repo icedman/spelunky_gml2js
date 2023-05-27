@@ -19,6 +19,7 @@ sheets = {}
 
 sprites = {}
 
+makedirs("dist/sprites", exist_ok=True)
 makedirs(target + "/Sprites", exist_ok=True)
 makedirs(target + "/Rooms", exist_ok=True)
 
@@ -97,8 +98,11 @@ def copyFiles(path):
                 }
             sprite = sprites[tf]
 
+            makedirs(td.replace('./src/Sprites/', './dist/sprites/'), exist_ok=True)
+
             if not isSheet:
-                copyfile(src, dst)
+                # copyfile(src, dst)
+                copyfile(src, dst.replace('./src/Sprites/', './dist/sprites/'))
                 print(src + "..")
                 print("copy " + dst)
 
@@ -140,7 +144,8 @@ def copyFiles(path):
                     if not isfile(src2):
                         break
 
-                    copyfile(src2, dst2)
+                    # copyfile(src2, dst2)
+                    copyfile(src2, dst2.replace('./src/Sprites/', './dist/sprites/'))
 
                     if not tf in sheets:
                         sheets[tf] = { 'frames': [] }

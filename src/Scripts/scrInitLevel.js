@@ -59,7 +59,7 @@ if (global.currLevel == 5) global.levelType = 4;
   // this is used to determine the path to the exit (generally no bombs required)
   for (i = 0; i < 4; i += 1) {
     for (j = 0; j < 4; j += 1) {
-      global.roomPath[(i, j)] = 0;
+      global.roomPath[_arrayIndex(i, j)] = 0;
     }
   }
 
@@ -127,7 +127,7 @@ if (global.currLevel == 5) global.levelType = 4;
 
   instances_of(oRoom).forEach(($) => {
     with ($) {
-      if (global.levelType == 0) scrRoomGen();
+      if (global.levelType == 0) scrRoomGen(x, y);
       else if (global.levelType == 1) {
         if (global.blackMarket) scrRoomGenMarket();
         else scrRoomGen2();

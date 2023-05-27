@@ -30,15 +30,18 @@ function scrTestLevel() {
   file = file_text_open_write('levels/test.tmp');
   for (j = 0; j < 32; j += 1) {
     for (i = 0; i < 40; i += 1) {
-      file_text_write_string(file, levelArray[(i, j)]);
-      if (levelArray[(i, j)] == 'X' || levelArray[(i, j)] == '@') {
+      file_text_write_string(file, levelArray[_arrayIndex(i, j)]);
+      if (
+        levelArray[_arrayIndex(i, j)] == 'X' ||
+        levelArray[_arrayIndex(i, j)] == '@'
+      ) {
         obj = instance_position(16 + i * 16, 16 + j * 16, oExit);
         if (!obj) obj = instance_position(16 + i * 16, 16 + j * 16, oEntrance);
         if (obj) {
           exitNames[exitNamesID] = obj.leadsTo;
           exitNamesID += 1;
         }
-      } else if (levelArray[(i, j)] == 'I') {
+      } else if (levelArray[_arrayIndex(i, j)] == 'I') {
         obj = instance_position(16 + i * 16, 16 + j * 16, oMsgSign);
         if (obj) {
           signNames[signNamesID] = obj.message;
